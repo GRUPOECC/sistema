@@ -17,6 +17,8 @@ function areyousure()
 </section>
 
 <section class="content">
+
+
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="btn-group pull-right">

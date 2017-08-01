@@ -62,7 +62,31 @@
                         	<div class="row">
                                 <div class="col-md-4">
                                     <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
-									<input type="text" name="phone"class="form-control" value="<?php echo $contact->contact?>">
+									<input type="text" name="phone1"class="form-control" value="<?php echo $contact->phone1?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+									<input type="text" name="phone2"class="form-control" value="<?php echo $contact->phone2?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+									<input type="text" name="phone3"class="form-control" value="<?php echo $contact->phone3?>">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+									<input type="text" name="phone4"class="form-control" value="<?php echo $contact->phone4?>">
                                 </div>
                             </div>
                         </div>
@@ -84,6 +108,31 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"> <?php echo lang('category');?></label>
+									<input type="text" name="category" value="<?php echo @$contact->category ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+       					<div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"> <?php echo lang('contact_company');?></label>
+									<input type="text" name="company" value="<?php echo @$contact->company ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"> <?php echo lang('department');?></label>
+									<input type="text" name="department" value="<?php echo @$contact->department ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
 						
 						<?php 
 					$CI = get_instance();

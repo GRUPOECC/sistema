@@ -35,15 +35,30 @@ class contacts extends MX_Controller {
 			$this->form_validation->set_message('required', lang('custom_required'));
 			$this->form_validation->set_rules('name', 'lang:name', 'required');
 			$this->form_validation->set_rules('email', 'lang:email', '');
-			$this->form_validation->set_rules('phone', 'lang:phone', '');
+			$this->form_validation->set_rules('phone1', 'lang:phone', '');
+			$this->form_validation->set_rules('phone2', 'lang:phone', '');
+			$this->form_validation->set_rules('phone3', 'lang:phone', '');
+			$this->form_validation->set_rules('phone4', 'lang:phone', '');
+			$this->form_validation->set_rules('category', 'lang:category', 'required');
+			$this->form_validation->set_rules('company', 'lang:contact_company', '');
+			$this->form_validation->set_rules('department', 'lang:department', '');
 			$this->form_validation->set_rules('address', 'lang:address', '');
 			 
 			if ($this->form_validation->run()==true)
             {
 				$save['name'] = $this->input->post('name');
-				$save['contact'] = $this->input->post('phone');
+				$save['contact'] = $this->input->post('phone1');
 				$save['email'] = $this->input->post('email');
 				$save['address'] = $this->input->post('address');
+				$save['phone1'] = $this->input->post('phone1');
+				$save['phone2'] = $this->input->post('phone2');
+				$save['phone3'] = $this->input->post('phone3');
+				$save['phone4'] = $this->input->post('phone4');
+				$save['category'] = $this->input->post('category');
+				$save['company'] = $this->input->post('company');
+				$save['department'] = $this->input->post('department');
+
+
             	$p_key = $this->contact_model->save($save);
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){
@@ -84,9 +99,18 @@ class contacts extends MX_Controller {
 			if ($this->form_validation->run()==true)
             {
 				$save['name'] = $this->input->post('name');
-				$save['contact'] = $this->input->post('phone');
+				$save['contact'] = $this->input->post('phone1');
 				$save['email'] = $this->input->post('email');
 				$save['address'] = $this->input->post('address');
+				$save['phone1'] = $this->input->post('phone1');
+				$save['phone2'] = $this->input->post('phone2');
+				$save['phone3'] = $this->input->post('phone3');
+				$save['phone4'] = $this->input->post('phone4');
+				$save['category'] = $this->input->post('category');
+				$save['company'] = $this->input->post('company');
+				$save['department'] = $this->input->post('department');
+
+
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){
 					foreach($this->input->post('reply') as $key => $val) {
@@ -177,6 +201,21 @@ class contacts extends MX_Controller {
 						$save[$ind]['email'] = $val;
 					if($in=='D')
 						$save[$ind]['address'] = $val;
+					if($in=='E')
+						$save[$ind]['phone1'] = $val;
+					if($in=='F')
+						$save[$ind]['phone2'] = $val;
+					if($in=='G')
+						$save[$ind]['phone3'] = $val;
+					if($in=='H')
+						$save[$ind]['phone4'] = $val;
+					if($in=='I')
+						$save[$ind]['category'] = $val;
+					if($in=='J')
+						$save[$ind]['company'] = $val;
+					if($in=='K')
+						$save[$ind]['department'] = $val;
+
 				}	
 			}
 			
@@ -196,7 +235,7 @@ class contacts extends MX_Controller {
 		if($id){
 			$this->contact_model->delete($id);
 			$this->session->set_flashdata('message',lang('contact_deleted'));
-			redirect('admin/contact');
+			redirect('admin/contacts');
 		}
 	}	
 		

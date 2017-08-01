@@ -443,10 +443,10 @@ $fourth = $this->uri->segment(4);
                             </a>
                             <ul class="treeview-menu">
                         		    <li class="<?php echo($this->uri->segment(2)=='clients')?'active':'';?>">
-                                        <a href="<?php echo site_url('admin/clients');?>">
-                                            <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('clients');?></span> 
-                                        </a>
-                                    </li>
+										<a href="<?php echo site_url('admin/clients');?>">
+											<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('clients');?></span> 
+										</a>
+									</li>
 									
 									<li class="<?php echo($this->uri->segment(2)=='employees')?'active':'';?>">
 										<a href="<?php echo site_url('admin/employees');?>">

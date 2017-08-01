@@ -52,13 +52,44 @@
                             </div>
                         </div>
 						
+
 						 <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-2">
                                     <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
 								</div>
 								<div class="col-md-4">
-									<?php echo $contact->contact?>
+									<?php echo $contact->phone1?>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+								</div>
+								<div class="col-md-4">
+									<?php echo $contact->phone2?>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+								</div>
+								<div class="col-md-4">
+									<?php echo $contact->phone3?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+								</div>
+								<div class="col-md-4">
+									<?php echo $contact->phone4?>
                                 </div>
                             </div>
                         </div>
@@ -81,6 +112,36 @@
 								</div>
 								<div class="col-md-4">
 									<?php echo $contact->address?>
+                                </div>
+                            </div>
+                        </div>
+						<div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('category');?></label>
+								</div>
+								<div class="col-md-4">
+									<?php echo $contact->category?>
+                                </div>
+                            </div>
+                        </div>
+                       <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('contact_company');?></label>
+								</div>
+								<div class="col-md-4">
+									<?php echo $contact->company?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('department');?></label>
+								</div>
+								<div class="col-md-4">
+									<?php echo $contact->department?>
                                 </div>
                             </div>
                         </div>

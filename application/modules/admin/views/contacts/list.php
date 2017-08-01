@@ -42,8 +42,9 @@ function areyousure()
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
-                                <th><?php echo lang('serail_number');?></th>
-								<th><?php echo lang('name');?></th>
+ 								<th><?php echo lang('name');?></th>
+                                <th><?php echo lang('category');?></th>
+                                <th><?php echo lang('contact_company');?></th>
 								<th width="20%"><?php echo lang('action');?></th>
                             </tr>
                         </thead>
@@ -52,8 +53,10 @@ function areyousure()
                         <tbody>
                             <?php $i=1;foreach ($contacts as $new){?>
                                 <tr class="gc_row">
-                                    <td><?php echo $i?></td>
                                     <td><?php echo $new->name?></td>
+                                    <td><?php echo $new->category?></td>
+                                    <td><?php echo $new->company?></td>
+
 									
                                     <td  class="col-md-3">
                                         <div class="btn-group">

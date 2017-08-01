@@ -54,11 +54,38 @@
                         	<div class="row">
                                 <div class="col-md-4">
                                     <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
-									<input type="text" name="phone" value="<?php echo set_value('phone'); ?>" class="form-control">
+									<input type="text" name="phone1" value="<?php echo set_value('phone1'); ?>" class="form-control">
                                 </div>
                             </div>
                         </div>
 						
+						 <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+									<input type="text" name="phone2" value="<?php echo set_value('phone2'); ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+						 <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+									<input type="text" name="phone3" value="<?php echo set_value('phone3'); ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+						 <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
+									<input type="text" name="phone4" value="<?php echo set_value('phone4'); ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
 						 <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-4">
@@ -76,6 +103,54 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('category');?></label>
+									<input type="text" name="category" value="<?php echo set_value('category'); ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                <label for="name" style="clear:both;"><?php echo lang('category');?></label>
+                                        <select name="contact_category_id[]" class="chzn col-md-12" multiple="multiple" >
+                                        <?php foreach($contact_categories as $new) {
+                                            $sel = "";
+                                            if(set_select('contact_category_id', $new->id)) $sel = "selected='selected'";
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('contact_company');?></label>
+									<input type="text" name="company" value="<?php echo set_value('company'); ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('department');?></label>
+									<input type="text" name="department" value="<?php echo set_value('department'); ?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                      
+
 							<?php 
 						if($fields){
 							foreach($fields as $doc){
