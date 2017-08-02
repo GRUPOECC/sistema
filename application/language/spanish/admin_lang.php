@@ -46,6 +46,7 @@ $lang['file']      	 = "Archivo";
 $lang['my_cases']      	 = "Mis Tickets";
 $lang['cases']      	 = "Tickets";
 $lang['case']      	 = "Ticket";
+$lang['cases_open']      	 = "Tickets Abiertos";
 $lang['more_info']      	 = "Más información";
 $lang['case_alert_days']      	 = "Días de alerta de tickets";
 $lang['click_here_to_change_setting']      	 = "Haga clic aquí para cambiar el ajuste";

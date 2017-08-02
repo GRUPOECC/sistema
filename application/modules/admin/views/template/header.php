@@ -442,11 +442,7 @@ $fourth = $this->uri->segment(4);
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                        		    <li class="<?php echo($this->uri->segment(2)=='clients')?'active':'';?>">
-										<a href="<?php echo site_url('admin/clients');?>">
-											<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('clients');?></span> 
-										</a>
-									</li>
+                        		   
 									
 									<li class="<?php echo($this->uri->segment(2)=='employees')?'active':'';?>">
 										<a href="<?php echo site_url('admin/employees');?>">
@@ -535,6 +531,11 @@ $fourth = $this->uri->segment(4);
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
+                                     <li class="<?php echo($this->uri->segment(2)=='clients')?'active':'';?>">
+                                        <a href="<?php echo site_url('admin/clients');?>">
+                                            <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('clients');?></span> 
+                                        </a>
+                                    </li>
                         		    <li class="<?php echo($this->uri->segment(2)=='tasks')?'active':'';?>">
 										<a href="<?php echo site_url('admin/tasks');?>">
 											<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('tasks');?></span> 

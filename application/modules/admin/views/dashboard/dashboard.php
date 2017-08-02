@@ -134,13 +134,32 @@
      <div class="row">
                         <div class="col-lg-2 col-xs-6">
                             <!-- small box -->
-                            <div class="small-box bg-green">
+                            <div class="small-box bg-red">
                                 <div class="inner">
                                     <h3>
                                        <?php echo count($case_all)?>
                                     </h3>
                                     <p>
                                        <?php echo lang('cases');?>
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-list"></i>
+                                </div>
+                                <a href="<?php echo site_url('admin/cases')?>" class="small-box-footer">
+                                    <?php echo lang('more_info');?>  <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                         <div class="col-lg-2 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-green">
+                                <div class="inner">
+                                    <h3>
+                                       <?php echo count($case_open)?>
+                                    </h3>
+                                    <p>
+                                       <?php echo lang('cases_open');?>
                                     </p>
                                 </div>
                                 <div class="icon">
@@ -172,7 +191,7 @@
                         </div><!-- ./col -->
                         <div class="col-lg-2 col-xs-6">
                             <!-- small box -->
-                            <div class="small-box bg-red">
+                            <div class="small-box bg-purple-gradient">
                                 <div class="inner">
                                     <h3>
                                         <?php echo count($archived)?>

@@ -55,8 +55,20 @@ class dashboard_model extends CI_Model
 			$this->db->select('EC.next_date,C.case_no,C.id case_id,C.title');
 			$this->db->join('cases C', 'C.id = EC.case_id', 'LEFT');	
 		return  $this->db->get('extended_case EC')->result();
+
 	}
 	
+	function get_case_tod()
+	{
+		
+			return $this->db->get('cases C')->result();
+	}
+
+		function get_case_open()
+	{
+			$this->db->where('C.is_archived',0);
+			return $this->db->get('cases C')->result();
+	}
 	
 	
 	function get_clients()
