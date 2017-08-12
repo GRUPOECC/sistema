@@ -508,7 +508,6 @@ $fourth = $this->uri->segment(4);
                     <!-- search form -->
                    
                     <!-- /.search form -->
-<!-- barra lateral administrador -->
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
                         <li class="<?php echo($this->uri->segment(2)=='dashboard' || $this->uri->segment(2)=='')?'active':'';?>">
@@ -630,12 +629,6 @@ $fourth = $this->uri->segment(4);
 											
 										</a>
 									</li>
-                                    <li class="<?php echo($this->uri->segment(2)=='to_do_list')?'active':'';?>">
-                                        <a href="<?php echo site_url('admin/to_do_list');?>">
-                                         <i class="fa fa-bars"></i> <span><?php echo lang('to_do_list');?></span>
-                                        <small class="badge pull-right bg-red"><?php echo count($to_do_alert) ?></small>
-                                        </a>
-                                     </li>
 									
 							</ul>
                         </li>
@@ -663,7 +656,12 @@ $fourth = $this->uri->segment(4);
 					
 						
 						
-						
+						<li class="<?php echo($this->uri->segment(2)=='to_do_list')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/to_do_list');?>">
+                                <i class="fa fa-bars"></i> <span><?php echo lang('to_do_list');?></span>
+								<small class="badge pull-right bg-red"><?php echo count($to_do_alert) ?></small>
+                            </a>
+                        </li>
 						<li class="<?php echo($this->uri->segment(2)=='contacts')?'active':'';?>">
                             <a href="<?php echo site_url('admin/contacts');?>">
                                 <i class="fa fa-newspaper-o"></i> <span><?php echo lang('contacts')?></span>
@@ -682,7 +680,7 @@ $fourth = $this->uri->segment(4);
                             </a>
                         </li>
 						
-                    <li class="treeview <?php echo($this->uri->segment(2)=='case_category'|| $this->uri->segment(2)=='dept_category' || $this->uri->segment(2)=='act' || $this->uri->segment(2)=='dept' || $this->uri->segment(2)=='case_stage' || $this->uri->segment(2)=='location' || $this->uri->segment(2)=='tax' || $this->uri->segment(2)=='payment_mode')?'active':'';?>">
+                    <li class="treeview <?php echo($this->uri->segment(2)=='case_category'|| $this->uri->segment(2)=='court_category' || $this->uri->segment(2)=='act' || $this->uri->segment(2)=='court' || $this->uri->segment(2)=='case_stage' || $this->uri->segment(2)=='location' || $this->uri->segment(2)=='tax' || $this->uri->segment(2)=='payment_mode')?'active':'';?>">
                             <a href="#">
                                 <i class="fa fa-folder"></i> <span><?php echo lang('masters') ?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -708,14 +706,10 @@ $fourth = $this->uri->segment(4);
                         </li>
 						
 						
-						<li class="<?php echo($this->uri->segment(2)=='dept')?'active':'';?>">
-                            <a href="<?php echo site_url('admin/dept');?>">
-                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('dept')?></span>
-                            </a>
-                        </li> 
-						<li class="<?php echo($this->uri->segment(2)=='dept_category')?'active':'';?>">
-                            <a href="<?php echo site_url('admin/dept_category');?>">
-                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('dept')?> <?php echo lang('category')?></span>
+						
+						<li class="<?php echo($this->uri->segment(2)=='court_category')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/court_category');?>">
+                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('court')?> <?php echo lang('category')?></span>
                             </a>
                         </li>
 						<li class="<?php echo($this->uri->segment(2)=='act')?'active':'';?>">
@@ -723,6 +717,11 @@ $fourth = $this->uri->segment(4);
                                 <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('act')?></span>
                             </a>
                         </li>
+						<li class="<?php echo($this->uri->segment(2)=='court')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/court');?>">
+                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('court')?></span>
+                            </a>
+                        </li>       
 						<li class="<?php echo($this->uri->segment(2)=='case_stage')?'active':'';?>">
                             <a href="<?php echo site_url('admin/case_stage');?>">
                                 <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('case')?> <?php echo lang('stages')?></span>
@@ -790,153 +789,155 @@ $fourth = $this->uri->segment(4);
 				
 				<?php } ?>
 				
- <!-- barra lateral usuarios -->
-
-
 		<?php foreach($actions as $action){ 
-			 if($action->action=='user_role' || $action->action=='departments'  || $action->action=='employees' ||  $action->action=='permissions') { ?>
+			 if($action->action=='user_role' || $action->action=='departments' || $action->action=='clients' || $action->action=='employees' ||  
+			 		$action->action=='permissions'  || $action->action=='attendance'  || $action->action=='holidays'  || $action->action=='leave_types'  || $action->action=='notification') { ?>
 	
 				
-
-                <li class="treeview <?php echo($this->uri->segment(2)=='user_role'|| $this->uri->segment(2)=='departments'|| $this->uri->segment(2)=='clients'|| $this->uri->segment(2)=='employees' || $this->uri->segment(2)=='permissions')?'active':'';?>">
+				 <li class="treeview <?php echo($this->uri->segment(2)=='user_role'|| $this->uri->segment(2)=='departments'|| $this->uri->segment(2)=='clients'|| $this->uri->segment(2)=='employees' || $this->uri->segment(2)=='permissions')?'active':'';?>">
                             <a href="#">
                                 <i class="fa fa-users"></i> <span><?php echo lang('user_management');?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                   
-                             
-                            <?php foreach($actions as $action){if($action->action=='departments'){?>    
-                                <li class="<?php echo($this->uri->segment(2)=='departments')?'active':'';?>">
-                                    <a href="<?php echo site_url('admin/departments');?>">
-                                    <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('departments')?></span>
-                                    </a>
-                                </li>
-                            <?php break;}}?>    
-                            <?php foreach($actions as $action){if($action->action=='employees'){?>    
-                                <li class="<?php echo($this->uri->segment(2)=='employees')?'active':'';?>">
-                                    <a href="<?php echo site_url('admin/employees');?>">
-                                        <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('employees');?></span> 
-                                    </a>
-                                </li>
-                            <?php break;}}?> 
-                            <?php foreach($actions as $action){if($action->action=='user_role'){?>          
-                                <li class="<?php echo($this->uri->segment(2)=='user_role')?'active':'';?>">
-                                    <a href="<?php echo site_url('admin/user_role');?>">
-                                        <i class="fa   fa-angle-double-right"></i> <span><?php echo lang('user_role')?></span>
-                                    </a>
-                                </li>
-                            <?php break;}}?>       
-                            <?php foreach($actions as $action){if($action->action=='permissions'){?>        
-                                <li class="<?php echo($this->uri->segment(2)=='permissions')?'active':'';?>">
-                                    <a href="<?php echo site_url('admin/permissions');?>">
-                                        <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('permissions')?></span>
-                                    </a>
-                                </li>
-                             <?php break;}}?>      
-                                                                
-                                
-                            </ul>
+                        	<?php foreach($actions as $action){if($action->action=='clients'){?>
+                    
+								    <li class="<?php echo($this->uri->segment(2)=='clients')?'active':'';?>">
+										<a href="<?php echo site_url('admin/clients');?>">
+											<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('clients');?></span> 
+										</a>
+									</li>
+							<?php break;}}?>	
+							<?php foreach($actions as $action){if($action->action=='employees'){?>	
+									<li class="<?php echo($this->uri->segment(2)=='employees')?'active':'';?>">
+										<a href="<?php echo site_url('admin/employees');?>">
+											<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('employees');?></span> 
+										</a>
+									</li>
+									
+							<?php break;}}?>	
+							<?php foreach($actions as $action){if($action->action=='user_role'){?>
+								<li class="<?php echo($this->uri->segment(2)=='user_role')?'active':'';?>">
+									<a href="<?php echo site_url('admin/user_role');?>">
+										<i class="fa   fa-angle-double-right"></i> <span><?php echo lang('user_role')?></span>
+									</a>
+								</li>
+								
+							<?php break;}}?>
+							<?php foreach($actions as $action){if($action->action=='departments'){?>
+								<li class="<?php echo($this->uri->segment(2)=='departments')?'active':'';?>">
+									<a href="<?php echo site_url('admin/departments');?>">
+										<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('departments')?></span>
+									</a>
+								</li>
+							<?php break;}}?>
+							<?php foreach($actions as $action){if($action->action=='permissions'){?>	
+								<li class="<?php echo($this->uri->segment(2)=='permissions')?'active':'';?>">
+									<a href="<?php echo site_url('admin/permissions');?>">
+										<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('permissions')?></span>
+									</a>
+								</li>
+							 <?php break;}}?>	
+							 
+							 
+						<?php foreach($actions as $action){if($action->action=='holidays'){?>		 
+							 <li class="<?php echo($this->uri->segment(2)=='holidays')?'active':'';?>">
+									<a href="<?php echo site_url('admin/holidays');?>">
+										<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('holidays')?></span>
+									</a>
+								</li>
+					<?php break;}}?>	
+					<?php foreach($actions as $action){if($action->action=='notice'){?>				
+								<li class="<?php echo($this->uri->segment(2)=='notice')?'active':'';?>">
+									<a href="<?php echo site_url('admin/notice');?>">
+										<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('notice')?></span>
+									</a>
+								</li>
+					<?php break;}}?>				
+					<?php foreach($actions as $action){if($action->action=='leave_types'){?>				
+								<li class="<?php echo($this->uri->segment(2)=='leave_types')?'active':'';?>">
+									<a href="<?php echo site_url('admin/leave_types');?>">
+										<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('leave_types')?></span>
+									</a>
+								</li>
+					<?php break;}}?>				
+					<?php foreach($actions as $action){if($action->action=='attendance'){?>				
+								<li class="<?php echo($this->uri->segment(2)=='attendance')?'active':'';?>">
+									<a href="<?php echo site_url('admin/attendance');?>">
+										<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('attendance')?></span>
+									</a>
+								</li>
+					<?php break;}}?>	
+					
+					<?php if(check_user_role(130)==1){?>				
+								<li class="<?php echo($this->uri->segment(3)=='leave_notification')?'active':'';?>">
+									<a href="<?php echo site_url('admin/attendance/leave_notification');?>">
+										<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('leave_notification')?></span>
+									</a>
+								</li>	
+					<?php }?>						
+									
+							</ul>
                         </li>
-
-
-        <?php break;}}?>   
-
-        <?php foreach($actions as $action){if($action->action=='notice'){?>      
-                                <li class="<?php echo($this->uri->segment(2)=='notice')?'active':'';?>">
-                                    <a href="<?php echo site_url('admin/notice');?>">
-                                        <i class="fa fa-newspaper-o"></i> <span><?php echo lang('notice')?></span>
-                                    </a>
-                                </li>           
-        <?php break;}}?>    
-
-
-
-			<?php foreach($actions as $action){ 
-             if($action->action=='cases' || $action->action=='starred_cases'  || $action->action=='archived_cases' ||  $action->action=='case_study') { ?>
-    	
-		   <li class="treeview <?php echo($this->uri->segment(2)=='cases'|| $this->uri->segment(2)=='starred_cases'|| $this->uri->segment(2)=='archived_cases'|| $this->uri->segment(2)=='case_study')?'active':'';?>">
-                            <a href="#">
-                                <i class="fa fa-th"></i> <span><?php echo lang('cases');?></span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                  
-
-
-                        <?php foreach($actions as $action){if($action->action=='cases'){?>  
-                        <li class="<?php echo($this->uri->segment(2)=='cases' && $this->uri->segment(3) !='starred_cases' && $this->uri->segment(3) != 'archived_cases')?'active':'' ;?>">
+				<?php break;}}?>	
+				
+				
+            
+            
+				
+				<?php foreach($actions as $action){if($action->action=='cases'){?>		
+						<li class="<?php echo($this->uri->segment(2)=='cases' && $this->uri->segment(3) !='starred_cases' && $this->uri->segment(3) != 'archived_cases')?'active':'' ;?>">	
                             <a href="<?php echo site_url('admin/cases');?>">
                                 <i class="fa fa-th"></i> <span><?php echo lang('all');?> <?php echo lang('cases');?></span>
                             </a>
                         </li>
-                        <?php break;}}?> 
-                        <?php foreach($actions as $action){if($action->action=='starred_cases'){?>  
-                        <li class="<?php echo($this->uri->segment(3)=='starred_cases')?'active':'';?>">
+						<?php break;}}?>		
+					<?php foreach($actions as $action){if($action->action=='starred_cases'){?>		
+						<li class="<?php echo($this->uri->segment(3)=='starred_cases')?'active':'';?>">
                             <a href="<?php echo site_url('admin/cases/starred_cases');?>">
                                 <i class="fa fa-star"></i> <span><?php echo lang('starred_cases');?></span>
                             </a>
                         </li>
-                        <?php break;}}?> 
-                        <?php foreach($actions as $action){if($action->action=='archived_cases'){?>  
-                        <li class="<?php echo($this->uri->segment(3)=='archived_cases')?'active':'';?>">
+						<?php break;}}?>		
+				<?php foreach($actions as $action){if($action->action=='archived_cases'){?>		
+						<li class="<?php echo($this->uri->segment(3)=='archived_cases')?'active':'';?>">
                             <a href="<?php echo site_url('admin/cases/archived_cases');?>">
                                 <i class="fa fa-archive"></i> <span><?php echo lang('archived_cases');?></span>
                             </a>
                         </li>
-                        <?php break;}}?> 
-                        <?php foreach($actions as $action){if($action->action=='case_study'){?>  
-                        <li class="<?php echo($this->uri->segment(2)=='case_study')?'active':'';?>">
+					<?php break;}}?>
+				<?php foreach($actions as $action){if($action->action=='case_study'){?>			
+				<li class="<?php echo($this->uri->segment(2)=='case_study')?'active':'';?>">
                             <a href="<?php echo site_url('admin/case_study/');?>">
                                 <i class="fa fa-book"></i> <span><?php echo lang('case_study');?></span>
                             </a>
-                        </li> 
-                        <?php break;}}?> 
-                       
-                            </ul>
-                        </li>
-        <?php break;}}?>
-
-
-
-
-
-
-			<?php foreach($actions as $action){ 
-             if($action->action=='tasks' || $action->action=='my_tasks'  || $action->action=='to_do_list') { ?>
-				<li class="treeview <?php echo($this->uri->segment(2)=='tasks')?'active':'';?>">
+                        </li>	
+				<?php break;}}?>		
+			<?php foreach($actions as $action){if($action->action=='tasks'){?>		
+				 <li class="treeview <?php echo($this->uri->segment(2)=='tasks')?'active':'';?>">
                             <a href="#">
-                                <i class="fa fa-tasks"></i> <span><?php echo lang('Tasks');?></span>
+                                <i class="fa fa-tasks"></i> <span><?php echo lang('tasks');?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
-                                   <?php foreach($actions as $action){if($action->action=='tasks'){?>   
-                                    <li class="<?php echo($this->uri->segment(2)=='tasks')?'active':'';?>">
-                                        <a href="<?php echo site_url('admin/tasks');?>">
-                                            <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('Tasks');?></span> 
-                                            <small class="badge pull-right bg-red"><?php echo count($due_tasks) ?></small>
-                                        </a>
-                                    </li>
-                                    <?php break;}}?> 
-                                    <?php foreach($actions as $action){if($action->action=='my_tasks'){?>  
-                                     <li class="<?php echo($this->uri->segment(3)=='my_tasks')?'active':'';?>">
-                                        <a href="<?php echo site_url('admin/tasks/my_tasks');?>">
-                                            <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('my_tasks');?></span> 
-                                            <small class="badge pull-right bg-red"><?php echo count($my_due_tasks) ?></small>
-                                            
-                                        </a>
-                                    </li>
-                                    <?php break;}}?> 
-                                    <?php foreach($actions as $action){if($action->action=='to_do_list'){?>  
-                                    <li class="<?php echo($this->uri->segment(2)=='to_do_list')?'active':'';?>">
-                                        <a href="<?php echo site_url('admin/to_do_list');?>">
-                                         <i class="fa fa-bars"></i> <span><?php echo lang('to_do_list');?></span>
-                                        <small class="badge pull-right bg-red"><?php echo count($to_do_alert) ?></small>
-                                        </a>
-                                     </li>
-                                    <?php break;}}?> 
-                            </ul>
-                        </li>
+                        		    <li class="<?php echo($this->uri->segment(2)=='tasks')?'active':'';?>">
+										<a href="<?php echo site_url('admin/tasks');?>">
+											<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('tasks');?></span> 
+											<small class="badge pull-right bg-red"><?php echo count($due_tasks) ?></small>
+										</a>
+									</li>
+									<?php if(check_user_role(152)==1){?>	
+									 <li class="<?php echo($this->uri->segment(3)=='my_tasks')?'active':'';?>">
+										<a href="<?php echo site_url('admin/tasks/my_tasks');?>">
+											<i class="fa  fa-angle-double-right"></i> <span><?php echo lang('my_tasks');?></span> 
+											<small class="badge pull-right bg-red"><?php echo count($my_due_tasks) ?></small>
+											
+										</a>
+									</li>
+									<?php } ?>
+									
+							</ul>
+                        </li>				
 				<?php break;}}?>
 				
 			<?php foreach($actions as $action){if($action->action=='documents'){?>
@@ -999,9 +1000,9 @@ $fourth = $this->uri->segment(4);
 				
 					
 		<?php foreach($actions as $action){ 
-			 if($action->action=='case_category' || $action->action=='dept_category' || $action->action=='act' || $action->action=='dept' ||  
+			 if($action->action=='case_category' || $action->action=='court_category' || $action->action=='act' || $action->action=='court' ||  
 			 		$action->action=='case_stage' || $action->action=='location' || $action->action=='payment_mode') { ?>	
-				<li class="treeview <?php echo($this->uri->segment(2)=='case_category'|| $this->uri->segment(2)=='dept_category' || $this->uri->segment(2)=='act' || $this->uri->segment(2)=='dept' || $this->uri->segment(2)=='case_stage' || $this->uri->segment(2)=='location' || $this->uri->segment(2)=='tax' || $this->uri->segment(2)=='payment_mode')?'active':'';?>">
+				<li class="treeview <?php echo($this->uri->segment(2)=='case_category'|| $this->uri->segment(2)=='court_category' || $this->uri->segment(2)=='act' || $this->uri->segment(2)=='court' || $this->uri->segment(2)=='case_stage' || $this->uri->segment(2)=='location' || $this->uri->segment(2)=='tax' || $this->uri->segment(2)=='payment_mode')?'active':'';?>">
                             <a href="#">
                                 <i class="fa fa-folder"></i> <span><?php echo lang('masters') ?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -1029,10 +1030,10 @@ $fourth = $this->uri->segment(4);
                         </li>
 					<?php break;}}?>	
 						
-					<?php foreach($actions as $action){if($action->action=='dept_category'){?>	
-						<li class="<?php echo($this->uri->segment(2)=='dept_category')?'active':'';?>">
-                            <a href="<?php echo site_url('admin/dept_category');?>">
-                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('dept')?> <?php echo lang('category')?></span>
+					<?php foreach($actions as $action){if($action->action=='court_category'){?>	
+						<li class="<?php echo($this->uri->segment(2)=='court_category')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/court_category');?>">
+                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('court')?> <?php echo lang('category')?></span>
                             </a>
                         </li>
 					<?php break;}}?>	
@@ -1043,10 +1044,10 @@ $fourth = $this->uri->segment(4);
                             </a>
                         </li>
 					<?php break;}}?>	
-					<?php foreach($actions as $action){if($action->action=='dept'){?>
-						<li class="<?php echo($this->uri->segment(2)=='dept')?'active':'';?>">
-                            <a href="<?php echo site_url('admin/dept');?>">
-                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('dept')?></span>
+					<?php foreach($actions as $action){if($action->action=='court'){?>
+						<li class="<?php echo($this->uri->segment(2)=='court')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/court');?>">
+                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('court')?></span>
                             </a>
                         </li>       
 					<?php break;}}?>	
@@ -1070,7 +1071,7 @@ $fourth = $this->uri->segment(4);
 				
 			<?php foreach($actions as $action){ 
 			 if($action->action=='settings' || $action->action=='notification' || $action->action=='canned_messages' || $action->action=='languages') { ?>	
-				<li class="treeview <?php echo($this->uri->segment(2)=='case_category'|| $this->uri->segment(2)=='dept_category' || $this->uri->segment(2)=='act' || $this->uri->segment(2)=='dept' || $this->uri->segment(2)=='case_stage' || $this->uri->segment(2)=='location' || $this->uri->segment(2)=='payment_mode')?'active':'';?>">	
+				<li class="treeview <?php echo($this->uri->segment(2)=='case_category'|| $this->uri->segment(2)=='court_category' || $this->uri->segment(2)=='act' || $this->uri->segment(2)=='court' || $this->uri->segment(2)=='case_stage' || $this->uri->segment(2)=='location' || $this->uri->segment(2)=='payment_mode')?'active':'';?>">	
 				<li class="treeview <?php echo($this->uri->segment(2)=='settings'|| $this->uri->segment(2)=='notification' || $this->uri->segment(2)=='languages')?'active':'';?>">
                             <a href="#">
                                 <i class="fa fa-folder"></i> <span><?php echo lang('administrative');?></span>

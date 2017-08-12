@@ -109,13 +109,29 @@
                             </div>
                         </div>
                         <div class="form-group">
-                        	<div class="row">
+                            <div class="row">
                                 <div class="col-md-4">
-                                    <label for="name" style="clear:both;"> <?php echo lang('category');?></label>
-									<input type="text" name="category" value="<?php echo @$contact->category ?>" class="form-control">
+                                <label for="name" style="clear:both;"><?php echo lang('category');?></label>
+                                        <select name="category[]" class="form-control chzn col-md-12" multiple="multiple" >
+                                        <?php 
+										foreach($assigned_contact_categories as $new){
+											$contact_categories[] = $new->contact_categories_id;
+										}
+										
+										foreach($contact_categories as $new) {
+											$sel = "";
+											//if(set_select('employee_id', $new->id)) $sel = "selected='selected'";
+											$sel = (in_array($new->id,$contact_categories))?'selected="selected"': '';
+											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+										}
+										
+										?>
+                                    </select>
                                 </div>
                             </div>
                         </div>
+
+						
        					<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-4">

@@ -66,30 +66,7 @@
                         </div>
 						
 					
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('client')?> <?php echo lang('name')?></b>
-								
-								</div>
-								<div class="col-md-4">
-                                    <select name="client_id" class="form-control chzn">
-									<option value="">--<?php echo lang('select')?> <?php echo lang('client')?>--</option>
-									<?php foreach($clients as $new) {
-											$sel = "";
-											if(set_select('client_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
-                                </div>
-								  <div class="col-md-3">
-                                	<a href="#myModal" data-toggle="modal" class="btn bg-olive btn-flat margin"><?php echo lang('add')?>  <?php echo lang('new')?> <?php echo lang('client')?>	</a>		
-								</div>
-                            </div>
-                        </div>
-						
+									
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -114,14 +91,14 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('court')?> <?php echo lang('category')?></b>
+                                	<b><?php echo lang('dept')?> <?php echo lang('category')?></b>
 								</div>
-								<div class="col-md-4" id="court_category_result">
-                                    <select name="court_category_id"  id="court_category_id" class="chzn col-md-12"  disabled="disabled">
-										<option value="">--<?php echo lang('select')?> <?php echo lang('court')?> <?php echo lang('category')?>--</option>
-										<?php foreach($court_categories as $new) {
+								<div class="col-md-4" id="dept_category_result">
+                                    <select name="dept_category_id"  id="dept_category_id" class="chzn col-md-12"  disabled="disabled">
+										<option value="">--<?php echo lang('select')?> <?php echo lang('dept')?> <?php echo lang('category')?>--</option>
+										<?php foreach($dept_categories as $new) {
 											$sel = "";
-											if(set_select('court_category_id', $new->id)) $sel = "selected='selected'";
+											if(set_select('dept_category_id', $new->id)) $sel = "selected='selected'";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
@@ -134,14 +111,14 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('court')?></b>
+                                	<b><?php echo lang('dept')?></b>
 								</div>
-								<div class="col-md-4" id="court_result">
-                                    <select name="court_id" id="court_id" disabled="disabled" class="chzn col-md-12" >
-										<option value="">--<?php echo lang('select')?> <?php echo lang('court')?>--</option>
-										<?php foreach($courts as $new) {
+								<div class="col-md-4" id="dept_result">
+                                    <select name="dept_id" id="dept_id" disabled="disabled" class="chzn col-md-12" >
+										<option value="">--<?php echo lang('select')?> <?php echo lang('dept')?>--</option>
+										<?php foreach($depts as $new) {
 											$sel = "";
-											if(set_select('court_id', $new->id)) $sel = "selected='selected'";
+											if(set_select('dept_id', $new->id)) $sel = "selected='selected'";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
@@ -173,46 +150,8 @@
                         </div>
 						
 						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('case')?> <?php echo lang('stage')?></b>
-								</div>
-								<div class="col-md-4">
-                                    <select name="case_stage_id" class="chzn col-md-12">
-										<option value="">--<?php echo lang('select')?> <?php echo lang('case')?> <?php echo lang('stage')?>--</option>
-										<?php foreach($stages as $new) {
-											$sel = "";
-											if(set_select('case_stage_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
-                                </div>
-                            </div>
-                        </div>
 						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('act')?></b>
-								</div>
-								<div class="col-md-4">
-                                    <select name="act_id[]" class="chzn col-md-12" multiple="multiple" >
-										<?php foreach($acts as $new) {
-											$sel = "";
-											if(set_select('act_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->title.'</option>';
-										}
-										
-										?>
-										
-									</select>
-                                </div>
-                            </div>
-                        </div>
-						
+															
 						
 						<div class="form-group">
                         	<div class="row">
@@ -260,17 +199,7 @@
                         </div>
 						
 						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('total_fees')?></b>
-								</div>
-								<div class="col-md-4">
-                                   <input type="text" name="fees" value="<?php echo set_value('fees'); ?>" class="form-control"/>
-                                </div>
-                            </div>
-                        </div>
-						
+											
 						<?php 
 						if($fields){
 							foreach($fields as $doc){
@@ -683,36 +612,36 @@ $(document).on('change', '#location_id', function(){
  //alert(12);
  	vch = $(this).val();
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
-  $('#court_category_result').html(ajax_load);
+  $('#dept_category_result').html(ajax_load);
 	  
   $.ajax({
-    url: '<?php echo site_url('admin/cases/get_court_categories') ?>',
+    url: '<?php echo site_url('admin/cases/get_dept_categories') ?>',
     type:'POST',
     data:{id:vch},
     success:function(result){
       //alert(result);return false;
-	  $('#court_category_result').html(result);
+	  $('#dept_category_result').html(result);
 	  $(".chzn").chosen();
 	 }
   });
 });
 
 
-$(document).on('change', '#court_category_id', function(){
+$(document).on('change', '#dept_category_id', function(){
  //alert(12);
  	location_id = $('#location_id').val();
-	c_c_id 		= $('#court_category_id').val();
+	c_c_id 		= $('#dept_category_id').val();
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
-  $('#court_result').html(ajax_load);
+  $('#dept_result').html(ajax_load);
 	  
   $.ajax({
-    url: '<?php echo site_url('admin/cases/get_courts') ?>',
+    url: '<?php echo site_url('admin/cases/get_depts') ?>',
     type:'POST',
     data:{l_id:location_id,c_id:c_c_id},
 	
 	success:function(result){
       //alert(result);return false;
-	  $('#court_result').html(result);
+	  $('#dept_result').html(result);
 	  $(".chzn").chosen();
 	 }
   });

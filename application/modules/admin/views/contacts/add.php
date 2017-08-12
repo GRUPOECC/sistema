@@ -104,21 +104,14 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
-                                    <label for="name" style="clear:both;"><?php echo lang('category');?></label>
-									<input type="text" name="category" value="<?php echo set_value('category'); ?>" class="form-control">
-                                </div>
-                            </div>
-                        </div>
+
 
 
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-4">
                                 <label for="name" style="clear:both;"><?php echo lang('category');?></label>
-                                        <select name="contact_category_id[]" class="chzn col-md-12" multiple="multiple" >
+                                        <select name="category[]" class="chzn col-md-12" multiple="multiple" >
                                         <?php foreach($contact_categories as $new) {
                                             $sel = "";
                                             if(set_select('contact_category_id', $new->id)) $sel = "selected='selected'";
@@ -130,7 +123,6 @@
                                 </div>
                             </div>
                         </div>
-
 
 
                         <div class="form-group">

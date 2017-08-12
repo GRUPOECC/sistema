@@ -45,6 +45,7 @@ $lang['dashboard']      	 = "Dasbhoard";
 $lang['file']      	 = "Archivo";
 $lang['my_cases']      	 = "Mis Tickets";
 $lang['cases']      	 = "Tickets";
+$lang['loc']      	 = "Locacion";
 $lang['case']      	 = "Ticket";
 $lang['cases_open']      	 = "Tickets Abiertos";
 $lang['more_info']      	 = "Más información";
@@ -52,8 +53,8 @@ $lang['case_alert_days']      	 = "Días de alerta de tickets";
 $lang['click_here_to_change_setting']      	 = "Haga clic aquí para cambiar el ajuste";
 $lang['clients']      	 = "Clientes";
 $lang['client']      	 = "Cliente";
-$lang['starred_cases']      	 = "Tickets con Estrella";
-$lang['archived_cases']      	 = "Tickets archivados";
+$lang['starred_cases']      	 = "Tickets Estrella";
+$lang['archived_cases']      	 = "Tickets Archivados";
 $lang['todays_cases']      	 = "TICKETS de hoy";
 $lang['todays_to_do']      		 = "PARA HACER hoy";
 $lang['view_all']      	 = "Ver todos";
@@ -81,6 +82,8 @@ $lang['motive']      	 = "Motivo";
 $lang['masters']      	 = "Maestros";
 $lang['administrative']      	 = "Administración";
 $lang['court'] 		     	 = "Corte";
+$lang['dept'] 		     	 = "departamento";
+$lang['Dept'] 		     	 = "Departamento";
 $lang['category_name']      	 = "Nombre de categoría";
 $lang['act']      	 	= "Ley";
 $lang['stages']      	 	= "etapas";
@@ -375,7 +378,7 @@ $lang['user_role_deleted']				= "La función de usuario ha sido Eliminada";
 
 $lang['permissions']      	 		= "Permisos";
 $lang['no_access']      		 	= "usted no tiene permiso para acceder a";
-$lang['user_management']      	 	= "Gestión de Recursos Humanos";
+$lang['user_management']      	 	= "Gestión de Usuarios";
 $lang['employees']      		 	= "Empleados";
 $lang['employee']		      	 	= "Empleado";
 $lang['employee_id']	      	 	= "Número de Identificación del Empleado";
@@ -384,6 +387,10 @@ $lang['joining_salary']	      	 	= "La unión de salario";
 $lang['employee_saved']				= "Empleado guardado";
 $lang['employee_upated']			= "Actualización del empleado";
 $lang['employee_deleted']			= "Empleado Eliminado";
+$lang['add_contact_category']			= "Categoría";
+
+
+
 $lang['employee_id_start_from']     = "Los empleados Número de Identificación del inicio de";
 
 $lang['bank_details']		      	 	= "Datos bancarios";
@@ -397,6 +404,7 @@ $lang['bank_details_saved']		      	 	= "Datos bancarios guardado";
 $lang['bank_details_deleted']		      	 	= "Datos bancarios Eliminado";
 
 $lang['tasks']      		 		= "tareas";
+$lang['Tasks']      		 		= "Tareas";
 $lang['my_tasks']      		 		= "Mis tareas";
 $lang['comments']      		 		= "Comentarios";
 $lang['comment']      		 		= "Comentario";
@@ -431,11 +439,11 @@ $lang['holiday_saved']				= "Holiday Saved";
 $lang['holiday_upated']				= "Holiday Updated";
 $lang['holiday_deleted']			= "Holiday Deleted";
 
-$lang['notice']		      		= "Notice";
-$lang['notice_board']		      		= "Notice Board";
-$lang['notice_saved']			= "Notice Saved";
-$lang['notice_upated']			= "Notice Updated";
-$lang['notice_deleted']			= "Notice Deleted";
+$lang['notice']		      		= "Anuncios";
+$lang['notice_board']		    = "Tabla de Anuncios";
+$lang['notice_saved']			= "Anuncio guardado";
+$lang['notice_upated']			= "Anuncio actualizado";
+$lang['notice_deleted']			= "Anuncio eliminado";
 
 $lang['leaves']		      		= "Leaves";
 $lang['my_leaves']		      		= "My Leaves";
@@ -474,7 +482,7 @@ $lang['tax_saved']				= "Impuesto guardado";
 $lang['tax_upated']				= "TImpuesto Actualizado";
 $lang['tax_deleted']			= "Eliminado de impuestos";
 
-$lang['case_study']		      		= "Estudio de Ticket";
+$lang['case_study']		      		= "Analisis de Ticket";
 $lang['attachments']		      		= "Anexos";
 $lang['case_study_saved']				= "Ticket de Estudio guardadas";
 $lang['case_study_upated']				= "Estudio de ticket Actualización";

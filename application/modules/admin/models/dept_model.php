@@ -10,7 +10,7 @@
  * @link		#
  */
 
-class contact_model extends CI_Model 
+class dept_model extends CI_Model 
 {
 	function __construct()
 	{
@@ -18,42 +18,32 @@ class contact_model extends CI_Model
 		$this->load->database();
 	}
 	
-	function import_data($save)
-	{
-		$this->db->insert_batch('contacts', $save); 
-	}
-	
 	function save($save)
 	{
-		$this->db->insert('contacts',$save);
-		return $this->db->insert_id(); 
+		$this->db->insert('depts',$save);
 	}
 	
 	function get_all()
 	{
-			return $this->db->get('contacts')->result();
+			return $this->db->get('depts')->result();
 	}
 	
-	function get_contact_by_id($id)
+	function get_dept_by_id($id)
 	{
 			   $this->db->where('id',$id);
-		return $this->db->get('contacts')->row();
+		return $this->db->get('depts')->row();
 	}
 	
 	function update($save,$id)
 	{
 			   $this->db->where('id',$id);
-		       $this->db->update('contacts',$save);
+		       $this->db->update('depts',$save);
 	}
 	
-	function get_all_contact_categories()
-	{
-		return $this->db->get('contact_categories')->result();
-	}
 	
-	function delete($id)//delte contact
+	function delete($id)//delte 
 	{
 			   $this->db->where('id',$id);
-		       $this->db->delete('contacts');
+		       $this->db->delete('depts');
 	}
 }

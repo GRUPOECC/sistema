@@ -41,6 +41,7 @@ function areyousure()
 			  <table class="table table-bordered table-hover tablesorter" id="example">
                 <thead>
                   <tr>
+                    <th>Id Actions</th>
                   	<th>Actions</th>
                     <?php foreach($departments as $department){?>
                     	<th><?php echo ucwords($department->name)?></th>	
@@ -51,7 +52,7 @@ function areyousure()
                
                 	<?php foreach($pactions as $paction){
 						 if($paction->parent_id==0){?>
-                    	    <tr>
+                    	    <tr><th>Id Actions</th>
 							<td><b><?php echo $paction->alias?></b></td>
                             <?php foreach($departments as $depart){
 								$checked = '';
@@ -64,10 +65,12 @@ function areyousure()
 							}
 						 ?>
                         </tr>
+
+                        
                         <?php foreach($actions as $action){
 						if($action->is_hidden==0)
 						 if($action->parent_id==$paction->id){ if($action->always_allowed==1){//&& $action->always_allowed!=1){?>
-                    	    <tr>
+                    	    <tr><th>Id Actions</th>
 							<td>--> <?php echo $action->alias?></td>
                             <?php foreach($departments as $depart){
 								echo '<td><input type="checkbox" name="access['.$depart->id.']['.$action->id.']" checked disabled/></td>';
@@ -76,7 +79,7 @@ function areyousure()
 						     ?>
                             </tr>
                             
-                            <tr>
+                            <tr><th>Id Actions</th>
 							<td>--> <?php echo $action->alias?></td>
                             <?php foreach($departments as $depart){
 								$checked = '';

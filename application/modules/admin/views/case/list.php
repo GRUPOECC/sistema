@@ -34,22 +34,13 @@ function areyousure()
 		 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="">
-                    <div class="col-xs-2">
-						<select name="filter" id="client_id" class="form-control chzn">
-							<option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('client')?>--</option>
-										<?php foreach($clients as $new) {
-											$sel = "";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-						</select>
-					</div>
-					
+                    
+
+          					
 					 <div class="col-xs-2">
-						<select name="filter_court" id="court_id" class="form-control chzn">
-							<option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('court')?>--</option>
-									<?php foreach($courts as $new) {
+						<select name="filter_dept_cat" id="dept_cat_id" class="form-control chzn">
+							<option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('dept_category')?>--</option>
+									<?php foreach($depts_cats as $new) {
 											$sel = "";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 											}
@@ -57,7 +48,17 @@ function areyousure()
 									?>
 						</select>
 					</div>
-						
+					<div class="col-xs-2">
+            <select name="filter_dept" id="dept_id" class="form-control chzn">
+              <option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('dept')?>--</option>
+                  <?php foreach($depts as $new) {
+                      $sel = "";
+                      echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                      }
+                    
+                  ?>
+            </select>
+          </div>
 					 <div class="col-xs-2">
 						<select name="filter_location" id="location_id" class="form-control chzn">
 							<option>--<?php echo lang('filter')?> <?php echo lang('by');?> <?php echo lang('location');?>--</option>
@@ -278,14 +279,14 @@ $(document).on('change', '#client_id', function(){
 });
 
 
-$(document).on('change', '#court_id', function(){
+$(document).on('change', '#dept_id', function(){
  //alert(12);
  	vch = $(this).val();
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
   $('#result').html(ajax_load);
 	  
   $.ajax({
-    url: '<?php echo site_url('admin/cases/get_case_by_court') ?>',
+    url: '<?php echo site_url('admin/cases/get_case_by_dept') ?>',
     type:'POST',
     data:{id:vch},
     success:function(result){
@@ -294,6 +295,25 @@ $(document).on('change', '#court_id', function(){
 	  $(".chzn").chosen();
 	  $('#example1').dataTable({});
 	 }
+  });
+});
+
+$(document).on('change', '#dept_cat_id', function(){
+ //alert(12);
+  vch = $(this).val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#result').html(ajax_load);
+    
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/get_case_by_dept_cat') ?>',
+    type:'POST',
+    data:{id:vch},
+    success:function(result){
+      //alert(result);return false;
+    $('#result').html(result);
+    $(".chzn").chosen();
+    $('#example1').dataTable({});
+   }
   });
 });
 

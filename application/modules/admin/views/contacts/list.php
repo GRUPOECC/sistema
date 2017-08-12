@@ -20,13 +20,26 @@ function areyousure()
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="col-md3">
-				  <?php if(check_user_role(22)==1){?>
-                    <a class="btn btn-default"style="margin-left:10px;" href="<?php echo site_url('admin/contacts/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
+				     <?php if(check_user_role(22)==1){?>
+                     <a class="btn btn-default" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/add/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
 					 <?php } ?>	
+                     <?php if(check_user_role(173)==1){?>
 					 <a class="btn btn-primary" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/export/'); ?>"><i class="fa fa-download"></i> <?php echo lang('export');?></a>
-					  <?php if(check_user_role(22)==1){?>
-                        <a href="#myModal" data-toggle="modal" class="btn bg-olive btn-flat margin"><i class="fa fa-caret-square-o-down"></i> <?php echo lang('import');?></a>		
-					 <?php } ?>				
+					 <?php } ?> 
+                     <?php if(check_user_role(174)==1){?>
+                     <a class="btn bg-olive" style="margin-left:10px;" href="#myModal" data-toggle="modal" >
+                     <i class="fa fa-caret-square-o-down"></i> <?php echo lang('import');?></a>      
+                     <?php } ?>  
+    		         <?php if(check_user_role(175)==1){?>
+                     <a class="btn bg-yellow" style="margin-left:10px;" href="<?php echo site_url('admin/contact_category/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_contact_category');?></a>
+                     <?php } ?> 
+
+
+
+
+
+
+
                 </div>
             </div>    
         </div>	
@@ -35,7 +48,7 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('add');?></h3>                                    
+                                               
                 </div><!-- /.box-header -->
 				
                 <div class="box-body table-responsive" style="margin-top:40px;">

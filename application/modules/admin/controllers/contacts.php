@@ -28,7 +28,8 @@ class contacts extends MX_Controller {
 	
 	
 	function add(){
-		$data['fields'] = $this->custom_field_model->get_custom_fields(4);	
+		$data['fields'] = $this->custom_field_model->get_custom_fields(4);
+		$data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');
@@ -54,7 +55,7 @@ class contacts extends MX_Controller {
 				$save['phone2'] = $this->input->post('phone2');
 				$save['phone3'] = $this->input->post('phone3');
 				$save['phone4'] = $this->input->post('phone4');
-				$save['category'] = $this->input->post('category');
+				$save['category'] = json_encode($this->input->post('category'));
 				$save['company'] = $this->input->post('company');
 				$save['department'] = $this->input->post('department');
 
@@ -80,6 +81,7 @@ class contacts extends MX_Controller {
 		}	
 		$data['page_title'] = lang('add') . lang('contact');
 		$data['body'] = 'contacts/add';
+
 		
 		$this->load->view('template/main', $data);	
 
@@ -88,6 +90,7 @@ class contacts extends MX_Controller {
 	
 	function edit($id=false){
 		$data['fields'] = $this->custom_field_model->get_custom_fields(4);
+		$data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
 		$data['contact'] = $data['clients'] = $this->contact_model->get_contact_by_id($id);
 		$data['id'] =$id;
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
@@ -106,7 +109,7 @@ class contacts extends MX_Controller {
 				$save['phone2'] = $this->input->post('phone2');
 				$save['phone3'] = $this->input->post('phone3');
 				$save['phone4'] = $this->input->post('phone4');
-				$save['category'] = $this->input->post('category');
+				$save['category'] = json_encode($this->input->post('category'));
 				$save['company'] = $this->input->post('company');
 				$save['department'] = $this->input->post('department');
 

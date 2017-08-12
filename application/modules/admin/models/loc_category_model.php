@@ -10,7 +10,8 @@
  * @link		#
  */
 
-class contact_model extends CI_Model 
+
+class loc_category_model extends CI_Model 
 {
 	function __construct()
 	{
@@ -18,42 +19,35 @@ class contact_model extends CI_Model
 		$this->load->database();
 	}
 	
-	function import_data($save)
-	{
-		$this->db->insert_batch('contacts', $save); 
-	}
-	
 	function save($save)
 	{
-		$this->db->insert('contacts',$save);
-		return $this->db->insert_id(); 
+		$this->db->insert('loc_categories',$save);
 	}
 	
 	function get_all()
 	{
-			return $this->db->get('contacts')->result();
+		$this->db->order_by('C1.name','ASC');
+		$this->db->select('C1.*,C2.name parent');
+		$this->db->join('loc_categories C2', 'C2.id = C1.parent_id', 'LEFT');
+		return $this->db->get('loc_categories C1')->result();
 	}
 	
-	function get_contact_by_id($id)
+	function get_category_by_id($id)
 	{
 			   $this->db->where('id',$id);
-		return $this->db->get('contacts')->row();
+		return $this->db->get('loc_categories')->row();
 	}
 	
 	function update($save,$id)
 	{
 			   $this->db->where('id',$id);
-		       $this->db->update('contacts',$save);
+		       $this->db->update('loc_categories',$save);
 	}
 	
-	function get_all_contact_categories()
-	{
-		return $this->db->get('contact_categories')->result();
-	}
 	
-	function delete($id)//delte contact
+	function delete($id)//delte client
 	{
 			   $this->db->where('id',$id);
-		       $this->db->delete('contacts');
+		       $this->db->delete('loc_categories');
 	}
 }

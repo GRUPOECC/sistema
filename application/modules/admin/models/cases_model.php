@@ -140,18 +140,18 @@ class cases_model extends CI_Model
 			return $this->db->get('cases C')->result();
 	}
 	
-	function get_cases_by_court_id($id)
+	function get_cases_by_dept_id($id)
 	{
-			$this->db->where('C.court_id',$id);
+			$this->db->where('C.dept_id',$id);
 			$this->db->where('C.is_archived',0);
 			$this->db->select('C.*,U.name client');
 			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
 			return $this->db->get('cases C')->result();
 	}
 	
-	function get_cases_by_court_id_starred($id)
+	function get_cases_by_dept_id_starred($id)
 	{
-			$this->db->where('C.court_id',$id);
+			$this->db->where('C.dept_id',$id);
 			$this->db->where('C.is_archived',0);
 			$this->db->where('C.is_starred',1);
 			$this->db->select('C.*,U.name client');
@@ -278,10 +278,10 @@ class cases_model extends CI_Model
 			return $this->db->get('cases C')->result();
 	}
 	
-	function get_archive_cases_by_court_id($id)
+	function get_archive_cases_by_dept_id($id)
 	{
 			$this->db->where('C.is_archived',1);
-			$this->db->where('C.court_id',$id);
+			$this->db->where('C.dept_id',$id);
 			$this->db->select('C.*,U.name client,CS.name stage');
 			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
 			$this->db->join('case_stages CS', 'CS.id = C.case_stage_id', 'LEFT');
@@ -437,18 +437,31 @@ class cases_model extends CI_Model
 				   $this->db->where('user_role',2);
 			return $this->db->get('users')->result();
 	}
-	
-	function get_all_courts()
+
+	function get_all_employees()
 	{
-			return $this->db->get('courts')->result();
+				   $this->db->where('user_role',3);
+			return $this->db->get('users')->result();
 	}
 	
+	function get_all_depts()
+	{
+			return $this->db->get('depts')->result();
+	}
+	
+	function get_all_depts_cats()
+	{
+			return $this->db->get('dept_categories')->result();
+	}
 	
 	function get_all_locations()
 	{				
-				   $this->db->order_by('name','ASC');	
-			return $this->db->get('locations')->result();
+				   $this->db->order_by('cod_interno','ASC');	
+//			return $this->db->get('locations')->result();
+			return $this->db->get('loc_categories')->result();
+
 	}
+
 	
 	
 	function get_all_acts()
@@ -479,25 +492,25 @@ class cases_model extends CI_Model
 			return $this->db->get('case_categories')->result();
 	}
 	
-	function get_court_catogries_by_location($id)
+	function get_dept_catogries_by_location($id)
 	{				
 					$this->db->where('location_id',$id);
-					$this->db->join('court_categories CG', 'CG.id = C.court_category_id', 'LEFT');
+					$this->db->join('dept_categories CG', 'CG.id = C.dept_category_id', 'LEFT');
 					$this->db->select('CG.id,CG.name');
-			return $this->db->get('courts C')->result();
+			return $this->db->get('depts C')->result();
 	}
 	
 	
-	function get_court_by_location_c_category($l_id,$c_id)
+	function get_dept_by_location_c_category($l_id,$c_id)
 	{				
 					$this->db->where('location_id',$l_id);
-					$this->db->where('court_category_id',$c_id);
-			return  $this->db->get('courts C')->result();
+					$this->db->where('dept_category_id',$c_id);
+			return  $this->db->get('depts C')->result();
 	}
 	
 	
-	function get_all_court_categories()
+	function get_all_dept_categories()
 	{
-			return $this->db->get('court_categories')->result();
+			return $this->db->get('dept_categories')->result();
 	}
 }
