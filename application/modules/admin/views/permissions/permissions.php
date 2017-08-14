@@ -25,8 +25,19 @@ function areyousure()
 <?php if(check_user_role(50)==1){?>					
 <div class="box-body table-responsive" style="margin-top:40px;">
 <div class="row">
-  <div class="col-lg-12">
+  <div class="col-lg-2">
    	<button type="submit" class="btn btn-primary" form="permission">Submit</button>
+  </div>
+  <?php $ppactions = $actions?>
+  <div class="col-lg-4">
+  <select class="selectpicker" id="modulos" onchange="filtrar()">
+  <option value ="">Todos</option>
+    <?php foreach($actions as $ppactions){ 
+      $nombre=$ppactions->alias;
+      if($ppactions->parent_id==0){?>
+    <option value =<?php echo $ppactions->id?>><?php echo $nombre?></option>
+    <?php }} ?>  
+  </select>
   </div>
 </div>
 <?php } ?>	
@@ -41,6 +52,7 @@ function areyousure()
 			  <table class="table table-bordered table-hover tablesorter" id="example">
                 <thead>
                   <tr>
+                    <th style="display:none;">Id Parent</th>
                     <th>Id Actions</th>
                   	<th>Actions</th>
                     <?php foreach($departments as $department){?>
@@ -52,7 +64,9 @@ function areyousure()
                
                 	<?php foreach($pactions as $paction){
 						 if($paction->parent_id==0){?>
-                    	    <tr><th>Id Actions</th>
+                    	    <tr>
+                          <td style="display:none;"><?php echo $paction->parent_id?></td>
+                          <th><?php echo $paction->id?></th>
 							<td><b><?php echo $paction->alias?></b></td>
                             <?php foreach($departments as $depart){
 								$checked = '';
@@ -70,7 +84,9 @@ function areyousure()
                         <?php foreach($actions as $action){
 						if($action->is_hidden==0)
 						 if($action->parent_id==$paction->id){ if($action->always_allowed==1){//&& $action->always_allowed!=1){?>
-                    	    <tr><th>Id Actions</th>
+                    	    <tr>
+                          <td style="display:none;"><?php echo $action->parent_id?></td>
+                          <th><?php echo $action->id?></th>
 							<td>--> <?php echo $action->alias?></td>
                             <?php foreach($departments as $depart){
 								echo '<td><input type="checkbox" name="access['.$depart->id.']['.$action->id.']" checked disabled/></td>';
@@ -79,7 +95,9 @@ function areyousure()
 						     ?>
                             </tr>
                             
-                            <tr><th>Id Actions</th>
+                            <tr>
+                            <td style="display:none;"><?php echo $action->parent_id?></td> 
+                            <th><?php echo $action->id?></th>
 							<td>--> <?php echo $action->alias?></td>
                             <?php foreach($departments as $depart){
 								$checked = '';
@@ -123,6 +141,44 @@ $(function() {
 	});
 });
 
+function filtrar() {
+  // Declare variables 
+  var input, id,filter, table, tr, td, i, hiddenId; 
+  input=$("#modulos option:selected").text();
+  id=$("#modulos").val();
+    // Declare variables 
+  filter = input.toUpperCase();
+  table = document.getElementById("example");
+  tr = table.getElementsByTagName("tr");
+  if(!input.localeCompare("Todos") == 0){
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    hiddenId = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        if(hiddenId.innerHTML.toUpperCase().indexOf(id) > -1){
+          tr[i].style.display = "";
+        }
+        else{
+          tr[i].style.display = "none";
+      }
+        
+      }
+    } 
+  }
+}
+else
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    hiddenId = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+        tr[i].style.display = "";
+    } 
+  }
+}
 </script>
 
 
