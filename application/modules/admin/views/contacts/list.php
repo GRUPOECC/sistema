@@ -1,4 +1,7 @@
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css')?>" rel="stylesheet">
+<script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
+
 <script type="text/javascript">
 function areyousure()
 {
@@ -34,25 +37,32 @@ function areyousure()
                      <a class="btn bg-yellow" style="margin-left:10px;" href="<?php echo site_url('admin/contact_category/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_contact_category');?></a>
                      <?php } ?> 
 
-
-
-
-
-
-
                 </div>
             </div>    
         </div>	
         
   	  	<div class="row">
           <div class="col-xs-12">
-            <div class="box">
+          
+            <div class="box" style="display:inline-block;">
+                
                 <div class="box-header">
                                                
-                </div><!-- /.box-header -->
-				
+                </div><!-- /.box-header -->    
+
                 <div class="box-body table-responsive" style="margin-top:40px;">
+
+
+                  <p align="right">                              
+                     <input type="checkbox" data-toggle="toggle" data-on="Cuadricula" data-off="Listado" onchange="cambioVista()">
+
+                  </p>
+
+
+                   <div id="modo-lista"> <!-- /.Vista de listado -->   
                     <table id="example1" class="table table-bordered table-striped">
+                     
+                
                         <thead>
                             <tr>
  								<th><?php echo lang('name');?></th>
@@ -87,13 +97,76 @@ function areyousure()
                                 </tr>
                                 <?php $i++;}?>
                         </tbody>
+                  
+
                         <?php endif;?>
+                        
                     </table>
+                </div>
+                <!-- /. Fin Vista de Listado -->
+
+                <!--Vista de Cuadricula  -->
+                   <!--Codigo implementado por: Garry Bruno -->
+                   <div id="modo-cuadricula">
+                          <div class="row">
+                             <div class=" col-md-12">
+                               <div>
+                                   <p align="right"> Buscar: <input type="text" size="30" id="search" name="buscar" autofocus></p>
+                               </div>
+                             </div>
+
+                          </div>
+                           <div id="resultados">
+                             <?php if(isset($contacts)):?>
+                              <?php $i=1;foreach ($contacts as $new){ ?>
+                            
+                             <div name="elemento" class=" col-md-3" style="background: #EFEEEE; margin: 8px; color: #000">
+                               <p>
+                                <strong>Nombre:</strong> <?php echo $new->name?>
+                                <br> 
+                                <strong>Compañía:</strong> <?php echo $new->company?>                
+                                <br>
+                                <strong>Categoría:</strong> <?php echo $new->category?>
+                                <br>
+                                <strong>Correo:</strong> <?php echo $new->email?>
+                                <br>
+                                <strong>Teléfono:</strong>  <?php echo $new->phone1?>
+                                <br>             
+                               </p>
+                               <div class="btn-group">
+                                          <?php if(check_user_role(155)==1){?>  
+                      <a class="btn btn-default"  href="<?php echo site_url('admin/contacts/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
+                       <?php } ?>
+                      <?php if(check_user_role(23)==1){?>  
+                      <a class="btn btn-primary"  href="<?php echo site_url('admin/contacts/edit/'.$new->id); ?>" style="margin-left:10px;"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
+                       <?php } ?> 
+                        <?php if(check_user_role(24)==1){?>
+                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
+                        <?php } ?>  
+                                        </div>
+                             </div>
+
+   
+                              <?php $i++;}?>
+                             <?php endif;?>
+
+                    </div>
+
+                   </div>
+                   <!--Fin Vista de Cuadricula  -->
+
+
+
 			     </div><!-- /.box-body -->
+          
             </div><!-- /.box -->
+            
+
+
         </div>
     </div>
 </section>
+
 
 
 <!-- Modal -->
@@ -140,6 +213,7 @@ function areyousure()
 </div>
 
 
+<script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
@@ -147,5 +221,6 @@ $(function() {
 	$('#example1').dataTable({
 	});
 });
+
 
 </script>
