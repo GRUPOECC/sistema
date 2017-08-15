@@ -56,6 +56,7 @@ class user_role_model extends CI_Model
 	
 	
 		public function get_all_actions(){
+			   $this->db->order_by("alias", "asc");
 		return $this->db->get('actions')->result();
 	}
 	 
