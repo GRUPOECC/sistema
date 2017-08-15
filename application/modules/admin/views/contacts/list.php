@@ -152,6 +152,23 @@ function areyousure()
 
                     </div>
 
+
+                    <div class="col-md-12">
+                       <div class="row">
+                       <div class="col-xs-6">
+                       <div class="dataTables_info" id="example1_info">Mostrando <?php echo $i ?> Respuestas</div>
+                       </div>
+                       <div class="col-xs-6">
+                       <div class="dataTables_paginate paging_bootstrap">
+                       <ul class="pagination">
+                       <li class="prev">
+                       <a onclick="anterior()" href="javascript:void(null)">← Anterior</a>
+                       </li>
+                       <li class="active">
+                       <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li class="next"><a onclick="siguiente()" href="javascript:void(null)">Siguiente → </a></li></ul></div></div></div>
+                      
+                    </div>
+
                    </div>
                    <!--Fin Vista de Cuadricula  -->
 
