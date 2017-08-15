@@ -16,6 +16,7 @@
 //Inizializo variables:
 //----------------------------------------------------------
 var x =0;  //Vale 0 por que es el estado inicial del listado
+var y =9;  // Variable que controla la paginacion 
 //Inilizo una lista por defecto:
 listaporDefecto();
 //----------------------------------------------------------
@@ -38,8 +39,42 @@ function listaporDefecto(){
          document.getElementById('modo-lista').style.display = "block";
          document.getElementById('modo-cuadricula').style.display = "none";
          x=1;
+         paginamiento(9);
+       
 }
 
+
+//Funcion encargada de distribuir los resultados en paginas 
+//---------------------------------------------------------------------------------
+function paginamiento(pagina){
+     var listado = document.getElementById("resultados"),
+         contacto = listado.getElementsByTagName("p");
+         for (i=0;i<contacto.length;i++){
+             
+         
+            if (((pagina-9)<i)&&(pagina>=i)){
+
+               contacto[i].parentNode.style.display='block';
+             
+             }else 
+                 contacto[i].parentNode.style.display = "none";   
+
+               
+            }
+            
+
+}
+
+function siguiente(){
+   y=y+9;
+   paginamiento(y);
+}
+
+function anterior(){
+   if (y!=9) 
+   y=y-9;
+   paginamiento(y);
+} 
 
 //-----------------------------------------------------------------------------------
 //Proceso encargado de la busqueda de datos el listado de Contactos: 
@@ -56,7 +91,10 @@ function listaporDefecto(){
         if (f.innerHTML.toLowerCase().search(choice.toLowerCase()) == -1)
             f.parentNode.style.display = "none";        
         else
-            f.parentNode.style.display = "block";        
+            f.parentNode.style.display = "block";     
+
     });
+    
     }, false);
+
 //------------------------------------------------------------------------------------
