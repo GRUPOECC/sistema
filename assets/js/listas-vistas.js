@@ -94,7 +94,11 @@ function anterior(){
             f.parentNode.style.display = "block";     
 
     });
-    
+    if (this.value=="")
+    {
+        paginamiento(9);
+    }
+
     }, false);
 
 //------------------------------------------------------------------------------------
