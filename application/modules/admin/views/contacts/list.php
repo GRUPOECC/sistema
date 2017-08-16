@@ -3,11 +3,19 @@
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
 
 <script type="text/javascript">
+//window.onload = detectarCarga;
+//function detectarCarga(){
+//   document.getElementById("modo-lista").style.display="block";
+//}
+
 function areyousure()
 {
 	return confirm('<?php echo lang('are_you_sure');?>');
 }
 </script>
+
+
+
 <section class="content-header">
         <h1>
             <?php echo $page_title; ?>
@@ -74,7 +82,11 @@ function areyousure()
                         
                         <?php if(isset($contacts)):?>
                         <tbody>
-                            <?php $i=1;foreach ($contacts as $new){?>
+                            <?php 
+                               $contador = 0; 
+                            $i=1;foreach ($contacts as $new){
+                                  if ($contador<=8) {
+                              ?>
                                 <tr class="gc_row">
                                     <td><?php echo $new->name?></td>
                                     <td><?php echo $new->category?></td>
@@ -94,8 +106,15 @@ function areyousure()
 										  <?php } ?>	
                                         </div>
                                     </td>
-                                </tr>
-                                <?php $i++;}?>
+                                </tr>                         
+                                <?php 
+                                 $contador = $contador +1; 
+                                      }
+                                $i++;   
+                              }
+
+
+                                ?>
                         </tbody>
                   
 
@@ -107,7 +126,7 @@ function areyousure()
 
                 <!--Vista de Cuadricula  -->
                    <!--Codigo implementado por: Garry Bruno -->
-                   <div id="modo-cuadricula">
+                   <div id="modo-cuadricula" style="display: none;">
                           <div class="row">
                              <div class=" col-md-12">
                                <div>
@@ -156,16 +175,20 @@ function areyousure()
                     <div class="col-md-12">
                        <div class="row">
                        <div class="col-xs-6">
-                       <div class="dataTables_info" id="example1_info">Mostrando <?php echo $i ?> Respuestas</div>
+                       <div id="infoTabla">Probando </div>
                        </div>
                        <div class="col-xs-6">
                        <div class="dataTables_paginate paging_bootstrap">
-                       <ul class="pagination">
+                       <ul id="pages" class="pagination">
                        <li class="prev">
                        <a onclick="anterior()" href="javascript:void(null)">← Anterior</a>
                        </li>
-                       <li class="active">
-                       <a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li><li class="next"><a onclick="siguiente()" href="javascript:void(null)">Siguiente → </a></li></ul></div></div></div>
+                       <li id="posicion1" class="active"></li>
+                       <li id="posicion2"></li>
+                       <li id="posicion3"></li>
+                       <li id="posicion4"></li>
+                       <li id="posicion5"></li>
+                       <li class="next"><a onclick="siguiente()" href="javascript:void(null)">Siguiente → </a></li></ul></div></div></div>
                       
                     </div>
 
@@ -235,9 +258,8 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
-	$('#example1').dataTable({
-	});
+  $('#example1').dataTable({
+  });
 });
-
 
 </script>
