@@ -18,7 +18,9 @@
 var x =0;  //Vale 0 por que es el estado inicial del listado
 var y =9;  // Variable que controla la paginacion 
 var buscar = false; // Indica si el buscador esta activo o no
-var choice; // Contenido de la busqueda 
+var choice =""; // Contenido de la busqueda 
+var distribucion = false; //Maneja la distribucion en el buscador
+var cantidad =0; // Manja la cantidad de elementos por pagina 
 //Inilizo una lista por defecto:
 listaporDefecto();
 //----------------------------------------------------------
@@ -67,10 +69,40 @@ function paginamiento(pagina){
  
 }
 
+//Funcion para calcular el total de resultados en una busqueda parcial 
+function totalRegistrosEncontrados(){
+  var resultado = 0; 
+
+      var listado = document.getElementById("resultados"),
+      contacto = listado.getElementsByTagName("p"); 
+
+       forEach.call(contacto, function(f){
+        if (f.innerHTML.toLowerCase().search(choice.toLowerCase()) == -1){
+             
+        }
+        else{ 
+             resultado = resultado + 1;   
+        }             
+       }    
+      );
+   return Math.trunc(resultado/9); 
+} 
+//Funcion para calcular el total de resultado en general 
+function totalRegistroGeneral(){
+
+var listado = document.getElementById("resultados"),
+         contacto = listado.getElementsByTagName("p");
+   return  Math.trunc(contacto.length/9);         
+} 
+
+
 //Muestra los resultados de la busqueda en grupos de 9
-function paginamientoBuscador(choice,contacto,pagina){ 
+function paginamientoBuscador(pagina){ 
       y= pagina;
       var j =1;  
+      var listado = document.getElementById("resultados"),
+      contacto = listado.getElementsByTagName("p"); 
+      cantidad = 0;
        forEach.call(contacto, function(f){
         if (f.innerHTML.toLowerCase().search(choice.toLowerCase()) == -1){
             f.parentNode.style.display = "none";       
@@ -78,6 +110,7 @@ function paginamientoBuscador(choice,contacto,pagina){
         else{ 
                if (((pagina-9)<j)&&(pagina>=j)){
                  f.parentNode.style.display = "block"; 
+                 cantidad = cantidad + 1; 
                  j=j+1;   
                }else{
                   f.parentNode.style.display = "none"; 
@@ -87,8 +120,10 @@ function paginamientoBuscador(choice,contacto,pagina){
            
        }    
       );
-
-           
+         if (distribucion){
+             var informacion = document.getElementById("infoTabla");
+             distrubuirResultados(informacion,0,contacto,pagina);
+         }         
 }
 
 function distrubuirResultados(informacion,total,contacto,pagina){
@@ -104,23 +139,30 @@ function distrubuirResultados(informacion,total,contacto,pagina){
             var valor = actual + q; 
             //var redireccion = (9*(valor-q))*();
             var redireccion = valor * 9;
-            if (q!=0){
+               if (!buscar){ 
+                    if (valor<=totalRegistroGeneral()){ 
+                     document.getElementById(posiciones[q]).innerHTML = '<a onclick="paginamiento('+redireccion+
+                     ')" href="javascript:void(null)">'+ valor+'</a>'; 
+                     document.getElementById(posiciones[q]).style.display = 'inline';
+                     document.getElementById("siguiente").style.display = 'inline';
+                     }else {
+                      document.getElementById(posiciones[q]).style.display = 'none';
+                      document.getElementById("siguiente").style.display = 'none';
+                      }
 
-                if (!buscar) 
-                 document.getElementById(posiciones[q]).innerHTML = '<a onclick="paginamiento('+redireccion+
-                 ')" href="javascript:void(null)">'+ valor+'</a>'; 
-                 else 
-                 document.getElementById(posiciones[q]).innerHTML ='<a onclick="paginamientoBuscador('+choice+','+contacto +','+redireccion+
-                 ')" href="javascript:void(null)">'+ valor +'</a>';  
+                 }else {
+                  if (valor<=totalRegistrosEncontrados()){ 
+                      document.getElementById(posiciones[q]).innerHTML ='<a onclick="paginamientoBuscador('+redireccion+
+                      ')" href="javascript:void(null)">'+ valor +'</a>';  
+                      document.getElementById(posiciones[q]).style.display = 'inline';
+                      document.getElementById("siguiente").style.display = 'inline';
+                      }else{
+                     document.getElementById(posiciones[q]).style.display = 'none';
+                     document.getElementById("siguiente").style.display = 'none';
+                     }
+                 }
 
-             }else{
-                if (!buscar)
-                 document.getElementById(posiciones[q]).innerHTML ='<a onclick="paginamiento('+redireccion+
-                 ')" href="javascript:void(null)">'+ valor +'</a>'; 
-                 else 
-                 document.getElementById(posiciones[q]).innerHTML ='<a onclick="paginamientoBuscador('+choice+','+contacto +','+redireccion+
-                 ')" href="javascript:void(null)">'+ valor +'</a>';  
-
+            if (q==0){
                  document.getElementById(posiciones[q]).className = "active";
              } 
 
@@ -134,9 +176,7 @@ function siguiente(){
    if(!buscar)
    paginamiento(y);
    else{
-      var listado = document.getElementById("resultados");
-      var contactos = listado.getElementsByTagName("p");
-      paginamientoBuscador(choice,contactos,y);
+      paginamientoBuscador(y);
       var informacion = document.getElementById("infoTabla");
       console.log("El valor de y es %i",y);
       distrubuirResultados(informacion,0,contactos,y);
@@ -152,9 +192,7 @@ function anterior(){
    if(!buscar) 
    paginamiento(y);
    else{
-      var listado = document.getElementById("resultados");
-      var contactos = listado.getElementsByTagName("p");
-      paginamientoBuscador(choice,contactos,y);
+      paginamientoBuscador(y);
       var informacion = document.getElementById("infoTabla");
       distrubuirResultados(informacion,0,contactos,y);
    }
@@ -169,19 +207,23 @@ function anterior(){
     forEach = Array.prototype.forEach;
 
     search.addEventListener("keyup", function(e){
-    buscar = true; 
-    choice = this.value;
     y=9;
+    buscar = true; 
+    distribucion = true; 
+    choice = this.value;
     var j=1; //<--Id de Elemento a mostrar  
-    paginamientoBuscador(choice,contacto,y,j);
-    var informacion = document.getElementById("infoTabla");
-    distrubuirResultados(informacion,0,contacto,y);
+    paginamientoBuscador(y);
     if (this.value=="")
     { 
         buscar = false;
+        distribucion = false;
         paginamiento(y);
     }
 
     }, false);
 
 //------------------------------------------------------------------------------------
+
+//Funcion para el control de contenido de la tabla en forma de lista 
+
+
