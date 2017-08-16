@@ -129,9 +129,16 @@ function paginamientoBuscador(pagina){
 function distrubuirResultados(informacion,total,contacto,pagina){
       total = contacto.length;
         //Mostrando Informacion de paginas: 
-         var actual = (pagina/9), totalpaginas = Math.trunc(total/9);
+        var totalpaginas;
+        if(!buscar)
+          totalpaginas = totalRegistroGeneral();
+         else 
+            totalpaginas = totalRegistrosEncontrados();
+        
+         var actual = (pagina/9);
         informacion.innerHTML = 'Mostrando pagina ' + actual.toString() + ' de ' + totalpaginas.toString()
          + ' en ' + total.toString() + ' respuestas.';
+
         var q=0; //<- Variable que marca valores del 1 al 5 para la distribucion   
         //Modificando Posicion de Paginacion: 
         var posiciones = ["posicion1", "posicion2", "posicion3","posicion4","posicion5"];
