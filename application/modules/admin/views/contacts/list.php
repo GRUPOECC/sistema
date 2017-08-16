@@ -263,11 +263,43 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/datatables.min.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/dataTables.pageLoadMore.min.js')?>" type="text/javascript"></script>
+
+
+
 <script type="text/javascript">
-$(function() {
+/*$(function() {
   $('#example').dataTable({
   });
 });
+*/
+$(document).ready(function (){
+   var table = $('#example').DataTable({
+      dom: 'frt',
+      ajax: 'https://api.myjson.com/bins/qgcu',
+      drawCallback: function(){
+         // If there is some more data
+         if($('#btn-example-load-more').is(':visible')){
+            // Scroll to the "Load more" button
+            $('html, body').animate({
+               scrollTop: $('#btn-example-load-more').offset().top
+            }, 1000);
+         }
+
+         // Show or hide "Load more" button based on whether there is more data available
+         $('#btn-example-load-more').toggle(this.api().page.hasMore());
+      }      
+   });
+ 
+   // Handle click on "Load more" button
+   $('#btn-example-load-more').on('click', function(){  
+      // Load more data
+      table.page.loadMore();
+   });
+});
+
+
 
 </script>
 

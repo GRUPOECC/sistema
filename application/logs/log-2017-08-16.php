@@ -11143,3 +11143,131 @@ DEBUG - 16-08-2017 18:49:10 --> File loaded: application/modules/admin/views/tem
 DEBUG - 16-08-2017 18:49:10 --> File loaded: application/modules/admin/views/template/main.php
 DEBUG - 16-08-2017 18:49:10 --> Final output sent to browser
 DEBUG - 16-08-2017 18:49:10 --> Total execution time: 4.3115
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+DEBUG - 16-08-2017 19:02:03 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 16-08-2017 19:02:03 --> Model Class Initialized
+ERROR - 16-08-2017 19:02:03 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:02:03 --> Could not find the language line "task_comming_in_next"
+ERROR - 16-08-2017 19:02:03 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:02:04 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:02:04 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:02:04 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:02:04 --> Could not find the language line "message_comming_in_next"
+ERROR - 16-08-2017 19:02:04 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:02:04 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 16-08-2017 19:02:04 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 16-08-2017 19:02:04 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 16-08-2017 19:02:07 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 16-08-2017 19:02:07 --> File loaded: application/modules/admin/views/template/footer.php
+DEBUG - 16-08-2017 19:02:07 --> File loaded: application/modules/admin/views/template/main.php
+DEBUG - 16-08-2017 19:02:08 --> Final output sent to browser
+DEBUG - 16-08-2017 19:02:08 --> Total execution time: 4.2119
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 16-08-2017 19:05:19 --> Model Class Initialized
+ERROR - 16-08-2017 19:05:19 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:05:19 --> Could not find the language line "task_comming_in_next"
+ERROR - 16-08-2017 19:05:19 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:05:19 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:05:19 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:05:19 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:05:19 --> Could not find the language line "message_comming_in_next"
+ERROR - 16-08-2017 19:05:19 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:05:19 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 16-08-2017 19:05:19 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 16-08-2017 19:05:19 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 16-08-2017 19:05:24 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 16-08-2017 19:05:24 --> File loaded: application/modules/admin/views/template/footer.php
+DEBUG - 16-08-2017 19:05:24 --> File loaded: application/modules/admin/views/template/main.php
+DEBUG - 16-08-2017 19:05:24 --> Final output sent to browser
+DEBUG - 16-08-2017 19:05:24 --> Total execution time: 4.9150
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 16-08-2017 19:25:38 --> Model Class Initialized
+ERROR - 16-08-2017 19:25:38 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:25:38 --> Could not find the language line "task_comming_in_next"
+ERROR - 16-08-2017 19:25:38 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:25:38 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:25:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:25:38 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:25:38 --> Could not find the language line "message_comming_in_next"
+ERROR - 16-08-2017 19:25:38 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:25:38 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 16-08-2017 19:25:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 16-08-2017 19:25:38 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 16-08-2017 19:25:42 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 16-08-2017 19:25:42 --> File loaded: application/modules/admin/views/template/footer.php
+DEBUG - 16-08-2017 19:25:42 --> File loaded: application/modules/admin/views/template/main.php
+DEBUG - 16-08-2017 19:25:42 --> Final output sent to browser
+DEBUG - 16-08-2017 19:25:42 --> Total execution time: 5.0557
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 16-08-2017 19:26:12 --> Model Class Initialized
+ERROR - 16-08-2017 19:26:12 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:26:12 --> Could not find the language line "task_comming_in_next"
+ERROR - 16-08-2017 19:26:12 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 16-08-2017 19:26:12 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:26:12 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 16-08-2017 19:26:12 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:26:12 --> Could not find the language line "message_comming_in_next"
+ERROR - 16-08-2017 19:26:12 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 16-08-2017 19:26:12 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 16-08-2017 19:26:12 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 16-08-2017 19:26:12 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 16-08-2017 19:26:16 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 16-08-2017 19:26:16 --> File loaded: application/modules/admin/views/template/footer.php
+DEBUG - 16-08-2017 19:26:16 --> File loaded: application/modules/admin/views/template/main.php
+DEBUG - 16-08-2017 19:26:16 --> Final output sent to browser
+DEBUG - 16-08-2017 19:26:16 --> Total execution time: 4.0947
