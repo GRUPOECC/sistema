@@ -68,7 +68,7 @@ function areyousure()
 
 
                    <div id="modo-lista"> <!-- /.Vista de listado -->   
-                    <table id="example1" class="table table-bordered table-striped">
+                    <table id="example" class="table table-bordered table-striped">
                      
                 
                         <thead>
@@ -85,7 +85,7 @@ function areyousure()
                             <?php 
                                $contador = 0; 
                             $i=1;foreach ($contacts as $new){
-                                  if ($contador<=8) {
+                                 // if ($contador<=8) {
                               ?>
                                 <tr class="gc_row">
                                     <td><?php echo $new->name?></td>
@@ -108,8 +108,8 @@ function areyousure()
                                     </td>
                                 </tr>                         
                                 <?php 
-                                 $contador = $contador +1; 
-                                      }
+                                      //   $contador = $contador +1; 
+                                     // }
                                 $i++;   
                               }
 
@@ -121,6 +121,10 @@ function areyousure()
                         <?php endif;?>
                         
                     </table>
+                     <div  style="text-align:center; margin:2em 0;">
+                        <button id="btn-example-load-more" style="display:none">Ver mas</button>
+                     </div>
+
                 </div>
                 <!-- /. Fin Vista de Listado -->
 
@@ -139,8 +143,9 @@ function areyousure()
                              <?php if(isset($contacts)):?>
                               <?php $i=1;foreach ($contacts as $new){ ?>
                             
-                             <div name="elemento" class=" col-md-3" style="background: #EFEEEE; margin: 8px; color: #000">
+                             <div name="elemento" class=" col-md-3" style="background: #EFEEEE; margin: 8px; color: #000; height: 200px">   
                                <p>
+                                <label style="height: 120px">
                                 <strong>Nombre:</strong> <?php echo $new->name?>
                                 <br> 
                                 <strong>Compañía:</strong> <?php echo $new->company?>                
@@ -150,8 +155,10 @@ function areyousure()
                                 <strong>Correo:</strong> <?php echo $new->email?>
                                 <br>
                                 <strong>Teléfono:</strong>  <?php echo $new->phone1?>
-                                <br>             
+                                <br>   
+                                </label>          
                                </p>
+                               
                                <div class="btn-group">
                                           <?php if(check_user_role(155)==1){?>  
                       <a class="btn btn-default"  href="<?php echo site_url('admin/contacts/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
@@ -188,7 +195,7 @@ function areyousure()
                        <li id="posicion3"></li>
                        <li id="posicion4"></li>
                        <li id="posicion5"></li>
-                       <li class="next"><a onclick="siguiente()" href="javascript:void(null)">Siguiente → </a></li></ul></div></div></div>
+                       <li id="siguiente" class="next"><a onclick="siguiente()" href="javascript:void(null)">Siguiente → </a></li></ul></div></div></div>
                       
                     </div>
 
@@ -258,8 +265,10 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
-  $('#example1').dataTable({
+  $('#example').dataTable({
   });
 });
 
 </script>
+
+
