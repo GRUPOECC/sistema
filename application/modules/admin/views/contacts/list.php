@@ -67,8 +67,8 @@ function areyousure()
                   </p>
 
 
-                   <div id="modo-lista"> <!-- /.Vista de listado -->   
-                    <table id="example" class="table table-bordered table-striped">
+                   <div id="modo-lista" style="display: none;"> <!-- /.Vista de listado -->   
+                    <table id="example" class="table table-bordered table-striped" >
                      
                 
                         <thead>
@@ -267,6 +267,10 @@ function areyousure()
 $(function() {
   $('#example').dataTable({
   });
+});
+
+$( document ).ready(function() {
+    document.getElementById('modo-lista').style.display = "block";
 });
 
 

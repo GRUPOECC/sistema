@@ -40,7 +40,6 @@ function cambioVista() {
 }
 
 function listaporDefecto(){
-         document.getElementById('modo-lista').style.display = "block";
          document.getElementById('modo-cuadricula').style.display = "none";
          x=1;
          paginamiento(9);
