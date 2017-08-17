@@ -2635,3 +2635,34 @@ DEBUG - 17-08-2017 05:49:32 --> contacts MX_Controller Initialized
 DEBUG - 17-08-2017 05:49:32 --> Model Class Initialized
 DEBUG - 17-08-2017 05:49:32 --> File loaded: application/modules/admin/models/setting_model.php
 DEBUG - 17-08-2017 05:49:32 --> Model Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Config Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Hooks Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Utf8 Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> UTF-8 Support Enabled
+DEBUG - 17-08-2017 06:09:28 --> URI Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Router Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Output Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Security Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Input Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Global POST and COOKIE data sanitized
+DEBUG - 17-08-2017 06:09:28 --> Language Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Language Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Config Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Loader Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Helper loaded: url_helper
+DEBUG - 17-08-2017 06:09:28 --> Helper loaded: file_helper
+DEBUG - 17-08-2017 06:09:28 --> Helper loaded: form_helper
+DEBUG - 17-08-2017 06:09:28 --> Helper loaded: date_time_helper
+DEBUG - 17-08-2017 06:09:28 --> Database Driver Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Session Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Helper loaded: string_helper
+DEBUG - 17-08-2017 06:09:28 --> Session routines successfully run
+DEBUG - 17-08-2017 06:09:28 --> Form Validation Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Encrypt Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Controller Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> Helper loaded: language_helper
+DEBUG - 17-08-2017 06:09:28 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 17-08-2017 06:09:28 --> contacts MX_Controller Initialized
+DEBUG - 17-08-2017 06:09:28 --> Model Class Initialized
+DEBUG - 17-08-2017 06:09:28 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 17-08-2017 06:09:28 --> Model Class Initialized
