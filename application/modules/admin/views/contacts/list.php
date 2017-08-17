@@ -121,10 +121,6 @@ function areyousure()
                         <?php endif;?>
                         
                     </table>
-                     <div  style="text-align:center; margin:2em 0;">
-                        <button id="btn-example-load-more" style="display:none">Ver mas</button>
-                     </div>
-
                 </div>
                 <!-- /. Fin Vista de Listado -->
 
@@ -273,32 +269,7 @@ $(function() {
   });
 });
 
-/*
-$(document).ready(function (){
-   var table = $('#example').DataTable({
-      dom: 'frt',
-      ajax: 'https://api.myjson.com/bins/qgcu',
-      drawCallback: function(){
-         // If there is some more data
-         if($('#btn-example-load-more').is(':visible')){
-            // Scroll to the "Load more" button
-            $('html, body').animate({
-               scrollTop: $('#btn-example-load-more').offset().top
-            }, 1000);
-         }
 
-         // Show or hide "Load more" button based on whether there is more data available
-         $('#btn-example-load-more').toggle(this.api().page.hasMore());
-      }      
-   });
- 
-   // Handle click on "Load more" button
-   $('#btn-example-load-more').on('click', function(){  
-      // Load more data
-      table.page.loadMore();
-   });
-});
-*/
 </script>
 
 

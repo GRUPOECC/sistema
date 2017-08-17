@@ -2511,3 +2511,127 @@ DEBUG - 17-08-2017 05:41:34 --> contacts MX_Controller Initialized
 DEBUG - 17-08-2017 05:41:34 --> Model Class Initialized
 DEBUG - 17-08-2017 05:41:34 --> File loaded: application/modules/admin/models/setting_model.php
 DEBUG - 17-08-2017 05:41:34 --> Model Class Initialized
+DEBUG - 17-08-2017 05:45:33 --> Config Class Initialized
+DEBUG - 17-08-2017 05:45:33 --> Hooks Class Initialized
+DEBUG - 17-08-2017 05:45:33 --> Utf8 Class Initialized
+DEBUG - 17-08-2017 05:45:33 --> UTF-8 Support Enabled
+DEBUG - 17-08-2017 05:45:33 --> URI Class Initialized
+DEBUG - 17-08-2017 05:45:33 --> Router Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Output Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Security Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Input Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Global POST and COOKIE data sanitized
+DEBUG - 17-08-2017 05:45:34 --> Language Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Language Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Config Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Loader Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Helper loaded: url_helper
+DEBUG - 17-08-2017 05:45:34 --> Helper loaded: file_helper
+DEBUG - 17-08-2017 05:45:34 --> Helper loaded: form_helper
+DEBUG - 17-08-2017 05:45:34 --> Helper loaded: date_time_helper
+DEBUG - 17-08-2017 05:45:34 --> Database Driver Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Session Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Helper loaded: string_helper
+DEBUG - 17-08-2017 05:45:34 --> Session routines successfully run
+DEBUG - 17-08-2017 05:45:34 --> Form Validation Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Encrypt Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Controller Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> Helper loaded: language_helper
+DEBUG - 17-08-2017 05:45:34 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 17-08-2017 05:45:34 --> appointments MX_Controller Initialized
+DEBUG - 17-08-2017 05:45:34 --> Model Class Initialized
+DEBUG - 17-08-2017 05:45:34 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 17-08-2017 05:45:34 --> Model Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Config Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Hooks Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Utf8 Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> UTF-8 Support Enabled
+DEBUG - 17-08-2017 05:45:44 --> URI Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Router Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Output Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Security Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Input Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Global POST and COOKIE data sanitized
+DEBUG - 17-08-2017 05:45:44 --> Language Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Language Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Config Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Loader Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Helper loaded: url_helper
+DEBUG - 17-08-2017 05:45:44 --> Helper loaded: file_helper
+DEBUG - 17-08-2017 05:45:44 --> Helper loaded: form_helper
+DEBUG - 17-08-2017 05:45:44 --> Helper loaded: date_time_helper
+DEBUG - 17-08-2017 05:45:44 --> Database Driver Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Session Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Helper loaded: string_helper
+DEBUG - 17-08-2017 05:45:44 --> Session routines successfully run
+DEBUG - 17-08-2017 05:45:44 --> Form Validation Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Encrypt Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Controller Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> Helper loaded: language_helper
+DEBUG - 17-08-2017 05:45:44 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 17-08-2017 05:45:44 --> contacts MX_Controller Initialized
+DEBUG - 17-08-2017 05:45:44 --> Model Class Initialized
+DEBUG - 17-08-2017 05:45:44 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 17-08-2017 05:45:44 --> Model Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Config Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Hooks Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Utf8 Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> UTF-8 Support Enabled
+DEBUG - 17-08-2017 05:47:00 --> URI Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Router Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Output Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Security Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Input Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Global POST and COOKIE data sanitized
+DEBUG - 17-08-2017 05:47:00 --> Language Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Language Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Config Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Loader Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Helper loaded: url_helper
+DEBUG - 17-08-2017 05:47:00 --> Helper loaded: file_helper
+DEBUG - 17-08-2017 05:47:00 --> Helper loaded: form_helper
+DEBUG - 17-08-2017 05:47:00 --> Helper loaded: date_time_helper
+DEBUG - 17-08-2017 05:47:00 --> Database Driver Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Session Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Helper loaded: string_helper
+DEBUG - 17-08-2017 05:47:00 --> Session routines successfully run
+DEBUG - 17-08-2017 05:47:00 --> Form Validation Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Encrypt Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Controller Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> Helper loaded: language_helper
+DEBUG - 17-08-2017 05:47:00 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 17-08-2017 05:47:00 --> contacts MX_Controller Initialized
+DEBUG - 17-08-2017 05:47:00 --> Model Class Initialized
+DEBUG - 17-08-2017 05:47:00 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 17-08-2017 05:47:00 --> Model Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Config Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Hooks Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Utf8 Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> UTF-8 Support Enabled
+DEBUG - 17-08-2017 05:49:32 --> URI Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Router Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Output Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Security Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Input Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Global POST and COOKIE data sanitized
+DEBUG - 17-08-2017 05:49:32 --> Language Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Language Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Config Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Loader Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Helper loaded: url_helper
+DEBUG - 17-08-2017 05:49:32 --> Helper loaded: file_helper
+DEBUG - 17-08-2017 05:49:32 --> Helper loaded: form_helper
+DEBUG - 17-08-2017 05:49:32 --> Helper loaded: date_time_helper
+DEBUG - 17-08-2017 05:49:32 --> Database Driver Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Session Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Helper loaded: string_helper
+DEBUG - 17-08-2017 05:49:32 --> Session routines successfully run
+DEBUG - 17-08-2017 05:49:32 --> Form Validation Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Encrypt Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Controller Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> Helper loaded: language_helper
+DEBUG - 17-08-2017 05:49:32 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 17-08-2017 05:49:32 --> contacts MX_Controller Initialized
+DEBUG - 17-08-2017 05:49:32 --> Model Class Initialized
+DEBUG - 17-08-2017 05:49:32 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 17-08-2017 05:49:32 --> Model Class Initialized
