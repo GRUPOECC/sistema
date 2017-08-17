@@ -146,11 +146,12 @@ class contacts extends MX_Controller {
 		$data['id'] =$id;
 		
 		$data['page_title'] = lang('view') . lang('contact') ;
-		$data['body'] = 'contacts/view';
-		$this->load->view('template/main', $data);	
+		//$data['body'] = 'contacts/vista';
+		$this->load->view('contacts/vista',$data);	
 
 	}	
-	
+
+
 	function import()
 	{
 		

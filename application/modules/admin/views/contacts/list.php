@@ -53,22 +53,24 @@ function areyousure()
           <div class="col-xs-12">
           
             <div class="box" style="display:inline-block;">
-                
+                <!--
                 <div class="box-header">
                                                
-                </div><!-- /.box-header -->    
+                </div> /.box-header -->    
+                  
+                <div class="box-body table-responsive" style="margin-top:0px;">
 
-                <div class="box-body table-responsive" style="margin-top:40px;">
 
-
-                  <p align="right">                              
+                  <p align="right"> 
+                                                
                      <input type="checkbox" data-toggle="toggle" data-on="Cuadricula" data-off="Listado" onchange="cambioVista()">
-
+                      
                   </p>
 
 
-                   <div id="modo-lista"> <!-- /.Vista de listado -->   
-                    <table id="example" class="table table-bordered table-striped">
+                   <div id="modo-lista" style="display: none;"> <!-- /.Vista de listado -->   
+                  
+                    <table id="example" class="table table-bordered table-striped" >
                      
                 
                         <thead>
@@ -76,7 +78,9 @@ function areyousure()
  								<th><?php echo lang('name');?></th>
                                 <th><?php echo lang('category');?></th>
                                 <th><?php echo lang('contact_company');?></th>
+                                
 								<th width="20%"><?php echo lang('action');?></th>
+                 
                             </tr>
                         </thead>
                         
@@ -92,20 +96,23 @@ function areyousure()
                                     <td><?php echo $new->category?></td>
                                     <td><?php echo $new->company?></td>
 
-									
+									  
                                     <td  class="col-md-3">
                                         <div class="btn-group">
                                           <?php if(check_user_role(155)==1){?>  
-										  <a class="btn btn-default"  href="<?php echo site_url('admin/contacts/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
+										  <a id="elem" class="btn btn-default" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="mostrarContacto(<?php echo $new->id ?>)" href=""><i  ></i> <?php echo lang('view');?></a>
 										   <?php } ?>
+                       <!--
 										  <?php if(check_user_role(23)==1){?>  
 										  <a class="btn btn-primary"  href="<?php echo site_url('admin/contacts/edit/'.$new->id); ?>" style="margin-left:10px;"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
 										   <?php } ?>	
 										    <?php if(check_user_role(24)==1){?>
                                          <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
 										  <?php } ?>	
+                      -->
                                         </div>
                                     </td>
+                            
                                 </tr>                         
                                 <?php 
                                       //   $contador = $contador +1; 
@@ -121,11 +128,13 @@ function areyousure()
                         <?php endif;?>
                         
                     </table>
+                   
                 </div>
                 <!-- /. Fin Vista de Listado -->
 
                 <!--Vista de Cuadricula  -->
                    <!--Codigo implementado por: Garry Bruno -->
+                   
                    <div id="modo-cuadricula" style="display: none;">
                           <div class="row">
                              <div class=" col-md-12">
@@ -139,32 +148,34 @@ function areyousure()
                              <?php if(isset($contacts)):?>
                               <?php $i=1;foreach ($contacts as $new){ ?>
                             
-                             <div name="elemento" class=" col-md-3" style="background: #EFEEEE; margin: 8px; color: #000; height: 200px">   
+                             <div name="elemento" class=" col-md-3" style="background: #F5F5F5; margin: 8px; color: #000; height: 200px">   
                                <p>
-                                <label style="height: 120px">
-                                <strong>Nombre:</strong> <?php echo $new->name?>
+                                <span style="height: 120px">
+                                <strong><?php echo lang('name');?>:</strong> <?php echo $new->name?>
                                 <br> 
-                                <strong>Compañía:</strong> <?php echo $new->company?>                
+                                <strong><?php echo lang('contact_company');?>:</strong> <?php echo $new->company?>                
                                 <br>
-                                <strong>Categoría:</strong> <?php echo $new->category?>
+                                <strong><?php echo lang('category');?>:</strong> <?php echo $new->category?>
                                 <br>
-                                <strong>Correo:</strong> <?php echo $new->email?>
+                                <strong><?php echo lang('email');?>:</strong> <?php echo $new->email?>
                                 <br>
-                                <strong>Teléfono:</strong>  <?php echo $new->phone1?>
+                                <strong><?php echo lang('phone');?>:</strong>  <?php echo $new->phone1?>
                                 <br>   
-                                </label>          
+                                </span>          
                                </p>
                                
                                <div class="btn-group">
                                           <?php if(check_user_role(155)==1){?>  
-                      <a class="btn btn-default"  href="<?php echo site_url('admin/contacts/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
+                      <a id="elem" class="btn btn-default" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="mostrarContacto(<?php echo $new->id ?>)" href=""><i  ></i> <?php echo lang('view');?></a>
                        <?php } ?>
+                       <!--
                       <?php if(check_user_role(23)==1){?>  
                       <a class="btn btn-primary"  href="<?php echo site_url('admin/contacts/edit/'.$new->id); ?>" style="margin-left:10px;"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
                        <?php } ?> 
                         <?php if(check_user_role(24)==1){?>
                                          <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
                         <?php } ?>  
+                        -->
                                         </div>
                              </div>
 
@@ -196,6 +207,7 @@ function areyousure()
                     </div>
 
                    </div>
+                  
                    <!--Fin Vista de Cuadricula  -->
 
 
@@ -212,7 +224,7 @@ function areyousure()
 
 
 
-<!-- Modal -->
+<!-- Modal para la informacion de importacion o exportacion de Contactos -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -255,19 +267,62 @@ function areyousure()
   </div>
 </div>
 
+<!-- Modal para la Informacion de los contactos  -->
+  <div class="modal fade" id="myModalData" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Datos del Contacto</h4>
+        </div>
+        <div class="modal-body">
+
+          <p><iframe id ="window"  name="window" src="<?php echo site_url('admin/contacts/view/'); ?>" width="100%" height="330" marginwidth="0" scrolling="yes" frameborder="0"></iframe>
+          </p>
+           <?php if(check_user_role(23)==1){?>  
+                      <a id="editar" class="btn btn-primary"  href="<?php echo site_url('admin/contacts/edit/'); ?>" style="margin-left:10px;"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
+                       <?php } ?> 
+                        <?php if(check_user_role(24)==1){?>
+                                         <a id="eliminar" class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/delete/'); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
+                        <?php } ?> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
 
 <script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 
 
-
+<?php $direccion =  site_url('admin/contacts/view/'); ?>;
 
 <script type="text/javascript">
 $(function() {
   $('#example').dataTable({
   });
 });
+
+$( document ).ready(function() {
+    if (document.getElementById('modo-lista').style.display == "none") 
+    document.getElementById('modo-lista').style.display = "block";
+});
+
+ var actual = 0; 
+   function mostrarContacto (id){
+     actual =id; 
+     document.getElementById('window').src = "contacts/view/"+id;
+     document.getElementById('editar').href = "contacts/edit/"+id;
+     document.getElementById('eliminar').href = "contacts/delete/"+id;
+      
+  } 
 
 
 </script>

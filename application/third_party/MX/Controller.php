@@ -45,7 +45,7 @@ class MX_Controller extends CI_Controller
 		$this->load->helper('language');
 			//echo '<pre>'; print_r($this->session->all_userdata());die;
 		
-		if($this->uri->segment(2)!="login" && $this->uri->segment(1)!="register" && $this->uri->segment(1)!="forgot"){
+		if( $this->uri->segment(2)!="login" && $this->uri->segment(1)!="register" && $this->uri->segment(1)!="forgot"){
 			$this->auth->check_session();
 		}
 		if($this->session->userdata('lang')!="")
