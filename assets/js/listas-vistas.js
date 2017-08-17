@@ -134,7 +134,8 @@ function distrubuirResultados(informacion,total,contacto,pagina){
           totalpaginas = totalRegistroGeneral();
          else 
             totalpaginas = totalRegistrosEncontrados();
-        
+
+
          var actual = (pagina/9);
         informacion.innerHTML = 'Mostrando pagina ' + actual.toString() + ' de ' + totalpaginas.toString()
          + ' en ' + total.toString() + ' respuestas.';
