@@ -263,17 +263,17 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/datatables.min.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/dataTables.pageLoadMore.min.js')?>" type="text/javascript"></script>
+
 
 
 
 <script type="text/javascript">
-/*$(function() {
+$(function() {
   $('#example').dataTable({
   });
 });
-*/
+
+/*
 $(document).ready(function (){
    var table = $('#example').DataTable({
       dom: 'frt',
@@ -298,9 +298,7 @@ $(document).ready(function (){
       table.page.loadMore();
    });
 });
-
-
-
+*/
 </script>
 
 
