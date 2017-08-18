@@ -26,7 +26,7 @@ listaporDefecto();
 //----------------------------------------------------------
 
 function cambioVista() {
-      
+   
     if (x==1){
          document.getElementById('modo-lista').style.display = "none";
          document.getElementById('modo-cuadricula').style.display = "block";
@@ -37,6 +37,19 @@ function cambioVista() {
          x=1;
 	} 
 
+}
+
+function vistaLista(){
+  document.getElementById('modo-lista').style.display = "block";
+         document.getElementById('modo-cuadricula').style.display = "none";
+         x=1;
+
+}
+
+function vistaCuadricula(){
+         document.getElementById('modo-lista').style.display = "none";
+         document.getElementById('modo-cuadricula').style.display = "block";
+         x=2;
 }
 
 function listaporDefecto(){
@@ -213,6 +226,12 @@ function anterior(){
     forEach = Array.prototype.forEach;
 
     search.addEventListener("keyup", function(e){
+     var cajabuscador = document.getElementById('searchLabel');
+     var buscador1 = cajabuscador.getElementsByTagName('input');
+     buscador1[0].value = this.value; 
+     document.getElementById("searchLabel").click();
+
+
     y=9;
     buscar = true; 
     distribucion = true; 
