@@ -324,13 +324,6 @@ $( document ).ready(function() {
     document.getElementById('modo-lista').style.display = "block"; 
     document.getElementById('tipo-vista').style.display = "block";
 
-    //Añadiendo funciones para mantener filtrado: 
-    //var cajabuscador = document.getElementById('searchLabel');
-    // var buscador1 = cajabuscador.getElementByTagName('input');
-    // var buscador2 = document.getElementById('search');
-
-  
-
 });
 
  var actual = 0; 
