@@ -2,6 +2,7 @@
 <link href="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css')?>" rel="stylesheet">
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
 
+
 <script type="text/javascript">
 //window.onload = detectarCarga;
 //function detectarCarga(){
@@ -56,17 +57,28 @@ function areyousure()
                 <!--
                 <div class="box-header">
                                                
-                </div> /.box-header -->    
-                  
-                <div class="box-body table-responsive" style="margin-top:0px;">
+                </div> /.box-header -->   
+                <div id="tipo-vista" style="margin-left: 350px; z-index: 2; position: absolute; display: none;">
+                 
+                  <p > 
+                      <center>                        
+                     <!--<input type="checkbox" data-toggle="toggle" data-on="Cuadricula" data-off="Listado" onchange="cambioVista()">
+                     -->
+                        <a onclick="vistaLista()" href="javascript:void()">
+                       <IMG SRC="<?php echo base_url('assets/img/boton-listado.png')?>" WIDTH=111 HEIGHT=36 ALT="Vista en Listado">
+                       </a>
+                       <a onclick="vistaCuadricula()" href="javascript:void()">
+                       <IMG SRC="<?php echo base_url('assets/img/boton-cuadricula.png')?>" WIDTH=111 HEIGHT=36 ALT="Vista en Cuadricula">
+                       </a>
 
-
-                  <p align="right"> 
-                                                
-                     <input type="checkbox" data-toggle="toggle" data-on="Cuadricula" data-off="Listado" onchange="cambioVista()">
-                      
+                     </center>
                   </p>
 
+                  </div> 
+                  
+                <div class="box-body table-responsive" style=" z-index: 1; margin-top:0px;">
+
+                  
 
                    <div id="modo-lista" style="display: none;"> <!-- /.Vista de listado -->   
                   
@@ -184,8 +196,6 @@ function areyousure()
                              <?php endif;?>
 
                     </div>
-
-
                     <div class="col-md-12">
                        <div class="row">
                        <div class="col-xs-6">
@@ -302,7 +312,6 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 
 
-<?php $direccion =  site_url('admin/contacts/view/'); ?>;
 
 <script type="text/javascript">
 $(function() {
@@ -312,7 +321,16 @@ $(function() {
 
 $( document ).ready(function() {
     if (document.getElementById('modo-lista').style.display == "none") 
-    document.getElementById('modo-lista').style.display = "block";
+    document.getElementById('modo-lista').style.display = "block"; 
+    document.getElementById('tipo-vista').style.display = "block";
+
+    //Añadiendo funciones para mantener filtrado: 
+    //var cajabuscador = document.getElementById('searchLabel');
+    // var buscador1 = cajabuscador.getElementByTagName('input');
+    // var buscador2 = document.getElementById('search');
+
+  
+
 });
 
  var actual = 0; 
