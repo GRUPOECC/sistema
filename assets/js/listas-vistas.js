@@ -229,7 +229,7 @@ function anterior(){
      var cajabuscador = document.getElementById('searchLabel');
      var buscador1 = cajabuscador.getElementsByTagName('input');
      buscador1[0].value = this.value; 
-     document.getElementById("searchLabel").click();
+     buscador1[0].click();
 
 
     y=9;
@@ -246,6 +246,25 @@ function anterior(){
     }
 
     }, false);
+
+    search.addEventListener("click", function(){
+    var cajabuscador = document.getElementById('searchLabel');
+     var buscador1 = cajabuscador.getElementsByTagName('input');
+     this.value = buscador1[0].value; 
+     buscador1[0].click();
+    y=9;
+    buscar = true; 
+    distribucion = true; 
+    choice = this.value;
+    var j=1; //<--Id de Elemento a mostrar  
+    paginamientoBuscador(y);
+    if (this.value=="")
+    { 
+        buscar = false;
+        distribucion = false;
+        paginamiento(y);
+    }
+    });
 
 //------------------------------------------------------------------------------------
 

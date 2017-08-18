@@ -2079,7 +2079,7 @@
 			  sSearchStr==="" ? '<input type="text" />' : sSearchStr+' <input type="text" />';
 			var nFilter = document.createElement( 'div' );
 			nFilter.className = oSettings.oClasses.sFilter;
-			nFilter.innerHTML = '<label id="searchLabel">'+sSearchStr+'</label>';
+			nFilter.innerHTML = '<label id="searchLabel">'+sSearchStr.replace('Search: ','Buscar: ')+'</label>';
 			if ( !oSettings.aanFeatures.f )
 			{
 				nFilter.id = oSettings.sTableId+'_filter';
@@ -2093,6 +2093,9 @@
 		
 			jqFilter.val( oPreviousSearch.sSearch.replace('"','&quot;') );
 			jqFilter.bind( 'keyup.DT', function(e) {
+                var search = document.getElementById("search");
+                search.click();
+
 				/* Update all other filter input elements for the new display */
 				var n = oSettings.aanFeatures.f;
 				var val = this.value==="" ? "" : this.value; // mental IE8 fix :-(
@@ -2116,6 +2119,35 @@
 					} );
 				}
 			} );
+
+			jqFilter.click(function(){
+                var search = document.getElementById("search");
+                search.click();
+                this.value = search.value; 
+
+				/* Update all other filter input elements for the new display */
+				var n = oSettings.aanFeatures.f;
+				var val = this.value==="" ? "" : this.value; // mental IE8 fix :-(
+		
+				for ( var i=0, iLen=n.length ; i<iLen ; i++ )
+				{
+					if ( n[i] != $(this).parents('div.dataTables_filter')[0] )
+					{
+						$(n[i]._DT_Input).val( val );
+					}
+				}
+				
+				/* Now do the filter */
+				if ( val != oPreviousSearch.sSearch )
+				{
+					_fnFilterComplete( oSettings, { 
+						"sSearch": val, 
+						"bRegex": oPreviousSearch.bRegex,
+						"bSmart": oPreviousSearch.bSmart ,
+						"bCaseInsensitive": oPreviousSearch.bCaseInsensitive 
+					} );
+				}             
+            });
 		
 			jqFilter
 				.attr('aria-controls', oSettings.sTableId)
@@ -2132,6 +2164,8 @@
 		}
 		
 		
+
+
 		/**
 		 * Filter the table using both the global filter and column based filtering
 		 *  @param {object} oSettings dataTables settings object
