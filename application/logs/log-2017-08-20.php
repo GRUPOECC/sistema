@@ -41339,3 +41339,9 @@ ERROR - 20-08-2017 19:53:00 --> Severity: Notice  --> Trying to get property of 
 DEBUG - 20-08-2017 19:53:00 --> File loaded: application/modules/admin/views/contacts/vista.php
 DEBUG - 20-08-2017 19:53:00 --> Final output sent to browser
 DEBUG - 20-08-2017 19:53:00 --> Total execution time: 0.4902
+DEBUG - 20-08-2017 23:01:11 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 20-08-2017 23:01:11 --> Model Class Initialized
+ERROR - 20-08-2017 23:01:11 --> Severity: Notice  --> Undefined index: admin C:\xampp\htdocs\sistema\application\third_party\MX\Controller.php 163
+DEBUG - 20-08-2017 23:01:11 --> File loaded: application/modules/admin/views/login/login.php
+DEBUG - 20-08-2017 23:01:11 --> Final output sent to browser
+DEBUG - 20-08-2017 23:01:11 --> Total execution time: 0.0703
