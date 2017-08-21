@@ -148,9 +148,10 @@ function distrubuirResultados(informacion,total,contacto,pagina){
 
 
          var actual = (pagina/9);
-        informacion.innerHTML = 'Mostrando pagina ' + actual.toString() + ' de ' + totalpaginas.toString()
-         + ' en ' + total.toString() + ' respuestas.';
-
+         var dataInfo = informacion.innerHTML;
+         var act = actual.toString(), pag = totalpaginas.toString(), tlt = total.toString();
+         
+         informacion.innerHTML = dataInfo.replace("FF",act).replace("QQ",pag).replace("RR",tlt); 
         var q=0; //<- Variable que marca valores del 1 al 5 para la distribucion   
         //Modificando Posicion de Paginacion: 
         var posiciones = ["posicion1", "posicion2", "posicion3","posicion4","posicion5"];
@@ -159,7 +160,7 @@ function distrubuirResultados(informacion,total,contacto,pagina){
             //var redireccion = (9*(valor-q))*();
             var redireccion = valor * 9;
                if (!buscar){ 
-                    if (valor<=totalRegistroGeneral()){ 
+                    if (valor<=totalRegistroGeneral()+1){ 
                      document.getElementById(posiciones[q]).innerHTML = '<a onclick="paginamiento('+redireccion+
                      ')" href="javascript:void(null)">'+ valor+'</a>'; 
                      document.getElementById(posiciones[q]).style.display = 'inline';
@@ -170,7 +171,7 @@ function distrubuirResultados(informacion,total,contacto,pagina){
                       }
 
                  }else {
-                  if (valor<=totalRegistrosEncontrados()){ 
+                  if (valor<=totalRegistrosEncontrados()+1){ 
                       document.getElementById(posiciones[q]).innerHTML ='<a onclick="paginamientoBuscador('+redireccion+
                       ')" href="javascript:void(null)">'+ valor +'</a>';  
                       document.getElementById(posiciones[q]).style.display = 'inline';
@@ -268,6 +269,5 @@ function anterior(){
 
 //------------------------------------------------------------------------------------
 
-//Funcion para el control de contenido de la tabla en forma de lista 
 
 

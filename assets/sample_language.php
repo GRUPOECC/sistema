@@ -248,6 +248,7 @@ $lang['inactive']      	 = "Disabled";
 $lang['edit']      	 = "Edit";
 $lang['delete']      	 = "Delete";
 
+
 $lang['form']      	 = "Form";
 $lang['excerpt']      	 = "Excerpt";
 $lang['save']      	 = "Save";

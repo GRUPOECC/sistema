@@ -39,6 +39,7 @@ $lang['change_password']      	 = "Change Password";
 $lang['register_new_admin']      	 = "Register New Admin";
 $lang['add_payment_detail']      	 = "Add Payment Details";
 
+
 //Sidebar
 $lang['dashboard']      	 = "Dasbhoard";
 $lang['file']      	 = "File";
@@ -349,6 +350,7 @@ $lang['dropdown_list']      = "Dropdown List";
 $lang['radio_button']      	= "Radio Button";
 $lang['checkbox']      	 	= "Checkbox";
 $lang['textarea']      	 	= "Textarea";
+
 
 
 

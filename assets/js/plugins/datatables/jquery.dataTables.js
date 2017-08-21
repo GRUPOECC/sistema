@@ -2079,7 +2079,7 @@
 			  sSearchStr==="" ? '<input type="text" />' : sSearchStr+' <input type="text" />';
 			var nFilter = document.createElement( 'div' );
 			nFilter.className = oSettings.oClasses.sFilter;
-			nFilter.innerHTML = '<label id="searchLabel">'+sSearchStr.replace('Search: ','Buscar: ')+'</label>';
+			nFilter.innerHTML = '<label id="searchLabel">'+sSearchStr+'</label>';
 			if ( !oSettings.aanFeatures.f )
 			{
 				nFilter.id = oSettings.sTableId+'_filter';
