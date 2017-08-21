@@ -11,11 +11,7 @@ function areyousure()
 }
 
 </script>
-<style>
-  input[type="checkbox"]{
-   all: unset;
-}
-</style>
+
 
 <section class="content-header">
         <h1>
