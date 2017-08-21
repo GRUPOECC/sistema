@@ -106,7 +106,7 @@ $lang['amount']		    	 = "Cantidad";
 $lang['mode']		    	 = "Modo";
 $lang['attachment']		     = "Documento anexo";
 $lang['last']		     	= "Última";
-$lang['next']		     	= "Siguiente";
+$lang['next']		     	= "Siguiente → ";
 $lang['notes']		     	= "Notas";
 $lang['fees']		     	= "Tarifas";
 $lang['fees_agreed']		    = "tarifa acordada";
@@ -147,6 +147,7 @@ $lang['values']		= "valores";
 $lang['mail_to_client']		= "Correo Para Cliente";
 $lang['generate_pdf']		= "Crear PDF";
 $lang['print']				= "Imprimir";
+$lang['previous']			= "← Anterior";
 
 $lang['custom_required'] = "% s no puede estar en blanco";
 
@@ -262,6 +263,7 @@ $lang['active']      	 = "activo";
 $lang['inactive']      	 = "desactivada";
 $lang['edit']      	 = "Editar";
 $lang['delete']      	 = "Borrar";
+$lang['deleteGroup']      	 = "Borrar Varios";
 
 $lang['form']      	 = "Formulario";
 $lang['excerpt']      	 = "Extracto";
@@ -514,3 +516,5 @@ $lang['amount_received']			= "Cantidad recibida";
 $lang['balance_due']			= "Debido Balance";
 $lang['signed_by']			= "firmado por";
 $lang['result']			= "Resultado";
+$lang['showing']			= "Mostrando";
+$lang['group']			= "Agrupar";

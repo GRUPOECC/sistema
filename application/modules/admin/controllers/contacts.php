@@ -236,14 +236,25 @@ class contacts extends MX_Controller {
 	
 	function delete($id=false){
 		
+      if (is_int($id)) { 
+
 		if($id){
 			$this->contact_model->delete($id);
 			$this->session->set_flashdata('message',lang('contact_deleted'));
 			redirect('admin/contacts');
 		}
+
+	  }else{
+          $ids = explode("-",$id);
+          $i=0; 
+          while($i<count($ids)){
+          	$this->contact_model->delete($ids[$i]);
+          	$i++;
+          } 
+           redirect('admin/contacts');
+	  }
 	}	
-		
-	
+
 }
 
 

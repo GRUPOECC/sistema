@@ -33,7 +33,7 @@ function areyousure()
   <select class="selectpicker" id="modulos" onchange="filtrar()">
   <option value ="">Todos</option>
     <?php foreach($actions as $ppactions){ 
-      $nombre=$ppactions->alias;
+      $nombre=$ppactions->alias; 
       if($ppactions->parent_id==0){?>
     <option value =<?php echo $ppactions->id?>><?php echo $nombre?></option>
     <?php }} ?>  
@@ -156,10 +156,10 @@ function filtrar() {
     td = tr[i].getElementsByTagName("td")[1];
     hiddenId = tr[i].getElementsByTagName("td")[0];
     if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      if (td.innerText.toUpperCase().localeCompare(filter) == 0) {
         tr[i].style.display = "";
       } else {
-        if(hiddenId.innerHTML.toUpperCase().indexOf(id) > -1){
+        if(hiddenId.innerText.toUpperCase().localeCompare(id) == 0){
           tr[i].style.display = "";
         }
         else{

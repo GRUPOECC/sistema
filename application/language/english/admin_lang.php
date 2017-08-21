@@ -6,6 +6,7 @@ Admin Administrator Management Language
 
 //Header
 $lang['company_name']      = "Company Name";
+$lang['contact_company']      	 = "Company";
 $lang['logo']      = "Logo";
 $lang['number']      = "No";
 $lang['language']      = "Language";
@@ -38,6 +39,7 @@ $lang['enter_your_account_email']      	 = "Enter Your Account Email";
 $lang['change_password']      	 = "Change Password";
 $lang['register_new_admin']      	 = "Register New Admin";
 $lang['add_payment_detail']      	 = "Add Payment Details";
+$lang['add_contact_category']			= "Category";
 
 //Sidebar
 $lang['dashboard']      	 = "Dasbhoard";
@@ -100,7 +102,7 @@ $lang['amount']		    	 = "Amount";
 $lang['mode']		    	 = "Mode";
 $lang['attachment']		     = "Attachement";
 $lang['last']		     	= "Last";
-$lang['next']		     	= "Next";
+$lang['next']		     	= "Next → ";
 $lang['notes']		     	= "Notes";
 $lang['fees']		     	= "Fees";
 $lang['fees_agreed']		    = "Fee Agreed";
@@ -129,7 +131,7 @@ $lang['user_account']		= "User Account";
 $lang['user_profile']		= "User Profile";
 $lang['case_number']		= "Case No";
 $lang['court_category']		= "Court Category";
-$lang['case_category']		= "Case Cat�gorie";
+$lang['case_category']		= "Case Catégorie";
 $lang['payment_date']		= "Payment Date";
 $lang['custom_fields']		= "Custom Fields";
 $lang['field_name']			= "Field Name";
@@ -141,6 +143,7 @@ $lang['values']		= "Values";
 $lang['mail_to_client']		= "Mail To Client";
 $lang['generate_pdf']		= "Generate Pdf";
 $lang['print']				= "Print";
+$lang['previous']			= "← Previous";
 
 $lang['custom_required'] = "%s can not be blank.";
 
@@ -256,6 +259,7 @@ $lang['active']      	 = "Active";
 $lang['inactive']      	 = "Disabled";
 $lang['edit']      	 = "Edit";
 $lang['delete']      	 = "Delete";
+$lang['deleteGroup']      	 = "Delete Various";
 
 $lang['form']      	 = "Form";
 $lang['excerpt']      	 = "Excerpt";
@@ -503,3 +507,5 @@ $lang['amount_received']			= "Amount Received";
 $lang['balance_due']			= "Balance Due";
 $lang['signed_by']			= "Signed By";
 $lang['result']			= "Result";
+$lang['showing']			= "Showing";
+$lang['group']			= "Group";

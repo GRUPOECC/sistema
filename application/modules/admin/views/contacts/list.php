@@ -4,18 +4,18 @@
 
 
 <script type="text/javascript">
-//window.onload = detectarCarga;
-//function detectarCarga(){
-//   document.getElementById("modo-lista").style.display="block";
-//}
 
 function areyousure()
 {
 	return confirm('<?php echo lang('are_you_sure');?>');
 }
+
 </script>
-
-
+<style>
+  input[type="checkbox"]{
+   all: unset;
+}
+</style>
 
 <section class="content-header">
         <h1>
@@ -28,7 +28,26 @@ function areyousure()
         </ol>
 </section>
 
+  <!-- Proceso de eliminacion de varios Contactos -->
+  <?php
+
+     if (isset($_POST["contact_check"])){
+        $conjunto = "";
+        $delete = $_POST["contact_check"]; 
+        $cantidad = count($delete); 
+       
+         for ($i=0; $i<$cantidad; $i++) {  
+          $del_id = $delete[$i]; 
+          $conjunto = $conjunto . $del_id . "-";
+       } 
+       header('Location: '.site_url('admin/contacts/delete/').'/'.$conjunto);    
+   }
+
+?>
+
+
 <section class="content">
+    <form action="<?php echo site_url('admin/contacts'); ?>" method="post">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="col-md3">
@@ -45,6 +64,11 @@ function areyousure()
     		         <?php if(check_user_role(175)==1){?>
                      <a class="btn bg-yellow" style="margin-left:10px;" href="<?php echo site_url('admin/contact_category/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_contact_category');?></a>
                      <?php } ?> 
+                <?php if(check_user_role(24)==1){?>
+                      <input class="btn bg-red" style="margin-left:10px;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>'>
+                <?php } ?> 
+                      <a class="btn bg-olive" style="margin-left:10px;" href="">
+                     <i class="fa fa-caret-square-o-down"></i> <?php echo lang('group');?></a> 
 
                 </div>
             </div>    
@@ -81,17 +105,17 @@ function areyousure()
                   
 
                    <div id="modo-lista" style="display: none;"> <!-- /.Vista de listado -->   
-                  
+
                     <table id="example" class="table table-bordered table-striped" >
                      
                 
                         <thead>
                             <tr>
- 								<th><?php echo lang('name');?></th>
+                                <th></th>
+ 								                <th><?php echo lang('name');?></th>
                                 <th><?php echo lang('category');?></th>
-                                <th><?php echo lang('contact_company');?></th>
-                                
-								<th width="20%"><?php echo lang('action');?></th>
+                                <th><?php echo lang('contact_company');?></th>                              
+								                <th width="20%"><?php echo lang('action');?></th>
                  
                             </tr>
                         </thead>
@@ -104,6 +128,8 @@ function areyousure()
                                  // if ($contador<=8) {
                               ?>
                                 <tr class="gc_row">
+                                    <td>
+                                    <input type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $new->name?></td>
                                     <td><?php echo $new->category?></td>
                                     <td><?php echo $new->company?></td>
@@ -151,7 +177,7 @@ function areyousure()
                           <div class="row">
                              <div class=" col-md-12">
                                <div>
-                                   <p align="right"> Buscar: <input type="text" size="30" id="search" name="buscar" autofocus></p>
+                                   <p align="right"><?php echo lang('search'); ?>: <input type="text" size="30" id="search" name="buscar" autofocus></p>
                                </div>
                              </div>
 
@@ -163,7 +189,8 @@ function areyousure()
                              <div name="elemento" class=" col-md-3" style="background: #F5F5F5; margin: 8px; color: #000; height: 200px">   
                                <p>
                                 <span style="height: 120px">
-                                <strong><?php echo lang('name');?>:</strong> <?php echo $new->name?>
+                                <br>
+                                <strong><input type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"> <?php echo lang('name');?>:</strong> <?php echo $new->name?>
                                 <br> 
                                 <strong><?php echo lang('contact_company');?>:</strong> <?php echo $new->company?>                
                                 <br>
@@ -199,20 +226,20 @@ function areyousure()
                     <div class="col-md-12">
                        <div class="row">
                        <div class="col-xs-6">
-                       <div id="infoTabla">Probando </div>
+                       <div id="infoTabla"><?php echo lang('showing');?> FF <?php echo lang('to');?> QQ <?php echo lang('of');?> RR <?php echo lang('result');?></div>
                        </div>
                        <div class="col-xs-6">
                        <div class="dataTables_paginate paging_bootstrap">
                        <ul id="pages" class="pagination">
                        <li class="prev">
-                       <a onclick="anterior()" href="javascript:void(null)">← Anterior</a>
+                       <a onclick="anterior()" href="javascript:void(null)"><?php echo lang('previous');?></a>
                        </li>
                        <li id="posicion1" class="active"></li>
                        <li id="posicion2"></li>
                        <li id="posicion3"></li>
                        <li id="posicion4"></li>
                        <li id="posicion5"></li>
-                       <li id="siguiente" class="next"><a onclick="siguiente()" href="javascript:void(null)">Siguiente → </a></li></ul></div></div></div>
+                       <li id="siguiente" class="next"><a onclick="siguiente()" href="javascript:void(null)"><?php echo lang('next');?></a></li></ul></div></div></div>
                       
                     </div>
 
@@ -230,8 +257,10 @@ function areyousure()
 
         </div>
     </div>
-</section>
+  </form>
 
+
+</section>
 
 
 <!-- Modal para la informacion de importacion o exportacion de Contactos -->
@@ -285,7 +314,7 @@ function areyousure()
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Datos del Contacto</h4>
+          <h4 class="modal-title"><?php echo lang('contact');?></h4>
         </div>
         <div class="modal-body">
 
@@ -299,7 +328,7 @@ function areyousure()
                         <?php } ?> 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo lang('close');?></button>
         </div>
       </div>
       
@@ -311,13 +340,85 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 
+<?php 
+ $idioma = lang ('search');
+
+  if ($idioma == 'Buscar')  {
+     echo '
+
+       <script>
+  $(function() {
+  $("#example").dataTable({
+  "oLanguage": {
+        "sProcessing":    "Procesando...",
+        "sLengthMenu":    "Mostrar _MENU_ registros",
+        "sZeroRecords":   "No se encontraron resultados",
+        "sEmptyTable":    "Ningún dato disponible en esta tabla",
+        "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+        "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
+        "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)",
+        "sInfoPostFix":   "",
+        "sSearch":        "Buscar:",
+        "sUrl":           "",
+        "sInfoThousands":  ",",
+        "sLoadingRecords": "Cargando...",
+        "oPaginate": {
+            "sFirst":    "Primero",
+            "sLast":    "Último",
+            "sNext":    "Siguiente",
+            "sPrevious": "Anterior"
+        },
+        "oAria": {
+            "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+            "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+        }
+  }
+  });
+});
+</script>
+     '; 
+
+  }else if ($idioma == 'Search') {
+          echo '
+       <script>
+  $(function() {
+  $("#example").dataTable({
+  "oLanguage": {
+    "sEmptyTable":     "No data available in table",
+    "sInfo":           "Showing _START_ to _END_ of _TOTAL_ entries",
+    "sInfoEmpty":      "Showing 0 to 0 of 0 entries",
+    "sInfoFiltered":   "(filtered from _MAX_ total entries)",
+    "sInfoPostFix":    "",
+    "sInfoThousands":  ",",
+    "sLengthMenu":     "Show _MENU_ entries",
+    "sLoadingRecords": "Loading...",
+    "sProcessing":     "Processing...",
+    "sSearch":         "Search:",
+    "sZeroRecords":    "No matching records found",
+    "oPaginate": {
+        "sFirst":    "First",
+        "sLast":     "Last",
+        "sNext":     "Next",
+        "sPrevious": "Previous"
+    },
+    "oAria": {
+        "sSortAscending":  ": activate to sort column ascending",
+        "sSortDescending": ": activate to sort column descending"
+    }
+  }
+  });
+});
+</script>
+     '; 
+  }
+
+
+?>
+
 
 
 <script type="text/javascript">
-$(function() {
-  $('#example').dataTable({
-  });
-});
+
 
 $( document ).ready(function() {
     if (document.getElementById('modo-lista').style.display == "none") 
@@ -325,6 +426,7 @@ $( document ).ready(function() {
     document.getElementById('tipo-vista').style.display = "block";
 
 });
+
 
  var actual = 0; 
    function mostrarContacto (id){
