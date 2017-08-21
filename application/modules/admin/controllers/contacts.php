@@ -17,7 +17,7 @@ class contacts extends MX_Controller {
 		$data['contacts'] = $this->contact_model->get_all();
 		$data['page_title'] = lang('contacts');
 		$data['body'] = 'contacts/list';
-		$this->load->view('template/main', $data);	
+		$this->load->view('template/main2', $data);	
 
 	}	
 	
