@@ -1,7 +1,7 @@
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css')?>" rel="stylesheet">
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
-
+<link href="<?php echo base_url('assets/css/chosen.css')?>" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
 
@@ -43,7 +43,7 @@ function areyousure()
 
 
 <section class="content">
-    <form action="<?php echo site_url('admin/contacts'); ?>" method="post">
+    <form action="" method="post">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="col-md3">
@@ -61,9 +61,9 @@ function areyousure()
                      <a class="btn bg-yellow" style="margin-left:10px;" href="<?php echo site_url('admin/contact_category/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_contact_category');?></a>
                      <?php } ?> 
                 <?php if(check_user_role(24)==1){?>
-                      <input class="btn bg-red" style="margin-left:10px;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>'>
+                      <input class="btn bg-red" style="margin-left:10px;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
                 <?php } ?> 
-                      <a class="btn bg-olive" style="margin-left:10px;" href="">
+                      <a class="btn bg-olive" data-toggle="modal" data-target="#myModalData2" style="margin-left:10px;" href="">
                      <i class="fa fa-caret-square-o-down"></i> <?php echo lang('group');?></a> 
 
                 </div>
@@ -127,7 +127,7 @@ function areyousure()
                                     <td>
                                     <input type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $new->name?></td>
-                                    <td><?php echo $new->category?></td>
+                                    <td><?php echo $new->categoria?></td>
                                     <td><?php echo $new->company?></td>
 
 									  
@@ -136,14 +136,6 @@ function areyousure()
                                           <?php if(check_user_role(155)==1){?>  
 										  <a id="elem" class="btn btn-default" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="mostrarContacto(<?php echo $new->id ?>)" href=""><i  ></i> <?php echo lang('view');?></a>
 										   <?php } ?>
-                       <!--
-										  <?php if(check_user_role(23)==1){?>  
-										  <a class="btn btn-primary"  href="<?php echo site_url('admin/contacts/edit/'.$new->id); ?>" style="margin-left:10px;"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
-										   <?php } ?>	
-										    <?php if(check_user_role(24)==1){?>
-                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
-										  <?php } ?>	
-                      -->
                                         </div>
                                     </td>
                             
@@ -182,7 +174,7 @@ function areyousure()
                              <?php if(isset($contacts)):?>
                               <?php $i=1;foreach ($contacts as $new){ ?>
                             
-                             <div name="elemento" class=" col-md-3" style="background: #F5F5F5; margin: 8px; color: #000; height: 200px">   
+                             <div name="elemento" class=" col-md-3" style="background: #F5F5F5; margin: 8px; color: #000; height: 250px">   
                                <p>
                                 <span style="height: 120px">
                                 <br>
@@ -190,7 +182,7 @@ function areyousure()
                                 <br> 
                                 <strong><?php echo lang('contact_company');?>:</strong> <?php echo $new->company?>                
                                 <br>
-                                <strong><?php echo lang('category');?>:</strong> <?php echo $new->category?>
+                                <strong><?php echo lang('category');?>:</strong> <?php echo $new->categoria?>
                                 <br>
                                 <strong><?php echo lang('email');?>:</strong> <?php echo $new->email?>
                                 <br>
@@ -203,15 +195,8 @@ function areyousure()
                                           <?php if(check_user_role(155)==1){?>  
                       <a id="elem" class="btn btn-default" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="mostrarContacto(<?php echo $new->id ?>)" href=""><i  ></i> <?php echo lang('view');?></a>
                        <?php } ?>
-                       <!--
-                      <?php if(check_user_role(23)==1){?>  
-                      <a class="btn btn-primary"  href="<?php echo site_url('admin/contacts/edit/'.$new->id); ?>" style="margin-left:10px;"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
-                       <?php } ?> 
-                        <?php if(check_user_role(24)==1){?>
-                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
-                        <?php } ?>  
-                        -->
-                                        </div>
+
+                             </div>
                              </div>
 
    
@@ -253,9 +238,47 @@ function areyousure()
 
         </div>
     </div>
+
+
+  <!-- Modal para la opcion de Agrupas Contactos  -->
+  <div class="modal fade" id="myModalData2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><?php echo lang('contactGroupTitle');?></h4>
+        </div>
+        <div class="modal-body">
+          <p>
+              Seleccione las categorías a las que pertenecerán este grupo de contactos:
+          </p>  
+                           <select  name="category[]" class="chzn col-md-12" multiple="multiple" >
+                                        <?php  foreach($contact_categories as $new) {
+                                            $sel = "";
+                                            if(set_select('contact_category_id', $new->id)) $sel = "selected='selected'";
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }  
+                                                                           
+                                        ?>
+                           </select>
+                           <br>
+                           <br>
+                           <br>
+                           <br>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-default" name="submit2" value="<?php echo lang('group');?>" onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
+
+        
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
   </form>
-
-
 </section>
 
 
@@ -335,6 +358,12 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
+<script type="text/javascript">
+
+</script>
+
 
 <?php 
  $idioma = lang ('search');
@@ -411,10 +440,7 @@ function areyousure()
 
 ?>
 
-
-
 <script type="text/javascript">
-
 
 $( document ).ready(function() {
     if (document.getElementById('modo-lista').style.display == "none") 
@@ -422,7 +448,6 @@ $( document ).ready(function() {
     document.getElementById('tipo-vista').style.display = "block";
 
 });
-
 
  var actual = 0; 
    function mostrarContacto (id){
@@ -433,7 +458,7 @@ $( document ).ready(function() {
       
   } 
 
-
 </script>
+
 
 

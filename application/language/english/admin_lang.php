@@ -509,3 +509,4 @@ $lang['signed_by']			= "Signed By";
 $lang['result']			= "Result";
 $lang['showing']			= "Showing";
 $lang['group']			= "Group";
+$lang['contactGroupTitle']			= "Group contacts";

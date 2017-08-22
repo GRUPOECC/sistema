@@ -111,7 +111,7 @@
                                     <span for="name" style="clear:both;"><strong><?php echo lang('category');?></strong></span>
 								</div>
 								<div class="col-md-4">
-									<?php echo $contact->category?>
+									<?php echo $contact->categoria?>
                                 </div>
                             </div>
                         </div>

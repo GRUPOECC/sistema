@@ -14,10 +14,25 @@ class contacts extends MX_Controller {
 	
 	
 	function index(){
-		$data['contacts'] = $this->contact_model->get_all();
-		$data['page_title'] = lang('contacts');
-		$data['body'] = 'contacts/list';
-		$this->load->view('template/main2', $data);	
+		if (($this->input->server('REQUEST_METHOD') === 'POST')&&($this->input->post('category'))){
+
+            $categoria = json_encode($this->input->post('category'));
+            $contactos = $this->input->post('contact_check'); 
+            $cantidad = count($contactos); 
+            for ($i=0; $i<$cantidad; $i++) {  
+             $cont_id = $contactos[$i]; 
+             $this->contact_model->saveCategoryGroup($cont_id,$categoria);       
+            } 
+             
+            redirect('admin/contacts');
+            
+		}else{
+		   $data['contacts'] = $this->contact_model->get_all();
+		   $data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
+		   $data['page_title'] = lang('contacts');
+		   $data['body'] = 'contacts/list';
+		   $this->load->view('template/main2', $data);	
+	    }
 
 	}	
 	
@@ -56,11 +71,10 @@ class contacts extends MX_Controller {
 				$save['phone3'] = $this->input->post('phone3');
 				$save['phone4'] = $this->input->post('phone4');
 				$save['category'] = json_encode($this->input->post('category'));
+				$categoria = json_encode($this->input->post('category'));
 				$save['company'] = $this->input->post('company');
 				$save['department'] = $this->input->post('department');
-
-
-            	$p_key = $this->contact_model->save($save);
+            	$p_key = $this->contact_model->save($save,$categoria);
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){
 					foreach($this->input->post('reply') as $key => $val) {
@@ -97,6 +111,7 @@ class contacts extends MX_Controller {
         {	
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('name', 'lang:name', 'required');
+			$this->form_validation->set_rules('category', 'lang:category', 'required');
 			$this->form_validation->set_message('required', lang('custom_required'));
 			 
 			if ($this->form_validation->run()==true)
@@ -110,6 +125,7 @@ class contacts extends MX_Controller {
 				$save['phone3'] = $this->input->post('phone3');
 				$save['phone4'] = $this->input->post('phone4');
 				$save['category'] = json_encode($this->input->post('category'));
+				$categoria = json_encode($this->input->post('category'));
 				$save['company'] = $this->input->post('company');
 				$save['department'] = $this->input->post('department');
 
@@ -128,7 +144,7 @@ class contacts extends MX_Controller {
 					$this->custom_field_model->delete_answer($id,$form=4);
 					$this->custom_field_model->save_answer($save_fields);
 				}
-				$this->contact_model->update($save,$id);
+				$this->contact_model->update($save,$id,$categoria);
                 $this->session->set_flashdata('message', lang('contact_updated'));
 				redirect('admin/contacts');
 			}

@@ -41339,6 +41339,7 @@ ERROR - 20-08-2017 19:53:00 --> Severity: Notice  --> Trying to get property of 
 DEBUG - 20-08-2017 19:53:00 --> File loaded: application/modules/admin/views/contacts/vista.php
 DEBUG - 20-08-2017 19:53:00 --> Final output sent to browser
 DEBUG - 20-08-2017 19:53:00 --> Total execution time: 0.4902
+<<<<<<< HEAD
 DEBUG - 20-08-2017 20:12:50 --> File loaded: application/modules/admin/models/contact_model.php
 DEBUG - 20-08-2017 20:12:50 --> Model Class Initialized
 DEBUG - 20-08-2017 20:12:50 --> File loaded: application/modules/admin/models/custom_field_model.php
@@ -42250,3 +42251,11 @@ ERROR - 20-08-2017 21:14:12 --> Severity: Notice  --> Trying to get property of 
 DEBUG - 20-08-2017 21:14:12 --> File loaded: application/modules/admin/views/contacts/vista.php
 DEBUG - 20-08-2017 21:14:12 --> Final output sent to browser
 DEBUG - 20-08-2017 21:14:12 --> Total execution time: 0.2334
+=======
+DEBUG - 20-08-2017 23:01:11 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 20-08-2017 23:01:11 --> Model Class Initialized
+ERROR - 20-08-2017 23:01:11 --> Severity: Notice  --> Undefined index: admin C:\xampp\htdocs\sistema\application\third_party\MX\Controller.php 163
+DEBUG - 20-08-2017 23:01:11 --> File loaded: application/modules/admin/views/login/login.php
+DEBUG - 20-08-2017 23:01:11 --> Final output sent to browser
+DEBUG - 20-08-2017 23:01:11 --> Total execution time: 0.0703
+>>>>>>> e875e1a12b89f4f0bcedee8a83d7b8edb51c8ac8
