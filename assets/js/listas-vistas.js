@@ -21,6 +21,7 @@ var buscar = false; // Indica si el buscador esta activo o no
 var choice =""; // Contenido de la busqueda 
 var distribucion = false; //Maneja la distribucion en el buscador
 var cantidad =0; // Manja la cantidad de elementos por pagina 
+var valoranterior =0; //Almacena el valor de la pagina anterior 
 //Inilizo una lista por defecto:
 listaporDefecto();
 //----------------------------------------------------------
@@ -150,8 +151,15 @@ function distrubuirResultados(informacion,total,contacto,pagina){
          var actual = (pagina/9);
          var dataInfo = informacion.innerHTML;
          var act = actual.toString(), pag = totalpaginas.toString(), tlt = total.toString();
-         
-         informacion.innerHTML = dataInfo.replace("FF",act).replace("QQ",pag).replace("RR",tlt); 
+        
+         if (informacion.innerHTML.includes("FF")) 
+           informacion.innerHTML = dataInfo.replace("FF",act).replace("QQ",pag).replace("RR",tlt);
+         else 
+         {
+           informacion.innerHTML = dataInfo.replace(valoranterior.toString(),act);
+         } 
+        //Actualizo el valor
+        valoranterior = act; 
         var q=0; //<- Variable que marca valores del 1 al 5 para la distribucion   
         //Modificando Posicion de Paginacion: 
         var posiciones = ["posicion1", "posicion2", "posicion3","posicion4","posicion5"];
