@@ -14,24 +14,47 @@ class contacts extends MX_Controller {
 	
 	
 	function index(){
-		if (($this->input->server('REQUEST_METHOD') === 'POST')&&($this->input->post('category'))){
-
+		if (($this->input->server('REQUEST_METHOD') === 'POST')&&($this->input->post('category'))){     
             $categoria = json_encode($this->input->post('category'));
             $contactos = $this->input->post('contact_check'); 
             $cantidad = count($contactos); 
+            $estado = false; 
             for ($i=0; $i<$cantidad; $i++) {  
              $cont_id = $contactos[$i]; 
-             $this->contact_model->saveCategoryGroup($cont_id,$categoria);       
+             $estado = $this->contact_model->saveCategoryGroup($cont_id,$categoria);       
             } 
-             
-            redirect('admin/contacts');
+             if ($estado) 
+               redirect('admin/contacts');
+               else 
+               	echo '
+                  <script>
+                   alert("Debe seleccionar un contacto");
+                   location.href = "contacts";
+                  </script>
+               '; 
             
 		}else{
-		   $data['contacts'] = $this->contact_model->get_all();
-		   $data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
-		   $data['page_title'] = lang('contacts');
-		   $data['body'] = 'contacts/list';
-		   $this->load->view('template/main2', $data);	
+
+			 if (isset($_POST['submit2'])){
+                 echo '
+                  <script>
+                   alert("Debe seleccionar un contacto");                               
+                  </script>
+               '; 
+                $data['contacts'] = $this->contact_model->get_all();
+		        $data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
+		        $data['page_title'] = lang('contacts');
+		        $data['body'] = 'contacts/list';
+		        $this->load->view('template/main2', $data);	
+             }else{
+                $data['contacts'] = $this->contact_model->get_all();
+		        $data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
+		        $data['page_title'] = lang('contacts');
+		        $data['body'] = 'contacts/list';
+		        $this->load->view('template/main2', $data);	
+
+             }
+		  
 	    }
 
 	}	
@@ -264,10 +287,10 @@ class contacts extends MX_Controller {
           $ids = explode("-",$id);
           $i=0; 
           while($i<count($ids)){
-          	$this->contact_model->delete($ids[$i]);
+            $this->contact_model->delete($ids[$i]);
           	$i++;
           } 
-           redirect('admin/contacts');
+           redirect('admin/contacts');     	 
 	  }
 	}	
 

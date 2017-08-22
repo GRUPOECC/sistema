@@ -13,6 +13,8 @@ function areyousure()
 </script>
 
 
+
+
 <section class="content-header">
         <h1>
             <?php echo $page_title; ?>
@@ -28,6 +30,7 @@ function areyousure()
   <?php
 
      if (isset($_POST["contact_check"])){
+      
         $conjunto = "";
         $delete = $_POST["contact_check"]; 
         $cantidad = count($delete); 
@@ -35,9 +38,20 @@ function areyousure()
          for ($i=0; $i<$cantidad; $i++) {  
           $del_id = $delete[$i]; 
           $conjunto = $conjunto . $del_id . "-";
-       } 
-       header('Location: '.site_url('admin/contacts/delete/').'/'.$conjunto);    
-   }
+         } 
+         header('Location: '.site_url('admin/contacts/delete/').'/'.$conjunto);    
+      }else 
+         {
+             if (isset($_POST['submit'])){
+                 echo '
+                  <script>
+                   alert("Debe seleccionar un contacto");                               
+                  </script>
+               '; 
+
+             } 
+            
+         }
 
 ?>
 
@@ -62,10 +76,12 @@ function areyousure()
                      <?php } ?> 
                 <?php if(check_user_role(24)==1){?>
                       <input class="btn bg-red" style="margin-left:10px;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
-                <?php } ?> 
-                      <a class="btn bg-olive" data-toggle="modal" data-target="#myModalData2" style="margin-left:10px;" href="">
-                     <i class="fa fa-caret-square-o-down"></i> <?php echo lang('group');?></a> 
+                <?php } ?>                   
+                     <a class="btn bg-yellow" data-toggle="modal" data-target="#myModalData2" style="margin-left:10px;" href="">
+                     <i class="fa fa-plus"></i> <?php echo lang('setCategoryGroup');?></a> 
 
+                      <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
+                     <i class="fa fa-caret-square-o-down"></i> <?php echo lang('group');?></a> 
                 </div>
             </div>    
         </div>	
@@ -125,7 +141,7 @@ function areyousure()
                               ?>
                                 <tr class="gc_row">
                                     <td>
-                                    <input type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"></td>
+                                    <input style="display: none;" type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $new->name?></td>
                                     <td><?php echo $new->categoria?></td>
                                     <td><?php echo $new->company?></td>
@@ -178,7 +194,7 @@ function areyousure()
                                <p>
                                 <span style="height: 120px">
                                 <br>
-                                <strong><input type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"> <?php echo lang('name');?>:</strong> <?php echo $new->name?>
+                                <strong><input style="display: none;" type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"> <?php echo lang('name');?>:</strong> <?php echo $new->name?>
                                 <br> 
                                 <strong><?php echo lang('contact_company');?>:</strong> <?php echo $new->company?>                
                                 <br>
@@ -240,7 +256,7 @@ function areyousure()
     </div>
 
 
-  <!-- Modal para la opcion de Agrupas Contactos  -->
+  <!-- Modal para la opcion de Agrupar Contactos  -->
   <div class="modal fade" id="myModalData2" role="dialog">
     <div class="modal-dialog">
     
@@ -269,7 +285,7 @@ function areyousure()
                            <br>
         </div>
         <div class="modal-footer">
-          <input type="submit" class="btn btn-default" name="submit2" value="<?php echo lang('group');?>" onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
+          <input type="submit" class="btn btn-default" id="submit2" name="submit2" value="<?php echo lang('group');?>" onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
 
         
         </div>
@@ -360,10 +376,6 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
-<script type="text/javascript">
-
-</script>
-
 
 <?php 
  $idioma = lang ('search');
@@ -458,6 +470,21 @@ $( document ).ready(function() {
       
   } 
 
+</script>
+
+<script type="text/javascript">
+   
+   function Agrupar () {
+        if (($('input[type=checkbox]').css("display"))=="none"){ 
+         $('input[type=checkbox]').css("display", "block");
+          
+       }else 
+          {
+            $('input[type=checkbox]').css("display", "none");
+             
+          }
+   }
+  
 </script>
 
 

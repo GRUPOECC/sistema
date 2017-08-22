@@ -59,11 +59,24 @@ class contact_model extends CI_Model
              if (($idcategorias[$i]!="[")&&($idcategorias[$i]!="]")&&($idcategorias[$i]!=",")){
                 $savecategory['id_category'] = $idcategorias[$i];
                 $savecategory['id_contact'] = $id;
-                if (($savecategory['id_contact']!=null)&&($savecategory['id_category']!=null)) 
-                $this->db->insert('rel_contact_category',$savecategory);
+                if (($savecategory['id_contact']!=null)&&($savecategory['id_category']!=null)) {
+                   $this->db->select('*');
+                   $array = array('id_contact' => $id, 'id_category' => $idcategorias[$i]);
+                   $this->db->where($array);
+                   $query = $this->db->get('rel_contact_category');
+                   $num = $query->num_rows();
+                   if ($num==0) 
+                   $this->db->insert('rel_contact_category',$savecategory);
+                }
+                else
+                  {
+                    return false; 
+                  	break;
+                  }
              } 
             $i = $i+1; 
 		}
+           return true;
 
 	} 
     //-----------------------------------------------------------------------------------------------------------
@@ -98,5 +111,6 @@ class contact_model extends CI_Model
 		       $this->db->delete('rel_contact_category');
 			   $this->db->where('id',$id);
 		       $this->db->delete('contacts');
+
 	}
 }

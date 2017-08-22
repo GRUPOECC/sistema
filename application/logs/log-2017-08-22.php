@@ -10208,3 +10208,8912 @@ DEBUG - 22-08-2017 08:22:57 --> contacts MX_Controller Initialized
 DEBUG - 22-08-2017 08:22:57 --> Model Class Initialized
 DEBUG - 22-08-2017 08:22:57 --> File loaded: application/modules/admin/models/setting_model.php
 DEBUG - 22-08-2017 08:22:57 --> Model Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Config Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:24:12 --> URI Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Router Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Output Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Security Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Input Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:24:12 --> Language Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Language Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Config Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:24:12 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:24:12 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:24:12 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:24:12 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Session Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:24:12 --> Session routines successfully run
+DEBUG - 22-08-2017 08:24:12 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:24:12 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:24:12 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:24:12 --> Model Class Initialized
+DEBUG - 22-08-2017 08:24:12 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:24:12 --> Model Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Config Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:24:13 --> URI Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Router Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Output Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Security Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Input Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:24:13 --> Language Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Language Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Config Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:24:13 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:24:13 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:24:13 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:24:13 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Session Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:24:13 --> Session routines successfully run
+DEBUG - 22-08-2017 08:24:13 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:24:13 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:24:13 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:24:13 --> Model Class Initialized
+DEBUG - 22-08-2017 08:24:13 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:24:13 --> Model Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Config Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:24:15 --> URI Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Router Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Output Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Security Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Input Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:24:15 --> Language Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Language Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Config Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:24:15 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:24:15 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:24:15 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:24:15 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Session Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:24:15 --> Session routines successfully run
+DEBUG - 22-08-2017 08:24:15 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:24:15 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:24:15 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:24:15 --> Model Class Initialized
+DEBUG - 22-08-2017 08:24:15 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:24:15 --> Model Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Config Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:27:14 --> URI Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Router Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Output Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Security Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Input Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:27:14 --> Language Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Language Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Config Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:27:14 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:27:14 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:27:14 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:27:14 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Session Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:27:14 --> Session routines successfully run
+DEBUG - 22-08-2017 08:27:14 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:27:14 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:27:14 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:27:14 --> Model Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:27:14 --> Model Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Config Class Initialized
+DEBUG - 22-08-2017 08:27:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:27:15 --> URI Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Router Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Output Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Security Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Input Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:27:15 --> Language Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Language Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Config Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:27:15 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:27:15 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:27:15 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:27:15 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Session Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:27:15 --> Session routines successfully run
+DEBUG - 22-08-2017 08:27:15 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:27:15 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:27:15 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:27:15 --> Model Class Initialized
+DEBUG - 22-08-2017 08:27:15 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:27:15 --> Model Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Config Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:27:17 --> URI Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Router Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Output Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Security Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Input Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:27:17 --> Language Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Language Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Config Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:27:17 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:27:17 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:27:17 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:27:17 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Session Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:27:17 --> Session routines successfully run
+DEBUG - 22-08-2017 08:27:17 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:27:17 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:27:17 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:27:17 --> Model Class Initialized
+DEBUG - 22-08-2017 08:27:17 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:27:17 --> Model Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Config Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:29:23 --> URI Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Router Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Output Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Security Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Input Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:29:23 --> Language Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Language Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Config Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:29:23 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:29:23 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:29:23 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:29:23 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Session Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:29:23 --> Session routines successfully run
+DEBUG - 22-08-2017 08:29:23 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:29:23 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:29:23 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:29:23 --> Model Class Initialized
+DEBUG - 22-08-2017 08:29:23 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:29:23 --> Model Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Config Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:29:30 --> URI Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Router Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Output Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Security Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Input Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:29:30 --> Language Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Language Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Config Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:29:30 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:29:30 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:29:30 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:29:30 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Session Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:29:30 --> Session routines successfully run
+DEBUG - 22-08-2017 08:29:30 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:29:30 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:29:30 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:29:30 --> Model Class Initialized
+DEBUG - 22-08-2017 08:29:30 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:29:30 --> Model Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Config Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:47:51 --> URI Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Router Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Output Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Security Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Input Class Initialized
+DEBUG - 22-08-2017 08:47:51 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:47:52 --> Language Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Language Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Config Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:47:52 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:47:52 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:47:52 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:47:52 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Session Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:47:52 --> Session routines successfully run
+DEBUG - 22-08-2017 08:47:52 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:47:52 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:47:52 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:47:52 --> Model Class Initialized
+DEBUG - 22-08-2017 08:47:52 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:47:52 --> Model Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Config Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:47:55 --> URI Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Router Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Output Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Security Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Input Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:47:55 --> Language Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Language Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Config Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:47:55 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:47:55 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:47:55 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:47:55 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Session Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:47:55 --> Session routines successfully run
+DEBUG - 22-08-2017 08:47:55 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:47:55 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:47:55 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:47:55 --> Model Class Initialized
+DEBUG - 22-08-2017 08:47:55 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:47:55 --> Model Class Initialized
+DEBUG - 22-08-2017 08:49:43 --> Config Class Initialized
+DEBUG - 22-08-2017 08:49:43 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:49:43 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:49:43 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:49:43 --> URI Class Initialized
+DEBUG - 22-08-2017 08:49:43 --> Router Class Initialized
+DEBUG - 22-08-2017 08:49:43 --> Output Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Security Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Input Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:49:44 --> Language Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Language Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Config Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:49:44 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:49:44 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:49:44 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:49:44 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Session Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:49:44 --> Session routines successfully run
+DEBUG - 22-08-2017 08:49:44 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:49:44 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:49:44 --> contact_category MX_Controller Initialized
+DEBUG - 22-08-2017 08:49:44 --> Model Class Initialized
+DEBUG - 22-08-2017 08:49:44 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:49:44 --> Model Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Config Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:54:46 --> URI Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Router Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Output Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Security Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Input Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:54:46 --> Language Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Language Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Config Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:54:46 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:54:46 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:54:46 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:54:46 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Session Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:54:46 --> Session routines successfully run
+DEBUG - 22-08-2017 08:54:46 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:54:46 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:54:46 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:54:46 --> Model Class Initialized
+DEBUG - 22-08-2017 08:54:46 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:54:46 --> Model Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Config Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:54:48 --> URI Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Router Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Output Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Security Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Input Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:54:48 --> Language Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Language Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Config Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:54:48 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:54:48 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:54:48 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:54:48 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:54:49 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:54:49 --> Session Class Initialized
+DEBUG - 22-08-2017 08:54:49 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:54:49 --> Session routines successfully run
+DEBUG - 22-08-2017 08:54:49 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:54:49 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:54:49 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:54:49 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:54:49 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:54:49 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:54:49 --> Model Class Initialized
+DEBUG - 22-08-2017 08:54:49 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:54:49 --> Model Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Config Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:55:41 --> URI Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Router Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Output Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Security Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Input Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:55:41 --> Language Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Language Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Config Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:55:41 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:55:41 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:55:41 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:55:41 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Session Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:55:41 --> Session routines successfully run
+DEBUG - 22-08-2017 08:55:41 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:55:41 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:55:41 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:55:41 --> Model Class Initialized
+DEBUG - 22-08-2017 08:55:41 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:55:41 --> Model Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Config Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:55:51 --> URI Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Router Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Output Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Security Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Input Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:55:51 --> Language Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Language Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Config Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:55:51 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:55:51 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:55:51 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:55:51 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Session Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:55:51 --> Session routines successfully run
+DEBUG - 22-08-2017 08:55:51 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:55:51 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:55:51 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:55:51 --> Model Class Initialized
+DEBUG - 22-08-2017 08:55:51 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:55:51 --> Model Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Config Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:55:58 --> URI Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Router Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Output Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Security Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Input Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:55:58 --> Language Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Language Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Config Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:55:58 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:55:58 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:55:58 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:55:58 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Session Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:55:58 --> Session routines successfully run
+DEBUG - 22-08-2017 08:55:58 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:55:58 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:55:58 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:55:58 --> Model Class Initialized
+DEBUG - 22-08-2017 08:55:58 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:55:58 --> Model Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Config Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Hooks Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 08:56:00 --> URI Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Router Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Output Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Security Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Input Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 08:56:00 --> Language Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Language Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Config Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Loader Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 08:56:00 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 08:56:00 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 08:56:00 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 08:56:00 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Session Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 08:56:00 --> Session routines successfully run
+DEBUG - 22-08-2017 08:56:00 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Controller Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 08:56:00 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 08:56:00 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 08:56:00 --> Model Class Initialized
+DEBUG - 22-08-2017 08:56:00 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 08:56:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:03:40 --> URI Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Router Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Output Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Security Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Input Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:03:40 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:03:40 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:03:40 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:03:40 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:03:40 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Session Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:03:40 --> Session routines successfully run
+DEBUG - 22-08-2017 09:03:40 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:03:40 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:03:40 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:03:40 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:40 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:03:40 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:03:43 --> URI Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Router Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Output Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Security Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Input Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:03:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:03:43 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:03:43 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:03:43 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:03:43 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Session Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:03:43 --> Session routines successfully run
+DEBUG - 22-08-2017 09:03:43 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:03:43 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:03:43 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:03:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:43 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:03:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Config Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:02:58 --> URI Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Router Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Output Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Security Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Input Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:02:58 --> Language Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Language Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Config Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:02:58 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:02:58 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:02:58 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:02:58 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Session Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:02:58 --> Session routines successfully run
+DEBUG - 22-08-2017 09:02:58 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:02:58 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:02:58 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:02:58 --> Model Class Initialized
+DEBUG - 22-08-2017 09:02:58 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:02:58 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:03:00 --> URI Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Router Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Output Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Security Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Input Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:03:00 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:03:00 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:03:00 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:03:00 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:03:00 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Session Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:03:00 --> Session routines successfully run
+DEBUG - 22-08-2017 09:03:00 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:03:00 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:03:00 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:03:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:00 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:03:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:03:28 --> URI Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Router Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Output Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Security Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Input Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:03:28 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:03:28 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:03:28 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:03:28 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:03:28 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Session Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:03:28 --> Session routines successfully run
+DEBUG - 22-08-2017 09:03:28 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:03:28 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:03:28 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:03:28 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:28 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:03:28 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:03:31 --> URI Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Router Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Output Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Security Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Input Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:03:31 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Language Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Config Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:03:31 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:03:31 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:03:31 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:03:31 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Session Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:03:31 --> Session routines successfully run
+DEBUG - 22-08-2017 09:03:31 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:03:31 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:03:31 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:03:31 --> Model Class Initialized
+DEBUG - 22-08-2017 09:03:31 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:03:31 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:07:05 --> URI Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Router Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Output Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Security Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Input Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:07:05 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:07:05 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:07:05 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:07:05 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:07:05 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Session Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:07:05 --> Session routines successfully run
+DEBUG - 22-08-2017 09:07:05 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:07:05 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:07:05 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:07:05 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:05 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:07:05 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:07:08 --> URI Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Router Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Output Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Security Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Input Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:07:08 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:07:08 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:07:08 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:07:08 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:07:08 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Session Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:07:08 --> Session routines successfully run
+DEBUG - 22-08-2017 09:07:08 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:07:08 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:07:08 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:07:08 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:08 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:07:08 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:07:36 --> URI Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Router Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Output Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Security Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Input Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:07:36 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:07:36 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:07:36 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:07:36 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:07:36 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Session Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:07:36 --> Session routines successfully run
+DEBUG - 22-08-2017 09:07:36 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:07:36 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:07:36 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:07:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:36 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:07:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:07:39 --> URI Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Router Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Output Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Security Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Input Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:07:39 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Language Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Config Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:07:39 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:07:39 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:07:39 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:07:39 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Session Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:07:39 --> Session routines successfully run
+DEBUG - 22-08-2017 09:07:39 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:07:39 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:07:39 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:07:39 --> Model Class Initialized
+DEBUG - 22-08-2017 09:07:39 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:07:39 --> Model Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Config Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:09:38 --> URI Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Router Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Output Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Security Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Input Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:09:38 --> Language Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Language Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Config Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:09:38 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:09:38 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:09:38 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:09:38 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Session Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:09:38 --> Session routines successfully run
+DEBUG - 22-08-2017 09:09:38 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:09:38 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:09:38 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:09:38 --> Model Class Initialized
+DEBUG - 22-08-2017 09:09:38 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:09:38 --> Model Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Config Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:09:40 --> URI Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Router Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Output Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Security Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Input Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:09:40 --> Language Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Language Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Config Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:09:40 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:09:40 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:09:40 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:09:40 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Session Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:09:40 --> Session routines successfully run
+DEBUG - 22-08-2017 09:09:40 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:09:40 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:09:40 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:09:40 --> Model Class Initialized
+DEBUG - 22-08-2017 09:09:40 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:09:40 --> Model Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Config Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:12:07 --> URI Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Router Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Output Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Security Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Input Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:12:07 --> Language Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Language Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Config Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:12:07 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:12:07 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:12:07 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:12:07 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Session Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:12:07 --> Session routines successfully run
+DEBUG - 22-08-2017 09:12:07 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:12:07 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:12:07 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:12:07 --> Model Class Initialized
+DEBUG - 22-08-2017 09:12:07 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:12:07 --> Model Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Config Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:12:09 --> URI Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Router Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Output Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Security Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Input Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:12:09 --> Language Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Language Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Config Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:12:09 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:12:09 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:12:09 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:12:09 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Session Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:12:09 --> Session routines successfully run
+DEBUG - 22-08-2017 09:12:09 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:12:09 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:12:09 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:12:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:12:09 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:12:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:13:14 --> URI Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Router Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Output Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Security Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Input Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:13:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:13:14 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:13:14 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:13:14 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:13:14 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Session Class Initialized
+DEBUG - 22-08-2017 09:13:14 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:13:14 --> Session routines successfully run
+DEBUG - 22-08-2017 09:13:15 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:13:15 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:13:15 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:13:15 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:13:15 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:13:15 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:13:15 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:15 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:13:15 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:13:17 --> URI Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Router Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Output Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Security Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Input Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:13:17 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:13:17 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:13:17 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:13:17 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:13:17 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Session Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:13:17 --> Session routines successfully run
+DEBUG - 22-08-2017 09:13:17 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:13:17 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:13:17 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:13:17 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:17 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:13:17 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:13:43 --> URI Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Router Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Output Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Security Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Input Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:13:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:13:43 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Session Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:13:43 --> Session routines successfully run
+DEBUG - 22-08-2017 09:13:43 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:13:43 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:13:43 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:13:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:13:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:13:43 --> URI Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Router Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Output Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Security Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Input Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:13:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:13:43 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Session Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:13:43 --> Session routines successfully run
+DEBUG - 22-08-2017 09:13:43 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:13:43 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:13:43 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:13:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:43 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:13:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:13:45 --> URI Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Router Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Output Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Security Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Input Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:13:45 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Language Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Config Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:13:45 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:13:45 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:13:45 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:13:45 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Session Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:13:45 --> Session routines successfully run
+DEBUG - 22-08-2017 09:13:45 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:13:45 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:13:45 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:13:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:13:45 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:13:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:19:20 --> URI Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Router Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Output Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Security Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Input Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:19:20 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:19:20 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:19:20 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:19:20 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:19:20 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Session Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:19:20 --> Session routines successfully run
+DEBUG - 22-08-2017 09:19:20 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:19:20 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:19:20 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:19:20 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:20 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:19:20 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:19:22 --> URI Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Router Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Output Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Security Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Input Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:19:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:19:22 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:19:22 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:19:22 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:19:22 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Session Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:19:22 --> Session routines successfully run
+DEBUG - 22-08-2017 09:19:22 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:19:22 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:19:22 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:19:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:22 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:19:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:19:42 --> URI Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Router Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Output Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Security Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Input Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:19:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:19:42 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Session Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:19:42 --> Session routines successfully run
+DEBUG - 22-08-2017 09:19:42 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:19:42 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:19:42 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:19:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:19:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:19:42 --> URI Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Router Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Output Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Security Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Input Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:19:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:19:42 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Session Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:19:42 --> Session routines successfully run
+DEBUG - 22-08-2017 09:19:42 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:19:42 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:19:42 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:19:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:42 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:19:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:19:44 --> URI Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Router Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Output Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Security Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Input Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:19:44 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Language Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Config Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:19:44 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:19:44 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:19:44 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:19:44 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Session Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:19:44 --> Session routines successfully run
+DEBUG - 22-08-2017 09:19:44 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:19:44 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:19:44 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:19:44 --> Model Class Initialized
+DEBUG - 22-08-2017 09:19:44 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:19:44 --> Model Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Config Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:22:03 --> URI Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Router Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Output Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Security Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Input Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:22:03 --> Language Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Language Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Config Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:22:03 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:22:03 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:22:03 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:22:03 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Session Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:22:03 --> Session routines successfully run
+DEBUG - 22-08-2017 09:22:03 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:22:03 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:22:03 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:22:03 --> Model Class Initialized
+DEBUG - 22-08-2017 09:22:03 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:22:03 --> Model Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Config Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:22:06 --> URI Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Router Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Output Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Security Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Input Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:22:06 --> Language Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Language Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Config Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:22:06 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:22:06 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:22:06 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:22:06 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Session Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:22:06 --> Session routines successfully run
+DEBUG - 22-08-2017 09:22:06 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:22:06 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:22:06 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:22:06 --> Model Class Initialized
+DEBUG - 22-08-2017 09:22:06 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:22:06 --> Model Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Config Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:22:13 --> URI Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Router Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Output Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Security Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Input Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:22:13 --> Language Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Language Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Config Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:22:13 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:22:13 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:22:13 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:22:13 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Session Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:22:13 --> Session routines successfully run
+DEBUG - 22-08-2017 09:22:13 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:22:13 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:22:13 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:22:13 --> Model Class Initialized
+DEBUG - 22-08-2017 09:22:13 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:22:13 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:23:36 --> URI Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Router Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Output Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Security Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Input Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:23:36 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:23:36 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:23:36 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:23:36 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:23:36 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Session Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:23:36 --> Session routines successfully run
+DEBUG - 22-08-2017 09:23:36 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:23:36 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:23:36 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:23:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:36 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:23:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:23:38 --> URI Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Router Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Output Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Security Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Input Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:23:38 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:23:38 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:23:38 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:23:38 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:23:38 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Session Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:23:38 --> Session routines successfully run
+DEBUG - 22-08-2017 09:23:38 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:23:38 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:23:38 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:23:38 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:38 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:23:38 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:23:42 --> URI Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Router Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Output Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Security Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Input Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:23:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:23:42 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:23:42 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:23:42 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:23:42 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Session Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:23:42 --> Session routines successfully run
+DEBUG - 22-08-2017 09:23:42 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:23:42 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:23:42 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:23:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:42 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:23:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:23:51 --> URI Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Router Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Output Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Security Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Input Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:23:51 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:23:51 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:23:51 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:23:51 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:23:51 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Session Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:23:51 --> Session routines successfully run
+DEBUG - 22-08-2017 09:23:51 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:23:51 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:23:51 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:23:51 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:51 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:23:51 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:23:54 --> URI Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Router Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Output Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Security Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Input Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:23:54 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Language Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Config Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:23:54 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:23:54 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:23:54 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:23:54 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Session Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:23:54 --> Session routines successfully run
+DEBUG - 22-08-2017 09:23:54 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:23:54 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:23:54 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:23:54 --> Model Class Initialized
+DEBUG - 22-08-2017 09:23:54 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:23:54 --> Model Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Config Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:24:02 --> URI Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Router Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Output Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Security Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Input Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:24:02 --> Language Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Language Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Config Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:24:02 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:24:02 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:24:02 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:24:02 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Session Class Initialized
+DEBUG - 22-08-2017 09:24:02 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:24:02 --> Session routines successfully run
+DEBUG - 22-08-2017 09:24:02 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:24:03 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:24:03 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:24:03 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:24:03 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:24:03 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:24:03 --> Model Class Initialized
+DEBUG - 22-08-2017 09:24:03 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:24:03 --> Model Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Config Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:26:19 --> URI Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Router Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Output Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Security Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Input Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:26:19 --> Language Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Language Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Config Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:26:19 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:26:19 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:26:19 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:26:19 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Session Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:26:19 --> Session routines successfully run
+DEBUG - 22-08-2017 09:26:19 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:26:19 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:26:19 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:26:19 --> Model Class Initialized
+DEBUG - 22-08-2017 09:26:19 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:26:19 --> Model Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:26:22 --> URI Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Router Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Output Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Security Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Input Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:26:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:26:22 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:26:22 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:26:22 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:26:22 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Session Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:26:22 --> Session routines successfully run
+DEBUG - 22-08-2017 09:26:22 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:26:22 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:26:22 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:26:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:26:22 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:26:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Config Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:26:26 --> URI Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Router Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Output Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Security Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Input Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:26:26 --> Language Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Language Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Config Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:26:26 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:26:26 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:26:26 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:26:26 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Session Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:26:26 --> Session routines successfully run
+DEBUG - 22-08-2017 09:26:26 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:26:26 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:26:26 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:26:26 --> Model Class Initialized
+DEBUG - 22-08-2017 09:26:26 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:26:26 --> Model Class Initialized
+DEBUG - 22-08-2017 09:26:32 --> Config Class Initialized
+DEBUG - 22-08-2017 09:26:32 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:26:32 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:26:32 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:26:32 --> URI Class Initialized
+DEBUG - 22-08-2017 09:26:32 --> Router Class Initialized
+ERROR - 22-08-2017 09:26:32 --> 404 Page Not Found --> admin/admin/contacts
+DEBUG - 22-08-2017 09:28:06 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:06 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:06 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:06 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:06 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:06 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:06 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:06 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:06 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:06 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:06 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:06 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:06 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:06 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:09 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:09 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:09 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:09 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:09 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:09 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:09 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:09 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:09 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:09 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:09 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:14 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:14 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:14 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:14 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:14 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:14 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:14 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:14 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:14 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:14 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:19 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:19 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:19 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:19 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:19 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:19 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:19 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:19 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:19 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:19 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:19 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:19 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:19 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:22 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:22 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:22 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:22 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:22 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:22 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:22 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:22 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:22 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:22 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:37 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:37 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:37 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:37 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:37 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:37 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:37 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:37 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:37 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:37 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:37 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:39 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:39 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:39 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:39 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:39 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:39 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:39 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:39 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:39 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:39 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:39 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:39 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:39 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:43 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:43 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:43 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:43 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:43 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:43 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:43 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:43 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:43 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:43 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:48 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:48 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:48 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:48 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:48 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:48 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:48 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:48 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:48 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:48 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:48 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:48 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:48 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:28:50 --> URI Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Router Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Output Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Security Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Input Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:28:50 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Language Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Config Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:28:50 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:28:50 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:28:50 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:28:50 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Session Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:28:50 --> Session routines successfully run
+DEBUG - 22-08-2017 09:28:50 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:28:50 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:28:50 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:28:50 --> Model Class Initialized
+DEBUG - 22-08-2017 09:28:50 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:28:50 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:29:23 --> URI Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Router Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Output Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Security Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Input Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:29:23 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:23 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:29:24 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:29:24 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:29:24 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:29:24 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:29:24 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:29:24 --> Session Class Initialized
+DEBUG - 22-08-2017 09:29:24 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:29:24 --> Session routines successfully run
+DEBUG - 22-08-2017 09:29:24 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:29:24 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:29:24 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:29:24 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:29:24 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:29:24 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:29:24 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:24 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:29:24 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:29:26 --> URI Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Router Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Output Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Security Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Input Class Initialized
+DEBUG - 22-08-2017 09:29:26 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:29:26 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:29:27 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:29:27 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:29:27 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:29:27 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Session Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:29:27 --> Session routines successfully run
+DEBUG - 22-08-2017 09:29:27 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:29:27 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:29:27 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:29:27 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:27 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:29:27 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:29:31 --> URI Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Router Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Output Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Security Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Input Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:29:31 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:29:31 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:29:31 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:29:31 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:29:31 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Session Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:29:31 --> Session routines successfully run
+DEBUG - 22-08-2017 09:29:31 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:29:31 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:29:31 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:29:31 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:31 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:29:31 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:29:32 --> URI Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Router Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Output Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Security Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Input Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:29:32 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:29:32 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:29:32 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:29:32 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:29:32 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Session Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:29:32 --> Session routines successfully run
+DEBUG - 22-08-2017 09:29:32 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:29:32 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:29:32 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:29:32 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:32 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:29:32 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:29:35 --> URI Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Router Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Output Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Security Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Input Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:29:35 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Language Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Config Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:29:35 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:29:35 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:29:35 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:29:35 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Session Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:29:35 --> Session routines successfully run
+DEBUG - 22-08-2017 09:29:35 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:29:35 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:29:35 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:29:35 --> Model Class Initialized
+DEBUG - 22-08-2017 09:29:35 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:29:35 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:41:32 --> URI Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Router Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Output Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Security Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Input Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:41:32 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:41:32 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:41:32 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:41:32 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:41:32 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Session Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:41:32 --> Session routines successfully run
+DEBUG - 22-08-2017 09:41:32 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:41:32 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:41:32 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:41:32 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:32 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:41:32 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:32 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:11:32 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:32 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:11:32 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:32 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:11:32 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:32 --> Final output sent to browser
+DEBUG - 22-08-2017 00:11:32 --> Total execution time: 0.1914
+DEBUG - 22-08-2017 09:41:35 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:41:35 --> URI Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Router Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Output Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Security Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Input Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:41:35 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:41:35 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:41:35 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:41:35 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:41:35 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:41:36 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:41:36 --> Session Class Initialized
+DEBUG - 22-08-2017 09:41:36 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:41:36 --> Session routines successfully run
+DEBUG - 22-08-2017 09:41:36 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:41:36 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:41:36 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:41:36 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:41:36 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:41:36 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:41:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:36 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:41:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:11:36 --> Model Class Initialized
+ERROR - 22-08-2017 00:11:36 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:11:36 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:11:36 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:11:36 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:11:36 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:11:36 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:11:36 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:11:36 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:11:36 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:11:36 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:11:36 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:11:37 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:11:37 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:11:37 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:11:37 --> Final output sent to browser
+DEBUG - 22-08-2017 00:11:37 --> Total execution time: 1.3848
+DEBUG - 22-08-2017 09:41:37 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:41:37 --> URI Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Router Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Output Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Security Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Input Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:41:37 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:41:37 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:41:37 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:41:37 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:41:37 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Session Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:41:37 --> Session routines successfully run
+DEBUG - 22-08-2017 09:41:37 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:41:37 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:41:37 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:41:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:37 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:41:37 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:37 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:11:37 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:37 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:11:37 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:38 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:11:38 --> Model Class Initialized
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:11:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:11:38 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:11:38 --> Final output sent to browser
+DEBUG - 22-08-2017 00:11:38 --> Total execution time: 0.2285
+DEBUG - 22-08-2017 09:41:40 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:41:40 --> URI Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Router Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Output Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Security Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Input Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:41:40 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:41:40 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:41:40 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:41:40 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:41:40 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Session Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:41:40 --> Session routines successfully run
+DEBUG - 22-08-2017 09:41:40 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:41:40 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:41:40 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:41:40 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:40 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:41:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:11:40 --> Model Class Initialized
+ERROR - 22-08-2017 00:11:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:11:40 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:11:40 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:11:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:11:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:11:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:11:40 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:11:40 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:11:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:11:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:11:40 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:11:42 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:11:42 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:11:42 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:11:42 --> Final output sent to browser
+DEBUG - 22-08-2017 00:11:42 --> Total execution time: 1.8564
+DEBUG - 22-08-2017 09:41:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:41:42 --> URI Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Router Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Output Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Security Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Input Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:41:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:41:42 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:41:42 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:41:42 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:41:42 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Session Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:41:42 --> Session routines successfully run
+DEBUG - 22-08-2017 09:41:42 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:41:42 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:41:42 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:41:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:42 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:41:42 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:42 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:11:42 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:42 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:11:42 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:43 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:11:43 --> Model Class Initialized
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:11:43 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:11:43 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:11:43 --> Final output sent to browser
+DEBUG - 22-08-2017 00:11:43 --> Total execution time: 0.3906
+DEBUG - 22-08-2017 09:41:45 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:41:45 --> URI Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Router Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Output Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Security Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Input Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:41:45 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:41:45 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:41:45 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:41:45 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:41:45 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Session Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:41:45 --> Session routines successfully run
+DEBUG - 22-08-2017 09:41:45 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:41:45 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:41:45 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:41:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:45 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:41:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:45 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:11:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:45 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:11:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:45 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:11:46 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:46 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:11:46 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:46 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:11:46 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:46 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:11:46 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:46 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:11:46 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:46 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:11:46 --> Model Class Initialized
+ERROR - 22-08-2017 00:11:46 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:11:46 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:11:46 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:11:46 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:11:46 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:11:46 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:11:46 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:11:46 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:11:46 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:11:46 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:11:46 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:11:47 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:11:47 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:11:47 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:11:47 --> Final output sent to browser
+DEBUG - 22-08-2017 00:11:47 --> Total execution time: 1.5000
+DEBUG - 22-08-2017 09:41:47 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:41:47 --> URI Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Router Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Output Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Security Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Input Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:41:47 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Language Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Config Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:41:47 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:41:47 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:41:47 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:41:47 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Session Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:41:47 --> Session routines successfully run
+DEBUG - 22-08-2017 09:41:47 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:41:47 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:41:47 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:41:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:41:47 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:41:47 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:48 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:11:48 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:48 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:11:48 --> Model Class Initialized
+DEBUG - 22-08-2017 00:11:48 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:11:48 --> Model Class Initialized
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:11:48 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:11:48 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:11:48 --> Final output sent to browser
+DEBUG - 22-08-2017 00:11:48 --> Total execution time: 0.2451
+DEBUG - 22-08-2017 09:43:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:43:14 --> URI Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Router Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Output Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Security Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Input Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:43:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:43:14 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:43:14 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:43:14 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:43:14 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Session Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:43:14 --> Session routines successfully run
+DEBUG - 22-08-2017 09:43:14 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:43:14 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:43:14 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:43:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:43:14 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:43:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:13:14 --> Model Class Initialized
+ERROR - 22-08-2017 00:13:14 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:13:14 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:13:14 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:13:14 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:13:14 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:13:14 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:13:14 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:13:14 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:13:14 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:13:14 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:13:14 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:13:15 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:13:15 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:13:15 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:13:15 --> Final output sent to browser
+DEBUG - 22-08-2017 00:13:15 --> Total execution time: 1.4951
+DEBUG - 22-08-2017 09:43:16 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:43:16 --> URI Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Router Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Output Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Security Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Input Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:43:16 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:43:16 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:43:16 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:43:16 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:43:16 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Session Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:43:16 --> Session routines successfully run
+DEBUG - 22-08-2017 09:43:16 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:43:16 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:43:16 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:43:16 --> Model Class Initialized
+DEBUG - 22-08-2017 09:43:16 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:43:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:16 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:13:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:16 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:13:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:16 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:13:16 --> Model Class Initialized
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:13:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:13:16 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:13:16 --> Final output sent to browser
+DEBUG - 22-08-2017 00:13:16 --> Total execution time: 0.2471
+DEBUG - 22-08-2017 09:43:18 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:43:18 --> URI Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Router Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Output Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Security Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Input Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:43:18 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:43:18 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:43:18 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:43:18 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:43:18 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Session Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:43:18 --> Session routines successfully run
+DEBUG - 22-08-2017 09:43:18 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:43:18 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:43:18 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:43:18 --> Model Class Initialized
+DEBUG - 22-08-2017 09:43:18 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:43:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:13:18 --> Model Class Initialized
+ERROR - 22-08-2017 00:13:18 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:13:18 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:13:18 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:13:18 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:13:18 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:13:18 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:13:18 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:13:18 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:13:18 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:13:18 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:13:18 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:13:19 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:13:19 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:13:19 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:13:19 --> Final output sent to browser
+DEBUG - 22-08-2017 00:13:19 --> Total execution time: 1.5586
+DEBUG - 22-08-2017 09:43:20 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:43:20 --> URI Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Router Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Output Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Security Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Input Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:43:20 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:43:20 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:43:20 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:43:20 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:43:20 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Session Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:43:20 --> Session routines successfully run
+DEBUG - 22-08-2017 09:43:20 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:43:20 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:43:20 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:43:20 --> Model Class Initialized
+DEBUG - 22-08-2017 09:43:20 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:43:20 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:20 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:13:20 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:20 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:13:20 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:20 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:13:20 --> Model Class Initialized
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:13:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:13:20 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:13:20 --> Final output sent to browser
+DEBUG - 22-08-2017 00:13:20 --> Total execution time: 0.2549
+DEBUG - 22-08-2017 09:43:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:43:22 --> URI Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Router Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Output Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Security Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Input Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:43:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:43:22 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:43:22 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:43:22 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:43:22 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Session Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:43:22 --> Session routines successfully run
+DEBUG - 22-08-2017 09:43:22 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:43:22 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:43:22 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:43:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:43:22 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:43:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:13:22 --> Model Class Initialized
+ERROR - 22-08-2017 00:13:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:13:22 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:13:22 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:13:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:13:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:13:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:13:22 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:13:22 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:13:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:13:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:13:22 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:13:24 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:13:24 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:13:24 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:13:24 --> Final output sent to browser
+DEBUG - 22-08-2017 00:13:24 --> Total execution time: 1.5381
+DEBUG - 22-08-2017 09:43:24 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:43:24 --> URI Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Router Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Output Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Security Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Input Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:43:24 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Language Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Config Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:43:24 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:43:24 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:43:24 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:43:24 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:43:24 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:43:25 --> Session Class Initialized
+DEBUG - 22-08-2017 09:43:25 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:43:25 --> Session routines successfully run
+DEBUG - 22-08-2017 09:43:25 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:43:25 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:43:25 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:43:25 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:43:25 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:43:25 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:43:25 --> Model Class Initialized
+DEBUG - 22-08-2017 09:43:25 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:43:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:25 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:13:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:25 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:13:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:13:25 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:13:25 --> Model Class Initialized
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:13:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:13:25 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:13:25 --> Final output sent to browser
+DEBUG - 22-08-2017 00:13:25 --> Total execution time: 0.3311
+DEBUG - 22-08-2017 09:45:39 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:45:39 --> URI Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Router Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Output Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Security Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Input Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:45:39 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:45:39 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:45:39 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:45:39 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:45:39 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Session Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:45:39 --> Session routines successfully run
+DEBUG - 22-08-2017 09:45:39 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:45:39 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:45:39 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:45:39 --> Model Class Initialized
+DEBUG - 22-08-2017 09:45:39 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:45:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:39 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:15:39 --> Model Class Initialized
+ERROR - 22-08-2017 00:15:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:40 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:15:40 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:40 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:15:40 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:15:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:15:40 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:15:41 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:15:41 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:15:41 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:15:41 --> Final output sent to browser
+DEBUG - 22-08-2017 00:15:41 --> Total execution time: 1.3301
+DEBUG - 22-08-2017 09:45:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:45:42 --> URI Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Router Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Output Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Security Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Input Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:45:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:45:42 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:45:42 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:45:42 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:45:42 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Session Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:45:42 --> Session routines successfully run
+DEBUG - 22-08-2017 09:45:42 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:45:42 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:45:42 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:45:42 --> Model Class Initialized
+DEBUG - 22-08-2017 09:45:42 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:45:42 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:42 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:15:42 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:42 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:15:42 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:42 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:15:42 --> Model Class Initialized
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:15:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:15:42 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:15:42 --> Final output sent to browser
+DEBUG - 22-08-2017 00:15:42 --> Total execution time: 0.2813
+DEBUG - 22-08-2017 09:45:45 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:45:45 --> URI Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Router Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Output Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Security Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Input Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:45:45 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:45:45 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:45:45 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:45:45 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:45:45 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Session Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:45:45 --> Session routines successfully run
+DEBUG - 22-08-2017 09:45:45 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:45:45 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:45:45 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:45:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:45:45 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:45:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:15:45 --> Model Class Initialized
+ERROR - 22-08-2017 00:15:45 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:45 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:15:45 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:45 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:45 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:45 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:45 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:15:45 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:45 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:15:45 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:15:45 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:15:46 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:15:46 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:15:46 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:15:46 --> Final output sent to browser
+DEBUG - 22-08-2017 00:15:46 --> Total execution time: 1.3564
+DEBUG - 22-08-2017 09:45:46 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:45:46 --> URI Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Router Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Output Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Security Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Input Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:45:46 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:45:46 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:45:46 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:45:46 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:45:46 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Session Class Initialized
+DEBUG - 22-08-2017 09:45:46 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:45:46 --> Session routines successfully run
+DEBUG - 22-08-2017 09:45:47 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:45:47 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:45:47 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:45:47 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:45:47 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:45:47 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:45:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:45:47 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:45:47 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:47 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:15:47 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:47 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:15:47 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:47 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:15:47 --> Model Class Initialized
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:15:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:15:47 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:15:47 --> Final output sent to browser
+DEBUG - 22-08-2017 00:15:47 --> Total execution time: 0.2754
+DEBUG - 22-08-2017 09:45:49 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:45:49 --> URI Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Router Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Output Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Security Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Input Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:45:49 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:45:49 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:45:49 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:45:49 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:45:49 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Session Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:45:49 --> Session routines successfully run
+DEBUG - 22-08-2017 09:45:49 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:45:49 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:45:49 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:45:49 --> Model Class Initialized
+DEBUG - 22-08-2017 09:45:49 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:45:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:15:49 --> Model Class Initialized
+ERROR - 22-08-2017 00:15:49 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:49 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:15:49 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:49 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:49 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:49 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:49 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:15:49 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:49 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:15:49 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:15:49 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:15:51 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:15:51 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:15:51 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:15:51 --> Final output sent to browser
+DEBUG - 22-08-2017 00:15:51 --> Total execution time: 1.8887
+DEBUG - 22-08-2017 09:45:51 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:45:51 --> URI Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> Router Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> Output Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> Security Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> Input Class Initialized
+DEBUG - 22-08-2017 09:45:51 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:45:51 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:45:52 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:45:52 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:45:52 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:45:52 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Session Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:45:52 --> Session routines successfully run
+DEBUG - 22-08-2017 09:45:52 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:45:52 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:45:52 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:45:52 --> Model Class Initialized
+DEBUG - 22-08-2017 09:45:52 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:45:52 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:52 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:15:52 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:52 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:15:52 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:52 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:15:52 --> Model Class Initialized
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:15:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:15:52 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:15:52 --> Final output sent to browser
+DEBUG - 22-08-2017 00:15:52 --> Total execution time: 0.4082
+DEBUG - 22-08-2017 09:45:58 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:45:58 --> URI Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Router Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Output Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Security Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Input Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:45:58 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Language Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Config Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:45:58 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:45:58 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:45:58 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:45:58 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Session Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:45:58 --> Session routines successfully run
+DEBUG - 22-08-2017 09:45:58 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:45:58 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:45:58 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:45:58 --> Model Class Initialized
+DEBUG - 22-08-2017 09:45:58 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:45:58 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:58 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:15:58 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:58 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:15:58 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:58 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:15:58 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:59 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:15:59 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:59 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:15:59 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:59 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:15:59 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:59 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:15:59 --> Model Class Initialized
+DEBUG - 22-08-2017 00:15:59 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:15:59 --> Model Class Initialized
+ERROR - 22-08-2017 00:15:59 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:59 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:15:59 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:15:59 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:15:59 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:59 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:15:59 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:15:59 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:15:59 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:15:59 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:16:00 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:16:00 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:16:00 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:16:00 --> Final output sent to browser
+DEBUG - 22-08-2017 00:16:00 --> Total execution time: 1.4404
+DEBUG - 22-08-2017 09:46:00 --> Config Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:46:00 --> URI Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Router Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Output Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Security Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Input Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:46:00 --> Language Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Language Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Config Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:46:00 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:46:00 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:46:00 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:46:00 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Session Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:46:00 --> Session routines successfully run
+DEBUG - 22-08-2017 09:46:00 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:46:00 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:46:00 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:46:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:46:00 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:46:00 --> Model Class Initialized
+DEBUG - 22-08-2017 00:16:00 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:16:00 --> Model Class Initialized
+DEBUG - 22-08-2017 00:16:00 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:16:00 --> Model Class Initialized
+DEBUG - 22-08-2017 00:16:01 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:16:01 --> Model Class Initialized
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:16:01 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:16:01 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:16:01 --> Final output sent to browser
+DEBUG - 22-08-2017 00:16:01 --> Total execution time: 0.2529
+DEBUG - 22-08-2017 09:48:56 --> Config Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:48:56 --> URI Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Router Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Output Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Security Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Input Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:48:56 --> Language Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Language Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Config Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:48:56 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:48:56 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:48:56 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:48:56 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Session Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:48:56 --> Session routines successfully run
+DEBUG - 22-08-2017 09:48:56 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:48:56 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:48:56 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:48:56 --> Model Class Initialized
+DEBUG - 22-08-2017 09:48:56 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:48:56 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:56 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:18:56 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:56 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:18:56 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:56 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:18:56 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:57 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:18:57 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:57 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:18:57 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:57 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:18:57 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:57 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:18:57 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:57 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:18:57 --> Model Class Initialized
+ERROR - 22-08-2017 00:18:57 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:18:57 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:18:57 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:18:57 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:18:57 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:18:57 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:18:57 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:18:57 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:18:57 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:18:57 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:18:57 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:18:58 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:18:58 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:18:58 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:18:58 --> Final output sent to browser
+DEBUG - 22-08-2017 00:18:58 --> Total execution time: 1.3438
+DEBUG - 22-08-2017 09:48:59 --> Config Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:48:59 --> URI Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Router Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Output Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Security Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Input Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:48:59 --> Language Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Language Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Config Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:48:59 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:48:59 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:48:59 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:48:59 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Session Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:48:59 --> Session routines successfully run
+DEBUG - 22-08-2017 09:48:59 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:48:59 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:48:59 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:48:59 --> Model Class Initialized
+DEBUG - 22-08-2017 09:48:59 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:48:59 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:59 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:18:59 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:59 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:18:59 --> Model Class Initialized
+DEBUG - 22-08-2017 00:18:59 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:18:59 --> Model Class Initialized
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:18:59 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:18:59 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:18:59 --> Final output sent to browser
+DEBUG - 22-08-2017 00:18:59 --> Total execution time: 0.2705
+DEBUG - 22-08-2017 09:49:01 --> Config Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:49:01 --> URI Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Router Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Output Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Security Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Input Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:49:01 --> Language Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Language Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Config Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:49:01 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:49:01 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:49:01 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:49:01 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Session Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:49:01 --> Session routines successfully run
+DEBUG - 22-08-2017 09:49:01 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:49:01 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:49:01 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:49:01 --> Model Class Initialized
+DEBUG - 22-08-2017 09:49:01 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:49:01 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:01 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:19:01 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:01 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:19:01 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:01 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:19:01 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:02 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:19:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:02 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:19:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:02 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:19:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:02 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:19:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:02 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:19:02 --> Model Class Initialized
+ERROR - 22-08-2017 00:19:02 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:19:02 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:19:02 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:19:02 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:19:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:19:02 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:19:02 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:19:02 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:19:02 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:19:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:19:02 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:19:03 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:19:03 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:19:03 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:19:03 --> Final output sent to browser
+DEBUG - 22-08-2017 00:19:03 --> Total execution time: 1.3721
+DEBUG - 22-08-2017 09:49:03 --> Config Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:49:03 --> URI Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Router Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Output Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Security Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Input Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:49:03 --> Language Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Language Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Config Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:49:03 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:49:03 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:49:03 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:49:03 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Session Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:49:03 --> Session routines successfully run
+DEBUG - 22-08-2017 09:49:03 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:49:03 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:49:03 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:49:03 --> Model Class Initialized
+DEBUG - 22-08-2017 09:49:03 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:49:03 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:03 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:19:03 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:03 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:19:03 --> Model Class Initialized
+DEBUG - 22-08-2017 00:19:03 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:19:03 --> Model Class Initialized
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:19:03 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:19:03 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:19:03 --> Final output sent to browser
+DEBUG - 22-08-2017 00:19:03 --> Total execution time: 0.2305
+DEBUG - 22-08-2017 09:50:15 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:15 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:15 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:15 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:15 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:15 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:15 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:15 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:15 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:15 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:15 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:15 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:15 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:15 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:15 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:15 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:15 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:15 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:15 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:15 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:16 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:20:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:16 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:20:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:16 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:20:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:16 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:20:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:16 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:20:16 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:16 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:20:16 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:16 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:20:16 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:20:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:20:16 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:20:17 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:20:17 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:20:17 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:20:17 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:17 --> Total execution time: 1.6982
+DEBUG - 22-08-2017 09:50:18 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:18 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:18 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:18 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:18 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:18 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:18 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:18 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:18 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:18 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:18 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:18 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:18 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:18 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:18 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:18 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:18 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:20:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:20:18 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:20:18 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:18 --> Total execution time: 0.2676
+DEBUG - 22-08-2017 09:50:24 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:24 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:24 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:24 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:24 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:24 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:24 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:24 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:24 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:24 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:24 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:24 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:24 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:20:24 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:24 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:24 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:20:24 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:24 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:24 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:24 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:24 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:20:24 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:24 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:20:24 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:20:24 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:20:26 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:20:26 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:20:26 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:20:26 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:26 --> Total execution time: 2.2910
+DEBUG - 22-08-2017 09:50:27 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:27 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:27 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:27 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:27 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:27 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:27 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:27 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:27 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:27 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:27 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:27 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:27 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:27 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:27 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:27 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:27 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:27 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:27 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:27 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:20:27 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:20:27 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:20:27 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:27 --> Total execution time: 0.4238
+DEBUG - 22-08-2017 09:50:29 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:29 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:29 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:29 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:29 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:29 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:29 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:29 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:29 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:29 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:29 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:29 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:29 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:20:29 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:30 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:30 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:20:30 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:30 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:30 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:30 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:30 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:20:30 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:30 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:20:30 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:20:30 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:20:31 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:20:31 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:20:31 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:20:31 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:31 --> Total execution time: 1.3809
+DEBUG - 22-08-2017 09:50:31 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:31 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:31 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:31 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:31 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:31 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:31 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:31 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:31 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:31 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:31 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:31 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:31 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:31 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:31 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:31 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:31 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:31 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:31 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:31 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:20:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:20:31 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:20:31 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:31 --> Total execution time: 0.2715
+DEBUG - 22-08-2017 09:50:33 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:33 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:33 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:33 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:33 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:33 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:33 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:33 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:33 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:33 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:33 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:33 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:33 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:33 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:33 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:33 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:33 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:33 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:34 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:34 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:20:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:34 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:20:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:34 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:20:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:34 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:20:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:34 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:20:34 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:34 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:34 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:20:34 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:20:34 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:34 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:20:34 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:34 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:20:34 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:20:34 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:20:34 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:20:34 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:20:35 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:20:35 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:20:35 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:20:35 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:35 --> Total execution time: 1.4023
+DEBUG - 22-08-2017 09:50:35 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:35 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:50:35 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:50:35 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:50:35 --> URI Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Router Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Output Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Security Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Input Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:50:36 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Language Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Config Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:50:36 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:50:36 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:50:36 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:50:36 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Session Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:50:36 --> Session routines successfully run
+DEBUG - 22-08-2017 09:50:36 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:50:36 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:50:36 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:50:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:36 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:50:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:36 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:20:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:36 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:20:36 --> Model Class Initialized
+DEBUG - 22-08-2017 00:20:36 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:20:36 --> Model Class Initialized
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:20:36 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:20:36 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:20:36 --> Final output sent to browser
+DEBUG - 22-08-2017 00:20:36 --> Total execution time: 0.2471
+DEBUG - 22-08-2017 09:51:02 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:51:02 --> URI Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Router Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Output Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Security Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Input Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:51:02 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:51:02 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:51:02 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:51:02 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:51:02 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Session Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:51:02 --> Session routines successfully run
+DEBUG - 22-08-2017 09:51:02 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:51:02 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:51:02 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:51:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:51:02 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:51:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:21:02 --> Model Class Initialized
+ERROR - 22-08-2017 00:21:02 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:21:02 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:21:02 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:21:02 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:21:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:21:02 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:21:02 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:21:02 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:21:02 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:21:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:21:02 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:21:03 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:21:03 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:21:03 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:21:03 --> Final output sent to browser
+DEBUG - 22-08-2017 00:21:03 --> Total execution time: 1.3350
+DEBUG - 22-08-2017 09:51:03 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:51:03 --> URI Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> Router Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> Output Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> Security Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> Input Class Initialized
+DEBUG - 22-08-2017 09:51:03 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:51:04 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:51:04 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:51:04 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:51:04 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:51:04 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Session Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:51:04 --> Session routines successfully run
+DEBUG - 22-08-2017 09:51:04 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:51:04 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:51:04 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:51:04 --> Model Class Initialized
+DEBUG - 22-08-2017 09:51:04 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:51:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:04 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:21:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:04 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:21:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:04 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:21:04 --> Model Class Initialized
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:21:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:21:04 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:21:04 --> Final output sent to browser
+DEBUG - 22-08-2017 00:21:04 --> Total execution time: 0.2246
+DEBUG - 22-08-2017 09:51:05 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:51:05 --> URI Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Router Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Output Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Security Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Input Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:51:05 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:51:05 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:51:05 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:51:05 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:51:05 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Session Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:51:05 --> Session routines successfully run
+DEBUG - 22-08-2017 09:51:05 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:51:05 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:51:05 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:51:05 --> Model Class Initialized
+DEBUG - 22-08-2017 09:51:05 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:51:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:21:05 --> Model Class Initialized
+ERROR - 22-08-2017 00:21:05 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:21:05 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:21:05 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:21:05 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:21:05 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:21:05 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:21:05 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:21:05 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:21:05 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:21:05 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:21:05 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:21:07 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:21:07 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:21:07 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:21:07 --> Final output sent to browser
+DEBUG - 22-08-2017 00:21:07 --> Total execution time: 1.5801
+DEBUG - 22-08-2017 09:51:07 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:51:07 --> URI Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Router Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Output Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Security Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Input Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:51:07 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:51:07 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:51:07 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:51:07 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:51:07 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Session Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:51:07 --> Session routines successfully run
+DEBUG - 22-08-2017 09:51:07 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:51:07 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:51:07 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:51:07 --> Model Class Initialized
+DEBUG - 22-08-2017 09:51:07 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:51:07 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:07 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:21:07 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:07 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:21:07 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:07 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:21:07 --> Model Class Initialized
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:21:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:21:07 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:21:07 --> Final output sent to browser
+DEBUG - 22-08-2017 00:21:07 --> Total execution time: 0.2549
+DEBUG - 22-08-2017 09:51:09 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:51:09 --> URI Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Router Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Output Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Security Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Input Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:51:09 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:51:09 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:51:09 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:51:09 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:51:09 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Session Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:51:09 --> Session routines successfully run
+DEBUG - 22-08-2017 09:51:09 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:51:09 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:51:09 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:51:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:51:09 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:51:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:09 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:21:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:09 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:21:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:09 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:21:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:10 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:21:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:10 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:21:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:10 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:21:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:10 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:21:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:10 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:21:10 --> Model Class Initialized
+ERROR - 22-08-2017 00:21:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:21:10 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:21:10 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:21:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:21:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:21:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:21:10 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:21:10 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:21:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:21:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:21:10 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:21:11 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:21:11 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:21:11 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:21:12 --> Final output sent to browser
+DEBUG - 22-08-2017 00:21:12 --> Total execution time: 2.2432
+DEBUG - 22-08-2017 09:51:13 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:51:13 --> URI Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Router Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Output Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Security Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Input Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:51:13 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Language Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Config Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:51:13 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:51:13 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:51:13 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:51:13 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Session Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:51:13 --> Session routines successfully run
+DEBUG - 22-08-2017 09:51:13 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:51:13 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:51:13 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:51:13 --> Model Class Initialized
+DEBUG - 22-08-2017 09:51:13 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:51:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:13 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:21:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:13 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:21:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:21:13 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:21:13 --> Model Class Initialized
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:21:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:21:13 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:21:13 --> Final output sent to browser
+DEBUG - 22-08-2017 00:21:13 --> Total execution time: 0.5625
+DEBUG - 22-08-2017 09:52:10 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:52:10 --> URI Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Router Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Output Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Security Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Input Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:52:10 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:52:10 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:52:10 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:52:10 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:52:10 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Session Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:52:10 --> Session routines successfully run
+DEBUG - 22-08-2017 09:52:10 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:52:10 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:52:10 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:52:10 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:10 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:52:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:22:10 --> Model Class Initialized
+ERROR - 22-08-2017 00:22:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:22:10 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:22:10 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:22:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:22:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:22:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:22:10 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:22:10 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:22:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:22:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:22:10 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:22:11 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:22:11 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:22:11 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:22:11 --> Final output sent to browser
+DEBUG - 22-08-2017 00:22:11 --> Total execution time: 1.3154
+DEBUG - 22-08-2017 09:52:12 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:52:12 --> URI Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Router Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Output Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Security Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Input Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:52:12 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:52:12 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:52:12 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:52:12 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:52:12 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Session Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:52:12 --> Session routines successfully run
+DEBUG - 22-08-2017 09:52:12 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:52:12 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:52:12 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:52:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:12 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:52:12 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:12 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:22:12 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:12 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:22:12 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:22:12 --> Model Class Initialized
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:22:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:22:12 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:22:12 --> Final output sent to browser
+DEBUG - 22-08-2017 00:22:12 --> Total execution time: 0.2441
+DEBUG - 22-08-2017 09:52:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:52:14 --> URI Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Router Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Output Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Security Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Input Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:52:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:52:14 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:52:14 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:52:14 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:52:14 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Session Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:52:14 --> Session routines successfully run
+DEBUG - 22-08-2017 09:52:14 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:52:14 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:52:14 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:52:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:14 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:52:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:22:14 --> Model Class Initialized
+ERROR - 22-08-2017 00:22:14 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:22:14 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:22:14 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:22:14 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:22:14 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:22:14 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:22:14 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:22:14 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:22:14 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:22:14 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:22:14 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:22:16 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:22:16 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:22:16 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:22:16 --> Final output sent to browser
+DEBUG - 22-08-2017 00:22:16 --> Total execution time: 1.5479
+DEBUG - 22-08-2017 09:52:16 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:52:16 --> URI Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Router Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Output Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Security Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Input Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:52:16 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Language Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Config Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:52:16 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:52:16 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:52:16 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:52:16 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Session Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:52:16 --> Session routines successfully run
+DEBUG - 22-08-2017 09:52:16 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:52:16 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:52:16 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:52:16 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:16 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:52:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:16 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:22:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:16 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:22:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:22:16 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:22:16 --> Model Class Initialized
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:22:16 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:22:16 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:22:16 --> Final output sent to browser
+DEBUG - 22-08-2017 00:22:16 --> Total execution time: 0.2637
+DEBUG - 22-08-2017 09:54:04 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:54:04 --> URI Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Router Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Output Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Security Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Input Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:54:04 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:54:04 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:54:04 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:54:04 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:54:04 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Session Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:54:04 --> Session routines successfully run
+DEBUG - 22-08-2017 09:54:04 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:54:04 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:54:04 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:54:04 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:04 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:54:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:24:04 --> Model Class Initialized
+ERROR - 22-08-2017 00:24:04 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:24:04 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:24:04 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:24:04 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:24:04 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:24:04 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:24:04 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:24:04 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:24:04 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:24:04 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:24:04 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:24:06 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:24:06 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:24:06 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:24:06 --> Final output sent to browser
+DEBUG - 22-08-2017 00:24:06 --> Total execution time: 1.9824
+DEBUG - 22-08-2017 09:54:08 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:54:08 --> URI Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Router Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Output Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Security Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Input Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:54:08 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:54:08 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:54:08 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:54:08 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:54:08 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Session Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:54:08 --> Session routines successfully run
+DEBUG - 22-08-2017 09:54:08 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:54:08 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:54:08 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:54:08 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:08 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:54:08 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:08 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:24:08 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:08 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:24:08 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:08 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:24:08 --> Model Class Initialized
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:24:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:24:08 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:24:08 --> Final output sent to browser
+DEBUG - 22-08-2017 00:24:08 --> Total execution time: 0.2842
+DEBUG - 22-08-2017 09:54:10 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:54:10 --> URI Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Router Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Output Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Security Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Input Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:54:10 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:54:10 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:54:10 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:54:10 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:54:10 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Session Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:54:10 --> Session routines successfully run
+DEBUG - 22-08-2017 09:54:10 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:54:10 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:54:10 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:54:10 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:10 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:54:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:24:10 --> Model Class Initialized
+ERROR - 22-08-2017 00:24:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:24:10 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:24:10 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:24:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:24:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:24:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:24:10 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:24:10 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:24:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:24:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:24:10 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:24:11 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:24:11 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:24:11 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:24:12 --> Final output sent to browser
+DEBUG - 22-08-2017 00:24:12 --> Total execution time: 1.8604
+DEBUG - 22-08-2017 09:54:13 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:54:13 --> URI Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Router Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Output Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Security Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Input Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:54:13 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:54:13 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:54:13 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:54:13 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:54:13 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Session Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:54:13 --> Session routines successfully run
+DEBUG - 22-08-2017 09:54:13 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:54:13 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:54:13 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:54:13 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:13 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:54:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:13 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:24:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:13 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:24:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:14 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:24:14 --> Model Class Initialized
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:24:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:24:14 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:24:14 --> Final output sent to browser
+DEBUG - 22-08-2017 00:24:14 --> Total execution time: 0.4248
+DEBUG - 22-08-2017 09:54:17 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:54:17 --> URI Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Router Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Output Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Security Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Input Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:54:17 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:54:17 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:54:17 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:54:17 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:54:17 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Session Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:54:17 --> Session routines successfully run
+DEBUG - 22-08-2017 09:54:17 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:54:17 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:54:17 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:54:17 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:17 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:54:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:17 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:24:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:17 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:24:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:17 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:24:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:17 --> Final output sent to browser
+DEBUG - 22-08-2017 00:24:17 --> Total execution time: 0.1787
+DEBUG - 22-08-2017 09:54:18 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:54:18 --> URI Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Router Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Output Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Security Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Input Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:54:18 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:54:18 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:54:18 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:54:18 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:54:18 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Session Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:54:18 --> Session routines successfully run
+DEBUG - 22-08-2017 09:54:18 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:54:18 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:54:18 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:54:18 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:18 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:54:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:18 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:24:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:18 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:24:18 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:19 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:24:19 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:19 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:24:19 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:19 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:24:19 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:19 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:24:19 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:19 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:24:19 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:19 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:24:19 --> Model Class Initialized
+ERROR - 22-08-2017 00:24:19 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:24:19 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:24:19 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:24:19 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:24:19 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:24:19 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:24:19 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:24:19 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:24:19 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:24:19 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:24:19 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:24:20 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:24:20 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:24:20 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:24:20 --> Final output sent to browser
+DEBUG - 22-08-2017 00:24:20 --> Total execution time: 1.3955
+DEBUG - 22-08-2017 09:54:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Hooks Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 09:54:22 --> URI Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Router Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Output Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Security Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Input Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 09:54:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Language Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Config Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Loader Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 09:54:22 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 09:54:22 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 09:54:22 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 09:54:22 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Session Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 09:54:22 --> Session routines successfully run
+DEBUG - 22-08-2017 09:54:22 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Controller Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 09:54:22 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 09:54:22 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 09:54:22 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:22 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 09:54:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:22 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:24:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:22 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:24:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:24:22 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:24:22 --> Model Class Initialized
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:24:22 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:24:22 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:24:22 --> Final output sent to browser
+DEBUG - 22-08-2017 00:24:22 --> Total execution time: 0.4453
+DEBUG - 22-08-2017 10:01:06 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:01:06 --> URI Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Router Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Output Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Security Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Input Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:01:06 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:01:06 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:01:06 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:01:06 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:01:06 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Session Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:01:06 --> Session routines successfully run
+DEBUG - 22-08-2017 10:01:06 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:01:06 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:01:06 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:01:06 --> Model Class Initialized
+DEBUG - 22-08-2017 10:01:06 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:01:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:31:06 --> Model Class Initialized
+ERROR - 22-08-2017 00:31:06 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:31:06 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:31:06 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:31:06 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:31:06 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:31:06 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:31:06 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:31:06 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:31:06 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:31:06 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:31:06 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:31:07 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:31:07 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:31:07 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:31:08 --> Final output sent to browser
+DEBUG - 22-08-2017 00:31:08 --> Total execution time: 1.7363
+DEBUG - 22-08-2017 10:01:11 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:01:11 --> URI Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Router Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Output Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Security Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Input Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:01:11 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:01:11 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:01:11 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:01:11 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:01:11 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Session Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:01:11 --> Session routines successfully run
+DEBUG - 22-08-2017 10:01:11 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:01:11 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:01:11 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:01:11 --> Model Class Initialized
+DEBUG - 22-08-2017 10:01:11 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:01:11 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:11 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:31:11 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:11 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:31:11 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:11 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:31:11 --> Model Class Initialized
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:31:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:31:11 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:31:11 --> Final output sent to browser
+DEBUG - 22-08-2017 00:31:11 --> Total execution time: 0.2734
+DEBUG - 22-08-2017 10:01:24 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:01:24 --> URI Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Router Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Output Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Security Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Input Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:01:24 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:01:24 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Session Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:01:24 --> Session routines successfully run
+DEBUG - 22-08-2017 10:01:24 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:01:24 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:01:24 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:01:24 --> Model Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:01:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:01:24 --> URI Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Router Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Output Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Security Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Input Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:01:24 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:01:24 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Session Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:01:24 --> Session routines successfully run
+DEBUG - 22-08-2017 10:01:24 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:01:24 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:01:24 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:01:24 --> Model Class Initialized
+DEBUG - 22-08-2017 10:01:24 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:01:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:31:24 --> Model Class Initialized
+ERROR - 22-08-2017 00:31:24 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:31:24 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:31:24 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:31:24 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:31:24 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:31:24 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:31:24 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:31:24 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:31:24 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:31:24 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:31:24 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:31:25 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:31:25 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:31:25 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:31:25 --> Final output sent to browser
+DEBUG - 22-08-2017 00:31:25 --> Total execution time: 1.4258
+DEBUG - 22-08-2017 10:01:27 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:01:27 --> URI Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> Router Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> Output Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> Security Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> Input Class Initialized
+DEBUG - 22-08-2017 10:01:27 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:01:27 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Language Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Config Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:01:28 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:01:28 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:01:28 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:01:28 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Session Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:01:28 --> Session routines successfully run
+DEBUG - 22-08-2017 10:01:28 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:01:28 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:01:28 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:01:28 --> Model Class Initialized
+DEBUG - 22-08-2017 10:01:28 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:01:28 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:28 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:31:28 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:28 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:31:28 --> Model Class Initialized
+DEBUG - 22-08-2017 00:31:28 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:31:28 --> Model Class Initialized
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:31:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:31:28 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:31:28 --> Final output sent to browser
+DEBUG - 22-08-2017 00:31:28 --> Total execution time: 0.3125
+DEBUG - 22-08-2017 10:03:35 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:03:35 --> URI Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Router Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Output Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Security Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Input Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:03:35 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:03:35 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:03:35 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:03:35 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:03:35 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Session Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:03:35 --> Session routines successfully run
+DEBUG - 22-08-2017 10:03:35 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:03:35 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:03:35 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:03:35 --> Model Class Initialized
+DEBUG - 22-08-2017 10:03:35 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:03:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:33:35 --> Model Class Initialized
+ERROR - 22-08-2017 00:33:35 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:33:35 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:33:35 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:33:35 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:33:35 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:33:35 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:33:35 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:33:35 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:33:35 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:33:35 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:33:35 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:33:36 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:33:36 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:33:36 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:33:36 --> Final output sent to browser
+DEBUG - 22-08-2017 00:33:36 --> Total execution time: 1.4883
+DEBUG - 22-08-2017 10:03:38 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:03:38 --> URI Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Router Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Output Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Security Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Input Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:03:38 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:03:38 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:03:38 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:03:38 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:03:38 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Session Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:03:38 --> Session routines successfully run
+DEBUG - 22-08-2017 10:03:38 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:03:38 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:03:38 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:03:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:03:38 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:03:38 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:38 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:33:38 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:38 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:33:38 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:38 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:33:38 --> Model Class Initialized
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:33:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:33:38 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:33:38 --> Final output sent to browser
+DEBUG - 22-08-2017 00:33:38 --> Total execution time: 0.2891
+DEBUG - 22-08-2017 10:03:44 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:03:44 --> URI Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Router Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Output Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Security Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Input Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:03:44 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:03:44 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:03:44 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:03:44 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:03:44 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Session Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:03:44 --> Session routines successfully run
+DEBUG - 22-08-2017 10:03:44 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:03:44 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:03:44 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:03:44 --> Model Class Initialized
+DEBUG - 22-08-2017 10:03:44 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:03:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:33:44 --> Model Class Initialized
+ERROR - 22-08-2017 00:33:44 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:33:44 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:33:44 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:33:44 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:33:44 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:33:44 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:33:44 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:33:44 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:33:44 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:33:44 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:33:44 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:33:46 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:33:46 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:33:46 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:33:46 --> Final output sent to browser
+DEBUG - 22-08-2017 00:33:46 --> Total execution time: 1.6211
+DEBUG - 22-08-2017 10:03:46 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:03:46 --> URI Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Router Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Output Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Security Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Input Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:03:46 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:03:46 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:03:46 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:03:46 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:03:46 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Session Class Initialized
+DEBUG - 22-08-2017 10:03:46 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:03:46 --> Session routines successfully run
+DEBUG - 22-08-2017 10:03:46 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:03:47 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:03:47 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:03:47 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:03:47 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:03:47 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:03:47 --> Model Class Initialized
+DEBUG - 22-08-2017 10:03:47 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:03:47 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:47 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:33:47 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:47 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:33:47 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:47 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:33:47 --> Model Class Initialized
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:33:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:33:47 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:33:47 --> Final output sent to browser
+DEBUG - 22-08-2017 00:33:47 --> Total execution time: 0.3320
+DEBUG - 22-08-2017 10:03:51 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:03:51 --> URI Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Router Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Output Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Security Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Input Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:03:51 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:03:51 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:03:51 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:03:51 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:03:51 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Session Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:03:51 --> Session routines successfully run
+DEBUG - 22-08-2017 10:03:51 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:03:51 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:03:51 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:03:51 --> Model Class Initialized
+DEBUG - 22-08-2017 10:03:51 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:03:51 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:51 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:33:51 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:51 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:33:51 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:51 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:33:51 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:51 --> Final output sent to browser
+DEBUG - 22-08-2017 00:33:51 --> Total execution time: 0.2256
+DEBUG - 22-08-2017 10:03:53 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:03:53 --> URI Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Router Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Output Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Security Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Input Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:03:53 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:03:53 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:03:53 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:03:53 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:03:53 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Session Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:03:53 --> Session routines successfully run
+DEBUG - 22-08-2017 10:03:53 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:03:53 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:03:53 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:03:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:03:53 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:03:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:33:53 --> Model Class Initialized
+ERROR - 22-08-2017 00:33:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:33:53 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:33:53 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:33:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:33:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:33:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:33:53 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:33:53 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:33:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:33:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:33:53 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:33:55 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:33:55 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:33:55 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:33:55 --> Final output sent to browser
+DEBUG - 22-08-2017 00:33:55 --> Total execution time: 2.2334
+DEBUG - 22-08-2017 10:03:56 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:03:56 --> URI Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Router Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Output Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Security Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Input Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:03:56 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Language Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Config Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:03:56 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:03:56 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:03:56 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:03:56 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Session Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:03:56 --> Session routines successfully run
+DEBUG - 22-08-2017 10:03:56 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:03:56 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:03:56 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:03:56 --> Model Class Initialized
+DEBUG - 22-08-2017 10:03:56 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:03:56 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:56 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:33:56 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:56 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:33:56 --> Model Class Initialized
+DEBUG - 22-08-2017 00:33:57 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:33:57 --> Model Class Initialized
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:33:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:33:57 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:33:57 --> Final output sent to browser
+DEBUG - 22-08-2017 00:33:57 --> Total execution time: 0.4033
+DEBUG - 22-08-2017 10:04:22 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:04:22 --> URI Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Router Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Output Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Security Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Input Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:04:22 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:04:22 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:04:22 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:04:22 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:04:22 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Session Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:04:22 --> Session routines successfully run
+DEBUG - 22-08-2017 10:04:22 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:04:22 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:04:22 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:04:22 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:22 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:04:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:22 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:34:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:22 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:34:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:22 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:34:22 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:23 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:34:23 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:23 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:34:23 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:23 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:34:23 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:23 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:34:23 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:23 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:34:23 --> Model Class Initialized
+ERROR - 22-08-2017 00:34:23 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:34:23 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:34:23 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:34:23 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:34:23 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:34:23 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:34:23 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:34:23 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:34:23 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:34:23 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:34:23 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:34:24 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:34:24 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:34:24 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:34:24 --> Final output sent to browser
+DEBUG - 22-08-2017 00:34:24 --> Total execution time: 1.7646
+DEBUG - 22-08-2017 10:04:25 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:04:25 --> URI Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Router Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Output Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Security Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Input Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:04:25 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:04:25 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:04:25 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:04:25 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:04:25 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Session Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:04:25 --> Session routines successfully run
+DEBUG - 22-08-2017 10:04:25 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:04:25 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:04:25 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:04:25 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:25 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:04:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:25 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:34:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:25 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:34:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:26 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:34:26 --> Model Class Initialized
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:34:26 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:34:26 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:34:26 --> Final output sent to browser
+DEBUG - 22-08-2017 00:34:26 --> Total execution time: 0.2666
+DEBUG - 22-08-2017 10:04:29 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:04:29 --> URI Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Router Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Output Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Security Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Input Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:04:29 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:04:29 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:04:29 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:04:29 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:04:29 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Session Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:04:29 --> Session routines successfully run
+DEBUG - 22-08-2017 10:04:29 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:04:29 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:04:29 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:04:29 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:29 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:04:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:34:29 --> Model Class Initialized
+ERROR - 22-08-2017 00:34:29 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:34:29 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:34:29 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:34:29 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:34:29 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:34:29 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:34:29 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:34:29 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:34:29 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:34:29 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:34:29 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:34:30 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:34:30 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:34:30 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:34:30 --> Final output sent to browser
+DEBUG - 22-08-2017 00:34:30 --> Total execution time: 1.3730
+DEBUG - 22-08-2017 10:04:31 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:04:31 --> URI Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Router Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Output Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Security Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Input Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:04:31 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Language Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Config Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:04:31 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:04:31 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:04:31 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:04:31 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Session Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:04:31 --> Session routines successfully run
+DEBUG - 22-08-2017 10:04:31 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:04:31 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:04:31 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:04:31 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:31 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:04:31 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:31 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:34:31 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:31 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:34:31 --> Model Class Initialized
+DEBUG - 22-08-2017 00:34:31 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:34:31 --> Model Class Initialized
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:34:31 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:34:31 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:34:31 --> Final output sent to browser
+DEBUG - 22-08-2017 00:34:31 --> Total execution time: 0.2324
+DEBUG - 22-08-2017 10:05:13 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:13 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:13 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:13 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:13 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:13 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:13 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:13 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:13 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:13 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:13 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:13 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:13 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:35:13 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:13 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:13 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:35:13 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:13 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:13 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:13 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:35:13 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:13 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:35:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:35:13 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:35:14 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:35:14 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:35:14 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:35:14 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:14 --> Total execution time: 1.3721
+DEBUG - 22-08-2017 10:05:15 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:15 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:15 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:15 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:15 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:15 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:15 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:15 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:15 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:15 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:15 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:15 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:15 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:15 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:15 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:15 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:15 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:15 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:15 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:35:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:35:15 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:35:15 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:15 --> Total execution time: 0.2725
+DEBUG - 22-08-2017 10:05:16 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:16 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:16 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:16 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:16 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:16 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:16 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:16 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:16 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:16 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:16 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:16 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:16 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:16 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:16 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:16 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:17 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:17 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:35:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:17 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:35:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:17 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:35:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:17 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:35:17 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:17 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:35:17 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:17 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:17 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:35:17 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:17 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:17 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:17 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:17 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:35:17 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:17 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:35:17 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:35:17 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:35:18 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:35:18 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:35:18 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:35:18 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:18 --> Total execution time: 1.4697
+DEBUG - 22-08-2017 10:05:19 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:19 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:19 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:19 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:20 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:20 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:20 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:20 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:20 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:20 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:20 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:20 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:20 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:20 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:20 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:20 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:20 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:20 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:20 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:20 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:20 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:35:20 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:35:20 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:35:20 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:20 --> Total execution time: 0.3135
+DEBUG - 22-08-2017 10:05:24 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:24 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:24 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:24 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:24 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:24 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:24 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:24 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:24 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:24 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:24 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:24 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:24 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:24 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:24 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:24 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:24 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:24 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:24 --> Total execution time: 0.2588
+DEBUG - 22-08-2017 10:05:25 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:25 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:25 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:25 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:25 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:25 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:25 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:25 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:25 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:25 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:25 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:25 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:25 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:35:25 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:25 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:25 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:35:25 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:25 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:25 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:25 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:25 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:35:25 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:25 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:35:25 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:35:25 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:35:27 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:35:27 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:35:27 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:35:27 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:28 --> Total execution time: 2.1494
+DEBUG - 22-08-2017 10:05:34 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:34 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:34 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:34 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:34 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:34 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:34 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:34 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:34 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:34 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:34 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:34 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:34 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:34 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:34 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:35 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:35 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:35:35 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:35:35 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:35:35 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:35 --> Total execution time: 0.1904
+DEBUG - 22-08-2017 10:05:52 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:52 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:52 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:52 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:52 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:52 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:52 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:52 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:52 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:52 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:52 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:52 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:52 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:52 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:52 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:52 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:52 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:52 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:53 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:53 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:53 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:53 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:53 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:53 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:53 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:53 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:53 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:53 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:53 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:35:53 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:53 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:35:53 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:35:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:35:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:53 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:35:53 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:35:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:35:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:35:53 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:35:54 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:35:54 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:35:54 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:35:54 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:54 --> Total execution time: 1.3936
+DEBUG - 22-08-2017 10:05:55 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:05:55 --> URI Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Router Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Output Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Security Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Input Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:05:55 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Language Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Config Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:05:55 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:05:55 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:05:55 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:05:55 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Session Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:05:55 --> Session routines successfully run
+DEBUG - 22-08-2017 10:05:55 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:05:55 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:05:55 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:05:55 --> Model Class Initialized
+DEBUG - 22-08-2017 10:05:55 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:05:55 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:55 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:35:55 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:55 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:35:55 --> Model Class Initialized
+DEBUG - 22-08-2017 00:35:55 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:35:55 --> Model Class Initialized
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:35:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:35:55 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:35:55 --> Final output sent to browser
+DEBUG - 22-08-2017 00:35:55 --> Total execution time: 0.2852
+DEBUG - 22-08-2017 10:06:09 --> Config Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:06:09 --> URI Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Router Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Output Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Security Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Input Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:06:09 --> Language Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Language Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Config Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:06:09 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Session Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:06:09 --> Session routines successfully run
+DEBUG - 22-08-2017 10:06:09 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:06:09 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:06:09 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:06:09 --> Model Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:06:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:09 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:36:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:09 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:36:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:09 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:36:09 --> Model Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Config Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:06:09 --> URI Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Router Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Output Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Security Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Input Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:06:09 --> Language Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Language Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Config Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:06:09 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Session Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:06:09 --> Session routines successfully run
+DEBUG - 22-08-2017 10:06:09 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:06:09 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:06:09 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:06:09 --> Model Class Initialized
+DEBUG - 22-08-2017 10:06:09 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:06:09 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 00:36:10 --> Model Class Initialized
+ERROR - 22-08-2017 00:36:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:36:10 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 00:36:10 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 00:36:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:36:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 00:36:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:36:10 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 00:36:10 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 00:36:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 00:36:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 00:36:10 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 00:36:11 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 00:36:11 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 00:36:11 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 00:36:11 --> Final output sent to browser
+DEBUG - 22-08-2017 00:36:11 --> Total execution time: 1.3164
+DEBUG - 22-08-2017 10:06:11 --> Config Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Hooks Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 10:06:11 --> URI Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Router Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Output Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Security Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Input Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 10:06:11 --> Language Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Language Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Config Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Loader Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 10:06:11 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 10:06:11 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 10:06:11 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 10:06:11 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Session Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 10:06:11 --> Session routines successfully run
+DEBUG - 22-08-2017 10:06:11 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Controller Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 10:06:11 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 10:06:11 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 10:06:11 --> Model Class Initialized
+DEBUG - 22-08-2017 10:06:11 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 10:06:11 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:12 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 00:36:12 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:12 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 00:36:12 --> Model Class Initialized
+DEBUG - 22-08-2017 00:36:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 00:36:12 --> Model Class Initialized
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 00:36:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 00:36:12 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 00:36:12 --> Final output sent to browser
+DEBUG - 22-08-2017 00:36:12 --> Total execution time: 0.2539
+DEBUG - 22-08-2017 19:20:18 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:18 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:20:18 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:20:18 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:20:19 --> URI Class Initialized
+DEBUG - 22-08-2017 19:20:19 --> Router Class Initialized
+DEBUG - 22-08-2017 19:20:20 --> Output Class Initialized
+DEBUG - 22-08-2017 19:20:20 --> Security Class Initialized
+DEBUG - 22-08-2017 19:20:20 --> Input Class Initialized
+DEBUG - 22-08-2017 19:20:20 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:20:20 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:22 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:22 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:22 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:20:22 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:20:22 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:20:22 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:20:22 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:20:23 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:20:25 --> Session Class Initialized
+DEBUG - 22-08-2017 19:20:25 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:20:25 --> A session cookie was not found.
+DEBUG - 22-08-2017 19:20:25 --> Session routines successfully run
+DEBUG - 22-08-2017 19:20:25 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:20:25 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:20:25 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:20:26 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:20:26 --> URI Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Router Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Output Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Security Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Input Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:20:26 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:20:26 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:20:26 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:20:26 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:20:26 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Session Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:20:26 --> Session routines successfully run
+DEBUG - 22-08-2017 19:20:26 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:20:26 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:20:26 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:20:26 --> login MX_Controller Initialized
+DEBUG - 22-08-2017 19:20:27 --> Model Class Initialized
+DEBUG - 22-08-2017 19:20:27 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:20:27 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:29 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:50:29 --> Model Class Initialized
+ERROR - 22-08-2017 09:50:29 --> Severity: Notice  --> Undefined index: admin C:\xampp\htdocs\sistema\application\third_party\MX\Controller.php 163
+DEBUG - 22-08-2017 09:50:29 --> File loaded: application/modules/admin/views/login/login.php
+DEBUG - 22-08-2017 09:50:29 --> Final output sent to browser
+DEBUG - 22-08-2017 09:50:29 --> Total execution time: 3.6211
+DEBUG - 22-08-2017 19:20:42 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:20:42 --> URI Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Router Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Output Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Security Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Input Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:20:42 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:20:42 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:20:42 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:20:42 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:20:42 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:20:42 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:20:43 --> Session Class Initialized
+DEBUG - 22-08-2017 19:20:43 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:20:43 --> Session routines successfully run
+DEBUG - 22-08-2017 19:20:43 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:20:43 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:20:43 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:20:43 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:20:43 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:20:43 --> login MX_Controller Initialized
+DEBUG - 22-08-2017 19:20:43 --> Model Class Initialized
+DEBUG - 22-08-2017 19:20:43 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:20:43 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:43 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:50:43 --> Model Class Initialized
+ERROR - 22-08-2017 09:50:43 --> Severity: Notice  --> Undefined index: admin C:\xampp\htdocs\sistema\application\third_party\MX\Controller.php 163
+DEBUG - 22-08-2017 19:20:44 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:20:44 --> URI Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Router Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Output Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Security Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Input Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:20:44 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Language Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Config Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:20:44 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:20:44 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:20:44 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:20:44 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Session Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:20:44 --> Session routines successfully run
+DEBUG - 22-08-2017 19:20:44 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:20:44 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:20:44 --> dashboard MX_Controller Initialized
+DEBUG - 22-08-2017 19:20:44 --> Model Class Initialized
+DEBUG - 22-08-2017 19:20:44 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:20:44 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:45 --> File loaded: application/modules/admin/models/dashboard_model.php
+DEBUG - 22-08-2017 09:50:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:45 --> File loaded: application/modules/admin/models/employees_model.php
+DEBUG - 22-08-2017 09:50:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:45 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:50:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:45 --> File loaded: application/modules/admin/models/cases_model.php
+DEBUG - 22-08-2017 09:50:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:45 --> File loaded: application/modules/admin/models/case_study_model.php
+DEBUG - 22-08-2017 09:50:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:45 --> File loaded: application/modules/admin/models/clients_model.php
+DEBUG - 22-08-2017 09:50:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:46 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:50:46 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:46 --> File loaded: application/modules/admin/models/leave_types_model.php
+DEBUG - 22-08-2017 09:50:46 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:46 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:50:46 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:52 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:50:52 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:52 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:50:52 --> Model Class Initialized
+DEBUG - 22-08-2017 09:50:52 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:50:52 --> Model Class Initialized
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:50:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "messages"
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:50:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "Tasks"
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "Tasks"
+DEBUG - 22-08-2017 09:50:53 --> File loaded: application/modules/admin/views/template/header.php
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "cases_open"
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined variable: messages C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 279
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "messages"
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined variable: calls C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 298
+ERROR - 22-08-2017 09:50:53 --> Could not find the language line "calls"
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 834
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 837
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 834
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 837
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 834
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 837
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 834
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 837
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 834
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 837
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 952
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 955
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 952
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 955
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 952
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 955
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 952
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 955
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$next_date C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 952
+ERROR - 22-08-2017 09:50:53 --> Severity: Notice  --> Undefined property: stdClass::$case_id C:\xampp\htdocs\sistema\application\modules\admin\views\dashboard\dashboard.php 955
+DEBUG - 22-08-2017 09:50:53 --> File loaded: application/modules/admin/views/dashboard/dashboard.php
+DEBUG - 22-08-2017 09:50:53 --> File loaded: application/modules/admin/views/template/footer.php
+DEBUG - 22-08-2017 09:50:53 --> File loaded: application/modules/admin/views/template/main.php
+DEBUG - 22-08-2017 09:50:53 --> Final output sent to browser
+DEBUG - 22-08-2017 09:50:53 --> Total execution time: 9.1729
+DEBUG - 22-08-2017 19:22:32 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:22:32 --> URI Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Router Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Output Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Security Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Input Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:22:32 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:22:32 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:22:32 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:22:32 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:22:32 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Session Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:22:32 --> Session routines successfully run
+DEBUG - 22-08-2017 19:22:32 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:22:32 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:22:32 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:22:32 --> Model Class Initialized
+DEBUG - 22-08-2017 19:22:32 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:22:32 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:32 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:52:32 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:32 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:52:32 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:33 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:52:33 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:33 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:52:33 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:33 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:52:33 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:33 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:52:33 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:33 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:52:33 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:33 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:52:33 --> Model Class Initialized
+ERROR - 22-08-2017 09:52:33 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:52:33 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:52:33 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:52:33 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:52:33 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:52:33 --> Could not find the language line "messages"
+ERROR - 22-08-2017 09:52:33 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:52:33 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:52:33 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:52:33 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:52:33 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:52:33 --> Could not find the language line "Tasks"
+ERROR - 22-08-2017 09:52:33 --> Could not find the language line "Tasks"
+DEBUG - 22-08-2017 09:52:33 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:52:36 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:52:36 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:52:36 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:52:36 --> Final output sent to browser
+DEBUG - 22-08-2017 09:52:36 --> Total execution time: 4.6055
+DEBUG - 22-08-2017 19:22:38 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:22:38 --> URI Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Router Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Output Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Security Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Input Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:22:38 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:22:38 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:22:38 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:22:38 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:22:38 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Session Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:22:38 --> Session routines successfully run
+DEBUG - 22-08-2017 19:22:38 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:22:38 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:22:38 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:22:38 --> Model Class Initialized
+DEBUG - 22-08-2017 19:22:38 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:22:38 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:38 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:52:38 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:38 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:52:38 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:38 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:52:38 --> Model Class Initialized
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:52:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:52:39 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:52:39 --> Final output sent to browser
+DEBUG - 22-08-2017 09:52:39 --> Total execution time: 0.5918
+DEBUG - 22-08-2017 19:22:54 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:22:54 --> URI Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> Router Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> Output Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> Security Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> Input Class Initialized
+DEBUG - 22-08-2017 19:22:54 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:22:54 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:22:55 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:22:55 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:22:55 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:22:55 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Session Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:22:55 --> Session routines successfully run
+DEBUG - 22-08-2017 19:22:55 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:22:55 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:22:55 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:22:55 --> Model Class Initialized
+DEBUG - 22-08-2017 19:22:55 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:22:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:52:55 --> Model Class Initialized
+ERROR - 22-08-2017 09:52:55 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:52:55 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:52:55 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:52:55 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:52:55 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:52:55 --> Could not find the language line "messages"
+ERROR - 22-08-2017 09:52:55 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:52:55 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:52:55 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:52:55 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:52:55 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:52:55 --> Could not find the language line "Tasks"
+ERROR - 22-08-2017 09:52:55 --> Could not find the language line "Tasks"
+DEBUG - 22-08-2017 09:52:55 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:52:56 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:52:56 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:52:56 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:52:57 --> Final output sent to browser
+DEBUG - 22-08-2017 09:52:57 --> Total execution time: 2.0029
+DEBUG - 22-08-2017 19:22:57 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:22:57 --> URI Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Router Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Output Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Security Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Input Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:22:57 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Language Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Config Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:22:57 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:22:57 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:22:57 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:22:57 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Session Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:22:57 --> Session routines successfully run
+DEBUG - 22-08-2017 19:22:57 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:22:57 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:22:57 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:22:57 --> Model Class Initialized
+DEBUG - 22-08-2017 19:22:57 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:22:57 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:57 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:52:57 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:57 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:52:57 --> Model Class Initialized
+DEBUG - 22-08-2017 09:52:57 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:52:57 --> Model Class Initialized
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:52:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:52:57 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:52:57 --> Final output sent to browser
+DEBUG - 22-08-2017 09:52:57 --> Total execution time: 0.2031
+DEBUG - 22-08-2017 19:23:12 --> Config Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:23:12 --> URI Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Router Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Output Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Security Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Input Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:23:12 --> Language Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Language Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Config Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:23:12 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:23:12 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:23:12 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:23:12 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Session Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:23:12 --> Session routines successfully run
+DEBUG - 22-08-2017 19:23:12 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:23:12 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:23:12 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:23:12 --> Model Class Initialized
+DEBUG - 22-08-2017 19:23:12 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:23:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:53:12 --> Model Class Initialized
+ERROR - 22-08-2017 09:53:12 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:53:12 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:53:12 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:53:12 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:53:12 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:53:12 --> Could not find the language line "messages"
+ERROR - 22-08-2017 09:53:12 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:53:12 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:53:12 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:53:12 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:53:12 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:53:12 --> Could not find the language line "Tasks"
+ERROR - 22-08-2017 09:53:12 --> Could not find the language line "Tasks"
+DEBUG - 22-08-2017 09:53:12 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:53:14 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:53:14 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:53:14 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:53:14 --> Final output sent to browser
+DEBUG - 22-08-2017 09:53:14 --> Total execution time: 2.1631
+DEBUG - 22-08-2017 19:23:14 --> Config Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:23:14 --> URI Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Router Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Output Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Security Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Input Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:23:14 --> Language Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Language Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Config Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:23:14 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:23:14 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:23:14 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:23:14 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Session Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:23:14 --> Session routines successfully run
+DEBUG - 22-08-2017 19:23:14 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:23:14 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:23:14 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:23:14 --> Model Class Initialized
+DEBUG - 22-08-2017 19:23:14 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:23:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:14 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:53:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:14 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:53:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:53:14 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:53:14 --> Model Class Initialized
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:53:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:53:14 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:53:14 --> Final output sent to browser
+DEBUG - 22-08-2017 09:53:14 --> Total execution time: 0.2354
+DEBUG - 22-08-2017 19:24:00 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:24:00 --> URI Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Router Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Output Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Security Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Input Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:24:00 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:24:00 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:24:00 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:24:00 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:24:00 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Session Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:24:00 --> Session routines successfully run
+DEBUG - 22-08-2017 19:24:00 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:24:00 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:24:00 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:24:00 --> Model Class Initialized
+DEBUG - 22-08-2017 19:24:00 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:24:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:54:00 --> Model Class Initialized
+ERROR - 22-08-2017 09:54:00 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:54:00 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:54:00 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:54:00 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:54:00 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:54:00 --> Could not find the language line "messages"
+ERROR - 22-08-2017 09:54:00 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:54:00 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:54:00 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:54:00 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:54:00 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:54:00 --> Could not find the language line "Tasks"
+ERROR - 22-08-2017 09:54:00 --> Could not find the language line "Tasks"
+DEBUG - 22-08-2017 09:54:00 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:54:04 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:54:05 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:54:05 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:54:05 --> Final output sent to browser
+DEBUG - 22-08-2017 09:54:05 --> Total execution time: 5.4775
+DEBUG - 22-08-2017 19:24:08 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:08 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:24:09 --> URI Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Router Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Output Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Security Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Input Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:24:09 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:24:09 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:24:09 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:24:09 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:24:09 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Session Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:24:09 --> Session routines successfully run
+DEBUG - 22-08-2017 19:24:09 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:24:09 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:24:09 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:24:09 --> Model Class Initialized
+DEBUG - 22-08-2017 19:24:09 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:24:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:09 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:54:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:09 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:54:09 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:09 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:54:09 --> Model Class Initialized
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:54:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:54:09 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:54:09 --> Final output sent to browser
+DEBUG - 22-08-2017 09:54:09 --> Total execution time: 1.8262
+DEBUG - 22-08-2017 19:24:11 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:24:11 --> URI Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Router Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Output Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Security Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Input Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:24:11 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:24:11 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:24:11 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:24:11 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:24:11 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Session Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:24:11 --> Session routines successfully run
+DEBUG - 22-08-2017 19:24:11 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:24:11 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:24:11 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:24:11 --> Model Class Initialized
+DEBUG - 22-08-2017 19:24:11 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:24:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:54:11 --> Model Class Initialized
+ERROR - 22-08-2017 09:54:11 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:54:11 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:54:11 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:54:11 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:54:11 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:54:11 --> Could not find the language line "messages"
+ERROR - 22-08-2017 09:54:11 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:54:11 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:54:11 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:54:11 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:54:11 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:54:11 --> Could not find the language line "Tasks"
+ERROR - 22-08-2017 09:54:11 --> Could not find the language line "Tasks"
+DEBUG - 22-08-2017 09:54:11 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:54:13 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:54:13 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:54:13 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:54:13 --> Final output sent to browser
+DEBUG - 22-08-2017 09:54:13 --> Total execution time: 2.4141
+DEBUG - 22-08-2017 19:24:14 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:24:14 --> URI Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Router Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Output Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Security Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Input Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:24:14 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Language Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Config Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:24:14 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:24:14 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:24:14 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:24:14 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Session Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:24:14 --> Session routines successfully run
+DEBUG - 22-08-2017 19:24:14 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:24:14 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:24:14 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:24:14 --> Model Class Initialized
+DEBUG - 22-08-2017 19:24:14 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:24:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:14 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:54:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:14 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:54:14 --> Model Class Initialized
+DEBUG - 22-08-2017 09:54:14 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:54:14 --> Model Class Initialized
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:54:14 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:54:14 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:54:14 --> Final output sent to browser
+DEBUG - 22-08-2017 09:54:14 --> Total execution time: 0.3604
+DEBUG - 22-08-2017 19:25:12 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:12 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:12 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:12 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:12 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:12 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:12 --> Language file loaded: language/english/admin_lang.php
+DEBUG - 22-08-2017 19:25:12 --> languages MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:12 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:12 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:12 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:12 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:12 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:12 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:12 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:25:12 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:12 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:12 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:55:12 --> Model Class Initialized
+ERROR - 22-08-2017 09:55:12 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:55:12 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:55:12 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:55:12 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:55:12 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:55:12 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:55:12 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:55:12 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:55:12 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:55:12 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 09:55:12 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:55:14 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:55:14 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:55:14 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:55:14 --> Final output sent to browser
+DEBUG - 22-08-2017 09:55:14 --> Total execution time: 2.3838
+DEBUG - 22-08-2017 19:25:15 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:15 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:15 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:15 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:15 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:15 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:15 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:15 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:15 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:15 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:25:15 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:15 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:15 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:15 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:15 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:55:15 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:15 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:55:15 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:15 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:15 --> Model Class Initialized
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:55:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:55:15 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:55:15 --> Final output sent to browser
+DEBUG - 22-08-2017 09:55:15 --> Total execution time: 0.3477
+DEBUG - 22-08-2017 19:25:21 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:21 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:21 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:21 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:21 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:21 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:21 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:21 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:21 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:21 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:25:21 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:21 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:21 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:55:21 --> Model Class Initialized
+ERROR - 22-08-2017 09:55:21 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:55:21 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:55:21 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:55:21 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:55:21 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:55:21 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:55:21 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:55:21 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:55:21 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:55:21 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 09:55:21 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:55:25 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:55:26 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:55:27 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:55:27 --> Final output sent to browser
+DEBUG - 22-08-2017 09:55:27 --> Total execution time: 6.1797
+DEBUG - 22-08-2017 19:25:28 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:28 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:28 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:28 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:28 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:28 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:28 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:28 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:28 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:28 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:25:28 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:28 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:28 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:28 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:28 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:55:28 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:28 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:55:28 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:28 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:28 --> Model Class Initialized
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:55:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:55:28 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:55:28 --> Final output sent to browser
+DEBUG - 22-08-2017 09:55:28 --> Total execution time: 0.2461
+DEBUG - 22-08-2017 19:25:36 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:36 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:36 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:36 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:36 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:36 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:36 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:36 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:36 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:36 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:25:36 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:36 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:36 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:36 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:55:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:36 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:55:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:36 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:36 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:36 --> Final output sent to browser
+DEBUG - 22-08-2017 09:55:36 --> Total execution time: 0.2607
+DEBUG - 22-08-2017 19:25:37 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:37 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:37 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:37 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:37 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:37 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:37 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:37 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:37 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:37 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:25:37 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:37 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:37 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:55:37 --> Model Class Initialized
+ERROR - 22-08-2017 09:55:37 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:55:37 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:55:37 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:55:37 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:55:37 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:55:37 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:55:37 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:55:37 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:55:37 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:55:37 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 09:55:37 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:55:39 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:55:40 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:55:40 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:55:40 --> Final output sent to browser
+DEBUG - 22-08-2017 09:55:40 --> Total execution time: 2.5762
+DEBUG - 22-08-2017 19:25:43 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:25:44 --> URI Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Router Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Output Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Security Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Input Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:25:44 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Language Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Config Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:25:44 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:25:44 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:25:44 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:25:44 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Session Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:25:44 --> Session routines successfully run
+DEBUG - 22-08-2017 19:25:44 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:25:44 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:25:44 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:25:44 --> Model Class Initialized
+DEBUG - 22-08-2017 19:25:44 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:25:44 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:44 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:55:44 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:44 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:55:44 --> Model Class Initialized
+DEBUG - 22-08-2017 09:55:44 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:55:44 --> Model Class Initialized
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:55:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:55:44 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:55:44 --> Final output sent to browser
+DEBUG - 22-08-2017 09:55:44 --> Total execution time: 1.5205
+DEBUG - 22-08-2017 19:26:45 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:26:45 --> URI Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Router Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Output Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Security Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Input Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:26:45 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:26:45 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:26:45 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:26:45 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:26:45 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Session Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:26:45 --> Session routines successfully run
+DEBUG - 22-08-2017 19:26:45 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:26:45 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:26:45 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:26:45 --> Model Class Initialized
+DEBUG - 22-08-2017 19:26:45 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:26:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:56:45 --> Model Class Initialized
+ERROR - 22-08-2017 09:56:45 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:56:45 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:56:45 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:56:45 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:56:45 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:56:45 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:56:45 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:56:45 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:56:45 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:56:45 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 09:56:45 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:56:47 --> Final output sent to browser
+DEBUG - 22-08-2017 09:56:47 --> Total execution time: 1.9082
+DEBUG - 22-08-2017 19:26:47 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:26:47 --> URI Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Router Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Output Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Security Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Input Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:26:47 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:26:47 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Session Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:26:47 --> Session routines successfully run
+DEBUG - 22-08-2017 19:26:47 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:26:47 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:26:47 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:26:47 --> Model Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:26:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:56:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:56:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:56:47 --> Model Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:26:47 --> URI Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Router Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Output Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Security Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Input Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:26:47 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:26:47 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Session Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:26:47 --> Session routines successfully run
+DEBUG - 22-08-2017 19:26:47 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:26:47 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:26:47 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:26:47 --> Model Class Initialized
+DEBUG - 22-08-2017 19:26:47 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:26:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:56:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:56:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:47 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:56:47 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:48 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:56:48 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:48 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:56:48 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:48 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:56:48 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:48 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:56:48 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:48 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:56:48 --> Model Class Initialized
+ERROR - 22-08-2017 09:56:48 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:56:48 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:56:48 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:56:48 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:56:48 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:56:48 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:56:48 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:56:48 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:56:48 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:56:48 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 09:56:48 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:56:49 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:56:49 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:56:49 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:56:49 --> Final output sent to browser
+DEBUG - 22-08-2017 09:56:49 --> Total execution time: 1.4814
+DEBUG - 22-08-2017 19:26:49 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:26:49 --> URI Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Router Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Output Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Security Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Input Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:26:49 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Language Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Config Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:26:49 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:26:49 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:26:49 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:26:49 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Session Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:26:49 --> Session routines successfully run
+DEBUG - 22-08-2017 19:26:49 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:26:49 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:26:49 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:26:49 --> Model Class Initialized
+DEBUG - 22-08-2017 19:26:49 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:26:49 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:49 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:56:49 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:49 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:56:49 --> Model Class Initialized
+DEBUG - 22-08-2017 09:56:50 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:56:50 --> Model Class Initialized
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:56:50 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:56:50 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:56:50 --> Final output sent to browser
+DEBUG - 22-08-2017 09:56:50 --> Total execution time: 0.2285
+DEBUG - 22-08-2017 19:29:02 --> Config Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:29:02 --> URI Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Router Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Output Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Security Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Input Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:29:02 --> Language Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Language Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Config Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:29:02 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:29:02 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:29:02 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:29:02 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Session Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:29:02 --> Session routines successfully run
+DEBUG - 22-08-2017 19:29:02 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:29:02 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:29:02 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:29:02 --> Model Class Initialized
+DEBUG - 22-08-2017 19:29:02 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:29:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 09:59:02 --> Model Class Initialized
+ERROR - 22-08-2017 09:59:02 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:59:02 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 09:59:02 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 09:59:02 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:59:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 09:59:02 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:59:02 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 09:59:02 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 09:59:02 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 09:59:02 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 09:59:02 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 09:59:03 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 09:59:03 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 09:59:03 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 09:59:03 --> Final output sent to browser
+DEBUG - 22-08-2017 09:59:03 --> Total execution time: 1.3320
+DEBUG - 22-08-2017 19:29:03 --> Config Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:29:03 --> URI Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Router Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Output Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Security Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Input Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:29:03 --> Language Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Language Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Config Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:29:03 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:29:03 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:29:03 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:29:03 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Session Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:29:03 --> Session routines successfully run
+DEBUG - 22-08-2017 19:29:03 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:29:03 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:29:03 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:29:03 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:29:03 --> Model Class Initialized
+DEBUG - 22-08-2017 19:29:04 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:29:04 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:04 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 09:59:04 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:04 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 09:59:04 --> Model Class Initialized
+DEBUG - 22-08-2017 09:59:04 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 09:59:04 --> Model Class Initialized
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 09:59:04 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 09:59:04 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 09:59:04 --> Final output sent to browser
+DEBUG - 22-08-2017 09:59:04 --> Total execution time: 0.2168
+DEBUG - 22-08-2017 19:30:46 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:30:46 --> URI Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Router Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Output Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Security Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Input Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:30:46 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:30:46 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:30:46 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:30:46 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:30:46 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Session Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:30:46 --> Session routines successfully run
+DEBUG - 22-08-2017 19:30:46 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:30:46 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:30:46 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:30:46 --> Model Class Initialized
+DEBUG - 22-08-2017 19:30:46 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:30:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:00:46 --> Model Class Initialized
+ERROR - 22-08-2017 10:00:46 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:00:46 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:00:46 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:00:46 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:00:46 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:00:46 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:00:46 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:00:46 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:00:46 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:00:46 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:00:46 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:00:47 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:00:47 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:00:47 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:00:47 --> Final output sent to browser
+DEBUG - 22-08-2017 10:00:47 --> Total execution time: 1.5264
+DEBUG - 22-08-2017 19:30:49 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:30:49 --> URI Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Router Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Output Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Security Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Input Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:30:49 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:30:49 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:30:49 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:30:49 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:30:49 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Session Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:30:49 --> Session routines successfully run
+DEBUG - 22-08-2017 19:30:49 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:30:49 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:30:49 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:30:49 --> Model Class Initialized
+DEBUG - 22-08-2017 19:30:49 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:30:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:49 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:00:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:49 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:00:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:49 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:00:49 --> Model Class Initialized
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:00:49 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:00:49 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:00:49 --> Final output sent to browser
+DEBUG - 22-08-2017 10:00:49 --> Total execution time: 0.4688
+DEBUG - 22-08-2017 19:30:52 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:30:52 --> URI Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> Router Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> Output Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> Security Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> Input Class Initialized
+DEBUG - 22-08-2017 19:30:52 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:30:52 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:30:53 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:30:53 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:30:53 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:30:53 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Session Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:30:53 --> Session routines successfully run
+DEBUG - 22-08-2017 19:30:53 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:30:53 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:30:53 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:30:53 --> Model Class Initialized
+DEBUG - 22-08-2017 19:30:53 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:30:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:00:53 --> Model Class Initialized
+ERROR - 22-08-2017 10:00:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:00:53 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:00:53 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:00:53 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:00:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:00:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:00:53 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:00:53 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:00:53 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:00:53 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:00:53 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:00:54 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:00:54 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:00:54 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:00:54 --> Final output sent to browser
+DEBUG - 22-08-2017 10:00:54 --> Total execution time: 2.1777
+DEBUG - 22-08-2017 19:30:55 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:30:55 --> URI Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Router Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Output Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Security Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Input Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:30:55 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Language Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Config Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:30:55 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:30:55 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:30:55 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:30:55 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Session Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:30:55 --> Session routines successfully run
+DEBUG - 22-08-2017 19:30:55 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:30:55 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:30:55 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:30:55 --> Model Class Initialized
+DEBUG - 22-08-2017 19:30:55 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:30:55 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:55 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:00:55 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:55 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:00:55 --> Model Class Initialized
+DEBUG - 22-08-2017 10:00:55 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:00:55 --> Model Class Initialized
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:00:55 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:00:55 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:00:55 --> Final output sent to browser
+DEBUG - 22-08-2017 10:00:55 --> Total execution time: 0.2705
+DEBUG - 22-08-2017 19:34:38 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:34:38 --> URI Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Router Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Output Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Security Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Input Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:34:38 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:34:38 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:34:38 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:34:38 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:34:38 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Session Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:34:38 --> Session routines successfully run
+DEBUG - 22-08-2017 19:34:38 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:34:38 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:34:38 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:34:38 --> Model Class Initialized
+DEBUG - 22-08-2017 19:34:38 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:34:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:04:38 --> Model Class Initialized
+ERROR - 22-08-2017 10:04:38 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:04:38 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:04:38 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:04:38 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:04:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:04:38 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:04:38 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:04:38 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:04:38 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:04:38 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:04:38 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:04:39 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:04:39 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:04:39 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:04:39 --> Final output sent to browser
+DEBUG - 22-08-2017 10:04:39 --> Total execution time: 1.3125
+DEBUG - 22-08-2017 19:34:40 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:34:40 --> URI Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Router Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Output Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Security Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Input Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:34:40 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:34:40 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:34:40 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:34:40 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:34:40 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Session Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:34:40 --> Session routines successfully run
+DEBUG - 22-08-2017 19:34:40 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:34:40 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:34:40 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:34:40 --> Model Class Initialized
+DEBUG - 22-08-2017 19:34:40 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:34:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:40 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:04:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:40 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:04:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:40 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:04:40 --> Model Class Initialized
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:04:40 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:04:40 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:04:40 --> Final output sent to browser
+DEBUG - 22-08-2017 10:04:40 --> Total execution time: 0.2246
+DEBUG - 22-08-2017 19:34:49 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:34:49 --> URI Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Router Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Output Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Security Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Input Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:34:49 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:34:49 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:34:49 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:34:49 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:34:49 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Session Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:34:49 --> Session routines successfully run
+DEBUG - 22-08-2017 19:34:49 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:34:49 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:34:49 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:34:49 --> Model Class Initialized
+DEBUG - 22-08-2017 19:34:49 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:34:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:04:49 --> Model Class Initialized
+ERROR - 22-08-2017 10:04:49 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:04:49 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:04:49 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:04:49 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:04:49 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:04:49 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:04:49 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:04:49 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:04:49 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:04:49 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:04:49 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:04:50 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:04:50 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:04:50 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:04:50 --> Final output sent to browser
+DEBUG - 22-08-2017 10:04:50 --> Total execution time: 1.4346
+DEBUG - 22-08-2017 19:34:51 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:34:51 --> URI Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Router Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Output Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Security Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Input Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:34:51 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Language Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Config Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:34:51 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:34:51 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:34:51 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:34:51 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Session Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:34:51 --> Session routines successfully run
+DEBUG - 22-08-2017 19:34:51 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:34:51 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:34:51 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:34:51 --> Model Class Initialized
+DEBUG - 22-08-2017 19:34:51 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:34:51 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:51 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:04:51 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:51 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:04:51 --> Model Class Initialized
+DEBUG - 22-08-2017 10:04:51 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:04:51 --> Model Class Initialized
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:04:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:04:51 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:04:51 --> Final output sent to browser
+DEBUG - 22-08-2017 10:04:51 --> Total execution time: 0.2100
+DEBUG - 22-08-2017 19:37:15 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:15 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:15 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:15 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:15 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:15 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:15 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:15 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:15 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:15 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:15 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:15 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:15 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:07:15 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:15 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:15 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:07:15 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:15 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:15 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:15 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:15 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:07:15 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:15 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:07:15 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:07:15 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:07:16 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:07:16 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:07:16 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:07:16 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:16 --> Total execution time: 1.4199
+DEBUG - 22-08-2017 19:37:17 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:17 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:17 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:17 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:17 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:17 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:17 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:17 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:17 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:17 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:18 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:18 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:18 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:18 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:18 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:18 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:18 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:18 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:18 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:18 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:18 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:18 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:18 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:18 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:07:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:07:18 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:07:18 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:18 --> Total execution time: 0.1807
+DEBUG - 22-08-2017 19:37:20 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:20 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:20 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:20 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:20 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:20 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:20 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:20 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:20 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:20 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:21 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:21 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:21 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:21 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:21 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:21 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:21 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:21 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:07:21 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:22 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:07:22 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:22 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:07:22 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:07:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:07:22 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:07:23 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:07:23 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:07:23 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:07:23 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:23 --> Total execution time: 3.2764
+DEBUG - 22-08-2017 19:37:25 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:25 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:25 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:25 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:25 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:25 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:25 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:25 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:25 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:25 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:25 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:25 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:25 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:25 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:25 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:25 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:25 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:25 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:25 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:25 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:07:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:07:25 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:07:25 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:25 --> Total execution time: 0.3115
+DEBUG - 22-08-2017 19:37:33 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:33 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:33 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:33 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:33 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:33 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:33 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:33 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:33 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:33 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:33 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:33 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:33 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:33 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:33 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:33 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:33 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:33 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:33 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:33 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:33 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:33 --> Total execution time: 0.1670
+DEBUG - 22-08-2017 19:37:34 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:34 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:34 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:34 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:34 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:34 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:34 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:34 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:34 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:34 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:34 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:34 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:34 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:07:34 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:34 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:34 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:07:34 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:34 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:34 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:34 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:34 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:07:34 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:34 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:07:34 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:07:34 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:07:36 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:07:36 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:07:36 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:07:36 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:36 --> Total execution time: 1.8506
+DEBUG - 22-08-2017 19:37:36 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:36 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:36 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:36 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:36 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:36 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:37 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:37 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:37 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:37 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:37 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:37 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:37 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:37 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:37 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:37 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:37 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:37 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:37 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:37 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:37 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:37 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:37 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:37 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:07:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:07:37 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:07:37 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:37 --> Total execution time: 0.2197
+DEBUG - 22-08-2017 19:37:38 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:39 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:39 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:39 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:39 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:39 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:39 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:39 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:39 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:39 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:39 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:39 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:39 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:39 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:39 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:39 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:39 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:39 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:39 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:40 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 10:07:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:40 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 10:07:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:40 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 10:07:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:40 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 10:07:40 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:40 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 10:07:40 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:40 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 10:07:40 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 10:07:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 10:07:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:40 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 10:07:40 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 10:07:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 10:07:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 10:07:40 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 22-08-2017 10:07:42 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 22-08-2017 10:07:42 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 22-08-2017 10:07:42 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 22-08-2017 10:07:42 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:42 --> Total execution time: 3.4736
+DEBUG - 22-08-2017 19:37:43 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Hooks Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Utf8 Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> UTF-8 Support Enabled
+DEBUG - 22-08-2017 19:37:43 --> URI Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Router Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Output Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Security Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Input Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Global POST and COOKIE data sanitized
+DEBUG - 22-08-2017 19:37:43 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Language Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Config Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Loader Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Helper loaded: url_helper
+DEBUG - 22-08-2017 19:37:43 --> Helper loaded: file_helper
+DEBUG - 22-08-2017 19:37:43 --> Helper loaded: form_helper
+DEBUG - 22-08-2017 19:37:43 --> Helper loaded: date_time_helper
+DEBUG - 22-08-2017 19:37:43 --> Database Driver Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Session Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Helper loaded: string_helper
+DEBUG - 22-08-2017 19:37:43 --> Session routines successfully run
+DEBUG - 22-08-2017 19:37:43 --> Form Validation Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Encrypt Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Controller Class Initialized
+DEBUG - 22-08-2017 19:37:43 --> Helper loaded: language_helper
+DEBUG - 22-08-2017 19:37:44 --> Language file loaded: language/spanish/admin_lang.php
+DEBUG - 22-08-2017 19:37:44 --> contacts MX_Controller Initialized
+DEBUG - 22-08-2017 19:37:44 --> Model Class Initialized
+DEBUG - 22-08-2017 19:37:44 --> File loaded: application/modules/admin/models/setting_model.php
+DEBUG - 22-08-2017 19:37:44 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:44 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 10:07:44 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:44 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 10:07:44 --> Model Class Initialized
+DEBUG - 22-08-2017 10:07:44 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 10:07:44 --> Model Class Initialized
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 22-08-2017 10:07:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 22-08-2017 10:07:44 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 10:07:44 --> Final output sent to browser
+DEBUG - 22-08-2017 10:07:44 --> Total execution time: 0.2285

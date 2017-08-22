@@ -518,4 +518,5 @@ $lang['signed_by']			= "firmado por";
 $lang['result']			= "Resultado";
 $lang['showing']			= "Mostrando";
 $lang['group']			= "Agrupar";
+$lang['setCategoryGroup']			= "Asignar Categoria";
 $lang['contactGroupTitle']			= "Agrupar Contactos";
