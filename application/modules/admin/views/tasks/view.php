@@ -15,12 +15,12 @@
  <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        <?php echo lang('tasks')?>
+        <?php echo lang('Tasks')?>
         <small><?php echo lang('view')?></small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i><?php echo lang('dashboard')?></a></li>
-        <li><a href="<?php echo site_url('admin/tasks')?>"><?php echo lang('tasks')?></a></li>
+        <li><a href="<?php echo site_url('admin/tasks')?>"><?php echo lang('Tasks')?></a></li>
         <li class="active"><?php echo lang('view')?></li>
     </ol>
 </section>

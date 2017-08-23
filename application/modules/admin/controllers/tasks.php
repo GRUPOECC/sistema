@@ -17,7 +17,7 @@ class tasks extends MX_Controller {
 	
 	function index(){
 		$data['tasks'] = $this->tasks_model->get_all();
-		$data['page_title'] = lang('tasks');
+		$data['page_title'] = lang('Tasks');
 		$data['body'] = 'tasks/list';
 		$this->load->view('template/main', $data);	
 
