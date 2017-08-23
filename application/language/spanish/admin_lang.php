@@ -520,3 +520,4 @@ $lang['showing']			= "Mostrando";
 $lang['group']			= "Agrupar";
 $lang['setCategoryGroup']			= "Asignar Categoria";
 $lang['contactGroupTitle']			= "Agrupar Contactos";
+$lang['titleSelectContact']			= "Debe seleccionar un contacto";

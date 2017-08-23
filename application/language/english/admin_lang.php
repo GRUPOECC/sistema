@@ -511,3 +511,4 @@ $lang['showing']			= "Showing";
 $lang['group']			= "Group";
 $lang['setCategoryGroup']			= "Set Category";
 $lang['contactGroupTitle']			= "Group contacts";
+$lang['titleSelectContact']			= "You should select a contact";

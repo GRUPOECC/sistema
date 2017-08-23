@@ -23,24 +23,11 @@ class contacts extends MX_Controller {
              $cont_id = $contactos[$i]; 
              $estado = $this->contact_model->saveCategoryGroup($cont_id,$categoria);       
             } 
-             if ($estado) 
-               redirect('admin/contacts');
-               else 
-               	echo '
-                  <script>
-                   alert("Debe seleccionar un contacto");
-                   location.href = "contacts";
-                  </script>
-               '; 
+               redirect('admin/contacts'); 
             
 		}else{
 
 			 if (isset($_POST['submit2'])){
-                 echo '
-                  <script>
-                   alert("Debe seleccionar un contacto");                               
-                  </script>
-               '; 
                 $data['contacts'] = $this->contact_model->get_all();
 		        $data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
 		        $data['page_title'] = lang('contacts');

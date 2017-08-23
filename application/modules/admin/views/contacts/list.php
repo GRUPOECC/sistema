@@ -10,9 +10,9 @@ function areyousure()
 	return confirm('<?php echo lang('are_you_sure');?>');
 }
 
+  
+               
 </script>
-
-
 
 
 <section class="content-header">
@@ -24,6 +24,10 @@ function areyousure()
             <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard');?></a></li>
             <li class="active"><?php echo lang('contacts');?></li>
         </ol>
+
+        <div id="errorcontacto" class="alert alert-danger">
+          <strong>Error: </strong> <?php echo lang('titleSelectContact');?>
+        </div>
 </section>
 
   <!-- Proceso de eliminacion de varios Contactos -->
@@ -40,24 +44,13 @@ function areyousure()
           $conjunto = $conjunto . $del_id . "-";
          } 
          header('Location: '.site_url('admin/contacts/delete/').'/'.$conjunto);    
-      }else 
-         {
-             if (isset($_POST['submit'])){
-                 echo '
-                  <script>
-                   alert("Debe seleccionar un contacto");                               
-                  </script>
-               '; 
-
-             } 
-            
-         }
+      }
 
 ?>
 
 
 <section class="content">
-    <form action="" method="post">
+    <form id="formulariocontactos" onsubmit="return validar()" action="" method="post">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="col-md3">
@@ -76,12 +69,15 @@ function areyousure()
                      <?php } ?> 
                 <?php if(check_user_role(24)==1){?>
                       <input class="btn bg-red" style="margin-left:10px;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
-                <?php } ?>                   
+                <?php } ?>   
+                <?php if(check_user_role(23)==1){?>                
                      <a class="btn bg-yellow" data-toggle="modal" data-target="#myModalData2" style="margin-left:10px;" href="">
                      <i class="fa fa-plus"></i> <?php echo lang('setCategoryGroup');?></a> 
-
+                <?php } ?>  
+                <?php if(check_user_role(184)==1){?>
                       <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
                      <i class="fa fa-caret-square-o-down"></i> <?php echo lang('group');?></a> 
+                     <?php } ?>  
                 </div>
             </div>    
         </div>	
@@ -264,9 +260,12 @@ function areyousure()
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><?php echo lang('contactGroupTitle');?></h4>
+          <h4 class="modal-title"><?php echo lang('contactGroupTitle');?></h4>  
+          <div id="errorcontacto2" class="alert alert-danger">
+          <strong>Error: </strong> <?php echo lang('titleSelectContact');?>
+          </div>  
         </div>
-        <div class="modal-body">
+        <div class="modal-body"> 
           <p>
               Seleccione las categorías a las que pertenecerán este grupo de contactos:
           </p>  
@@ -344,7 +343,6 @@ function areyousure()
 <!-- Modal para la Informacion de los contactos  -->
   <div class="modal fade" id="myModalData" role="dialog">
     <div class="modal-dialog">
-    
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -352,7 +350,6 @@ function areyousure()
           <h4 class="modal-title"><?php echo lang('contact');?></h4>
         </div>
         <div class="modal-body">
-
           <p><iframe id ="window"  name="window" src="<?php echo site_url('admin/contacts/view/'); ?>" width="100%" height="330" marginwidth="0" scrolling="yes" frameborder="0"></iframe>
           </p>
            <?php if(check_user_role(23)==1){?>  
@@ -452,7 +449,10 @@ function areyousure()
 
 ?>
 
+
+
 <script type="text/javascript">
+
 
 $( document ).ready(function() {
     if (document.getElementById('modo-lista').style.display == "none") 
@@ -473,6 +473,23 @@ $( document ).ready(function() {
 </script>
 
 <script type="text/javascript">
+
+   function validar(){
+        var cont = 0; 
+        var checkboxes = document.getElementsByName("contact_check[]");
+        for (var x=0; x < checkboxes.length; x++) {
+            if (checkboxes[x].checked) {
+                 cont = cont + 1;
+            }
+        }
+       if (cont==0){
+            $("#errorcontacto").css("display", "block");
+            $("#errorcontacto2").css("display", "block");
+           return false;
+         }  
+        else 
+          return true; 
+   }
    
    function Agrupar () {
         if (($('input[type=checkbox]').css("display"))=="none"){ 

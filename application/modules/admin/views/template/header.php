@@ -1147,4 +1147,14 @@ $fourth = $this->uri->segment(4);
            </div>
            <?php }?>
 
+<style type="text/css">
+  #errorcontacto{
+    display: none;
+  }
+
+  #errorcontacto2{
+    display: none;
+  }
+
+</style>
     

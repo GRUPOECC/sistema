@@ -100,6 +100,12 @@ class contact_model extends CI_Model
 
 	}
 	
+    function get_contact_categories($id)
+	{
+		$this->db->where('id_contact',$id);
+		return $this->db->get('rel_contact_category')->result();
+	}
+
 	function get_all_contact_categories()
 	{
 		return $this->db->get('contact_categories')->result();
