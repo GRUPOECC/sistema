@@ -27916,3 +27916,55 @@ ERROR - 22-08-2017 23:36:46 --> Severity: Notice  --> Trying to get property of 
 DEBUG - 22-08-2017 23:36:46 --> File loaded: application/modules/admin/views/contacts/vista.php
 DEBUG - 22-08-2017 23:36:46 --> Final output sent to browser
 DEBUG - 22-08-2017 23:36:46 --> Total execution time: 3.7529
+DEBUG - 22-08-2017 23:38:09 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 23:38:09 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:09 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 23:38:09 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:10 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 23:38:10 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:10 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 23:38:10 --> Final output sent to browser
+DEBUG - 22-08-2017 23:38:10 --> Total execution time: 0.4336
+DEBUG - 22-08-2017 23:38:15 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 23:38:15 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:15 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 23:38:15 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 22-08-2017 23:38:16 --> Final output sent to browser
+DEBUG - 22-08-2017 23:38:16 --> Total execution time: 0.4990
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 22-08-2017 23:38:16 --> Model Class Initialized
+ERROR - 22-08-2017 23:38:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 23:38:16 --> Could not find the language line "task_comming_in_next"
+ERROR - 22-08-2017 23:38:16 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 326
+ERROR - 22-08-2017 23:38:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 23:38:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 331
+ERROR - 22-08-2017 23:38:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 23:38:16 --> Could not find the language line "message_comming_in_next"
+ERROR - 22-08-2017 23:38:16 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 368
+ERROR - 22-08-2017 23:38:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+ERROR - 22-08-2017 23:38:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 373
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/views/template/header.php
+ERROR - 22-08-2017 23:38:16 --> Severity: Notice  --> Undefined variable: assigned_contact_categories C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\edit.php 121
+ERROR - 22-08-2017 23:38:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\edit.php 121
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/views/contacts/edit.php
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/views/template/footer.php
+DEBUG - 22-08-2017 23:38:16 --> File loaded: application/modules/admin/views/template/main.php
+DEBUG - 22-08-2017 23:38:16 --> Final output sent to browser
+DEBUG - 22-08-2017 23:38:16 --> Total execution time: 0.2695

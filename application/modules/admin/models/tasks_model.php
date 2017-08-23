@@ -41,7 +41,7 @@ class tasks_model extends CI_Model
 	
 	function get_due_tasks()
 	{
-					$this->db->where('T.due_date < ',date("Y-m-d"));
+					$this->db->where('T.due_date > ',date("Y-m-d"));
 					$this->db->where('T.progress != 100 ');
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name name,UR.name role');
@@ -52,7 +52,7 @@ class tasks_model extends CI_Model
 	
 	function get_my_due_tasks()
 	{
-					$this->db->where('T.due_date < ',date("Y-m-d"));
+					$this->db->where('T.due_date > ',date("Y-m-d"));
 					$this->db->where('T.progress != 100 ');
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->where('TA.user_id',$this->session->userdata('admin')['id']);
@@ -87,8 +87,11 @@ class tasks_model extends CI_Model
 	
 	function get($id)
 	{
-				   $this->db->where('id',$id);
-			return $this->db->get('tasks')->row();
+                   $this->db->select('T.*,U.name name,UR.name role');
+				   $this->db->join('users U', 'U.id = T.created_by', 'LEFT');
+				   $this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
+				   $this->db->where('T.id',$id);
+			return $this->db->get('tasks T')->row();
 	}
 	
 	function update($save,$id)

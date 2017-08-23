@@ -20,8 +20,8 @@ class dashboard extends MX_Controller {
 	
 	function index() {
 		$data['case_study'] = $this->case_study_model->get_all();
-		$data['my_tasks'] = $this->tasks_model->get_my_tasks();
-		$data['tasks'] = $this->tasks_model->get_all();
+		$data['my_tasks'] = $this->tasks_model->get_my_due_tasks();
+		$data['tasks'] = $this->tasks_model->get_due_tasks();
 		$data['todays_leaves'] = $this->attendance_model->get_todays_leaves();
 		$data['employees'] = $this->employees_model->get_all();
 		$data['att_status'] = $this->attendance_model->get_attendance_today();

@@ -51,7 +51,7 @@ function areyousure()
 
 
 <section class="content">
-    <form id="formulariocontactos" onsubmit="return validar()" action="" method="post">
+    <form id="formulariocontactos" onsubmit="return validar();" action="" method="post">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="col-md3">
@@ -264,13 +264,16 @@ function areyousure()
           <h4 class="modal-title"><?php echo lang('contactGroupTitle');?></h4>  
           <div id="errorcontacto2" class="alert alert-danger">
           <strong>Error: </strong> <?php echo lang('titleSelectContact');?>
-          </div>  
+          </div> 
+          <div id="errorcontacto3" class="alert alert-danger">
+          <strong>Error: </strong> <?php echo lang('titleSelectCategory');?>
+          </div>   
         </div>
         <div class="modal-body"> 
           <p>
               Seleccione las categorías a las que pertenecerán este grupo de contactos:
           </p>  
-                           <select  name="category[]" class="chzn col-md-12" multiple="multiple" >
+                           <select  id="category2" name="category[]" class="chzn col-md-12" multiple="multiple" >    
                                         <?php  foreach($contact_categories as $new) {
                                             $sel = "";
                                             if(set_select('contact_category_id', $new->id)) $sel = "selected='selected'";
@@ -490,6 +493,19 @@ $( document ).ready(function() {
          }  
         else 
           return true; 
+   }
+
+   function validarCategoria(){
+
+        var ddl = document.getElementById("category2");
+        var selectedValue = ddl.options[ddl.selectedIndex].value;
+        if (selectedValue == "blank")
+          {
+            $("#errorcontacto3").css("display", "block");
+            return false; 
+          }else{
+             return true;
+          }
    }
    
    function Agrupar () {
