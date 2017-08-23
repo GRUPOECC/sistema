@@ -2,10 +2,10 @@
 -- version 4.7.3
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 23-08-2017 a las 15:44:02
--- Versión del servidor: 10.1.25-MariaDB
--- Versión de PHP: 5.6.31
+-- Host: 127.0.0.1
+-- Generation Time: Aug 24, 2017 at 01:21 AM
+-- Server version: 10.1.13-MariaDB
+-- PHP Version: 5.6.23
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,12 +19,12 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `aoms`
+-- Database: `aoms`
 --
 
 DELIMITER $$
 --
--- Funciones
+-- Functions
 --
 CREATE DEFINER=`root`@`localhost` FUNCTION `F_CONTACT_CATEGORIES` (`contacto` INT(9)) RETURNS VARCHAR(255) CHARSET utf8 BEGIN
 DECLARE  categorias  VARCHAR(255);
@@ -56,26 +56,12 @@ WHERE
   RETURN categorias;
   END$$
 
-CREATE DEFINER=`root`@`localhost` FUNCTION `F_Dist3D` (`x1` DECIMAL, `y1` DECIMAL) RETURNS DECIMAL(10,0) BEGIN 
-  DECLARE dist decimal;
-  SET dist = SQRT(x1 - y1);
-  RETURN dist;
-END$$
-
-CREATE DEFINER=`root`@`localhost` FUNCTION `getSomething` () RETURNS VARCHAR(100) CHARSET utf8 BEGIN
-  declare return_name varchar(100);
-  
-  select f2 into return_name from t1 where f1 = 2;
-  
-  return return_name;
-END$$
-
 DELIMITER ;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `actions`
+-- Table structure for table `actions`
 --
 
 CREATE TABLE `actions` (
@@ -88,7 +74,7 @@ CREATE TABLE `actions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `actions`
+-- Dumping data for table `actions`
 --
 
 INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is_hidden`) VALUES
@@ -279,7 +265,7 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `acts`
+-- Table structure for table `acts`
 --
 
 CREATE TABLE `acts` (
@@ -289,7 +275,7 @@ CREATE TABLE `acts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `acts`
+-- Dumping data for table `acts`
 --
 
 INSERT INTO `acts` (`id`, `title`, `description`) VALUES
@@ -298,7 +284,7 @@ INSERT INTO `acts` (`id`, `title`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `appointments`
+-- Table structure for table `appointments`
 --
 
 CREATE TABLE `appointments` (
@@ -312,7 +298,7 @@ CREATE TABLE `appointments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `appointments`
+-- Dumping data for table `appointments`
 --
 
 INSERT INTO `appointments` (`id`, `title`, `contact_id`, `motive`, `date_time`, `notes`, `is_view`) VALUES
@@ -321,7 +307,7 @@ INSERT INTO `appointments` (`id`, `title`, `contact_id`, `motive`, `date_time`, 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `archived_cases`
+-- Table structure for table `archived_cases`
 --
 
 CREATE TABLE `archived_cases` (
@@ -332,7 +318,7 @@ CREATE TABLE `archived_cases` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `archived_cases`
+-- Dumping data for table `archived_cases`
 --
 
 INSERT INTO `archived_cases` (`id`, `case_id`, `notes`, `close_date`) VALUES
@@ -343,7 +329,7 @@ INSERT INTO `archived_cases` (`id`, `case_id`, `notes`, `close_date`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `attendance`
+-- Table structure for table `attendance`
 --
 
 CREATE TABLE `attendance` (
@@ -361,7 +347,7 @@ CREATE TABLE `attendance` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `bank_details`
+-- Table structure for table `bank_details`
 --
 
 CREATE TABLE `bank_details` (
@@ -378,7 +364,7 @@ CREATE TABLE `bank_details` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `canned_messages`
+-- Table structure for table `canned_messages`
 --
 
 CREATE TABLE `canned_messages` (
@@ -391,7 +377,7 @@ CREATE TABLE `canned_messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `canned_messages`
+-- Dumping data for table `canned_messages`
 --
 
 INSERT INTO `canned_messages` (`id`, `deletable`, `type`, `name`, `subject`, `content`) VALUES
@@ -400,7 +386,7 @@ INSERT INTO `canned_messages` (`id`, `deletable`, `type`, `name`, `subject`, `co
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `cases`
+-- Table structure for table `cases`
 --
 
 CREATE TABLE `cases` (
@@ -425,7 +411,7 @@ CREATE TABLE `cases` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `cases`
+-- Dumping data for table `cases`
 --
 
 INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `court_id`, `court_category_id`, `case_category_id`, `case_stage_id`, `act_id`, `description`, `start_date`, `hearing_date`, `o_lawyer`, `fees`, `is_starred`, `is_archived`, `notes`) VALUES
@@ -438,7 +424,7 @@ INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `cour
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `case_categories`
+-- Table structure for table `case_categories`
 --
 
 CREATE TABLE `case_categories` (
@@ -448,7 +434,7 @@ CREATE TABLE `case_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `case_categories`
+-- Dumping data for table `case_categories`
 --
 
 INSERT INTO `case_categories` (`id`, `name`, `parent_id`) VALUES
@@ -463,7 +449,7 @@ INSERT INTO `case_categories` (`id`, `name`, `parent_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `case_stages`
+-- Table structure for table `case_stages`
 --
 
 CREATE TABLE `case_stages` (
@@ -472,7 +458,7 @@ CREATE TABLE `case_stages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `case_stages`
+-- Dumping data for table `case_stages`
 --
 
 INSERT INTO `case_stages` (`id`, `name`) VALUES
@@ -484,7 +470,7 @@ INSERT INTO `case_stages` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `case_study`
+-- Table structure for table `case_study`
 --
 
 CREATE TABLE `case_study` (
@@ -498,7 +484,7 @@ CREATE TABLE `case_study` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `contacts`
+-- Table structure for table `contacts`
 --
 
 CREATE TABLE `contacts` (
@@ -517,15 +503,13 @@ CREATE TABLE `contacts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `contacts`
+-- Dumping data for table `contacts`
 --
 
 INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
 (6, '  ACOSTA', '', '0', '', '0244-447-99-42', '0', '0414-477-77-54', '0', 'LEGAL', 'CASO MARACAY', 'LEGALES'),
 (7, '  ', '', '0', '', '0212-762-04-02', '0', '0212-762-04-03', '0', 'OTROS', 'KING GRAFIT', 'OTROS'),
-(8, '   ', '', '0', '', '0212-331-27-08', '0212-331-16-87', '0', '0', 'IMPORTACIONES', 'MARTINEZ COOL', 'TRANSPORTE'),
 (9, '  MORA ', '', '0', '', '0212-232-52-34', '0414-120-42-42', '0416-930-89-01', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
-(10, '  MARTINEZ', '', '0', '', '0212-415-54-44', '0416-633-12-91', '0', '0', 'PROVEEDOR', 'PROCLIMA (2020)', 'FUMIGACION'),
 (11, 'ABEL  MARTINEZ', '', '0', '', '0414-543-66-01', ' ', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (12, 'ADAN  GUEVARA', '', '0', '', '0212-345-00-66', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (13, 'AIDA  FERRER', '', '0', '', '0212-693-27-61', '0', '0414-326-14-27', '0212-362-19-97', 'MEDICINA', 'PARTICULAR', 'MEDICOS Y MEDICINAS'),
@@ -613,7 +597,6 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (97, 'CARLOS GIL', '', '0', '', '0426-914-20-39', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (98, 'CARLOS KIOSKO', '', '0', '', '0424-127-17-31', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (99, 'CARLOS OBELMEJIAS', '', '0', '', '0414-282-48-65', '0', '0', '0', 'MEDICOS Y MEDICINAS', 'RESCARVEN', 'MEDICOS Y MEDICINAS'),
-(100, 'CARLOS ', '', '0', '', '0212-953-05-79', '0', '0212-953-46-90', '0212-951-29-28', 'OTROS', 'SEG TOTAL', 'OTROS'),
 (101, 'CARLOS  LEON', '', '0', '', '0212-543-28-55', '0', '0424-131-73-75', '0414-321-61-35', 'ENTES PRIVADOS', 'FETRA CALZADO', 'SINDICATOS'),
 (102, 'CARLOS  VARGAS', '', '0', '', '0212-578-13-57', '0', '0412-233-036', '0', 'PROVEEDORES', 'IMPRESORAS FORMACO', 'PAPELERIA'),
 (103, 'CARLOS  VARGAS', '', '0', '', '0212-285-18-06', '0', '0212-284-77-77', '0', 'PROVEEDORES', 'IMPRESORAS FORMACO', 'PAPELERIA'),
@@ -950,11 +933,11 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (436, 'LUIS ', '', '0', '', '0212-237-49-71', '0', '0', '0', 'PROVEEDOR', 'X-TRAPINT', 'IMPRENTA'),
 (437, 'LUIS  GUEVARA', '', '0', '', '0212-516-23-93', '0414-256-00-84', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (438, 'LUIS  BETANCOURT', '', '0', '', '0212-345-39-25', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
-(439, 'LUIS  GALLO', '', '0', '', '0212-888-62-95', '0212-577-080', '0414-115-26-34', '0', 'OTROS', 'PARTICULAR', 'OTROS');
-INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
+(439, 'LUIS  GALLO', '', '0', '', '0212-888-62-95', '0212-577-080', '0414-115-26-34', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (440, 'LUIS  GARCIA', '', '0', '', '0416-806-93-94', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (442, 'LUIS  ', '', '0', '', '0426-931-43-11', '0', '0', '0', 'PROVEEDOR', 'TRANSPORTE (2011)', 'TRANSPORTE'),
-(443, 'LUIS (CHINO)  LOPEZ', '', '0', '', '0212-541-09-10', '0', '0424-105-35-57', '0', 'PROVEEDORES', 'PRINT LB', 'PUBLICIDAD'),
+(443, 'LUIS (CHINO)  LOPEZ', '', '0', '', '0212-541-09-10', '0', '0424-105-35-57', '0', 'PROVEEDORES', 'PRINT LB', 'PUBLICIDAD');
+INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
 (444, 'LUISA ESCOBAR', '', '0', '', '0414-301-18-43', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (445, 'LUISITA ', '', '0', '', '0212-243-08-73', '0', '0', '0', 'FAMILIARES EMPLEADOS', 'FAMILIA MILLAN', 'OTROS'),
 (446, 'LUPE ', '', '0', '', '0416-408-45-56', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
@@ -1381,11 +1364,11 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (872, ' ', '', '0', '', '0', '0', '0800-768-225-36', '0', 'ENTES PUBLICOS', 'HIDROCAPITAL', 'ATENCION AL CLIENTE'),
 (873, ' ', '', '0', '', '0212-573-69-11', '0', '0212-573-65-55', '0', 'MEDICINA', 'HOSPITAL ORTOPEDICO INFANTIL', 'OFICINA'),
 (874, ' MARIN', '', '0', '', '0416-211-17-10', '0', '0', '0', 'ENTES PUBLICOS', 'I.N.C.E.', 'OTROS'),
-(875, 'SRA. MIREYA', '0251-254-87-93', '0', 'BARQUISIMETO', '0251-254-87-93', '0', '0', '0', 'CLIENTES', 'ILMERLETTO DEL ESTE', 'VENTAS');
-INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
+(875, 'SRA. MIREYA', '0251-254-87-93', '0', 'BARQUISIMETO', '0251-254-87-93', '0', '0', '0', 'CLIENTES', 'ILMERLETTO DEL ESTE', 'VENTAS'),
 (876, ' ', '', '0', '', '0212-481-63-05', '0', '0', '0', 'PROVEEDOR', 'IMPORTADORA AMERICANA', 'PANETONE'),
 (877, ' ', '', '0', '', '0212-631-10-45', '0', '0', '0', 'PROVEEDOR', 'IMPRESOS CANAIMA', 'TALONARIOS'),
-(878, ' ', '', '0', '', '0212-871-63-57', '0', '0212-871-67-68', '0212-872-30-09', 'PROVEEDOREES', 'INDUSTRIAS RUANSA DE VENEZUELA', 'FORROS Y TELAS'),
+(878, ' ', '', '0', '', '0212-871-63-57', '0', '0212-871-67-68', '0212-872-30-09', 'PROVEEDOREES', 'INDUSTRIAS RUANSA DE VENEZUELA', 'FORROS Y TELAS');
+INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
 (879, ' ', '', '0', '', '0212-872-30-09', '0', '0212-871-63-', '0', 'PROVEEDORES', 'INDUSTRIAS RUANSA DE VENEZUELA', 'FORROS Y TELAS'),
 (880, ' ', '', '0', '', '0212-562-44-01', '0', '0414-241-51-92', '0414-210-02-36', 'OTROS', 'INDUSTRIAS UNION GRAFICA', 'OTROS'),
 (881, ' ', '', '0', '', '0241-832-04-27', '0', '0414-402-11-26', '0', 'OTROS', 'INGENIERIA HENFOR', 'OTROS'),
@@ -1442,7 +1425,6 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (933, ' ', '', '0', '', '0212-243-71-34', '0212-244-31-73', '0', '0', 'PROVEEDOR', 'PERLATRON', 'RECARGA DE TONER'),
 (934, ' ', '', '0', '', '0212-753-15-20', '0212-753-96-19', '0212-751-45-91', '0', 'OTROS', 'PLUSCABLE', 'OTROS'),
 (935, ' ', '', '0', '', '0212-341-62-61', '0212-341-46-43', '0212-341-29-14', '0212-341-47-13', 'PROVEEDOR', 'POLIURETANOS TEXEL', 'SUELAS'),
-(939, ' ', '', '0', '', '0212-662-24-31', '0212-661-46-01', '0212-661-15-40', '0212-661-95-01', 'ASEGURADORA', 'PROSEGURO LOS PROCERES', 'OFICINA'),
 (940, ' ', '', '0', '', '0251-231-70-57', '0', '0', '0', 'CLIENTES', 'PUELLA', 'VENTAS'),
 (941, ' PELI EXPRESS', '0212-239-49-10', '0', '', '0212-239-49-10', '0212-239-90-58', '0', '0', 'OTROS', 'PULI EXPRESS', 'OTROS'),
 (942, ' COMERCIAL CAZORLA', '0241-894-29-86', '0', '', '0241-894-29-86', '0414-471-61-66', '0', '0', 'PROVEEDOR', 'RECUPERADORA CAZORLA, C.A', 'CAJAS'),
@@ -1529,7 +1511,7 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `contact_categories`
+-- Table structure for table `contact_categories`
 --
 
 CREATE TABLE `contact_categories` (
@@ -1539,7 +1521,7 @@ CREATE TABLE `contact_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `contact_categories`
+-- Dumping data for table `contact_categories`
 --
 
 INSERT INTO `contact_categories` (`id`, `name`, `parent_id`) VALUES
@@ -1555,7 +1537,7 @@ INSERT INTO `contact_categories` (`id`, `name`, `parent_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `courts`
+-- Table structure for table `courts`
 --
 
 CREATE TABLE `courts` (
@@ -1567,7 +1549,7 @@ CREATE TABLE `courts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `courts`
+-- Dumping data for table `courts`
 --
 
 INSERT INTO `courts` (`id`, `name`, `location_id`, `court_category_id`, `description`) VALUES
@@ -1578,7 +1560,7 @@ INSERT INTO `courts` (`id`, `name`, `location_id`, `court_category_id`, `descrip
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `court_categories`
+-- Table structure for table `court_categories`
 --
 
 CREATE TABLE `court_categories` (
@@ -1587,7 +1569,7 @@ CREATE TABLE `court_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `court_categories`
+-- Dumping data for table `court_categories`
 --
 
 INSERT INTO `court_categories` (`id`, `name`) VALUES
@@ -1599,7 +1581,7 @@ INSERT INTO `court_categories` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `custom_fields`
+-- Table structure for table `custom_fields`
 --
 
 CREATE TABLE `custom_fields` (
@@ -1613,7 +1595,7 @@ CREATE TABLE `custom_fields` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `days`
+-- Table structure for table `days`
 --
 
 CREATE TABLE `days` (
@@ -1623,7 +1605,7 @@ CREATE TABLE `days` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `days`
+-- Dumping data for table `days`
 --
 
 INSERT INTO `days` (`id`, `name`, `working_day`) VALUES
@@ -1638,7 +1620,7 @@ INSERT INTO `days` (`id`, `name`, `working_day`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `departments`
+-- Table structure for table `departments`
 --
 
 CREATE TABLE `departments` (
@@ -1648,7 +1630,7 @@ CREATE TABLE `departments` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `departments`
+-- Dumping data for table `departments`
 --
 
 INSERT INTO `departments` (`id`, `name`, `description`) VALUES
@@ -1664,7 +1646,7 @@ INSERT INTO `departments` (`id`, `name`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `depts`
+-- Table structure for table `depts`
 --
 
 CREATE TABLE `depts` (
@@ -1676,7 +1658,7 @@ CREATE TABLE `depts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `depts`
+-- Dumping data for table `depts`
 --
 
 INSERT INTO `depts` (`id`, `name`, `location_id`, `dept_category_id`, `description`) VALUES
@@ -1689,7 +1671,7 @@ INSERT INTO `depts` (`id`, `name`, `location_id`, `dept_category_id`, `descripti
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `dept_categories`
+-- Table structure for table `dept_categories`
 --
 
 CREATE TABLE `dept_categories` (
@@ -1698,7 +1680,7 @@ CREATE TABLE `dept_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `dept_categories`
+-- Dumping data for table `dept_categories`
 --
 
 INSERT INTO `dept_categories` (`id`, `name`) VALUES
@@ -1714,7 +1696,7 @@ INSERT INTO `dept_categories` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `documents`
+-- Table structure for table `documents`
 --
 
 CREATE TABLE `documents` (
@@ -1725,7 +1707,7 @@ CREATE TABLE `documents` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `documents`
+-- Dumping data for table `documents`
 --
 
 INSERT INTO `documents` (`id`, `title`, `is_case`, `case_id`) VALUES
@@ -1734,7 +1716,7 @@ INSERT INTO `documents` (`id`, `title`, `is_case`, `case_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `extended_case`
+-- Table structure for table `extended_case`
 --
 
 CREATE TABLE `extended_case` (
@@ -1752,7 +1734,7 @@ CREATE TABLE `extended_case` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `fees`
+-- Table structure for table `fees`
 --
 
 CREATE TABLE `fees` (
@@ -1768,7 +1750,7 @@ CREATE TABLE `fees` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `holidays`
+-- Table structure for table `holidays`
 --
 
 CREATE TABLE `holidays` (
@@ -1780,7 +1762,7 @@ CREATE TABLE `holidays` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `language`
+-- Table structure for table `language`
 --
 
 CREATE TABLE `language` (
@@ -1791,7 +1773,7 @@ CREATE TABLE `language` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `language`
+-- Dumping data for table `language`
 --
 
 INSERT INTO `language` (`id`, `name`, `flag`, `file`) VALUES
@@ -1801,7 +1783,7 @@ INSERT INTO `language` (`id`, `name`, `flag`, `file`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `leaves`
+-- Table structure for table `leaves`
 --
 
 CREATE TABLE `leaves` (
@@ -1816,7 +1798,7 @@ CREATE TABLE `leaves` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `leave_types`
+-- Table structure for table `leave_types`
 --
 
 CREATE TABLE `leave_types` (
@@ -1829,7 +1811,7 @@ CREATE TABLE `leave_types` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `locations`
+-- Table structure for table `locations`
 --
 
 CREATE TABLE `locations` (
@@ -1838,7 +1820,7 @@ CREATE TABLE `locations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `locations`
+-- Dumping data for table `locations`
 --
 
 INSERT INTO `locations` (`id`, `name`) VALUES
@@ -1856,7 +1838,7 @@ INSERT INTO `locations` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `loc_categories`
+-- Table structure for table `loc_categories`
 --
 
 CREATE TABLE `loc_categories` (
@@ -1867,7 +1849,7 @@ CREATE TABLE `loc_categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `loc_categories`
+-- Dumping data for table `loc_categories`
 --
 
 INSERT INTO `loc_categories` (`id`, `name`, `parent_id`, `cod_interno`) VALUES
@@ -1891,7 +1873,7 @@ INSERT INTO `loc_categories` (`id`, `name`, `parent_id`, `cod_interno`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `message`
+-- Table structure for table `message`
 --
 
 CREATE TABLE `message` (
@@ -1905,18 +1887,20 @@ CREATE TABLE `message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `message`
+-- Dumping data for table `message`
 --
 
 INSERT INTO `message` (`id`, `message`, `from_id`, `to_id`, `is_view_from`, `is_view_to`, `date_time`) VALUES
-(1, '<p>prueba envio mensaje de administrador a martha</p>', 1, 3, 0, 1, '2017-07-31 18:59:08'),
-(2, '<p>prueba de envio mensaje de admin a martha</p>', 1, 3, 0, 1, '2017-07-31 19:00:28'),
-(3, '<p>{eoif{oiwehoi{foihbf</p>', 1, 6, 0, 1, '2017-08-12 16:15:02');
+(1, '<p>prueba envio mensaje de administrador a martha</p>', 1, 3, 0, 0, '2017-07-31 18:59:08'),
+(2, '<p>prueba de envio mensaje de admin a martha</p>', 1, 3, 0, 0, '2017-07-31 19:00:28'),
+(3, '<p>{eoif{oiwehoi{foihbf</p>', 1, 6, 0, 0, '2017-08-12 16:15:02'),
+(4, '<p>asdasd</p>', 1, 11, 0, 0, '2017-08-23 22:12:10'),
+(5, '<p>asdaaaaaa</p>', 1, 2, 0, 0, '2017-08-23 22:27:50');
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `migrations`
+-- Table structure for table `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -1924,7 +1908,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `migrations`
+-- Dumping data for table `migrations`
 --
 
 INSERT INTO `migrations` (`version`) VALUES
@@ -1933,7 +1917,7 @@ INSERT INTO `migrations` (`version`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `months`
+-- Table structure for table `months`
 --
 
 CREATE TABLE `months` (
@@ -1942,7 +1926,7 @@ CREATE TABLE `months` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `months`
+-- Dumping data for table `months`
 --
 
 INSERT INTO `months` (`id`, `name`) VALUES
@@ -1962,7 +1946,7 @@ INSERT INTO `months` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `notice`
+-- Table structure for table `notice`
 --
 
 CREATE TABLE `notice` (
@@ -1973,7 +1957,7 @@ CREATE TABLE `notice` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `notice`
+-- Dumping data for table `notice`
 --
 
 INSERT INTO `notice` (`id`, `title`, `description`, `date_time`) VALUES
@@ -1983,7 +1967,7 @@ INSERT INTO `notice` (`id`, `title`, `description`, `date_time`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `notification_setting`
+-- Table structure for table `notification_setting`
 --
 
 CREATE TABLE `notification_setting` (
@@ -1994,7 +1978,7 @@ CREATE TABLE `notification_setting` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `notification_setting`
+-- Dumping data for table `notification_setting`
 --
 
 INSERT INTO `notification_setting` (`id`, `case_alert`, `to_do_alert`, `appointment_alert`) VALUES
@@ -2003,7 +1987,7 @@ INSERT INTO `notification_setting` (`id`, `case_alert`, `to_do_alert`, `appointm
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `payment_modes`
+-- Table structure for table `payment_modes`
 --
 
 CREATE TABLE `payment_modes` (
@@ -2014,7 +1998,7 @@ CREATE TABLE `payment_modes` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `receipt`
+-- Table structure for table `receipt`
 --
 
 CREATE TABLE `receipt` (
@@ -2028,7 +2012,7 @@ CREATE TABLE `receipt` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rel_case_study_attachments`
+-- Table structure for table `rel_case_study_attachments`
 --
 
 CREATE TABLE `rel_case_study_attachments` (
@@ -2041,7 +2025,7 @@ CREATE TABLE `rel_case_study_attachments` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rel_contact_category`
+-- Table structure for table `rel_contact_category`
 --
 
 CREATE TABLE `rel_contact_category` (
@@ -2051,17 +2035,26 @@ CREATE TABLE `rel_contact_category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `rel_contact_category`
+-- Dumping data for table `rel_contact_category`
 --
 
 INSERT INTO `rel_contact_category` (`id_rel`, `id_contact`, `id_category`) VALUES
-(1, 8, 8),
-(3, 8, 9);
+(8, 1000, 9),
+(9, 1000, 10),
+(10, 1001, 9),
+(11, 1001, 10),
+(12, 1002, 9),
+(13, 1002, 10),
+(14, 1004, 9),
+(15, 1004, 10),
+(16, 1005, 10),
+(17, 1006, 10),
+(18, 1007, 10);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rel_department_designation`
+-- Table structure for table `rel_department_designation`
 --
 
 CREATE TABLE `rel_department_designation` (
@@ -2071,7 +2064,7 @@ CREATE TABLE `rel_department_designation` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `rel_department_designation`
+-- Dumping data for table `rel_department_designation`
 --
 
 INSERT INTO `rel_department_designation` (`id`, `department_id`, `designation`) VALUES
@@ -2112,7 +2105,7 @@ INSERT INTO `rel_department_designation` (`id`, `department_id`, `designation`) 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rel_document_files`
+-- Table structure for table `rel_document_files`
 --
 
 CREATE TABLE `rel_document_files` (
@@ -2124,7 +2117,7 @@ CREATE TABLE `rel_document_files` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `rel_document_files`
+-- Dumping data for table `rel_document_files`
 --
 
 INSERT INTO `rel_document_files` (`id`, `user_id`, `title`, `document_id`, `file_name`) VALUES
@@ -2140,7 +2133,7 @@ INSERT INTO `rel_document_files` (`id`, `user_id`, `title`, `document_id`, `file
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rel_fees_tax`
+-- Table structure for table `rel_fees_tax`
 --
 
 CREATE TABLE `rel_fees_tax` (
@@ -2151,7 +2144,7 @@ CREATE TABLE `rel_fees_tax` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rel_form_custom_fields`
+-- Table structure for table `rel_form_custom_fields`
 --
 
 CREATE TABLE `rel_form_custom_fields` (
@@ -2164,7 +2157,7 @@ CREATE TABLE `rel_form_custom_fields` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `rel_role_action`
+-- Table structure for table `rel_role_action`
 --
 
 CREATE TABLE `rel_role_action` (
@@ -2174,227 +2167,225 @@ CREATE TABLE `rel_role_action` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `rel_role_action`
+-- Dumping data for table `rel_role_action`
 --
 
 INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
-(1, 3, 1),
-(2, 3, 4),
-(3, 3, 5),
-(4, 3, 6),
-(5, 3, 7),
-(6, 3, 8),
-(7, 3, 9),
-(8, 3, 10),
-(9, 3, 11),
-(10, 3, 12),
-(11, 3, 13),
-(12, 3, 15),
-(13, 3, 84),
-(14, 3, 105),
-(15, 3, 156),
-(16, 3, 166),
-(17, 3, 167),
-(18, 3, 169),
-(19, 3, 170),
-(20, 3, 171),
-(21, 3, 16),
-(22, 3, 17),
-(23, 3, 18),
-(24, 3, 19),
-(25, 3, 20),
-(26, 3, 107),
-(27, 3, 21),
-(28, 3, 22),
-(29, 3, 155),
-(30, 3, 25),
-(31, 3, 26),
-(32, 3, 27),
-(33, 3, 28),
-(34, 3, 29),
-(35, 3, 106),
-(36, 3, 80),
-(37, 3, 112),
-(38, 3, 113),
-(39, 3, 114),
-(40, 3, 115),
-(41, 3, 116),
-(42, 3, 117),
-(43, 3, 152),
-(44, 3, 146),
-(45, 3, 147),
-(46, 3, 148),
-(47, 3, 149),
-(48, 3, 150),
-(49, 4, 1),
-(50, 4, 4),
-(51, 4, 5),
-(52, 4, 6),
-(53, 4, 7),
-(54, 4, 8),
-(55, 4, 9),
-(56, 4, 10),
-(57, 4, 11),
-(58, 4, 12),
-(59, 4, 13),
-(60, 4, 15),
-(61, 4, 84),
-(62, 4, 105),
-(63, 4, 156),
-(64, 4, 166),
-(65, 4, 167),
-(66, 4, 169),
-(67, 4, 170),
-(68, 4, 171),
-(69, 4, 14),
-(70, 4, 16),
-(71, 4, 17),
-(72, 4, 18),
-(73, 4, 19),
-(74, 4, 20),
-(75, 4, 107),
-(76, 4, 21),
-(77, 4, 22),
-(78, 4, 23),
-(79, 4, 24),
-(80, 4, 155),
-(81, 4, 173),
-(82, 4, 174),
-(83, 4, 175),
-(84, 4, 25),
-(85, 4, 26),
-(86, 4, 27),
-(87, 4, 28),
-(88, 4, 29),
-(89, 4, 106),
-(90, 4, 30),
-(91, 4, 31),
-(92, 4, 32),
-(93, 4, 33),
-(94, 4, 34),
-(95, 4, 35),
-(96, 4, 36),
-(97, 4, 37),
-(98, 4, 38),
+(1, 4, 63),
+(2, 4, 64),
+(3, 4, 66),
+(4, 4, 65),
+(5, 4, 129),
+(6, 4, 137),
+(7, 4, 132),
+(8, 4, 138),
+(9, 4, 130),
+(10, 4, 133),
+(11, 4, 134),
+(12, 4, 135),
+(13, 4, 136),
+(14, 4, 131),
+(15, 4, 1),
+(16, 4, 55),
+(17, 4, 56),
+(18, 4, 57),
+(19, 4, 71),
+(20, 4, 72),
+(21, 4, 74),
+(22, 4, 73),
+(23, 4, 161),
+(24, 4, 162),
+(25, 4, 172),
+(26, 4, 164),
+(27, 4, 163),
+(28, 4, 165),
+(29, 4, 4),
+(30, 4, 5),
+(31, 4, 9),
+(32, 4, 11),
+(33, 4, 105),
+(34, 4, 59),
+(35, 4, 171),
+(36, 4, 166),
+(37, 4, 169),
+(38, 4, 6),
+(39, 4, 8),
+(40, 4, 84),
+(41, 4, 156),
+(42, 4, 13),
+(43, 4, 10),
+(44, 4, 12),
+(45, 4, 7),
+(46, 4, 170),
+(47, 4, 167),
+(48, 4, 25),
+(49, 4, 26),
+(50, 4, 106),
+(51, 4, 28),
+(52, 4, 27),
+(53, 4, 29),
+(54, 4, 32),
+(55, 4, 33),
+(56, 4, 35),
+(57, 4, 34),
+(58, 4, 36),
+(59, 4, 21),
+(60, 4, 22),
+(61, 4, 175),
+(62, 4, 24),
+(63, 4, 155),
+(64, 4, 23),
+(65, 4, 173),
+(66, 4, 174),
+(67, 4, 67),
+(68, 4, 68),
+(69, 4, 70),
+(70, 4, 69),
+(71, 4, 30),
+(72, 4, 31),
+(73, 4, 46),
+(74, 4, 47),
+(75, 4, 49),
+(76, 4, 48),
+(77, 4, 176),
+(78, 4, 178),
+(79, 4, 180),
+(80, 4, 179),
+(81, 4, 177),
+(82, 4, 181),
+(83, 4, 183),
+(84, 4, 182),
+(85, 4, 118),
+(86, 4, 119),
+(87, 4, 121),
+(88, 4, 120),
+(89, 4, 122),
+(90, 4, 153),
+(91, 4, 37),
+(92, 4, 38),
+(93, 4, 124),
+(94, 4, 123),
+(95, 4, 40),
+(96, 4, 125),
+(97, 4, 127),
+(98, 4, 126),
 (99, 4, 39),
-(100, 4, 40),
-(101, 4, 41),
-(102, 4, 123),
-(103, 4, 124),
-(104, 4, 125),
-(105, 4, 126),
-(106, 4, 127),
-(107, 4, 42),
-(108, 4, 43),
-(109, 4, 44),
-(110, 4, 45),
-(111, 4, 46),
-(112, 4, 47),
-(113, 4, 48),
-(114, 4, 49),
-(115, 4, 50),
-(116, 4, 51),
-(117, 4, 52),
-(118, 4, 53),
-(119, 4, 54),
-(120, 4, 55),
-(121, 4, 56),
-(122, 4, 57),
-(123, 4, 59),
-(124, 4, 60),
-(125, 4, 61),
-(126, 4, 62),
-(127, 4, 63),
-(128, 4, 64),
-(129, 4, 65),
-(130, 4, 66),
-(131, 4, 67),
-(132, 4, 68),
-(133, 4, 69),
-(134, 4, 70),
-(135, 4, 71),
-(136, 4, 72),
-(137, 4, 73),
-(138, 4, 74),
-(139, 4, 75),
-(140, 4, 76),
-(141, 4, 77),
-(142, 4, 78),
-(143, 4, 79),
-(144, 4, 80),
-(145, 4, 81),
-(146, 4, 82),
-(147, 4, 83),
-(148, 4, 108),
-(149, 4, 109),
-(150, 4, 110),
-(151, 4, 112),
-(152, 4, 113),
-(153, 4, 114),
-(154, 4, 115),
-(155, 4, 116),
-(156, 4, 117),
-(157, 4, 152),
-(158, 4, 118),
-(159, 4, 119),
-(160, 4, 120),
-(161, 4, 121),
-(162, 4, 122),
-(163, 4, 153),
-(164, 4, 129),
-(165, 4, 130),
-(166, 4, 131),
-(167, 4, 132),
-(168, 4, 133),
-(169, 4, 134),
-(170, 4, 135),
-(171, 4, 136),
-(172, 4, 137),
-(173, 4, 138),
-(174, 4, 139),
-(175, 4, 140),
-(176, 4, 141),
-(177, 4, 142),
-(178, 4, 143),
-(179, 4, 144),
-(180, 4, 145),
-(181, 4, 146),
-(182, 4, 147),
-(183, 4, 148),
-(184, 4, 149),
-(185, 4, 150),
-(186, 4, 157),
-(187, 4, 158),
-(188, 4, 159),
-(189, 4, 160),
-(190, 4, 161),
-(191, 4, 162),
-(192, 4, 163),
-(193, 4, 164),
-(194, 4, 165),
-(195, 4, 172),
-(196, 4, 176),
-(197, 4, 178),
-(198, 4, 179),
-(199, 4, 180),
-(200, 4, 177),
-(201, 4, 181),
-(202, 4, 182),
-(203, 4, 183),
-(204, 5, 1),
-(205, 5, 21),
-(206, 5, 22),
-(207, 5, 23),
-(208, 5, 24),
-(209, 5, 155),
-(210, 5, 173),
-(211, 5, 174),
-(212, 5, 175);
+(100, 4, 41),
+(101, 4, 143),
+(102, 4, 144),
+(103, 4, 145),
+(104, 4, 108),
+(105, 4, 109),
+(106, 4, 110),
+(107, 4, 81),
+(108, 4, 83),
+(109, 4, 82),
+(110, 4, 139),
+(111, 4, 140),
+(112, 4, 142),
+(113, 4, 141),
+(114, 4, 51),
+(115, 4, 52),
+(116, 4, 54),
+(117, 4, 53),
+(118, 4, 15),
+(119, 4, 146),
+(120, 4, 147),
+(121, 4, 149),
+(122, 4, 148),
+(123, 4, 150),
+(124, 4, 80),
+(125, 4, 75),
+(126, 4, 76),
+(127, 4, 78),
+(128, 4, 77),
+(129, 4, 50),
+(130, 4, 14),
+(131, 4, 79),
+(132, 4, 112),
+(133, 4, 113),
+(134, 4, 117),
+(135, 4, 116),
+(136, 4, 114),
+(137, 4, 152),
+(138, 4, 115),
+(139, 4, 157),
+(140, 4, 158),
+(141, 4, 160),
+(142, 4, 159),
+(143, 4, 16),
+(144, 4, 17),
+(145, 4, 20),
+(146, 4, 18),
+(147, 4, 107),
+(148, 4, 19),
+(149, 4, 42),
+(150, 4, 43),
+(151, 4, 45),
+(152, 4, 44),
+(153, 3, 1),
+(154, 3, 4),
+(155, 3, 5),
+(156, 3, 9),
+(157, 3, 11),
+(158, 3, 105),
+(159, 3, 171),
+(160, 3, 166),
+(161, 3, 169),
+(162, 3, 6),
+(163, 3, 8),
+(164, 3, 84),
+(165, 3, 156),
+(166, 3, 13),
+(167, 3, 10),
+(168, 3, 12),
+(169, 3, 7),
+(170, 3, 170),
+(171, 3, 167),
+(172, 3, 25),
+(173, 3, 26),
+(174, 3, 106),
+(175, 3, 28),
+(176, 3, 27),
+(177, 3, 29),
+(178, 3, 21),
+(179, 3, 22),
+(180, 3, 155),
+(181, 3, 15),
+(182, 3, 111),
+(183, 3, 146),
+(184, 3, 147),
+(185, 3, 149),
+(186, 3, 148),
+(187, 3, 150),
+(188, 3, 80),
+(189, 3, 112),
+(190, 3, 113),
+(191, 3, 117),
+(192, 3, 116),
+(193, 3, 114),
+(194, 3, 152),
+(195, 3, 115),
+(196, 3, 16),
+(197, 3, 17),
+(198, 3, 20),
+(199, 3, 18),
+(200, 3, 107),
+(201, 3, 19),
+(202, 5, 1),
+(203, 5, 21),
+(204, 5, 22),
+(205, 5, 175),
+(206, 5, 24),
+(207, 5, 155),
+(208, 5, 23),
+(209, 5, 173),
+(210, 5, 174);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `settings`
+-- Table structure for table `settings`
 --
 
 CREATE TABLE `settings` (
@@ -2417,7 +2408,7 @@ CREATE TABLE `settings` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `settings`
+-- Dumping data for table `settings`
 --
 
 INSERT INTO `settings` (`id`, `name`, `image`, `header_setting`, `address`, `contact`, `email`, `employee_id`, `date_format`, `timezone`, `smtp_host`, `smtp_user`, `smtp_pass`, `smtp_port`, `mark_out_time`, `invoice_no`) VALUES
@@ -2426,7 +2417,7 @@ INSERT INTO `settings` (`id`, `name`, `image`, `header_setting`, `address`, `con
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tasks`
+-- Table structure for table `tasks`
 --
 
 CREATE TABLE `tasks` (
@@ -2441,7 +2432,7 @@ CREATE TABLE `tasks` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `tasks`
+-- Dumping data for table `tasks`
 --
 
 INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`) VALUES
@@ -2453,7 +2444,7 @@ INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_da
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `task_assigned`
+-- Table structure for table `task_assigned`
 --
 
 CREATE TABLE `task_assigned` (
@@ -2462,7 +2453,7 @@ CREATE TABLE `task_assigned` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `task_assigned`
+-- Dumping data for table `task_assigned`
 --
 
 INSERT INTO `task_assigned` (`user_id`, `task_id`) VALUES
@@ -2475,7 +2466,7 @@ INSERT INTO `task_assigned` (`user_id`, `task_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `task_comments`
+-- Table structure for table `task_comments`
 --
 
 CREATE TABLE `task_comments` (
@@ -2489,7 +2480,7 @@ CREATE TABLE `task_comments` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `tax`
+-- Table structure for table `tax`
 --
 
 CREATE TABLE `tax` (
@@ -2501,7 +2492,7 @@ CREATE TABLE `tax` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `to_do_list`
+-- Table structure for table `to_do_list`
 --
 
 CREATE TABLE `to_do_list` (
@@ -2513,7 +2504,7 @@ CREATE TABLE `to_do_list` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `to_do_list`
+-- Dumping data for table `to_do_list`
 --
 
 INSERT INTO `to_do_list` (`id`, `title`, `description`, `date`, `is_view`) VALUES
@@ -2522,7 +2513,7 @@ INSERT INTO `to_do_list` (`id`, `title`, `description`, `date`, `is_view`) VALUE
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -2549,7 +2540,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `designation_id`, `joining_date`, `joining_salary`, `status`) VALUES
@@ -2562,12 +2553,13 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', '', 1, 0, '', 1, 3, 0, '0000-00-00', '', 1),
 (8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', '', 5, 0, '', 1, 1, 0, '0000-00-00', '', 1),
 (9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', '', 3, 0, '', 1, 1, 0, '0000-00-00', '', 1),
-(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 22, '0000-00-00', '', 1);
+(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 22, '0000-00-00', '', 1),
+(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, 0, '2017-08-09', '', 1);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `user_role`
+-- Table structure for table `user_role`
 --
 
 CREATE TABLE `user_role` (
@@ -2577,7 +2569,7 @@ CREATE TABLE `user_role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Volcado de datos para la tabla `user_role`
+-- Dumping data for table `user_role`
 --
 
 INSERT INTO `user_role` (`id`, `name`, `description`) VALUES
@@ -2590,8 +2582,8 @@ INSERT INTO `user_role` (`id`, `name`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura Stand-in para la vista `v_contactos`
--- (Véase abajo para la vista actual)
+-- Stand-in structure for view `v_contactos`
+-- (See below for the actual view)
 --
 CREATE TABLE `v_contactos` (
 `id` int(9) unsigned
@@ -2611,234 +2603,234 @@ CREATE TABLE `v_contactos` (
 -- --------------------------------------------------------
 
 --
--- Estructura para la vista `v_contactos`
+-- Structure for view `v_contactos`
 --
 DROP TABLE IF EXISTS `v_contactos`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_contactos`  AS  select `c`.`id` AS `id`,`c`.`name` AS `name`,`c`.`contact` AS `contact`,`c`.`email` AS `email`,`c`.`address` AS `address`,`c`.`phone1` AS `phone1`,`c`.`phone2` AS `phone2`,`c`.`phone3` AS `phone3`,`c`.`phone4` AS `phone4`,`F_CONTACT_CATEGORIES`(`c`.`id`) AS `categoria`,`c`.`company` AS `company`,`c`.`department` AS `department` from `contacts` `c` ;
 
 --
--- Índices para tablas volcadas
+-- Indexes for dumped tables
 --
 
 --
--- Indices de la tabla `actions`
+-- Indexes for table `actions`
 --
 ALTER TABLE `actions`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `acts`
+-- Indexes for table `acts`
 --
 ALTER TABLE `acts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `appointments`
+-- Indexes for table `appointments`
 --
 ALTER TABLE `appointments`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `archived_cases`
+-- Indexes for table `archived_cases`
 --
 ALTER TABLE `archived_cases`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `attendance`
+-- Indexes for table `attendance`
 --
 ALTER TABLE `attendance`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `bank_details`
+-- Indexes for table `bank_details`
 --
 ALTER TABLE `bank_details`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `canned_messages`
+-- Indexes for table `canned_messages`
 --
 ALTER TABLE `canned_messages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `cases`
+-- Indexes for table `cases`
 --
 ALTER TABLE `cases`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `case_categories`
+-- Indexes for table `case_categories`
 --
 ALTER TABLE `case_categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `case_stages`
+-- Indexes for table `case_stages`
 --
 ALTER TABLE `case_stages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `case_study`
+-- Indexes for table `case_study`
 --
 ALTER TABLE `case_study`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `contacts`
+-- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `contact_categories`
+-- Indexes for table `contact_categories`
 --
 ALTER TABLE `contact_categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `courts`
+-- Indexes for table `courts`
 --
 ALTER TABLE `courts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `court_categories`
+-- Indexes for table `court_categories`
 --
 ALTER TABLE `court_categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `custom_fields`
+-- Indexes for table `custom_fields`
 --
 ALTER TABLE `custom_fields`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `days`
+-- Indexes for table `days`
 --
 ALTER TABLE `days`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `departments`
+-- Indexes for table `departments`
 --
 ALTER TABLE `departments`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `depts`
+-- Indexes for table `depts`
 --
 ALTER TABLE `depts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `dept_categories`
+-- Indexes for table `dept_categories`
 --
 ALTER TABLE `dept_categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `documents`
+-- Indexes for table `documents`
 --
 ALTER TABLE `documents`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `extended_case`
+-- Indexes for table `extended_case`
 --
 ALTER TABLE `extended_case`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `fees`
+-- Indexes for table `fees`
 --
 ALTER TABLE `fees`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `holidays`
+-- Indexes for table `holidays`
 --
 ALTER TABLE `holidays`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `language`
+-- Indexes for table `language`
 --
 ALTER TABLE `language`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `leaves`
+-- Indexes for table `leaves`
 --
 ALTER TABLE `leaves`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `leave_types`
+-- Indexes for table `leave_types`
 --
 ALTER TABLE `leave_types`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `locations`
+-- Indexes for table `locations`
 --
 ALTER TABLE `locations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `loc_categories`
+-- Indexes for table `loc_categories`
 --
 ALTER TABLE `loc_categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `message`
+-- Indexes for table `message`
 --
 ALTER TABLE `message`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `months`
+-- Indexes for table `months`
 --
 ALTER TABLE `months`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `notice`
+-- Indexes for table `notice`
 --
 ALTER TABLE `notice`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `notification_setting`
+-- Indexes for table `notification_setting`
 --
 ALTER TABLE `notification_setting`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `payment_modes`
+-- Indexes for table `payment_modes`
 --
 ALTER TABLE `payment_modes`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `receipt`
+-- Indexes for table `receipt`
 --
 ALTER TABLE `receipt`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `rel_case_study_attachments`
+-- Indexes for table `rel_case_study_attachments`
 --
 ALTER TABLE `rel_case_study_attachments`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `rel_contact_category`
+-- Indexes for table `rel_contact_category`
 --
 ALTER TABLE `rel_contact_category`
   ADD PRIMARY KEY (`id_rel`),
@@ -2846,321 +2838,321 @@ ALTER TABLE `rel_contact_category`
   ADD KEY `id_category` (`id_category`);
 
 --
--- Indices de la tabla `rel_department_designation`
+-- Indexes for table `rel_department_designation`
 --
 ALTER TABLE `rel_department_designation`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `rel_document_files`
+-- Indexes for table `rel_document_files`
 --
 ALTER TABLE `rel_document_files`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `rel_form_custom_fields`
+-- Indexes for table `rel_form_custom_fields`
 --
 ALTER TABLE `rel_form_custom_fields`
   ADD PRIMARY KEY (`custom_field_id`);
 
 --
--- Indices de la tabla `rel_role_action`
+-- Indexes for table `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `settings`
+-- Indexes for table `settings`
 --
 ALTER TABLE `settings`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tasks`
+-- Indexes for table `tasks`
 --
 ALTER TABLE `tasks`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `task_comments`
+-- Indexes for table `task_comments`
 --
 ALTER TABLE `task_comments`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `tax`
+-- Indexes for table `tax`
 --
 ALTER TABLE `tax`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `to_do_list`
+-- Indexes for table `to_do_list`
 --
 ALTER TABLE `to_do_list`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `user_role`
+-- Indexes for table `user_role`
 --
 ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de las tablas volcadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de la tabla `actions`
+-- AUTO_INCREMENT for table `actions`
 --
 ALTER TABLE `actions`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=184;
 --
--- AUTO_INCREMENT de la tabla `acts`
+-- AUTO_INCREMENT for table `acts`
 --
 ALTER TABLE `acts`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT de la tabla `appointments`
+-- AUTO_INCREMENT for table `appointments`
 --
 ALTER TABLE `appointments`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT de la tabla `archived_cases`
+-- AUTO_INCREMENT for table `archived_cases`
 --
 ALTER TABLE `archived_cases`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT de la tabla `attendance`
+-- AUTO_INCREMENT for table `attendance`
 --
 ALTER TABLE `attendance`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `bank_details`
+-- AUTO_INCREMENT for table `bank_details`
 --
 ALTER TABLE `bank_details`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `canned_messages`
+-- AUTO_INCREMENT for table `canned_messages`
 --
 ALTER TABLE `canned_messages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT de la tabla `cases`
+-- AUTO_INCREMENT for table `cases`
 --
 ALTER TABLE `cases`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT de la tabla `case_categories`
+-- AUTO_INCREMENT for table `case_categories`
 --
 ALTER TABLE `case_categories`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT de la tabla `case_stages`
+-- AUTO_INCREMENT for table `case_stages`
 --
 ALTER TABLE `case_stages`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT de la tabla `case_study`
+-- AUTO_INCREMENT for table `case_study`
 --
 ALTER TABLE `case_study`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `contacts`
+-- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1027;
 --
--- AUTO_INCREMENT de la tabla `contact_categories`
+-- AUTO_INCREMENT for table `contact_categories`
 --
 ALTER TABLE `contact_categories`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
--- AUTO_INCREMENT de la tabla `courts`
+-- AUTO_INCREMENT for table `courts`
 --
 ALTER TABLE `courts`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT de la tabla `court_categories`
+-- AUTO_INCREMENT for table `court_categories`
 --
 ALTER TABLE `court_categories`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT de la tabla `custom_fields`
+-- AUTO_INCREMENT for table `custom_fields`
 --
 ALTER TABLE `custom_fields`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `days`
+-- AUTO_INCREMENT for table `days`
 --
 ALTER TABLE `days`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
--- AUTO_INCREMENT de la tabla `departments`
+-- AUTO_INCREMENT for table `departments`
 --
 ALTER TABLE `departments`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT de la tabla `depts`
+-- AUTO_INCREMENT for table `depts`
 --
 ALTER TABLE `depts`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT de la tabla `dept_categories`
+-- AUTO_INCREMENT for table `dept_categories`
 --
 ALTER TABLE `dept_categories`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
--- AUTO_INCREMENT de la tabla `documents`
+-- AUTO_INCREMENT for table `documents`
 --
 ALTER TABLE `documents`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT de la tabla `extended_case`
+-- AUTO_INCREMENT for table `extended_case`
 --
 ALTER TABLE `extended_case`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `fees`
+-- AUTO_INCREMENT for table `fees`
 --
 ALTER TABLE `fees`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `holidays`
+-- AUTO_INCREMENT for table `holidays`
 --
 ALTER TABLE `holidays`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `language`
+-- AUTO_INCREMENT for table `language`
 --
 ALTER TABLE `language`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
--- AUTO_INCREMENT de la tabla `leaves`
+-- AUTO_INCREMENT for table `leaves`
 --
 ALTER TABLE `leaves`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `leave_types`
+-- AUTO_INCREMENT for table `leave_types`
 --
 ALTER TABLE `leave_types`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `locations`
+-- AUTO_INCREMENT for table `locations`
 --
 ALTER TABLE `locations`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
--- AUTO_INCREMENT de la tabla `loc_categories`
+-- AUTO_INCREMENT for table `loc_categories`
 --
 ALTER TABLE `loc_categories`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
--- AUTO_INCREMENT de la tabla `message`
+-- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT de la tabla `months`
+-- AUTO_INCREMENT for table `months`
 --
 ALTER TABLE `months`
   MODIFY `id` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
--- AUTO_INCREMENT de la tabla `notice`
+-- AUTO_INCREMENT for table `notice`
 --
 ALTER TABLE `notice`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
--- AUTO_INCREMENT de la tabla `notification_setting`
+-- AUTO_INCREMENT for table `notification_setting`
 --
 ALTER TABLE `notification_setting`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT de la tabla `payment_modes`
+-- AUTO_INCREMENT for table `payment_modes`
 --
 ALTER TABLE `payment_modes`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `receipt`
+-- AUTO_INCREMENT for table `receipt`
 --
 ALTER TABLE `receipt`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `rel_case_study_attachments`
+-- AUTO_INCREMENT for table `rel_case_study_attachments`
 --
 ALTER TABLE `rel_case_study_attachments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `rel_contact_category`
+-- AUTO_INCREMENT for table `rel_contact_category`
 --
 ALTER TABLE `rel_contact_category`
-  MODIFY `id_rel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_rel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
--- AUTO_INCREMENT de la tabla `rel_department_designation`
+-- AUTO_INCREMENT for table `rel_department_designation`
 --
 ALTER TABLE `rel_department_designation`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 --
--- AUTO_INCREMENT de la tabla `rel_document_files`
+-- AUTO_INCREMENT for table `rel_document_files`
 --
 ALTER TABLE `rel_document_files`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
--- AUTO_INCREMENT de la tabla `rel_form_custom_fields`
+-- AUTO_INCREMENT for table `rel_form_custom_fields`
 --
 ALTER TABLE `rel_form_custom_fields`
   MODIFY `custom_field_id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `rel_role_action`
+-- AUTO_INCREMENT for table `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=211;
 --
--- AUTO_INCREMENT de la tabla `settings`
+-- AUTO_INCREMENT for table `settings`
 --
 ALTER TABLE `settings`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT de la tabla `tasks`
+-- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
--- AUTO_INCREMENT de la tabla `task_comments`
+-- AUTO_INCREMENT for table `task_comments`
 --
 ALTER TABLE `task_comments`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `tax`
+-- AUTO_INCREMENT for table `tax`
 --
 ALTER TABLE `tax`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT de la tabla `to_do_list`
+-- AUTO_INCREMENT for table `to_do_list`
 --
 ALTER TABLE `to_do_list`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT de la tabla `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
--- AUTO_INCREMENT de la tabla `user_role`
+-- AUTO_INCREMENT for table `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
--- Restricciones para tablas volcadas
+-- Constraints for dumped tables
 --
 
 --
--- Filtros para la tabla `rel_contact_category`
+-- Constraints for table `rel_contact_category`
 --
 ALTER TABLE `rel_contact_category`
   ADD CONSTRAINT `rel_contact_category_ibfk_1` FOREIGN KEY (`id_contact`) REFERENCES `contacts` (`id`),
