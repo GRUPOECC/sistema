@@ -43,7 +43,8 @@ function areyousure()
           $del_id = $delete[$i]; 
           $conjunto = $conjunto . $del_id . "-";
          } 
-         header('Location: '.site_url('admin/contacts/delete/').'/'.$conjunto);    
+         if (isset($_POST["submit"])) 
+           header('Location: '.site_url('admin/contacts/delete/').'/'.$conjunto);    
       }
 
 ?>
