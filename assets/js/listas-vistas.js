@@ -62,7 +62,6 @@ function cambiomuestra(){
    x =0;  //Vale 0 por que es el estado inicial del listado
    tamano = document.getElementById("mostrarregistros").value; //Controla la cantidad de elementos a mostrar en pantalla 
    y = parseInt(tamano);  // Variable que controla la paginacion 
-   buscar = false; // Indica si el buscador esta activo o no
    choice =""; // Contenido de la busqueda 
    distribucion = false; //Maneja la distribucion en el buscador
    cantidad =0; // Manja la cantidad de elementos por pagina 
@@ -73,7 +72,11 @@ function cambiomuestra(){
    informacion.innerHTML= mensajeinicial;
    //Inilizo una lista por defecto:
     x=2;
+    if(!buscar)
     paginamiento(parseInt(tamano));
+    else {
+       document.getElementById("search").click();
+    }
 
 }
 
