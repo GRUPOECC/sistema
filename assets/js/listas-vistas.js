@@ -16,7 +16,8 @@
 //Inizializo variables:
 //----------------------------------------------------------
 var x =0;  //Vale 0 por que es el estado inicial del listado
-var y =9;  // Variable que controla la paginacion 
+var tamano = 9; //Controla la cantidad de elementos a mostrar en pantalla 
+var y = parseInt(tamano);  // Variable que controla la paginacion 
 var buscar = false; // Indica si el buscador esta activo o no
 var choice =""; // Contenido de la busqueda 
 var distribucion = false; //Maneja la distribucion en el buscador
@@ -24,6 +25,7 @@ var cantidad =0; // Manja la cantidad de elementos por pagina
 var valoranterior =0; //Almacena el valor de la pagina anterior 
 var valoranteriortotal =0; //Almacena el valor de la pagina anterior 
 var valoranteriorrango =0; //Almacena el valor de la pagina anterior 
+var mensajeinicial  =  document.getElementById("infoTabla").innerHTML;
 
 //Inilizo una lista por defecto:
 listaporDefecto();
@@ -56,9 +58,28 @@ function vistaCuadricula(){
          x=2;
 }
 
+function cambiomuestra(){
+   x =0;  //Vale 0 por que es el estado inicial del listado
+   tamano = document.getElementById("mostrarregistros").value; //Controla la cantidad de elementos a mostrar en pantalla 
+   y = parseInt(tamano);  // Variable que controla la paginacion 
+   buscar = false; // Indica si el buscador esta activo o no
+   choice =""; // Contenido de la busqueda 
+   distribucion = false; //Maneja la distribucion en el buscador
+   cantidad =0; // Manja la cantidad de elementos por pagina 
+   valoranterior =0; //Almacena el valor de la pagina anterior 
+   valoranteriortotal =0; //Almacena el valor de la pagina anterior 
+   valoranteriorrango =0; //Almacena el valor de la pagina anterior 
+   var informacion = document.getElementById("infoTabla");
+   informacion.innerHTML= mensajeinicial;
+   //Inilizo una lista por defecto:
+    x=2;
+    paginamiento(parseInt(tamano));
+
+}
+
 function listaporDefecto(){
          x=1;
-         paginamiento(9);
+         paginamiento(parseInt(tamano));
        
 }
 
@@ -74,7 +95,7 @@ function paginamiento(pagina){
          contacto = listado.getElementsByTagName("p");
          for (i=0;i<contacto.length;i++){
              
-            if (((pagina-9)<i)&&(pagina>=i)){
+            if (((pagina-parseInt(tamano))<i)&&(pagina>=i)){
                contacto[i].parentNode.style.display='block';          
              }else 
                  contacto[i].parentNode.style.display = "none";   
@@ -100,7 +121,7 @@ function totalRegistrosEncontrados(){
         }             
        }    
       );
-   return Math.trunc(resultado/9); 
+   return Math.trunc(resultado/parseInt(tamano)); 
 } 
 
 function totalElementosEcontrados(){
@@ -126,7 +147,7 @@ function totalRegistroGeneral(){
 
 var listado = document.getElementById("resultados"),
          contacto = listado.getElementsByTagName("p");
-   return  Math.trunc(contacto.length/9);         
+   return  Math.trunc(contacto.length/parseInt(tamano));         
 } 
 
 function totalElementosGeneral(){
@@ -148,7 +169,7 @@ function paginamientoBuscador(pagina){
             f.parentNode.style.display = "none";       
         }
         else{ 
-               if (((pagina-9)<j)&&(pagina>=j)){
+               if (((pagina-parseInt(tamano))<j)&&(pagina>=j)){
                  f.parentNode.style.display = "block"; 
                  cantidad = cantidad + 1; 
                  j=j+1;   
@@ -176,7 +197,7 @@ function distrubuirResultados(informacion,total,contacto,pagina){
             totalpaginas = totalRegistrosEncontrados();
 
 
-         var actual = (pagina/9);
+         var actual = (pagina/parseInt(tamano));
          var dataInfo = informacion.innerHTML;
          var act = actual.toString(), pag = totalpaginas.toString();
          var  tlt = "0";
@@ -185,10 +206,10 @@ function distrubuirResultados(informacion,total,contacto,pagina){
           else 
           tlt = totalElementosEcontrados().toString(); 
              
-         var elementoinicial = pagina + 1 - 9; 
+         var elementoinicial = pagina + 1 - parseInt(tamano); 
          var numact = (elementoinicial).toString(); 
          if ((totalpaginas>=1)) 
-         var pagact = (elementoinicial-1 + 9).toString();
+         var pagact = (elementoinicial-1 + parseInt(tamano)).toString();
          else
           var pagact = (totalElementosEcontrados()).toString(); 
 
@@ -208,7 +229,7 @@ function distrubuirResultados(informacion,total,contacto,pagina){
         while (q<5){
             var valor = actual + q; 
             //var redireccion = (9*(valor-q))*();
-            var redireccion = valor * 9;
+            var redireccion = valor * parseInt(tamano);
                if (!buscar){ 
                     if (valor<=totalRegistroGeneral()+1){ 
                      document.getElementById(posiciones[q]).innerHTML = '<a onclick="paginamiento('+redireccion+
@@ -251,8 +272,7 @@ function distrubuirResultados(informacion,total,contacto,pagina){
 }
 //Pasa a la siguiente pagina
 function siguiente(){
-   y=y+9;
-
+   y=y+parseInt(tamano);
    if(!buscar)
    paginamiento(y);
    else{
@@ -266,8 +286,8 @@ function siguiente(){
 
 //Pasa a la pagina anterior 
 function anterior(){
-   if (y!=9)
-   y=y-9;
+   if (y!=parseInt(tamano))
+   y=y-parseInt(tamano);
 
    if(!buscar) 
    paginamiento(y);
@@ -293,7 +313,7 @@ function anterior(){
      buscador1[0].click();
 
 
-    y=9;
+    y=parseInt(tamano);
     buscar = true; 
     distribucion = true; 
     choice = this.value;
@@ -313,7 +333,7 @@ function anterior(){
      var buscador1 = cajabuscador.getElementsByTagName('input');
      this.value = buscador1[0].value; 
      buscador1[0].click();
-    y=9;
+    y=parseInt(tamano);
     buscar = true; 
     distribucion = true; 
     choice = this.value;
