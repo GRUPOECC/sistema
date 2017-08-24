@@ -22,6 +22,9 @@ var choice =""; // Contenido de la busqueda
 var distribucion = false; //Maneja la distribucion en el buscador
 var cantidad =0; // Manja la cantidad de elementos por pagina 
 var valoranterior =0; //Almacena el valor de la pagina anterior 
+var valoranteriortotal =0; //Almacena el valor de la pagina anterior 
+var valoranteriorrango =0; //Almacena el valor de la pagina anterior 
+
 //Inilizo una lista por defecto:
 listaporDefecto();
 //----------------------------------------------------------
@@ -99,6 +102,25 @@ function totalRegistrosEncontrados(){
       );
    return Math.trunc(resultado/9); 
 } 
+
+function totalElementosEcontrados(){
+  var resultado = 0; 
+
+      var listado = document.getElementById("resultados"),
+      contacto = listado.getElementsByTagName("p"); 
+
+       forEach.call(contacto, function(f){
+        if (f.innerHTML.toLowerCase().search(choice.toLowerCase()) == -1){
+             
+        }
+        else{ 
+             resultado = resultado + 1;   
+        }             
+       }    
+      );
+   return Math.trunc(resultado);
+
+}
 //Funcion para calcular el total de resultado en general 
 function totalRegistroGeneral(){
 
@@ -107,6 +129,12 @@ var listado = document.getElementById("resultados"),
    return  Math.trunc(contacto.length/9);         
 } 
 
+function totalElementosGeneral(){
+
+var listado = document.getElementById("resultados"),
+         contacto = listado.getElementsByTagName("p");
+   return  Math.trunc(contacto.length);         
+} 
 
 //Muestra los resultados de la busqueda en grupos de 9
 function paginamientoBuscador(pagina){ 
@@ -150,18 +178,30 @@ function distrubuirResultados(informacion,total,contacto,pagina){
 
          var actual = (pagina/9);
          var dataInfo = informacion.innerHTML;
-         var act = actual.toString(), pag = totalpaginas.toString(), tlt = total.toString();
-         var pagact = pagina.toString(); 
-         var numact = (pagina - 9).toString(); 
-        
+         var act = actual.toString(), pag = totalpaginas.toString();
+         var  tlt = "0";
+         if (!buscar)
+          tlt = totalElementosGeneral().toString(); 
+          else 
+          tlt = totalElementosEcontrados().toString(); 
+             
+         var elementoinicial = pagina + 1 - 9; 
+         var numact = (elementoinicial).toString(); 
+         if ((totalpaginas>=1)) 
+         var pagact = (elementoinicial-1 + 9).toString();
+         else
+          var pagact = (totalElementosEcontrados()).toString(); 
+
          if (informacion.innerHTML.includes("FF")) 
            informacion.innerHTML = dataInfo.replace("FF",numact).replace("QQ",pagact).replace("RR",tlt);
          else 
          {
-           informacion.innerHTML = dataInfo.replace(valoranterior.toString(),act);
+           informacion.innerHTML = dataInfo.replace(valoranterior.toString(),numact).replace(valoranteriorrango.toString(),pagact).replace(valoranteriortotal.toString(),tlt);
          } 
         //Actualizo el valor
-        valoranterior = act; 
+        valoranterior = numact; 
+        valoranteriorrango = pagact;
+        valoranteriortotal = tlt;
         var q=0; //<- Variable que marca valores del 1 al 5 para la distribucion   
         //Modificando Posicion de Paginacion: 
         var posiciones = ["posicion1", "posicion2", "posicion3","posicion4","posicion5"];
