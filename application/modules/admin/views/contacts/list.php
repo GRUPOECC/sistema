@@ -220,7 +220,7 @@ function areyousure()
                     <div class="col-md-12">
                        <div class="row">
                        <div class="col-xs-6">
-                       <div id="infoTabla"><?php echo lang('showing');?> FF <?php echo lang('to');?> QQ <?php echo lang('of');?> RR <?php echo lang('result');?></div>
+                       <div id="infoTabla"><?php echo lang('showing');?> FF <?php echo lang('to');?> QQ <?php echo lang('ofresult');?> RR <?php echo lang('result');?></div>
                        </div>
                        <div class="col-xs-6">
                        <div class="dataTables_paginate paging_bootstrap">
@@ -380,6 +380,8 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
 
 <?php 
+   //(filtrado de un total de _MAX_ registros)
+   //(filtered from _MAX_ total entries)
  $idioma = lang ('search');
 
   if ($idioma == 'Buscar')  {
@@ -395,7 +397,7 @@ function areyousure()
         "sEmptyTable":    "Ningún dato disponible en esta tabla",
         "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
         "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
-        "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)",
+        "sInfoFiltered":  "",
         "sInfoPostFix":   "",
         "sSearch":        "Buscar:",
         "sUrl":           "",
@@ -430,7 +432,7 @@ function areyousure()
     "sEmptyTable":     "No data available in table",
     "sInfo":           "Showing _START_ to _END_ of _TOTAL_ entries",
     "sInfoEmpty":      "Showing 0 to 0 of 0 entries",
-    "sInfoFiltered":   "(filtered from _MAX_ total entries)",
+    "sInfoFiltered":   "",
     "sInfoPostFix":    "",
     "sInfoThousands":  ",",
     "sLengthMenu":     "Show _MENU_ entries",
