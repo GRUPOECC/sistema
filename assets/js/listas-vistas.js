@@ -151,9 +151,11 @@ function distrubuirResultados(informacion,total,contacto,pagina){
          var actual = (pagina/9);
          var dataInfo = informacion.innerHTML;
          var act = actual.toString(), pag = totalpaginas.toString(), tlt = total.toString();
+         var pagact = pagina.toString(); 
+         var numact = (pagina - 9).toString(); 
         
          if (informacion.innerHTML.includes("FF")) 
-           informacion.innerHTML = dataInfo.replace("FF",act).replace("QQ",pag).replace("RR",tlt);
+           informacion.innerHTML = dataInfo.replace("FF",numact).replace("QQ",pagact).replace("RR",tlt);
          else 
          {
            informacion.innerHTML = dataInfo.replace(valoranterior.toString(),act);
@@ -172,22 +174,32 @@ function distrubuirResultados(informacion,total,contacto,pagina){
                      document.getElementById(posiciones[q]).innerHTML = '<a onclick="paginamiento('+redireccion+
                      ')" href="javascript:void(null)">'+ valor+'</a>'; 
                      document.getElementById(posiciones[q]).style.display = 'inline';
-                     document.getElementById("siguiente").style.display = 'inline';
+                     document.getElementById("linksiguiente").style.display = 'inline';
+                     document.getElementById("siguiente").className = "next";
+                     document.getElementById("linksiguiente2").style.display = 'none';
                      }else {
                       document.getElementById(posiciones[q]).style.display = 'none';
-                      document.getElementById("siguiente").style.display = 'none';
+                      document.getElementById("linksiguiente").style.display = 'none'; 
+                      document.getElementById("siguiente").className = "next disabled";
+                      document.getElementById("linksiguiente2").style.display = 'inline';
                       }
+                     
 
                  }else {
                   if (valor<=totalRegistrosEncontrados()+1){ 
                       document.getElementById(posiciones[q]).innerHTML ='<a onclick="paginamientoBuscador('+redireccion+
                       ')" href="javascript:void(null)">'+ valor +'</a>';  
                       document.getElementById(posiciones[q]).style.display = 'inline';
-                      document.getElementById("siguiente").style.display = 'inline';
+                      document.getElementById("linksiguiente").style.display = 'inline';
+                      document.getElementById("siguiente").className = "next";
+                      document.getElementById("linksiguiente2").style.display = 'none';
                       }else{
-                     document.getElementById(posiciones[q]).style.display = 'none';
-                     document.getElementById("siguiente").style.display = 'none';
+                     document.getElementById(posiciones[q]).style.display = 'none';   
+                     document.getElementById("linksiguiente").style.display = 'none'; 
+                     document.getElementById("siguiente").className = "next disabled";
+                     document.getElementById("linksiguiente2").style.display = 'inline';
                      }
+                    
                  }
 
             if (q==0){
@@ -214,7 +226,7 @@ function siguiente(){
 
 //Pasa a la pagina anterior 
 function anterior(){
-   if (y!=9) 
+   if (y!=9)
    y=y-9;
 
    if(!buscar) 
