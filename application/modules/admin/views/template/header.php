@@ -309,8 +309,11 @@ $fourth = $this->uri->segment(4);
                         <!--  Task Alert Start-->
                         <li class="dropdown tasks-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                <?php echo lang('tasks'); ?>
+                                <?php echo lang('Tasks'); ?>
                                 
+                                <label class="badge pull-right bg-red">
+                                <?php echo count($my_due_tasks); ?>
+                                <label>
                                 
                                 
                                
@@ -1153,6 +1156,10 @@ $fourth = $this->uri->segment(4);
   }
 
   #errorcontacto2{
+    display: none;
+  }
+
+   #errorcontacto3{
     display: none;
   }
 

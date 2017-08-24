@@ -15,12 +15,12 @@
  <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
-        <?php echo lang('tasks')?>
+        <?php echo lang('Tasks')?>
         <small><?php echo lang('view')?></small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i><?php echo lang('dashboard')?></a></li>
-        <li><a href="<?php echo site_url('admin/tasks')?>"><?php echo lang('tasks')?></a></li>
+        <li><a href="<?php echo site_url('admin/tasks')?>"><?php echo lang('Tasks')?></a></li>
         <li class="active"><?php echo lang('view')?></li>
     </ol>
 </section>
@@ -49,7 +49,7 @@
                         <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-2">
-                                    <label for="name" style="clear:both;"><?php echo lang('name')?></label>
+                                    <label for="name" style="clear:both;"><?php echo lang('created_by')?></label>
 								</div>
 								<div class="col-md-4">
 									<?php echo $task->name?>
@@ -76,8 +76,9 @@
                                     <label for="dob" style="clear:both;"><?php echo lang('due_date');?></label>
 								</div>
 								<div class="col-md-4">
-								<?php echo $task->due_date?>
-									
+								  <?php $formato = explode("-", $task->due_date); 
+                                      echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];
+                                   ?>	
                                 </div>
                             </div>
                         </div>

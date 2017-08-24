@@ -302,7 +302,7 @@ $lang['or']      	 		= "Or";
 
 $lang['select']      	 	= "Select";
 $lang['a']      	 		= "a";
-$lang['to']      	 		= "To";
+$lang['to']      	 		= "a";
 $lang['from']      	 				= "From";
 
 $lang['links']      			 	= "enlaces";
@@ -415,11 +415,11 @@ $lang['task']		      	 		= "tareas";
 $lang['task_saved']					= "tarea guardada";
 $lang['task_upated']				= "Task Updated";
 $lang['task_deleted']				= "TasK Deleted";
-$lang['due_date']			= "Due Date";
-$lang['priority']			= "Priority";
-$lang['assigned_to']			= "Assigned_to";
-$lang['progress']			= "Progress";
-$lang['created_by']			= "Created By";
+$lang['due_date']			= "Fecha de Vencimiento";
+$lang['priority']			= "Prioridad";
+$lang['assigned_to']			= "Asignado a";
+$lang['progress']			= "Progreso";
+$lang['created_by']			= "Creado por";
 $lang['default_date_format']			= "Default Date Format";
 $lang['timezone']			= "Timezone";
 $lang['smtp_host']			= "SMTP Host";
@@ -521,3 +521,5 @@ $lang['group']			= "Agrupar";
 $lang['setCategoryGroup']			= "Asignar Categoria";
 $lang['contactGroupTitle']			= "Agrupar Contactos";
 $lang['titleSelectContact']			= "Debe seleccionar un contacto";
+$lang['titleSelectCategory']			= "Debe seleccionar una contegoria";
+

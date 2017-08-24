@@ -12,7 +12,7 @@ function areyousure()
         </h1>
         <ol class="breadcrumb">
             <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard')?></a></li>
-            <li class="active"><?php echo lang('tasks')?></li>
+            <li class="active"><?php echo lang('Tasks')?></li>
         </ol>
 </section>
 
@@ -34,7 +34,7 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('tasks')?></h3>                                    
+                    <h3 class="box-title"><?php echo lang('Tasks')?></h3>                                    
                 </div><!-- /.box-header -->
 				
                 <div class="box-body table-responsive" style="margin-top:40px;">
@@ -42,7 +42,7 @@ function areyousure()
                         <thead>
                             <tr>
                                 <th><?php echo lang('serial_number')?></th>
-								<th><?php echo lang('name')?></th>
+								<th><?php echo lang('assigned_to')?></th>
 								<th width="12px;"><?php echo lang('priority')?></th>
                                 <th><?php echo lang('due_date')?></th>
 								<th><?php echo lang('created_by')?></th>
@@ -70,7 +70,9 @@ function areyousure()
                                     <td><?php echo $i?></td>
                                     <td><?php echo ucwords($new->name)?></td>
                                     <td><?php echo $pr ?></td>
-                                    <td><?php echo $new->due_date ?> <?php if($new->due_date<date("Y-m-d") && $new->progress!=100 ){?> <small class='label pull-right bg-red'>Over Due</small> <?php }?></td>
+                                    <td><?php $formato = explode("-", $new->due_date); 
+                                              echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];
+                                          ?> <?php if($new->due_date<date("Y-m-d") && $new->progress!=100 ){?> <small class='label pull-right bg-red'>Over Due</small> <?php }?></td>
                                     <td><?php echo $new->name ?> </td>
 									
                                     <td width="38%">
@@ -78,11 +80,17 @@ function areyousure()
 									<?php if(check_user_role(115)==1){?>		
                                           <a class="btn btn-default"  href="<?php echo site_url('admin/tasks/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view')?></a>
 									<?php } ?>	
-									<?php if(check_user_role(114)==1){?>			  	
-										  <a class="btn btn-primary"  style="margin-left:12px;" href="<?php echo site_url('admin/tasks/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit')?></a><?php } ?>
-										  <?php if(check_user_role(116)==1){?>		
-										 <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/tasks/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete')?></a>
+									      <?php if(check_user_role(114)==1){?>	
+                                          <?php  if($new->progress!=100){?>		  	
+										  <a class="btn btn-primary"  style="margin-left:12px;" href="<?php echo site_url('admin/tasks/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
+                                          <?php } ?>
+                                          <?php } ?>
+										<?php if(check_user_role(116)==1){?>	
+                                         <?php if($new->progress!=100){?>
+										 <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/tasks/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"> </i> <?php echo lang('delete')?></a>
+                                         <?php } ?>
 										<?php } ?>
+
 										<?php if(check_user_role(117)==1){?>		 
 										  <a class="btn btn-warning" style="margin-left:20px;" href="<?php echo site_url('admin/tasks/comments/'.$new->id); ?>" ><i class="fa fa-comments"></i> <?php echo lang('comments')?></a>
 										<?php } ?>  
