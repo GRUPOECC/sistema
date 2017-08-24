@@ -526,5 +526,3 @@ $lang['titleMessage'] = "Bandeja de Entrada";
 $lang['sendMessage'] = "Enviar Mensaje"; 
 $lang['writeMessage'] = "Redactar Mensaje"; 
 
-
- 

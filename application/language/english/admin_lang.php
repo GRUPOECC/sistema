@@ -517,3 +517,4 @@ $lang['titleSelectCategory']			= "You should select a category";
 $lang['titleMessage'] = "Inbox";
 $lang['sendMessage'] = "Send Message";
 $lang['writeMessage'] = "Write Message";
+

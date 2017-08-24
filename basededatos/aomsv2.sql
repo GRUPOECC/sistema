@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 21, 2017 at 05:57 AM
+-- Generation Time: Aug 24, 2017 at 02:16 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -26,7 +26,7 @@ DELIMITER $$
 --
 -- Functions
 --
-CREATE DEFINER=`root`@`localhost` FUNCTION `F_CONTACT_CATEGORIES` (`contacto` INT(9)) RETURNS VARCHAR(255) CHARSET utf8 BEGIN
+CREATE DEFINER=`root`@`localhost` FUNCTION `F_CONTACT_CATEGORIES` (`contacto` INT(9)) RETURNS VARCHAR(255) CHARSET utf8  DETERMINISTIC BEGIN
 DECLARE  categorias  VARCHAR(255);
 DECLARE auxiliar VARCHAR(255);
 DECLARE idcategoria int(9);
@@ -55,20 +55,6 @@ WHERE
   CLOSE rel_categorias;
   RETURN categorias;
   END$$
-
-CREATE DEFINER=`root`@`localhost` FUNCTION `F_Dist3D` (`x1` DECIMAL, `y1` DECIMAL) RETURNS DECIMAL(10,0) BEGIN 
-  DECLARE dist decimal;
-  SET dist = SQRT(x1 - y1);
-  RETURN dist;
-END$$
-
-CREATE DEFINER=`root`@`localhost` FUNCTION `getSomething` () RETURNS VARCHAR(100) CHARSET utf8 BEGIN
-  declare return_name varchar(100);
-  
-  select f2 into return_name from t1 where f1 = 2;
-  
-  return return_name;
-END$$
 
 DELIMITER ;
 
@@ -523,9 +509,7 @@ CREATE TABLE `contacts` (
 INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
 (6, '  ACOSTA', '', '0', '', '0244-447-99-42', '0', '0414-477-77-54', '0', 'LEGAL', 'CASO MARACAY', 'LEGALES'),
 (7, '  ', '', '0', '', '0212-762-04-02', '0', '0212-762-04-03', '0', 'OTROS', 'KING GRAFIT', 'OTROS'),
-(8, '   ', '', '0', '', '0212-331-27-08', '0212-331-16-87', '0', '0', 'IMPORTACIONES', 'MARTINEZ COOL', 'TRANSPORTE'),
 (9, '  MORA ', '', '0', '', '0212-232-52-34', '0414-120-42-42', '0416-930-89-01', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
-(10, '  MARTINEZ', '', '0', '', '0212-415-54-44', '0416-633-12-91', '0', '0', 'PROVEEDOR', 'PROCLIMA (2020)', 'FUMIGACION'),
 (11, 'ABEL  MARTINEZ', '', '0', '', '0414-543-66-01', ' ', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (12, 'ADAN  GUEVARA', '', '0', '', '0212-345-00-66', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (13, 'AIDA  FERRER', '', '0', '', '0212-693-27-61', '0', '0414-326-14-27', '0212-362-19-97', 'MEDICINA', 'PARTICULAR', 'MEDICOS Y MEDICINAS'),
@@ -613,7 +597,6 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (97, 'CARLOS GIL', '', '0', '', '0426-914-20-39', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (98, 'CARLOS KIOSKO', '', '0', '', '0424-127-17-31', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (99, 'CARLOS OBELMEJIAS', '', '0', '', '0414-282-48-65', '0', '0', '0', 'MEDICOS Y MEDICINAS', 'RESCARVEN', 'MEDICOS Y MEDICINAS'),
-(100, 'CARLOS ', '', '0', '', '0212-953-05-79', '0', '0212-953-46-90', '0212-951-29-28', 'OTROS', 'SEG TOTAL', 'OTROS'),
 (101, 'CARLOS  LEON', '', '0', '', '0212-543-28-55', '0', '0424-131-73-75', '0414-321-61-35', 'ENTES PRIVADOS', 'FETRA CALZADO', 'SINDICATOS'),
 (102, 'CARLOS  VARGAS', '', '0', '', '0212-578-13-57', '0', '0412-233-036', '0', 'PROVEEDORES', 'IMPRESORAS FORMACO', 'PAPELERIA'),
 (103, 'CARLOS  VARGAS', '', '0', '', '0212-285-18-06', '0', '0212-284-77-77', '0', 'PROVEEDORES', 'IMPRESORAS FORMACO', 'PAPELERIA'),
@@ -950,11 +933,11 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (436, 'LUIS ', '', '0', '', '0212-237-49-71', '0', '0', '0', 'PROVEEDOR', 'X-TRAPINT', 'IMPRENTA'),
 (437, 'LUIS  GUEVARA', '', '0', '', '0212-516-23-93', '0414-256-00-84', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (438, 'LUIS  BETANCOURT', '', '0', '', '0212-345-39-25', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
-(439, 'LUIS  GALLO', '', '0', '', '0212-888-62-95', '0212-577-080', '0414-115-26-34', '0', 'OTROS', 'PARTICULAR', 'OTROS');
-INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
+(439, 'LUIS  GALLO', '', '0', '', '0212-888-62-95', '0212-577-080', '0414-115-26-34', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (440, 'LUIS  GARCIA', '', '0', '', '0416-806-93-94', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (442, 'LUIS  ', '', '0', '', '0426-931-43-11', '0', '0', '0', 'PROVEEDOR', 'TRANSPORTE (2011)', 'TRANSPORTE'),
-(443, 'LUIS (CHINO)  LOPEZ', '', '0', '', '0212-541-09-10', '0', '0424-105-35-57', '0', 'PROVEEDORES', 'PRINT LB', 'PUBLICIDAD'),
+(443, 'LUIS (CHINO)  LOPEZ', '', '0', '', '0212-541-09-10', '0', '0424-105-35-57', '0', 'PROVEEDORES', 'PRINT LB', 'PUBLICIDAD');
+INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
 (444, 'LUISA ESCOBAR', '', '0', '', '0414-301-18-43', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
 (445, 'LUISITA ', '', '0', '', '0212-243-08-73', '0', '0', '0', 'FAMILIARES EMPLEADOS', 'FAMILIA MILLAN', 'OTROS'),
 (446, 'LUPE ', '', '0', '', '0416-408-45-56', '0', '0', '0', 'OTROS', 'PARTICULAR', 'OTROS'),
@@ -1381,11 +1364,11 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (872, ' ', '', '0', '', '0', '0', '0800-768-225-36', '0', 'ENTES PUBLICOS', 'HIDROCAPITAL', 'ATENCION AL CLIENTE'),
 (873, ' ', '', '0', '', '0212-573-69-11', '0', '0212-573-65-55', '0', 'MEDICINA', 'HOSPITAL ORTOPEDICO INFANTIL', 'OFICINA'),
 (874, ' MARIN', '', '0', '', '0416-211-17-10', '0', '0', '0', 'ENTES PUBLICOS', 'I.N.C.E.', 'OTROS'),
-(875, 'SRA. MIREYA', '0251-254-87-93', '0', 'BARQUISIMETO', '0251-254-87-93', '0', '0', '0', 'CLIENTES', 'ILMERLETTO DEL ESTE', 'VENTAS');
-INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
+(875, 'SRA. MIREYA', '0251-254-87-93', '0', 'BARQUISIMETO', '0251-254-87-93', '0', '0', '0', 'CLIENTES', 'ILMERLETTO DEL ESTE', 'VENTAS'),
 (876, ' ', '', '0', '', '0212-481-63-05', '0', '0', '0', 'PROVEEDOR', 'IMPORTADORA AMERICANA', 'PANETONE'),
 (877, ' ', '', '0', '', '0212-631-10-45', '0', '0', '0', 'PROVEEDOR', 'IMPRESOS CANAIMA', 'TALONARIOS'),
-(878, ' ', '', '0', '', '0212-871-63-57', '0', '0212-871-67-68', '0212-872-30-09', 'PROVEEDOREES', 'INDUSTRIAS RUANSA DE VENEZUELA', 'FORROS Y TELAS'),
+(878, ' ', '', '0', '', '0212-871-63-57', '0', '0212-871-67-68', '0212-872-30-09', 'PROVEEDOREES', 'INDUSTRIAS RUANSA DE VENEZUELA', 'FORROS Y TELAS');
+INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `phone2`, `phone3`, `phone4`, `category`, `company`, `department`) VALUES
 (879, ' ', '', '0', '', '0212-872-30-09', '0', '0212-871-63-', '0', 'PROVEEDORES', 'INDUSTRIAS RUANSA DE VENEZUELA', 'FORROS Y TELAS'),
 (880, ' ', '', '0', '', '0212-562-44-01', '0', '0414-241-51-92', '0414-210-02-36', 'OTROS', 'INDUSTRIAS UNION GRAFICA', 'OTROS'),
 (881, ' ', '', '0', '', '0241-832-04-27', '0', '0414-402-11-26', '0', 'OTROS', 'INGENIERIA HENFOR', 'OTROS'),
@@ -1442,7 +1425,6 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (933, ' ', '', '0', '', '0212-243-71-34', '0212-244-31-73', '0', '0', 'PROVEEDOR', 'PERLATRON', 'RECARGA DE TONER'),
 (934, ' ', '', '0', '', '0212-753-15-20', '0212-753-96-19', '0212-751-45-91', '0', 'OTROS', 'PLUSCABLE', 'OTROS'),
 (935, ' ', '', '0', '', '0212-341-62-61', '0212-341-46-43', '0212-341-29-14', '0212-341-47-13', 'PROVEEDOR', 'POLIURETANOS TEXEL', 'SUELAS'),
-(939, ' ', '', '0', '', '0212-662-24-31', '0212-661-46-01', '0212-661-15-40', '0212-661-95-01', 'ASEGURADORA', 'PROSEGURO LOS PROCERES', 'OFICINA'),
 (940, ' ', '', '0', '', '0251-231-70-57', '0', '0', '0', 'CLIENTES', 'PUELLA', 'VENTAS'),
 (941, ' PELI EXPRESS', '0212-239-49-10', '0', '', '0212-239-49-10', '0212-239-90-58', '0', '0', 'OTROS', 'PULI EXPRESS', 'OTROS'),
 (942, ' COMERCIAL CAZORLA', '0241-894-29-86', '0', '', '0241-894-29-86', '0414-471-61-66', '0', '0', 'PROVEEDOR', 'RECUPERADORA CAZORLA, C.A', 'CAJAS'),
@@ -1909,9 +1891,11 @@ CREATE TABLE `message` (
 --
 
 INSERT INTO `message` (`id`, `message`, `from_id`, `to_id`, `is_view_from`, `is_view_to`, `date_time`) VALUES
-(1, '<p>prueba envio mensaje de administrador a martha</p>', 1, 3, 0, 1, '2017-07-31 18:59:08'),
-(2, '<p>prueba de envio mensaje de admin a martha</p>', 1, 3, 0, 1, '2017-07-31 19:00:28'),
-(3, '<p>{eoif{oiwehoi{foihbf</p>', 1, 6, 0, 1, '2017-08-12 16:15:02');
+(1, '<p>prueba envio mensaje de administrador a martha</p>', 1, 3, 0, 0, '2017-07-31 18:59:08'),
+(2, '<p>prueba de envio mensaje de admin a martha</p>', 1, 3, 0, 0, '2017-07-31 19:00:28'),
+(3, '<p>{eoif{oiwehoi{foihbf</p>', 1, 6, 0, 0, '2017-08-12 16:15:02'),
+(4, '<p>asdasd</p>', 1, 11, 0, 0, '2017-08-23 22:12:10'),
+(5, '<p>asdaaaaaa</p>', 1, 2, 0, 0, '2017-08-23 22:27:50');
 
 -- --------------------------------------------------------
 
@@ -2055,8 +2039,17 @@ CREATE TABLE `rel_contact_category` (
 --
 
 INSERT INTO `rel_contact_category` (`id_rel`, `id_contact`, `id_category`) VALUES
-(1, 8, 8),
-(3, 8, 9);
+(8, 1000, 9),
+(9, 1000, 10),
+(10, 1001, 9),
+(11, 1001, 10),
+(12, 1002, 9),
+(13, 1002, 10),
+(14, 1004, 9),
+(15, 1004, 10),
+(16, 1005, 10),
+(17, 1006, 10),
+(18, 1007, 10);
 
 -- --------------------------------------------------------
 
@@ -2178,218 +2171,216 @@ CREATE TABLE `rel_role_action` (
 --
 
 INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
-(1, 3, 1),
-(2, 3, 4),
-(3, 3, 5),
-(4, 3, 6),
-(5, 3, 7),
-(6, 3, 8),
-(7, 3, 9),
-(8, 3, 10),
-(9, 3, 11),
-(10, 3, 12),
-(11, 3, 13),
-(12, 3, 15),
-(13, 3, 84),
-(14, 3, 105),
-(15, 3, 156),
-(16, 3, 166),
-(17, 3, 167),
-(18, 3, 169),
-(19, 3, 170),
-(20, 3, 171),
-(21, 3, 16),
-(22, 3, 17),
-(23, 3, 18),
-(24, 3, 19),
-(25, 3, 20),
-(26, 3, 107),
-(27, 3, 21),
-(28, 3, 22),
-(29, 3, 155),
-(30, 3, 25),
-(31, 3, 26),
-(32, 3, 27),
-(33, 3, 28),
-(34, 3, 29),
-(35, 3, 106),
-(36, 3, 80),
-(37, 3, 112),
-(38, 3, 113),
-(39, 3, 114),
-(40, 3, 115),
-(41, 3, 116),
-(42, 3, 117),
-(43, 3, 152),
-(44, 3, 146),
-(45, 3, 147),
-(46, 3, 148),
-(47, 3, 149),
-(48, 3, 150),
-(49, 4, 1),
-(50, 4, 4),
-(51, 4, 5),
-(52, 4, 6),
-(53, 4, 7),
-(54, 4, 8),
-(55, 4, 9),
-(56, 4, 10),
-(57, 4, 11),
-(58, 4, 12),
-(59, 4, 13),
-(60, 4, 15),
-(61, 4, 84),
-(62, 4, 105),
-(63, 4, 156),
-(64, 4, 166),
-(65, 4, 167),
-(66, 4, 169),
-(67, 4, 170),
-(68, 4, 171),
-(69, 4, 14),
-(70, 4, 16),
-(71, 4, 17),
-(72, 4, 18),
-(73, 4, 19),
-(74, 4, 20),
-(75, 4, 107),
-(76, 4, 21),
-(77, 4, 22),
-(78, 4, 23),
-(79, 4, 24),
-(80, 4, 155),
-(81, 4, 173),
-(82, 4, 174),
-(83, 4, 175),
-(84, 4, 25),
-(85, 4, 26),
-(86, 4, 27),
-(87, 4, 28),
-(88, 4, 29),
-(89, 4, 106),
-(90, 4, 30),
-(91, 4, 31),
-(92, 4, 32),
-(93, 4, 33),
-(94, 4, 34),
-(95, 4, 35),
-(96, 4, 36),
-(97, 4, 37),
-(98, 4, 38),
+(1, 4, 63),
+(2, 4, 64),
+(3, 4, 66),
+(4, 4, 65),
+(5, 4, 129),
+(6, 4, 137),
+(7, 4, 132),
+(8, 4, 138),
+(9, 4, 130),
+(10, 4, 133),
+(11, 4, 134),
+(12, 4, 135),
+(13, 4, 136),
+(14, 4, 131),
+(15, 4, 1),
+(16, 4, 55),
+(17, 4, 56),
+(18, 4, 57),
+(19, 4, 71),
+(20, 4, 72),
+(21, 4, 74),
+(22, 4, 73),
+(23, 4, 161),
+(24, 4, 162),
+(25, 4, 172),
+(26, 4, 164),
+(27, 4, 163),
+(28, 4, 165),
+(29, 4, 4),
+(30, 4, 5),
+(31, 4, 9),
+(32, 4, 11),
+(33, 4, 105),
+(34, 4, 59),
+(35, 4, 171),
+(36, 4, 166),
+(37, 4, 169),
+(38, 4, 6),
+(39, 4, 8),
+(40, 4, 84),
+(41, 4, 156),
+(42, 4, 13),
+(43, 4, 10),
+(44, 4, 12),
+(45, 4, 7),
+(46, 4, 170),
+(47, 4, 167),
+(48, 4, 25),
+(49, 4, 26),
+(50, 4, 106),
+(51, 4, 28),
+(52, 4, 27),
+(53, 4, 29),
+(54, 4, 32),
+(55, 4, 33),
+(56, 4, 35),
+(57, 4, 34),
+(58, 4, 36),
+(59, 4, 21),
+(60, 4, 22),
+(61, 4, 175),
+(62, 4, 24),
+(63, 4, 155),
+(64, 4, 23),
+(65, 4, 173),
+(66, 4, 174),
+(67, 4, 67),
+(68, 4, 68),
+(69, 4, 70),
+(70, 4, 69),
+(71, 4, 30),
+(72, 4, 31),
+(73, 4, 46),
+(74, 4, 47),
+(75, 4, 49),
+(76, 4, 48),
+(77, 4, 176),
+(78, 4, 178),
+(79, 4, 180),
+(80, 4, 179),
+(81, 4, 177),
+(82, 4, 181),
+(83, 4, 183),
+(84, 4, 182),
+(85, 4, 118),
+(86, 4, 119),
+(87, 4, 121),
+(88, 4, 120),
+(89, 4, 122),
+(90, 4, 153),
+(91, 4, 37),
+(92, 4, 38),
+(93, 4, 124),
+(94, 4, 123),
+(95, 4, 40),
+(96, 4, 125),
+(97, 4, 127),
+(98, 4, 126),
 (99, 4, 39),
-(100, 4, 40),
-(101, 4, 41),
-(102, 4, 123),
-(103, 4, 124),
-(104, 4, 125),
-(105, 4, 126),
-(106, 4, 127),
-(107, 4, 42),
-(108, 4, 43),
-(109, 4, 44),
-(110, 4, 45),
-(111, 4, 46),
-(112, 4, 47),
-(113, 4, 48),
-(114, 4, 49),
-(115, 4, 50),
-(116, 4, 51),
-(117, 4, 52),
-(118, 4, 53),
-(119, 4, 54),
-(120, 4, 55),
-(121, 4, 56),
-(122, 4, 57),
-(123, 4, 59),
-(124, 4, 60),
-(125, 4, 61),
-(126, 4, 62),
-(127, 4, 63),
-(128, 4, 64),
-(129, 4, 65),
-(130, 4, 66),
-(131, 4, 67),
-(132, 4, 68),
-(133, 4, 69),
-(134, 4, 70),
-(135, 4, 71),
-(136, 4, 72),
-(137, 4, 73),
-(138, 4, 74),
-(139, 4, 75),
-(140, 4, 76),
-(141, 4, 77),
-(142, 4, 78),
-(143, 4, 79),
-(144, 4, 80),
-(145, 4, 81),
-(146, 4, 82),
-(147, 4, 83),
-(148, 4, 108),
-(149, 4, 109),
-(150, 4, 110),
-(151, 4, 112),
-(152, 4, 113),
-(153, 4, 114),
-(154, 4, 115),
-(155, 4, 116),
-(156, 4, 117),
-(157, 4, 152),
-(158, 4, 118),
-(159, 4, 119),
-(160, 4, 120),
-(161, 4, 121),
-(162, 4, 122),
-(163, 4, 153),
-(164, 4, 129),
-(165, 4, 130),
-(166, 4, 131),
-(167, 4, 132),
-(168, 4, 133),
-(169, 4, 134),
-(170, 4, 135),
-(171, 4, 136),
-(172, 4, 137),
-(173, 4, 138),
-(174, 4, 139),
-(175, 4, 140),
-(176, 4, 141),
-(177, 4, 142),
-(178, 4, 143),
-(179, 4, 144),
-(180, 4, 145),
-(181, 4, 146),
-(182, 4, 147),
-(183, 4, 148),
-(184, 4, 149),
-(185, 4, 150),
-(186, 4, 157),
-(187, 4, 158),
-(188, 4, 159),
-(189, 4, 160),
-(190, 4, 161),
-(191, 4, 162),
-(192, 4, 163),
-(193, 4, 164),
-(194, 4, 165),
-(195, 4, 172),
-(196, 4, 176),
-(197, 4, 178),
-(198, 4, 179),
-(199, 4, 180),
-(200, 4, 177),
-(201, 4, 181),
-(202, 4, 182),
-(203, 4, 183),
-(204, 5, 1),
-(205, 5, 21),
-(206, 5, 22),
-(207, 5, 23),
-(208, 5, 24),
-(209, 5, 155),
-(210, 5, 173),
-(211, 5, 174),
-(212, 5, 175);
+(100, 4, 41),
+(101, 4, 143),
+(102, 4, 144),
+(103, 4, 145),
+(104, 4, 108),
+(105, 4, 109),
+(106, 4, 110),
+(107, 4, 81),
+(108, 4, 83),
+(109, 4, 82),
+(110, 4, 139),
+(111, 4, 140),
+(112, 4, 142),
+(113, 4, 141),
+(114, 4, 51),
+(115, 4, 52),
+(116, 4, 54),
+(117, 4, 53),
+(118, 4, 15),
+(119, 4, 146),
+(120, 4, 147),
+(121, 4, 149),
+(122, 4, 148),
+(123, 4, 150),
+(124, 4, 80),
+(125, 4, 75),
+(126, 4, 76),
+(127, 4, 78),
+(128, 4, 77),
+(129, 4, 50),
+(130, 4, 14),
+(131, 4, 79),
+(132, 4, 112),
+(133, 4, 113),
+(134, 4, 117),
+(135, 4, 116),
+(136, 4, 114),
+(137, 4, 152),
+(138, 4, 115),
+(139, 4, 157),
+(140, 4, 158),
+(141, 4, 160),
+(142, 4, 159),
+(143, 4, 16),
+(144, 4, 17),
+(145, 4, 20),
+(146, 4, 18),
+(147, 4, 107),
+(148, 4, 19),
+(149, 4, 42),
+(150, 4, 43),
+(151, 4, 45),
+(152, 4, 44),
+(153, 3, 1),
+(154, 3, 4),
+(155, 3, 5),
+(156, 3, 9),
+(157, 3, 11),
+(158, 3, 105),
+(159, 3, 171),
+(160, 3, 166),
+(161, 3, 169),
+(162, 3, 6),
+(163, 3, 8),
+(164, 3, 84),
+(165, 3, 156),
+(166, 3, 13),
+(167, 3, 10),
+(168, 3, 12),
+(169, 3, 7),
+(170, 3, 170),
+(171, 3, 167),
+(172, 3, 25),
+(173, 3, 26),
+(174, 3, 106),
+(175, 3, 28),
+(176, 3, 27),
+(177, 3, 29),
+(178, 3, 21),
+(179, 3, 22),
+(180, 3, 155),
+(181, 3, 15),
+(182, 3, 111),
+(183, 3, 146),
+(184, 3, 147),
+(185, 3, 149),
+(186, 3, 148),
+(187, 3, 150),
+(188, 3, 80),
+(189, 3, 112),
+(190, 3, 113),
+(191, 3, 117),
+(192, 3, 116),
+(193, 3, 114),
+(194, 3, 152),
+(195, 3, 115),
+(196, 3, 16),
+(197, 3, 17),
+(198, 3, 20),
+(199, 3, 18),
+(200, 3, 107),
+(201, 3, 19),
+(202, 5, 1),
+(203, 5, 21),
+(204, 5, 22),
+(205, 5, 175),
+(206, 5, 24),
+(207, 5, 155),
+(208, 5, 23),
+(209, 5, 173),
+(210, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2562,7 +2553,8 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', '', 1, 0, '', 1, 3, 0, '0000-00-00', '', 1),
 (8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', '', 5, 0, '', 1, 1, 0, '0000-00-00', '', 1),
 (9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', '', 3, 0, '', 1, 1, 0, '0000-00-00', '', 1),
-(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 22, '0000-00-00', '', 1);
+(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 22, '0000-00-00', '', 1),
+(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, 0, '2017-08-09', '', 1);
 
 -- --------------------------------------------------------
 
@@ -3064,7 +3056,7 @@ ALTER TABLE `loc_categories`
 -- AUTO_INCREMENT for table `message`
 --
 ALTER TABLE `message`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `months`
 --
@@ -3099,7 +3091,7 @@ ALTER TABLE `rel_case_study_attachments`
 -- AUTO_INCREMENT for table `rel_contact_category`
 --
 ALTER TABLE `rel_contact_category`
-  MODIFY `id_rel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_rel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT for table `rel_department_designation`
 --
@@ -3119,7 +3111,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT for table `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=213;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=211;
 --
 -- AUTO_INCREMENT for table `settings`
 --
@@ -3149,7 +3141,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `user_role`
 --

@@ -12,7 +12,7 @@ function areyousure()
         </h1>
         <ol class="breadcrumb">
             <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard')?></a></li>
-            <li class="active"><?php echo lang('tasks')?></li>
+            <li class="active"><?php echo lang('Tasks')?></li>
         </ol>
 </section>
 
@@ -34,7 +34,7 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('tasks')?></h3>                                    
+                    <h3 class="box-title"><?php echo lang('Tasks')?></h3>                                    
                 </div><!-- /.box-header -->
 				
                 <div class="box-body table-responsive" style="margin-top:40px;">
