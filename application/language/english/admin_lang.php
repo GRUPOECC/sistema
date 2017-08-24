@@ -518,4 +518,7 @@ $lang['titleMessage'] = "Inbox";
 $lang['sendMessage'] = "Send Message";
 $lang['writeMessage'] = "Write Message";
 $lang['ofresult'] = " of ";
+$lang['show'] = "Show";
+$lang['entries'] = "entries";
+
 

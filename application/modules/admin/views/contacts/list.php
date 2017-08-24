@@ -177,9 +177,19 @@ function areyousure()
                    <div id="modo-cuadricula" style="display: none;">
                           <div class="row">
                              <div class=" col-md-12">
+                               <div style="position:absolute; z-index: 2;  margin-top: 0px;">
+                                 <?php echo lang('show'); ?> 
+                                 <select id="mostrarregistros" onchange="cambiomuestra()" style="width: 80px;">
+                                   <option value="9">9</option>
+                                   <option value="36">36</option>
+                                   <option value="54">54</option>
+                                   <option value="90">90</option>
+                                 </select>
+                                 <?php echo lang('entries'); ?> 
+                               </div>
                                <div>
                                    <p align="right"><?php echo lang('search'); ?>: <input type="text" size="30" id="search" name="buscar" autofocus></p>
-                               </div>
+                               </div>    
                              </div>
 
                           </div>

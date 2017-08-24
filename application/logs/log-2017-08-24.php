@@ -21358,3 +21358,1758 @@ ERROR - 24-08-2017 14:57:20 --> Severity: Notice  --> Trying to get property of 
 DEBUG - 24-08-2017 14:57:20 --> File loaded: application/modules/admin/views/contacts/vista.php
 DEBUG - 24-08-2017 14:57:20 --> Final output sent to browser
 DEBUG - 24-08-2017 14:57:20 --> Total execution time: 0.2939
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:15:26 --> Model Class Initialized
+ERROR - 24-08-2017 15:15:26 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:15:26 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:15:26 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:15:26 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:15:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:15:26 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:15:26 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:15:26 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:15:26 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:15:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:15:26 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:15:27 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:15:27 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:15:27 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:15:27 --> Final output sent to browser
+DEBUG - 24-08-2017 15:15:27 --> Total execution time: 1.4600
+DEBUG - 24-08-2017 15:15:29 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:15:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:29 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:15:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:15:29 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:15:29 --> Model Class Initialized
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:15:29 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:15:29 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:15:29 --> Final output sent to browser
+DEBUG - 24-08-2017 15:15:29 --> Total execution time: 0.2715
+DEBUG - 24-08-2017 15:16:12 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:16:12 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:12 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:16:12 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:16:12 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:13 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:16:13 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:13 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:16:13 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:13 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:16:13 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:13 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:16:13 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:13 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:16:13 --> Model Class Initialized
+ERROR - 24-08-2017 15:16:13 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:16:13 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:16:13 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:16:13 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:16:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:16:13 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:16:13 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:16:13 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:16:13 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:16:13 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:16:13 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:16:14 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:16:14 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:16:14 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:16:14 --> Final output sent to browser
+DEBUG - 24-08-2017 15:16:14 --> Total execution time: 1.4668
+DEBUG - 24-08-2017 15:16:15 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:16:15 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:15 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:16:15 --> Model Class Initialized
+DEBUG - 24-08-2017 15:16:15 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:16:15 --> Model Class Initialized
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:16:15 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:16:15 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:16:15 --> Final output sent to browser
+DEBUG - 24-08-2017 15:16:15 --> Total execution time: 0.2236
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:17:41 --> Model Class Initialized
+ERROR - 24-08-2017 15:17:41 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:17:41 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:17:41 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:17:41 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:17:41 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:17:41 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:17:41 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:17:41 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:17:41 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:17:41 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:17:41 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:17:43 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:17:43 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:17:43 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:17:43 --> Final output sent to browser
+DEBUG - 24-08-2017 15:17:43 --> Total execution time: 1.5078
+DEBUG - 24-08-2017 15:17:44 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:17:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:44 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:17:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:17:44 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:17:44 --> Model Class Initialized
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:17:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:17:44 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:17:44 --> Final output sent to browser
+DEBUG - 24-08-2017 15:17:44 --> Total execution time: 0.2725
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:18:29 --> Model Class Initialized
+ERROR - 24-08-2017 15:18:29 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:18:29 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:18:29 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:18:29 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:18:29 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:18:29 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:18:29 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:18:29 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:18:29 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:18:29 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:18:29 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:18:30 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:18:30 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:18:30 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:18:30 --> Final output sent to browser
+DEBUG - 24-08-2017 15:18:30 --> Total execution time: 1.4639
+DEBUG - 24-08-2017 15:18:31 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:18:31 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:31 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:18:31 --> Model Class Initialized
+DEBUG - 24-08-2017 15:18:32 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:18:32 --> Model Class Initialized
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:18:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:18:32 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:18:32 --> Final output sent to browser
+DEBUG - 24-08-2017 15:18:32 --> Total execution time: 0.3330
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:29:22 --> Model Class Initialized
+ERROR - 24-08-2017 15:29:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:29:22 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:29:22 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:29:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:29:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:29:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:29:22 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:29:22 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:29:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:29:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:29:22 --> File loaded: application/modules/admin/views/template/header.php
+ERROR - 24-08-2017 15:29:23 --> Could not find the language line "show"
+DEBUG - 24-08-2017 15:29:23 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:29:23 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:29:23 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:29:23 --> Final output sent to browser
+DEBUG - 24-08-2017 15:29:23 --> Total execution time: 1.5439
+DEBUG - 24-08-2017 15:29:24 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:29:24 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:24 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:29:24 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:24 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:29:24 --> Model Class Initialized
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:29:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:29:24 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:29:24 --> Final output sent to browser
+DEBUG - 24-08-2017 15:29:24 --> Total execution time: 0.2080
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:29:26 --> Model Class Initialized
+ERROR - 24-08-2017 15:29:26 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:29:26 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:29:26 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:29:26 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:29:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:29:26 --> Could not find the language line "messages"
+ERROR - 24-08-2017 15:29:26 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:29:26 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:29:26 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:29:26 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:29:26 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:29:26 --> File loaded: application/modules/admin/views/template/header.php
+ERROR - 24-08-2017 15:29:27 --> Could not find the language line "show"
+DEBUG - 24-08-2017 15:29:28 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:29:28 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:29:28 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:29:28 --> Final output sent to browser
+DEBUG - 24-08-2017 15:29:28 --> Total execution time: 1.5654
+DEBUG - 24-08-2017 15:29:28 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:29:28 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:28 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:29:28 --> Model Class Initialized
+DEBUG - 24-08-2017 15:29:28 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:29:28 --> Model Class Initialized
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:29:28 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:29:28 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:29:28 --> Final output sent to browser
+DEBUG - 24-08-2017 15:29:28 --> Total execution time: 0.2510
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:35:16 --> Model Class Initialized
+ERROR - 24-08-2017 15:35:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:35:16 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:35:16 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:35:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:35:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:35:16 --> Could not find the language line "messages"
+ERROR - 24-08-2017 15:35:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:35:16 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:35:16 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:35:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:35:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:35:16 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:35:18 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:35:18 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:35:18 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:35:18 --> Final output sent to browser
+DEBUG - 24-08-2017 15:35:18 --> Total execution time: 1.5967
+DEBUG - 24-08-2017 15:35:19 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:35:19 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:19 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:35:19 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:19 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:35:19 --> Model Class Initialized
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:35:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:35:19 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:35:19 --> Final output sent to browser
+DEBUG - 24-08-2017 15:35:19 --> Total execution time: 0.2910
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:35:50 --> Model Class Initialized
+ERROR - 24-08-2017 15:35:50 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:35:50 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:35:50 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:35:50 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:35:50 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:35:50 --> Could not find the language line "messages"
+ERROR - 24-08-2017 15:35:50 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:35:50 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:35:50 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:35:50 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:35:50 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:35:50 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:35:51 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:35:51 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:35:51 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:35:51 --> Final output sent to browser
+DEBUG - 24-08-2017 15:35:51 --> Total execution time: 1.4688
+DEBUG - 24-08-2017 15:35:52 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:35:52 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:52 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:35:52 --> Model Class Initialized
+DEBUG - 24-08-2017 15:35:52 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:35:52 --> Model Class Initialized
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:35:52 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:35:52 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:35:52 --> Final output sent to browser
+DEBUG - 24-08-2017 15:35:52 --> Total execution time: 0.3066
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:36:08 --> Model Class Initialized
+ERROR - 24-08-2017 15:36:08 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:36:08 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:36:08 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:36:08 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:36:08 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:36:08 --> Could not find the language line "messages"
+ERROR - 24-08-2017 15:36:08 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:36:08 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:36:08 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:36:08 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:36:08 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:36:08 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:36:09 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:36:09 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:36:09 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:36:09 --> Final output sent to browser
+DEBUG - 24-08-2017 15:36:09 --> Total execution time: 1.4746
+DEBUG - 24-08-2017 15:36:11 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:36:11 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:11 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:36:11 --> Model Class Initialized
+DEBUG - 24-08-2017 15:36:11 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:36:11 --> Model Class Initialized
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:36:11 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:36:11 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:36:11 --> Final output sent to browser
+DEBUG - 24-08-2017 15:36:11 --> Total execution time: 0.2598
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:37:16 --> Model Class Initialized
+ERROR - 24-08-2017 15:37:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:37:16 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:37:16 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:37:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:37:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:37:16 --> Could not find the language line "messages"
+ERROR - 24-08-2017 15:37:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:37:16 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:37:16 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:37:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:37:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:37:16 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:37:17 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:37:17 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:37:17 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:37:17 --> Final output sent to browser
+DEBUG - 24-08-2017 15:37:17 --> Total execution time: 1.5010
+DEBUG - 24-08-2017 15:37:18 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:37:18 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:18 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:37:18 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:18 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:37:18 --> Model Class Initialized
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:37:18 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:37:18 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:37:18 --> Final output sent to browser
+DEBUG - 24-08-2017 15:37:18 --> Total execution time: 0.3076
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:37:36 --> Model Class Initialized
+ERROR - 24-08-2017 15:37:36 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:37:36 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:37:36 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:37:36 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:37:36 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:37:36 --> Could not find the language line "messages"
+ERROR - 24-08-2017 15:37:36 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:37:36 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:37:36 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:37:36 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:37:36 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:37:36 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:37:37 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:37:37 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:37:37 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:37:37 --> Final output sent to browser
+DEBUG - 24-08-2017 15:37:37 --> Total execution time: 1.4727
+DEBUG - 24-08-2017 15:37:39 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:37:39 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:39 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:37:39 --> Model Class Initialized
+DEBUG - 24-08-2017 15:37:39 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:37:39 --> Model Class Initialized
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:37:39 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:37:39 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:37:39 --> Final output sent to browser
+DEBUG - 24-08-2017 15:37:39 --> Total execution time: 0.2617
+DEBUG - 24-08-2017 15:38:21 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:38:21 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:21 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:38:21 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:21 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:38:21 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:22 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:38:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:22 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:38:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:22 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:38:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:22 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:38:22 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:22 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:38:22 --> Model Class Initialized
+ERROR - 24-08-2017 15:38:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:38:22 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:38:22 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:38:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:38:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:38:22 --> Could not find the language line "messages"
+ERROR - 24-08-2017 15:38:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:38:22 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:38:22 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:38:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:38:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:38:22 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:38:23 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:38:23 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:38:23 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:38:23 --> Final output sent to browser
+DEBUG - 24-08-2017 15:38:23 --> Total execution time: 1.5420
+DEBUG - 24-08-2017 15:38:25 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:38:25 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:25 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:38:25 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:25 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:38:25 --> Model Class Initialized
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:38:25 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:38:25 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:38:25 --> Final output sent to browser
+DEBUG - 24-08-2017 15:38:25 --> Total execution time: 0.2686
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:38:35 --> Model Class Initialized
+ERROR - 24-08-2017 15:38:35 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:38:35 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:38:35 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:38:35 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:38:35 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:38:35 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:38:35 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:38:35 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:38:35 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:38:35 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:38:35 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:38:36 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:38:36 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:38:36 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:38:36 --> Final output sent to browser
+DEBUG - 24-08-2017 15:38:36 --> Total execution time: 1.5820
+DEBUG - 24-08-2017 15:38:37 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:38:37 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:37 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:38:37 --> Model Class Initialized
+DEBUG - 24-08-2017 15:38:37 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:38:37 --> Model Class Initialized
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:38:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:38:37 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:38:37 --> Final output sent to browser
+DEBUG - 24-08-2017 15:38:37 --> Total execution time: 0.2227
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:39:10 --> Model Class Initialized
+ERROR - 24-08-2017 15:39:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:39:10 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:39:10 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:39:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:39:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:39:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:39:10 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:39:10 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:39:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:39:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:39:10 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:39:12 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:39:12 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:39:12 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:39:12 --> Final output sent to browser
+DEBUG - 24-08-2017 15:39:12 --> Total execution time: 1.4834
+DEBUG - 24-08-2017 15:39:13 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:39:13 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:13 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:39:13 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:13 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:39:13 --> Model Class Initialized
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:39:13 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:39:13 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:39:13 --> Final output sent to browser
+DEBUG - 24-08-2017 15:39:13 --> Total execution time: 0.3115
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:51 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:39:51 --> Model Class Initialized
+ERROR - 24-08-2017 15:39:52 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:39:52 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:39:52 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:39:52 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:39:52 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:39:52 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:39:52 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:39:52 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:39:52 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:39:52 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:39:52 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:39:53 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:39:53 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:39:53 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:39:53 --> Final output sent to browser
+DEBUG - 24-08-2017 15:39:53 --> Total execution time: 1.7686
+DEBUG - 24-08-2017 15:39:54 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:39:54 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:54 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:39:54 --> Model Class Initialized
+DEBUG - 24-08-2017 15:39:54 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:39:54 --> Model Class Initialized
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:39:54 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:39:54 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:39:54 --> Final output sent to browser
+DEBUG - 24-08-2017 15:39:54 --> Total execution time: 0.2383
+DEBUG - 24-08-2017 15:40:05 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:40:05 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:05 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:40:05 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:05 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:40:05 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:06 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:40:06 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:06 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:40:06 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:06 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:40:06 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:06 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:40:06 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:06 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:40:06 --> Model Class Initialized
+ERROR - 24-08-2017 15:40:06 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:40:06 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:40:06 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:40:06 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:40:06 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:40:06 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:40:06 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:40:06 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:40:06 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:40:06 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:40:06 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:40:07 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:40:07 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:40:07 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:40:07 --> Final output sent to browser
+DEBUG - 24-08-2017 15:40:07 --> Total execution time: 1.6621
+DEBUG - 24-08-2017 15:40:08 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:40:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:08 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:40:08 --> Model Class Initialized
+DEBUG - 24-08-2017 15:40:09 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:40:09 --> Model Class Initialized
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:40:09 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:40:09 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:40:09 --> Final output sent to browser
+DEBUG - 24-08-2017 15:40:09 --> Total execution time: 0.3008
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:45:29 --> Model Class Initialized
+ERROR - 24-08-2017 15:45:29 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:45:29 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:45:29 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:45:29 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:45:29 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:45:29 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:45:29 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:45:29 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:45:29 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:45:29 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:45:29 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:45:30 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:45:30 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:45:30 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:45:30 --> Final output sent to browser
+DEBUG - 24-08-2017 15:45:30 --> Total execution time: 1.5186
+DEBUG - 24-08-2017 15:45:32 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:45:32 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:32 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:45:32 --> Model Class Initialized
+DEBUG - 24-08-2017 15:45:32 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:45:32 --> Model Class Initialized
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:45:32 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:45:32 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:45:32 --> Final output sent to browser
+DEBUG - 24-08-2017 15:45:32 --> Total execution time: 0.2627
+DEBUG - 24-08-2017 15:47:43 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:47:43 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:43 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:47:43 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:44 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:47:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:44 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:47:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:44 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:47:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:44 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:47:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:44 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:47:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:44 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:47:44 --> Model Class Initialized
+ERROR - 24-08-2017 15:47:44 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:47:44 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:47:44 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:47:44 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:47:44 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:47:44 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:47:44 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:47:44 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:47:44 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:47:44 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:47:44 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:47:45 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:47:45 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:47:45 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:47:45 --> Final output sent to browser
+DEBUG - 24-08-2017 15:47:45 --> Total execution time: 1.6260
+DEBUG - 24-08-2017 15:47:46 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:47:46 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:46 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:47:46 --> Model Class Initialized
+DEBUG - 24-08-2017 15:47:47 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:47:47 --> Model Class Initialized
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:47:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:47:47 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:47:47 --> Final output sent to browser
+DEBUG - 24-08-2017 15:47:47 --> Total execution time: 0.3291
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:52:04 --> Model Class Initialized
+ERROR - 24-08-2017 15:52:04 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:52:04 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:52:04 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:52:04 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:52:04 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:52:04 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:52:04 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:52:04 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:52:04 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:52:04 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:52:04 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:52:05 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:52:05 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:52:05 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:52:05 --> Final output sent to browser
+DEBUG - 24-08-2017 15:52:05 --> Total execution time: 1.4434
+DEBUG - 24-08-2017 15:52:07 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:52:07 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:07 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:52:07 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:07 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:52:07 --> Model Class Initialized
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:52:07 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:52:07 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:52:07 --> Final output sent to browser
+DEBUG - 24-08-2017 15:52:07 --> Total execution time: 0.2939
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:52:16 --> Model Class Initialized
+ERROR - 24-08-2017 15:52:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:52:16 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:52:16 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:52:16 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:52:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:52:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:52:16 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:52:16 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:52:16 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:52:16 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:52:16 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:52:17 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:52:17 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:52:17 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:52:17 --> Final output sent to browser
+DEBUG - 24-08-2017 15:52:17 --> Total execution time: 1.4590
+DEBUG - 24-08-2017 15:52:18 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:52:18 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:18 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:52:18 --> Model Class Initialized
+DEBUG - 24-08-2017 15:52:19 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:52:19 --> Model Class Initialized
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:52:19 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:52:19 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:52:19 --> Final output sent to browser
+DEBUG - 24-08-2017 15:52:19 --> Total execution time: 0.2559
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:53:35 --> Model Class Initialized
+ERROR - 24-08-2017 15:53:35 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:53:35 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:53:35 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:53:35 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:53:35 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:53:35 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:53:35 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:53:35 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:53:35 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:53:35 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:53:35 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:53:36 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:53:36 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:53:36 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:53:36 --> Final output sent to browser
+DEBUG - 24-08-2017 15:53:36 --> Total execution time: 1.4795
+DEBUG - 24-08-2017 15:53:38 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:53:38 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:38 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:53:38 --> Model Class Initialized
+DEBUG - 24-08-2017 15:53:38 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:53:38 --> Model Class Initialized
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:53:38 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:53:38 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:53:38 --> Final output sent to browser
+DEBUG - 24-08-2017 15:53:38 --> Total execution time: 0.2676
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:55:44 --> Model Class Initialized
+ERROR - 24-08-2017 15:55:44 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:55:44 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:55:44 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:55:44 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:55:44 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:55:44 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:55:44 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:55:44 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:55:44 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:55:44 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:55:44 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:55:46 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:55:46 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:55:46 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:55:46 --> Final output sent to browser
+DEBUG - 24-08-2017 15:55:46 --> Total execution time: 1.4434
+DEBUG - 24-08-2017 15:55:47 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:55:47 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:47 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:55:47 --> Model Class Initialized
+DEBUG - 24-08-2017 15:55:47 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:55:47 --> Model Class Initialized
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:55:47 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:55:47 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:55:47 --> Final output sent to browser
+DEBUG - 24-08-2017 15:55:47 --> Total execution time: 0.3115
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 15:57:57 --> Model Class Initialized
+ERROR - 24-08-2017 15:57:57 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:57:57 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 15:57:57 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 15:57:57 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:57:57 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 15:57:57 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:57:57 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 15:57:57 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 15:57:57 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 15:57:57 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 15:57:57 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 15:57:59 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 15:57:59 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 15:57:59 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 15:57:59 --> Final output sent to browser
+DEBUG - 24-08-2017 15:57:59 --> Total execution time: 1.6514
+DEBUG - 24-08-2017 15:58:00 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 15:58:00 --> Model Class Initialized
+DEBUG - 24-08-2017 15:58:00 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 15:58:00 --> Model Class Initialized
+DEBUG - 24-08-2017 15:58:00 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 15:58:00 --> Model Class Initialized
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 15:58:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 15:58:00 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 15:58:00 --> Final output sent to browser
+DEBUG - 24-08-2017 15:58:00 --> Total execution time: 0.2725
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:02:34 --> Model Class Initialized
+ERROR - 24-08-2017 16:02:34 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:02:34 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:02:34 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:02:34 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:02:34 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:02:34 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:02:34 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:02:34 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:02:34 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:02:34 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:02:34 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:02:35 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:02:35 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:02:35 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:02:35 --> Final output sent to browser
+DEBUG - 24-08-2017 16:02:35 --> Total execution time: 1.6729
+DEBUG - 24-08-2017 16:02:36 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:02:36 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:36 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:02:36 --> Model Class Initialized
+DEBUG - 24-08-2017 16:02:37 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:02:37 --> Model Class Initialized
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:02:37 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:02:37 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:02:37 --> Final output sent to browser
+DEBUG - 24-08-2017 16:02:37 --> Total execution time: 0.2529
+DEBUG - 24-08-2017 16:04:09 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:04:09 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:09 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:04:09 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:10 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:04:10 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:10 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:04:10 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:10 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:04:10 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:10 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:04:10 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:10 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:04:10 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:10 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:04:10 --> Model Class Initialized
+ERROR - 24-08-2017 16:04:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:04:10 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:04:10 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:04:10 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:04:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:04:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:04:10 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:04:10 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:04:10 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:04:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:04:10 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:04:11 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:04:11 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:04:11 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:04:11 --> Final output sent to browser
+DEBUG - 24-08-2017 16:04:11 --> Total execution time: 1.5078
+DEBUG - 24-08-2017 16:04:12 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:04:12 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:12 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:04:12 --> Model Class Initialized
+DEBUG - 24-08-2017 16:04:12 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:04:12 --> Model Class Initialized
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:04:12 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:04:12 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:04:12 --> Final output sent to browser
+DEBUG - 24-08-2017 16:04:12 --> Total execution time: 0.2686
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:06:22 --> Model Class Initialized
+ERROR - 24-08-2017 16:06:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:06:22 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:06:22 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:06:22 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:06:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:06:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:06:22 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:06:22 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:06:22 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:06:22 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:06:22 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:06:23 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:06:23 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:06:23 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:06:23 --> Final output sent to browser
+DEBUG - 24-08-2017 16:06:24 --> Total execution time: 1.4580
+DEBUG - 24-08-2017 16:06:24 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:06:24 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:24 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:06:24 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:24 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:06:24 --> Model Class Initialized
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:06:24 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:06:24 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:06:24 --> Final output sent to browser
+DEBUG - 24-08-2017 16:06:24 --> Total execution time: 0.2451
+DEBUG - 24-08-2017 16:06:39 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:06:39 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:39 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:06:39 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:39 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:06:39 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:40 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:06:40 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:40 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:06:40 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:40 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:06:40 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:40 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:06:40 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:40 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:06:40 --> Model Class Initialized
+ERROR - 24-08-2017 16:06:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:06:40 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:06:40 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:06:40 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:06:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:06:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:06:40 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:06:40 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:06:40 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:06:40 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:06:40 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:06:41 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:06:41 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:06:41 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:06:41 --> Final output sent to browser
+DEBUG - 24-08-2017 16:06:41 --> Total execution time: 1.4570
+DEBUG - 24-08-2017 16:06:42 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:06:42 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:42 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:06:42 --> Model Class Initialized
+DEBUG - 24-08-2017 16:06:42 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:06:42 --> Model Class Initialized
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:06:42 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:06:42 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:06:42 --> Final output sent to browser
+DEBUG - 24-08-2017 16:06:42 --> Total execution time: 0.2900
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:11:54 --> Model Class Initialized
+ERROR - 24-08-2017 16:11:54 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:11:54 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:11:54 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:11:54 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:11:54 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:11:54 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:11:54 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:11:54 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:11:54 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:11:54 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:11:54 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:11:56 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:11:56 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:11:56 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:11:56 --> Final output sent to browser
+DEBUG - 24-08-2017 16:11:56 --> Total execution time: 1.8223
+DEBUG - 24-08-2017 16:11:57 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:11:57 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:57 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:11:57 --> Model Class Initialized
+DEBUG - 24-08-2017 16:11:57 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:11:57 --> Model Class Initialized
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:11:57 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:11:57 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:11:57 --> Final output sent to browser
+DEBUG - 24-08-2017 16:11:57 --> Total execution time: 0.2422
+DEBUG - 24-08-2017 16:16:05 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:16:05 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:05 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:16:06 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:06 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:16:06 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:06 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:16:06 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:06 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:16:06 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:06 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:16:06 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:06 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:16:06 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:06 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:16:06 --> Model Class Initialized
+ERROR - 24-08-2017 16:16:06 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:16:06 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:16:06 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:16:06 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:16:06 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:16:06 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:16:06 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:16:06 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:16:06 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:16:06 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:16:06 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:16:07 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:16:07 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:16:07 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:16:07 --> Final output sent to browser
+DEBUG - 24-08-2017 16:16:07 --> Total execution time: 1.4785
+DEBUG - 24-08-2017 16:16:08 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:16:08 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:08 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:16:08 --> Model Class Initialized
+DEBUG - 24-08-2017 16:16:08 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:16:08 --> Model Class Initialized
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:16:08 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:16:08 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:16:08 --> Final output sent to browser
+DEBUG - 24-08-2017 16:16:08 --> Total execution time: 0.3135
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:17:48 --> Model Class Initialized
+ERROR - 24-08-2017 16:17:48 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:17:48 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:17:48 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:17:48 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:17:48 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:17:48 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:17:48 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:17:48 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:17:48 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:17:48 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:17:48 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:17:50 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:17:50 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:17:50 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:17:50 --> Final output sent to browser
+DEBUG - 24-08-2017 16:17:50 --> Total execution time: 1.9863
+DEBUG - 24-08-2017 16:17:51 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:17:51 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:51 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:17:51 --> Model Class Initialized
+DEBUG - 24-08-2017 16:17:51 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:17:51 --> Model Class Initialized
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:17:51 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:17:51 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:17:51 --> Final output sent to browser
+DEBUG - 24-08-2017 16:17:51 --> Total execution time: 0.3574
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:18:41 --> Model Class Initialized
+ERROR - 24-08-2017 16:18:41 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:18:41 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:18:41 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:18:41 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:18:41 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:18:41 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:18:41 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:18:41 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:18:41 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:18:41 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:18:41 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:18:43 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:18:43 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:18:43 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:18:43 --> Final output sent to browser
+DEBUG - 24-08-2017 16:18:43 --> Total execution time: 2.0586
+DEBUG - 24-08-2017 16:18:44 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:18:44 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:44 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:18:44 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:44 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:18:44 --> Model Class Initialized
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:18:44 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:18:44 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:18:44 --> Final output sent to browser
+DEBUG - 24-08-2017 16:18:44 --> Total execution time: 0.2480
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:18:55 --> Model Class Initialized
+ERROR - 24-08-2017 16:18:55 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:18:55 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:18:55 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:18:55 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:18:55 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:18:55 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:18:55 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:18:55 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:18:55 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:18:55 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:18:55 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:18:56 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:18:56 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:18:56 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:18:56 --> Final output sent to browser
+DEBUG - 24-08-2017 16:18:56 --> Total execution time: 1.5352
+DEBUG - 24-08-2017 16:18:58 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:18:58 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:58 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:18:58 --> Model Class Initialized
+DEBUG - 24-08-2017 16:18:58 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:18:58 --> Model Class Initialized
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:18:58 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:18:58 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:18:58 --> Final output sent to browser
+DEBUG - 24-08-2017 16:18:58 --> Total execution time: 0.3154
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:22:31 --> Model Class Initialized
+ERROR - 24-08-2017 16:22:31 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:22:31 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:22:31 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:22:31 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:22:31 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:22:31 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:22:31 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:22:31 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:22:31 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:22:31 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:22:31 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:22:32 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:22:32 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:22:32 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:22:32 --> Final output sent to browser
+DEBUG - 24-08-2017 16:22:32 --> Total execution time: 1.6641
+DEBUG - 24-08-2017 16:22:34 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:22:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:34 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:22:34 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:34 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:22:34 --> Model Class Initialized
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:22:34 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:22:34 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:22:34 --> Final output sent to browser
+DEBUG - 24-08-2017 16:22:34 --> Total execution time: 0.2607
+DEBUG - 24-08-2017 16:22:57 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:22:57 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:57 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:22:57 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:57 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:22:57 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:58 --> File loaded: application/modules/admin/models/notification_model.php
+DEBUG - 24-08-2017 16:22:58 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:58 --> File loaded: application/modules/admin/models/message_model.php
+DEBUG - 24-08-2017 16:22:58 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:58 --> File loaded: application/modules/admin/models/language_model.php
+DEBUG - 24-08-2017 16:22:58 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:58 --> File loaded: application/modules/admin/models/tasks_model.php
+DEBUG - 24-08-2017 16:22:58 --> Model Class Initialized
+DEBUG - 24-08-2017 16:22:58 --> File loaded: application/modules/admin/models/attendance_model.php
+DEBUG - 24-08-2017 16:22:58 --> Model Class Initialized
+ERROR - 24-08-2017 16:22:58 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:22:58 --> Could not find the language line "task_comming_in_next"
+ERROR - 24-08-2017 16:22:58 --> Severity: Notice  --> Undefined property: stdClass::$task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 329
+ERROR - 24-08-2017 16:22:58 --> Severity: Notice  --> Undefined variable: task_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:22:58 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 334
+ERROR - 24-08-2017 16:22:58 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:22:58 --> Could not find the language line "message_comming_in_next"
+ERROR - 24-08-2017 16:22:58 --> Severity: Notice  --> Undefined property: stdClass::$message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 371
+ERROR - 24-08-2017 16:22:58 --> Severity: Notice  --> Undefined variable: message_alert C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+ERROR - 24-08-2017 16:22:58 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\xampp\htdocs\sistema\application\modules\admin\views\template\header.php 376
+DEBUG - 24-08-2017 16:22:58 --> File loaded: application/modules/admin/views/template/header.php
+DEBUG - 24-08-2017 16:22:59 --> File loaded: application/modules/admin/views/contacts/list.php
+DEBUG - 24-08-2017 16:22:59 --> File loaded: application/modules/admin/views/template/footer2.php
+DEBUG - 24-08-2017 16:22:59 --> File loaded: application/modules/admin/views/template/main2.php
+DEBUG - 24-08-2017 16:22:59 --> Final output sent to browser
+DEBUG - 24-08-2017 16:22:59 --> Total execution time: 1.6250
+DEBUG - 24-08-2017 16:23:00 --> File loaded: application/modules/admin/models/contact_model.php
+DEBUG - 24-08-2017 16:23:00 --> Model Class Initialized
+DEBUG - 24-08-2017 16:23:00 --> File loaded: application/modules/admin/models/custom_field_model.php
+DEBUG - 24-08-2017 16:23:00 --> Model Class Initialized
+DEBUG - 24-08-2017 16:23:00 --> File loaded: application/modules/admin/models/user_role_model.php
+DEBUG - 24-08-2017 16:23:00 --> Model Class Initialized
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 40
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 52
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 62
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 72
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 82
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 93
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 104
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 114
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 124
+ERROR - 24-08-2017 16:23:00 --> Severity: Notice  --> Trying to get property of non-object C:\xampp\htdocs\sistema\application\modules\admin\views\contacts\vista.php 134
+DEBUG - 24-08-2017 16:23:00 --> File loaded: application/modules/admin/views/contacts/vista.php
+DEBUG - 24-08-2017 16:23:00 --> Final output sent to browser
+DEBUG - 24-08-2017 16:23:00 --> Total execution time: 0.2842
