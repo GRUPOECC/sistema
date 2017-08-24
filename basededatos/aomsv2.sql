@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 24, 2017 at 01:21 AM
+-- Generation Time: Aug 24, 2017 at 02:16 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -26,7 +26,7 @@ DELIMITER $$
 --
 -- Functions
 --
-CREATE DEFINER=`root`@`localhost` FUNCTION `F_CONTACT_CATEGORIES` (`contacto` INT(9)) RETURNS VARCHAR(255) CHARSET utf8 BEGIN
+CREATE DEFINER=`root`@`localhost` FUNCTION `F_CONTACT_CATEGORIES` (`contacto` INT(9)) RETURNS VARCHAR(255) CHARSET utf8  DETERMINISTIC BEGIN
 DECLARE  categorias  VARCHAR(255);
 DECLARE auxiliar VARCHAR(255);
 DECLARE idcategoria int(9);
