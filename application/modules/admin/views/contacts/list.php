@@ -230,7 +230,7 @@ function areyousure()
                     <div class="col-md-12">
                        <div class="row">
                        <div class="col-xs-6">
-                       <div id="infoTabla"><?php echo lang('showing');?> FF <?php echo lang('to');?> QQ <?php echo lang('ofresult');?> RR <?php echo lang('result');?></div>
+                       <div id="infoTabla"><?php echo lang('showing');?> FF <?php echo lang('to');?> QQ <?php echo lang('ofresult');?> RR <?php echo lang('entries');?></div>
                        </div>
                        <div class="col-xs-6">
                        <div class="dataTables_paginate paging_bootstrap">
