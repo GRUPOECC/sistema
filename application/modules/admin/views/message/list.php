@@ -3,9 +3,10 @@ $CI = get_instance();
 $CI->load->model('message_model');
 
 ?>	
-
-
+<link href="<?php echo base_url('assets/css/chosen.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url('assets/css/select2.min.css')?>" />
+
 <script type="text/javascript">
 function areyousure()
 {
@@ -30,10 +31,23 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('select_client_to_send_message'); ?></h3>                                    
+                 
+                    <h3 class="box-title" style="width: 100%">
+                    <p>
+                    <?php echo lang('titleMessage'); ?>
+                    </p>
+                    <p align="right">
+                    <?php if(check_user_role(111)==1){?>
+                     <a class="btn bg-olive" data-toggle="modal" data-target="#myModalSend" style="margin-left:10px;" href=""> <i class="fa fa-plus"></i> <?php echo lang('sendMessage');?></a>
+                     <?php } ?>
+                    </p>    
+                    </h3>
+            
+                      
+                                                    
                 </div><!-- /.box-header -->
 				
-                <div class="box-body table-responsive" style="margin-top:40px;">
+                <div class="box-body table-responsive" style="margin-top:0px;">
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
@@ -66,8 +80,9 @@ function areyousure()
 									
                                     <td>
                                         <div class="btn-group">
-										<?php if(check_user_role(111)==1){?>
-                                          <a class="btn btn-primary"  href="<?php echo site_url('admin/message/send/'.$new->id); ?>"><i class="fa fa-eye"></i> View Message Board</a>										<?php } ?>
+										
+                                        <!--<?php if(check_user_role(111)==1){?> -->
+                                          <a class="btn btn-primary"  href="<?php echo site_url('admin/message/send/'.$new->id); ?>"><i class="fa fa-eye"></i> View Message Board</a>										<!-- <?php } ?> -->
                                          
                                         </div>
                                     </td>
@@ -82,13 +97,107 @@ function areyousure()
         </div>
     </div>
 </section>
+<script>
+     function validacion(){
+         var sel = document.getElementById("usuarios");
+    
+         var selectedText = sel.options[sel.selectedIndex].value;
+         alert("You have selected : "+selectedText);
+         return false; 
+     } 
+</script>
 
+<!-- Modal para la Informacion de los contactos  -->
+  <div class="modal fade" id="myModalSend" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        <form id="enviar" method="post" action="<?php echo site_url('admin/message/send/'); ?>" onSubmit="return validacion()">
+        
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><?php echo lang('sendMessage');?></h4>
+        </div>
+       
+        <div style="height: 350px;" class="modal-body">
+         
+        <?php echo lang('select_contact');?>: 
+        <select id ="usuarios[]" name="usuarios[]" style="width: 300px;" multiple="multiple" class="chzn" data-placeholder="Seleccione">
+             <?php foreach ($clients as $new){?>                    
+               <option value="<?php echo $new->id; ?>"><?php echo $new->name; ?></option>
+             <?php }?>
+        </select>
+        <hr>
+            <div style="width: 540px;">
+               <label for="name" style="clear:both;"><?php echo lang('message');?></label>
+               <textarea id="message" name="message" class="form-control redactor"></textarea>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-default"  value="<?php echo lang('sendMessage');?>">
+        </div>
+        </form>
+
+      </div>
+      
+    </div>
+  </div>
+
+<script src="<?php echo base_url('assets/js/jquery-1.11.3.min.js')?>"></script>
+<script src="<?php echo base_url('assets/js/select2.min.js')?>""></script>
+<script src="<?php echo base_url('assets/js/redactor.min.js')?>"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
+
+
 <script type="text/javascript">
+    function enviarMensaje(direccion){
+        
+        var e = document.getElementById("contactos");
+        location.href = direccion + e.options[e.selectedIndex].value;
+     } 
+</script>
+
+<script type="text/javascript">
+    
 $(function() {
-	$('#example1').dataTable({
-	});
+    $('#example1').dataTable({
+    });
 });
+
+
+</script>
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+  //Select2
+  $(".chzn").select2({
+        maximumSelectionLength: 5,
+    placeholder: "Which are two of most productive days of your week"
+    })
+
+   $('.redactor').redactor({
+              // formatting: ['p', 'blockquote', 'h2','img'],
+            minHeight: 200,
+            imageUpload: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/upload_image');?>',
+            fileUpload: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/upload_file');?>',
+            imageGetJson: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/get_images');?>',
+            imageUploadErrorCallback: function(json)
+            {
+                alert(json.error);
+            },
+            fileUploadErrorCallback: function(json)
+            {
+                alert(json.error);
+            }
+      });
+
+});
+
 
 </script>

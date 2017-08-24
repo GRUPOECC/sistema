@@ -42,14 +42,15 @@ class message_model extends CI_Model
 		return $this->db->get('users')->row();
 	}
 	
+	
 	function get_message_by_id($id)
 	{
 		$admin = $this->session->userdata('admin');
-                $this->db->where("(M.to_id = ".$admin['id']." OR M.from_id = ".$id.")");
+                 $this->db->where("(M.to_id = ".$admin['id']." AND M.from_id = ".$id.")");
                     //->or_where('M.from_id',$admin['id']);
-                $this->db->select('M.*,U1.name from_user,U2.name to_user,U1.image');
-                $this->db->join('users U2', 'U2.id = M.to_id', 'LEFT');
-                $this->db->join('users U1', 'U1.id = M.from_id', 'LEFT');
+                 $this->db->select('M.*,U1.name from_user,U2.name to_user,U1.image');
+                 $this->db->join('users U2', 'U2.id = M.to_id', 'LEFT');
+                 $this->db->join('users U1', 'U1.id = M.from_id', 'LEFT');
 		return $this->db->get('message M')->result();
 	}
 	

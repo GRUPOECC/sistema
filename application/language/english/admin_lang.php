@@ -397,7 +397,8 @@ $lang['bank_name']		      	 	= "Bank Name";
 $lang['bank_details_saved']		      	 	= "Bank Details Saved";
 $lang['bank_details_deleted']		      	 	= "Bank Details Deleted";
 
-$lang['tasks']      		 		= "Tasks";
+$lang['tasks']      		 		= "tasks";
+$lang['Tasks']      		 		= "Tasks";
 $lang['my_tasks']      		 		= "My Tasks";
 $lang['comments']      		 		= "Comments";
 $lang['comment']      		 		= "Comment";
@@ -512,3 +513,7 @@ $lang['group']			= "Group";
 $lang['setCategoryGroup']			= "Set Category";
 $lang['contactGroupTitle']			= "Group contacts";
 $lang['titleSelectContact']			= "You should select a contact";
+$lang['titleSelectCategory']			= "You should select a category";
+$lang['titleMessage'] = "Inbox";
+$lang['sendMessage'] = "Send Message";
+$lang['writeMessage'] = "Write Message";

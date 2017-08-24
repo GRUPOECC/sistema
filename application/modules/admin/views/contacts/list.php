@@ -51,7 +51,7 @@ function areyousure()
 
 
 <section class="content">
-    <form id="formulariocontactos" onsubmit="return validar()" action="" method="post">
+    <form id="formulariocontactos" onsubmit="return validar();" action="" method="post">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="col-md3">
@@ -226,14 +226,15 @@ function areyousure()
                        <div class="dataTables_paginate paging_bootstrap">
                        <ul id="pages" class="pagination">
                        <li class="prev">
-                       <a onclick="anterior()" href="javascript:void(null)"><?php echo lang('previous');?></a>
-                       </li>
+                       <a id="linkanterior" onclick="anterior()" href="javascript:void(null)"><?php echo lang('previous');?></a></li>
                        <li id="posicion1" class="active"></li>
                        <li id="posicion2"></li>
                        <li id="posicion3"></li>
                        <li id="posicion4"></li>
                        <li id="posicion5"></li>
-                       <li id="siguiente" class="next"><a onclick="siguiente()" href="javascript:void(null)"><?php echo lang('next');?></a></li></ul></div></div></div>
+                       <li id="siguiente" class="next"><a id="linksiguiente" onclick="siguiente()" href="javascript:void(null)"><?php echo lang('next');?></a>
+                       <a id="linksiguiente2" style="display: none;"  href="javascript:void(null)"><?php echo lang('next');?></a>
+                       </li></ul></div></div></div>
                       
                     </div>
 
@@ -264,13 +265,16 @@ function areyousure()
           <h4 class="modal-title"><?php echo lang('contactGroupTitle');?></h4>  
           <div id="errorcontacto2" class="alert alert-danger">
           <strong>Error: </strong> <?php echo lang('titleSelectContact');?>
-          </div>  
+          </div> 
+          <div id="errorcontacto3" class="alert alert-danger">
+          <strong>Error: </strong> <?php echo lang('titleSelectCategory');?>
+          </div>   
         </div>
         <div class="modal-body"> 
           <p>
               Seleccione las categorías a las que pertenecerán este grupo de contactos:
           </p>  
-                           <select  name="category[]" class="chzn col-md-12" multiple="multiple" >
+                           <select  id="category2" name="category[]" class="chzn col-md-12" multiple="multiple" >    
                                         <?php  foreach($contact_categories as $new) {
                                             $sel = "";
                                             if(set_select('contact_category_id', $new->id)) $sel = "selected='selected'";
@@ -407,9 +411,13 @@ function areyousure()
             "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
             "sSortDescending": ": Activar para ordenar la columna de manera descendente"
         }
-  }
+  },
+  "aaSorting": [[ 1, "asc" ]]
+  
   });
 });
+
+
 </script>
      '; 
 
@@ -440,9 +448,13 @@ function areyousure()
         "sSortAscending":  ": activate to sort column ascending",
         "sSortDescending": ": activate to sort column descending"
     }
-  }
+  },
+  "aaSorting": [[ 1, "asc" ]]
+  
   });
 });
+
+
 </script>
      '; 
   }
@@ -459,7 +471,7 @@ $( document ).ready(function() {
     if (document.getElementById('modo-lista').style.display == "none") 
     document.getElementById('modo-lista').style.display = "block"; 
     document.getElementById('tipo-vista').style.display = "block";
-
+  
 });
 
  var actual = 0; 
@@ -490,6 +502,19 @@ $( document ).ready(function() {
          }  
         else 
           return true; 
+   }
+
+   function validarCategoria(){
+
+        var ddl = document.getElementById("category2");
+        var selectedValue = ddl.options[ddl.selectedIndex].value;
+        if (selectedValue == "blank")
+          {
+            $("#errorcontacto3").css("display", "block");
+            return false; 
+          }else{
+             return true;
+          }
    }
    
    function Agrupar () {
