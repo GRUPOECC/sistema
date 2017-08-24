@@ -83,7 +83,11 @@ class contact_model extends CI_Model
 
 	function get_all()
 	{ 
-			return $this->db->get('v_contactos')->result();
+		  $this->db->from('v_contactos');
+          $this->db->order_by("name", "asc");
+          $query = $this->db->get(); 
+         return $query->result();
+			
 	}
 	
 	function get_contact_by_id($id)

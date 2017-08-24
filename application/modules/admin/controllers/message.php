@@ -22,16 +22,43 @@ class message extends MX_Controller {
 	}	
 	
 	
+
+
 	function send($id=false){
-	
-		$this->message_model->message_is_view_by_admin($id);
-		$data['client']		 = $this->message_model->get_client_by_id($id);
-		$data['messages'] 	 = $this->message_model->get_message_by_id($id);
-		$data['id'] =$id;
+	     if ($id){
+		    $this->message_model->message_is_view_by_admin($id);
+		    $data['client']		 = $this->message_model->get_client_by_id($id);
+		    $data['messages'] 	 = $this->message_model->get_message_by_id($id);
+		    $data['id'] =$id;
+	    }
         $admin = $this->session->userdata('admin');
 		
         if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
+            if ($id==""){
+            	$ids = $_POST['usuarios'];
+            	for ($i=0;$i<count($ids);$i++)    
+                {  
+                	//Almacenando mensaje en base de datos:
+                   $save['from_id'] = $admin['id'];
+				   $save['to_id'] = $ids[$i];
+				   $save['message'] = $this->input->post('message');
+				   $save['is_view_to'] = 1;				   
+			       $this->message_model->save_message($save);
+			       //Enviando por correo electronico: 
+			       $data['client']		 = $this->message_model->get_client_by_id($ids[$i]);
+                   $msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
+				   $params['recipient'] = $data['client']->email;
+				   $params['subject'] 	 = "You Have New Message From :". $admin['name'];
+				   $params['message']   = $msg;
+				   modules::run('admin/fomailer/send_email',$params);
+                }  
+                 $this->session->set_flashdata('message', 'Message Sent');
+				 redirect('admin/message/index/');
+           
+            } else {
+            
+
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('message', 'lang:message', 'required');
 			$this->form_validation->set_message('required', lang('custom_required'));
@@ -44,8 +71,6 @@ class message extends MX_Controller {
 				$save['is_view_to'] = 1;
 				
 				$this->message_model->save_message($save);
-                
-				
 				$msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
 				$params['recipient'] = $data['client']->email;
 				$params['subject'] 	 = "You Have New Message From :". $admin['name'];
@@ -56,6 +81,8 @@ class message extends MX_Controller {
 				redirect('admin/message/send/'.$id);
 				
 			}
+			
+		  }
 		}		
 	
 		$data['page_title'] = lang('send') . lang('message');

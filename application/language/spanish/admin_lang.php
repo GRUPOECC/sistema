@@ -302,7 +302,7 @@ $lang['or']      	 		= "Or";
 
 $lang['select']      	 	= "Select";
 $lang['a']      	 		= "a";
-$lang['to']      	 		= "a";
+$lang['to']      	 		= "al";
 $lang['from']      	 				= "From";
 
 $lang['links']      			 	= "enlaces";
@@ -515,11 +515,19 @@ $lang['total_amount']			= "Importe Total";
 $lang['amount_received']			= "Cantidad recibida";
 $lang['balance_due']			= "Debido Balance";
 $lang['signed_by']			= "firmado por";
-$lang['result']			= "Resultado";
-$lang['showing']			= "Mostrando";
+$lang['result']			= "registros";
+$lang['showing']			= "Mostrando registros del ";
 $lang['group']			= "Agrupar";
 $lang['setCategoryGroup']			= "Asignar Categoria";
 $lang['contactGroupTitle']			= "Agrupar Contactos";
 $lang['titleSelectContact']			= "Debe seleccionar un contacto";
 $lang['titleSelectCategory']			= "Debe seleccionar una contegoria";
+$lang['titleMessage'] = "Bandeja de Entrada"; 
+$lang['sendMessage'] = "Enviar Mensaje"; 
+$lang['writeMessage'] = "Redactar Mensaje"; 
+$lang['ofresult'] = "de un total de ";
+$lang['show'] = "Mostrar";
+$lang['entries'] = "registros";
+
+
 
