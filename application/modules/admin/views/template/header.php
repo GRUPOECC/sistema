@@ -310,11 +310,27 @@ $fourth = $this->uri->segment(4);
                         <li class="dropdown tasks-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <?php echo lang('Tasks'); ?>
+
+                                            <!-- Yellow Task Bubble (All Tasks) -->
+
+
+                                <?php
+                                $my_actions = array();
+                                foreach($actions as $action){
+                                    array_push($my_actions, $action->action); //save all the user's actions
+                                }
+                                //var_dump($my_actions);
                                 
-                                <label class="badge pull-right bg-red">
-                                <?php echo count($my_due_tasks); ?>
-                                <label>
-                                
+                                if (in_array("my_tasks", $my_actions)) {//if the user can see his assigned tasks
+                                    echo "<label class=\"badge pull-right bg-red\">".count($my_due_tasks)."</label>";
+                                }                                
+                                ?>
+                                            <!-- Red Task Bubble (My Tasks) -->
+                                <?php
+                                if (in_array("tasks", $my_actions)) {//if the user can see all the tasks
+                                    echo "<label class=\"badge pull-right bg-yellow\">".count($due_tasks)."</label>";
+                                }                                
+                                ?>
                                 
                                
                                 <?php 
