@@ -25,7 +25,7 @@ class message extends MX_Controller {
 
 
 	function send($id=false){
-	     if ($id){
+	     if ($id!=""){
 		    $this->message_model->message_is_view_by_admin($id);
 		    $data['client']		 = $this->message_model->get_client_by_id($id);
 		    $data['messages'] 	 = $this->message_model->get_message_by_id($id);

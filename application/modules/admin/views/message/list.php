@@ -61,7 +61,18 @@ function areyousure()
 						if(isset($clients)):?>
                         <tbody>
 						
-                            <?php $i=1;foreach ($clients as $new){?>
+                            <?php $i=1;foreach ($clients as $new){
+                                     
+                         $admin = $this->session->userdata('admin');
+
+                         $idusuario = $new->id;
+                         $cuantosrecibo = $CI->db->query("SELECT `M`.*, `U1`.`name` from_user, `U2`.`name` to_user, `U1`.`image` FROM (`message` M) LEFT JOIN `users` U2 ON `U2`.`id` = `M`.`to_id` LEFT JOIN `users` U1 ON `U1`.`id` = `M`.`from_id` WHERE (`M`.`to_id` = ".$admin['id']." AND `M`.`from_id` = ".$idusuario.") OR (`M`.`to_id` = ".$idusuario." AND `M`.`from_id` = ".$admin['id'].")")->result();    
+                          
+                          if (count($cuantosrecibo)>0){                      
+                              ?>
+
+                      
+
                                 <tr class="gc_row">
                                     <td><?php echo $i?></td>
                                     <td><?php echo $new->name?>
@@ -87,7 +98,9 @@ function areyousure()
                                         </div>
                                     </td>
                                 </tr>
-                                <?php $i++;}?>
+                                <?php
+                                  }
+                                 $i++;}?>
                         </tbody>
                         <?php endif;?>
                     </table>

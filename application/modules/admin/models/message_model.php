@@ -31,8 +31,7 @@ class message_model extends CI_Model
 	{
 		$admin = $this->session->userdata('admin');
 		
-					$this->db->where('id !=',$admin['id']);
-					
+					$this->db->where('id !=',$admin['id']);		
 			return $this->db->get('users')->result();
 	}
 	
@@ -46,7 +45,7 @@ class message_model extends CI_Model
 	function get_message_by_id($id)
 	{
 		$admin = $this->session->userdata('admin');
-                 $this->db->where("(M.to_id = ".$admin['id']." AND M.from_id = ".$id.")");
+                 $this->db->where("(M.to_id = ".$admin['id']." AND M.from_id = ".$id.") OR"."(M.to_id = ".$id." AND M.from_id = ".$admin['id'].")");
                     //->or_where('M.from_id',$admin['id']);
                  $this->db->select('M.*,U1.name from_user,U2.name to_user,U1.image');
                  $this->db->join('users U2', 'U2.id = M.to_id', 'LEFT');
@@ -66,6 +65,19 @@ class message_model extends CI_Model
 		return $this->db->get('message M')->result();
 	}
 	
+    function get_message_count_by_user($id)
+	{
+	    $admin = $this->session->userdata('admin');
+        
+        $this->db->where('M.to_id',$admin['id']);
+        $this->db->where('M.from_id',$id);
+        $this->db->select('M.*,U1.name from_user,U2.name to_user,U1.image');
+        $this->db->join('users U2', 'U2.id = M.to_id', 'LEFT');
+        $this->db->join('users U1', 'U1.id = M.from_id', 'LEFT');		 
+		return count($this->db->get('message M')->result());
+	}
+
+
 	function message_is_view_by_user()
 	{
 	    $admin = $this->session->userdata('admin');
