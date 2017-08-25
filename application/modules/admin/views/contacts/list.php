@@ -177,9 +177,19 @@ function areyousure()
                    <div id="modo-cuadricula" style="display: none;">
                           <div class="row">
                              <div class=" col-md-12">
+                               <div style="position:absolute; z-index: 2;  margin-top: 0px;">
+                                 <?php echo lang('show'); ?> 
+                                 <select id="mostrarregistros" onchange="cambiomuestra()" style="width: 80px;">
+                                   <option value="9">9</option>
+                                   <option value="36">36</option>
+                                   <option value="54">54</option>
+                                   <option value="90">90</option>
+                                 </select>
+                                 <?php echo lang('entries'); ?> 
+                               </div>
                                <div>
                                    <p align="right"><?php echo lang('search'); ?>: <input type="text" size="30" id="search" name="buscar" autofocus></p>
-                               </div>
+                               </div>    
                              </div>
 
                           </div>
@@ -220,20 +230,21 @@ function areyousure()
                     <div class="col-md-12">
                        <div class="row">
                        <div class="col-xs-6">
-                       <div id="infoTabla"><?php echo lang('showing');?> FF <?php echo lang('to');?> QQ <?php echo lang('of');?> RR <?php echo lang('result');?></div>
+                       <div id="infoTabla"><?php echo lang('showing');?> FF <?php echo lang('to');?> QQ <?php echo lang('ofresult');?> RR <?php echo lang('entries');?></div>
                        </div>
                        <div class="col-xs-6">
                        <div class="dataTables_paginate paging_bootstrap">
                        <ul id="pages" class="pagination">
                        <li class="prev">
-                       <a onclick="anterior()" href="javascript:void(null)"><?php echo lang('previous');?></a>
-                       </li>
+                       <a id="linkanterior" onclick="anterior()" href="javascript:void(null)"><?php echo lang('previous');?></a></li>
                        <li id="posicion1" class="active"></li>
                        <li id="posicion2"></li>
                        <li id="posicion3"></li>
                        <li id="posicion4"></li>
                        <li id="posicion5"></li>
-                       <li id="siguiente" class="next"><a onclick="siguiente()" href="javascript:void(null)"><?php echo lang('next');?></a></li></ul></div></div></div>
+                       <li id="siguiente" class="next"><a id="linksiguiente" onclick="siguiente()" href="javascript:void(null)"><?php echo lang('next');?></a>
+                       <a id="linksiguiente2" style="display: none;"  href="javascript:void(null)"><?php echo lang('next');?></a>
+                       </li></ul></div></div></div>
                       
                     </div>
 
@@ -379,6 +390,8 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
 
 <?php 
+   //(filtrado de un total de _MAX_ registros)
+   //(filtered from _MAX_ total entries)
  $idioma = lang ('search');
 
   if ($idioma == 'Buscar')  {
@@ -394,7 +407,7 @@ function areyousure()
         "sEmptyTable":    "Ningún dato disponible en esta tabla",
         "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
         "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
-        "sInfoFiltered":  "(filtrado de un total de _MAX_ registros)",
+        "sInfoFiltered":  "",
         "sInfoPostFix":   "",
         "sSearch":        "Buscar:",
         "sUrl":           "",
@@ -410,9 +423,13 @@ function areyousure()
             "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
             "sSortDescending": ": Activar para ordenar la columna de manera descendente"
         }
-  }
+  },
+  "aaSorting": [[ 1, "asc" ]]
+  
   });
 });
+
+
 </script>
      '; 
 
@@ -425,7 +442,7 @@ function areyousure()
     "sEmptyTable":     "No data available in table",
     "sInfo":           "Showing _START_ to _END_ of _TOTAL_ entries",
     "sInfoEmpty":      "Showing 0 to 0 of 0 entries",
-    "sInfoFiltered":   "(filtered from _MAX_ total entries)",
+    "sInfoFiltered":   "",
     "sInfoPostFix":    "",
     "sInfoThousands":  ",",
     "sLengthMenu":     "Show _MENU_ entries",
@@ -443,9 +460,13 @@ function areyousure()
         "sSortAscending":  ": activate to sort column ascending",
         "sSortDescending": ": activate to sort column descending"
     }
-  }
+  },
+  "aaSorting": [[ 1, "asc" ]]
+  
   });
 });
+
+
 </script>
      '; 
   }
@@ -462,7 +483,7 @@ $( document ).ready(function() {
     if (document.getElementById('modo-lista').style.display == "none") 
     document.getElementById('modo-lista').style.display = "block"; 
     document.getElementById('tipo-vista').style.display = "block";
-
+  
 });
 
  var actual = 0; 

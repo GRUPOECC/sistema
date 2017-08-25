@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <button type="submit" class="btn bg-olive btn-block"><?php echo lang('sign_in')?></button>
+                    <button type="submit" class="btn bg-light-blue btn-block"><?php echo lang('sign_in')?></button>
 
                     <p><a href="<?php echo site_url('forgot/forgot_password')?>"><?php echo lang('i_forgot_my_password')?></a></p>
 

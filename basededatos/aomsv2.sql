@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 24, 2017 at 01:21 AM
+-- Generation Time: Aug 25, 2017 at 03:36 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -1759,6 +1759,13 @@ CREATE TABLE `holidays` (
   `date` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `holidays`
+--
+
+INSERT INTO `holidays` (`id`, `name`, `date`) VALUES
+(1, 'dasdas', '2017-08-30');
+
 -- --------------------------------------------------------
 
 --
@@ -1778,7 +1785,7 @@ CREATE TABLE `language` (
 
 INSERT INTO `language` (`id`, `name`, `flag`, `file`) VALUES
 (1, 'french', 'french-flag4.jpeg', 'admin_lang.php'),
-(3, 'spanish', '', 'admin_lang_es.php');
+(3, 'spanish', 'Spain_Flag.png', 'admin_lang_es.php');
 
 -- --------------------------------------------------------
 
@@ -2324,63 +2331,18 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (151, 4, 45),
 (152, 4, 44),
 (153, 3, 1),
-(154, 3, 4),
-(155, 3, 5),
-(156, 3, 9),
-(157, 3, 11),
-(158, 3, 105),
-(159, 3, 171),
-(160, 3, 166),
-(161, 3, 169),
-(162, 3, 6),
-(163, 3, 8),
-(164, 3, 84),
-(165, 3, 156),
-(166, 3, 13),
-(167, 3, 10),
-(168, 3, 12),
-(169, 3, 7),
-(170, 3, 170),
-(171, 3, 167),
-(172, 3, 25),
-(173, 3, 26),
-(174, 3, 106),
-(175, 3, 28),
-(176, 3, 27),
-(177, 3, 29),
-(178, 3, 21),
-(179, 3, 22),
-(180, 3, 155),
-(181, 3, 15),
-(182, 3, 111),
-(183, 3, 146),
-(184, 3, 147),
-(185, 3, 149),
-(186, 3, 148),
-(187, 3, 150),
-(188, 3, 80),
-(189, 3, 112),
-(190, 3, 113),
-(191, 3, 117),
-(192, 3, 116),
-(193, 3, 114),
-(194, 3, 152),
-(195, 3, 115),
-(196, 3, 16),
-(197, 3, 17),
-(198, 3, 20),
-(199, 3, 18),
-(200, 3, 107),
-(201, 3, 19),
-(202, 5, 1),
-(203, 5, 21),
-(204, 5, 22),
-(205, 5, 175),
-(206, 5, 24),
-(207, 5, 155),
-(208, 5, 23),
-(209, 5, 173),
-(210, 5, 174);
+(154, 3, 143),
+(155, 3, 144),
+(156, 3, 145),
+(157, 5, 1),
+(158, 5, 21),
+(159, 5, 22),
+(160, 5, 175),
+(161, 5, 24),
+(162, 5, 155),
+(163, 5, 23),
+(164, 5, 173),
+(165, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2437,9 +2399,10 @@ CREATE TABLE `tasks` (
 
 INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`) VALUES
 (1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4),
-(2, 'tarea creada por salvat asignada a marinella low', '', 1, 1, '2017-08-03', '0', 6),
+(2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6),
 (3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6),
-(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6);
+(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6),
+(5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1);
 
 -- --------------------------------------------------------
 
@@ -2461,7 +2424,8 @@ INSERT INTO `task_assigned` (`user_id`, `task_id`) VALUES
 (3, 4),
 (4, 4),
 (3, 2),
-(6, 2);
+(6, 2),
+(11, 5);
 
 -- --------------------------------------------------------
 
@@ -2582,6 +2546,19 @@ INSERT INTO `user_role` (`id`, `name`, `description`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `v_calendario`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_calendario` (
+`id` int(11) unsigned
+,`name` varchar(255)
+,`due_date` date
+,`TASK` varchar(7)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Stand-in structure for view `v_contactos`
 -- (See below for the actual view)
 --
@@ -2599,6 +2576,15 @@ CREATE TABLE `v_contactos` (
 ,`company` varchar(255)
 ,`department` varchar(255)
 );
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_calendario`
+--
+DROP TABLE IF EXISTS `v_calendario`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS  select `t`.`id` AS `id`,`t`.`name` AS `name`,`t`.`due_date` AS `due_date`,'TASK' AS `TASK` from `tasks` `t` where (`t`.`due_date` >= sysdate()) union select `td`.`id` AS `id`,`td`.`title` AS `title`,`td`.`date` AS `date`,'TO_DO' AS `TO_DO` from `to_do_list` `td` where (`td`.`date` >= sysdate()) union select `h`.`id` AS `id`,`h`.`name` AS `name`,`h`.`date` AS `date`,'HOLIDAY' AS `HOLIDAY` from `holidays` `h` where (`h`.`date` >= sysdate()) union select `ap`.`id` AS `id`,('CITA ' or (`ap`.`title` <> 0)) AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,'CITA' AS `CITA` from `appointments` `ap` where (`ap`.`date_time` >= sysdate()) ;
 
 -- --------------------------------------------------------
 
@@ -3026,7 +3012,7 @@ ALTER TABLE `fees`
 -- AUTO_INCREMENT for table `holidays`
 --
 ALTER TABLE `holidays`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `language`
 --
@@ -3111,7 +3097,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT for table `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=211;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=166;
 --
 -- AUTO_INCREMENT for table `settings`
 --
@@ -3121,7 +3107,7 @@ ALTER TABLE `settings`
 -- AUTO_INCREMENT for table `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 --
 -- AUTO_INCREMENT for table `task_comments`
 --
