@@ -127,7 +127,7 @@ class tasks_model extends CI_Model
 	}
 	
 	
-	function delete($id)//delte user_role
+	function delete($id)//delete user_role
 	{
 			   $this->db->where('id',$id);
 		       $this->db->delete('tasks');
@@ -137,5 +137,10 @@ class tasks_model extends CI_Model
 	{
 			   $this->db->where('task_id',$id);
 		       $this->db->delete('task_assigned');
+	}
+	function get_usuarios_asignados($id){
+		$this->db->where('v.id_tarea',$id);
+		$this->db->select('v.name, v.id_tarea');
+		return $this->db->get('v_tareas_asignadas v')->result();
 	}
 }
