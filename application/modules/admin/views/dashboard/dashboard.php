@@ -21,6 +21,15 @@
    background-color: rgb(245, 105, 84);
    color: white;           /* text color */
 }
+
+.custom2,
+.custom2 div,
+.custom2 span {
+   border-color:  #932ab6;
+   background-color:  #932ab6;
+   color: white;           /* text color */
+}
+
 </style>
 
 <!-- Content Header (Page header) -->
@@ -516,6 +525,8 @@
 									<h2><?php echo lang('events'); ?></h2>
                                     <div class="external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div>
 									<div class="external-event ui-draggable ui-draggable-handle" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative; background-color: rgb(0, 115, 183);"><?php echo lang('appointments'); ?></div>
+                                    <div class="external-event bg-purple ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
+                                    
                                 </div><!-- /.box-body -->
                             </div><!-- /. box -->
                         </div><!-- /.col -->
@@ -858,7 +869,7 @@ $(document).ready(function() {
                 title: '".$task->name."',
                 date: '".date('M d Y 12:00:00', strtotime($task->due_date))."',
                 backgroundColor: '#3c8dbc',
-                className : 'custom',
+                className : 'custom2',
                 editable: false,
                 
                 url:   '".site_url('admin/tasks/view/'.$task->id)."'
@@ -990,7 +1001,7 @@ $(document).ready(function() {
                 title: '".$task->name."',
                 date: '".date('M d Y 12:00:00', strtotime($task->due_date))."',
                 backgroundColor: '#3c8dbc',
-                className : 'custom',
+                className : 'custom2',
                 editable: false,
                 
                 url:   '".site_url('admin/tasks/view/'.$task->id)."'
