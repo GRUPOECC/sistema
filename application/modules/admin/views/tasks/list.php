@@ -41,7 +41,8 @@ function areyousure()
                         <thead>
                             <tr>
                                 <th><?php echo lang('serial_number')?></th>
-								<th><?php echo lang('assigned_to')?></th>
+								<th><?php echo lang('title')?></th>
+                <th><?php echo lang('assigned_to')?></th>
 								<th width="12px;"><?php echo lang('priority')?></th>
                                 <th><?php echo lang('due_date')?></th>
 								<th><?php echo lang('created_by')?></th>
@@ -67,6 +68,7 @@ function areyousure()
 							?>
                                  <tr class="gc_row">
                                     <td><?php echo $new->id?></td>
+                                    <td><?php echo $new->name?></td>
                                     <td><?php foreach ($assigned_users as $key) {
                                           if($key->id == $new->id)
                                             echo $key->name;
@@ -75,7 +77,7 @@ function areyousure()
                                     <td><?php $formato = explode("-", $new->due_date); 
                                               echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];
                                           ?> <?php if($new->due_date<date("Y-m-d") && $new->progress!=100 ){?> <small class='label pull-right bg-red'>Over Due</small> <?php }?></td>
-                                    <td><?php echo $new->name ?> </td>
+                                    <td><?php echo $new->username ?> </td>
 									
                                     <td width="38%">
                                         <div class="btn-group">
