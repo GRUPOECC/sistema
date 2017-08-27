@@ -36,7 +36,6 @@ function areyousure()
                 <div class="box-header">
                     <h3 class="box-title"><?php echo lang('Tasks')?></h3>                                    
                 </div><!-- /.box-header -->
-				
                 <div class="box-body table-responsive" style="margin-top:40px;">
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
@@ -67,8 +66,11 @@ function areyousure()
 							
 							?>
                                  <tr class="gc_row">
-                                    <td><?php echo $i?></td>
-                                    <td><?php echo ucwords($new->name)?></td>
+                                    <td><?php echo $new->id?></td>
+                                    <td><?php foreach ($assigned_users as $key) {
+                                          if($key->id == $new->id)
+                                            echo $key->name;
+                                          }?></td>
                                     <td><?php echo $pr ?></td>
                                     <td><?php $formato = explode("-", $new->due_date); 
                                               echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];

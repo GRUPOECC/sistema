@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 25, 2017 at 03:36 AM
+-- Generation Time: Aug 26, 2017 at 06:10 AM
 -- Server version: 10.1.13-MariaDB
 -- PHP Version: 5.6.23
 
@@ -1716,6 +1716,18 @@ INSERT INTO `documents` (`id`, `title`, `is_case`, `case_id`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `empresas`
+--
+
+CREATE TABLE `empresas` (
+  `id` int(6) UNSIGNED NOT NULL,
+  `nombre` varchar(30) NOT NULL,
+  `parent_id` int(6) UNSIGNED DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `extended_case`
 --
 
@@ -2580,6 +2592,17 @@ CREATE TABLE `v_contactos` (
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `v_tareas_asignadas`
+-- (See below for the actual view)
+--
+CREATE TABLE `v_tareas_asignadas` (
+`id_tarea` int(10) unsigned
+,`name` varchar(255)
+);
+
+-- --------------------------------------------------------
+
+--
 -- Structure for view `v_calendario`
 --
 DROP TABLE IF EXISTS `v_calendario`;
@@ -2594,6 +2617,15 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 DROP TABLE IF EXISTS `v_contactos`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_contactos`  AS  select `c`.`id` AS `id`,`c`.`name` AS `name`,`c`.`contact` AS `contact`,`c`.`email` AS `email`,`c`.`address` AS `address`,`c`.`phone1` AS `phone1`,`c`.`phone2` AS `phone2`,`c`.`phone3` AS `phone3`,`c`.`phone4` AS `phone4`,`F_CONTACT_CATEGORIES`(`c`.`id`) AS `categoria`,`c`.`company` AS `company`,`c`.`department` AS `department` from `contacts` `c` ;
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `v_tareas_asignadas`
+--
+DROP TABLE IF EXISTS `v_tareas_asignadas`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_tareas_asignadas`  AS  select `t`.`id` AS `id_tarea`,`u`.`name` AS `name` from ((`tasks` `t` join `task_assigned` `ta`) join `users` `u`) where ((`t`.`id` = `ta`.`task_id`) and (`u`.`id` = `ta`.`user_id`)) ;
 
 --
 -- Indexes for dumped tables
@@ -2724,6 +2756,13 @@ ALTER TABLE `dept_categories`
 --
 ALTER TABLE `documents`
   ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `empresas`
+--
+ALTER TABLE `empresas`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `parent_id` (`parent_id`);
 
 --
 -- Indexes for table `extended_case`
@@ -2999,6 +3038,11 @@ ALTER TABLE `dept_categories`
 ALTER TABLE `documents`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
+-- AUTO_INCREMENT for table `empresas`
+--
+ALTER TABLE `empresas`
+  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT for table `extended_case`
 --
 ALTER TABLE `extended_case`
@@ -3136,6 +3180,12 @@ ALTER TABLE `user_role`
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `empresas`
+--
+ALTER TABLE `empresas`
+  ADD CONSTRAINT `empresas_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `empresas` (`id`);
 
 --
 -- Constraints for table `rel_contact_category`
