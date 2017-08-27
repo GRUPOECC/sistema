@@ -5,8 +5,8 @@
 .custom,
 .custom div,
 .custom span {
-    border-color: rgb(0, 115, 183);
-	 background-color: rgb(0, 115, 183);
+    border-color: #3c8dbc;
+	 background-color: #3c8dbc;
     
     color: white;           /* text color */
 }
@@ -25,8 +25,8 @@
 .custom2,
 .custom2 div,
 .custom2 span {
-   border-color:  #932ab6;
-   background-color:  #932ab6;
+   border-color:  #f39c12;
+   background-color:  #f39c12;
    color: white;           /* text color */
 }
 
@@ -524,8 +524,8 @@
                                     <!-- THE CALENDAR -->
 									<h2><?php echo lang('events'); ?></h2>
                                     <div class="external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div>
-									<div class="external-event ui-draggable ui-draggable-handle" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative; background-color: rgb(0, 115, 183);"><?php echo lang('appointments'); ?></div>
-                                    <div class="external-event bg-purple ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
+									<div class="external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div>
+                                    <div class="external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
                                     
                                 </div><!-- /.box-body -->
                             </div><!-- /. box -->
@@ -996,6 +996,10 @@ $(document).ready(function() {
 			 }
 
              foreach ($my_tasks_info as $task) {
+
+                if (strlen($task->name) > 34) { //Names of the task will be limited to 34 characters
+                    $task->name = substr($task->name, 34).'...';
+                }
 
                 echo "{
                 title: '".$task->name."',
