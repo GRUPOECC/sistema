@@ -297,6 +297,7 @@ $lang['html']      	 		= "Html";
 $lang['or']      	 		= "Or";
 
 $lang['select']      	 	= "Select";
+$lang['unselect']      	 	= "Unselect";
 $lang['a']      	 		= "a";
 $lang['to']      	 		= "To";
 $lang['from']      	 				= "From";
@@ -520,5 +521,6 @@ $lang['writeMessage'] = "Write Message";
 $lang['ofresult'] = " of ";
 $lang['show'] = "Show";
 $lang['entries'] = "entries";
+$lang['selectAll'] = " / Select All:";
 
 

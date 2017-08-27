@@ -77,7 +77,7 @@ function areyousure()
                 <?php } ?>  
                 <?php if(check_user_role(184)==1){?>
                       <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
-                     <i class="fa fa-caret-square-o-down"></i> <?php echo lang('group');?></a> 
+                     <i class="fa fa-caret-square-o-down"></i><i id="boton_select"> <?php echo lang('select');?></i></a> 
                      <?php } ?>  
                 </div>
             </div>    
@@ -91,7 +91,7 @@ function areyousure()
                 <div class="box-header">
                                                
                 </div> /.box-header -->   
-                <div id="tipo-vista" style="margin-left: 350px; z-index: 2; position: absolute; display: none;">
+                <div id="tipo-vista" style="margin-left: 370px; z-index: 2; position: absolute; display: none;">
                  
                   <p > 
                       <center>                        
@@ -120,7 +120,7 @@ function areyousure()
                 
                         <thead>
                             <tr>
-                                <th></th>
+                                <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>
  								                <th><?php echo lang('name');?></th>
                                 <th><?php echo lang('category');?></th>
                                 <th><?php echo lang('contact_company');?></th>                              
@@ -185,7 +185,12 @@ function areyousure()
                                    <option value="54">54</option>
                                    <option value="90">90</option>
                                  </select>
-                                 <?php echo lang('entries'); ?> 
+                                 <?php echo lang('entries'); ?>
+                                 <div id="panelSelect" style="display: none; top: 0px; width: 200px; left: 200px; position:absolute;"> 
+                                 <?php echo lang('selectAll'); ?> 
+                                 </div>
+                                 <input style="display: none; position: absolute; top:0px; left: 330px; " type="checkbox" id="check_group2[]" name="check_group2[]" onclick="seleccionarTodos2()" value="">
+                                  
                                </div>
                                <div>
                                    <p align="right"><?php echo lang('search'); ?>: <input type="text" size="30" id="search" name="buscar" autofocus></p>
@@ -398,8 +403,8 @@ function areyousure()
      echo '
 
        <script>
-  $(function() {
-  $("#example").dataTable({
+
+  var oTable = $("#example").dataTable({
   "oLanguage": {
         "sProcessing":    "Procesando...",
         "sLengthMenu":    "Mostrar _MENU_ registros",
@@ -424,10 +429,15 @@ function areyousure()
             "sSortDescending": ": Activar para ordenar la columna de manera descendente"
         }
   },
-  "aaSorting": [[ 1, "asc" ]]
+  "aaSorting": [[ 1, "asc" ]],
+  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
+                { "bSearchable": false, "aTargets": [ 0 ] }]
   
   });
-});
+
+
+
+
 
 
 </script>
@@ -461,10 +471,13 @@ function areyousure()
         "sSortDescending": ": activate to sort column descending"
     }
   },
-  "aaSorting": [[ 1, "asc" ]]
+  "aaSorting": [[ 1, "asc" ]],
+  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
+                { "bSearchable": false, "aTargets": [ 0 ] }]
   
   });
 });
+
 
 
 </script>
@@ -483,6 +496,7 @@ $( document ).ready(function() {
     if (document.getElementById('modo-lista').style.display == "none") 
     document.getElementById('modo-lista').style.display = "block"; 
     document.getElementById('tipo-vista').style.display = "block";
+    
   
 });
 
@@ -530,15 +544,63 @@ $( document ).ready(function() {
    }
    
    function Agrupar () {
+
         if (($('input[type=checkbox]').css("display"))=="none"){ 
+          document.getElementById("panelSelect").style.display = "block";
          $('input[type=checkbox]').css("display", "block");
-          
+         var allPages = oTable.fnGetNodes();
+         $('input[type="checkbox"]', allPages).css('display','block');
+         var boton = document.getElementById("boton_select");
+         if (boton.innerHTML == " Seleccionar") {
+            boton.innerHTML = " Deseleccionar"; 
+         } 
+         else if (boton.innerHTML == " Select"){
+            boton.innerHTML = " Unselect";           
+         }   
+          //$('input[type=text]').attr("disabled",true);
+         
        }else 
           {
             $('input[type=checkbox]').css("display", "none");
-             
-          }
+            var allPages = oTable.fnGetNodes();
+            $('input[type="checkbox"]', allPages).css('display','none');
+            var boton = document.getElementById("boton_select");
+            if (boton.innerHTML == " Deseleccionar") 
+              boton.innerHTML = " Seleccionar"; 
+            else if (boton.innerHTML == " Unselect")
+              boton.innerHTML = " Select"; 
+
+           $('input[type="checkbox"]').prop('checked',false);
+           var allPages = oTable.fnGetNodes();
+           $('input[type="checkbox"]', allPages).prop('checked',false);
+           document.getElementById("panelSelect").style.display = "none";
+           // $('input[type=text]').attr("disabled",false); 
+          }    
    }
+  
+
+  function seleccionarTodos(){ 
+   if ($('input[type=checkbox]').prop('checked')) {
+        var allPages = oTable.fnGetNodes();
+        $('input[type="checkbox"]', allPages).prop('checked', true);
+   }else {
+       var allPages = oTable.fnGetNodes();
+        $('input[type="checkbox"]', allPages).prop('checked',false);
+   }
+  }
+
+  function seleccionarTodos2(){ 
+   if ($('input[type=checkbox]').prop('checked')) {
+        $('input[type="checkbox"]').prop('checked',false);
+        
+   }else {
+       $('input[type="checkbox"]').prop('checked',true);
+    
+   }
+  }
+
+ 
+
   
 </script>
 
