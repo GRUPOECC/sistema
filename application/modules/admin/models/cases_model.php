@@ -458,7 +458,7 @@ class cases_model extends CI_Model
 	{				
 				   $this->db->order_by('cod_interno','ASC');	
 //			return $this->db->get('locations')->result();
-			return $this->db->get('loc_categories')->result();
+			return $this->db->get('empresas')->result();
 
 	}
 
