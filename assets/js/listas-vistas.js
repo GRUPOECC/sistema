@@ -42,7 +42,7 @@ function cambioVista() {
          document.getElementById('modo-cuadricula').style.display = "none";
          x=1;
 	} 
-
+ 
 }
 
 function vistaLista(){
