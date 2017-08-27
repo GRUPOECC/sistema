@@ -29,7 +29,7 @@ class tasks extends MX_Controller {
 			$data['assigned_users']=array_merge($data['assigned_users'], $array);
 		$n++;
 		}					
-		$this->load->view('template/main', $data);	
+		$this->load->view('template/main2', $data);	
 
 	}	
 	
