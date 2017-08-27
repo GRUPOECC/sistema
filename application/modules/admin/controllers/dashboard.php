@@ -40,6 +40,7 @@ class dashboard extends MX_Controller {
 		$data['appointment_all'] = $this->dashboard_model->get_appointment_all();
 		$data['leave_types'] = $this->leave_types_model->get_all();
 		//echo '<pre>'; print_r($data['check_today']);die;
+		$data['my_tasks_info'] = $this->tasks_model->get_my_tasks_info();
 		
 		$data['page_title'] = lang('dashboard');
 		$data['body'] = 'dashboard/dashboard';

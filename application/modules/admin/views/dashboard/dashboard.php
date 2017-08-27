@@ -47,7 +47,7 @@
         $admin = $this->session->userdata('admin');
 		$access = $admin['user_role'];
 		if($access==2){
-		?>				
+		?>
 					<div class="row">
 	                    <div class="col-lg-3 col-xs-6">
                             <!-- small box -->
@@ -851,7 +851,20 @@ $(document).ready(function() {
 				url:   '".site_url('admin/appointments/view_appointment/'.$new->id)."'
 				},
 					  ";
-			 }		
+			 }
+
+             foreach ($my_tasks_info as $task) {
+                echo "{
+                title: '".$task->name."',
+                date: '".date('M d Y 12:00:00', strtotime($task->due_date))."',
+                backgroundColor: '#3c8dbc',
+                className : 'custom',
+                editable: false,
+                
+                url:   '".site_url('admin/tasks/view/'.$task->id)."'
+                },
+                      ";                        
+                    }		
 		?>
 		],
                     editable: true,
@@ -969,7 +982,21 @@ $(document).ready(function() {
 				url:   '".site_url('admin/appointments/view_appointment/'.$new->id)."'
 				},
 					  ";
-			 }		
+			 }
+
+             foreach ($my_tasks_info as $task) {
+
+                echo "{
+                title: '".$task->name."',
+                date: '".date('M d Y 12:00:00', strtotime($task->due_date))."',
+                backgroundColor: '#3c8dbc',
+                className : 'custom',
+                editable: false,
+                
+                url:   '".site_url('admin/tasks/view/'.$task->id)."'
+                },
+                      ";                        
+                    }		
 		?>
 		],
                     editable: true,
