@@ -69,10 +69,10 @@ function areyousure()
                      <a class="btn bg-yellow" style="margin-left:10px;" href="<?php echo site_url('admin/contact_category/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_contact_category');?></a>
                      <?php } ?> 
                 <?php if(check_user_role(24)==1){?>
-                      <input class="btn bg-red" style="margin-left:10px;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
+                      <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
                 <?php } ?>   
                 <?php if(check_user_role(23)==1){?>                
-                     <a class="btn bg-yellow" data-toggle="modal" data-target="#myModalData2" style="margin-left:10px;" href="">
+                     <a id="boton_agregarcategorias" class="btn bg-yellow" data-toggle="modal" data-target="#myModalData2" style="margin-left:10px; display: none;" href="">
                      <i class="fa fa-plus"></i> <?php echo lang('setCategoryGroup');?></a> 
                 <?php } ?>  
                 <?php if(check_user_role(184)==1){?>
@@ -446,8 +446,8 @@ function areyousure()
   }else if ($idioma == 'Search') {
           echo '
        <script>
-  $(function() {
-  $("#example").dataTable({
+  
+  var oTable = $("#example").dataTable({
   "oLanguage": {
     "sEmptyTable":     "No data available in table",
     "sInfo":           "Showing _START_ to _END_ of _TOTAL_ entries",
@@ -476,7 +476,7 @@ function areyousure()
                 { "bSearchable": false, "aTargets": [ 0 ] }]
   
   });
-});
+
 
 
 
@@ -544,20 +544,23 @@ $( document ).ready(function() {
    }
    
    function Agrupar () {
-
+         
         if (($('input[type=checkbox]').css("display"))=="none"){ 
           document.getElementById("panelSelect").style.display = "block";
          $('input[type=checkbox]').css("display", "block");
          var allPages = oTable.fnGetNodes();
          $('input[type="checkbox"]', allPages).css('display','block');
-         var boton = document.getElementById("boton_select");
+         var boton = document.getElementById("boton_select");    
          if (boton.innerHTML == " Seleccionar") {
             boton.innerHTML = " Deseleccionar"; 
          } 
          else if (boton.innerHTML == " Select"){
             boton.innerHTML = " Unselect";           
          }   
-          //$('input[type=text]').attr("disabled",true);
+         //Habilito y deshabilito funciones
+          $('input[type=text]').attr("disabled",true);    
+          document.getElementById("boton_agregarcategorias").style.display="initial";
+          document.getElementById("boton_eliminarvarios").style.display="inline";
          
        }else 
           {
@@ -574,7 +577,12 @@ $( document ).ready(function() {
            var allPages = oTable.fnGetNodes();
            $('input[type="checkbox"]', allPages).prop('checked',false);
            document.getElementById("panelSelect").style.display = "none";
-           // $('input[type=text]').attr("disabled",false); 
+           //Habilito y deshabilito funciones
+            $('input[type=text]').attr("disabled",false); 
+            document.getElementById("boton_agregarcategorias").style.display="none";
+            document.getElementById("boton_eliminarvarios").style.display="none";
+            
+            
           }    
    }
   
