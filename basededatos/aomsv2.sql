@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-08-2017 a las 21:43:18
+-- Tiempo de generación: 29-08-2017 a las 01:34:33
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -1770,7 +1770,7 @@ CREATE TABLE `files` (
   `id` int(11) NOT NULL,
   `name` varchar(1000) NOT NULL,
   `location` varchar(1000) NOT NULL,
-  `id_task` int(11) NOT NULL
+  `id_task` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -3072,6 +3072,11 @@ ALTER TABLE `extended_case`
 --
 ALTER TABLE `fees`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `files`
+--
+ALTER TABLE `files`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `holidays`
 --
