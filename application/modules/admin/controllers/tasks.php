@@ -269,6 +269,7 @@ function view($id){
 
 	function delete($id=false){
 		
+		if (is_int($id)){ 
 		if($id){
 			$this->tasks_model->delete($id);
 			$this->tasks_model->delete_assigned_tasks($id);
@@ -279,6 +280,16 @@ function view($id){
 					redirect('admin/tasks');
 				}
 		}
+	   }else{
+          $ids = explode("-",$id);
+          $i=0; 
+          while($i<count($ids)){
+            $this->tasks_model->delete($ids[$i]);
+          	$i++;
+          } 
+           redirect('admin/tasks');  
+
+	   }
 	}	
 	function obtener_usuarios($id){
 		foreach ($this->tasks_model->get_usuarios_asignados($id) as $key ) {

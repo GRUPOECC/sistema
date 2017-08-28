@@ -143,7 +143,8 @@ class tasks_model extends CI_Model
 	
 	function delete($id)//delete user_role
 	{
-			   $this->db->where('id',$id);
+		       $array = array('id' => $id, 'progress !=' => 100);
+			   $this->db->where($array);
 		       $this->db->delete('tasks');
 	}
 	

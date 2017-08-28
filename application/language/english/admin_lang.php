@@ -515,6 +515,7 @@ $lang['setCategoryGroup']			= "Set Category";
 $lang['contactGroupTitle']			= "Group contacts";
 $lang['titleSelectContact']			= "You should select a contact";
 $lang['titleSelectCategory']			= "You should select a category";
+$lang['titleSelectTask']			= "You should select a task";
 $lang['titleMessage'] = "Inbox";
 $lang['sendMessage'] = "Send Message";
 $lang['writeMessage'] = "Write Message";
@@ -522,5 +523,6 @@ $lang['ofresult'] = " of ";
 $lang['show'] = "Show";
 $lang['entries'] = "entries";
 $lang['selectAll'] = " / Select All:";
+$lang['showfinished'] = "Dont Show Task Finished";
 
 

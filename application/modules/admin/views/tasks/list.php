@@ -14,17 +14,43 @@ function areyousure()
             <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard')?></a></li>
             <li class="active"><?php echo lang('Tasks')?></li>
         </ol>
+         <div id="errorcontacto" class="alert alert-danger">
+          <strong>Error: </strong> <?php echo lang('titleSelectTask');?>
+        </div>
 </section>
+
+  <!-- Proceso de eliminacion de varias Tareas -->
+  <?php
+
+     if (isset($_POST["task_check"])){
+      
+        $conjunto = "";
+        $delete = $_POST["task_check"]; 
+        $cantidad = count($delete); 
+       
+         for ($i=0; $i<$cantidad; $i++) {  
+          $del_id = $delete[$i]; 
+          $conjunto = $conjunto . $del_id . "-";
+         } 
+         if (isset($_POST["submit"])) 
+           header('Location: '.site_url('admin/tasks/delete/').'/'.$conjunto);    
+      }
+
+?>
+
 
 <section class="content">
 
-
+        <form id="formulariocontactos" onsubmit="return validar();" action="" method="post">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="btn-group pull-right">
-				<?php if(check_user_role(113)==1){?>	
+				  <?php if(check_user_role(113)==1){?>	
                     <a class="btn btn-default" href="<?php echo site_url('admin/tasks/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
 					<?php } ?>	
+          <?php if(check_user_role(24)==1){?>
+                      <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/tasks'); ?>">
+                <?php } ?>   
           <?php if(check_user_role(184)==1){?>
                       <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
                      <i class="fa fa-caret-square-o-down"></i><i id="boton_select"> <?php echo lang('select');?></i></a> 
@@ -40,6 +66,27 @@ function areyousure()
                 <div class="box-header">
                     <h3 class="box-title"><?php echo lang('Tasks')?></h3>                                    
                 </div><!-- /.box-header -->
+
+
+                <div id="tipo-vista" style="margin-left: 370px; z-index: 2; position: absolute;">                 
+                  <p > 
+                      <center> 
+                    
+                       <a href="javascript:void()" onclick="mostrarTerminados()">
+                       <IMG SRC="<?php echo base_url('assets/img/boton-mostrar.png')?>" WIDTH=178 HEIGHT=36 ALT="Ver Tareas Terminadas">
+                       </a>
+                       <a href="javascript:void()" onclick="ocultarTerminados()">
+                       <IMG SRC="<?php echo base_url('assets/img/boton-ocultar.png')?>" WIDTH=178 HEIGHT=36 ALT="Ocultar Tareas Terminadas">
+                       </IMG>
+                       </a>
+                       
+                     </center>
+                  </p>
+                </div> 
+
+
+
+
                 <div class="box-body table-responsive" style="margin-top:0px;">
                     <table id="example" class="table table-bordered table-striped">
                         <thead>
@@ -71,8 +118,10 @@ function areyousure()
 							}
 							
 							?>
-                                 <tr class="gc_row">
-                                    <td><input style="display: none;" type="checkbox" id="contact_check[]" name="contact_check[]" value="<?php echo $new->id ?>"></td>
+
+
+                                 <tr <?php if($new->progress==100) echo ' id="terminado" ' ?> class="gc_row">
+                                    <td><input style="display: none;" type="checkbox" id="task_check[]" name="task_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $new->id?></td>
                                     <td><?php echo $new->name?></td>
                                     <td><?php foreach ($assigned_users as $key) {
@@ -107,6 +156,8 @@ function areyousure()
 										</div>
                                     </td>
                                 </tr>
+
+
                                 <?php $i++;}?>
                         </tbody>
                         <?php endif;?>
@@ -116,6 +167,7 @@ function areyousure()
             </div><!-- /.box -->
         </div>
     </div>
+    </form>
 </section>
 
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
@@ -172,8 +224,8 @@ function areyousure()
   }else if ($idioma == 'Search') {
           echo '
        <script>
-  $(function() {
-  $("#example").dataTable({
+
+  var oTable = $("#example").dataTable({
   "oLanguage": {
     "sEmptyTable":     "No data available in table",
     "sInfo":           "Showing _START_ to _END_ of _TOTAL_ entries",
@@ -202,8 +254,6 @@ function areyousure()
                 { "bSearchable": false, "aTargets": [ 0 ] }]
   
   });
-});
-
 
 
 </script>
@@ -217,7 +267,7 @@ function areyousure()
 
    function validar(){
         var cont = 0; 
-        var checkboxes = document.getElementsByName("contact_check[]");
+        var checkboxes = document.getElementsByName("task_check[]");
         for (var x=0; x < checkboxes.length; x++) {
             if (checkboxes[x].checked) {
                  cont = cont + 1;
@@ -225,7 +275,7 @@ function areyousure()
         }
        if (cont==0){
             $("#errorcontacto").css("display", "block");
-            $("#errorcontacto2").css("display", "block");
+            //$("#errorcontacto2").css("display", "block");
            return false;
          }  
         else 
@@ -260,6 +310,7 @@ function areyousure()
             boton.innerHTML = " Unselect";           
          }   
           //$('input[type=text]').attr("disabled",true);
+         document.getElementById("boton_eliminarvarios").style.display="inline";
          
        }else 
           {
@@ -274,9 +325,8 @@ function areyousure()
 
            $('input[type="checkbox"]').prop('checked',false);
            var allPages = oTable.fnGetNodes();
-           $('input[type="checkbox"]', allPages).prop('checked',false);
-          
-           // $('input[type=text]').attr("disabled",false); 
+           $('input[type="checkbox"]', allPages).prop('checked',false);          
+            document.getElementById("boton_eliminarvarios").style.display="none";
           }    
    }
   
@@ -301,6 +351,17 @@ function areyousure()
    }
   }
 
+  function mostrarTerminados(){
 
+     $("#terminado").css("display", "");
+     var allPages = oTable.fnGetNodes();
+        $('#terminado', allPages).css("display", "");
+  }
+
+  function ocultarTerminados(){
+     $("#terminado").css("display", "none");
+     var allPages = oTable.fnGetNodes();
+        $('#terminado', allPages).css("display", "none");
+  }
   
 </script>

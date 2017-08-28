@@ -523,6 +523,7 @@ $lang['setCategoryGroup']			= "Asignar Categoria";
 $lang['contactGroupTitle']			= "Agrupar Contactos";
 $lang['titleSelectContact']			= "Debe seleccionar un contacto";
 $lang['titleSelectCategory']			= "Debe seleccionar una contegoria";
+$lang['titleSelectTask']			= "Debe seleccionar una tarea";
 $lang['titleMessage'] = "Bandeja de Entrada"; 
 $lang['sendMessage'] = "Enviar Mensaje"; 
 $lang['writeMessage'] = "Redactar Mensaje"; 
@@ -530,6 +531,8 @@ $lang['ofresult'] = "de un total de ";
 $lang['show'] = "Mostrar";
 $lang['entries'] = "registros";
 $lang['selectAll'] = " / Seleccionar Todos:";
+$lang['showfinished'] = "No Mostrar Tareas Terminadas";
+
 
 
 
