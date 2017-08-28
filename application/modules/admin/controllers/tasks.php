@@ -131,6 +131,38 @@ class tasks extends MX_Controller {
 				$save['created_by'] = $this->session->userdata('admin')['id'];
 			    
 				$task_id = $this->tasks_model->save($save);
+                 // $url =base_url('assets/uploads/tareas/');
+				$target_path ='assets/uploads/tareas/'.$task_id;
+                $carpeta = 'assets/uploads/tareas/'.(string)$task_id;
+                if (!file_exists($carpeta)) {
+                    mkdir($carpeta, 0777, true);
+                }
+
+                
+               	//Guardando registros de archivos adjuntos  - Garry Bruno
+                $filesCount = count($_FILES['archivos']['name']);
+                $data = array();
+		        if($this->input->post('name') && !empty($_FILES['archivos']['name'])){	             
+		            $filesCount = count($_FILES['archivos']['name']);
+		            for($i = 0; $i < $filesCount; $i++){
+		                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+		                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+		                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+                       
+		               $uploadPath = 'assets/uploads/tareas/'.(string)$task_id.'/'. basename( $_FILES['userFile']['name']);
+		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
+                                        $savefile['name'] = $_FILES['userFile']['name'];
+                                        $savefile['location'] = $uploadPath; 
+                                        $savefile['id_task'] = $task_id; 
+                                        $this->tasks_model->savefile($savefile);       
+
+                              }                   
+		            }
+		                   
+		        }
+				
 				//echo '<pre>'; print_r($save);die;
 				$save_user_tasks=array();
 			    foreach($this->input->post('employee_id') as $new){
@@ -181,6 +213,7 @@ class tasks extends MX_Controller {
 		//echo '<pre>'; print_r($data['assigned_users']);die;
 		$data['cases'] = $this->cases_model->get_all();
 		$data['task'] = $this->tasks_model->get($id);
+		$data['files'] = $this->tasks_model->get_files($id);
 		$data['id'] = $id;
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
@@ -207,6 +240,34 @@ class tasks extends MX_Controller {
 			    
 				$this->tasks_model->update($save,$id);
 				//echo '<pre>'; print_r($save);die;
+
+                // $url =base_url('assets/uploads/tareas/');
+				$target_path ='assets/uploads/tareas/';
+                
+               	//Guardando registros de archivos adjuntos  - Garry Bruno
+                $filesCount = count($_FILES['archivos']['name']);
+                $data = array();
+		        if($this->input->post('name') && !empty($_FILES['archivos']['name'])){	             
+		            $filesCount = count($_FILES['archivos']['name']);
+		            for($i = 0; $i < $filesCount; $i++){
+		                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+		                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+		                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+                       
+		               $uploadPath = 'assets/uploads/tareas/'.(string)$id.'/'. basename( $_FILES['userFile']['name']);
+		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) { 
+                                        $savefile['name'] = $_FILES['userFile']['name'];
+                                        $savefile['location'] = $uploadPath; 
+                                        $savefile['id_task'] = $id; 
+                                        $this->tasks_model->savefile($savefile);       
+
+                              }                   
+		            }
+		                   
+		        }
+
 				$save_user_tasks=array();
 				$eids  = $this->input->post('employee_id');
 			   if(!empty($eids)){
@@ -260,6 +321,7 @@ function view($id){
 		$data['assigned_users'] = $this->tasks_model->get_assigned_user($id);
 		$data['cases'] = $this->cases_model->get_all();
 		$data['task'] = $this->tasks_model->get($id);
+		$data['files'] = $this->tasks_model->get_files($id);
 	
 		$data['page_title'] = lang('view') . lang('task');
 		$data['body'] = 'tasks/view';

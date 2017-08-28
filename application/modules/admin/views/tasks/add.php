@@ -138,6 +138,15 @@
 									</div>
                             </div>
                         </div>
+             <!--Adjuntar Archivos -->
+            <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" style="clear:both;"><?php echo lang('upload');?></label>
+                                    <input type="file" multiple="true" name="archivos[]" id="archivos[]" />
+                                </div>
+                            </div>
+            </div>
 						
 						
 						<?php 
@@ -270,7 +279,7 @@
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary"><?php echo lang('save')?></button>
+                        <button id="fileSubmit" name="fileSubmit" type="submit" class="btn btn-primary"><?php echo lang('save')?></button>
                     </div>
              <?php form_close()?>
             </div><!-- /.box -->

@@ -43,6 +43,7 @@ $lang['contact_company']      	 = "Compañía/Empresa";
 //Sidebar
 $lang['dashboard']      	 = "Dasbhoard";
 $lang['file']      	 = "Archivo";
+$lang['files']      	 = "Archivos";
 $lang['my_cases']      	 = "Mis Tickets";
 $lang['cases']      	 = "Tickets";
 $lang['loc']      	 = "Locacion";
@@ -532,6 +533,7 @@ $lang['show'] = "Mostrar";
 $lang['entries'] = "registros";
 $lang['selectAll'] = " / Seleccionar Todos:";
 $lang['showfinished'] = "No Mostrar Tareas Terminadas";
+$lang['upload'] = "Adjuntar archivos";
 
 
 

@@ -143,6 +143,17 @@
 									</div>
                             </div>
                         </div>
+
+
+                         <!--Adjuntar Archivos -->
+                       <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" style="clear:both;"><?php echo lang('upload');?></label>
+                                    <input type="file" multiple="true" name="archivos[]" id="archivos[]" />
+                                </div>
+                            </div>
+                        </div>
 						
 						<?php 
 					$CI = get_instance();

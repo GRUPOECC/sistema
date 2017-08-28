@@ -21,8 +21,16 @@ class tasks_model extends CI_Model
 	function save($save)
 	{
 		$this->db->insert('tasks',$save);
-		return $this->db->insert_id();
+        $id = $this->db->insert_id();  
+		return $id;
 	}
+
+	function savefile($save){
+        $this->db->insert('files',$save);
+        $id = $this->db->insert_id();  
+		return $id;
+
+	} 
 	
 	function save_assigned_tasks($save)
 	{
@@ -107,6 +115,11 @@ class tasks_model extends CI_Model
 				   $this->db->where('T.id',$id);
 			return $this->db->get('tasks T')->row();
 	}
+
+	function get_files($id){
+             $this->db->where('id_task',$id);
+			return $this->db->get('files')->result();
+	}
 	
 	function update($save,$id)
 	{
@@ -143,9 +156,29 @@ class tasks_model extends CI_Model
 	
 	function delete($id)//delete user_role
 	{
+		       //Borra primero en la base de datos
 		       $array = array('id' => $id, 'progress !=' => 100);
 			   $this->db->where($array);
 		       $this->db->delete('tasks');
+		       $this->db->where('id_task',$id);
+		       $this->db->delete('files');
+		       //Borra en los directorios fisicos en disco       
+			    $carpeta = 'assets/uploads/tareas/'.(string)$id;
+				if (file_exists($carpeta)) {
+				$archivos = scandir($carpeta); //hace una lista de archivos del directorio
+				$num = count($archivos); //los cuenta
+				//Los borramos
+				for ($i=0; $i<=$num; $i++) {
+				   if($archivos[$i] == '.' || $archivos[$i] == '..'){
+                       continue;
+                   }else{
+                     unlink ($carpeta.'/'.$archivos[$i]); 
+                   }   
+				}
+				//borramos el directorio
+				rmdir ($carpeta);
+			   }
+
 	}
 	
 	function delete_assigned_tasks($id)//delte user_role

@@ -44,6 +44,7 @@ $lang['add_contact_category']			= "Category";
 //Sidebar
 $lang['dashboard']      	 = "Dasbhoard";
 $lang['file']      	 = "File";
+$lang['files']      	 = "Files";
 $lang['my_cases']      	 = "My Cases";
 $lang['cases']      	 = "Cases";
 $lang['case']      	 = "Case";
@@ -524,5 +525,5 @@ $lang['show'] = "Show";
 $lang['entries'] = "entries";
 $lang['selectAll'] = " / Select All:";
 $lang['showfinished'] = "Dont Show Task Finished";
-
+$lang['upload'] = "Upload Files";
 

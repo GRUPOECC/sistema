@@ -144,6 +144,21 @@
 									</div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-2">
+                                    <label for="email" style="clear:both;"><?php echo lang('files');?></label>
+								</div>
+								<div class="col-md-7">
+									     	<?php 
+														foreach($files as $doc){
+														  echo '<p><a href="'.base_url($doc->location).'">'.$doc->name.'</a></p>';
+														}
+													?>
+									</div>
+                            </div>
+                        </div>
 						
 						
 							<?php 
