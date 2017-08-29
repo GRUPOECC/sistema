@@ -44,7 +44,7 @@ function areyousure()
         <form id="formulariocontactos" onsubmit="return validar();" action="" method="post">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
-                <div class="btn-group pull-right">
+                <div class="btn-group pull-left">
 				  <?php if(check_user_role(113)==1){?>	
                     <a class="btn btn-default" href="<?php echo site_url('admin/tasks/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
 					<?php } ?>	
@@ -64,7 +64,7 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('Tasks')?></h3>                                    
+                                                     
                 </div><!-- /.box-header -->
 
 
@@ -174,7 +174,7 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <?php 
    //(filtrado de un total de _MAX_ registros)
-   //(filtered from _MAX_ total entries)
+
  $idioma = lang ('search');
 
   if ($idioma == 'Buscar')  {
@@ -206,10 +206,7 @@ function areyousure()
             "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
             "sSortDescending": ": Activar para ordenar la columna de manera descendente"
         }
-  },
-  "aaSorting": [[ 1, "asc" ]],
-  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
-                { "bSearchable": false, "aTargets": [ 0 ] }]
+  }
   
   });
 
@@ -248,10 +245,7 @@ function areyousure()
         "sSortAscending":  ": activate to sort column ascending",
         "sSortDescending": ": activate to sort column descending"
     }
-  },
-  "aaSorting": [[ 1, "asc" ]],
-  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
-                { "bSearchable": false, "aTargets": [ 0 ] }]
+  }
   
   });
 
@@ -260,10 +254,10 @@ function areyousure()
      '; 
   }
 
-
 ?>
 
 <script type="text/javascript">
+
 
    function validar(){
         var cont = 0; 

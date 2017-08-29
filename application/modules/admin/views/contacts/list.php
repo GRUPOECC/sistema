@@ -389,8 +389,8 @@ function areyousure()
 
 
 <script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/jquery.dataTables.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
 
