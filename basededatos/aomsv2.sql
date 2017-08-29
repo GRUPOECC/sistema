@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-08-2017 a las 20:21:18
+-- Tiempo de generación: 29-08-2017 a las 22:46:06
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -2557,7 +2557,8 @@ INSERT INTO `user_role` (`id`, `name`, `description`) VALUES
 (2, 'Clients', 'Clients Have Default Permission'),
 (3, 'Usuario Restringido', 'Usuario Restringido'),
 (4, 'Usuario igual q Admin', 'Usuario Con Privilegios'),
-(5, 'Recepcion', '');
+(5, 'Recepcion', ''),
+(6, 'Gerente', 'Jefe de Departamento');
 
 -- --------------------------------------------------------
 
@@ -3179,7 +3180,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `user_role`
 --
 ALTER TABLE `user_role`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- Restricciones para tablas volcadas
 --
