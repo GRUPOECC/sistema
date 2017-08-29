@@ -39,8 +39,9 @@ class tasks_model extends CI_Model
 	}
 	
 	function get_all()
-	{               
+	{               $admin = $this->session->userdata('admin');
 		            $this->db->where('T.removed != 1');
+		            $this->db->where('T.created_by',$admin['id']);
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name username,UR.name role');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
@@ -76,9 +77,11 @@ class tasks_model extends CI_Model
 	
 	function get_my_tasks()
 	{
+		            $admin = $this->session->userdata('admin');
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->where('TA.user_id',$this->session->userdata('admin')['id']);
 					$this->db->where('T.removed != 1');
+					$this->db->where('TA.user_id',$admin['id']);
 					$this->db->select('T.*,U.name name,UR.name role');
 					$this->db->join('task_assigned TA', 'TA.task_id = T.id', 'LEFT');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
@@ -102,6 +105,10 @@ class tasks_model extends CI_Model
 	
 	
 	function get_all_employees(){
+		  $this->db->where('id',$this->session->userdata('admin')['id']);
+		  $query = $this->db->get('users');
+		  $department = $query->row('department_id');	  
+		      $this->db->where('department_id',$department);
 			 $this->db->where('user_role !=2');
 		return $this->db->get('users')->result();
 	}
