@@ -30,6 +30,12 @@
    color: white;           /* text color */
 }
 
+.caption-element {
+    padding: 10px;
+    display: inline-block;
+    width: 105px;
+    margin: 5px 0px 5px 10px;
+}
 </style>
 
 <!-- Content Header (Page header) -->
@@ -523,10 +529,10 @@
                                 <div class="box-body ">
                                     <!-- THE CALENDAR -->
 									<h2><?php echo lang('events'); ?></h2>
-                                    <div class="external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div>
-									<div class="external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div>
-                                    <div class="external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
-                                    
+                                    <div id="caption-cases" class="caption-element external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div>
+                                    <div id="caption-appointments" class="caption-element external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div>
+                                    <div id="caption-tasks" class="caption-element external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
+
                                 </div><!-- /.box-body -->
                             </div><!-- /. box -->
                         </div><!-- /.col -->
@@ -765,6 +771,200 @@ $(document).ready(function() {
 
 <script type="text/javascript">
       $(function() {
+
+        //Date for the calendar events (dummy data)
+        var date = new Date();
+        var d = date.getDate(),
+                m = date.getMonth(),
+                y = date.getFullYear();
+
+
+        //Defining calendar properties once
+        let calendarProperties = {editable: true,
+                    droppable: true, // this allows things to be dropped onto the calendar !!!
+                    // drop: function(date, allDay) { // this function is called when something is dropped
+
+                    //     // retrieve the dropped element's stored Event Object
+                    //     var originalEventObject = $(this).data('eventObject');
+
+                    //     // we need to copy it, so that multiple events don't have a reference to the same object
+                    //     var copiedEventObject = $.extend({}, originalEventObject);
+
+                    //     // assign it the date that was reported
+                    //     copiedEventObject.start = date;
+                    //     copiedEventObject.allDay = allDay;
+                    //     copiedEventObject.backgroundColor = $(this).css("background-color");
+                    //     copiedEventObject.borderColor = $(this).css("border-color");
+
+                    //     // render the event on the calendar
+                    //     // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+                    //     $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+                    //     // is the "remove after drop" checkbox checked?
+                    //     if ($('#drop-remove').is(':checked')) {
+                    //         // if so, remove the element from the "Draggable Events" list
+                    //         $(this).remove();
+                    //     }
+
+                    // }
+                };
+
+
+        <?php 
+        // defining reusable blocks of code to generate the calendar events
+            function print_case($order){
+                echo "{
+                title: '".'#'.$order->case_no."',
+                start: '".date('M d Y 12:00:00', strtotime($order->next_date))."',
+                backgroundColor: '#3c8dbc',
+                className : 'custom1',
+                url:   '".site_url('admin/cases/view_case/'.$order->case_id)."'
+                },
+                      ";
+            }
+
+            function print_appointment($new){
+                echo "{
+                title: '".$new->title."',
+                date: '".date('M d Y 12:00:00', strtotime($new->date_time))."',
+                backgroundColor: '#3c8dbc',
+                className : 'custom',
+                
+                url:   '".site_url('admin/appointments/view_appointment/'.$new->id)."'
+                },
+                      ";
+            }
+
+            function print_tasks($task){
+                if (strlen($task->name) > 34) { //Names of the task will be limited to 34 characters
+                    $task->name = substr($task->name, 34).'...';
+                }
+                echo "{
+                title: '".$task->name."',
+                date: '".date('M d Y 12:00:00', strtotime($task->due_date))."',
+                backgroundColor: '#3c8dbc',
+                className : 'custom2',
+                editable: false,
+                
+                url:   '".site_url('admin/tasks/view/'.$task->id)."'
+                },
+                      ";
+            }
+
+         ?>
+
+
+        $('#caption-cases').on("click",function(){
+            $('#calendar').fullCalendar( 'destroy' );
+
+
+                $('#calendar').fullCalendar({
+                     showAgendaButton: true,
+                columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
+                timeFormat: 'H:mm',
+                axisFormat: 'H:mm',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    },
+                    lang: currentLangCode,
+                    buttonText: {
+                        today: 'today',
+                        month: 'month',
+                        week: 'week',
+                        day: 'day'
+                    },
+
+                    events:[
+                    
+                                <?php  
+                                    foreach($case_all as $order)    
+                                        print_case($order);
+                                ?>
+
+                            ],
+                            calendarProperties
+                                        
+                });
+
+        });
+
+
+
+        $('#caption-appointments').on("click",function(){
+            $('#calendar').fullCalendar( 'destroy' );
+
+
+                $('#calendar').fullCalendar({
+                     showAgendaButton: true,
+                columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
+                timeFormat: 'H:mm',
+                axisFormat: 'H:mm',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    },
+                    lang: currentLangCode,
+                    buttonText: {
+                        today: 'today',
+                        month: 'month',
+                        week: 'week',
+                        day: 'day'
+                    },
+
+                    events:[
+                        
+                                <?php  
+                                     foreach($appointment_all as $new)
+                                        print_appointment($new);    
+                                ?>
+
+                            ],
+                            calendarProperties
+                });
+
+
+        });
+
+
+
+        $('#caption-tasks').on("click",function(){
+            $('#calendar').fullCalendar( 'destroy' );
+
+
+                $('#calendar').fullCalendar({
+                     showAgendaButton: true,
+                columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
+                timeFormat: 'H:mm',
+                axisFormat: 'H:mm',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    },
+                    lang: currentLangCode,
+                    buttonText: {
+                        today: 'today',
+                        month: 'month',
+                        week: 'week',
+                        day: 'day'
+                    },
+
+                    events:[
+                    
+                            <?php  
+                                 foreach ($my_tasks_info as $task)
+                                     print_tasks($task);
+                            ?>
+
+                            ],
+                    calendarProperties
+                });
+
+        });
+
 				
 		var currentLangCode = 'en';
 
@@ -787,36 +987,32 @@ $(document).ready(function() {
 					
 					/* initialize the external events
                  -----------------------------------------------------------------*/
-                function ini_events(ele) {
-                    ele.each(function() {
+                // function ini_events(ele) {
+                //     ele.each(function() {
 
-                        // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-                        // it doesn't need to have a start or end
-                        var eventObject = {
-                            title: $.trim($(this).text()) // use the element's text as the event title
-                        };
+                //         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+                //         // it doesn't need to have a start or end
+                //         var eventObject = {
+                //             title: $.trim($(this).text()) // use the element's text as the event title
+                //         };
 
-                        // store the Event Object in the DOM element so we can get to it later
-                        $(this).data('eventObject', eventObject);
+                //         // store the Event Object in the DOM element so we can get to it later
+                //         $(this).data('eventObject', eventObject);
 
-                        // make the event draggable using jQuery UI
-                        $(this).draggable({
-                            zIndex: 1070,
-                            revert: true, // will cause the event to go back to its
-                            revertDuration: 0  //  original position after the drag
-                        });
+                //         // make the event draggable using jQuery UI
+                //         $(this).draggable({
+                //             zIndex: 1070,
+                //             revert: true, // will cause the event to go back to its
+                //             revertDuration: 0  //  original position after the drag
+                //         });
 
-                    });
-                }
-                ini_events($('#external-events div.external-event'));
+                //     });
+                // }
+                // ini_events($('#external-events div.external-event'));
 
                 /* initialize the calendar
                  -----------------------------------------------------------------*/
-                //Date for the calendar events (dummy data)
-                var date = new Date();
-                var d = date.getDate(),
-                        m = date.getMonth(),
-                        y = date.getFullYear();
+
                 $('#calendar').fullCalendar({
 					 showAgendaButton: true,
                 columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
@@ -834,77 +1030,20 @@ $(document).ready(function() {
                         week: 'week',
                         day: 'day'
                     },
-                    //Random default events
+
                     events:[
 					
-		<?php  
-			foreach($case_all as $order){
-				
-				echo "{
-				title: '".'#'.$order->case_no."',
-				start: '".date('M d Y 12:00:00', strtotime($order->next_date))."',
-				backgroundColor: '#3c8dbc',
-				className : 'custom1',
-				url:   '".site_url('admin/cases/view_case/'.$order->case_id)."'
-				},
-					  ";
-			 }		
-			 
-			 
-			 foreach($appointment_all as $new){
-				
-				echo "{
-				title: '".$new->title."',
-				date: '".date('M d Y 12:00:00', strtotime($new->date_time))."',
-				backgroundColor: '#3c8dbc',
-				className : 'custom',
-				
-				url:   '".site_url('admin/appointments/view_appointment/'.$new->id)."'
-				},
-					  ";
-			 }
+                                <?php  
+                                    foreach($case_all as $order)    
+                                        print_case($order);
+                                    foreach($appointment_all as $new)
+                                        print_appointment($new); 
+                                    foreach ($my_tasks_info as $task)
+                                        print_tasks($task);
+                                ?>
 
-             foreach ($my_tasks_info as $task) {
-                echo "{
-                title: '".$task->name."',
-                date: '".date('M d Y 12:00:00', strtotime($task->due_date))."',
-                backgroundColor: '#3c8dbc',
-                className : 'custom2',
-                editable: false,
-                
-                url:   '".site_url('admin/tasks/view/'.$task->id)."'
-                },
-                      ";                        
-                    }		
-		?>
-		],
-                    editable: true,
-                    droppable: true, // this allows things to be dropped onto the calendar !!!
-                    drop: function(date, allDay) { // this function is called when something is dropped
-
-                        // retrieve the dropped element's stored Event Object
-                        var originalEventObject = $(this).data('eventObject');
-
-                        // we need to copy it, so that multiple events don't have a reference to the same object
-                        var copiedEventObject = $.extend({}, originalEventObject);
-
-                        // assign it the date that was reported
-                        copiedEventObject.start = date;
-                        copiedEventObject.allDay = allDay;
-                        copiedEventObject.backgroundColor = $(this).css("background-color");
-                        copiedEventObject.borderColor = $(this).css("border-color");
-
-                        // render the event on the calendar
-                        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
-                        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
-
-                        // is the "remove after drop" checkbox checked?
-                        if ($('#drop-remove').is(':checked')) {
-                            // if so, remove the element from the "Draggable Events" list
-                            $(this).remove();
-                        }
-
-                    }
+                    		],
+                            calendarProperties
                 });
 				
 				
@@ -918,36 +1057,36 @@ $(document).ready(function() {
 				
                 /* initialize the external events
                  -----------------------------------------------------------------*/
-                function ini_events(ele) {
-                    ele.each(function() {
+                // function ini_events(ele) {
+                //     ele.each(function() {
 
-                        // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-                        // it doesn't need to have a start or end
-                        var eventObject = {
-                            title: $.trim($(this).text()) // use the element's text as the event title
-                        };
+                //         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+                //         // it doesn't need to have a start or end
+                //         var eventObject = {
+                //             title: $.trim($(this).text()) // use the element's text as the event title
+                //         };
 
-                        // store the Event Object in the DOM element so we can get to it later
-                        $(this).data('eventObject', eventObject);
+                //         // store the Event Object in the DOM element so we can get to it later
+                //         $(this).data('eventObject', eventObject);
 
-                        // make the event draggable using jQuery UI
-                        $(this).draggable({
-                            zIndex: 1070,
-                            revert: true, // will cause the event to go back to its
-                            revertDuration: 0  //  original position after the drag
-                        });
+                //         // make the event draggable using jQuery UI
+                //         $(this).draggable({
+                //             zIndex: 1070,
+                //             revert: true, // will cause the event to go back to its
+                //             revertDuration: 0  //  original position after the drag
+                //         });
 
-                    });
-                }
-                ini_events($('#external-events div.external-event'));
+                //     });
+                // }
+                // ini_events($('#external-events div.external-event'));
 
                 /* initialize the calendar
                  -----------------------------------------------------------------*/
                 //Date for the calendar events (dummy data)
-                var date = new Date();
-                var d = date.getDate(),
-                        m = date.getMonth(),
-                        y = date.getFullYear();
+                // var date = new Date();
+                // var d = date.getDate(),
+                //         m = date.getMonth(),
+                //         y = date.getFullYear();
                 $('#calendar').fullCalendar({
 					 showAgendaButton: true,
                 columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
@@ -965,87 +1104,29 @@ $(document).ready(function() {
                         week: 'week',
                         day: 'day'
                     },
-                    //Random default events
+
                     events:[
 					
-		<?php  
-			foreach($case_all as $order){
-				
-				echo "{
-				title: '".'#'.$order->case_no."',
-				start: '".date('M d Y 12:00:00', strtotime($order->next_date))."',
-				backgroundColor: '#3c8dbc',
-				className : 'custom1',
-				url:   '".site_url('admin/cases/view_case/'.$order->case_id)."'
-				},
-					  ";
-			 }		
-			 
-			 
-			 foreach($appointment_all as $new){
-				
-				echo "{
-				title: '".$new->title."',
-				date: '".date('M d Y 12:00:00', strtotime($new->date_time))."',
-				backgroundColor: '#3c8dbc',
-				className : 'custom',
-				
-				url:   '".site_url('admin/appointments/view_appointment/'.$new->id)."'
-				},
-					  ";
-			 }
-
-             foreach ($my_tasks_info as $task) {
-
-                if (strlen($task->name) > 34) { //Names of the task will be limited to 34 characters
-                    $task->name = substr($task->name, 34).'...';
-                }
-
-                echo "{
-                title: '".$task->name."',
-                date: '".date('M d Y 12:00:00', strtotime($task->due_date))."',
-                backgroundColor: '#3c8dbc',
-                className : 'custom2',
-                editable: false,
-                
-                url:   '".site_url('admin/tasks/view/'.$task->id)."'
-                },
-                      ";                        
-                    }		
-		?>
-		],
-                    editable: true,
-                    droppable: true, // this allows things to be dropped onto the calendar !!!
-                    drop: function(date, allDay) { // this function is called when something is dropped
-
-                        // retrieve the dropped element's stored Event Object
-                        var originalEventObject = $(this).data('eventObject');
-
-                        // we need to copy it, so that multiple events don't have a reference to the same object
-                        var copiedEventObject = $.extend({}, originalEventObject);
-
-                        // assign it the date that was reported
-                        copiedEventObject.start = date;
-                        copiedEventObject.allDay = allDay;
-                        copiedEventObject.backgroundColor = $(this).css("background-color");
-                        copiedEventObject.borderColor = $(this).css("border-color");
-
-                        // render the event on the calendar
-                        // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
-                        $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
-
-                        // is the "remove after drop" checkbox checked?
-                        if ($('#drop-remove').is(':checked')) {
-                            // if so, remove the element from the "Draggable Events" list
-                            $(this).remove();
-                        }
-
-                    }
+                        <?php  
+                            foreach($case_all as $order)    
+                                print_case($order);
+                            foreach($appointment_all as $new)
+                                print_appointment($new); 
+                            foreach ($my_tasks_info as $task)
+                                print_tasks($task);
+                        ?>
+                    		
+                    		],
+                    calendarProperties
                 });
 
                 
                
             });
+
+
+
+
 jQuery('.datepicker').datetimepicker({
  timepicker:false,
  format:'Y-m-d'
