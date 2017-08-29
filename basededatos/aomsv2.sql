@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-08-2017 a las 01:34:33
+-- Tiempo de generación: 29-08-2017 a las 17:08:36
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -2416,19 +2416,20 @@ CREATE TABLE `tasks` (
   `priority` int(10) UNSIGNED NOT NULL,
   `due_date` date NOT NULL,
   `progress` varchar(255) NOT NULL,
-  `created_by` int(10) UNSIGNED NOT NULL
+  `created_by` int(10) UNSIGNED NOT NULL,
+  `removed` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tasks`
 --
 
-INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`) VALUES
-(1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4),
-(2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6),
-(3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6),
-(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6),
-(5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1);
+INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`, `removed`) VALUES
+(1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4, 0),
+(2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6, 0),
+(3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6, 0),
+(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6, 0),
+(5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1, 0);
 
 -- --------------------------------------------------------
 
