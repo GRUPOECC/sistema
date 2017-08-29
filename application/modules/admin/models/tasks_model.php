@@ -107,8 +107,10 @@ class tasks_model extends CI_Model
 	function get_all_employees(){
 		  $this->db->where('id',$this->session->userdata('admin')['id']);
 		  $query = $this->db->get('users');
-		  $department = $query->row('department_id');	  
+		  $department = $query->row('department_id');
+		  $empresa = $query->row('empresa_id'); 	  
 		      $this->db->where('department_id',$department);
+		      $this->db->where('empresa_id',$empresa);
 			 $this->db->where('user_role !=2');
 		return $this->db->get('users')->result();
 	}
