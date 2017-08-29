@@ -39,14 +39,32 @@ class tasks_model extends CI_Model
 	}
 	
 	function get_all()
-	{               $admin = $this->session->userdata('admin');
+	{            
+            
+          $this->db->where('id',$this->session->userdata('admin')['id']);
+		  $query = $this->db->get('users');
+		  $rol = $query->row('user_role');
+		  $department = $query->row('department_id');
+	 	
+                   if ($rol!=6){ 
+	                $admin = $this->session->userdata('admin');
 		            $this->db->where('T.removed != 1');
 		            $this->db->where('T.created_by',$admin['id']);
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name username,UR.name role');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
-			return $this->db->get('tasks T')->result();
+			        return $this->db->get('tasks T')->result();
+		          }else if ($rol==6){
+                    $this->db->where('T.removed != 1');
+		            $this->db->where('U.department_id',$department);
+					$this->db->order_by('T.due_date','DESC');
+					$this->db->select('T.*,U.name username,UR.name role');
+					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
+					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
+			        return $this->db->get('tasks T')->result();
+
+		          } 
 	}
 	
 	function get_due_tasks()
