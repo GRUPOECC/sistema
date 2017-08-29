@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-08-2017 a las 17:08:36
+-- Tiempo de generación: 29-08-2017 a las 20:21:18
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -1721,10 +1721,33 @@ INSERT INTO `documents` (`id`, `title`, `is_case`, `case_id`) VALUES
 --
 
 CREATE TABLE `empresas` (
-  `id` int(6) UNSIGNED NOT NULL,
-  `nombre` varchar(30) NOT NULL,
-  `parent_id` int(6) UNSIGNED DEFAULT NULL
+  `id` int(9) UNSIGNED NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `parent_id` int(9) UNSIGNED NOT NULL,
+  `cod_interno` varchar(7) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `empresas`
+--
+
+INSERT INTO `empresas` (`id`, `name`, `parent_id`, `cod_interno`) VALUES
+(0, 'GRUPO ECC', 999999999, '000'),
+(1, 'CREACIONES BEN-HUR C.A.', 0, '001'),
+(2, 'GRUPO FERRADINI C.A.', 0, '020'),
+(11, '01-LA URBINA', 2, '020-001'),
+(12, '02-CHACAITO', 2, '020-002'),
+(13, '03-CCCT', 2, '020-003'),
+(14, '04-PLAZA MAYOR', 2, '020-004'),
+(15, '05-SAMBIL', 2, '020-005'),
+(16, '06-MARACAY', 2, '020-006'),
+(17, '07-BARQUISIMETO', 2, '020-007'),
+(18, '08-AVIADORES', 2, '020-008'),
+(19, '09-CERRO VERDE', 2, '020-009'),
+(20, '10-SAMBIL II', 2, '020-010'),
+(21, 'MODAS BH C.A.', 0, '098'),
+(22, 'GRUPO SHAKE C.A.', 0, '021'),
+(23, 'INVERSIONES ACALUROSA C.A.', 0, '099');
 
 -- --------------------------------------------------------
 
@@ -1867,41 +1890,6 @@ INSERT INTO `locations` (`id`, `name`) VALUES
 (8, '08-AVIADORES'),
 (9, '09-CERRO VERDE'),
 (10, '10-SAMBIL II');
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `loc_categories`
---
-
-CREATE TABLE `loc_categories` (
-  `id` int(9) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `parent_id` int(9) UNSIGNED NOT NULL,
-  `cod_interno` varchar(7) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Volcado de datos para la tabla `loc_categories`
---
-
-INSERT INTO `loc_categories` (`id`, `name`, `parent_id`, `cod_interno`) VALUES
-(0, 'GRUPO ECC', 999999999, '000'),
-(1, 'CREACIONES BEN-HUR C.A.', 0, '001'),
-(2, 'GRUPO FERRADINI C.A.', 0, '020'),
-(11, '01-LA URBINA', 2, '020-001'),
-(12, '02-CHACAITO', 2, '020-002'),
-(13, '03-CCCT', 2, '020-003'),
-(14, '04-PLAZA MAYOR', 2, '020-004'),
-(15, '05-SAMBIL', 2, '020-005'),
-(16, '06-MARACAY', 2, '020-006'),
-(17, '07-BARQUISIMETO', 2, '020-007'),
-(18, '08-AVIADORES', 2, '020-008'),
-(19, '09-CERRO VERDE', 2, '020-009'),
-(20, '10-SAMBIL II', 2, '020-010'),
-(21, 'MODAS BH C.A.', 0, '098'),
-(22, 'GRUPO SHAKE C.A.', 0, '021'),
-(23, 'INVERSIONES ACALUROSA C.A.', 0, '099');
 
 -- --------------------------------------------------------
 
@@ -2524,6 +2512,7 @@ CREATE TABLE `users` (
   `token` varchar(255) NOT NULL,
   `client_case_alert` int(10) NOT NULL DEFAULT '1',
   `department_id` int(10) UNSIGNED NOT NULL,
+  `empresa_id` int(11) NOT NULL,
   `designation_id` int(10) UNSIGNED NOT NULL,
   `joining_date` date NOT NULL,
   `joining_salary` varchar(255) NOT NULL,
@@ -2534,18 +2523,18 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `designation_id`, `joining_date`, `joining_salary`, `status`) VALUES
-(1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', '', 1, 0, '', 1, 0, 0, '0000-00-00', '', 1),
-(2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', '', 2, 0, '', 1, 0, 0, '0000-00-00', '', 1),
-(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', '', 3, 0, '', 1, 1, 0, '1985-07-08', '', 1),
-(4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', '', 4, 0, '', 1, 5, 13, '0000-00-00', '', 1),
-(5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', '', 5, 0, '', 1, 1, 0, '2017-06-25', '', 1),
-(6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', '', 4, 0, '', 1, 1, 7, '0000-00-00', '', 1),
-(7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', '', 1, 0, '', 1, 3, 0, '0000-00-00', '', 1),
-(8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', '', 5, 0, '', 1, 1, 0, '0000-00-00', '', 1),
-(9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', '', 3, 0, '', 1, 1, 0, '0000-00-00', '', 1),
-(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 22, '0000-00-00', '', 1),
-(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, 0, '2017-08-09', '', 1);
+INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `empresa_id`, `designation_id`, `joining_date`, `joining_salary`, `status`) VALUES
+(1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', '', 1, 0, '', 1, 0, 0, 0, '0000-00-00', '', 1),
+(2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', '', 2, 0, '', 1, 0, 0, 0, '0000-00-00', '', 1),
+(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', '', 3, 0, '', 1, 1, 0, 0, '1985-07-08', '', 1),
+(4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', '', 4, 0, '', 1, 5, 0, 13, '0000-00-00', '', 1),
+(5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', '', 5, 0, '', 1, 1, 0, 0, '2017-06-25', '', 1),
+(6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', '', 4, 0, '', 1, 1, 0, 7, '0000-00-00', '', 1),
+(7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', '', 1, 0, '', 1, 3, 0, 0, '0000-00-00', '', 1),
+(8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', '', 5, 0, '', 1, 1, 0, 0, '0000-00-00', '', 1),
+(9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', '', 3, 0, '', 1, 1, 0, 0, '0000-00-00', '', 1),
+(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 0, 22, '0000-00-00', '', 1),
+(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, 0, 0, '2017-08-09', '', 1);
 
 -- --------------------------------------------------------
 
@@ -2776,8 +2765,7 @@ ALTER TABLE `documents`
 -- Indices de la tabla `empresas`
 --
 ALTER TABLE `empresas`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `parent_id` (`parent_id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indices de la tabla `extended_case`
@@ -2825,12 +2813,6 @@ ALTER TABLE `leave_types`
 -- Indices de la tabla `locations`
 --
 ALTER TABLE `locations`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `loc_categories`
---
-ALTER TABLE `loc_categories`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -3062,7 +3044,7 @@ ALTER TABLE `documents`
 -- AUTO_INCREMENT de la tabla `empresas`
 --
 ALTER TABLE `empresas`
-  MODIFY `id` int(6) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3103,11 +3085,6 @@ ALTER TABLE `leave_types`
 --
 ALTER TABLE `locations`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
---
--- AUTO_INCREMENT de la tabla `loc_categories`
---
-ALTER TABLE `loc_categories`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- AUTO_INCREMENT de la tabla `message`
 --
@@ -3206,12 +3183,6 @@ ALTER TABLE `user_role`
 --
 -- Restricciones para tablas volcadas
 --
-
---
--- Filtros para la tabla `empresas`
---
-ALTER TABLE `empresas`
-  ADD CONSTRAINT `empresas_ibfk_1` FOREIGN KEY (`parent_id`) REFERENCES `empresas` (`id`);
 
 --
 -- Filtros para la tabla `rel_contact_category`
