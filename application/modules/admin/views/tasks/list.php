@@ -1,4 +1,6 @@
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css')?>" rel="stylesheet">
+<script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
 <script type="text/javascript">
 function areyousure()
 {
@@ -64,7 +66,9 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                                                     
+                    <p style="margin-top: 10px; margin-right: 10px;" align="right">
+                     <input type="checkbox" data-toggle="toggle" data-on="<?php echo lang('dontshowremoved');?>" data-off="<?php echo lang('showremoved');?>" onchange="cambioMuestra()">    
+                     </p>                            
                 </div><!-- /.box-header -->
 
 
@@ -120,7 +124,7 @@ function areyousure()
 							?>
 
 
-                                 <tr <?php if($new->progress==100) echo ' id="terminado" ' ?> class="gc_row">
+                                 <tr <?php if($new->progress==100) echo ' id="terminado" '; else if ($new->removed==1) echo ' id="eliminado" '; ?> class="gc_row">
                                     <td><input style="display: none;" type="checkbox" id="task_check[]" name="task_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $new->id?></td>
                                     <td><?php echo $new->name?></td>
@@ -361,6 +365,36 @@ function areyousure()
      var allPages = oTable.fnGetNodes();
         $('#terminado', allPages).css("display", "none");
   }
-  //Oculta las tareas terminadas por defecto.
+
+  var suiche = true; 
+  function cambioMuestra(){
+       if(suiche){
+          mostrarEliminados();
+          suiche = false; 
+       }
+        else {
+          ocultarEliminados();
+          suiche = true;  
+        }
+  }
+
+
+    function mostrarEliminados(){
+
+     $("#eliminado").css("display", "");
+     var allPages = oTable.fnGetNodes();
+        $('#eliminado', allPages).css("display", "");
+  }
+
+  function ocultarEliminados(){
+     $("#eliminado").css("display", "none");
+     var allPages = oTable.fnGetNodes();
+        $('#eliminado', allPages).css("display", "none");
+  }
+
+
+
+  //Oculta las tareas terminadas y eliminadas por defecto.
   ocultarTerminados();
+  ocultarEliminados();
 </script>

@@ -526,4 +526,6 @@ $lang['entries'] = "entries";
 $lang['selectAll'] = " / Select All:";
 $lang['showfinished'] = "Dont Show Task Finished";
 $lang['upload'] = "Upload Files";
+$lang['showremoved'] = "Show removed";
+$lang['dontshowremoved'] = "Hide removed";
 

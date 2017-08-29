@@ -48,7 +48,7 @@ class tasks_model extends CI_Model
 	 	
                    if ($rol!=6){ 
 	                $admin = $this->session->userdata('admin');
-		            $this->db->where('T.removed != 1');
+		            //$this->db->where('T.removed != 1');
 		            $this->db->where('T.created_by',$admin['id']);
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name username,UR.name role');
@@ -98,7 +98,7 @@ class tasks_model extends CI_Model
 		            $admin = $this->session->userdata('admin');
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->where('TA.user_id',$this->session->userdata('admin')['id']);
-					$this->db->where('T.removed != 1');
+					//$this->db->where('T.removed != 1');
 					$this->db->where('TA.user_id',$admin['id']);
 					$this->db->select('T.*,U.name name,UR.name role');
 					$this->db->join('task_assigned TA', 'TA.task_id = T.id', 'LEFT');
