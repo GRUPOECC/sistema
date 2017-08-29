@@ -206,7 +206,9 @@ function areyousure()
             "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
             "sSortDescending": ": Activar para ordenar la columna de manera descendente"
         }
-  }
+  },
+  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
+                { "bSearchable": false, "aTargets": [ 0 ] }]
   
   });
 
@@ -245,7 +247,9 @@ function areyousure()
         "sSortAscending":  ": activate to sort column ascending",
         "sSortDescending": ": activate to sort column descending"
     }
-  }
+  },
+  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
+                { "bSearchable": false, "aTargets": [ 0 ] }]
   
   });
 

@@ -37,7 +37,7 @@ class tasks extends MX_Controller {
 		$data['tasks'] = $this->tasks_model->get_my_tasks();
 		$data['page_title'] = lang('my_tasks');
 		$data['body'] = 'tasks/my_tasks';
-		$this->load->view('template/main', $data);	
+		$this->load->view('template/main2', $data);	
 
 	}	
 	
@@ -349,10 +349,37 @@ function view($id){
             $this->tasks_model->delete($ids[$i]);
           	$i++;
           } 
-           redirect('admin/tasks');  
+           if(isset($_GET['my_tasks'])){
+					redirect('admin/tasks/my_tasks');
+				}else{
+					redirect('admin/tasks');
+				}
 
 	   }
 	}	
+
+	function deleteMytask($id=false){
+        if (is_int($id)){ 
+		if($id){
+			$this->tasks_model->delete($id);
+			//$this->tasks_model->delete_assigned_tasks($id);
+			$this->session->set_flashdata('message',lang('tasks_deleted'));
+					redirect('admin/tasks/my_tasks');
+		}
+	   }else{
+          $ids = explode("-",$id);
+          $i=0; 
+          while($i<count($ids)){
+            $this->tasks_model->delete($ids[$i]);
+          	$i++;
+          } 
+			redirect('admin/tasks/my_tasks');
+	   }
+      
+
+	}
+
+
 	function obtener_usuarios($id){
 		foreach ($this->tasks_model->get_usuarios_asignados($id) as $key ) {
 			$usuarios->name.=",".$key->name;
