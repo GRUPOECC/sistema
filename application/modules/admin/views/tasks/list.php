@@ -357,5 +357,6 @@ function areyousure()
      var allPages = oTable.fnGetNodes();
         $('#terminado', allPages).css("display", "none");
   }
-  
+  //Oculta las tareas terminadas por defecto.
+  ocultarTerminados();
 </script>

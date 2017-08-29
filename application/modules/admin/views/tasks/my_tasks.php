@@ -23,10 +23,10 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('my_tasks')?></h3>                                    
+                                                      
                 </div><!-- /.box-header -->
 				
-                <div class="box-body table-responsive" style="margin-top:40px;">
+                <div class="box-body table-responsive" style="margin-top:0px;">
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>

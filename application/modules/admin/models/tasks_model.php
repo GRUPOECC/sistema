@@ -39,7 +39,8 @@ class tasks_model extends CI_Model
 	}
 	
 	function get_all()
-	{
+	{               
+		            $this->db->where('T.removed != 1');
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name username,UR.name role');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
@@ -155,7 +156,12 @@ class tasks_model extends CI_Model
 	
 	
 	function delete($id)//delete user_role
-	{
+	{         
+               $this->db->set('removed',1);
+		       $this->db->where('id',$id);
+		       $this->db->update('tasks',$save);
+               //Sistema de eliminacion anterior 
+	           /*
 		       //Borra primero en la base de datos
 		       $array = array('id' => $id, 'progress !=' => 100);
 			   $this->db->where($array);
@@ -178,6 +184,7 @@ class tasks_model extends CI_Model
 				//borramos el directorio
 				rmdir ($carpeta);
 			   }
+			   */
 
 	}
 	

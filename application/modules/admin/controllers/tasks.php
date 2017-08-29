@@ -334,7 +334,7 @@ function view($id){
 		if (is_int($id)){ 
 		if($id){
 			$this->tasks_model->delete($id);
-			$this->tasks_model->delete_assigned_tasks($id);
+			//$this->tasks_model->delete_assigned_tasks($id);
 			$this->session->set_flashdata('message',lang('tasks_deleted'));
 			if(isset($_GET['my_tasks'])){
 					redirect('admin/tasks/my_tasks');
