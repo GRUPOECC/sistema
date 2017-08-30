@@ -217,6 +217,13 @@ class tasks_model extends CI_Model
 			   */
 
 	}
+
+	function deleteFile($id){
+
+         $this->db->where('id',$id);
+		 $this->db->delete('files');
+
+	}
 	
 	function delete_assigned_tasks($id)//delte user_role
 	{

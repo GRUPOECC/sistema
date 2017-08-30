@@ -84,8 +84,10 @@ class tasks extends MX_Controller {
 				redirect('admin/tasks/comments/'.$id);
 				
 				if(isset($_GET['my_tasks'])){
+
 					redirect('admin/my_tasks/comments/'.$id);
 				}else{
+
 					redirect('admin/tasks/comments/'.$id);
 				}
 				
@@ -97,6 +99,71 @@ class tasks extends MX_Controller {
 		$this->load->view('template/main', $data);	
 
 	}	
+
+	function commentsOnly($id=false){
+       	$data['task'] = $this->tasks_model->get($id);
+		$data['messages'] = $this->tasks_model->get_commnets_by_task($id);  //messages == comments
+		if(isset($_GET['my_tasks'])){
+			$data['my_tasks']	= "my_tasks=".$_GET['my_tasks'];
+		}else{
+			$data['my_tasks']	= '';
+		}
+		
+		$data['id'] =$id;
+        $admin = $this->session->userdata('admin');
+		$email = $this->tasks_model->get_users_email($id);
+		
+		foreach($email as $new){
+			$email_list[] =  $new->email;
+		}
+
+        if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+			$this->load->library('form_validation');
+			$this->form_validation->set_rules('message', 'lang:comment', 'required');
+			$this->form_validation->set_message('required', lang('custom_required'));
+			 
+			if ($this->form_validation->run()==true)
+            {
+				$save['comment_by'] = $admin['id'];
+				$save['task_id'] = $id;
+				$save['comment'] = $this->input->post('message');
+				$save['date_time'] = date("Y-m-d H:i:s");
+				
+				$this->tasks_model->save_comment($save);
+                
+				
+				$msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
+				$params['recipient'] = $email_list;
+				$params['subject'] 	 = "You Have New Comments From :". $admin['name']."On Task :".$data['task'];
+				$params['message']   = $msg;
+				modules::run('admin/fomailer/send_email',$params);
+				
+				$this->session->set_flashdata('message', lang('comment_success'));
+				redirect('admin/tasks/commentsOnly/'.$id);
+				
+				if(isset($_GET['my_tasks'])){
+                     echo '
+                       <script type="text/javascript" language="Javascript">window.open("admin/my_tasks/comments/"+'.$id.');
+                       </script>
+                     '; 
+
+					//redirect('admin/my_tasks/comments/'.$id);
+				}else{
+                    echo '
+                       <script type="text/javascript" language="Javascript">window.open("admin/tasks/comments/"+'.$id.');
+                       </script>
+                     '; 
+					//redirect('admin/tasks/comments/'.$id);
+				}
+				
+			}
+		}
+
+        $data['body'] = 'tasks/comments2';
+		$this->load->view('template/main3', $data);	
+
+	}
 	
 	
 	
@@ -379,6 +446,16 @@ function view($id){
 
 	}
 
+	function deleteFile($id=false){
+		session_start();
+		$seleccionado = explode("-",$id); 
+        $idarchivo = $seleccionado[1];
+		$datos = explode("%",$_SESSION["Archivos"]);
+        $direccion = $datos[(int)$idarchivo]; 
+        unlink ($direccion); 
+        $this->tasks_model->deleteFile($seleccionado[2]);
+        redirect('admin/tasks/edit/'.$id);
+	} 
 
 	function obtener_usuarios($id){
 		foreach ($this->tasks_model->get_usuarios_asignados($id) as $key ) {

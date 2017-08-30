@@ -528,4 +528,5 @@ $lang['showfinished'] = "Dont Show Task Finished";
 $lang['upload'] = "Upload Files";
 $lang['showremoved'] = "Show removed";
 $lang['dontshowremoved'] = "Hide removed";
+$lang['taskinformation'] = "Task Information";
 

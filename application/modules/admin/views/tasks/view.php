@@ -42,27 +42,48 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header">
+                    <div class="col-md-4">
+                     <h3>
+                     <?php echo lang('taskinformation')?>
+                     </h3>
+                     <hr>
+                    </div>
+                    <div class="col-md-4">
+                     <h3>
+                     <?php echo lang('files')?>
+                     </h3>
+                     <hr>
+                    </div>
+                    <div class="col-md-4">
+                     <h3>
+                     <?php echo lang('comments')?>
+                     </h3>
+                     <hr>
+                    </div>
+
                   <div><!-- /.box-header -->
                 <!-- form start -->
 				
 				    <div class="box-body">
+
+                      <div id="panelinformacion" class="col-md-4">
                         <div class="form-group">
                         	<div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-6">
                                     <label for="name" style="clear:both;"><?php echo lang('created_by')?></label>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-6">
 									<?php echo $task->name?>
                                 </div>
                             </div>
                         </div>
 						<div class="form-group">
                               <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-6">
                                     <label for="email" style="clear:both;"><?php echo lang('priority');?></label>
 								
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-6">
 										<?php echo ($task->priority==1)?'Low':'';?> 
 										<?php echo ($task->priority==2)?'Medium':'';?>
 										<?php echo ($task->priority==3)?'High':'';?>
@@ -72,10 +93,10 @@
 						
 			   			 <div class="form-group">
                               <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-6">
                                     <label for="dob" style="clear:both;"><?php echo lang('due_date');?></label>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-6">
 								  <?php $formato = explode("-", $task->due_date); 
                                       echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];
                                    ?>	
@@ -85,10 +106,10 @@
 						
 						 <div class="form-group">
                               <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-6">
                                     <label for="case_id" style="clear:both;"><?php echo lang('case');?></label>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-6">
 										<?php foreach($cases as $new) {
 											$sel = "";
 											if($task->case_id== $new->id) echo '#'.$new->case_no.'-'.$new->title;
@@ -102,10 +123,10 @@
 						
 						 <div class="form-group">
                               <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-6">
                                     <label for="employee_id" style="clear:both;"><?php echo lang('assigned_to');?></label>
 								</div>
-								<div class="col-md-4">
+								<div class="col-md-6">
 										<?php 
 										foreach($assigned_users as $new){
 											$users[] = $new->user_id;
@@ -123,10 +144,10 @@
                         </div>
 						 <div class="form-group">
                               <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-6">
                                     <label for="progress" style="clear:both;"><?php echo lang('progress');?></label>
 								</div>
-								<div class="col-md-4">		
+								<div class="col-md-6">		
 				<input type="text" class="knob" value="<?php echo $task->progress?>" data-width="90" data-height="90" data-fgColor="#3c8dbc" data-readonly="true" />
 									                          
                                         </div>
@@ -136,30 +157,16 @@
                         
 						<div class="form-group">
                               <div class="row">
-                                <div class="col-md-2">
+                                <div class="col-md-12">
                                     <label for="email" style="clear:both;"><?php echo lang('description');?></label>
 								</div>
-								<div class="col-md-7">
+								<div class="col-md-12">
 									<?php echo $task->description?>
 									</div>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-2">
-                                    <label for="email" style="clear:both;"><?php echo lang('files');?></label>
-								</div>
-								<div class="col-md-7">
-									     	<?php 
-														foreach($files as $doc){
-														  echo '<p><a href="'.base_url($doc->location).'">'.$doc->name.'</a></p>';
-														}
-													?>
-									</div>
-                            </div>
-                        </div>
-						
+				
 						
 							<?php 
 					$CI = get_instance();
@@ -322,6 +329,31 @@
 							}
 						}
 					?>		
+               </div>
+               <div id="panelarchivos" class="col-md-4">
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-2">
+                                    <label for="email" style="clear:both;"></label>
+								</div>
+								<div class="col-md-7">
+									     	<?php 
+														$icono = "assets/img/icono-adjunto.png";
+														foreach($files as $doc){
+														  echo '<p><IMG SRC="'.base_url($icono).'" WIDTH=40 HEIGHT=40 ALT=""><a href="'.base_url($doc->location).'">'.$doc->name.'</a></p>';
+														}
+													?>
+									</div>
+                            </div>
+                        </div>
+
+               </div>
+               
+               <div id="panelcomentarios" class="col-md-4">
+                 <iframe src="<?php echo site_url('admin/tasks/commentsOnly/'.$task->name); ?>" height="500" width="100%" frameBorder="0"></iframe>
+               </div>
+
+
 
                     </div><!-- /.box-body -->
     

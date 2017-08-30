@@ -8,7 +8,7 @@
 <?php $admin = $this->session->userdata('admin'); ?>
 <!-- Content Header (Page header) -->
 <section class="content-header">
-  
+   <!--
     <h1>
         <?php echo $task->name;?>
         <small><?php echo lang('comments');?></small>
@@ -18,7 +18,7 @@
         <li><a href="<?php echo site_url('admin/tasks')?>"><?php echo lang('tasks');?> </a></li>
         <li class="active"><?php echo lang('send');?></li>
     </ol>
-
+  -->
 </section>
 
 <section class="content">
@@ -31,9 +31,9 @@
 							<div class="box box-success">
                                 <div class="box-header">
                                     <i class="fa fa-comments-o"></i>
-                                    
+                                    <!--
                                     <h3 class="box-title"><?php echo lang('comments');?> </h3>
-                                  
+                                    -->
                                     <div class="box-tools pull-right" data-toggle="tooltip" title="Status">
                                         
                                     </div>
@@ -78,7 +78,7 @@
 			
 
 				<h3 style="color:#FF0000"><?php echo validation_errors(); ?></h3>
-				<?php echo form_open_multipart('admin/tasks/comments/'.$id.'?'.$my_tasks); ?>
+				<?php echo form_open_multipart('admin/tasks/commentsOnly/'.$id.'?'.$my_tasks); ?>
                     <div class="box-body">
                         <div class="box-body">
                         

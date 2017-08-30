@@ -536,6 +536,8 @@ $lang['showfinished'] = "No Mostrar Tareas Terminadas";
 $lang['upload'] = "Adjuntar archivos";
 $lang['showremoved'] = "Mostrar Eliminados";
 $lang['dontshowremoved'] = "Ocultar Eliminados";
+$lang['taskinformation'] = "Informacion de la Tarea";
+
 
 
 

@@ -143,7 +143,28 @@
 									</div>
                             </div>
                         </div>
+                        <!--Archivos que componen la tarea -->
+                       <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-2">
+                                    <label for="email" style="clear:both;"><?php echo lang('files');?></label>
+								</div>
+								<div class="col-md-7">
 
+	                                                <?php 
+	                                                    session_start();
+														$icono = "assets/img/icono-adjunto.png";
+														$_SESSION["Archivos"] = "";
+														$i=0;
+														foreach($files as $doc){
+														  echo '<p><IMG SRC="'.base_url($icono).'" WIDTH=40 HEIGHT=40 ALT=""><a href="'.base_url($doc->location).'">'.$doc->name.'</a> - <a href="'.site_url('admin/tasks/deleteFile/'.$task->id).'-'.$i.'-'.$doc->id.'">'.lang('delete').'</a></p>';
+														  $_SESSION["Archivos"] = $_SESSION["Archivos"].$doc->location."%";
+														  $i=$i+1;
+														}
+													?>
+									</div>
+                            </div>
+                        </div>
 
                          <!--Adjuntar Archivos -->
                        <div class="form-group">
@@ -154,7 +175,8 @@
                                 </div>
                             </div>
                         </div>
-						
+
+
 						<?php 
 					$CI = get_instance();
 						if($fields){
