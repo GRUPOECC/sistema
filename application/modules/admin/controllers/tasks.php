@@ -291,7 +291,7 @@ class tasks extends MX_Controller {
 			$this->form_validation->set_rules('due_date', 'lang:due_date', '');
             $this->form_validation->set_rules('priority', 'lang:priority', 'required');
 			$this->form_validation->set_rules('case_id', 'lang:case', '');
-			$this->form_validation->set_rules('employee_id', 'lang:employee', '');
+			$this->form_validation->set_rules('employee_id', 'lang:employee', 'required');
 			$this->form_validation->set_rules('description', 'lang:employee', '');
 			
            

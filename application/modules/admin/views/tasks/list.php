@@ -143,8 +143,12 @@ function areyousure()
 									
                                     <td width="38%">
                                         <div class="btn-group">
-									<?php if(check_user_role(115)==1){?>		
+									<?php if((check_user_role(115)==1)){?>
+                                <?php if(($new->progress==100)&&(check_user_role(186)==1)){?>		
                                           <a class="btn btn-default"  href="<?php echo site_url('admin/tasks/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view')?></a>
+                                          <?php }else if ($new->progress!=100){?>  
+                                             <a class="btn btn-default"  href="<?php echo site_url('admin/tasks/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view')?></a>
+                                          <?php } ?>  
 									<?php } ?>	
 									      <?php if(check_user_role(114)==1){?>	
                                           <?php  if($new->progress!=100){?>		  	
