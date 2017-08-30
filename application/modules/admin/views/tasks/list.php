@@ -59,6 +59,11 @@ function areyousure()
                      <?php } ?> 
 					
                 </div>
+                 <?php if(check_user_role(185)==1){?>
+                 <p style="margin-top: 10px; margin-right: 10px;" align="right">
+                     <input type="checkbox" data-toggle="toggle" data-on="<?php echo lang('dontshowremoved');?>" data-off="<?php echo lang('showremoved');?>" onchange="cambioMuestra()">    
+                     </p> 
+                     <?php } ?> 
             </div>    
         </div>	
         
@@ -66,9 +71,7 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <p style="margin-top: 10px; margin-right: 10px;" align="right">
-                     <input type="checkbox" data-toggle="toggle" data-on="<?php echo lang('dontshowremoved');?>" data-off="<?php echo lang('showremoved');?>" onchange="cambioMuestra()">    
-                     </p>                            
+                                              
                 </div><!-- /.box-header -->
 
 
