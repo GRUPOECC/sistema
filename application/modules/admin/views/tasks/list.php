@@ -124,7 +124,7 @@ function areyousure()
 							?>
 
 
-                                 <tr <?php if($new->progress==100) echo ' id="terminado" '; else if ($new->removed==1) echo ' id="eliminado" '; ?> class="gc_row">
+                                 <tr <?php if($new->progress==100) echo ' name="terminado" '; else if ($new->removed==1) echo ' name="eliminado" '; ?> class="gc_row" style="">
                                     <td><input style="display: none;" type="checkbox" id="task_check[]" name="task_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $new->id?></td>
                                     <td><?php echo $new->name?></td>
@@ -355,15 +355,29 @@ function areyousure()
 
   function mostrarTerminados(){
 
-     $("#terminado").css("display", "");
+     $('tr[name="terminado"]').css("display", "");
      var allPages = oTable.fnGetNodes();
-        $('#terminado', allPages).css("display", "");
+        $('tr[name="terminado"]', allPages).css("display", "");
   }
 
   function ocultarTerminados(){
-     $("#terminado").css("display", "none");
+     $('tr[name="terminado"]').css("display", "none");
      var allPages = oTable.fnGetNodes();
-        $('#terminado', allPages).css("display", "none");
+        $('tr[name="terminado"]', allPages).css("display", "none");
+  }
+
+  function mostrarEliminados(){
+     $('tr[name="eliminado"]').css("display", "");
+    var allPages = oTable.fnGetNodes();
+      $('tr[name="eliminado"]', allPages).css("display", "");
+  }
+
+  function ocultarEliminados(){
+   
+     $('tr[name="eliminado"]').css("display", "none");
+     var allPages = oTable.fnGetNodes();
+       $('tr[name="eliminado"]', allPages).css("display", "none");
+  
   }
 
   var suiche = true; 
@@ -379,22 +393,10 @@ function areyousure()
   }
 
 
-    function mostrarEliminados(){
 
-     $("#eliminado").css("display", "");
-     var allPages = oTable.fnGetNodes();
-        $('#eliminado', allPages).css("display", "");
-  }
-
-  function ocultarEliminados(){
-     $("#eliminado").css("display", "none");
-     var allPages = oTable.fnGetNodes();
-        $('#eliminado', allPages).css("display", "none");
-  }
-
-
-
-  //Oculta las tareas terminadas y eliminadas por defecto.
-  ocultarTerminados();
-  ocultarEliminados();
+  $(document).ready(function(){
+      //Oculta las tareas terminadas y eliminadas por defecto.
+      ocultarEliminados();
+      ocultarTerminados();
+   });
 </script>

@@ -1,4 +1,6 @@
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css')?>" rel="stylesheet">
+<script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
 <script type="text/javascript">
 function areyousure()
 {
@@ -62,7 +64,9 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                                                      
+                   <p style="margin-top: 10px; margin-right: 10px;" align="right">
+                     <input type="checkbox" data-toggle="toggle" data-on="<?php echo lang('dontshowremoved');?>" data-off="<?php echo lang('showremoved');?>" onchange="cambioMuestra()">    
+                     </p>                                      
                 </div><!-- /.box-header -->
 				
                 <div class="box-body table-responsive" style="margin-top:0px;">
@@ -95,7 +99,7 @@ function areyousure()
 							}
 							
 							?>
-                                <tr <?php if($new->progress==100) echo ' id="terminado" ' ?> class="gc_row">
+                                <tr <?php if($new->progress==100) echo ' name="terminado" '; else if ($new->removed==1) echo ' name="eliminado" '; ?> class="gc_row">
                                     <td><input style="display: none;" type="checkbox" id="task_check[]" name="task_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $i?></td>
                                     <td><?php echo ucwords($new->name)?></td>
@@ -320,16 +324,48 @@ function areyousure()
 
   function mostrarTerminados(){
 
-     $("#terminado").css("display", "");
+     $('tr[name="terminado"]').css("display", "");
      var allPages = oTable.fnGetNodes();
-        $('#terminado', allPages).css("display", "");
+        $('tr[name="terminado"]', allPages).css("display", "");
   }
 
   function ocultarTerminados(){
-     $("#terminado").css("display", "none");
+     $('tr[name="terminado"]').css("display", "none");
      var allPages = oTable.fnGetNodes();
-        $('#terminado', allPages).css("display", "none");
+        $('tr[name="terminado"]', allPages).css("display", "none");
   }
-  //Oculta las tareas terminadas por defecto.
-  ocultarTerminados();
+
+  function mostrarEliminados(){
+     $('tr[name="eliminado"]').css("display", "");
+    var allPages = oTable.fnGetNodes();
+      $('tr[name="eliminado"]', allPages).css("display", "");
+  }
+
+  function ocultarEliminados(){
+   
+     $('tr[name="eliminado"]').css("display", "none");
+     var allPages = oTable.fnGetNodes();
+       $('tr[name="eliminado"]', allPages).css("display", "none");
+  
+  }
+
+  var suiche = true; 
+  function cambioMuestra(){
+       if(suiche){
+          mostrarEliminados();
+          suiche = false; 
+       }
+        else {
+          ocultarEliminados();
+          suiche = true;  
+        }
+  }
+
+
+  $(document).ready(function(){
+      //Oculta las tareas terminadas y eliminadas por defecto.
+      ocultarEliminados();
+      ocultarTerminados();
+   });
+  
 </script>

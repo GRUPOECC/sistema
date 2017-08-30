@@ -56,7 +56,7 @@ class tasks_model extends CI_Model
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
 			        return $this->db->get('tasks T')->result();
 		          }else if ($rol==6){
-                    $this->db->where('T.removed != 1');
+                    //$this->db->where('T.removed != 1');
 		            $this->db->where('U.department_id',$department);
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name username,UR.name role');
