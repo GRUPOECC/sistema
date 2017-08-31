@@ -40,6 +40,11 @@ class message_model extends CI_Model
 			   $this->db->where('id',$id);
 		return $this->db->get('users')->row();
 	}
+
+	function get_user_email($id){
+       	   	   $this->db->where('id',$id);
+		return $this->db->get('users')->row()->email;
+	}
 	
 	
 	function get_message_by_id($id)

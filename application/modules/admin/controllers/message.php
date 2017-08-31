@@ -48,10 +48,28 @@ class message extends MX_Controller {
 			       //Enviando por correo electronico: 
 			       $data['client']		 = $this->message_model->get_client_by_id($ids[$i]);
                    $msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
-				   $params['recipient'] = $data['client']->email;
+				   $params['recipient'] = $this->message_model->get_user_email($ids[$i]);
 				   $params['subject'] 	 = "You Have New Message From :". $admin['name'];
 				   $params['message']   = $msg;
 				   modules::run('admin/fomailer/send_email',$params);
+				   //echo '<script> alert("'.$this->message_model->get_user_email($ids[$i]).'");</script>'; 
+                   /*
+                    $mail = "Prueba de mensaje";
+					//Titulo
+					$titulo = "PRUEBA DE TITULO";
+					//cabecera
+					$headers = "MIME-Version: 1.0\r\n"; 
+					$headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+					//dirección del remitente 
+					$headers .= "From: Geeky Theory <prueba@hotmail.com>\r\n";
+					//Enviamos el mensaje a tu_dirección_email 
+					$bool = mail($this->message_model->get_user_email($ids[$i]),"asuntillo","Este es el cuerpo del mensaje");
+					if ($bool)
+					  echo "se mando fino";
+					  else 
+					  echo "no sirve menol"; 
+					  */
+
                 }  
                  $this->session->set_flashdata('message', 'Message Sent');
 				 redirect('admin/message/index/');
