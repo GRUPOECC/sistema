@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-08-2017 a las 17:38:26
+-- Tiempo de generación: 31-08-2017 a las 19:35:31
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -2396,6 +2396,33 @@ INSERT INTO `settings` (`id`, `name`, `image`, `header_setting`, `address`, `con
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `status`
+--
+
+CREATE TABLE `status` (
+  `id` int(11) NOT NULL,
+  `nombre` varchar(255) NOT NULL,
+  `descripcion` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `status`
+--
+
+INSERT INTO `status` (`id`, `nombre`, `descripcion`) VALUES
+(1, 'Sin Procesar', ''),
+(2, 'Procesado', ''),
+(3, 'Anulado', ''),
+(4, '', ''),
+(5, '', ''),
+(6, '', ''),
+(7, '', ''),
+(8, '', ''),
+(9, 'Borrado', '');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `tasks`
 --
 
@@ -2408,14 +2435,14 @@ CREATE TABLE `tasks` (
   `due_date` date NOT NULL,
   `progress` varchar(255) NOT NULL,
   `created_by` int(10) UNSIGNED NOT NULL,
-  `removed` int(11) NOT NULL
+  `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tasks`
 --
 
-INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`, `removed`) VALUES
+INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`, `status`) VALUES
 (1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4, 0),
 (2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6, 0),
 (3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6, 0),
@@ -2900,6 +2927,12 @@ ALTER TABLE `settings`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `status`
+--
+ALTER TABLE `status`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `tasks`
 --
 ALTER TABLE `tasks`
@@ -3154,6 +3187,11 @@ ALTER TABLE `rel_role_action`
 --
 ALTER TABLE `settings`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `status`
+--
+ALTER TABLE `status`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `tasks`
 --
