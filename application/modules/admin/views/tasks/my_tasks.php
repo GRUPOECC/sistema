@@ -68,6 +68,22 @@ function areyousure()
                      <input type="checkbox" data-toggle="toggle" data-on="<?php echo lang('dontshowremoved');?>" data-off="<?php echo lang('showremoved');?>" onchange="cambioMuestra()">    
                      </p>                                      
                 </div><!-- /.box-header -->
+
+                 <div id="tipo-vista" style="margin-left: 370px; z-index: 2; position: absolute;">                 
+                  <p > 
+                      <center> 
+                    
+                       <a href="javascript:void()" onclick="mostrarTerminados()">
+                       <IMG SRC="<?php echo base_url('assets/img/boton-mostrar.png')?>" WIDTH=178 HEIGHT=36 ALT="Ver Tareas Terminadas">
+                       </a>
+                       <a href="javascript:void()" onclick="ocultarTerminados()">
+                       <IMG SRC="<?php echo base_url('assets/img/boton-ocultar.png')?>" WIDTH=178 HEIGHT=36 ALT="Ocultar Tareas Terminadas">
+                       </IMG>
+                       </a>
+                       
+                     </center>
+                  </p>
+                </div> 
 				
                 <div class="box-body table-responsive" style="margin-top:0px;">
                     <table id="example" class="table table-bordered table-striped">
@@ -75,7 +91,8 @@ function areyousure()
                             <tr>
                             <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
                                 <th><?php echo lang('serial_number')?></th>
-								<th><?php echo lang('name')?></th>
+								<th><?php echo lang('title')?></th>
+                <th><?php echo lang('assigned_to')?></th>
 								<th width="12px;"><?php echo lang('priority')?></th>
                                 <th><?php echo lang('due_date')?></th>
 								 <th><?php echo lang('created_by')?></th>
@@ -102,7 +119,11 @@ function areyousure()
                                 <tr <?php if($new->progress==100) echo ' name="terminado" '; else if ($new->removed==1) echo ' name="eliminado" '; ?> class="gc_row">
                                     <td><input style="display: none;" type="checkbox" id="task_check[]" name="task_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $i?></td>
-                                    <td><?php echo ucwords($new->name)?></td>
+                                    <td><?php echo $new->name?></td>
+                                    <td><?php foreach ($assigned_users as $key) {
+                                          if($key->id == $new->id)
+                                            echo $key->name;
+                                          }?></td>
                                     <td><?php echo $pr ?></td>
 									<td><?php $formato = explode("-", $new->due_date); 
                                               echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];

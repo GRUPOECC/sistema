@@ -37,6 +37,16 @@ class tasks extends MX_Controller {
 		$data['tasks'] = $this->tasks_model->get_my_tasks();
 		$data['page_title'] = lang('my_tasks');
 		$data['body'] = 'tasks/my_tasks';
+		$tareas=$data['tasks'];
+		$n=0;
+		foreach ($tareas as $task) {
+			$array=array($this->obtener_usuarios($task->id));
+			if($n==0)
+			$data['assigned_users']=$array;
+			else
+			$data['assigned_users']=array_merge($data['assigned_users'], $array);
+		$n++;
+		}	
 		$this->load->view('template/main2', $data);	
 
 	}	

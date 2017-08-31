@@ -100,7 +100,7 @@ class tasks_model extends CI_Model
 					$this->db->where('TA.user_id',$this->session->userdata('admin')['id']);
 					//$this->db->where('T.removed != 1');
 					$this->db->where('TA.user_id',$admin['id']);
-					$this->db->select('T.*,U.name name,UR.name role');
+					$this->db->select('T.*,U.name username,UR.name role');
 					$this->db->join('task_assigned TA', 'TA.task_id = T.id', 'LEFT');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
