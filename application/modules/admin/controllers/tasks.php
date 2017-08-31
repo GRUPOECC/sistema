@@ -6,6 +6,7 @@ class tasks extends MX_Controller {
 	{
 		parent::__construct();
 		//$this->auth->check_access('1', true);
+		$this->load->model("message_model");
 		$this->load->model("tasks_model");
 		$this->load->model("user_role_model");
 		$this->load->model("cases_model");
@@ -64,9 +65,6 @@ class tasks extends MX_Controller {
         $admin = $this->session->userdata('admin');
 		$email = $this->tasks_model->get_users_email($id);
 		
-		foreach($email as $new){
-			$email_list[] =  $new->email;
-		}
         //echo '<pre>'; print_r($email_list );die;
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
@@ -112,18 +110,18 @@ class tasks extends MX_Controller {
                               }else{
                                     rmdir ($carpeta);
                               }                   
-		            }
-		                   
+		            }             
 		        }
                 //--------------------Manejo de Archivos-----------------------
                 
-				/*
-				$msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
-				$params['recipient'] = $email_list;
-				$params['subject'] 	 = "You Have New Comments From :". $admin['name']."On Task :".$data['task'];
-				$params['message']   = $msg;
-				modules::run('admin/fomailer/send_email',$params);
-				*/
+                //--------------------Envio de Correo Electronico------------------------ 
+                foreach($email as $new){
+					$msg= html_entity_decode($save['comment'],ENT_QUOTES, 'UTF-8');
+					mail($new->email,"GECC - Tienes un comentario de: ". $admin['name'],$msg);
+		               }   
+		        //------------------------------------------------------------------------  
+
+
 				
 				$this->session->set_flashdata('message', lang('comment_success'));
 				redirect('admin/tasks/comments/'.$id);
@@ -212,13 +210,15 @@ class tasks extends MX_Controller {
 		        }
                 //--------------------Manejo de Archivos-----------------------
 
-                /*
-				$msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
-				$params['recipient'] = $email_list;
-				$params['subject'] 	 = "You Have New Comments From :". $admin['name']."On Task :".$data['task'];
-				$params['message']   = $msg;
-				modules::run('admin/fomailer/send_email',$params);
-				*/
+                //--------------------Envio de Correo Electronico------------------------ 
+                foreach($email as $new){
+					$msg= html_entity_decode($save['comment'],ENT_QUOTES, 'UTF-8');
+					mail($new->email,"GECC - Tienes un comentario de: ". $admin['name'],$msg);
+		               }   
+		        //------------------------------------------------------------------------  
+
+
+
 				$this->session->set_flashdata('message', lang('comment_success'));
 				redirect('admin/tasks/commentsOnly/'.$id);
 				
@@ -253,6 +253,8 @@ class tasks extends MX_Controller {
 		$data['roles'] = $this->user_role_model->get_all();
 		$data['employees'] = $this->tasks_model->get_all_employees();
 		$data['cases'] = $this->cases_model->get_all();
+        $admin = $this->session->userdata('admin');
+
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			 //echo '<pre>'; print_r($_POST);die;
@@ -309,14 +311,14 @@ class tasks extends MX_Controller {
 		            }
 		                   
 		        }
+
 				
 				//echo '<pre>'; print_r($save);die;
 				$save_user_tasks=array();
 			    foreach($this->input->post('employee_id') as $new){
-					$save_user_tasks[] = array(
-											'user_id' =>$new,
-											'task_id' =>$task_id
-											);
+					$save_user_tasks[] = array('user_id' =>$new,'task_id' =>$task_id);
+					$msg= html_entity_decode($save['description'],ENT_QUOTES, 'UTF-8');
+				    mail($this->message_model->get_user_email($new),"GECC - Tienes una tarea de: ". $admin['name'],$msg);
 				
 				}
 				
