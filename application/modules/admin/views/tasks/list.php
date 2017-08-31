@@ -127,7 +127,7 @@ function areyousure()
 							?>
 
 
-                                 <tr <?php if($new->progress==100) echo ' name="terminado" '; else if ($new->removed==1) echo ' name="eliminado" '; ?> class="gc_row" style="">
+                                 <tr <?php if($new->progress==100) echo ' name="terminado" '; else if ($new->status==9) echo ' name="eliminado" '; ?> class="gc_row" style="">
                                     <td><input style="display: none;" type="checkbox" id="task_check[]" name="task_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $new->id?></td>
                                     <td><?php echo $new->name?></td>

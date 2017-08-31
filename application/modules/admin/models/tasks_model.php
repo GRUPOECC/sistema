@@ -71,7 +71,7 @@ class tasks_model extends CI_Model
 	{
 					$this->db->where('T.due_date > ',date("Y-m-d"));
 					$this->db->where('T.progress != 100 ');
-					$this->db->where('T.removed != 1');
+					$this->db->where('T.status != 9');
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name name,UR.name role');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
@@ -83,7 +83,7 @@ class tasks_model extends CI_Model
 	{
 					$this->db->where('T.due_date > ',date("Y-m-d"));
 					$this->db->where('T.progress != 100 ');
-					$this->db->where('T.removed != 1');
+					$this->db->where('T.status != 9');
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->where('TA.user_id',$this->session->userdata('admin')['id']);
 					$this->db->select('T.*,U.name name,UR.name role');
@@ -194,7 +194,7 @@ class tasks_model extends CI_Model
 	
 	function delete($id)//delete user_role
 	{         
-               $this->db->set('removed',1);
+               $this->db->set('status',9);
 		       $this->db->where('id',$id);
 		       $this->db->update('tasks',$save);
                //Sistema de eliminacion anterior 
