@@ -81,14 +81,49 @@ class tasks extends MX_Controller {
 				$save['comment'] = $this->input->post('message');
 				$save['date_time'] = date("Y-m-d H:i:s");
 				
-				$this->tasks_model->save_comment($save);
+				$idcomentario = $this->tasks_model->save_comment($save);
+               	//Guardando registros de archivos adjuntos  - Garry Bruno
+               	//--------------------Manejo de Archivos-----------------------
+                $filesCount = count($_FILES['archivos']['name']);
                 
-				
+                $data = array();
+		        if($this->input->post('message') && !empty($_FILES['archivos']['name'])){	             
+		                            
+                    $target_path ='assets/uploads/comentarios/'.$idcomentario;
+                    $carpeta = 'assets/uploads/comentarios/'.(string)$idcomentario;
+                    if (!file_exists($carpeta)) {
+                    mkdir($carpeta, 0777, true);
+                    } 
+
+		            $filesCount = count($_FILES['archivos']['name']);
+		            for($i = 0; $i < $filesCount; $i++){
+		                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+		                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+		                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+                       
+		               $uploadPath = 'assets/uploads/comentarios/'.(string)$idcomentario.'/'. basename( $_FILES['userFile']['name']);
+		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
+                                        $savefile['name'] = $_FILES['userFile']['name'];
+                                        $savefile['location'] = $uploadPath; 
+                                        $savefile['id_comment'] = $idcomentario; 
+                                        $this->tasks_model->savefile($savefile);       
+                              }else{
+                                    rmdir ($carpeta);
+                              }                   
+		            }
+		                   
+		        }
+                //--------------------Manejo de Archivos-----------------------
+                
+				/*
 				$msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
 				$params['recipient'] = $email_list;
 				$params['subject'] 	 = "You Have New Comments From :". $admin['name']."On Task :".$data['task'];
 				$params['message']   = $msg;
 				modules::run('admin/fomailer/send_email',$params);
+				*/
 				
 				$this->session->set_flashdata('message', lang('comment_success'));
 				redirect('admin/tasks/comments/'.$id);
@@ -113,6 +148,7 @@ class tasks extends MX_Controller {
 	function commentsOnly($id=false){
        	$data['task'] = $this->tasks_model->get($id);
 		$data['messages'] = $this->tasks_model->get_commnets_by_task($id);  //messages == comments
+
 		if(isset($_GET['my_tasks'])){
 			$data['my_tasks']	= "my_tasks=".$_GET['my_tasks'];
 		}else{
@@ -140,15 +176,49 @@ class tasks extends MX_Controller {
 				$save['comment'] = $this->input->post('message');
 				$save['date_time'] = date("Y-m-d H:i:s");
 				
-				$this->tasks_model->save_comment($save);
+				$idcomentario = $this->tasks_model->save_comment($save);
+               	//Guardando registros de archivos adjuntos  - Garry Bruno
+               	//--------------------Manejo de Archivos-----------------------
+                $filesCount = count($_FILES['archivos']['name']);
                 
-				
+                $data = array();
+		        if($this->input->post('message') && !empty($_FILES['archivos']['name'])){	             
+		                            
+                    $target_path ='assets/uploads/comentarios/'.$idcomentario;
+                    $carpeta = 'assets/uploads/comentarios/'.(string)$idcomentario;
+                    if (!file_exists($carpeta)) {
+                    mkdir($carpeta, 0777, true);
+                    } 
+
+		            $filesCount = count($_FILES['archivos']['name']);
+		            for($i = 0; $i < $filesCount; $i++){
+		                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+		                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+		                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+                       
+		               $uploadPath = 'assets/uploads/comentarios/'.(string)$idcomentario.'/'. basename( $_FILES['userFile']['name']);
+		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
+                                        $savefile['name'] = $_FILES['userFile']['name'];
+                                        $savefile['location'] = $uploadPath; 
+                                        $savefile['id_comment'] = $idcomentario; 
+                                        $this->tasks_model->savefile($savefile);       
+                              }else{
+                                    rmdir ($carpeta);
+                              }                   
+		            }
+		                   
+		        }
+                //--------------------Manejo de Archivos-----------------------
+
+                /*
 				$msg 				 = html_entity_decode($save['message'],ENT_QUOTES, 'UTF-8');
 				$params['recipient'] = $email_list;
 				$params['subject'] 	 = "You Have New Comments From :". $admin['name']."On Task :".$data['task'];
 				$params['message']   = $msg;
 				modules::run('admin/fomailer/send_email',$params);
-				
+				*/
 				$this->session->set_flashdata('message', lang('comment_success'));
 				redirect('admin/tasks/commentsOnly/'.$id);
 				

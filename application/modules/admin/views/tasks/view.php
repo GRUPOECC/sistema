@@ -350,7 +350,7 @@
                </div>
                
                <div id="panelcomentarios" class="col-md-4">
-                 <iframe src="<?php echo site_url('admin/tasks/commentsOnly/'.$task->name); ?>" height="500" width="100%" frameBorder="0"></iframe>
+                 <iframe src="<?php echo site_url('admin/tasks/commentsOnly/'.$task->id); ?>" height="500" width="100%" frameBorder="0"></iframe>
                </div>
 
 

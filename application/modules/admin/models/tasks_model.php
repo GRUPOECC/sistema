@@ -151,6 +151,12 @@ class tasks_model extends CI_Model
              $this->db->where('id_task',$id);
 			return $this->db->get('files')->result();
 	}
+
+	function getCommnetsFiles($id){
+             $this->db->where('id_comment',$id);
+			return $this->db->get('files')->result();
+	}
+
 	
 	function update($save,$id)
 	{
@@ -161,7 +167,8 @@ class tasks_model extends CI_Model
 	function save_comment($save)
 	{
 		$this->db->insert('task_comments',$save);
-
+        $id = $this->db->insert_id();  
+		return $id;
 	}
 	
 	function get_commnets_by_task($id)
@@ -180,7 +187,7 @@ class tasks_model extends CI_Model
 				$this->db->where('TA.task_id',$task_id);
 				$this->db->where('TA.user_id !=',$admin['id']);
 				$this->db->select('U.email');	
-				 $this->db->join('users U', 'U.id = TA.user_id', 'LEFT');
+			    $this->db->join('users U', 'U.id = TA.user_id', 'LEFT');
 		return $this->db->get('task_assigned TA')->result();
 	}
 	

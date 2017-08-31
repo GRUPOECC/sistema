@@ -67,6 +67,16 @@
                                             </a>
 											<?php echo $new->comment?> 
                                         </p>
+                                        <div class="col-md-12">
+                                            <?php 
+                                                        $this->load->model("tasks_model");
+                                                        $files = $this->tasks_model->getCommnetsFiles($new->id); 
+                                                        $icono = "assets/img/icono-adjunto.png";
+                                                        foreach($files as $doc){
+                                                          echo '<p><IMG SRC="'.base_url($icono).'" WIDTH=40 HEIGHT=40 ALT=""><a href="'.base_url($doc->location).'">'.$doc->name.'</a></p>';
+                                                        }
+                                                    ?>
+                                       </div>
                                     </div><!-- /.item -->
         				   <?php $i++;}?>
                         <?php endif;?> 
@@ -88,6 +98,8 @@
                                 <div class="col-md-8">
                                     <label for="name" style="clear:both;"><?php echo lang('comment');?></label>
 									<textarea name="message"class="form-control redactor"></textarea>
+                                    <label for="email" style="clear:both;"><?php echo lang('upload');?></label>
+                                    <input type="file" multiple="true" name="archivos[]" id="archivos[]" />
                                 </div>
                             </div>
                         </div>
