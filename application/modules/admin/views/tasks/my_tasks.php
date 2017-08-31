@@ -54,9 +54,13 @@ function areyousure()
           <?php if(check_user_role(184)==1){?>
                       <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
                      <i class="fa fa-caret-square-o-down"></i><i id="boton_select"> <?php echo lang('select');?></i></a> 
-                     <?php } ?> 
-          
+                     <?php } ?>    
                 </div>
+                  <?php if(check_user_role(185)==1){?>
+                 <p style="margin-top: 10px; margin-right: 10px;" align="right">
+                     <input type="checkbox" data-toggle="toggle" data-on="<?php echo lang('dontshowremoved');?>" data-off="<?php echo lang('showremoved');?>" onchange="cambioMuestra()">    
+                     </p> 
+                     <?php } ?> 
             </div>    
         </div>  
         
@@ -64,9 +68,7 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                   <p style="margin-top: 10px; margin-right: 10px;" align="right">
-                     <input type="checkbox" data-toggle="toggle" data-on="<?php echo lang('dontshowremoved');?>" data-off="<?php echo lang('showremoved');?>" onchange="cambioMuestra()">    
-                     </p>                                      
+                                    
                 </div><!-- /.box-header -->
 
                  <div id="tipo-vista" style="margin-left: 370px; z-index: 2; position: absolute;">                 
