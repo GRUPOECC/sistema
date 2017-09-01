@@ -529,9 +529,9 @@
                                 <div class="box-body ">
                                     <!-- THE CALENDAR -->
 									<h2><?php echo lang('events'); ?></h2>
-                                    <div id="caption-cases" class="caption-element external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div>
-                                    <div id="caption-appointments" class="caption-element external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div>
-                                    <div id="caption-tasks" class="caption-element external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
+                                    <a href="#calendar"><div id="caption-cases" class="caption-element external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div></a>
+                                    <a href="#calendar"><div id="caption-appointments" class="caption-element external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div></a>
+                                    <a href="#calendar"><div id="caption-tasks" class="caption-element external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div></a>
 
                                 </div><!-- /.box-body -->
                             </div><!-- /. box -->
