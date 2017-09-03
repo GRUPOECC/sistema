@@ -20,7 +20,7 @@ function areyousure()
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="btn-group pull-right">
-				<?php if(check_user_role(38)==1){?>	
+				<?php if(check_user_role(191)==1){?>	
                     <a class="btn btn-default"  data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="agregarEmpresa(<?php echo $id; ?>)" href=""><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
 					<?php } ?>	
                 </div>
@@ -57,12 +57,12 @@ function areyousure()
 									
                                     <td width="30%">
                                         <div class="btn-group">	  	
-										  <?php if(check_user_role(39)==1){?>	
+										  <?php if(check_user_role(192)==1){?>	
 										  <a class="btn btn-primary" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" style="margin-left:12px;" onclick="editarEmpresa(<?php echo $new->idrelacion ?>,<?php echo $new->id ?>,<?php echo $new->iddepto ?>,<?php echo $new->idrol ?>)" href=""><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
 										  <?php } ?>
                                          
                                     
-										 <?php if(check_user_role(40)==1){?>	 
+										 <?php if(check_user_role(190)==1){?>	 
                                          <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/employees/deletecompany/'.$new->idrelacion); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete')?></a>
 										 <?php } ?>	
 

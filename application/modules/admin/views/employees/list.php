@@ -71,8 +71,10 @@ function areyousure()
 										  <?php } ?>	
 										 <?php if(check_user_role(126)==1){?>	
 										 <a class="btn btn-success"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/documents/'.$new->id); ?>"><i class="fa fa-file"></i> <?php echo lang('documents')?></a>
-										  <?php } ?>        
-                                           <a class="btn btn-success"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/empresas/'.$new->id); ?>"><i class="fa fa-bank"></i> <?php echo lang('company')?></a>                              	
+										  <?php } ?>     
+                                          <?php if(check_user_role(189)==1){?>     
+                                           <a class="btn btn-success"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/empresas/'.$new->id); ?>"><i class="fa fa-bank"></i> <?php echo lang('company')?></a>    
+                                            <?php } ?>                          	
 
 										 <?php } ?>	
                                         </div>
