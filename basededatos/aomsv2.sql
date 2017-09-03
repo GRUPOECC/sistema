@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-09-2017 a las 15:08:56
+-- Tiempo de generación: 03-09-2017 a las 15:51:30
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -264,7 +264,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (184, 'select', 21, 0, 'Seleccionar', 0),
 (185, 'show_removed', 112, 0, 'Mostrar Eliminados', 0),
 (186, 'open_completed', 112, 0, 'Abrir Culminadas', 0),
-(187, 'commentsOnly', 112, 1, 'commentsOnly', 0);
+(187, 'commentsOnly', 112, 1, 'commentsOnly', 0),
+(188, 'select', 112, 0, 'Seleccionar', 0);
 
 -- --------------------------------------------------------
 
@@ -2977,7 +2978,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=188;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=189;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
