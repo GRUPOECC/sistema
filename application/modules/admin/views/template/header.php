@@ -933,7 +933,7 @@ $fourth = $this->uri->segment(4);
                                     <li class="<?php echo($this->uri->segment(2)=='tasks')?'active':'';?>">
                                         <a href="<?php echo site_url('admin/tasks');?>">
                                             <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('Tasks');?></span> 
-                                            <small class="badge pull-right bg-red"><?php echo count($due_tasks) ?></small>
+                                            <!--<small class="badge pull-right bg-red"><?php echo count($due_tasks) ?></small>-->
                                         </a>
                                     </li>
                                     <?php break;}}?> 

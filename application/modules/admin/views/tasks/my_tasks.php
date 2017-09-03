@@ -130,7 +130,7 @@ function areyousure()
 									<td><?php $formato = explode("-", $new->due_date); 
                                               echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];
                                           ?> <?php if($new->due_date<date("Y-m-d") && $new->progress!=100 ){?> <small class='label pull-right bg-red'>Over Due</small> <?php }?></td>
-									<td><?php echo $new->name ?> <small class='label pull-right bg-blue'><?php echo $new->role?></small></td>
+									<td><?php echo $new->username ?></td>
 									
                                     <td width="38%">
                                         <div class="btn-group">
