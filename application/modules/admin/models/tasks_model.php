@@ -140,7 +140,7 @@ class tasks_model extends CI_Model
 	
 	function get($id)
 	{
-                   $this->db->select('T.*,U.name name,UR.name role');
+                   $this->db->select('T.*,U.name username,UR.name role');
 				   $this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 				   $this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
 				   $this->db->where('T.id',$id);
