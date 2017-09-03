@@ -537,6 +537,11 @@ $lang['upload'] = "Adjuntar archivos";
 $lang['showremoved'] = "Mostrar Eliminados";
 $lang['dontshowremoved'] = "Ocultar Eliminados";
 $lang['taskinformation'] = "Informacion de la Tarea";
+$lang['companies'] = "Empresas donde Trabaja";
+$lang['companies_deleted'] = "Empresa eliminada";
+$lang['company'] = "Empresa";
+
+
 
 
 

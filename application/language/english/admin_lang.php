@@ -529,4 +529,7 @@ $lang['upload'] = "Upload Files";
 $lang['showremoved'] = "Show removed";
 $lang['dontshowremoved'] = "Hide removed";
 $lang['taskinformation'] = "Task Information";
+$lang['companies'] = "Companies";
+$lang['companies_deleted'] = "Company Deleted";
+$lang['company'] = "Company";
 

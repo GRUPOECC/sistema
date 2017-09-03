@@ -96,7 +96,28 @@
                                 </div>
                             </div>
                         </div>
-						
+						<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('company_name');?></label>
+                                    <select name="empresa_id" class="form-control chzn" id="empresa_id">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
+                                        <?php foreach($empresas as $new) {
+                                            $sel = "";
+
+                                            foreach($empresa as $elemento) {
+                                                if ($elemento->id_empresa==$new->id)
+                                                 $sel='selected="selected"';
+                                            }
+
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
 							
                         <div class="form-group">
                               <div class="row">
@@ -106,7 +127,13 @@
 										<option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
 										<?php foreach($roles as $new) {
 											$sel = "";
-											if($new->id==$employee->user_role) $sel='selected="selected"';
+											//if($new->id==$employee->user_role) $sel='selected="selected"';
+                                            foreach($empresa as $elemento) {
+                                                if ($elemento->id_cargo==$new->id)
+                                                 $sel='selected="selected"';
+                                            }
+
+
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
@@ -124,7 +151,11 @@
 										<option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
 										<?php foreach($departments as $new) {
 											$sel = "";
-											if($new->id==$employee->department_id) $sel='selected="selected"';
+											//if($new->id==$employee->department_id) $sel='selected="selected"';
+											foreach($empresa as $elemento) {
+                                                if ($elemento->id_departamento==$new->id)
+                                                 $sel='selected="selected"';
+                                            }
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										

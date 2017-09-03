@@ -86,6 +86,23 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('company_name');?></label>
+                                    <select name="empresa_id" class="form-control chzn" id="empresa_id">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
+                                        <?php foreach($empresas as $new) {
+                                            $sel = "";
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
 						
 						
                         <div class="form-group">

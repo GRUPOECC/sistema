@@ -34,6 +34,7 @@ class employees extends MX_Controller {
 	function add(){
 		$data['fields'] = $this->custom_field_model->get_custom_fields(6);	
 		$data['employee_id'] = $this->employees_model->get_employee_id();
+		$data['empresas'] = $this->employees_model->get_empresas();	
 		if($data['employee_id']->employee_id==0){
 			$data['e_id']	= $this->settings->employee_id;
 		}else{
@@ -100,7 +101,13 @@ class employees extends MX_Controller {
 				$save['joining_date'] = $this->input->post('joining_date');
 				$save['joining_salary'] = $this->input->post('joining_salary');
 			   	$save['status'] = $this->input->post('status');
-				$p_key = $this->employees_model->save($save);
+			   	//Asignacion de la empresas: 
+			   	//-------------------------------------------------------------------
+			   	$save_empresa['id_empresa'] = $this->input->post('empresa_id');
+			   	$save_empresa['id_departamento'] = $save['department_id'];
+			   	$save_empresa['id_cargo'] = $save['user_role'];	   	
+			   	//-------------------------------------------------------------------
+				$p_key = $this->employees_model->save($save,$save_empresa);
 			
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){
@@ -132,6 +139,8 @@ class employees extends MX_Controller {
 		$data['employee'] = $this->employees_model->get($id);
 		$data['roles'] = $this->user_role_model->get_all();
 		$data['departments'] = $this->department_model->get_all();
+		$data['empresas'] = $this->employees_model->get_empresas();
+		$data['empresa'] = $this->employees_model->get_empresa($id);
 		$data['designations'] = $this->department_model->get_designations($data['employee']->department_id);
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
@@ -188,7 +197,12 @@ class employees extends MX_Controller {
 				$save['joining_date'] = $this->input->post('joining_date');
 				$save['joining_salary'] = $this->input->post('joining_salary');
 				$save['status'] = $this->input->post('status');
-			   
+			    //Asignacion de la empresas: 
+			   	//-------------------------------------------------------------------
+			   	$save_empresa['id_empresa'] = $this->input->post('empresa_id');
+			   	$save_empresa['id_departamento'] = $save['department_id'];
+			   	$save_empresa['id_cargo'] = $save['user_role'];	   	
+			   	//-------------------------------------------------------------------
 			   
 			   if ($this->input->post('password') != '' || !$id)
 				{
@@ -212,7 +226,7 @@ class employees extends MX_Controller {
 				}
 				
 				
-				$this->employees_model->update($save,$id);
+				$this->employees_model->update($save,$save_empresa,$id);
                 $this->session->set_flashdata('message', lang('employee_updated'));
 				redirect('admin/employees');
 			}
@@ -224,9 +238,55 @@ class employees extends MX_Controller {
 		$this->load->view('template/main', $data);	
 
 	}	
+
+	function empresas($id){
+		if($id){
+			 $data['id'] = $id; 
+		     $data['empresas'] = $this->employees_model->get_empresas_by_user($id);
+		     $data['listaempresas'] = $this->employees_model->get_empresas();	
+		     $data['roles'] = $this->user_role_model->get_all();
+		     $data['departments'] = $this->department_model->get_all();
+		     $data['page_title'] =  lang('companies');
+			 $data['body'] = 'employees/empresas';
+			 $this->load->view('template/main', $data);	
+	    }
+	}
+
+	function deletecompany($id){
+           if($id){
+			$this->employees_model->delete_empresa($id);
+			$this->session->set_flashdata('message',lang('companies_deleted'));
+			
+		}
+		header("Location:".$_SERVER['HTTP_REFERER']);  
+	}
+
+	function editcompany($id){
+		
+	}
 	
-	
-	
+	function addcompany($id){
+		if ($id){
+		if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+        	$this->load->library('form_validation');
+			$this->form_validation->set_message('required', lang('custom_required'));
+			$this->form_validation->set_rules('role_id', 'lang:role_id', 'required');
+			$this->form_validation->set_rules('empresa_id', 'lang:empresa_id', 'required');
+			$this->form_validation->set_rules('department_id', 'lang:department_id', 'required');
+			if ($this->form_validation->run())
+              {
+				 $save_empresa['id_cargo']  = $this->input->post('role_id');
+				 $save_empresa['id_departamento']= $this->input->post('department_id');
+		         $save_empresa['id_empresa'] = $this->input->post('empresa_id');
+			     $save_empresa['id_usuario'] = $id;
+			     $this->employees_model->add_empresa($save_empresa);
+	          }
+	     }	
+	 }
+	     redirect('admin/employees/empresas/'.$id);		
+	}
+
 	function add_bank_details($id){
 		$data['details'] = $this->employees_model->get_bank_details($id);
 		

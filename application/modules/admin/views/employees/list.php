@@ -56,7 +56,7 @@ function areyousure()
                                     <td><?php echo $new->role ?></td>
 									<td><?php echo ($new->status==1)?lang('active'):lang('inactive');?>  </td>
 									
-                                    <td width="50%">
+                                    <td width="60%">
                                         <div class="btn-group">
 									<?php if(check_user_role(41)==1){?>		
                                           <a class="btn btn-default"  href="<?php echo site_url('admin/employees/view/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view')?></a>
@@ -71,7 +71,9 @@ function areyousure()
 										  <?php } ?>	
 										 <?php if(check_user_role(126)==1){?>	
 										 <a class="btn btn-success"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/documents/'.$new->id); ?>"><i class="fa fa-file"></i> <?php echo lang('documents')?></a>
-										  <?php } ?>	
+										  <?php } ?>        
+                                           <a class="btn btn-success"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/empresas/'.$new->id); ?>"><i class="fa fa-bank"></i> <?php echo lang('company')?></a>                              	
+
 										 <?php } ?>	
                                         </div>
                                     </td>
@@ -86,6 +88,7 @@ function areyousure()
         </div>
     </div>
 </section>
+
 
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
