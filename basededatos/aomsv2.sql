@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-09-2017 a las 23:38:46
+-- Tiempo de generación: 04-09-2017 a las 00:56:56
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -268,7 +268,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (188, 'select', 112, 0, 'Seleccionar', 0),
 (189, 'empresas', 37, 1, 'Ver Empresas donde trabaja', 0),
 (190, 'deletecompany', 37, 0, 'Eliminar Empresa', 0),
-(191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0);
+(191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0),
+(192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0);
 
 -- --------------------------------------------------------
 
@@ -1770,6 +1771,17 @@ CREATE TABLE `empresa_usuario` (
   `id_cargo` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `empresa_usuario`
+--
+
+INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departamento`, `id_cargo`) VALUES
+(5, 15, 17, 6, 2),
+(6, 15, 20, 5, 5),
+(7, 15, 23, 3, 6),
+(8, 15, 17, 1, 5),
+(9, 15, 11, 1, 6);
+
 -- --------------------------------------------------------
 
 --
@@ -2314,73 +2326,74 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (98, 4, 127),
 (99, 4, 126),
 (100, 4, 39),
-(101, 4, 190),
-(102, 4, 41),
-(103, 4, 143),
-(104, 4, 144),
-(105, 4, 145),
-(106, 4, 108),
-(107, 4, 109),
-(108, 4, 110),
-(109, 4, 81),
-(110, 4, 83),
-(111, 4, 82),
-(112, 4, 139),
-(113, 4, 140),
-(114, 4, 142),
-(115, 4, 141),
-(116, 4, 51),
-(117, 4, 52),
-(118, 4, 54),
-(119, 4, 53),
-(120, 4, 15),
-(121, 4, 146),
-(122, 4, 147),
-(123, 4, 149),
-(124, 4, 148),
-(125, 4, 150),
-(126, 4, 80),
-(127, 4, 75),
-(128, 4, 76),
-(129, 4, 78),
-(130, 4, 77),
-(131, 4, 50),
-(132, 4, 14),
-(133, 4, 79),
-(134, 4, 112),
-(135, 4, 113),
-(136, 4, 117),
-(137, 4, 116),
-(138, 4, 114),
-(139, 4, 152),
-(140, 4, 115),
-(141, 4, 157),
-(142, 4, 158),
-(143, 4, 160),
-(144, 4, 159),
-(145, 4, 16),
-(146, 4, 17),
-(147, 4, 20),
-(148, 4, 18),
-(149, 4, 107),
-(150, 4, 19),
-(151, 4, 42),
-(152, 4, 43),
-(153, 4, 45),
-(154, 4, 44),
-(155, 3, 1),
-(156, 3, 143),
-(157, 3, 144),
-(158, 3, 145),
-(159, 5, 1),
-(160, 5, 21),
-(161, 5, 22),
-(162, 5, 175),
-(163, 5, 24),
-(164, 5, 155),
-(165, 5, 23),
-(166, 5, 173),
-(167, 5, 174);
+(101, 4, 192),
+(102, 4, 190),
+(103, 4, 41),
+(104, 4, 143),
+(105, 4, 144),
+(106, 4, 145),
+(107, 4, 108),
+(108, 4, 109),
+(109, 4, 110),
+(110, 4, 81),
+(111, 4, 83),
+(112, 4, 82),
+(113, 4, 139),
+(114, 4, 140),
+(115, 4, 142),
+(116, 4, 141),
+(117, 4, 51),
+(118, 4, 52),
+(119, 4, 54),
+(120, 4, 53),
+(121, 4, 15),
+(122, 4, 146),
+(123, 4, 147),
+(124, 4, 149),
+(125, 4, 148),
+(126, 4, 150),
+(127, 4, 80),
+(128, 4, 75),
+(129, 4, 76),
+(130, 4, 78),
+(131, 4, 77),
+(132, 4, 50),
+(133, 4, 14),
+(134, 4, 79),
+(135, 4, 112),
+(136, 4, 113),
+(137, 4, 117),
+(138, 4, 116),
+(139, 4, 114),
+(140, 4, 152),
+(141, 4, 115),
+(142, 4, 157),
+(143, 4, 158),
+(144, 4, 160),
+(145, 4, 159),
+(146, 4, 16),
+(147, 4, 17),
+(148, 4, 20),
+(149, 4, 18),
+(150, 4, 107),
+(151, 4, 19),
+(152, 4, 42),
+(153, 4, 43),
+(154, 4, 45),
+(155, 4, 44),
+(156, 3, 1),
+(157, 3, 143),
+(158, 3, 144),
+(159, 3, 145),
+(160, 5, 1),
+(161, 5, 21),
+(162, 5, 22),
+(163, 5, 175),
+(164, 5, 24),
+(165, 5, 155),
+(166, 5, 23),
+(167, 5, 173),
+(168, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -3005,7 +3018,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=192;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=193;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3115,7 +3128,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3215,7 +3228,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=168;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
