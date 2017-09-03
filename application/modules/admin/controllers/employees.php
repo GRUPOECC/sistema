@@ -252,6 +252,27 @@ class employees extends MX_Controller {
 	    }
 	}
 
+    function editcompany($id){
+		if ($id){
+		if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+        	$this->load->library('form_validation');
+			$this->form_validation->set_message('required', lang('custom_required'));
+			$this->form_validation->set_rules('role_id', 'lang:role_id', 'required');
+			$this->form_validation->set_rules('empresa_id', 'lang:empresa_id', 'required');
+			$this->form_validation->set_rules('department_id', 'lang:department_id', 'required');
+			if ($this->form_validation->run())
+              {
+				 $save_empresa['id_cargo']  = $this->input->post('role_id');
+				 $save_empresa['id_departamento']= $this->input->post('department_id');
+		         $save_empresa['id_empresa'] = $this->input->post('empresa_id');
+			     $this->employees_model->update_empresa($id,$save_empresa);
+	          }
+	     }	
+	 }
+	     header("Location:".$_SERVER['HTTP_REFERER']);  
+
+    }
 	function deletecompany($id){
            if($id){
 			$this->employees_model->delete_empresa($id);
@@ -261,9 +282,6 @@ class employees extends MX_Controller {
 		header("Location:".$_SERVER['HTTP_REFERER']);  
 	}
 
-	function editcompany($id){
-		
-	}
 	
 	function addcompany($id){
 		if ($id){

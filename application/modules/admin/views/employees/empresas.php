@@ -21,7 +21,7 @@ function areyousure()
             <div class="col-xs-12">
                 <div class="btn-group pull-right">
 				<?php if(check_user_role(38)==1){?>	
-                    <a class="btn btn-default"  data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" href=""><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
+                    <a class="btn btn-default"  data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="agregarEmpresa(<?php echo $id; ?>)" href=""><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
 					<?php } ?>	
                 </div>
             </div>    
@@ -55,12 +55,12 @@ function areyousure()
                                     <td><?php echo $new->rol; ?></td>
 									<td><?php echo $new->depto;?>  </td>
 									
-                                    <td width="10%">
+                                    <td width="30%">
                                         <div class="btn-group">	  	
-										  <!--<?php if(check_user_role(39)==1){?>	
-										  <a class="btn btn-primary"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
+										  <?php if(check_user_role(39)==1){?>	
+										  <a class="btn btn-primary" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" style="margin-left:12px;" onclick="editarEmpresa(<?php echo $new->idrelacion ?>,<?php echo $new->id ?>,<?php echo $new->iddepto ?>,<?php echo $new->idrol ?>)" href=""><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
 										  <?php } ?>
-                                          -->
+                                         
                                     
 										 <?php if(check_user_role(40)==1){?>	 
                                          <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/employees/deletecompany/'.$new->idrelacion); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete')?></a>
@@ -80,17 +80,18 @@ function areyousure()
     </div>
 </section>
 
-<!-- Modal para la Informacion de los contactos  -->
+<!-- Modal para agregar empresas al usuario  -->
   <div class="modal fade" id="myModalData" role="dialog">
     <div class="modal-dialog">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title"><?php echo lang('add');?></h4>
+          <h4 id="titulomodal" class="modal-title"><?php echo lang('add');?></h4>
         </div>
         <div class="modal-body">
-            <?php echo form_open_multipart('admin/employees/addcompany/'.$id); ?>
+           
+                 <form id="formulario" action="../addcompany/<?php echo $id; ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data"> 
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-6">
@@ -113,7 +114,7 @@ function areyousure()
                               <div class="row">
                                 <div class="col-md-6">
                                     <label for="email" style="clear:both;"><?php echo lang('user_role');?></label>
-                                    <select name="role_id" class="form-control chzn">
+                                    <select name="role_id" id="role_id" class="form-control chzn">
                                         <option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
                                         <?php foreach($roles as $new) {
                                             $sel = "";
@@ -147,7 +148,8 @@ function areyousure()
                         <button type="submit" class="btn btn-primary"><?php echo lang('save')?></button>
                     </div>
 
-             <?php form_close()?>
+         
+             </form>
  
         </div>
         <div class="modal-footer">
@@ -158,6 +160,7 @@ function areyousure()
     </div>
   </div>
 
+
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
@@ -165,5 +168,41 @@ $(function() {
 	$('#example1').dataTable({
 	});
 });
+
+function editarEmpresa(id, idempresa, iddepartamento, idcargo){
+        var titulo = document.getElementById('titulomodal');
+         titulo.innerHTML= "Editar";
+
+        var formulario = document.getElementById('formulario');
+        formulario.action = "../editcompany/"+id;
+
+        var element = document.getElementById('empresa_id');
+        element.value = idempresa;
+
+        var element2 = document.getElementById('department_id');
+        element2.value = iddepartamento;
+
+        var element3 = document.getElementById('role_id');
+        element3.value = idcargo;
+
+}
+
+function agregarEmpresa(id){
+        var titulo = document.getElementById('titulomodal');
+         titulo.innerHTML= "Añadir";
+
+        var formulario = document.getElementById('formulario');
+        formulario.action = "../addcompany/"+id;
+
+        var element = document.getElementById('empresa_id');
+        element.value = "";
+
+        var element2 = document.getElementById('department_id');
+        element2.value = "";
+
+        var element3 = document.getElementById('role_id');
+        element3.value = "";
+
+}
 
 </script>
