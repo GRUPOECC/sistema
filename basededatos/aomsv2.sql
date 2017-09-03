@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-09-2017 a las 15:51:30
+-- Tiempo de generación: 03-09-2017 a las 18:19:59
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -1756,6 +1756,20 @@ INSERT INTO `empresas` (`id`, `name`, `parent_id`, `cod_interno`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `empresa_usuario`
+--
+
+CREATE TABLE `empresa_usuario` (
+  `id` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `id_empresa` int(11) NOT NULL,
+  `id_departamento` int(11) NOT NULL,
+  `id_cargo` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `extended_case`
 --
 
@@ -2798,6 +2812,12 @@ ALTER TABLE `documents`
 -- Indices de la tabla `empresas`
 --
 ALTER TABLE `empresas`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `empresa_usuario`
+--
+ALTER TABLE `empresa_usuario`
   ADD PRIMARY KEY (`id`);
 
 --
