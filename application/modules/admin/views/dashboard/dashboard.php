@@ -514,9 +514,9 @@
 					
 					<div class="col-md-9">
                             <div class="box box-primary">
-						<div class="col-md-12" style="padding:20px">	
+						<!-- <div class="col-md-12" style="padding:20px">	
 							<select id='lang-selector' class="pull-right"></select>
-						</div>	
+						</div>	 -->
 
                                 <div class="box-body no-padding">
                                     <!-- THE CALENDAR -->
@@ -749,10 +749,10 @@ $(document).ready(function() {
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
             $(wrapper).append('<div class="row" style="padding-top:10px;"><div class="col-md-3"><input type="text" name="date[]" value="" placeholder="<?php echo lang('date')?>" class="form-control datepicker"  required/></div><div class="col-md-3"><select name="leave_id[]" class="form-control" required><option value="">-- Select Leave Type</option><?php foreach($leave_types as $new){echo "<option value=".$new->id.">".$new->name."</option>";}?></select></div><div class="col-md-4"><input type="text" name="reason[]" value="" placeholder="Reason" class="form-control" required /></div><a href="#" class="remove_field btn btn-danger">Remove</a></div></div>'); //add input box
-			jQuery('.datepicker').datetimepicker({
-			 timepicker:false,
-			 format:'Y-m-d'
-			});			
+            jQuery('.datepicker').datetimepicker({
+             timepicker:false,
+             format:'Y-m-d'
+            });         
 
         }
     });
@@ -771,44 +771,6 @@ $(document).ready(function() {
 
 <script type="text/javascript">
       $(function() {
-
-        //Date for the calendar events (dummy data)
-        var date = new Date();
-        var d = date.getDate(),
-                m = date.getMonth(),
-                y = date.getFullYear();
-
-
-        //Defining calendar properties once
-        let calendarProperties = {editable: true,
-                    droppable: true, // this allows things to be dropped onto the calendar !!!
-                    // drop: function(date, allDay) { // this function is called when something is dropped
-
-                    //     // retrieve the dropped element's stored Event Object
-                    //     var originalEventObject = $(this).data('eventObject');
-
-                    //     // we need to copy it, so that multiple events don't have a reference to the same object
-                    //     var copiedEventObject = $.extend({}, originalEventObject);
-
-                    //     // assign it the date that was reported
-                    //     copiedEventObject.start = date;
-                    //     copiedEventObject.allDay = allDay;
-                    //     copiedEventObject.backgroundColor = $(this).css("background-color");
-                    //     copiedEventObject.borderColor = $(this).css("border-color");
-
-                    //     // render the event on the calendar
-                    //     // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
-                    //     $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
-
-                    //     // is the "remove after drop" checkbox checked?
-                    //     if ($('#drop-remove').is(':checked')) {
-                    //         // if so, remove the element from the "Draggable Events" list
-                    //         $(this).remove();
-                    //     }
-
-                    // }
-                };
-
 
         <?php 
         // defining reusable blocks of code to generate the calendar events
@@ -853,12 +815,34 @@ $(document).ready(function() {
 
          ?>
 
+       var currentLangCode = 'es';
 
-        $('#caption-cases').on("click",function(){
-            $('#calendar').fullCalendar( 'destroy' );
+        // build the language selector's options
+        $.each($.fullCalendar.langs, function(langCode) {
+            $('#lang-selector').append(
+                $('<option/>')
+                    .attr('value', langCode)
+                    .prop('selected', langCode == currentLangCode)
+                    .text(langCode)
+            );
+        });
+
+        //Date for the calendar events (dummy data)
+        var date = new Date();
+        var d = date.getDate(),
+                m = date.getMonth(),
+                y = date.getFullYear();
 
 
-                $('#calendar').fullCalendar({
+        //Defining calendar properties once
+        let calendarProperties = {editable: true,
+                    droppable: true, // this allows things to be dropped onto the calendar !!!
+                    lang: currentLangCode
+                };
+
+                                    // CALENDAR OBJECTS
+
+        let calendar_all_events = {
                      showAgendaButton: true,
                 columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
                 timeFormat: 'H:mm',
@@ -868,7 +852,40 @@ $(document).ready(function() {
                         center: 'title',
                         right: 'month,agendaWeek,agendaDay'
                     },
-                    lang: currentLangCode,
+
+                    buttonText: {
+                        today: 'today',
+                        month: 'month',
+                        week: 'week',
+                        day: 'day'
+                    },
+
+                    events:[
+                    
+                        <?php  
+                            foreach($case_all_cal as $order)    
+                                print_case($order);
+                            foreach($appointment_all_cal as $new)
+                                print_appointment($new); 
+                            foreach ($my_tasks_info as $task)
+                                print_tasks($task);
+                        ?>
+                            
+                            ],
+                    calendarProperties
+                };
+
+        let calendar_cases = {
+                     showAgendaButton: true,
+                columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
+                timeFormat: 'H:mm',
+                axisFormat: 'H:mm',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    },
+                    // lang: currentLangCode,
                     buttonText: {
                         today: 'today',
                         month: 'month',
@@ -886,17 +903,10 @@ $(document).ready(function() {
                             ],
                             calendarProperties
                                         
-                });
+                };
+                
 
-        });
-
-
-
-        $('#caption-appointments').on("click",function(){
-            $('#calendar').fullCalendar( 'destroy' );
-
-
-                $('#calendar').fullCalendar({
+            let calendar_appointments = {
                      showAgendaButton: true,
                 columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
                 timeFormat: 'H:mm',
@@ -906,7 +916,7 @@ $(document).ready(function() {
                         center: 'title',
                         right: 'month,agendaWeek,agendaDay'
                     },
-                    lang: currentLangCode,
+                    // lang: currentLangCode,
                     buttonText: {
                         today: 'today',
                         month: 'month',
@@ -923,18 +933,9 @@ $(document).ready(function() {
 
                             ],
                             calendarProperties
-                });
+                };
 
-
-        });
-
-
-
-        $('#caption-tasks').on("click",function(){
-            $('#calendar').fullCalendar( 'destroy' );
-
-
-                $('#calendar').fullCalendar({
+            let calendar_tasks = {
                      showAgendaButton: true,
                 columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
                 timeFormat: 'H:mm',
@@ -944,7 +945,7 @@ $(document).ready(function() {
                         center: 'title',
                         right: 'month,agendaWeek,agendaDay'
                     },
-                    lang: currentLangCode,
+                    // lang: currentLangCode,
                     buttonText: {
                         today: 'today',
                         month: 'month',
@@ -961,164 +962,68 @@ $(document).ready(function() {
 
                             ],
                     calendarProperties
-                });
+                };
+
+
+
+
+        $('#caption-cases').on("click",function(){
+            $('#calendar').fullCalendar( 'destroy' );
+
+
+                $('#calendar').fullCalendar(
+                    calendar_cases
+                    );
 
         });
 
-				
-		var currentLangCode = 'en';
 
-		// build the language selector's options
-		$.each($.fullCalendar.langs, function(langCode) {
-			$('#lang-selector').append(
-				$('<option/>')
-					.attr('value', langCode)
-					.prop('selected', langCode == currentLangCode)
-					.text(langCode)
-			);
-		});
 
-		// rerender the calendar when the selected option changes
-		$('#lang-selector').on('change', function() {
-			if (this.value) {
-				currentLangCode = this.value;
-				$('#calendar').fullCalendar('destroy');
-				//start cal code
-					
-					/* initialize the external events
-                 -----------------------------------------------------------------*/
-                // function ini_events(ele) {
-                //     ele.each(function() {
+        $('#caption-appointments').on("click",function(){
+            $('#calendar').fullCalendar( 'destroy' );
 
-                //         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-                //         // it doesn't need to have a start or end
-                //         var eventObject = {
-                //             title: $.trim($(this).text()) // use the element's text as the event title
-                //         };
 
-                //         // store the Event Object in the DOM element so we can get to it later
-                //         $(this).data('eventObject', eventObject);
+                $('#calendar').fullCalendar(
+                    calendar_appointments
+                    );
 
-                //         // make the event draggable using jQuery UI
-                //         $(this).draggable({
-                //             zIndex: 1070,
-                //             revert: true, // will cause the event to go back to its
-                //             revertDuration: 0  //  original position after the drag
-                //         });
 
-                //     });
-                // }
-                // ini_events($('#external-events div.external-event'));
+        });
 
-                /* initialize the calendar
-                 -----------------------------------------------------------------*/
+
+
+        $('#caption-tasks').on("click",function(){
+            $('#calendar').fullCalendar( 'destroy' );
+
+
+                $('#calendar').fullCalendar(
+                    calendar_tasks
+                    );
+
+        });
+
+                $('#calendar').fullCalendar(
+                    calendar_all_events
+                    );
+
+        // rerender the calendar when the selected option changes
+        $('#spanish_lang').on("click", function() {
+            // if (this.value) {
+             currentLangCode = 'es';
+               $('#calendar').fullCalendar('destroy');
 
                 $('#calendar').fullCalendar({
-					 showAgendaButton: true,
-                columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
-                timeFormat: 'H:mm',
-                axisFormat: 'H:mm',
-                    header: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'month,agendaWeek,agendaDay'
-                    },
-					lang: currentLangCode,
-                    buttonText: {
-                        today: 'today',
-                        month: 'month',
-                        week: 'week',
-                        day: 'day'
-                    },
-
-                    events:[
-					
-                                <?php  
-                                    foreach($case_all_cal as $order)    
-                                        print_case($order);
-                                    foreach($appointment_all_cal as $new)
-                                        print_appointment($new); 
-                                    foreach ($my_tasks_info as $task)
-                                        print_tasks($task);
-                                ?>
-
-                    		],
-                            calendarProperties
+                   calendar_all_events
                 });
-				
-				
-				//end cal code
-				
-				
-			}
-		});
 
-				
-				
-                /* initialize the external events
-                 -----------------------------------------------------------------*/
-                // function ini_events(ele) {
-                //     ele.each(function() {
+            // }
+            // alert('hola');
+        });
+ 
 
-                //         // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
-                //         // it doesn't need to have a start or end
-                //         var eventObject = {
-                //             title: $.trim($(this).text()) // use the element's text as the event title
-                //         };
 
-                //         // store the Event Object in the DOM element so we can get to it later
-                //         $(this).data('eventObject', eventObject);
-
-                //         // make the event draggable using jQuery UI
-                //         $(this).draggable({
-                //             zIndex: 1070,
-                //             revert: true, // will cause the event to go back to its
-                //             revertDuration: 0  //  original position after the drag
-                //         });
-
-                //     });
-                // }
-                // ini_events($('#external-events div.external-event'));
-
-                /* initialize the calendar
-                 -----------------------------------------------------------------*/
-                //Date for the calendar events (dummy data)
-                // var date = new Date();
-                // var d = date.getDate(),
-                //         m = date.getMonth(),
-                //         y = date.getFullYear();
-                $('#calendar').fullCalendar({
-					 showAgendaButton: true,
-                columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
-                timeFormat: 'H:mm',
-                axisFormat: 'H:mm',
-                    header: {
-                        left: 'prev,next today',
-                        center: 'title',
-                        right: 'month,agendaWeek,agendaDay'
-                    },
-					lang: currentLangCode,
-                    buttonText: {
-                        today: 'today',
-                        month: 'month',
-                        week: 'week',
-                        day: 'day'
-                    },
-
-                    events:[
-					
-                        <?php  
-                            foreach($case_all_cal as $order)    
-                                print_case($order);
-                            foreach($appointment_all_cal as $new)
-                                print_appointment($new); 
-                            foreach ($my_tasks_info as $task)
-                                print_tasks($task);
-                        ?>
-                    		
-                    		],
-                    calendarProperties
-                });
+                
+            
 
                 
                
