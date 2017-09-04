@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-09-2017 a las 16:50:48
+-- Tiempo de generación: 04-09-2017 a las 19:33:32
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -36,14 +36,14 @@ DECLARE rel_categorias CURSOR
     	FROM rel_contact_category rcc
        	WHERE rcc.id_contact=contacto;
 DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = TRUE;
-	 OPEN rel_categorias;   
+	 OPEN rel_categorias;
      SET categorias='';
 	 obtener_categorias: LOOP
     FETCH rel_categorias INTO idcategoria;
     IF done THEN
       LEAVE obtener_categorias;
     END IF;
-SELECT 
+SELECT
     cc.name
 INTO auxiliar FROM
     contact_categories cc
@@ -1781,7 +1781,8 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (7, 15, 23, 3, 6),
 (8, 15, 17, 1, 5),
 (9, 15, 11, 1, 6),
-(11, 16, 16, 3, 5);
+(10, 14, 1, 7, 4),
+(11, 14, 12, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -2368,34 +2369,35 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (139, 4, 116),
 (140, 4, 114),
 (141, 4, 152),
-(142, 4, 115),
-(143, 4, 157),
-(144, 4, 158),
-(145, 4, 160),
-(146, 4, 159),
-(147, 4, 16),
-(148, 4, 17),
-(149, 4, 20),
-(150, 4, 18),
-(151, 4, 107),
-(152, 4, 19),
-(153, 4, 42),
-(154, 4, 43),
-(155, 4, 45),
-(156, 4, 44),
-(157, 3, 1),
-(158, 3, 143),
-(159, 3, 144),
-(160, 3, 145),
-(161, 5, 1),
-(162, 5, 21),
-(163, 5, 22),
-(164, 5, 175),
-(165, 5, 24),
-(166, 5, 155),
-(167, 5, 23),
-(168, 5, 173),
-(169, 5, 174);
+(142, 4, 188),
+(143, 4, 115),
+(144, 4, 157),
+(145, 4, 158),
+(146, 4, 160),
+(147, 4, 159),
+(148, 4, 16),
+(149, 4, 17),
+(150, 4, 20),
+(151, 4, 18),
+(152, 4, 107),
+(153, 4, 19),
+(154, 4, 42),
+(155, 4, 43),
+(156, 4, 45),
+(157, 4, 44),
+(158, 3, 1),
+(159, 3, 143),
+(160, 3, 144),
+(161, 3, 145),
+(162, 5, 1),
+(163, 5, 21),
+(164, 5, 22),
+(165, 5, 175),
+(166, 5, 24),
+(167, 5, 155),
+(168, 5, 23),
+(169, 5, 173),
+(170, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2419,15 +2421,16 @@ CREATE TABLE `settings` (
   `smtp_pass` varchar(255) NOT NULL,
   `smtp_port` varchar(255) NOT NULL,
   `mark_out_time` time NOT NULL,
-  `invoice_no` int(10) NOT NULL DEFAULT '1'
+  `invoice_no` int(10) NOT NULL DEFAULT '1',
+  `exp_cal_events` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `settings`
 --
 
-INSERT INTO `settings` (`id`, `name`, `image`, `header_setting`, `address`, `contact`, `email`, `employee_id`, `date_format`, `timezone`, `smtp_host`, `smtp_user`, `smtp_pass`, `smtp_port`, `mark_out_time`, `invoice_no`) VALUES
-(1, 'AOMS', 'GECC.png', 1, 'Caracas', '+58(212)242.62.11', 'soporte@gecc.com.ve', 0, 'm/d/y', 'America/Caracas', 'smtp.gmail.com', 'scammarano@gmail.com', '13308720sc', '465', '00:00:00', 1);
+INSERT INTO `settings` (`id`, `name`, `image`, `header_setting`, `address`, `contact`, `email`, `employee_id`, `date_format`, `timezone`, `smtp_host`, `smtp_user`, `smtp_pass`, `smtp_port`, `mark_out_time`, `invoice_no`, `exp_cal_events`) VALUES
+(1, 'AOMS', 'GECC.png', 1, 'Caracas', '+58(212)242.62.11', 'soporte@gecc.com.ve', 0, 'm/d/y', 'America/Caracas', 'smtp.gmail.com', 'scammarano@gmail.com', '13308720sc', '465', '00:00:00', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -2471,19 +2474,20 @@ CREATE TABLE `tasks` (
   `due_date` date NOT NULL,
   `progress` varchar(255) NOT NULL,
   `created_by` int(10) UNSIGNED NOT NULL,
-  `status` int(11) NOT NULL
+  `status` int(11) NOT NULL,
+  `id_empresa` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tasks`
 --
 
-INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`, `status`) VALUES
-(1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4, 0),
-(2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6, 0),
-(3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6, 0),
-(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6, 0),
-(5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1, 0);
+INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`, `status`, `id_empresa`) VALUES
+(1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4, 0, 0),
+(2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6, 0, 0),
+(3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6, 0, 0),
+(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6, 0, 0),
+(5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1, 0, 0);
 
 -- --------------------------------------------------------
 
@@ -2602,8 +2606,7 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 0, 22, '0000-00-00', '', 1),
 (11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, 0, 0, '2017-08-09', '', 1),
 (14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garryjrbruno@hotmail.com', '04123352179', 'Caricuao', 4, 0, '', 1, 4, 0, 0, '2017-09-29', '0', 1),
-(15, 0, 'Prueba Prueba', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'sdfhidfid@hotmail.com', '04123352179', 'trrrt', 4, 0, '', 1, 4, 0, 0, '2017-09-30', '5', 1),
-(16, 0, 'Fulano', '', 'fulano', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-11-23', 'fulano@hotmail.com', '04123352179', 'fulano', 5, 0, '', 1, 3, 0, 27, '2017-09-30', '0', 1);
+(15, 0, 'Prueba Prueba', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'sdfhidfid@hotmail.com', '04123352179', 'trrrt', 4, 0, '', 1, 4, 0, 0, '2017-09-30', '5', 1);
 
 -- --------------------------------------------------------
 
@@ -2681,7 +2684,7 @@ CREATE TABLE `v_tareas_asignadas` (
 --
 DROP TABLE IF EXISTS `v_calendario`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS  select `t`.`id` AS `id`,`t`.`name` AS `name`,`t`.`due_date` AS `due_date`,'TASK' AS `TASK` from `tasks` `t` where (`t`.`due_date` >= (sysdate() - interval 1 day)) union select `td`.`id` AS `id`,`td`.`title` AS `title`,`td`.`date` AS `date`,'TO_DO' AS `TO_DO` from `to_do_list` `td` where (`td`.`date` >= sysdate()) union select `h`.`id` AS `id`,`h`.`name` AS `name`,`h`.`date` AS `date`,'HOLIDAY' AS `HOLIDAY` from `holidays` `h` where (`h`.`date` >= sysdate()) union select `ap`.`id` AS `id`,('CITA ' or (`ap`.`title` <> 0)) AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,'CITA' AS `CITA` from `appointments` `ap` where (`ap`.`date_time` >= sysdate()) ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS  select `t`.`id` AS `id`,`t`.`name` AS `name`,`t`.`due_date` AS `due_date`,'TASK' AS `TASK` from `tasks` `t` union select `td`.`id` AS `id`,`td`.`title` AS `title`,`td`.`date` AS `date`,'TO_DO' AS `TO_DO` from `to_do_list` `td` where (`td`.`date` >= sysdate()) union select `h`.`id` AS `id`,`h`.`name` AS `name`,`h`.`date` AS `date`,'HOLIDAY' AS `HOLIDAY` from `holidays` `h` where (`h`.`date` >= sysdate()) union select `ap`.`id` AS `id`,('CITA ' or (`ap`.`title` <> 0)) AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,'CITA' AS `CITA` from `appointments` `ap` where (`ap`.`date_time` >= sysdate()) ;
 
 -- --------------------------------------------------------
 
@@ -3231,7 +3234,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=171;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
@@ -3266,7 +3269,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
