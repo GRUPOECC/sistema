@@ -316,7 +316,20 @@
 
 											                            <div class="row">
 											                            	<div class="col-md-3">
-											                            		<input type="checkbox" name="check-eventos-calendario" value="sdfds"> <?php echo lang('show_expired')?>
+											                            	<label for="exp_cal_events"><?php echo lang('show_expired')?></label>
+											                            	<br>
+											                            	<?php 
+
+											                            		if ($settings->exp_cal_events == 1) {
+											                            		echo "<div><input type=\"radio\" name=\"exp_cal_events\" value=\"1\" checked  > ". lang('yes')."</div>";
+											                            		echo "<div><input type=\"radio\" name=\"exp_cal_events\" value=\"0\"  > ". lang('no')."</div>";
+											                            		}
+											                            		else{
+
+											                            		echo "<div><input type=\"radio\" name=\"exp_cal_events\" value=\"1\"  > ". lang('yes')."</div>";
+											                            		echo "<div><input type=\"radio\" name=\"exp_cal_events\" value=\"0\" checked  > ". lang('no')."</div>";											                            		}
+											                            	 ?>
+											                            		
 											                            	</div>
 
 											                            </div>

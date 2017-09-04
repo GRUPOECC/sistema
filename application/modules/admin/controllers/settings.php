@@ -64,6 +64,7 @@ class settings extends MX_Controller {
 				$save['smtp_port'] = $this->input->post('smtp_port');
 				$save['mark_out_time'] = $this->input->post('mark_out_time');
 				$save['invoice_no'] = $this->input->post('invoice_no');
+				$save['exp_cal_events'] = $this->input->post('exp_cal_events');
 			  	$this->setting_model->update($save);
 				
 				if(isset($_POST['days'])){	               
