@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-09-2017 a las 00:56:56
+-- Tiempo de generación: 04-09-2017 a las 16:50:48
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -266,7 +266,7 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (186, 'open_completed', 112, 0, 'Abrir Culminadas', 0),
 (187, 'commentsOnly', 112, 1, 'commentsOnly', 0),
 (188, 'select', 112, 0, 'Seleccionar', 0),
-(189, 'empresas', 37, 1, 'Ver Empresas donde trabaja', 0),
+(189, 'empresas', 37, 0, 'Ver Empresas donde trabaja', 0),
 (190, 'deletecompany', 37, 0, 'Eliminar Empresa', 0),
 (191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0),
 (192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0);
@@ -1780,7 +1780,8 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (6, 15, 20, 5, 5),
 (7, 15, 23, 3, 6),
 (8, 15, 17, 1, 5),
-(9, 15, 11, 1, 6);
+(9, 15, 11, 1, 6),
+(11, 16, 16, 3, 5);
 
 -- --------------------------------------------------------
 
@@ -2328,72 +2329,73 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (100, 4, 39),
 (101, 4, 192),
 (102, 4, 190),
-(103, 4, 41),
-(104, 4, 143),
-(105, 4, 144),
-(106, 4, 145),
-(107, 4, 108),
-(108, 4, 109),
-(109, 4, 110),
-(110, 4, 81),
-(111, 4, 83),
-(112, 4, 82),
-(113, 4, 139),
-(114, 4, 140),
-(115, 4, 142),
-(116, 4, 141),
-(117, 4, 51),
-(118, 4, 52),
-(119, 4, 54),
-(120, 4, 53),
-(121, 4, 15),
-(122, 4, 146),
-(123, 4, 147),
-(124, 4, 149),
-(125, 4, 148),
-(126, 4, 150),
-(127, 4, 80),
-(128, 4, 75),
-(129, 4, 76),
-(130, 4, 78),
-(131, 4, 77),
-(132, 4, 50),
-(133, 4, 14),
-(134, 4, 79),
-(135, 4, 112),
-(136, 4, 113),
-(137, 4, 117),
-(138, 4, 116),
-(139, 4, 114),
-(140, 4, 152),
-(141, 4, 115),
-(142, 4, 157),
-(143, 4, 158),
-(144, 4, 160),
-(145, 4, 159),
-(146, 4, 16),
-(147, 4, 17),
-(148, 4, 20),
-(149, 4, 18),
-(150, 4, 107),
-(151, 4, 19),
-(152, 4, 42),
-(153, 4, 43),
-(154, 4, 45),
-(155, 4, 44),
-(156, 3, 1),
-(157, 3, 143),
-(158, 3, 144),
-(159, 3, 145),
-(160, 5, 1),
-(161, 5, 21),
-(162, 5, 22),
-(163, 5, 175),
-(164, 5, 24),
-(165, 5, 155),
-(166, 5, 23),
-(167, 5, 173),
-(168, 5, 174);
+(103, 4, 189),
+(104, 4, 41),
+(105, 4, 143),
+(106, 4, 144),
+(107, 4, 145),
+(108, 4, 108),
+(109, 4, 109),
+(110, 4, 110),
+(111, 4, 81),
+(112, 4, 83),
+(113, 4, 82),
+(114, 4, 139),
+(115, 4, 140),
+(116, 4, 142),
+(117, 4, 141),
+(118, 4, 51),
+(119, 4, 52),
+(120, 4, 54),
+(121, 4, 53),
+(122, 4, 15),
+(123, 4, 146),
+(124, 4, 147),
+(125, 4, 149),
+(126, 4, 148),
+(127, 4, 150),
+(128, 4, 80),
+(129, 4, 75),
+(130, 4, 76),
+(131, 4, 78),
+(132, 4, 77),
+(133, 4, 50),
+(134, 4, 14),
+(135, 4, 79),
+(136, 4, 112),
+(137, 4, 113),
+(138, 4, 117),
+(139, 4, 116),
+(140, 4, 114),
+(141, 4, 152),
+(142, 4, 115),
+(143, 4, 157),
+(144, 4, 158),
+(145, 4, 160),
+(146, 4, 159),
+(147, 4, 16),
+(148, 4, 17),
+(149, 4, 20),
+(150, 4, 18),
+(151, 4, 107),
+(152, 4, 19),
+(153, 4, 42),
+(154, 4, 43),
+(155, 4, 45),
+(156, 4, 44),
+(157, 3, 1),
+(158, 3, 143),
+(159, 3, 144),
+(160, 3, 145),
+(161, 5, 1),
+(162, 5, 21),
+(163, 5, 22),
+(164, 5, 175),
+(165, 5, 24),
+(166, 5, 155),
+(167, 5, 23),
+(168, 5, 173),
+(169, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2600,7 +2602,8 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 0, 22, '0000-00-00', '', 1),
 (11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, 0, 0, '2017-08-09', '', 1),
 (14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garryjrbruno@hotmail.com', '04123352179', 'Caricuao', 4, 0, '', 1, 4, 0, 0, '2017-09-29', '0', 1),
-(15, 0, 'Prueba Prueba', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'sdfhidfid@hotmail.com', '04123352179', 'trrrt', 4, 0, '', 1, 4, 0, 0, '2017-09-30', '5', 1);
+(15, 0, 'Prueba Prueba', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'sdfhidfid@hotmail.com', '04123352179', 'trrrt', 4, 0, '', 1, 4, 0, 0, '2017-09-30', '5', 1),
+(16, 0, 'Fulano', '', 'fulano', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-11-23', 'fulano@hotmail.com', '04123352179', 'fulano', 5, 0, '', 1, 3, 0, 27, '2017-09-30', '0', 1);
 
 -- --------------------------------------------------------
 
@@ -3128,7 +3131,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3228,7 +3231,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=169;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=170;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
@@ -3263,7 +3266,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
