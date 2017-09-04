@@ -543,3 +543,4 @@ $lang['companies'] = "Empresas donde Trabaja";
 $lang['companies_deleted'] = "Empresa eliminada";
 $lang['company'] = "Empresa";
 $lang['calendar'] = "Calendario";
+$lang['select_company'] = "Seleccione una empresa: ";

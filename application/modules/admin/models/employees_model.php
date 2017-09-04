@@ -67,6 +67,12 @@ class employees_model extends CI_Model
 			return $this->db->get('empresa_usuario')->result();
 	}
 
+	function get_empresa_id($id){
+            $this->db->where('id_usuario',$id);
+			return $this->db->get('empresa_usuario')->row('id_empresa');
+	}
+
+
 	function add_empresa($save_empresa){
 		 $this->db->insert('empresa_usuario',$save_empresa);
 	}

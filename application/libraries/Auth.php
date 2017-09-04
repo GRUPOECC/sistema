@@ -146,8 +146,19 @@ class Auth
         $this->CI->db->where('username', $username);
         $this->CI->db->where('password',  sha1($password));
         $this->CI->db->limit(1);
+        //-----------------------------------------------------------------
+        //Obteniendo datos de Usuario
         $result = $this->CI->db->get('users');
         $result = $result->row_array();
+        //-----------------------------------------------------------------
+        //Obteniendo empresas de Usuario 
+        $this->CI->db->where('id_usuario',$result['id']);
+        $this->CI->db->select('E.*,E.name compania,UR.name rol,UR.id idrol,EU.id idrelacion,EU.id_departamento iddepto,D.name depto');
+        $this->CI->db->join('empresa_usuario EU', 'EU.id_empresa = E.id', 'LEFT');
+        $this->CI->db->join('user_role UR', 'UR.id = EU.id_cargo', 'LEFT');
+        $this->CI->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');
+        $empresas = $this->CI->db->get('empresas E')->result();
+        //-----------------------------------------------------------------
 
         if (sizeof($result) > 0)
         {
@@ -159,6 +170,7 @@ class Auth
             $admin['admin']['username'] = $result['username'];
 			$admin['admin']['user_role'] = $result['user_role'];
 			$admin['admin']['image'] = $result['image'];
+            $admin['admin']['empresas'] = $empresas; 
             if($remember)
             {
                 $loginCred = json_encode(array('username'=>$username, 'password'=>$password));

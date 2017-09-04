@@ -535,3 +535,4 @@ $lang['companies'] = "Companies";
 $lang['companies_deleted'] = "Company Deleted";
 $lang['company'] = "Company";
 $lang['calendar'] = "Calendar";
+$lang['select_company'] = "Select a company: ";

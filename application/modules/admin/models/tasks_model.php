@@ -51,17 +51,19 @@ class tasks_model extends CI_Model
 		            //$this->db->where('T.removed != 1');
 		            $this->db->where('T.created_by',$admin['id']);
 					$this->db->order_by('T.due_date','DESC');
-					$this->db->select('T.*,U.name username,UR.name role');
+					$this->db->select('T.*,U.name username,UR.name role,E.name empresa');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
+					$this->db->join('empresas E', 'E.id = T.id_empresa', 'LEFT');
 			        return $this->db->get('tasks T')->result();
 		          }else if ($rol==6){
                     //$this->db->where('T.removed != 1');
 		            $this->db->where('U.department_id',$department);
 					$this->db->order_by('T.due_date','DESC');
-					$this->db->select('T.*,U.name username,UR.name role');
+					$this->db->select('T.*,U.name username,UR.name role,E.name empresa');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
+					$this->db->join('empresas E', 'E.id = T.id_empresa', 'LEFT');
 			        return $this->db->get('tasks T')->result();
 
 		          } 
@@ -100,10 +102,11 @@ class tasks_model extends CI_Model
 					$this->db->where('TA.user_id',$this->session->userdata('admin')['id']);
 					//$this->db->where('T.removed != 1');
 					$this->db->where('TA.user_id',$admin['id']);
-					$this->db->select('T.*,U.name username,UR.name role');
+					$this->db->select('T.*,U.name username,UR.name role,E.name empresa');
 					$this->db->join('task_assigned TA', 'TA.task_id = T.id', 'LEFT');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
+					$this->db->join('empresas E', 'E.id = T.id_empresa', 'LEFT');
 			return $this->db->get('tasks T')->result();
 	}
 
@@ -123,16 +126,22 @@ class tasks_model extends CI_Model
 	}
 	
 	
-	function get_all_employees(){
-		  $this->db->where('id',$this->session->userdata('admin')['id']);
-		  $query = $this->db->get('users');
-		  $department = $query->row('department_id');
-		  $empresa = $query->row('empresa_id'); 	  
-		      $this->db->where('department_id',$department);
-		      $this->db->where('empresa_id',$empresa);
-			 $this->db->where('user_role !=2');
-		return $this->db->get('users')->result();
+	function get_all_employees($id,$idusuario){
+		  $this->db->where('id_usuario',$idusuario);
+		  $this->db->where('id_empresa',$id);
+		  $query = $this->db->get('empresa_usuario');
+		  $department = $query->row('id_departamento');
+		  $empresa = $query->row('id_empresa'); 
+
+		     $this->db->where('id_departamento',$department);
+		     $this->db->where('id_empresa',$empresa);
+			 $this->db->where('U.user_role !=2');
+			 $this->db->select('U.*');
+			 $this->db->join('empresa_usuario EU', 'EU.id_usuario = U.id', 'LEFT');
+
+		return $this->db->get('users U')->result();
 	}
+
 	
 	function get_assigned_user($task_id){
 			 $this->db->where('task_id',$task_id);

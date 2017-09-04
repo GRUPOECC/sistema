@@ -133,11 +133,14 @@
 						<div class="form-group">
                               <div class="row">
                                 <div class="col-md-6">
+                                    <input type="hidden" name="empresa" value="<?php echo $empresa; ?>">
                                     <label for="email" style="clear:both;"><?php echo lang('description');?></label>
 									<textarea name="description" class="form-control redactor"><?php echo set_value('description')?></textarea>
 									</div>
                             </div>
                         </div>
+
+
              <!--Adjuntar Archivos -->
             <div class="form-group">
                               <div class="row">

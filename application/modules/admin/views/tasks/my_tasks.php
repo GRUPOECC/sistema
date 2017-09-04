@@ -98,6 +98,7 @@ function areyousure()
 								<th width="12px;"><?php echo lang('priority')?></th>
                                 <th><?php echo lang('due_date')?></th>
 								 <th><?php echo lang('created_by')?></th>
+                 <th><?php echo lang('company')?></th>
 								<th width="20%"><?php echo lang('action')?></th>
                             </tr>
                         </thead>
@@ -131,7 +132,7 @@ function areyousure()
                                               echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];
                                           ?> <?php if($new->due_date<date("Y-m-d") && $new->progress!=100 ){?> <small class='label pull-right bg-red'>Over Due</small> <?php }?></td>
 									<td><?php echo $new->username ?></td>
-									
+									<td><?php echo $new->empresa ?> </td>
                                     <td width="38%">
                                         <div class="btn-group">
 									<?php if(check_user_role(115)==1){?>		
