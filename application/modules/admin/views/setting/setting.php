@@ -310,7 +310,7 @@
 											<div class="tab-pane " id="4">
 															
 
-															<legend>Calendario</legend>
+															<legend><?php echo lang('calendar') ?></legend>
 
 																<div style="padding-top:12px;" class="form-group">
 
