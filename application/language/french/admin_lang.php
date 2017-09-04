@@ -58,6 +58,7 @@ $lang['todays_to_do']      		 = "Aujourd'hui est à voir";
 $lang['view_all']      	 = "Tout Voir";
 $lang['events']      	 = "événements";
 $lang['appointments']      	 = "Nominations";
+$lang['Tasks']      		 		= "Tâches";
 $lang['toggle_navigation']      	 = "Basculer la navigation";
 $lang['case_comming_in_next']      	 = "Case sont comming dans le prochain";
 $lang['days']      	 				 = "journées";
@@ -358,6 +359,8 @@ $lang['modules_settings']			= "Configuration des modules";
 $lang['show_expired']			 = "Afficher les événements en retard";
 $lang['calendar'] = "Calendrier";
 $lang['current_calen_lang'] = "fr";
+$lang['show_all_events'] = "Montrer tout";
+
 //CALENDAR BUTTON
 $lang['calen_button_t'] = "aujourd\'hui";
 $lang['calen_button_m'] = "mois";

@@ -35,6 +35,7 @@
     display: inline-block;
     width: 105px;
     margin: 5px 0px 5px 10px;
+    cursor: pointer;
 }
 </style>
 
@@ -529,9 +530,10 @@
                                 <div class="box-body ">
                                     <!-- THE CALENDAR -->
 									<h2><?php echo lang('events'); ?></h2>
-                                    <a href="#calendar"><div id="caption-cases" class="caption-element external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div></a>
-                                    <a href="#calendar"><div id="caption-appointments" class="caption-element external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div></a>
-                                    <a href="#calendar"><div id="caption-tasks" class="caption-element external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div></a>
+                                    <div id="caption-cases" class="caption-element external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div>
+                                    <div id="caption-appointments" class="caption-element external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div>
+                                    <div id="caption-tasks" class="caption-element external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
+                                    <div id="caption-all" class="caption-element external-event bg-purple-gradient ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('show_all_events'); ?></div>
 
                                 </div><!-- /.box-body -->
                             </div><!-- /. box -->
@@ -775,6 +777,9 @@ $(document).ready(function() {
         <?php 
         // defining reusable blocks of code to generate the calendar events
             function print_case($order){
+                if (strlen($order->case_no) > 34) { //Names of the task will be limited to 34 characters
+                    $order->case_no = substr($order->case_no, 0, 34).'...';
+                }
                 echo "{
                 title: '".'#'.$order->case_no."',
                 start: '".date('M d Y 12:00:00', strtotime($order->next_date))."',
@@ -786,6 +791,9 @@ $(document).ready(function() {
             }
 
             function print_appointment($new){
+                if (strlen($new->title) > 34) { //Names of the task will be limited to 34 characters
+                    $new->title = substr($new->title, 0, 34).'...';
+                }
                 echo "{
                 title: '".$new->title."',
                 date: '".date('M d Y 12:00:00', strtotime($new->date_time))."',
@@ -799,7 +807,7 @@ $(document).ready(function() {
 
             function print_tasks($task){
                 if (strlen($task->name) > 34) { //Names of the task will be limited to 34 characters
-                    $task->name = substr($task->name, 34).'...';
+                    $task->name = substr($task->name, 0, 34).'...';
                 }
                 echo "{
                 title: '".$task->name."',
@@ -1017,15 +1025,16 @@ $(document).ready(function() {
 
         });
 
+        $('#caption-all').on("click",function(){
+            $('#calendar').fullCalendar( 'destroy' );
                 $('#calendar').fullCalendar(
                     calendar_all_events
                     );
+        });
 
-        // rerender the calendar when the selected option changes
- 
-
-
-                
+                $('#calendar').fullCalendar(
+                    calendar_all_events
+                    );
             
 
                 

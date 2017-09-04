@@ -536,6 +536,8 @@ $lang['companies_deleted'] = "Company Deleted";
 $lang['company'] = "Company";
 $lang['calendar'] = "Calendar";
 $lang['current_calen_lang'] = "en";
+$lang['show_all_events'] = "Show all";
+
 
 //CALENDAR BUTTON
 $lang['calen_button_t'] = "today";

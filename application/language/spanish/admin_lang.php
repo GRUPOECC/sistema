@@ -544,7 +544,7 @@ $lang['companies_deleted'] = "Empresa eliminada";
 $lang['company'] = "Empresa";
 $lang['calendar'] = "Calendario";
 $lang['current_calen_lang'] = "es";
-
+$lang['show_all_events'] = "Mostrar todos";
 
 //CALENDAR BUTTON
 $lang['calen_button_t'] = "hoy";
