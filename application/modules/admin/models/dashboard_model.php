@@ -64,6 +64,7 @@ class dashboard_model extends CI_Model
 			return $this->db->get('cases C')->result();
 	}
 
+
 		function get_case_open()
 	{
 			$this->db->where('C.is_archived',0);
@@ -89,6 +90,22 @@ class dashboard_model extends CI_Model
 	function get_appointment_all()
 	{
 		return  $this->db->get('appointments')->result();
+	}
+
+	// CALENDAR METHODS
+
+	function get_case_all_calendar($show_expired)
+	{
+			if($show_expired == '0')
+				$this->db->where('(`C`.`start_date` >= (sysdate() - interval 1 day))');//filter expired events
+			return $this->db->get('cases C')->result();
+	}
+
+	function get_appointment_all_calendar($show_expired)
+	{
+		if($show_expired == '0')
+				$this->db->where('(`A`.`date_time` >= (sysdate() - interval 1 day))');//filter expired event
+		return  $this->db->get('appointments A')->result();
 	}
 	
 }

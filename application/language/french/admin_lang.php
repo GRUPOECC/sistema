@@ -354,7 +354,6 @@ $lang['radio_button']      	= "Bouton radio";
 $lang['checkbox']      	 	= "case";
 $lang['textarea']      	 	= "textarea";
 
-
-
-
-
+$lang['modules_settings']			= "Configuration des modules";
+$lang['show_expired']			 = "Afficher les événements en retard";
+$lang['calendar'] = "Calendrier";

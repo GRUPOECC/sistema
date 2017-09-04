@@ -498,6 +498,8 @@ $lang['attachments_deleted']				= "adjuntos eliminados";
 $lang['details']			= "Detalles";
 $lang['hr_settings']			= "Configuración de recursos humanos";
 $lang['smtp_settings']			= "Configuración SMTP";
+$lang['modules_settings']			= "Configuración de Módulos";
+$lang['show_expired']			 = "Mostrar Eventos Vencidos";
 $lang['header_logo_image']			= "Configuración encabezado";
 $lang['mark_out_time']			= "empleado por defecto Marcos Time Out";
 $lang['invoice_start']			= "Factura Sin inicio de";
@@ -540,12 +542,4 @@ $lang['taskinformation'] = "Informacion de la Tarea";
 $lang['companies'] = "Empresas donde Trabaja";
 $lang['companies_deleted'] = "Empresa eliminada";
 $lang['company'] = "Empresa";
-
-
-
-
-
-
-
-
-
+$lang['calendar'] = "Calendario";

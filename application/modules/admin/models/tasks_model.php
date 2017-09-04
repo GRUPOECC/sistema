@@ -107,14 +107,15 @@ class tasks_model extends CI_Model
 			return $this->db->get('tasks T')->result();
 	}
 
-	function get_my_tasks_info()
+	function get_my_tasks_info($show_expired)
 	{ 
 		// SELECT ta.`user_id` assigned_to, t.`name` name, t.`due_date` due_date, t.description FROM `tasks` t 
 		// JOIN `v_calendario` v ON 
 		// 	t.`id` = v.`id` AND v.`TASK`='TASK'COLLATE utf8mb4_unicode_ci
 		// JOIN `task_assigned` ta ON
 		// 	ta.`task_id` = t.`id` AND ta.`user_id`=11
-
+		if($show_expired == '0')
+			$this->db->where('(`T`.`due_date` >= (sysdate() - interval 1 day))');//filter expired events
 		$this->db->select('T.id id, T.name name, T.due_date due_date, T.description');
 		$this->db->join('v_calendario V','T.id = V.id AND V.TASK=\'TASK\'');
 		$this->db->join('task_assigned TA','TA.task_id = T.id AND TA.user_id='.$this->session->userdata('admin')['id']);
