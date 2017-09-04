@@ -879,7 +879,7 @@ $(document).ready(function() {
                     events:[
                     
                                 <?php  
-                                    foreach($case_all as $order)    
+                                    foreach($case_all_cal as $order)    
                                         print_case($order);
                                 ?>
 
@@ -917,7 +917,7 @@ $(document).ready(function() {
                     events:[
                         
                                 <?php  
-                                     foreach($appointment_all as $new)
+                                     foreach($appointment_all_cal as $new)
                                         print_appointment($new);    
                                 ?>
 
@@ -1034,9 +1034,9 @@ $(document).ready(function() {
                     events:[
 					
                                 <?php  
-                                    foreach($case_all as $order)    
+                                    foreach($case_all_cal as $order)    
                                         print_case($order);
-                                    foreach($appointment_all as $new)
+                                    foreach($appointment_all_cal as $new)
                                         print_appointment($new); 
                                     foreach ($my_tasks_info as $task)
                                         print_tasks($task);
@@ -1108,9 +1108,9 @@ $(document).ready(function() {
                     events:[
 					
                         <?php  
-                            foreach($case_all as $order)    
+                            foreach($case_all_cal as $order)    
                                 print_case($order);
-                            foreach($appointment_all as $new)
+                            foreach($appointment_all_cal as $new)
                                 print_appointment($new); 
                             foreach ($my_tasks_info as $task)
                                 print_tasks($task);

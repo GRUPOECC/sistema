@@ -38,12 +38,14 @@ class dashboard extends MX_Controller {
 		$data['case_open'] 	= $this->dashboard_model->get_case_open();
 		$data['leave_types'] = $this->leave_types_model->get_all();
 		//echo '<pre>'; print_r($data['check_today']);die;
+		$data['case_all'] 	= $this->dashboard_model->get_case_tod();
+		$data['appointment_all'] = $this->dashboard_model->get_appointment_all();
 		
 		$show_expired = $this->dashboard_model->get_setting()->exp_cal_events;
-			$data['case_all'] 	= $this->dashboard_model->get_case_tod();
-			$data['appointment_all'] = $this->dashboard_model->get_appointment_all();
 			$data['my_tasks_info'] = $this->tasks_model->get_my_tasks_info($show_expired);
-		
+			$data['case_all_cal'] 	= $this->dashboard_model->get_case_all_calendar($show_expired);
+			$data['appointment_all_cal'] = $this->dashboard_model->get_appointment_all_calendar($show_expired);
+
 		$data['page_title'] = lang('dashboard');
 		$data['body'] = 'dashboard/dashboard';
 		$this->load->view('template/main', $data);	
