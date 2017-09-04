@@ -815,17 +815,21 @@ $(document).ready(function() {
 
          ?>
 
-       var currentLangCode = 'es';
+       var currentLangCode = '<?php echo lang('current_calen_lang'); ?>';
+       // var currentLangCode = 'es';
+       console.log('<?php 
+        echo lang('calen_button_t'); 
+        ?>');
 
         // build the language selector's options
-        $.each($.fullCalendar.langs, function(langCode) {
-            $('#lang-selector').append(
-                $('<option/>')
-                    .attr('value', langCode)
-                    .prop('selected', langCode == currentLangCode)
-                    .text(langCode)
-            );
-        });
+        // $.each($.fullCalendar.langs, function(langCode) {
+        //     $('#lang-selector').append(
+        //         $('<option/>')
+        //             .attr('value', langCode)
+        //             .prop('selected', langCode == currentLangCode)
+        //             .text(langCode)
+        //     );
+        // });
 
         //Date for the calendar events (dummy data)
         var date = new Date();
@@ -836,8 +840,8 @@ $(document).ready(function() {
 
         //Defining calendar properties once
         let calendarProperties = {editable: true,
-                    droppable: true, // this allows things to be dropped onto the calendar !!!
-                    lang: currentLangCode
+                    droppable: true // this allows things to be dropped onto the calendar !!!
+
                 };
 
                                     // CALENDAR OBJECTS
@@ -854,12 +858,13 @@ $(document).ready(function() {
                     },
 
                     buttonText: {
-                        today: 'today',
-                        month: 'month',
-                        week: 'week',
-                        day: 'day'
-                    },
 
+                        today: '<?php echo lang('calen_button_t'); ?>',
+                        month: '<?php echo lang('calen_button_m'); ?>',
+                        week: '<?php echo lang('calen_button_w'); ?>',
+                        day: '<?php echo lang('calen_button_d'); ?>'
+                    },
+                    lang: currentLangCode,
                     events:[
                     
                         <?php  
@@ -885,12 +890,17 @@ $(document).ready(function() {
                         center: 'title',
                         right: 'month,agendaWeek,agendaDay'
                     },
-                    // lang: currentLangCode,
+                    lang: currentLangCode,
                     buttonText: {
-                        today: 'today',
-                        month: 'month',
-                        week: 'week',
-                        day: 'day'
+                        // today: 'today',
+                        // month: 'month',
+                        // week: 'week',
+                        // day: 'day'
+
+                        today: '<?php echo lang('calen_button_t'); ?>',
+                        month: '<?php echo lang('calen_button_m'); ?>',
+                        week: '<?php echo lang('calen_button_w'); ?>',
+                        day: '<?php echo lang('calen_button_d'); ?>'
                     },
 
                     events:[
@@ -916,12 +926,13 @@ $(document).ready(function() {
                         center: 'title',
                         right: 'month,agendaWeek,agendaDay'
                     },
-                    // lang: currentLangCode,
+                    lang: currentLangCode,
                     buttonText: {
-                        today: 'today',
-                        month: 'month',
-                        week: 'week',
-                        day: 'day'
+
+                        today: '<?php echo lang('calen_button_t'); ?>',
+                        month: '<?php echo lang('calen_button_m'); ?>',
+                        week: '<?php echo lang('calen_button_w'); ?>',
+                        day: '<?php echo lang('calen_button_d'); ?>'
                     },
 
                     events:[
@@ -945,14 +956,15 @@ $(document).ready(function() {
                         center: 'title',
                         right: 'month,agendaWeek,agendaDay'
                     },
-                    // lang: currentLangCode,
+                    lang: currentLangCode,
                     buttonText: {
-                        today: 'today',
-                        month: 'month',
-                        week: 'week',
-                        day: 'day'
-                    },
 
+                        today: '<?php echo lang('calen_button_t'); ?>',
+                        month: '<?php echo lang('calen_button_m'); ?>',
+                        week: '<?php echo lang('calen_button_w'); ?>',
+                        day: '<?php echo lang('calen_button_d'); ?>'
+                    },
+                    allDayText: '<?php echo lang('calen_all_day'); ?>',
                     events:[
                     
                             <?php  
@@ -1007,18 +1019,6 @@ $(document).ready(function() {
                     );
 
         // rerender the calendar when the selected option changes
-        $('#spanish_lang').on("click", function() {
-            // if (this.value) {
-             currentLangCode = 'es';
-               $('#calendar').fullCalendar('destroy');
-
-                $('#calendar').fullCalendar({
-                   calendar_all_events
-                });
-
-            // }
-            // alert('hola');
-        });
  
 
 

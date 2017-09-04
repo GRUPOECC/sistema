@@ -96,7 +96,7 @@ $fourth = $this->uri->segment(4);
                                     <!-- inner menu: contains the actual data -->
                                     <ul class="menu">
 										 <li><!-- start message -->
-                                            <a id="english_lang" href='<?php echo site_url('admin/languages/switch_language/'); ?>/english/<?php echo $first.'/'.$second.'/'.$third.'/'.$fourth?>'>
+                                            <a href='<?php echo site_url('admin/languages/switch_language/'); ?>/english/<?php echo $first.'/'.$second.'/'.$third.'/'.$fourth?>'>
                                                 <div class="pull-left">
                                                     <img src="<?php echo base_url('assets/img/eng.png')?>" class="img-circle" alt="User Image"/>
                                                 </div>
@@ -110,7 +110,7 @@ $fourth = $this->uri->segment(4);
 									<?php foreach ($langs as $new){ ?>
                                        
 										<li><!-- start message -->
-                                            <a id='<?php echo $new->name.'_lang' ?>' href='<?php echo site_url('admin/languages/switch_language/'.$new->name.'/'.$first.'/'.$second.'/'.$third.'/'.$fourth); ?>'>
+                                            <a href='<?php echo site_url('admin/languages/switch_language/'.$new->name.'/'.$first.'/'.$second.'/'.$third.'/'.$fourth); ?>'>
                                                 <div class="pull-left">
                                                     <img src="<?php echo base_url('assets/uploads/images/'.$new->flag)?>" class="img-circle" alt="User Image"/>
                                                 </div>

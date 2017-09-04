@@ -543,3 +543,13 @@ $lang['companies'] = "Empresas donde Trabaja";
 $lang['companies_deleted'] = "Empresa eliminada";
 $lang['company'] = "Empresa";
 $lang['calendar'] = "Calendario";
+$lang['current_calen_lang'] = "es";
+
+
+//CALENDAR BUTTON
+$lang['calen_button_t'] = "hoy";
+$lang['calen_button_m'] = "mes";
+$lang['calen_button_w'] = "semana";
+$lang['calen_button_d'] = "día";
+// CALENDAR ALL_DAY TEXT
+$lang['calen_all_day'] = "todo el día";

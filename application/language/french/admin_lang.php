@@ -357,3 +357,11 @@ $lang['textarea']      	 	= "textarea";
 $lang['modules_settings']			= "Configuration des modules";
 $lang['show_expired']			 = "Afficher les événements en retard";
 $lang['calendar'] = "Calendrier";
+$lang['current_calen_lang'] = "fr";
+//CALENDAR BUTTON
+$lang['calen_button_t'] = "aujourd\'hui";
+$lang['calen_button_m'] = "mois";
+$lang['calen_button_w'] = "semaine";
+$lang['calen_button_d'] = "journée";
+// CALENDAR ALL_DAY TEXT
+$lang['calen_all_day'] = "toute la journée";
