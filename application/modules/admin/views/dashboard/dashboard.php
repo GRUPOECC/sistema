@@ -865,6 +865,7 @@ $(document).ready(function() {
                         day: '<?php echo lang('calen_button_d'); ?>'
                     },
                     lang: currentLangCode,
+                    allDayText: '<?php echo lang('calen_all_day'); ?>',
                     events:[
                     
                         <?php  
@@ -902,6 +903,7 @@ $(document).ready(function() {
                         week: '<?php echo lang('calen_button_w'); ?>',
                         day: '<?php echo lang('calen_button_d'); ?>'
                     },
+                    allDayText: '<?php echo lang('calen_all_day'); ?>',
 
                     events:[
                     
@@ -934,6 +936,7 @@ $(document).ready(function() {
                         week: '<?php echo lang('calen_button_w'); ?>',
                         day: '<?php echo lang('calen_button_d'); ?>'
                     },
+                    allDayText: '<?php echo lang('calen_all_day'); ?>',
 
                     events:[
                         
