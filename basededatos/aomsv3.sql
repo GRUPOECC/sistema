@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-09-2017 a las 00:56:56
+-- Tiempo de generación: 04-09-2017 a las 17:33:33
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -266,7 +266,7 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (186, 'open_completed', 112, 0, 'Abrir Culminadas', 0),
 (187, 'commentsOnly', 112, 1, 'commentsOnly', 0),
 (188, 'select', 112, 0, 'Seleccionar', 0),
-(189, 'empresas', 37, 1, 'Ver Empresas donde trabaja', 0),
+(189, 'empresas', 37, 0, 'Ver Empresas donde trabaja', 0),
 (190, 'deletecompany', 37, 0, 'Eliminar Empresa', 0),
 (191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0),
 (192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0);
@@ -2418,15 +2418,15 @@ CREATE TABLE `settings` (
   `smtp_port` varchar(255) NOT NULL,
   `mark_out_time` time NOT NULL,
   `invoice_no` int(10) NOT NULL DEFAULT '1',
-	`exp_cal_events` BOOLEAN NOT NULL DEFAULT 1
+  `exp_cal_events` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `settings`
 --
 
-INSERT INTO `settings` (`id`, `name`, `image`, `header_setting`, `address`, `contact`, `email`, `employee_id`, `date_format`, `timezone`, `smtp_host`, `smtp_user`, `smtp_pass`, `smtp_port`, `mark_out_time`, `invoice_no`) VALUES
-(1, 'AOMS', 'GECC.png', 1, 'Caracas', '+58(212)242.62.11', 'soporte@gecc.com.ve', 0, 'm/d/y', 'America/Caracas', 'smtp.gmail.com', 'scammarano@gmail.com', '13308720sc', '465', '00:00:00', 1);
+INSERT INTO `settings` (`id`, `name`, `image`, `header_setting`, `address`, `contact`, `email`, `employee_id`, `date_format`, `timezone`, `smtp_host`, `smtp_user`, `smtp_pass`, `smtp_port`, `mark_out_time`, `invoice_no`, `exp_cal_events`) VALUES
+(1, 'AOMS', 'GECC.png', 1, 'Caracas', '+58(212)242.62.11', 'soporte@gecc.com.ve', 0, 'm/d/y', 'America/Caracas', 'smtp.gmail.com', 'scammarano@gmail.com', '13308720sc', '465', '00:00:00', 1, 1);
 
 -- --------------------------------------------------------
 
