@@ -553,3 +553,8 @@ $lang['calen_button_w'] = "semana";
 $lang['calen_button_d'] = "día";
 // CALENDAR ALL_DAY TEXT
 $lang['calen_all_day'] = "todo el día";
+$lang['companycontact'] = "Es un contacto de la empresa: ";
+$lang['contactof'] = "Contacto de";
+
+
+

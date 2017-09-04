@@ -135,6 +135,16 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-2">
+                                    <span for="name" style="clear:both;"><strong><?php echo lang('contactof');?></strong></span>
+								</div>
+								<div class="col-md-4">
+									<?php echo $contact->empresa?>
+                                </div>
+                            </div>
+                        </div>
 						
 						<?php 
 					$CI = get_instance();

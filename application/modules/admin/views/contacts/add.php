@@ -141,6 +141,24 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                <label for="name" style="clear:both;"><?php echo lang('companycontact');?></label>
+                                        <select id="empresa" name="empresa"  >
+                                            <option selected="selected">-- Seleccione --</option>
+                                        <?php foreach($empresas as $new) {
+                                            $sel = "";
+                                            
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
                       
 
 							<?php 

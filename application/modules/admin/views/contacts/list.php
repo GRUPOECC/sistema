@@ -123,7 +123,8 @@ function areyousure()
                                 <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>
  								                <th><?php echo lang('name');?></th>
                                 <th><?php echo lang('category');?></th>
-                                <th><?php echo lang('contact_company');?></th>                              
+                                <th><?php echo lang('contact_company');?></th>   
+                                <th><?php echo lang('contactof');?></th>                              
 								                <th width="20%"><?php echo lang('action');?></th>
                  
                             </tr>
@@ -142,7 +143,7 @@ function areyousure()
                                     <td><?php echo $new->name?></td>
                                     <td><?php echo $new->categoria?></td>
                                     <td><?php echo $new->company?></td>
-
+                                    <td><?php echo $new->empresa?></td>
 									  
                                     <td  class="col-md-3">
                                         <div class="btn-group">
@@ -216,6 +217,8 @@ function areyousure()
                                 <br>
                                 <strong><?php echo lang('phone');?>:</strong>  <?php echo $new->phone1?>
                                 <br>   
+                                <strong><?php echo lang('contactof');?>:</strong>  <?php echo $new->empresa?>
+                                <br> 
                                 </span>          
                                </p>
                                

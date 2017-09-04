@@ -8,6 +8,7 @@ class contacts extends MX_Controller {
 		parent::__construct();
 		//$this->auth->check_access('1', true);
 		$this->load->model("contact_model");
+		$this->load->model("employees_model");
 		$this->load->model("custom_field_model");
 		$this->load->library('excel');
 	}
@@ -53,6 +54,8 @@ class contacts extends MX_Controller {
 	
 	
 	function add(){
+		$admin = $this->session->userdata('admin');
+        $data['empresas'] = $this->employees_model->get_empresas_by_user($admin['id']);
 		$data['fields'] = $this->custom_field_model->get_custom_fields(4);
 		$data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
@@ -65,6 +68,7 @@ class contacts extends MX_Controller {
 			$this->form_validation->set_rules('phone2', 'lang:phone', '');
 			$this->form_validation->set_rules('phone3', 'lang:phone', '');
 			$this->form_validation->set_rules('phone4', 'lang:phone', '');
+			$this->form_validation->set_rules('empresa', 'lang:empresa', 'required');
 			$this->form_validation->set_rules('category', 'lang:category', 'required');
 			$this->form_validation->set_rules('company', 'lang:contact_company', '');
 			$this->form_validation->set_rules('department', 'lang:department', '');
@@ -80,6 +84,7 @@ class contacts extends MX_Controller {
 				$save['phone2'] = $this->input->post('phone2');
 				$save['phone3'] = $this->input->post('phone3');
 				$save['phone4'] = $this->input->post('phone4');
+				$save['id_empresa'] = $this->input->post('empresa');
 				$save['category'] = json_encode($this->input->post('category'));
 				$categoria = json_encode($this->input->post('category'));
 				$save['company'] = $this->input->post('company');
@@ -113,7 +118,9 @@ class contacts extends MX_Controller {
 	
 	
 	function edit($id=false){
+		$admin = $this->session->userdata('admin');
 		$data['fields'] = $this->custom_field_model->get_custom_fields(4);
+		$data['empresas'] = $this->employees_model->get_empresas_by_user($admin['id']);
 		$data['contact_categories'] = $this->contact_model->get_all_contact_categories();	
 		$data['contact'] = $data['clients'] = $this->contact_model->get_contact_by_id($id);
 		$data['id'] =$id;
@@ -135,6 +142,7 @@ class contacts extends MX_Controller {
 				$save['phone3'] = $this->input->post('phone3');
 				$save['phone4'] = $this->input->post('phone4');
 				$save['category'] = json_encode($this->input->post('category'));
+				$save['id_empresa'] = $this->input->post('empresa');
 				$categoria = json_encode($this->input->post('category'));
 				$save['company'] = $this->input->post('company');
 				$save['department'] = $this->input->post('department');

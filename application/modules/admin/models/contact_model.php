@@ -83,17 +83,22 @@ class contact_model extends CI_Model
 
 	function get_all()
 	{ 
-		  $this->db->from('v_contactos');
+		  $this->db->select('V.*,E.name empresa');
+		  $this->db->from('v_contactos V');
           $this->db->order_by("name", "asc");
+          $this->db->join('contacts C', 'C.id = V.id', 'LEFT');
+          $this->db->join('empresas E', 'E.id = C.id_empresa', 'LEFT');
           $query = $this->db->get(); 
          return $query->result();
 			
 	}
 	
 	function get_contact_by_id($id)
-	{
-			   $this->db->where('id',$id);
-		return $this->db->get('v_contactos')->row();
+	{          $this->db->select('V.*,E.name empresa,E.id idempresa');
+			   $this->db->where('V.id',$id);
+			   $this->db->join('contacts C', 'C.id = V.id', 'LEFT');
+          $this->db->join('empresas E', 'E.id = C.id_empresa', 'LEFT');
+		return $this->db->get('v_contactos V')->row();
 	}
 	
 	function update($save,$id,$categoria)
