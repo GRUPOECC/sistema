@@ -2679,7 +2679,7 @@ CREATE TABLE `v_tareas_asignadas` (
 --
 DROP TABLE IF EXISTS `v_calendario`;
 
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS  select `t`.`id` AS `id`,`t`.`name` AS `name`,`t`.`due_date` AS `due_date`,'TASK' AS `TASK` from `tasks` `t` where (`t`.`due_date` >= (sysdate() - interval 1 day)) union select `td`.`id` AS `id`,`td`.`title` AS `title`,`td`.`date` AS `date`,'TO_DO' AS `TO_DO` from `to_do_list` `td` where (`td`.`date` >= sysdate()) union select `h`.`id` AS `id`,`h`.`name` AS `name`,`h`.`date` AS `date`,'HOLIDAY' AS `HOLIDAY` from `holidays` `h` where (`h`.`date` >= sysdate()) union select `ap`.`id` AS `id`,('CITA ' or (`ap`.`title` <> 0)) AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,'CITA' AS `CITA` from `appointments` `ap` where (`ap`.`date_time` >= sysdate()) ;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS  select `t`.`id` AS `id`,`t`.`name` AS `name`,`t`.`due_date` AS `due_date`,'TASK' AS `TASK` from `tasks` `t` union select `td`.`id` AS `id`,`td`.`title` AS `title`,`td`.`date` AS `date`,'TO_DO' AS `TO_DO` from `to_do_list` `td` where (`td`.`date` >= sysdate()) union select `h`.`id` AS `id`,`h`.`name` AS `name`,`h`.`date` AS `date`,'HOLIDAY' AS `HOLIDAY` from `holidays` `h` where (`h`.`date` >= sysdate()) union select `ap`.`id` AS `id`,('CITA ' or (`ap`.`title` <> 0)) AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,'CITA' AS `CITA` from `appointments` `ap` where (`ap`.`date_time` >= sysdate()) ;
 
 -- --------------------------------------------------------
 
