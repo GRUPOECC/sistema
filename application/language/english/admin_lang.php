@@ -536,3 +536,12 @@ $lang['companies_deleted'] = "Company Deleted";
 $lang['company'] = "Company";
 $lang['calendar'] = "Calendar";
 $lang['select_company'] = "Select a company: ";
+$lang['current_calen_lang'] = "en";
+$lang['show_all_events'] = "Show all";
+//CALENDAR BUTTON
+$lang['calen_button_t'] = "today";
+$lang['calen_button_m'] = "month";
+$lang['calen_button_w'] = "week";
+$lang['calen_button_d'] = "day";
+// CALENDAR ALL_DAY TEXT
+$lang['calen_all_day'] = "all-day";
