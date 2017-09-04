@@ -316,7 +316,7 @@
 
 											                            <div class="row">
 											                            	<div class="col-md-3">
-											                            		<input type="checkbox" name="check-eventos-calendario" value="sdfds"> Mostrar Eventos Vencidos
+											                            		<input type="checkbox" name="check-eventos-calendario" value="sdfds"> <?php echo lang('show_expired')?>
 											                            	</div>
 
 											                            </div>
