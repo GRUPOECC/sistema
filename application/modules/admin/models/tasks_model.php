@@ -59,11 +59,13 @@ class tasks_model extends CI_Model
 		          }else if ($rol==6){
                     //$this->db->where('T.removed != 1');
 		            $this->db->where('U.department_id',$department);
+		            $this->db->where('EU.id_cargo',6);
 					$this->db->order_by('T.due_date','DESC');
 					$this->db->select('T.*,U.name username,UR.name role,E.name empresa');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
 					$this->db->join('empresas E', 'E.id = T.id_empresa', 'LEFT');
+					$this->db->join('empresas_usuario EU', 'EU.id_empresa= T.id_empresa', 'LEFT');
 			        return $this->db->get('tasks T')->result();
 
 		          } 
