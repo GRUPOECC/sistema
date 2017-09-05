@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 04-09-2017 a las 21:58:42
+-- Tiempo de generación: 05-09-2017 a las 20:13:38
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -1516,7 +1516,9 @@ INSERT INTO `contacts` (`id`, `name`, `contact`, `email`, `address`, `phone1`, `
 (1023, 'prueba 1', '123456', 'scammarano@gmail.com', '', '123456', '', '', '', '10', '', '', 0),
 (1024, 'prueba2', '123', 'scammarano@gmail.com', '', '123', '', '', '', '11', '', '', 0),
 (1025, 'prueba3', '123', 'scammarano@gmail.com', 's', '123', '', '', '', '\"11\"', '', '', 0),
-(1026, 'prueba4', '123', 'scammarano@gmail.com', '', '123', '', '', '', '[\"8\",\"10\",\"11\"]', '', '', 0);
+(1026, 'prueba4', '123', 'scammarano@gmail.com', '', '123', '', '', '', '[\"8\",\"10\",\"11\"]', '', '', 0),
+(1027, 'Prueba', '4534534', 'garrybruno@hotmail.com', 'eryerte', '4534534', '', '', '', '[\"8\"]', 'rtyrtyr', 'drgere', 0),
+(1028, 'Hello2', '0212-415-54-44', 'garrybruno@hotmail.com', 'rtthfghfgh', '0212-415-54-44', '', '', '', '[\"12\"]', 'rrthrrh', 'thrthrt', 12);
 
 -- --------------------------------------------------------
 
@@ -1783,7 +1785,8 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (8, 15, 17, 1, 5),
 (9, 15, 11, 1, 6),
 (11, 14, 12, 3, 2),
-(12, 15, 12, 3, 2);
+(12, 15, 12, 3, 2),
+(13, 14, 19, 5, 5);
 
 -- --------------------------------------------------------
 
@@ -2107,7 +2110,9 @@ INSERT INTO `rel_contact_category` (`id_rel`, `id_contact`, `id_category`) VALUE
 (15, 1004, 10),
 (16, 1005, 10),
 (17, 1006, 10),
-(18, 1007, 10);
+(18, 1007, 10),
+(19, 1027, 8),
+(21, 1028, 12);
 
 -- --------------------------------------------------------
 
@@ -2351,54 +2356,55 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (120, 4, 54),
 (121, 4, 53),
 (122, 4, 15),
-(123, 4, 146),
-(124, 4, 147),
-(125, 4, 149),
-(126, 4, 148),
-(127, 4, 150),
-(128, 4, 80),
-(129, 4, 75),
-(130, 4, 76),
-(131, 4, 78),
-(132, 4, 77),
-(133, 4, 50),
-(134, 4, 14),
-(135, 4, 79),
-(136, 4, 112),
-(137, 4, 113),
-(138, 4, 117),
-(139, 4, 116),
-(140, 4, 114),
-(141, 4, 152),
-(142, 4, 188),
-(143, 4, 115),
-(144, 4, 157),
-(145, 4, 158),
-(146, 4, 160),
-(147, 4, 159),
-(148, 4, 16),
-(149, 4, 17),
-(150, 4, 20),
-(151, 4, 18),
-(152, 4, 107),
-(153, 4, 19),
-(154, 4, 42),
-(155, 4, 43),
-(156, 4, 45),
-(157, 4, 44),
-(158, 3, 1),
-(159, 3, 143),
-(160, 3, 144),
-(161, 3, 145),
-(162, 5, 1),
-(163, 5, 21),
-(164, 5, 22),
-(165, 5, 175),
-(166, 5, 24),
-(167, 5, 155),
-(168, 5, 23),
-(169, 5, 173),
-(170, 5, 174);
+(123, 4, 111),
+(124, 4, 146),
+(125, 4, 147),
+(126, 4, 149),
+(127, 4, 148),
+(128, 4, 150),
+(129, 4, 80),
+(130, 4, 75),
+(131, 4, 76),
+(132, 4, 78),
+(133, 4, 77),
+(134, 4, 50),
+(135, 4, 14),
+(136, 4, 79),
+(137, 4, 112),
+(138, 4, 113),
+(139, 4, 117),
+(140, 4, 116),
+(141, 4, 114),
+(142, 4, 152),
+(143, 4, 188),
+(144, 4, 115),
+(145, 4, 157),
+(146, 4, 158),
+(147, 4, 160),
+(148, 4, 159),
+(149, 4, 16),
+(150, 4, 17),
+(151, 4, 20),
+(152, 4, 18),
+(153, 4, 107),
+(154, 4, 19),
+(155, 4, 42),
+(156, 4, 43),
+(157, 4, 45),
+(158, 4, 44),
+(159, 3, 1),
+(160, 3, 143),
+(161, 3, 144),
+(162, 3, 145),
+(163, 5, 1),
+(164, 5, 21),
+(165, 5, 22),
+(166, 5, 175),
+(167, 5, 24),
+(168, 5, 155),
+(169, 5, 23),
+(170, 5, 173),
+(171, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2588,7 +2594,7 @@ CREATE TABLE `users` (
   `token` varchar(255) NOT NULL,
   `client_case_alert` int(10) NOT NULL DEFAULT '1',
   `department_id` int(10) UNSIGNED NOT NULL,
-  `empresa_id` int(11) NOT NULL,
+  `empresa_id` varchar(1000) NOT NULL,
   `designation_id` int(10) UNSIGNED NOT NULL,
   `joining_date` date NOT NULL,
   `joining_salary` varchar(255) NOT NULL,
@@ -2600,19 +2606,22 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `empresa_id`, `designation_id`, `joining_date`, `joining_salary`, `status`) VALUES
-(1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', '', 1, 0, '', 1, 0, 0, 0, '0000-00-00', '', 1),
-(2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', '', 2, 0, '', 1, 0, 0, 0, '0000-00-00', '', 1),
-(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', '', 3, 0, '', 1, 1, 0, 0, '1985-07-08', '', 1),
-(4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', '', 4, 0, '', 1, 5, 0, 13, '0000-00-00', '', 1),
-(5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', '', 5, 0, '', 1, 1, 0, 0, '2017-06-25', '', 1),
-(6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', '', 4, 0, '', 1, 1, 0, 7, '0000-00-00', '', 1),
-(7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', '', 1, 0, '', 1, 3, 0, 0, '0000-00-00', '', 1),
-(8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', '', 5, 0, '', 1, 1, 0, 0, '0000-00-00', '', 1),
-(9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', '', 3, 0, '', 1, 1, 0, 0, '0000-00-00', '', 1),
-(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, 0, 22, '0000-00-00', '', 1),
-(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, 0, 0, '2017-08-09', '', 1),
-(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garryjrbruno@hotmail.com', '04123352179', 'Caricuao', 4, 0, '', 1, 4, 0, 0, '2017-09-29', '0', 1),
-(15, 0, 'Prueba Prueba', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'sdfhidfid@hotmail.com', '04123352179', 'trrrt', 4, 0, '', 1, 4, 0, 0, '2017-09-30', '5', 1);
+(1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', '', 1, 0, '', 1, 0, '0', 0, '0000-00-00', '', 1),
+(2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', '', 2, 0, '', 1, 0, '0', 0, '0000-00-00', '', 1),
+(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', '', 3, 0, '', 1, 1, '0', 0, '1985-07-08', '', 1),
+(4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', '', 4, 0, '', 1, 5, '0', 13, '0000-00-00', '', 1),
+(5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', '', 5, 0, '', 1, 1, '0', 0, '2017-06-25', '', 1),
+(6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', '', 4, 0, '', 1, 1, '0', 7, '0000-00-00', '', 1),
+(7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', '', 1, 0, '', 1, 3, '0', 0, '0000-00-00', '', 1),
+(8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', '', 5, 0, '', 1, 1, '0', 0, '0000-00-00', '', 1),
+(9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', '', 3, 0, '', 1, 1, '0', 0, '0000-00-00', '', 1),
+(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, '0', 22, '0000-00-00', '', 1),
+(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, '0', 0, '2017-08-09', '', 1),
+(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garryjrbruno@hotmail.com', '04123352179', 'Caricuao', 4, 0, '', 1, 4, '0', 0, '2017-09-29', '0', 1),
+(15, 0, 'Prueba 2', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-09-28', 'sdfhidfid@hotmail.com', '04123352179', 'trrrt', 4, 0, '', 1, 4, '[\"2\",\"12\",\"18\",\"22\"]', 57, '2017-09-30', '0', 1),
+(16, 0, 'Prueba empresas', '', 'fhfgfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-12-23', 'bsdhfsds@hotmail.com', '04123352179', 'caricuao', 4, 0, '', 1, 5, '0', 0, '2017-09-30', '0', 1),
+(17, 0, 'rgthgfghfghfghf', '', 'fgdffgdfgf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry387@gmail.com', '04123352179', 'dfbfhfhfgh', 5, 0, '', 1, 5, '0', 0, '2017-12-30', '0', 1),
+(18, 0, 'ffgdfdfgdfgdfg', '', 'erfdfgdfgdf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'kfghsduiofsydfisd@gohfnjiof.com', '04123352179', 'dfgdfgdfgf', 2, 0, '', 1, 5, '\"13\"', 42, '2017-09-23', '5', 1);
 
 -- --------------------------------------------------------
 
@@ -3085,7 +3094,7 @@ ALTER TABLE `case_study`
 -- AUTO_INCREMENT de la tabla `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1027;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1029;
 --
 -- AUTO_INCREMENT de la tabla `contact_categories`
 --
@@ -3220,7 +3229,7 @@ ALTER TABLE `rel_case_study_attachments`
 -- AUTO_INCREMENT de la tabla `rel_contact_category`
 --
 ALTER TABLE `rel_contact_category`
-  MODIFY `id_rel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_rel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT de la tabla `rel_department_designation`
 --
@@ -3240,7 +3249,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=171;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=172;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
@@ -3275,7 +3284,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
