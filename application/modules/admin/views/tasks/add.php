@@ -269,16 +269,11 @@
 								</div>
                             </div>
                         </div>
-													
-						
-						
 					<?php	 
 								}	
 							}
 						}
 					?>	
-						
-
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">

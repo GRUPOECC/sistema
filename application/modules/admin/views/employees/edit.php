@@ -1,4 +1,5 @@
 <link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="<?php echo base_url('assets/css/select2.min.css')?>" />
 <!-- Content Header (Page header) -->
 <style>
 .row{
@@ -96,20 +97,39 @@
                                 </div>
                             </div>
                         </div>
+
 						<div class="form-group">
                               <div class="row">
                                 <div class="col-md-4">
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('seecompany');?></label>
+                                    <select name="empresa_id[]" id="empresa_id[]" class="form-control chzn" multiple="multiple">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
+                                        <?php foreach($empresas as $new) {
+                                              
+                                            $sel = "";
+                                         if (strpos((string)$employee->empresa_id,'"'.(string)$new->id.'"')==true)
+                                                     $sel='selected="selected"';
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                         
+                                        ?>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('company_name');?></label>
-                                    <select name="empresa_id" class="form-control chzn" id="empresa_id">
+                                    <select name="empresa_select" class="form-control chzn" id="empresa_select">
                                         <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
                                         <?php foreach($empresas as $new) {
                                             $sel = "";
-
                                             foreach($empresa as $elemento) {
                                                 if ($elemento->id_empresa==$new->id)
                                                  $sel='selected="selected"';
                                             }
-
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
                                         }
                                         
@@ -127,11 +147,11 @@
 										<option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
 										<?php foreach($roles as $new) {
 											$sel = "";
-											//if($new->id==$employee->user_role) $sel='selected="selected"';
-                                            foreach($empresa as $elemento) {
-                                                if ($elemento->id_cargo==$new->id)
-                                                 $sel='selected="selected"';
-                                            }
+											if($new->id==$employee->user_role) $sel='selected="selected"';
+                                           // foreach($empresa as $elemento) {
+                                            //    if ($elemento->id_cargo==$new->id)
+                                            //     $sel='selected="selected"';
+                                           // }
 
 
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
@@ -151,11 +171,11 @@
 										<option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
 										<?php foreach($departments as $new) {
 											$sel = "";
-											//if($new->id==$employee->department_id) $sel='selected="selected"';
-											foreach($empresa as $elemento) {
+											if($new->id==$employee->department_id) $sel='selected="selected"';
+											/*foreach($empresa as $elemento) {
                                                 if ($elemento->id_departamento==$new->id)
                                                  $sel='selected="selected"';
-                                            }
+                                            }*/
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
@@ -188,7 +208,7 @@
                         	<div class="row">
                                 <div class="col-md-4">
                                     <label for="name" style="clear:both;"><?php echo lang('joining_date')?></label>
-									<input type="text" name="joining_date" value="<?php echo set_value('joining_date')?>" class="form-control datepicker">
+									<input type="text" name="joining_date" value="<?php echo $employee->joining_date?>" class="form-control datepicker">
                                 </div>
                             </div>
                         </div>
@@ -197,7 +217,7 @@
                         	<div class="row">
                                 <div class="col-md-4">
                                     <label for="name" style="clear:both;"><?php echo lang('joining_salary')?></label>
-									<input type="text" name="joining_salary" value="<?php echo set_value('joining_salary')?>" class="form-control">
+									<input type="text" name="joining_salary" value="<?php echo $employee->joining_salary?>" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -431,9 +451,15 @@
         </div>
      </div>
 </section>  
-
+<script src="<?php echo base_url('assets/js/select2.min.js')?>""></script>
 <script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
+   //Select2
+  $(".chzn").select2({
+        maximumSelectionLength: 5,
+    placeholder: "Seleccione"
+    })
+  
 $(document).on('change', '#department_id', function(){
  //alert(12);
  	department_id = $('#department_id').val();

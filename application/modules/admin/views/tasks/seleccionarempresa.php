@@ -24,7 +24,8 @@
 			
 
 				<h3 style="color:#FF0000"><?php echo validation_errors(); ?></h3>
-				<?php echo form_open_multipart('admin/tasks/add/'); ?>
+				
+               <form action="http://localhost/sistema/admin/tasks/add" method="post" onsubmit="return validacion()" ="" accept-charset="utf-8" enctype="multipart/form-data">
                     <div class="box-body">
                         <div class="box-body">
                         
@@ -52,13 +53,29 @@
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary">Comenzar</button>
                     </div>
-             <?php form_close()?>
+             </form>
             </div><!-- /.box -->
         </div>
      </div>
 </section>  
 <script src="<?php echo base_url('assets/js/redactor.min.js')?>"></script>
  <script>
+
+   function validacion(){
+
+        if(document.getElementById("empresaseleccionada").value == "")
+        {
+            alert("Debe seleccionar una empresa");
+            return false;  
+        }
+
+
+    return true; 
+   }
+
+
+
+
   $(document).ready(function(){
     $('.redactor').redactor({
 			  // formatting: ['p', 'blockquote', 'h2','img'],

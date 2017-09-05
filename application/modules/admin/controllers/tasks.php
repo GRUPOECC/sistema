@@ -251,7 +251,7 @@ class tasks extends MX_Controller {
 	function add($id){
 		$admin = $this->session->userdata('admin');
         $empresas = $this->employees_model->get_empresas_by_user($admin['id']);
-		if ((sizeof($empresas)<=1)||(isset($_POST['empresaseleccionada']))||(isset($_POST['name']))){ 
+		if ((sizeof($empresas)==1)||(isset($_POST['empresaseleccionada']))||(isset($_POST['name']))){ 
 		$data['fields'] = $this->custom_field_model->get_custom_fields(7);	
 		$data['roles'] = $this->user_role_model->get_all();
 		if(isset($_POST['empresaseleccionada']))

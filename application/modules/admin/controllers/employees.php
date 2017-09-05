@@ -101,9 +101,11 @@ class employees extends MX_Controller {
 				$save['joining_date'] = $this->input->post('joining_date');
 				$save['joining_salary'] = $this->input->post('joining_salary');
 			   	$save['status'] = $this->input->post('status');
-			   	//Asignacion de la empresas: 
+			   	$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
+
+			   	//Asignacion de la empresas (Accion suspendida): 
 			   	//-------------------------------------------------------------------
-			   	$save_empresa['id_empresa'] = $this->input->post('empresa_id');
+			    $save_empresa['id_empresa'] = $this->input->post('empresa_select');
 			   	$save_empresa['id_departamento'] = $save['department_id'];
 			   	$save_empresa['id_cargo'] = $save['user_role'];	   	
 			   	//-------------------------------------------------------------------
@@ -197,9 +199,11 @@ class employees extends MX_Controller {
 				$save['joining_date'] = $this->input->post('joining_date');
 				$save['joining_salary'] = $this->input->post('joining_salary');
 				$save['status'] = $this->input->post('status');
-			    //Asignacion de la empresas: 
+				$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
+
+			    //Asignacion de la empresas: (Suspendido)
 			   	//-------------------------------------------------------------------
-			   	$save_empresa['id_empresa'] = $this->input->post('empresa_id');
+			   	$save_empresa['id_empresa'] = $this->input->post('empresa_select');
 			   	$save_empresa['id_departamento'] = $save['department_id'];
 			   	$save_empresa['id_cargo'] = $save['user_role'];	   	
 			   	//-------------------------------------------------------------------
