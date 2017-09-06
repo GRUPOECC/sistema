@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 05-09-2017 a las 20:13:38
+-- Tiempo de generación: 07-09-2017 a las 00:53:10
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -333,7 +333,8 @@ CREATE TABLE `archived_cases` (
 INSERT INTO `archived_cases` (`id`, `case_id`, `notes`, `close_date`) VALUES
 (1, 2, 'LISTO', '2017-08-02'),
 (2, 2, 'listo', '2017-08-01'),
-(3, 3, 'dd', '2017-08-02');
+(3, 3, 'dd', '2017-08-02'),
+(4, 6, 'Terminado', '2017-09-30');
 
 -- --------------------------------------------------------
 
@@ -416,19 +417,21 @@ CREATE TABLE `cases` (
   `fees` decimal(10,2) NOT NULL,
   `is_starred` int(11) NOT NULL DEFAULT '0',
   `is_archived` int(11) NOT NULL DEFAULT '0',
-  `notes` text NOT NULL
+  `notes` text NOT NULL,
+  `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `cases`
 --
 
-INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `court_id`, `court_category_id`, `case_category_id`, `case_stage_id`, `act_id`, `description`, `start_date`, `hearing_date`, `o_lawyer`, `fees`, `is_starred`, `is_archived`, `notes`) VALUES
-(1, 'REPOSICION CAJA CHICA FEBRERO 2017', '1', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-08-01', '', '0.00', 1, 0, '<p>PRUEBA NOTA 1</p>'),
-(2, 'FACTURA 123456 PROVEEDOR', '2', 2, 1, 3, 2, '[\"7\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-07-12', '', '0.00', 0, 1, ''),
-(3, 'prueba ticket 1', '3', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-08-01', '2017-08-01', '1', '0.00', 0, 1, ''),
-(4, 'prueba ticket 2', '4', 2, 1, 2, 1, '[\"3\"]', 3, '[\"1\"]', '', '2017-08-08', '2017-08-10', '1', '0.00', 0, 0, ''),
-(5, 'ticket titulo', '123456', 2, 1, 2, 1, '[\"2\",\"3\",\"4\",\"6\"]', 1, '[\"1\"]', 'desc', '2017-08-01', '2017-08-31', 'apposite abogado', '0.00', 0, 0, '');
+INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `court_id`, `court_category_id`, `case_category_id`, `case_stage_id`, `act_id`, `description`, `start_date`, `hearing_date`, `o_lawyer`, `fees`, `is_starred`, `is_archived`, `notes`, `status`) VALUES
+(1, 'REPOSICION CAJA CHICA FEBRERO 2017', '1', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-08-01', '', '0.00', 1, 0, '<p>PRUEBA NOTA 1</p>', 0),
+(2, 'FACTURA 123456 PROVEEDOR', '2', 2, 1, 3, 2, '[\"7\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-07-12', '', '0.00', 0, 1, '', 0),
+(3, 'prueba ticket 1', '3', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-08-01', '2017-08-01', '1', '0.00', 0, 1, '', 0),
+(4, 'prueba ticket 2', '4', 2, 1, 2, 1, '[\"3\"]', 3, '[\"1\"]', '', '2017-08-08', '2017-08-10', '1', '0.00', 0, 0, '', 0),
+(5, 'ticket titulo', '123456', 2, 1, 2, 1, '[\"2\",\"3\",\"4\",\"6\"]', 1, '[\"1\"]', 'desc', '2017-08-01', '2017-08-31', 'apposite abogado', '0.00', 0, 0, '', 0),
+(6, 'Probando 123', '234', 18, 21, 0, 0, '[\"7\"]', 0, '[\"1\"]', 'Probando', '2017-09-22', '2017-11-30', 'Probando', '0.00', 0, 1, '', 0);
 
 -- --------------------------------------------------------
 
@@ -1784,9 +1787,9 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (7, 15, 23, 3, 6),
 (8, 15, 17, 1, 5),
 (9, 15, 11, 1, 6),
-(11, 14, 12, 3, 2),
+(11, 14, 19, 4, 4),
 (12, 15, 12, 3, 2),
-(13, 14, 19, 5, 5);
+(14, 19, 13, 6, 5);
 
 -- --------------------------------------------------------
 
@@ -2496,7 +2499,8 @@ INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_da
 (4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6, 0, 0),
 (5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1, 0, 0),
 (6, 'Prueba', '<p>Prueba</p>', 0, 2, '2017-09-30', '0', 14, 0, 1),
-(7, 'Prueba 3', '<p>Prueba </p>', 0, 2, '2017-10-30', '0', 14, 0, 12);
+(7, 'Prueba 3', '<p>Prueba </p>', 0, 2, '2017-10-30', '0', 14, 0, 12),
+(8, 'Prueba', '<p>Probando</p>', 0, 2, '2017-09-29', '0', 14, 9, 19);
 
 -- --------------------------------------------------------
 
@@ -2522,7 +2526,8 @@ INSERT INTO `task_assigned` (`user_id`, `task_id`) VALUES
 (11, 5),
 (14, 6),
 (14, 7),
-(15, 7);
+(15, 7),
+(14, 8);
 
 -- --------------------------------------------------------
 
@@ -2617,11 +2622,12 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', '', 3, 0, '', 1, 1, '0', 0, '0000-00-00', '', 1),
 (10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', '', 5, 0, '', 1, 1, '0', 22, '0000-00-00', '', 1),
 (11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, '0', 0, '2017-08-09', '', 1),
-(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garryjrbruno@hotmail.com', '04123352179', 'Caricuao', 4, 0, '', 1, 4, '0', 0, '2017-09-29', '0', 1),
+(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'garryjrbruno@hotmail.com', '04123352179', 'Caricuao', 4, 0, '', 1, 4, '[\"0\"]', 57, '2017-09-29', '0', 1),
 (15, 0, 'Prueba 2', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-09-28', 'sdfhidfid@hotmail.com', '04123352179', 'trrrt', 4, 0, '', 1, 4, '[\"2\",\"12\",\"18\",\"22\"]', 57, '2017-09-30', '0', 1),
 (16, 0, 'Prueba empresas', '', 'fhfgfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-12-23', 'bsdhfsds@hotmail.com', '04123352179', 'caricuao', 4, 0, '', 1, 5, '0', 0, '2017-09-30', '0', 1),
 (17, 0, 'rgthgfghfghfghf', '', 'fgdffgdfgf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry387@gmail.com', '04123352179', 'dfbfhfhfgh', 5, 0, '', 1, 5, '0', 0, '2017-12-30', '0', 1),
-(18, 0, 'ffgdfdfgdfgdfg', '', 'erfdfgdfgdf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'kfghsduiofsydfisd@gohfnjiof.com', '04123352179', 'dfgdfgdfgf', 2, 0, '', 1, 5, '\"13\"', 42, '2017-09-23', '5', 1);
+(18, 0, 'ffgdfdfgdfgdfg', '', 'erfdfgdfgdf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'kfghsduiofsydfisd@gohfnjiof.com', '04123352179', 'dfgdfgdfgf', 2, 0, '', 1, 5, '\"13\"', 42, '2017-09-23', '5', 1),
+(19, 0, 'Hola', '', 'hdfgidf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'fgodifughdi@joifhjfg.com', '04123352179', 'xfgdfgdrfgdf', 5, 0, '', 1, 6, '[\"11\",\"18\",\"21\"]', 48, '2017-09-30', '0', 1);
 
 -- --------------------------------------------------------
 
@@ -3054,7 +3060,7 @@ ALTER TABLE `appointments`
 -- AUTO_INCREMENT de la tabla `archived_cases`
 --
 ALTER TABLE `archived_cases`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `attendance`
 --
@@ -3074,7 +3080,7 @@ ALTER TABLE `canned_messages`
 -- AUTO_INCREMENT de la tabla `cases`
 --
 ALTER TABLE `cases`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `case_categories`
 --
@@ -3149,7 +3155,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3264,7 +3270,7 @@ ALTER TABLE `status`
 -- AUTO_INCREMENT de la tabla `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `task_comments`
 --
@@ -3284,7 +3290,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
