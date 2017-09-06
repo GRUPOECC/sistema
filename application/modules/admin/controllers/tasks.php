@@ -329,6 +329,7 @@ class tasks extends MX_Controller {
 
 				
 				//echo '<pre>'; print_r($save);die;
+				//Mandando notificacion por correo: 
 				$save_user_tasks=array();
 			    foreach($this->input->post('employee_id') as $new){
 					$save_user_tasks[] = array('user_id' =>$new,'task_id' =>$task_id);

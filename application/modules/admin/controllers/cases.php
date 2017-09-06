@@ -1312,6 +1312,7 @@ class cases extends MX_Controller {
 		$data['case']				= $this->cases_model->get_archive_case_by_id($id);
 		$data['cases']		 		= $this->cases_model->get_all_extended_case_by_id($id);
 		$data['cases']		 		= $this->cases_model->get_all_extended_case_by_id($id);
+		$data['files'] 				= $this->cases_model->get_files($id);
 		
 		$this->cases_model->case_view_by_admin($id);
 		
@@ -1363,6 +1364,7 @@ class cases extends MX_Controller {
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
 				$save['case_category_id'] = json_encode($this->input->post('case_category_id'));
 				$save['act_id'] = json_encode($this->input->post('act_id'));
+				$save['progress'] = $this->input->post('progress');
 				$save['description'] = $this->input->post('description');
 				$save['start_date'] = $this->input->post('start_date');
 				$save['hearing_date'] = $this->input->post('hearing_date');
@@ -1370,6 +1372,38 @@ class cases extends MX_Controller {
 				$save['fees'] = $this->input->post('fees');
              
 			 	$p_key = $this->cases_model->save($save);
+                  // $url =base_url('assets/uploads/tareas/');
+				$target_path ='assets/uploads/tickets/'.$p_key;
+                $carpeta = 'assets/uploads/tickets/'.(string)$p_key;
+                if (!file_exists($carpeta)) {
+                    mkdir($carpeta, 0777, true);
+                }
+
+                
+               	//Guardando registros de archivos adjuntos  - Garry Bruno
+                $filesCount = count($_FILES['archivos']['name']);
+                $data = array();
+		        if($this->input->post('title') && !empty($_FILES['archivos']['name'])){	             
+		            $filesCount = count($_FILES['archivos']['name']);
+		            for($i = 0; $i < $filesCount; $i++){
+		                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+		                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+		                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+                       
+		               $uploadPath = 'assets/uploads/tickets/'.(string)$p_key.'/'. basename( $_FILES['userFile']['name']);
+		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
+                                        $savefile['name'] = $_FILES['userFile']['name'];
+                                        $savefile['location'] = $uploadPath; 
+                                        $savefile['id_ticket'] = $p_key; 
+                                        $this->cases_model->savefile($savefile);       
+
+                              }                   
+		            }
+		                   
+		        }
+
 				$reply = $this->input->post('reply');
 					if(!empty($reply)){
 					foreach($this->input->post('reply') as $key => $val) {
@@ -1437,6 +1471,7 @@ class cases extends MX_Controller {
 				$save['act_id'] = json_encode($this->input->post('act_id'));
 				$save['description'] = $this->input->post('description');
 				$save['start_date'] = $this->input->post('start_date');
+				$save['progress'] = $this->input->post('progress');
 				$save['hearing_date'] = $this->input->post('hearing_date');
 				$save['o_lawyer'] = $this->input->post('o_lawyer');
 				$save['fees'] = $this->input->post('fees');

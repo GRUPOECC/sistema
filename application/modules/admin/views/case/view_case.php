@@ -181,6 +181,16 @@
                             </div>
                         </div>
 						
+						<div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-3">
+                                	<b><?php echo lang('progress')?></b>
+								</div>
+								<div class="col-md-4">
+                                   <?php echo $case->progress;?> %
+                                </div>
+                            </div>
+                        </div>
 						
 						<div class="form-group">
                         	<div class="row">
@@ -224,6 +234,22 @@
 								<div class="col-md-4">
                                    <?php echo $case->fees;?>
                                 </div>
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-3">
+                                    <label for="email" style="clear:both;"><b><?php echo lang('files')?></b></label>
+								</div>
+								<div class="col-md-4">
+									     	<?php 
+														$icono = "assets/img/icono-adjunto.png";
+														foreach($files as $doc){
+														  echo '<p><IMG SRC="'.base_url($icono).'" WIDTH=40 HEIGHT=40 ALT=""><a href="'.base_url($doc->location).'">'.$doc->name.'</a></p>';
+														}
+													?>
+									</div>
                             </div>
                         </div>
 						

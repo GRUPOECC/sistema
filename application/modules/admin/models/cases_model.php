@@ -32,7 +32,19 @@ class cases_model extends CI_Model
 		$this->db->set('client_case_alert',$_POST['days']);
 		$this->db->update('users');
 	}
-	
+
+    function savefile($save){
+        $this->db->insert('files',$save);
+        $id = $this->db->insert_id();  
+		return $id;
+
+	} 
+
+	function get_files($id){
+             $this->db->where('id_ticket',$id);
+			return $this->db->get('files')->result();
+	}
+
 	function  case_view_by_admin($id)
 	{
 		$this->db->where('case_id',$id);

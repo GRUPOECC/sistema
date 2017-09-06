@@ -1,5 +1,10 @@
 <link href="<?php echo base_url('assets/css/chosen.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
+  <!-- Ion Slider -->
+<link href="<?php echo base_url()?>assets/css/ionslider/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
+<!-- ion slider Nice -->
+<link href="<?php echo base_url()?>assets/css/ionslider/ion.rangeSlider.skinNice.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url()?>assets/css/bootstrap-slider/slider.css" rel="stylesheet" type="text/css" />
 <!-- Content Header (Page header) -->
 <style>
 .row{
@@ -163,6 +168,23 @@
                                 </div>
                             </div>
                         </div>
+
+                     <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-3">
+                                    <label for="progress" style="clear:both;"><?php echo lang('progress');?></label>
+						          </div>
+						         <div class="col-md-4">
+					                          <input type="text" value=""  name="progress" class="slider form-control" 
+											  
+											   data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="<?php echo set_value('description')?set_value('description'):0;?>"/
+											  
+											  data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
+								 </div>
+                                       
+                                      
+                                    </div>
+                     </div>
 						
 						
 						<div class="form-group">
@@ -194,6 +216,16 @@
 								</div>
 								<div class="col-md-4">
                                    <input type="text" name="o_lawyer" value="<?php echo set_value('o_lawyer'); ?>" class="form-control"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Adjuntar Archivos -->
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" style="clear:both;"><?php echo lang('upload');?></label>
+                                    <input type="file" multiple="true" name="archivos[]" id="archivos[]" />
                                 </div>
                             </div>
                         </div>
@@ -569,6 +601,11 @@
 
 <script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
+  <!-- Ion Slider -->
+<script src="<?php echo base_url('assets/js/plugins/ionslider/ion.rangeSlider.min.js')?>" type="text/javascript"></script>
+<!-- Bootstrap slider -->
+<script src="<?php echo base_url('assets/js/plugins/bootstrap-slider/bootstrap-slider.js')?>" type="text/javascript"></script>
+
 <script type="text/javascript">
 $(function() {
 	
@@ -607,7 +644,7 @@ $(function() {
 
 
 <script>
-
+$('.slider').slider();
 $(document).on('change', '#location_id', function(){
  //alert(12);
  	vch = $(this).val();
