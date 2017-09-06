@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-09-2017 a las 01:13:11
+-- Tiempo de generación: 07-09-2017 a las 01:54:35
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -432,7 +432,10 @@ INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `cour
 (4, 'prueba ticket 2', '4', 2, 1, 2, 1, '[\"3\"]', 3, '[\"1\"]', '', '2017-08-08', '2017-08-10', '1', '0.00', 0, 0, '', '0'),
 (5, 'ticket titulo', '123456', 2, 1, 2, 1, '[\"2\",\"3\",\"4\",\"6\"]', 1, '[\"1\"]', 'desc', '2017-08-01', '2017-08-31', 'apposite abogado', '0.00', 0, 0, '', '0'),
 (6, 'Probando 123', '234', 18, 21, 0, 0, '[\"7\"]', 0, '[\"1\"]', 'Probando', '2017-09-22', '2017-11-30', 'Probando', '0.00', 0, 1, '', '0'),
-(7, 'odogidjgdfgd', '67', 0, 12, 0, 0, '[\"4\"]', 0, 'false', 'flerhlruiegerg', '2017-10-06', '2017-09-29', 'rertert', '0.00', 0, 0, '', '0');
+(7, 'odogidjgdfgd', '67', 0, 12, 0, 0, '[\"4\"]', 0, 'false', 'flerhlruiegerg', '2017-10-06', '2017-09-29', 'rertert', '0.00', 0, 0, '', '0'),
+(8, 'Probando', '34', 18, 11, 0, 0, '[\"6\"]', 0, '[\"1\"]', 'hfhfghfghf', '2017-09-29', '2017-11-30', 'fghfgh', '0.00', 0, 0, '', '56'),
+(9, 'rtyrtytyrtyr', '89', 0, 14, 0, 0, '[\"6\"]', 0, 'false', 'dfgdfgdfgdf', '2017-09-22', '2017-11-23', 'fghfgh', '0.00', 0, 0, '', '39'),
+(10, 'Rryryrt', '23', 0, 11, 0, 0, '[\"5\"]', 0, 'false', 'dfgdfgdfgdf', '2017-10-29', '2017-10-27', 'fghfgh', '0.00', 0, 0, '', '36');
 
 -- --------------------------------------------------------
 
@@ -1837,8 +1840,16 @@ CREATE TABLE `files` (
   `name` varchar(1000) NOT NULL,
   `location` varchar(1000) NOT NULL,
   `id_task` int(11) DEFAULT NULL,
-  `id_comment` int(11) DEFAULT NULL
+  `id_comment` int(11) DEFAULT NULL,
+  `id_ticket` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `files`
+--
+
+INSERT INTO `files` (`id`, `name`, `location`, `id_task`, `id_comment`, `id_ticket`) VALUES
+(1, 'ER1.pdf', 'assets/uploads/tickets/10/ER1.pdf', NULL, NULL, 10);
 
 -- --------------------------------------------------------
 
@@ -3081,7 +3092,7 @@ ALTER TABLE `canned_messages`
 -- AUTO_INCREMENT de la tabla `cases`
 --
 ALTER TABLE `cases`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT de la tabla `case_categories`
 --
@@ -3171,7 +3182,7 @@ ALTER TABLE `fees`
 -- AUTO_INCREMENT de la tabla `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `holidays`
 --
