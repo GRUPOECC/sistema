@@ -142,6 +142,21 @@ class tasks_model extends CI_Model
 		return $this->db->get('users U')->result();
 	}
 
+	function get_all_employeesTask($task,$idusuario){
+		  $this->db->where('id_usuario',$idusuario);
+		  $this->db->where('id_empresa',$task->id_empresa);
+		  $query = $this->db->get('empresa_usuario');
+		  $department = $query->row('id_departamento');
+		  $empresa = $query->row('id_empresa'); 
+
+		     $this->db->where('id_departamento',$department);
+		     $this->db->where('id_empresa',$empresa);
+			 $this->db->where('U.user_role !=2');
+			 $this->db->select('U.*');
+			 $this->db->join('empresa_usuario EU', 'EU.id_usuario = U.id', 'LEFT');
+
+		return $this->db->get('users U')->result();
+	}
 	
 	function get_assigned_user($task_id){
 			 $this->db->where('task_id',$task_id);

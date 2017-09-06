@@ -509,15 +509,15 @@ class tasks extends MX_Controller {
 	
 
     function view($id){
-		
+		$admin = $this->session->userdata('admin');
+
 		$data['fields'] = $this->custom_field_model->get_custom_fields(7);	
 		$data['roles'] = $this->user_role_model->get_all();
-		$data['employees'] = $this->tasks_model->get_all_employees();
+		$data['task'] = $this->tasks_model->get($id);
+		$data['employees'] = $this->tasks_model->get_all_employeesTask($data['task'],$admin['id']);
 		$data['assigned_users'] = $this->tasks_model->get_assigned_user($id);
 		$data['cases'] = $this->cases_model->get_all();
-		$data['task'] = $this->tasks_model->get($id);
 		$data['files'] = $this->tasks_model->get_files($id);
-	
 		$data['page_title'] = lang('view') . lang('task');
 		$data['body'] = 'tasks/view';
 		$this->load->view('template/main', $data);	
