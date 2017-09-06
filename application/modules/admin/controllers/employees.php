@@ -278,11 +278,15 @@ class employees extends MX_Controller {
 
     }
 	function deletecompany($id){
+		$mensaje = false; 
            if($id){
-			$this->employees_model->delete_empresa($id);
-			$this->session->set_flashdata('message',lang('companies_deleted'));
+           	$admin = $this->session->userdata('admin');
+			$mensaje = $this->employees_model->delete_empresa($admin['id'],$id);
+			 if ($mensaje) 
+			 $this->session->set_flashdata('message',lang('companies_deleted'));
 			
 		}
+
 		header("Location:".$_SERVER['HTTP_REFERER']);  
 	}
 

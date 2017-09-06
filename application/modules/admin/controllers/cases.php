@@ -27,7 +27,7 @@ class cases extends MX_Controller {
 		$data['stages'] = $this->case_stage_model->get_all();
 		$data['page_title'] = lang('case');
 		$data['body'] = 'case/list';
-		$this->load->view('template/main', $data);	
+		$this->load->view('template/main2', $data);	
 	}
 	
 	
@@ -1337,14 +1337,14 @@ class cases extends MX_Controller {
 			$this->form_validation->set_message('required', lang('custom_required'));
 			$this->form_validation->set_rules('title', 'lang:title', 'required');
 			//$this->form_validation->set_rules('client_id', 'Client', 'required');
-			$this->form_validation->set_rules('employee_id', 'User', 'required');
+			$this->form_validation->set_rules('employee_id', 'User', '');
 			$this->form_validation->set_rules('case_no', 'Case No', 'trim|required|is_unique[cases.case_no]');
 			$this->form_validation->set_rules('location_id', 'Location', 'required');
-			$this->form_validation->set_rules('case_stage_id', 'Case Stage', 'required');
-			$this->form_validation->set_rules('dept_id', 'Dept', 'required');
-			$this->form_validation->set_rules('dept_category_id', 'dept_category Category', 'required');
+			$this->form_validation->set_rules('case_stage_id', 'Case Stage', '');
+			$this->form_validation->set_rules('dept_id', 'Dept', '');
+			$this->form_validation->set_rules('dept_category_id', 'dept_category Category', '');
 			$this->form_validation->set_rules('case_category_id', 'Case Category', 'required');
-			$this->form_validation->set_rules('act_id', 'Act', 'required');
+			$this->form_validation->set_rules('act_id', 'Act', '');
 			$this->form_validation->set_rules('start_date', 'Filing Date', 'required');
 			$this->form_validation->set_rules('description', 'Description', '');
 			$this->form_validation->set_rules('fees', 'Fees', '');
@@ -1358,8 +1358,8 @@ class cases extends MX_Controller {
 				//$save['client_id'] = $this->input->post('client_id');
 				$save['client_id'] = $this->input->post('employee_id');
 				$save['location_id'] = $this->input->post('location_id');
-				$save['dept_id'] = $this->input->post('dept_id');
-				$save['dept_category_id'] = $this->input->post('dept_category_id');
+				//$save['dept_id'] = $this->input->post('dept_id');
+				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
 				$save['case_category_id'] = json_encode($this->input->post('case_category_id'));
 				$save['act_id'] = json_encode($this->input->post('act_id'));
@@ -1418,8 +1418,8 @@ class cases extends MX_Controller {
 			$this->form_validation->set_rules('client_id', 'lang:client', 'required');
 			$this->form_validation->set_rules('case_no', 'lang:case_number', 'trim|required');
 			$this->form_validation->set_rules('location_id', 'lang:location', 'required');
-			$this->form_validation->set_rules('dept_id', 'lang:dept', 'required');
-			$this->form_validation->set_rules('dept_category_id', 'lang:dept_category', 'required');
+			$this->form_validation->set_rules('dept_id', 'lang:dept', '');
+			$this->form_validation->set_rules('dept_category_id', 'lang:dept_category', '');
 			$this->form_validation->set_rules('case_category_id', 'lang:case_category', 'required');
 			$this->form_validation->set_rules('act_id', 'lang:act', 'required');
 			$this->form_validation->set_rules('start_date', 'lang:filing_date', 'required');
@@ -1430,8 +1430,8 @@ class cases extends MX_Controller {
 				$save['case_no'] = $this->input->post('case_no');
 				$save['client_id'] = $this->input->post('client_id');
 				$save['location_id'] = $this->input->post('location_id');
-				$save['dept_id'] = $this->input->post('dept_id');
-				$save['dept_category_id'] = $this->input->post('dept_category_id');
+				//$save['dept_id'] = $this->input->post('dept_id');
+				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
 				$save['case_category_id'] = json_encode($this->input->post('case_category_id'));
 				$save['act_id'] = json_encode($this->input->post('act_id'));

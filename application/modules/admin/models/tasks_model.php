@@ -148,7 +148,7 @@ class tasks_model extends CI_Model
 		  $query = $this->db->get('empresa_usuario');
 		  $department = $query->row('id_departamento');
 		  $empresa = $query->row('id_empresa'); 
-
+             
 		     $this->db->where('id_departamento',$department);
 		     $this->db->where('id_empresa',$empresa);
 			 $this->db->where('U.user_role !=2');

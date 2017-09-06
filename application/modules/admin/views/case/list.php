@@ -21,6 +21,7 @@ function areyousure()
         </ol>
 </section>
 
+
 <section class="content">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
@@ -28,6 +29,18 @@ function areyousure()
 				<?php if(check_user_role(5)==1){?>	
                     <a class="btn btn-default" href="<?php echo site_url('admin/cases/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
              	<?php } ?>
+        <?php if(check_user_role(24)==1){?>
+                      <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/tasks'); ?>">
+                <?php } ?>   
+          <?php if(check_user_role(188)==1){?>
+                      <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
+                     <i class="fa fa-caret-square-o-down"></i><i id="boton_select"> <?php echo lang('select');?></i></a> 
+                     <?php } ?> 
+
+
+
+
+
 			    </div>
             </div>    
         </div>	
@@ -99,14 +112,15 @@ function areyousure()
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('case')?></h3>                                    
+                    <h3 class="box-title"></h3>                                    
                 </div><!-- /.box-header -->
 				
-                <div class="box-body table-responsive" style="margin-top:40px;" id="result">
+                <div class="box-body table-responsive" style="margin-top:0px;" id="result">
                     <table id="example1" class="table table-bordered table-striped table-mailbox">
                         <thead>
                             <tr>
-                                <th width="5%"><?php echo lang('serial_number')?></th>
+                            <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
+                             <th width="5%"><?php echo lang('serial_number')?></th>
 								<th width="8%"><?php echo lang('star')?></th>
 								<th><?php echo lang('case')?> <?php echo lang('title')?></th>
 								<th><?php echo lang('case')?> <?php echo lang('number')?></th>
@@ -119,6 +133,7 @@ function areyousure()
                         <tbody>
                             <?php $i=1;foreach ($cases as $new){?>
                                 <tr class="gc_row">
+                                 <td><input style="display: none;" type="checkbox" id="task_check[]" name="task_check[]" value="<?php echo $new->id ?>"></td>
                                     <td><?php echo $i?></td>
 									
 									<td class="small-col">
@@ -173,11 +188,100 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
+<?php 
+   //(filtrado de un total de _MAX_ registros)
+
+ $idioma = lang ('search');
+
+  if ($idioma == 'Buscar')  {
+     echo '
+
+       <script>
+
+  var oTable = $("#example1").dataTable({
+  "oLanguage": {
+        "sProcessing":    "Procesando...",
+        "sLengthMenu":    "Mostrar _MENU_ registros",
+        "sZeroRecords":   "No se encontraron resultados",
+        "sEmptyTable":    "Ningún dato disponible en esta tabla",
+        "sInfo":          "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+        "sInfoEmpty":     "Mostrando registros del 0 al 0 de un total de 0 registros",
+        "sInfoFiltered":  "",
+        "sInfoPostFix":   "",
+        "sSearch":        "Buscar:",
+        "sUrl":           "",
+        "sInfoThousands":  ",",
+        "sLoadingRecords": "Cargando...",
+        "oPaginate": {
+            "sFirst":    "Primero",
+            "sLast":    "Último",
+            "sNext":    "Siguiente",
+            "sPrevious": "Anterior"
+        },
+        "oAria": {
+            "sSortAscending":  ": Activar para ordenar la columna de manera ascendente",
+            "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+        }
+  },
+  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
+                { "bSearchable": false, "aTargets": [ 0 ] }]
+  
+  });
+
+
+
+
+
+
+</script>
+     '; 
+
+  }else if ($idioma == 'Search') {
+          echo '
+       <script>
+
+  var oTable = $("#example1").dataTable({
+  "oLanguage": {
+    "sEmptyTable":     "No data available in table",
+    "sInfo":           "Showing _START_ to _END_ of _TOTAL_ entries",
+    "sInfoEmpty":      "Showing 0 to 0 of 0 entries",
+    "sInfoFiltered":   "",
+    "sInfoPostFix":    "",
+    "sInfoThousands":  ",",
+    "sLengthMenu":     "Show _MENU_ entries",
+    "sLoadingRecords": "Loading...",
+    "sProcessing":     "Processing...",
+    "sSearch":         "Search:",
+    "sZeroRecords":    "No matching records found",
+    "oPaginate": {
+        "sFirst":    "First",
+        "sLast":     "Last",
+        "sNext":     "Next",
+        "sPrevious": "Previous"
+    },
+    "oAria": {
+        "sSortAscending":  ": activate to sort column ascending",
+        "sSortDescending": ": activate to sort column descending"
+    }
+  },
+  "aoColumnDefs": [{ "bSortable": false, "aTargets": [ 0] }, 
+                { "bSearchable": false, "aTargets": [ 0 ] }]
+  
+  });
+
+
+</script>
+     '; 
+  }
+
+?>
 <script type="text/javascript">
-$(function() {
-	$('#example1').dataTable({
-	});
-});
+//$(function() {
+//	$('#example1').dataTable({
+//	});
+//});
+
+
 
   jQuery('.datepicker').datetimepicker({
  lang:'en',
@@ -397,4 +501,141 @@ $(document).on('change', '#date2', function(){
 			
 				
 
+</script>
+
+<script type="text/javascript">
+
+
+   function validar(){
+        var cont = 0; 
+        var checkboxes = document.getElementsByName("task_check[]");
+        for (var x=0; x < checkboxes.length; x++) {
+            if (checkboxes[x].checked) {
+                 cont = cont + 1;
+            }
+        }
+       if (cont==0){
+            $("#errorcontacto").css("display", "block");
+            //$("#errorcontacto2").css("display", "block");
+           return false;
+         }  
+        else 
+          return true; 
+   }
+
+   function validarCategoria(){
+
+        var ddl = document.getElementById("category2");
+        var selectedValue = ddl.options[ddl.selectedIndex].value;
+        if (selectedValue == "blank")
+          {
+            $("#errorcontacto3").css("display", "block");
+            return false; 
+          }else{
+             return true;
+          }
+   }
+   
+   function Agrupar () {
+
+        if (($('input[type=checkbox]').css("display"))=="none"){ 
+          
+         $('input[type=checkbox]').css("display", "block");
+         var allPages = oTable.fnGetNodes();
+         $('input[type="checkbox"]', allPages).css('display','block');
+         var boton = document.getElementById("boton_select");
+         if (boton.innerHTML == " Seleccionar") {
+            boton.innerHTML = " Deseleccionar"; 
+         } 
+         else if (boton.innerHTML == " Select"){
+            boton.innerHTML = " Unselect";           
+         }   
+          //$('input[type=text]').attr("disabled",true);
+         document.getElementById("boton_eliminarvarios").style.display="inline";
+         
+       }else 
+          {
+            $('input[type=checkbox]').css("display", "none");
+            var allPages = oTable.fnGetNodes();
+            $('input[type="checkbox"]', allPages).css('display','none');
+            var boton = document.getElementById("boton_select");
+            if (boton.innerHTML == " Deseleccionar") 
+              boton.innerHTML = " Seleccionar"; 
+            else if (boton.innerHTML == " Unselect")
+              boton.innerHTML = " Select"; 
+
+           $('input[type="checkbox"]').prop('checked',false);
+           var allPages = oTable.fnGetNodes();
+           $('input[type="checkbox"]', allPages).prop('checked',false);          
+            document.getElementById("boton_eliminarvarios").style.display="none";
+          }    
+   }
+  
+
+  function seleccionarTodos(){ 
+   if ($('input[type=checkbox]').prop('checked')) {
+        var allPages = oTable.fnGetNodes();
+        $('input[type="checkbox"]', allPages).prop('checked', true);
+   }else {
+       var allPages = oTable.fnGetNodes();
+        $('input[type="checkbox"]', allPages).prop('checked',false);
+   }
+  }
+
+  function seleccionarTodos2(){ 
+   if ($('input[type=checkbox]').prop('checked')) {
+        $('input[type="checkbox"]').prop('checked',false);
+        
+   }else {
+       $('input[type="checkbox"]').prop('checked',true);
+    
+   }
+  }
+
+  function mostrarTerminados(){
+
+     $('tr[name="terminado"]').css("display", "");
+     var allPages = oTable.fnGetNodes();
+        $('tr[name="terminado"]', allPages).css("display", "");
+  }
+
+  function ocultarTerminados(){
+     $('tr[name="terminado"]').css("display", "none");
+     var allPages = oTable.fnGetNodes();
+        $('tr[name="terminado"]', allPages).css("display", "none");
+  }
+
+  function mostrarEliminados(){
+     $('tr[name="eliminado"]').css("display", "");
+    var allPages = oTable.fnGetNodes();
+      $('tr[name="eliminado"]', allPages).css("display", "");
+  }
+
+  function ocultarEliminados(){
+   
+     $('tr[name="eliminado"]').css("display", "none");
+     var allPages = oTable.fnGetNodes();
+       $('tr[name="eliminado"]', allPages).css("display", "none");
+  
+  }
+
+  var suiche = true; 
+  function cambioMuestra(){
+       if(suiche){
+          mostrarEliminados();
+          suiche = false; 
+       }
+        else {
+          ocultarEliminados();
+          suiche = true;  
+        }
+  }
+
+
+
+  $(document).ready(function(){
+      //Oculta las tareas terminadas y eliminadas por defecto.
+      ocultarEliminados();
+      ocultarTerminados();
+   });
 </script>

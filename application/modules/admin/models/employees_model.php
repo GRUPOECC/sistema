@@ -76,10 +76,37 @@ class employees_model extends CI_Model
 	function add_empresa($save_empresa){
 		 $this->db->insert('empresa_usuario',$save_empresa);
 	}
+
+	function haTrabajado($idusuario,$idempresa){
 	
-    function delete_empresa($id){
+		$this->db->where("created_by",$idusuario);
+		$this->db->where("id_empresa",$idempresa);
+		$this->db->from('tasks');
+        $total = $this->db->count_all_results();
+        $this->db->where("TA.user_id",$idusuario);
+        $this->db->where("T.id_empresa",$idempresa);
+        $this->db->from('task_assigned TA');
+        $this->db->join('tasks T', 'T.id = TA.task_id', 'LEFT');
+        $total = $total +  $this->db->count_all_results();       
+        if ($total>0)
+         return true; 
+         else if ($total==0)
+           return false;   
+		return false; 
+	
+	}
+	
+    function delete_empresa($idusuario,$id){
+    	$this->db->where("id",$id);
+    	$idempresa = $this->db->get('empresa_usuario')->row('id_empresa');
+        if (!$this->haTrabajado($idusuario,$idempresa)){    
            $this->db->where('id',$id);
-		   $this->db->delete('empresa_usuario');
+		  $this->db->delete('empresa_usuario');
+		  return true; 
+	     }else {
+           $this->session->set_flashdata('message',"Esta compañia tiene actividades involucradas! "); 
+           return false; 
+	    }
     }
 
     function update_empresa($id,$save){
