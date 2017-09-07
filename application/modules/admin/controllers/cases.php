@@ -35,7 +35,6 @@ class cases extends MX_Controller {
     function publications($id=false){
        	$data['case'] = $this->cases_model->get_case_by_id($id);
 		$data['messages'] = $this->cases_model->get_commnets_by_case($id);  //messages == comments
-	    
 		$data['id'] =$id;
         $admin = $this->session->userdata('admin');
 		//$email = $this->cases_model->get_users_email($id);
@@ -1560,6 +1559,8 @@ class cases extends MX_Controller {
 		$data['id']					=	$id;
 		$data['case'] 				= $this->cases_model->get_case_by_id($id);
 		$data['fields'] 			= $this->custom_field_model->get_custom_fields(2);	
+		$admin2 = $this->session->userdata('admin');
+	    $data['iduser'] = $admin2['id'];
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');

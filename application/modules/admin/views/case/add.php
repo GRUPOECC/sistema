@@ -177,7 +177,7 @@
 						         <div class="col-md-4">
 					                          <input type="text" value=""  name="progress" class="slider form-control" 
 											  
-											   data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="<?php echo set_value('description')?set_value('description'):0;?>"/
+											   data-slider-min="0" data-slider-max="50" data-slider-step="1" data-slider-value="<?php echo set_value('description')?set_value('description'):0;?>"/
 											  
 											  data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
 								 </div>

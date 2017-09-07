@@ -262,11 +262,21 @@
                                     <label for="progress" style="clear:both;"><?php echo lang('progress');?></label>
 						        </div>    
 						            <div class="col-md-4">
-					                          <input type="text" value=""  name="progress" class="slider form-control" 
-											  
-											   data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="<?php echo $case->progress?>"/
-											  
-											  data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
+                                             <?php if($case->created_by==$iduser){?>
+                                             
+					                          <input type="text" value=""  name="progress" class="slider form-control"  
+											   data-slider-min="0" data-slider-max="50" data-slider-step="1" data-slider-value="<?php echo $case->progress?>"/										 
+	 										  data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
+
+                                            <?php }else if(strpos((string)$case->usuarios_id,(string)$iduser)==true) {?>
+
+                                              <input type="text" value=""  name="progress" class="slider form-control"      
+                                               data-slider-min="50" data-slider-max="100" data-slider-step="1" data-slider-value="<?php echo $case->progress?>"/
+                                              data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
+
+                                            <?php }?>
+
+
                                         </div>
                                       
                                     </div>
