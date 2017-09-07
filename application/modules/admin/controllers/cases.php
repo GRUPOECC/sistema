@@ -32,7 +32,101 @@ class cases extends MX_Controller {
 		$this->load->view('template/main2', $data);	
 	}
 	
+    function publications($id=false){
+       	$data['cases'] = $this->cases_model->get($id);
+		$data['messages'] = $this->cases_model->get_commnets_by_case($id);  //messages == comments
 	
+		$data['id'] =$id;
+        $admin = $this->session->userdata('admin');
+		$email = $this->cases_model->get_users_email($id);
+		
+		foreach($email as $new){
+			$email_list[] =  $new->email;
+		}
+
+        if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+			$this->load->library('form_validation');
+			$this->form_validation->set_rules('message', 'lang:comment', 'required');
+			$this->form_validation->set_message('required', lang('custom_required'));
+			 
+			if ($this->form_validation->run()==true)
+            {
+				$save['created_by'] = $admin['id'];
+				$save['case_id'] = $id;
+				$save['mensaje'] = $this->input->post('message');
+				$save['date_time'] = date("Y-m-d H:i:s");
+				
+				$idcomentario = $this->cases_model->save_comment($save);
+               	//Guardando registros de archivos adjuntos  - Garry Bruno
+               	//--------------------Manejo de Archivos-----------------------
+                $filesCount = count($_FILES['archivos']['name']);
+                
+                $data = array();
+		        if($this->input->post('message') && !empty($_FILES['archivos']['name'])){	             
+		                            
+                    $target_path ='assets/uploads/tickets/'.$id.'/'.$idcomentario;
+                    $carpeta = 'assets/uploads/tickets/'.$id.'/'.(string)$idcomentario;
+                    if (!file_exists($carpeta)) {
+                    mkdir($carpeta, 0777, true);
+                    } 
+
+		            $filesCount = count($_FILES['archivos']['name']);
+		            for($i = 0; $i < $filesCount; $i++){
+		                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+		                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+		                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+                       
+		               $uploadPath = 'assets/uploads/comentarios/'.(string)$idcomentario.'/'. basename( $_FILES['userFile']['name']);
+		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
+                                        $savefile['name'] = $_FILES['userFile']['name'];
+                                        $savefile['location'] = $uploadPath; 
+                                        $savefile['id_comment'] = $idcomentario; 
+                                        $this->tasks_model->savefile($savefile);       
+                              }else{
+                                    rmdir ($carpeta);
+                              }                   
+		            }
+		                   
+		        }
+                //--------------------Manejo de Archivos-----------------------
+
+                //--------------------Envio de Correo Electronico------------------------ 
+                foreach($email as $new){
+					$msg= html_entity_decode($save['comment'],ENT_QUOTES, 'UTF-8');
+					mail($new->email,"GECC - Tienes un comentario de: ". $admin['name'],$msg);
+		               }   
+		        //------------------------------------------------------------------------  
+
+
+
+				$this->session->set_flashdata('message', lang('comment_success'));
+				redirect('admin/tasks/commentsOnly/'.$id);
+				
+				if(isset($_GET['my_tasks'])){
+                     echo '
+                       <script type="text/javascript" language="Javascript">window.open("admin/my_tasks/comments/"+'.$id.');
+                       </script>
+                     '; 
+
+					//redirect('admin/my_tasks/comments/'.$id);
+				}else{
+                    echo '
+                       <script type="text/javascript" language="Javascript">window.open("admin/tasks/comments/"+'.$id.');
+                       </script>
+                     '; 
+					//redirect('admin/tasks/comments/'.$id);
+				}
+				
+			}
+		}
+
+        $data['body'] = 'tasks/comments2';
+		$this->load->view('template/main3', $data);	
+
+	}
 	
 	function get_case_by_client(){
 		$cases = $this->cases_model->get_cases_by_client_id($_POST['id']);

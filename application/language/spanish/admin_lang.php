@@ -556,6 +556,8 @@ $lang['calen_all_day'] = "todo el día";
 $lang['companycontact'] = "Es un contacto de la empresa: ";
 $lang['contactof'] = "Contacto de";
 $lang['seecompany'] = "Empresas que puede ver: ";
+$lang['publications'] = "Publicaciones";
+
 
 
 

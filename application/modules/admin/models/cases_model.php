@@ -40,6 +40,32 @@ class cases_model extends CI_Model
 
 	} 
 
+	function save_publication($save)
+	{
+		$this->db->insert('case_publications',$save);
+        $id = $this->db->insert_id();  
+		return $id;
+	}
+
+	function get_commnets_by_case($id)
+	{
+		$admin = $this->session->userdata('admin');
+				$this->db->where('M.case_id',$id);
+				$this->db->order_by('M.date_time',"DESC");
+				$this->db->select('M.*,U.name from_user,U.image');
+			   $this->db->join('users U', 'U.id = M.created_by', 'LEFT');
+		return $this->db->get('case_publications M')->result();
+	}
+
+	function get_users_email($case_id){
+	 			$admin = $this->session->userdata('admin');
+				
+				$this->db->where('C.id',$case_id);
+				$this->db->select('U.email');	
+			    $this->db->join('users U', "U.id LIKE CONCAT('%',C.usuarios_id, '%')", 'LEFT');
+		return $this->db->get('cases C')->result();
+	}
+
 	function get_files($id){
              $this->db->where('id_ticket',$id);
 			return $this->db->get('files')->result();

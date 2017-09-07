@@ -548,3 +548,4 @@ $lang['calen_all_day'] = "all-day";
 $lang['companycontact'] = "Is a contact of the company: ";
 $lang['contactof'] = "Contact of";
 $lang['seecompany'] = "Companies that he can see: ";
+$lang['publications'] = "Publications";
