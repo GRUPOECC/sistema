@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-09-2017 a las 00:02:52
+-- Tiempo de generación: 08-09-2017 a las 01:09:37
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -481,6 +481,20 @@ CREATE TABLE `case_publications` (
   `date_time` date NOT NULL,
   `case_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `case_publications`
+--
+
+INSERT INTO `case_publications` (`id`, `mensaje`, `created_by`, `date_time`, `case_id`) VALUES
+(1, '<p>Probando</p>', 14, '2017-09-07', 11),
+(2, '<p>thrtryrt</p>', 14, '2017-09-07', 11),
+(3, '<p>hfhffg</p>', 14, '2017-09-07', 11),
+(4, '<p>hfhffg</p>', 14, '2017-09-07', 11),
+(5, '<p>hfhffg</p>', 14, '2017-09-07', 11),
+(6, '<p>hfhffg</p>', 14, '2017-09-07', 11),
+(7, '<p>ytyutyu</p>', 14, '2017-09-07', 11),
+(8, '<p>Prueba de Archivo </p>', 14, '2017-09-07', 11);
 
 -- --------------------------------------------------------
 
@@ -1861,15 +1875,17 @@ CREATE TABLE `files` (
   `location` varchar(1000) NOT NULL,
   `id_task` int(11) DEFAULT NULL,
   `id_comment` int(11) DEFAULT NULL,
-  `id_ticket` int(11) NOT NULL
+  `id_ticket` int(11) DEFAULT NULL,
+  `id_publicacion` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `files`
 --
 
-INSERT INTO `files` (`id`, `name`, `location`, `id_task`, `id_comment`, `id_ticket`) VALUES
-(1, 'ER1.pdf', 'assets/uploads/tickets/10/ER1.pdf', NULL, NULL, 10);
+INSERT INTO `files` (`id`, `name`, `location`, `id_task`, `id_comment`, `id_ticket`, `id_publicacion`) VALUES
+(1, 'ER1.pdf', 'assets/uploads/tickets/10/ER1.pdf', NULL, NULL, 10, 0),
+(2, 'ER1.pdf', 'assets/uploads/tickets/11/8/ER1.pdf', NULL, NULL, NULL, 8);
 
 -- --------------------------------------------------------
 
@@ -3128,7 +3144,7 @@ ALTER TABLE `case_categories`
 -- AUTO_INCREMENT de la tabla `case_publications`
 --
 ALTER TABLE `case_publications`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `case_stages`
 --
@@ -3213,7 +3229,7 @@ ALTER TABLE `fees`
 -- AUTO_INCREMENT de la tabla `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `holidays`
 --
