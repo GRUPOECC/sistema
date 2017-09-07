@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-09-2017 a las 17:59:19
+-- Tiempo de generación: 08-09-2017 a las 00:02:52
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -264,12 +264,13 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (184, 'select', 21, 0, 'Seleccionar', 0),
 (185, 'show_removed', 112, 0, 'Mostrar Eliminados', 0),
 (186, 'open_completed', 112, 0, 'Abrir Culminadas', 0),
-(187, 'commentsOnly', 112, 1, 'commentsOnly', 0),
+(187, 'commentsOnly', 112, 1, 'commentsOnly', 1),
 (188, 'select', 112, 0, 'Seleccionar', 0),
 (189, 'empresas', 37, 0, 'Ver Empresas donde trabaja', 0),
 (190, 'deletecompany', 37, 0, 'Eliminar Empresa', 0),
 (191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0),
-(192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0);
+(192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0),
+(193, 'publications', 4, 1, 'Publicaciones en Tickets', 1);
 
 -- --------------------------------------------------------
 
@@ -439,7 +440,8 @@ INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `cour
 (7, 'odogidjgdfgd', '67', 0, 12, 0, 0, '[\"4\"]', 0, 'false', 'flerhlruiegerg', '2017-10-06', '2017-09-29', 'rertert', '0.00', 0, 0, '', '0', 0, 0, '0', ''),
 (8, 'Probando', '34', 18, 11, 0, 0, '[\"6\"]', 0, '[\"1\"]', 'hfhfghfghf', '2017-09-29', '2017-11-30', 'fghfgh', '0.00', 0, 0, '', '56', 0, 0, '0', ''),
 (9, 'rtyrtytyrtyr', '89', 0, 14, 0, 0, '[\"6\"]', 0, 'false', 'dfgdfgdfgdf', '2017-09-22', '2017-11-23', 'fghfgh', '0.00', 0, 0, '', '39', 0, 0, '0', ''),
-(10, 'Rryryrt', '23', 0, 11, 0, 0, '[\"5\"]', 0, 'false', 'dfgdfgdfgdf', '2017-10-29', '2017-10-27', 'fghfgh', '0.00', 0, 0, '', '36', 0, 0, '0', '');
+(10, 'Rryryrt', '23', 0, 11, 0, 0, '[\"5\"]', 0, 'false', 'dfgdfgdfgdf', '2017-10-29', '2017-10-27', 'fghfgh', '0.00', 0, 0, '', '36', 0, 0, '0', ''),
+(11, 'ergergege', '346', 0, 20, 0, 0, '[\"5\"]', 0, 'false', 'ergdrgergeer', '2017-09-30', '2017-06-30', '0', '0.00', 0, 0, '', '36', 1, 20, '[\"5\"]', '[\"15\"]');
 
 -- --------------------------------------------------------
 
@@ -465,6 +467,20 @@ INSERT INTO `case_categories` (`id`, `name`, `parent_id`) VALUES
 (5, 'FACTURAS', 4),
 (6, 'FACTURAS SERVICIOS', 5),
 (7, 'FACTURAS MERCANCIA', 5);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `case_publications`
+--
+
+CREATE TABLE `case_publications` (
+  `id` int(11) NOT NULL,
+  `mensaje` varchar(2000) NOT NULL,
+  `created_by` int(11) NOT NULL,
+  `date_time` date NOT NULL,
+  `case_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -2800,6 +2816,12 @@ ALTER TABLE `case_categories`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `case_publications`
+--
+ALTER TABLE `case_publications`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `case_stages`
 --
 ALTER TABLE `case_stages`
@@ -3061,7 +3083,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=193;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=194;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3096,12 +3118,17 @@ ALTER TABLE `canned_messages`
 -- AUTO_INCREMENT de la tabla `cases`
 --
 ALTER TABLE `cases`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `case_categories`
 --
 ALTER TABLE `case_categories`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT de la tabla `case_publications`
+--
+ALTER TABLE `case_publications`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `case_stages`
 --
