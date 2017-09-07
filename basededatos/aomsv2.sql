@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-09-2017 a las 01:54:35
+-- Tiempo de generación: 07-09-2017 a las 17:59:19
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -418,24 +418,28 @@ CREATE TABLE `cases` (
   `is_starred` int(11) NOT NULL DEFAULT '0',
   `is_archived` int(11) NOT NULL DEFAULT '0',
   `notes` text NOT NULL,
-  `progress` varchar(255) NOT NULL
+  `progress` varchar(255) NOT NULL,
+  `created_by` int(11) NOT NULL,
+  `empresa_id` int(11) NOT NULL,
+  `departamento_id` varchar(255) NOT NULL,
+  `usuarios_id` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `cases`
 --
 
-INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `court_id`, `court_category_id`, `case_category_id`, `case_stage_id`, `act_id`, `description`, `start_date`, `hearing_date`, `o_lawyer`, `fees`, `is_starred`, `is_archived`, `notes`, `progress`) VALUES
-(1, 'REPOSICION CAJA CHICA FEBRERO 2017', '1', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-08-01', '', '0.00', 1, 0, '<p>PRUEBA NOTA 1</p>', '0'),
-(2, 'FACTURA 123456 PROVEEDOR', '2', 2, 1, 3, 2, '[\"7\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-07-12', '', '0.00', 0, 1, '', '0'),
-(3, 'prueba ticket 1', '3', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-08-01', '2017-08-01', '1', '0.00', 0, 1, '', '0'),
-(4, 'prueba ticket 2', '4', 2, 1, 2, 1, '[\"3\"]', 3, '[\"1\"]', '', '2017-08-08', '2017-08-10', '1', '0.00', 0, 0, '', '0'),
-(5, 'ticket titulo', '123456', 2, 1, 2, 1, '[\"2\",\"3\",\"4\",\"6\"]', 1, '[\"1\"]', 'desc', '2017-08-01', '2017-08-31', 'apposite abogado', '0.00', 0, 0, '', '0'),
-(6, 'Probando 123', '234', 18, 21, 0, 0, '[\"7\"]', 0, '[\"1\"]', 'Probando', '2017-09-22', '2017-11-30', 'Probando', '0.00', 0, 1, '', '0'),
-(7, 'odogidjgdfgd', '67', 0, 12, 0, 0, '[\"4\"]', 0, 'false', 'flerhlruiegerg', '2017-10-06', '2017-09-29', 'rertert', '0.00', 0, 0, '', '0'),
-(8, 'Probando', '34', 18, 11, 0, 0, '[\"6\"]', 0, '[\"1\"]', 'hfhfghfghf', '2017-09-29', '2017-11-30', 'fghfgh', '0.00', 0, 0, '', '56'),
-(9, 'rtyrtytyrtyr', '89', 0, 14, 0, 0, '[\"6\"]', 0, 'false', 'dfgdfgdfgdf', '2017-09-22', '2017-11-23', 'fghfgh', '0.00', 0, 0, '', '39'),
-(10, 'Rryryrt', '23', 0, 11, 0, 0, '[\"5\"]', 0, 'false', 'dfgdfgdfgdf', '2017-10-29', '2017-10-27', 'fghfgh', '0.00', 0, 0, '', '36');
+INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `court_id`, `court_category_id`, `case_category_id`, `case_stage_id`, `act_id`, `description`, `start_date`, `hearing_date`, `o_lawyer`, `fees`, `is_starred`, `is_archived`, `notes`, `progress`, `created_by`, `empresa_id`, `departamento_id`, `usuarios_id`) VALUES
+(1, 'REPOSICION CAJA CHICA FEBRERO 2017', '1', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-08-01', '', '0.00', 1, 0, '<p>PRUEBA NOTA 1</p>', '0', 0, 0, '0', ''),
+(2, 'FACTURA 123456 PROVEEDOR', '2', 2, 1, 3, 2, '[\"7\"]', 1, '[\"1\"]', '', '2017-07-31', '2017-07-12', '', '0.00', 0, 1, '', '0', 0, 0, '0', ''),
+(3, 'prueba ticket 1', '3', 2, 1, 2, 1, '[\"3\"]', 1, '[\"1\"]', '', '2017-08-01', '2017-08-01', '1', '0.00', 0, 1, '', '0', 0, 0, '0', ''),
+(4, 'prueba ticket 2', '4', 2, 1, 2, 1, '[\"3\"]', 3, '[\"1\"]', '', '2017-08-08', '2017-08-10', '1', '0.00', 0, 0, '', '0', 0, 0, '0', ''),
+(5, 'ticket titulo', '123456', 2, 1, 2, 1, '[\"2\",\"3\",\"4\",\"6\"]', 1, '[\"1\"]', 'desc', '2017-08-01', '2017-08-31', 'apposite abogado', '0.00', 0, 0, '', '0', 0, 0, '0', ''),
+(6, 'Probando 123', '234', 18, 21, 0, 0, '[\"7\"]', 0, '[\"1\"]', 'Probando', '2017-09-22', '2017-11-30', 'Probando', '0.00', 0, 1, '', '0', 0, 0, '0', ''),
+(7, 'odogidjgdfgd', '67', 0, 12, 0, 0, '[\"4\"]', 0, 'false', 'flerhlruiegerg', '2017-10-06', '2017-09-29', 'rertert', '0.00', 0, 0, '', '0', 0, 0, '0', ''),
+(8, 'Probando', '34', 18, 11, 0, 0, '[\"6\"]', 0, '[\"1\"]', 'hfhfghfghf', '2017-09-29', '2017-11-30', 'fghfgh', '0.00', 0, 0, '', '56', 0, 0, '0', ''),
+(9, 'rtyrtytyrtyr', '89', 0, 14, 0, 0, '[\"6\"]', 0, 'false', 'dfgdfgdfgdf', '2017-09-22', '2017-11-23', 'fghfgh', '0.00', 0, 0, '', '39', 0, 0, '0', ''),
+(10, 'Rryryrt', '23', 0, 11, 0, 0, '[\"5\"]', 0, 'false', 'dfgdfgdfgdf', '2017-10-29', '2017-10-27', 'fghfgh', '0.00', 0, 0, '', '36', 0, 0, '0', '');
 
 -- --------------------------------------------------------
 
