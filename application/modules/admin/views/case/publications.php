@@ -41,7 +41,7 @@
                                 <div class="box-body chat" id="chat-box">
                                     <!-- chat item -->
 							<?php if(empty($messages)){?>
-							 <div class="item" style="color:#FF6633; padding-left:20px;"><strong>No Comments..</strong></div>
+							 <div class="item" style="color:#FF6633; padding-left:20px;"><strong>Sin publicaciones..</strong></div>
 							<?php } ?>
 							<?php if(isset($messages)):?>		
 							 <?php $i=1;foreach ($messages as $new){?>		
@@ -65,12 +65,12 @@
 									<?php }else	{ echo $new->from_user ;
 									}?>	 
                                             </a>
-											<?php echo $new->comment?> 
+											<?php echo $new->mensaje?> 
                                         </p>
                                         <div class="col-md-12">
                                             <?php 
                                                         $this->load->model("tasks_model");
-                                                        $files = $this->tasks_model->getCommnetsFiles($new->id); 
+                                                        $files = $this->cases_model->getPublicationsFiles($new->id); 
                                                         $icono = "assets/img/icono-adjunto.png";
                                                         foreach($files as $doc){
                                                           echo '<p><IMG SRC="'.base_url($icono).'" WIDTH=40 HEIGHT=40 ALT=""><a href="'.base_url($doc->location).'">'.$doc->name.'</a></p>';
@@ -88,7 +88,7 @@
 			
 
 				<h3 style="color:#FF0000"><?php echo validation_errors(); ?></h3>
-				<?php echo form_open_multipart('admin/cases/publications/'.$id.'?'.$my_tasks); ?>
+				<?php echo form_open_multipart('admin/cases/publications/'.$id); ?>
                     <div class="box-body">
                         <div class="box-body">
                         
@@ -96,7 +96,7 @@
 						 <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-8">
-                                    <label for="name" style="clear:both;"><?php echo lang('comment');?></label>
+                                    <label for="name" style="clear:both;"><?php echo lang('publications');?></label>
 									<textarea name="message"class="form-control redactor"></textarea>
                                     <label for="email" style="clear:both;"><?php echo lang('upload');?></label>
                                     <input type="file" multiple="true" name="archivos[]" id="archivos[]" />
@@ -111,7 +111,7 @@
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Publicar</button>
                     </div>
              <?php form_close()?>
             </div><!-- /.box -->

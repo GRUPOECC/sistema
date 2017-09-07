@@ -62,7 +62,7 @@ class cases_model extends CI_Model
 				
 				$this->db->where('C.id',$case_id);
 				$this->db->select('U.email');	
-			    $this->db->join('users U', "U.id LIKE CONCAT('%',C.usuarios_id, '%')", 'LEFT');
+			    $this->db->join('users U', " CAST(U.id AS CHAR) LIKE CONCAT('%',C.usuarios_id, '%')", 'LEFT');
 		return $this->db->get('cases C')->result();
 	}
 
@@ -84,6 +84,11 @@ class cases_model extends CI_Model
 		$this->db->where_in('case_id',$ids);
 		$this->db->set('is_view',1);
 		$this->db->update('extended_case');
+	}
+
+		function getPublicationsFiles($id){
+             $this->db->where('id_publicacion',$id);
+			return $this->db->get('files')->result();
 	}
 	
 	

@@ -469,7 +469,7 @@
 					?>		
 			        <hr  size="2px" />
 			         <h2><?php echo lang('publications')?></h2>	
-			          <iframe src="<?php echo site_url('admin/tasks/commentsOnly/'.$task->id); ?>" height="900" width="100%" frameBorder="0"></iframe>	
+			          <iframe src="<?php echo site_url('admin/cases/publications/'.$case->id); ?>" height="900" width="100%" frameBorder="0"></iframe>	
 					<hr  size="2px" />	
 						
 					<h2><?php echo lang('payment')?> <?php echo lang('history')?></h2>		

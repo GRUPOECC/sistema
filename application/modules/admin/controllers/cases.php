@@ -33,16 +33,17 @@ class cases extends MX_Controller {
 	}
 	
     function publications($id=false){
-       	$data['cases'] = $this->cases_model->get($id);
+       	$data['case'] = $this->cases_model->get_case_by_id($id);
 		$data['messages'] = $this->cases_model->get_commnets_by_case($id);  //messages == comments
-	
+	    
 		$data['id'] =$id;
         $admin = $this->session->userdata('admin');
-		$email = $this->cases_model->get_users_email($id);
+		//$email = $this->cases_model->get_users_email($id);
 		
 		foreach($email as $new){
 			$email_list[] =  $new->email;
 		}
+
 
         if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
@@ -57,7 +58,7 @@ class cases extends MX_Controller {
 				$save['mensaje'] = $this->input->post('message');
 				$save['date_time'] = date("Y-m-d H:i:s");
 				
-				$idcomentario = $this->cases_model->save_comment($save);
+				$idcomentario = $this->cases_model->save_publication($save);
                	//Guardando registros de archivos adjuntos  - Garry Bruno
                	//--------------------Manejo de Archivos-----------------------
                 $filesCount = count($_FILES['archivos']['name']);
@@ -65,7 +66,7 @@ class cases extends MX_Controller {
                 $data = array();
 		        if($this->input->post('message') && !empty($_FILES['archivos']['name'])){	             
 		                            
-                    $target_path ='assets/uploads/tickets/'.$id.'/'.$idcomentario;
+                    $target_path ='assets/uploads/tickets/'.$id.'/'.(string)$idcomentario;
                     $carpeta = 'assets/uploads/tickets/'.$id.'/'.(string)$idcomentario;
                     if (!file_exists($carpeta)) {
                     mkdir($carpeta, 0777, true);
@@ -79,12 +80,12 @@ class cases extends MX_Controller {
 		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
 		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
                        
-		               $uploadPath = 'assets/uploads/comentarios/'.(string)$idcomentario.'/'. basename( $_FILES['userFile']['name']);
+		               $uploadPath = 'assets/uploads/tickets/'.$id.'/'.(string)$idcomentario.'/'. basename( $_FILES['userFile']['name']);
 		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
                                         $savefile['name'] = $_FILES['userFile']['name'];
                                         $savefile['location'] = $uploadPath; 
-                                        $savefile['id_comment'] = $idcomentario; 
-                                        $this->tasks_model->savefile($savefile);       
+                                        $savefile['id_publicacion'] = $idcomentario; 
+                                        $this->cases_model->savefile($savefile);       
                               }else{
                                     rmdir ($carpeta);
                               }                   
@@ -94,16 +95,17 @@ class cases extends MX_Controller {
                 //--------------------Manejo de Archivos-----------------------
 
                 //--------------------Envio de Correo Electronico------------------------ 
-                foreach($email as $new){
-					$msg= html_entity_decode($save['comment'],ENT_QUOTES, 'UTF-8');
-					mail($new->email,"GECC - Tienes un comentario de: ". $admin['name'],$msg);
+               /* foreach($email as $new){
+					$msg= html_entity_decode($save['mensaje'],ENT_QUOTES, 'UTF-8');
+					mail($new->email,"GECC - Tienes una publicacion de: ". $admin['name'],$msg);
 		               }   
+		        */
 		        //------------------------------------------------------------------------  
 
 
 
 				$this->session->set_flashdata('message', lang('comment_success'));
-				redirect('admin/tasks/commentsOnly/'.$id);
+				redirect('admin/cases/publications/'.$id);
 				
 				if(isset($_GET['my_tasks'])){
                      echo '
@@ -122,8 +124,9 @@ class cases extends MX_Controller {
 				
 			}
 		}
+		
 
-        $data['body'] = 'tasks/comments2';
+        $data['body'] = 'case/publications';
 		$this->load->view('template/main3', $data);	
 
 	}

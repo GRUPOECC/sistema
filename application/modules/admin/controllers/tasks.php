@@ -160,7 +160,7 @@ class tasks extends MX_Controller {
 		foreach($email as $new){
 			$email_list[] =  $new->email;
 		}
-
+         
         if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');
@@ -239,6 +239,7 @@ class tasks extends MX_Controller {
 				
 			}
 		}
+	
 
         $data['body'] = 'tasks/comments2';
 		$this->load->view('template/main3', $data);	
