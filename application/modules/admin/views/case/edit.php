@@ -74,50 +74,72 @@
                             </div>
                         </div>
 						
-					
 						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('client')?> <?php echo lang('name')?></b>
-								
-								</div>
-								<div class="col-md-4">
-                                    <select name="client_id" class="form-control chzn">
-									<option value="">--<?php echo lang('select')?> <?php echo lang('client')?>--</option>
-									<?php foreach($clients as $new) {
-											$sel = "";
-											if($new->id==$case->client_id) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
+                              <div class="row">
+                                <div class="col-md-3">   
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('company');?></label>
+                                </div>    
+                                <div class="col-md-4">   
+                                    <select name="location_id" id="location_id" class="form-control chzn">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
+                                        <?php foreach($empresas as $new) {
+                                              
+                                            $sel = "";
+                                         if (strpos((string)$case->empresa_id,(string)$new->id)==true)
+                                                     $sel='selected="selected"';
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        ?>
+                                    </select>
+
                                 </div>
-								
                             </div>
                         </div>
 				
-					<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('location')?></b>
-								</div>
-								<div class="col-md-4" id="location_result">
-                                    <select name="location_id" id="location_id" class="chzn col-md-12" >
-										<option value="">--<?php echo lang('select')?> <?php echo lang('location')?>--</option>
-										<?php foreach($locations as $new) {
-											$sel = "";
-											if($new->id==$case->location_id) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
+						<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-3">   
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('department');?></label>
+                                </div>    
+                                <div class="col-md-4" id="dept_category_result">   
+                                    <select name="departamento_id[]" id="departamento_id[]" class="form-control chzn" multiple="multiple">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('departament');?>---</option>
+                                        <?php foreach($departamentos as $new) {
+                                              
+                                            $sel = "";
+                                         if (strpos((string)$case->departamento_id,(string)$new->id)==true)
+                                                     $sel='selected="selected"';
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        ?>
+                                    </select>
+
                                 </div>
                             </div>
                         </div>
-						
-						
+
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-3">   
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('employees');?></label>
+                                </div>    
+                                <div class="col-md-4" id="dept_result">   
+                                    <select name="empleados_id[]" id="empleados_id[]" class="form-control chzn" multiple="multiple">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('departament');?>---</option>
+                                        <?php foreach($empleados as $new) {
+                                              
+                                            $sel = "";
+                                         if (strpos((string)$case->usuarios_id,(string)$new->id)==true)
+                                                     $sel='selected="selected"';
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        ?>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -137,7 +159,8 @@
                                 </div>
                             </div>
                         </div>
-					
+					    -->
+					    <!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -157,7 +180,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						-->
 						
 					
 						
@@ -178,7 +201,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -198,7 +221,8 @@
                                 </div>
                             </div>
                         </div>
-						
+                        -->
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -219,7 +243,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						-->
 						
 						<div class="form-group">
                         	<div class="row">
@@ -270,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -281,7 +305,9 @@
                                 </div>
                             </div>
                         </div>
-						
+						-->
+
+
 						
 						<div class="form-group">
                         	<div class="row">
@@ -481,8 +507,76 @@ $(function() {
 	
 	$('.chzn').chosen();
 	$('.slider').slider();
-	
 });
+
+
+	$(document).on('change', '#location_id', function(){
+ //alert(12);
+ 	vch = $(this).val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#dept_category_result').html(ajax_load);
+	  
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/get_dept_categories') ?>',
+    type:'POST',
+    data:{id:vch},
+    success:function(result){
+      //alert(result);return false;
+	  $('#dept_category_result').html(result);
+	  $(".chzn").chosen();
+	 }
+  });
+});
+
+
+$(document).on('change', '#departamento_id', function(){
+ //alert(12);
+ 	location_id = $('#location_id').val();
+	c_c_id 		= $('#departamento_id').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#dept_result').html(ajax_load);
+	  
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/get_depts') ?>',
+    type:'POST',
+    data:{l_id:location_id,c_id:c_c_id},
+	
+	success:function(result){
+      //alert(result);return false;
+	  $('#dept_result').html(result);
+	  $(".chzn").chosen();
+	 }
+  });
+});
+
+
+
+$(document).on('change', '#court_category_id', function(){
+ //alert(12);
+ 	location_id = $('#location_id').val();
+	c_c_id 		= $('#court_category_id').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#court_result').html(ajax_load);
+	  
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/get_courts') ?>',
+    type:'POST',
+    data:{l_id:location_id,c_id:c_c_id},
+	
+	success:function(result){
+      //alert(result);return false;
+	  $('#court_result').html(result);
+	  $(".chzn").chosen();
+	 }
+  });
+});
+
+
+
+
+
+
+
 
   jQuery('.datepicker').datetimepicker({
  lang:'en',
@@ -515,44 +609,5 @@ $(function() {
   });
 
 
-
-$(document).on('change', '#location_id', function(){
- //alert(12);
- 	vch = $(this).val();
-  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
-  $('#court_category_result').html(ajax_load);
-	  
-  $.ajax({
-    url: '<?php echo site_url('admin/cases/get_court_categories') ?>',
-    type:'POST',
-    data:{id:vch},
-    success:function(result){
-      //alert(result);return false;
-	  $('#court_category_result').html(result);
-	  $(".chzn").chosen();
-	 }
-  });
-});
-
-
-$(document).on('change', '#court_category_id', function(){
- //alert(12);
- 	location_id = $('#location_id').val();
-	c_c_id 		= $('#court_category_id').val();
-  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
-  $('#court_result').html(ajax_load);
-	  
-  $.ajax({
-    url: '<?php echo site_url('admin/cases/get_courts') ?>',
-    type:'POST',
-    data:{l_id:location_id,c_id:c_c_id},
-	
-	success:function(result){
-      //alert(result);return false;
-	  $('#court_result').html(result);
-	  $(".chzn").chosen();
-	 }
-  });
-});
 
 </script>

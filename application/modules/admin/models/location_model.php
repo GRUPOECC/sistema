@@ -27,6 +27,11 @@ class location_model extends CI_Model
 	{
 			return $this->db->get('locations')->result();
 	}
+
+    function get_empresas()
+	{
+			return $this->db->get('empresas')->result();
+	}
 	
 	function get_location_by_id($id)
 	{

@@ -10,6 +10,8 @@ class cases extends MX_Controller {
 		
 		$this->load->model("cases_model");
 		$this->load->model("tax_model");
+		$this->load->model("employees_model");
+		$this->load->model("department_model");
 		$this->load->model("location_model");
 		$this->load->model("case_stage_model");
 		$this->load->model("custom_field_model");
@@ -826,16 +828,16 @@ class cases extends MX_Controller {
 	
 	function get_dept_categories()
 	{
-		$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
-		$result = $this->cases_model->get_dept_catogries_by_location($_POST['id']);
+		//$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
+		$result = $this->cases_model->get_all_depts();
 
 		echo '
-		<select name="dept_category_id" id="dept_category_id" class="chzn col-md-12" >
-										<option value="">--Select Court Category--</option>
+		<select name="departamento_id[]" id="departamento_id" class="chzn col-md-12" multiple="multiple" >
+										<option value="">--Seleccione un Departamento--</option>
 									';
 									foreach($result as $new) {
 											$sel = "";
-											if(set_select('dept_category_id', $new->id)) $sel = "selected='selected'";
+											if(set_select('dept_id', $new->id)) $sel = "selected='selected'";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
@@ -845,15 +847,15 @@ class cases extends MX_Controller {
 	function get_depts()
 	{
 		$depts = $this->cases_model->get_all_depts();
-		$result = $this->cases_model->get_dept_by_location_c_category($_POST['l_id'],$_POST['c_id']);
+		$result = $this->cases_model-> get_employees($_POST['l_id'],$_POST['c_id']);
 		echo '
-		<select name="dept_id" id="dept_id" class="chzn col-md-12" >
-										<option value="">--Select Court Category--</option>
+		<select name="empleados_id[]" id="empleados_id[]" class="chzn col-md-12" multiple="multiple" >
+										<option value="">--Seleccionar empleados--</option>
 									';
 									foreach($result as $new) {
 											$sel = "";
 											if(set_select('dept_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+											echo '<option value="'.$new->idusuario.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
 		echo'</select>';						
@@ -1303,7 +1305,10 @@ class cases extends MX_Controller {
 		$data['stages']				= $this->case_stage_model->get_all();
 		$data['acts']			 	= $this->cases_model->get_all_acts();
 		$data['depts']			 	= $this->cases_model->get_all_depts();
+		$data['departamentos']		= $this->department_model->get_all();
 		$data['locations']		 	= $this->cases_model->get_all_locations();
+		$data['empresas'] 		    = $this->location_model->get_empresas();
+		$data['empleados'] 		    = $this->employees_model->get_all();
 		$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
 		$data['dept_categories']	= $this->cases_model->get_all_dept_categories();
 		$data['id'] 				= $id;
@@ -1326,10 +1331,11 @@ class cases extends MX_Controller {
 		$data['fields']			 = $this->custom_field_model->get_custom_fields(2);
 		$data['clients']		 = $this->cases_model->get_all_clients();
 		$data['employees']		 = $this->cases_model->get_all_employees();
+		$data['empresas'] 		    = $this->location_model->get_empresas();
 		$data['stages'] 		 = $this->case_stage_model->get_all();
 		$data['acts'] 			 = $this->cases_model->get_all_acts();
 		$data['depts']			 = $this->cases_model->get_all_depts();
-		$data['locations'] 		 = $this->cases_model->get_all_locations();
+		$data['locations'] 		 = $this->cases_model->get_all_locations();	
 		$data['case_categories'] = $this->cases_model->get_all_case_categories();
 		$data['dept_categories']= $this->cases_model->get_all_dept_categories();
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
@@ -1338,6 +1344,9 @@ class cases extends MX_Controller {
 			$this->form_validation->set_message('required', lang('custom_required'));
 			$this->form_validation->set_rules('title', 'lang:title', 'required');
 			//$this->form_validation->set_rules('client_id', 'Client', 'required');
+			$this->form_validation->set_rules('empleados_id', 'Empleados', 'required');
+			$this->form_validation->set_rules('departamento_id', 'Departamentos', 'required');
+			$this->form_validation->set_rules('location_id', 'Empresa', 'required');
 			$this->form_validation->set_rules('employee_id', 'User', '');
 			$this->form_validation->set_rules('case_no', 'Case No', 'trim|required|is_unique[cases.case_no]');
 			$this->form_validation->set_rules('location_id', 'Location', 'required');
@@ -1354,11 +1363,16 @@ class cases extends MX_Controller {
 			 
 			if ($this->form_validation->run()==true)
             {
+            	$admin = $this->session->userdata('admin');
+            	$save['created_by'] = $admin['id'];
 				$save['title'] = $this->input->post('title');
 				$save['case_no'] = $this->input->post('case_no');
 				//$save['client_id'] = $this->input->post('client_id');
 				$save['client_id'] = $this->input->post('employee_id');
 				$save['location_id'] = $this->input->post('location_id');
+				$save['empresa_id'] = $this->input->post('location_id');
+				$save['departamento_id'] = json_encode($this->input->post('departamento_id'));
+				$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
 				//$save['dept_id'] = $this->input->post('dept_id');
 				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
@@ -1441,6 +1455,9 @@ class cases extends MX_Controller {
 		$data['acts']			 	= $this->cases_model->get_all_acts();
 		$data['depts']			 	= $this->cases_model->get_all_depts();
 		$data['locations']		 	= $this->cases_model->get_all_locations();
+		$data['empresas'] 		    = $this->location_model->get_empresas();
+		$data['empleados'] 		    = $this->employees_model->get_all();
+		$data['departamentos']		= $this->department_model->get_all();
 		$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
 		$data['dept_categories']	= $this->cases_model->get_all_dept_categories();
 		$data['id']					=	$id;
@@ -1449,21 +1466,26 @@ class cases extends MX_Controller {
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');
-			$this->form_validation->set_rules('client_id', 'lang:client', 'required');
+			$this->form_validation->set_rules('client_id', 'lang:client', '');
 			$this->form_validation->set_rules('case_no', 'lang:case_number', 'trim|required');
 			$this->form_validation->set_rules('location_id', 'lang:location', 'required');
 			$this->form_validation->set_rules('dept_id', 'lang:dept', '');
 			$this->form_validation->set_rules('dept_category_id', 'lang:dept_category', '');
 			$this->form_validation->set_rules('case_category_id', 'lang:case_category', 'required');
-			$this->form_validation->set_rules('act_id', 'lang:act', 'required');
+			$this->form_validation->set_rules('act_id', 'lang:act', '');
 			$this->form_validation->set_rules('start_date', 'lang:filing_date', 'required');
 			 $this->form_validation->set_message('required', lang('custom_required'));
 			if ($this->form_validation->run()==true)
             {
+            	$admin = $this->session->userdata('admin');
+            	$save['created_by'] = $admin['id'];
 				$save['title'] = $this->input->post('title');
 				$save['case_no'] = $this->input->post('case_no');
 				$save['client_id'] = $this->input->post('client_id');
 				$save['location_id'] = $this->input->post('location_id');
+				$save['empresa_id']  = $this->input->post('location_id');
+				$save['departamento_id'] = json_encode($this->input->post('departamento_id'));
+				$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
 				//$save['dept_id'] = $this->input->post('dept_id');
 				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');

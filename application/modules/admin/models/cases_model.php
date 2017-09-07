@@ -355,8 +355,9 @@ class cases_model extends CI_Model
 	function get_archive_case_by_id($id)
 	{
 			   $this->db->where('C.id',$id);
-			   $this->db->select('C.*,AC.notes close_note,AC.close_date');
-			   $this->db->join('archived_cases AC', 'AC.case_id = C.id', 'LEFT');	
+			   $this->db->select('C.*,AC.notes close_note,AC.close_date,U.name creador');
+			   $this->db->join('archived_cases AC', 'AC.case_id = C.id', 'LEFT');
+			   $this->db->join('users U', 'U.id = C.created_by', 'LEFT');	
 		return $this->db->get('cases C')->row();
 	}
 	
@@ -455,11 +456,38 @@ class cases_model extends CI_Model
 				   $this->db->where('user_role',3);
 			return $this->db->get('users')->result();
 	}
+
+	function get_employees($empresa,$departamentos)
+	{
+		           //Especifico lo que obtendre
+		           $this->db->select('U.id idusuario,U.name name');
+		           //Especifico empresa
+		           //---------------------------------------------------------------------------------------
+				   $this->db->where('EU.id_empresa',$empresa);
+                   //Especifico departamentos
+                   //---------------------------------------------------------------------------------------         
+                   $condiciones = '';
+		           for ($i=0;$i<count($departamentos);$i++)   
+                   {
+                   	 if ($i==0) 
+                     $condiciones = $condiciones .'(EU.id_departamento = ' . $departamentos[$i] . ' OR '; 
+                     if ($i==(count($departamentos)-1)) 
+                     $condiciones = $condiciones .' EU.id_departamento = ' . $departamentos[$i] . ')';
+                     else 
+                     $condiciones = $condiciones .' EU.id_departamento = ' . $departamentos[$i] . ' OR ';	
+                   } 
+                   $this->db->where($condiciones,null,false);   
+                   //---------------------------------------------------------------------------------------
+				   $this->db->join('empresa_usuario EU', 'EU.id_usuario = U.id', 'LEFT');
+				   //---------------------------------------------------------------------------------------
+			return $this->db->get('users U')->result();
+	}
 	
 	function get_all_depts()
 	{
-			return $this->db->get('depts')->result();
+			return $this->db->get('departments')->result();
 	}
+
 	
 	function get_all_depts_cats()
 	{

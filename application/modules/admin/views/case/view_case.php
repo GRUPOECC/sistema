@@ -28,6 +28,18 @@
                     <div class="box-body">
                         <div class="box-body">
                         
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-3">
+                                	<b><?php echo lang('case')?> <?php echo lang('created_by')?></b>
+								</div>
+								<div class="col-md-4">
+                                    
+									<?php echo $case->creador;?>
+                                </div>
+                            </div>
+                        </div>
+
 						 <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -53,7 +65,7 @@
                         </div>
 						
 						
-					
+					   <!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -71,24 +83,10 @@
 								
                             </div>
                         </div>
+                        -->
 						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('location')?></b>
-								</div>
-								<div class="col-md-4">
-                                    	<?php foreach($locations as $new) {
-										
-											if($new->id==$case->location_id) echo $new->name;
-										}
-										
-										?>
-									</select>
-                                </div>
-                            </div>
-                        </div>
-						
+
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -121,7 +119,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						-->
 						
 						<div class="form-group">
                         	<div class="row">
@@ -137,7 +135,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						<!--
 							<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -168,7 +166,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						-->
 						
 						<div class="form-group">
                         	<div class="row">
@@ -177,6 +175,58 @@
 								</div>
 								<div class="col-md-4">
                                    <?php echo $case->description;?>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-3">
+                                	<b><?php echo lang('company')?></b>
+								</div>
+								<div class="col-md-4">
+                                    	<?php foreach($empresas as $new) {
+										
+											if($new->id==$case->location_id) echo $new->name;
+										}
+										
+										?>
+									
+                                </div>
+                            </div>
+                        </div>
+						
+
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-3">
+                                	<b><?php echo lang('department')?></b>
+								</div>
+								<div class="col-md-4">
+                                   <?php foreach($departamentos as $new) {
+                                              
+                                         if (strpos((string)$case->departamento_id,'"'.(string)$new->id.'"')==true)
+                                            echo '<p>'.$new->name.'</p>';
+                                        }
+                                         
+                                        ?>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-3">
+                                	<b><?php echo lang('employees')?></b>
+								</div>
+								<div class="col-md-4">
+                                   <?php foreach($empleados as $new) {
+                                              
+                                         if (strpos((string)$case->usuarios_id,'"'.(string)$new->id.'"')==true)
+                                            echo '<p>'.$new->name.'</p>';
+                                        }
+                                         
+                                        ?>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +263,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -224,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						-->
 						
 						<div class="form-group">
                         	<div class="row">

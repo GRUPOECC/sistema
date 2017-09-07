@@ -75,12 +75,12 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('location')?></b>
+                                	<b><?php echo lang('company')?></b>
 								</div>
 								<div class="col-md-4" id="location_result">
                                     <select name="location_id" id="location_id" class="chzn col-md-12" >
 										<option value="">--<?php echo lang('select')?> <?php echo lang('location')?>--</option>
-										<?php foreach($locations as $new) {
+										<?php foreach($empresas as $new) {
 											$sel = "";
 											if(set_select('location_id', $new->id)) $sel = "selected='selected'";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
@@ -96,11 +96,11 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('dept')?> <?php echo lang('category')?></b>
+                                	<b><?php echo lang('department')?></b>
 								</div>
 								<div class="col-md-4" id="dept_category_result">
-                                    <select name="dept_category_id"  id="dept_category_id" class="chzn col-md-12"  disabled="disabled">
-										<option value="">--<?php echo lang('select')?> <?php echo lang('dept')?> <?php echo lang('category')?>--</option>
+                                    <select name="departamento_id[]" id="departamento_id[]" class="chzn col-md-12" multiple="multiple"  disabled="disabled">
+										<option value="">--<?php echo lang('select')?> <?php echo lang('department')?>--</option>
 										<?php foreach($dept_categories as $new) {
 											$sel = "";
 											if(set_select('dept_category_id', $new->id)) $sel = "selected='selected'";
@@ -116,10 +116,10 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('dept')?></b>
+                                	<b><?php echo lang('employees')?></b>
 								</div>
 								<div class="col-md-4" id="dept_result">
-                                    <select name="dept_id" id="dept_id" disabled="disabled" class="chzn col-md-12" >
+                                    <select name="empleados_id[]" id="empleados_id[]" disabled="disabled" class="chzn col-md-12" multiple="multiple" >
 										<option value="">--<?php echo lang('select')?> <?php echo lang('dept')?>--</option>
 										<?php foreach($depts as $new) {
 											$sel = "";
@@ -208,7 +208,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
@@ -219,6 +219,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 
                         <!--Adjuntar Archivos -->
                         <div class="form-group">
@@ -664,10 +665,10 @@ $(document).on('change', '#location_id', function(){
 });
 
 
-$(document).on('change', '#dept_category_id', function(){
+$(document).on('change', '#departamento_id', function(){
  //alert(12);
  	location_id = $('#location_id').val();
-	c_c_id 		= $('#dept_category_id').val();
+	c_c_id 		= $('#departamento_id').val();
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
   $('#dept_result').html(ajax_load);
 	  
@@ -683,6 +684,9 @@ $(document).on('change', '#dept_category_id', function(){
 	 }
   });
 });
+
+
+
 
 $( "#my_form" ).submit(function( event ) {
 	name = $('#name').val();
