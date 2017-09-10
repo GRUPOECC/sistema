@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-09-2017 a las 16:06:08
+-- Tiempo de generación: 10-09-2017 a las 18:13:33
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -271,7 +271,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0),
 (192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0),
 (193, 'publications', 4, 1, 'Publicaciones en Tickets', 1),
-(194, 'deleteMytask', 112, 0, 'Eliminar Tarea Propia', 0);
+(194, 'deleteMytask', 112, 0, 'Eliminar Tarea Propia', 0),
+(195, 'cargaempleados', 112, 1, 'Carga de Empleados', 1);
 
 -- --------------------------------------------------------
 
@@ -1828,7 +1829,8 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (9, 15, 11, 1, 6),
 (11, 14, 19, 4, 4),
 (12, 15, 12, 3, 2),
-(14, 19, 13, 6, 5);
+(14, 19, 13, 6, 5),
+(15, 14, 20, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -2427,36 +2429,37 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (139, 4, 117),
 (140, 4, 116),
 (141, 4, 114),
-(142, 4, 152),
-(143, 4, 188),
-(144, 4, 115),
-(145, 4, 157),
-(146, 4, 158),
-(147, 4, 160),
-(148, 4, 159),
-(149, 4, 16),
-(150, 4, 17),
-(151, 4, 20),
-(152, 4, 18),
-(153, 4, 107),
-(154, 4, 19),
-(155, 4, 42),
-(156, 4, 43),
-(157, 4, 45),
-(158, 4, 44),
-(159, 3, 1),
-(160, 3, 143),
-(161, 3, 144),
-(162, 3, 145),
-(163, 5, 1),
-(164, 5, 21),
-(165, 5, 22),
-(166, 5, 175),
-(167, 5, 24),
-(168, 5, 155),
-(169, 5, 23),
-(170, 5, 173),
-(171, 5, 174);
+(142, 4, 194),
+(143, 4, 152),
+(144, 4, 188),
+(145, 4, 115),
+(146, 4, 157),
+(147, 4, 158),
+(148, 4, 160),
+(149, 4, 159),
+(150, 4, 16),
+(151, 4, 17),
+(152, 4, 20),
+(153, 4, 18),
+(154, 4, 107),
+(155, 4, 19),
+(156, 4, 42),
+(157, 4, 43),
+(158, 4, 45),
+(159, 4, 44),
+(160, 3, 1),
+(161, 3, 143),
+(162, 3, 144),
+(163, 3, 145),
+(164, 5, 1),
+(165, 5, 21),
+(166, 5, 22),
+(167, 5, 175),
+(168, 5, 24),
+(169, 5, 155),
+(170, 5, 23),
+(171, 5, 173),
+(172, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2534,7 +2537,7 @@ CREATE TABLE `tasks` (
   `progress` varchar(255) NOT NULL,
   `created_by` int(10) UNSIGNED NOT NULL,
   `status` int(11) NOT NULL,
-  `id_empresa` int(11) NOT NULL
+  `id_empresa` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -2542,14 +2545,20 @@ CREATE TABLE `tasks` (
 --
 
 INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_date`, `progress`, `created_by`, `status`, `id_empresa`) VALUES
-(1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4, 0, 0),
-(2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6, 0, 0),
-(3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6, 0, 0),
-(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6, 0, 0),
-(5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1, 0, 0),
-(6, 'Prueba', '<p>Prueba</p>', 0, 2, '2017-09-30', '0', 14, 0, 1),
-(7, 'Prueba 3', '<p>Prueba </p>', 0, 2, '2017-10-30', '0', 14, 0, 12),
-(8, 'Prueba', '<p>Probando</p>', 0, 2, '2017-09-29', '0', 14, 9, 19);
+(1, 'tarea marianella hacia martha', '', 0, 1, '2017-07-31', '0', 4, 0, '0'),
+(2, 'Salvatore Cammarano', '', 1, 1, '2017-08-03', '50', 6, 0, '0'),
+(3, 'tarea creada por salvat asignada a martha low ticket 1 - nombre', '<p>tarea creada por salvat asignada a martha low ticket 1 - desc</p>', 1, 3, '2017-08-03', '0', 6, 0, '0'),
+(4, 'prueba2', '<p>prueba 2, high asignado a martha por salvatore</p>', 5, 2, '2017-07-01', '0', 6, 0, '0'),
+(5, 'Administrador', '', 0, 2, '2017-08-31', '24', 1, 0, '0'),
+(6, 'Prueba', '<p>Prueba</p>', 0, 2, '2017-09-30', '0', 14, 9, '1'),
+(7, 'Prueba 3', '<p>Prueba </p>', 0, 2, '2017-10-30', '0', 14, 9, '12'),
+(8, 'Prueba', '<p>Probando</p>', 0, 2, '2017-09-29', '0', 14, 9, '19'),
+(9, 'rertertert', '<p>rtertert</p>', 11, 2, '2017-09-30', '0', 14, 9, '19'),
+(10, 'sdsdfsdfsdf', '<p>sdfsdfsdfs</p>', 7, 2, '2017-09-30', '0', 14, 9, '19'),
+(11, 'tyrtyrtyrt', '<p>tytyuty</p>', 0, 2, '2017-09-30', '0', 14, 0, '19'),
+(12, 'yyyutyutyty', '<p>yuyutyuty</p>', 0, 2, '2017-09-29', '68', 14, 0, '19'),
+(13, 'yutyutyuty', '<p>tyutyutyut</p>', 0, 1, '2017-09-30', '0', 14, 0, '19'),
+(14, 'utyutyutyu', '<p>yyiyuiyu</p>', 0, 2, '2017-11-30', '', 14, 0, '0');
 
 -- --------------------------------------------------------
 
@@ -2576,7 +2585,13 @@ INSERT INTO `task_assigned` (`user_id`, `task_id`) VALUES
 (14, 6),
 (14, 7),
 (15, 7),
-(14, 8);
+(14, 8),
+(14, 9),
+(14, 10),
+(14, 11),
+(14, 12),
+(14, 13),
+(14, 14);
 
 -- --------------------------------------------------------
 
@@ -3100,7 +3115,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=196;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3215,7 +3230,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3315,7 +3330,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=172;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
@@ -3330,7 +3345,7 @@ ALTER TABLE `status`
 -- AUTO_INCREMENT de la tabla `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
 -- AUTO_INCREMENT de la tabla `task_comments`
 --
