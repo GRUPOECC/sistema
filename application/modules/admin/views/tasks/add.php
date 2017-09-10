@@ -97,23 +97,43 @@
                                 </div>
                             </div>
                         </div>
+            <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-6">
+                                    <label for="employee_id" style="clear:both;"><?php echo lang('company');?></label>
+
+                  <select id="empresa_id" name="empresa_id[]" class="form-control chzn" multiple="multiple" data-placeholder="<?php echo lang('select');?> <?php echo lang('company');?>">
+                    <?php foreach($empresas as $new) {
+                      $sel = "";
+                      if(set_select('employee_id', $new->id)) $sel = "selected='selected'";
+                      echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                    }
+                    
+                    ?>
+                  </select>
+           
+                                </div>
+                            </div>
+             </div>
 						
 						 <div class="form-group">
                               <div class="row">
                                 <div class="col-md-6">
                                     <label for="employee_id" style="clear:both;"><?php echo lang('assigned_to');?></label>
-									<select name="employee_id[]" class="form-control chzn" multiple="multiple" data-placeholder="<?php echo lang('select');?> <?php echo lang('employees');?>">
-										<?php foreach($employees as $new) {
-											$sel = "";
-											if(set_select('employee_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
+                                      <div id="empleadosresult">  
+                    									<select name="employee_id[]" class="form-control chzn" multiple="multiple" data-placeholder="<?php echo lang('select');?> <?php echo lang('employees');?>">
+                    										<?php foreach($employees as $new) {
+                    											$sel = "";
+                    											if(set_select('employee_id', $new->id)) $sel = "selected='selected'";
+                    											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                    										}
+                    										
+                    										?>
+                    									</select>
+                                      </div>
                                 </div>
                             </div>
-                        </div>
+             </div>
 					
 						 <div class="form-group">
                               <div class="row">
@@ -319,6 +339,26 @@
  <script>
   $(document).ready(function(){
   	$('.chzn').chosen();
+
+    $(document).on('change', '#empresa_id', function(){
+     //alert(12);
+      vch = $(this).val();
+      var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+      $('#empleadosresult').html(ajax_load);
+        
+      $.ajax({
+        url: '<?php echo site_url('admin/tasks/cargaempleados') ?>',
+        type:'POST',
+        data:{id:vch},
+        success:function(result){
+          //alert(result);return false;
+        $('#empleadosresult').html(result);
+        $(".chzn").chosen();
+       }
+      });
+    });
+
+
 	 $('.slider').slider();
     $('.redactor').redactor({
 			  // formatting: ['p', 'blockquote', 'h2','img'],

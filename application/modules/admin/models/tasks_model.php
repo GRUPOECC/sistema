@@ -51,7 +51,7 @@ class tasks_model extends CI_Model
 		            //$this->db->where('T.removed != 1');
 		            $this->db->where('T.created_by',$admin['id']);
 					$this->db->order_by('T.due_date','DESC');
-					$this->db->select('T.*,U.name username,UR.name role,E.name empresa');
+					$this->db->select('T.*,U.name username,UR.name role,E.name empresa, E.id idempresa');
 					$this->db->join('users U', 'U.id = T.created_by', 'LEFT');
 					$this->db->join('user_role UR', 'UR.id = U.user_role', 'LEFT');
 					$this->db->join('empresas E', 'E.id = T.id_empresa', 'LEFT');
@@ -142,15 +142,35 @@ class tasks_model extends CI_Model
 		return $this->db->get('users U')->result();
 	}
 
-	function get_all_employeesTask($task,$idusuario){
+	function get_all_employees2($id,$idusuario){
 		  $this->db->where('id_usuario',$idusuario);
-		  $this->db->where('id_empresa',$task->id_empresa);
+		  $this->db->where_in('id_empresa',$id); 
 		  $query = $this->db->get('empresa_usuario');
+          
 		  $department = $query->row('id_departamento');
 		  $empresa = $query->row('id_empresa'); 
-             
-		     $this->db->where('id_departamento',$department);
-		     $this->db->where('id_empresa',$empresa);
+
+		     $this->db->where_in('id_departamento',$department); 
+		     $this->db->where_in('id_empresa',$empresa); 
+			 $this->db->where('U.user_role !=2');
+			 $this->db->select('U.*');
+			 $this->db->join('empresa_usuario EU', 'EU.id_usuario = U.id', 'LEFT');
+
+		return $this->db->get('users U')->result();
+	}
+
+	function get_all_employeesTask($task,$idusuario){
+		  $this->db->where('id_usuario',$idusuario);
+		  $this->db->where_in('id_empresa',json_decode($task->id_empresa));
+		  $this->db->select('id_departamento');
+		  $department = $this->db->get('empresa_usuario')->result();
+           $departamentos = array(); 
+           foreach ($department as $key => $value) {
+           	 $departamentos [] = $value->id_departamento; 
+           }
+
+             $this->db->where_in('id_departamento',$departamentos); 
+		     $this->db->where_in('id_empresa',json_decode($task->id_empresa)); 
 			 $this->db->where('U.user_role !=2');
 			 $this->db->select('U.*');
 			 $this->db->join('empresa_usuario EU', 'EU.id_usuario = U.id', 'LEFT');

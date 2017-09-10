@@ -18,6 +18,7 @@ class tasks extends MX_Controller {
 	
 	function index(){
 		$data['tasks'] = $this->tasks_model->get_all();
+		$data['empresas'] = $this->employees_model->get_empresas();
 		$data['page_title'] = lang('Tasks');
 		$data['body'] = 'tasks/list';
 		$tareas=$data['tasks'];
@@ -251,16 +252,19 @@ class tasks extends MX_Controller {
 	
 	function add($id){
 		$admin = $this->session->userdata('admin');
-        $empresas = $this->employees_model->get_empresas_by_user($admin['id']);
-		if ((sizeof($empresas)==1)||(isset($_POST['empresaseleccionada']))||(isset($_POST['name']))){ 
+        $data['empresas'] = $this->employees_model->get_empresas_by_user($admin['id']);
+		//if ((sizeof($empresas)==1)||(isset($_POST['empresaseleccionada']))||(isset($_POST['name']))){ 
 		$data['fields'] = $this->custom_field_model->get_custom_fields(7);	
 		$data['roles'] = $this->user_role_model->get_all();
+
+		/*
 		if(isset($_POST['empresaseleccionada']))
 		$data['employees'] = $this->tasks_model->get_all_employees($_POST['empresaseleccionada'],$admin['id']);
 	    if(isset($_POST['empresa'])) 
 	    $data['employees'] = $this->tasks_model->get_all_employees($_POST['empresa'],$admin['id']);
 	    if (!(isset($_POST['empresa']))&&!(isset($_POST['empresaseleccionada'])))
 	    $data['employees'] = $this->tasks_model->get_all_employees($this->employees_model->get_empresa_id($admin['id']),$admin['id']);
+	    */
 	    
 		$data['cases'] = $this->cases_model->get_all();
 		if(isset($_POST['empresaseleccionada']))
@@ -271,7 +275,7 @@ class tasks extends MX_Controller {
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			 //echo '<pre>'; print_r($_POST);die;
-        	if(!isset($_POST['empresaseleccionada'])){
+        	//if(!isset($_POST['empresaseleccionada'])){
 
 			$this->load->library('form_validation');
 			$this->form_validation->set_message('required', lang('custom_required'));
@@ -293,7 +297,7 @@ class tasks extends MX_Controller {
 				$save['progress'] = $this->input->post('progress');
 				$save['description'] = $this->input->post('description');
 				$save['created_by'] = $this->session->userdata('admin')['id'];
-				$save['id_empresa'] = $this->input->post('empresa');
+				$save['id_empresa'] = json_encode($this->input->post('empresa_id'));
 			    
 				$task_id = $this->tasks_model->save($save);
                  // $url =base_url('assets/uploads/tareas/');
@@ -361,10 +365,11 @@ class tasks extends MX_Controller {
 
 		}
 			
-		}		
+		//}		
 		$data['page_title'] = lang('add') . lang('task');
 		$data['body'] = 'tasks/add';
 		$this->load->view('template/main', $data);
+		/*
 		}else{
 		     $data['empresas'] = $empresas; 
              $data['page_title'] = lang('add') . lang('task');
@@ -372,14 +377,17 @@ class tasks extends MX_Controller {
 		     $this->load->view('template/main', $data);
 			
 		}	
+		*/
 	}	
 	
 	function edit($id){
         $admin = $this->session->userdata('admin');
-        $empresas = $this->employees_model->get_empresas_by_user($admin['id']);
-        if ((sizeof($empresas)<=1)||(isset($_POST['empresaseleccionada']))||(isset($_POST['name']))){ 
+        $data['empresas'] = $this->employees_model->get_empresas_by_user($admin['id']);
+        //if ((sizeof($empresas)<=1)||(isset($_POST['empresaseleccionada']))||(isset($_POST['name']))){ 
 		$data['fields'] = $this->custom_field_model->get_custom_fields(7);	
 		$data['roles'] = $this->user_role_model->get_all();
+		$data['employees'] = $this->employees_model->get_all();
+		/*
 		if(isset($_POST['empresaseleccionada']))
 		$data['employees'] = $this->tasks_model->get_all_employees($_POST['empresaseleccionada'],$admin['id']);
 	    if(isset($_POST['empresa'])) 
@@ -391,7 +399,7 @@ class tasks extends MX_Controller {
 		$data['empresa'] = $_POST['empresaseleccionada'];
 	    if (!(isset($_POST['empresa']))&&!(isset($_POST['empresaseleccionada'])))
 	    $data['empresa'] = $this->employees_model->get_empresa_id($admin['id']);	
-	
+	    */
 	    $data['assigned_users'] = $this->tasks_model->get_assigned_user($id);
 	    $data['task'] = $this->tasks_model->get($id);
 		$data['files'] = $this->tasks_model->get_files($id);
@@ -406,7 +414,7 @@ class tasks extends MX_Controller {
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			 //echo '<pre>'; print_r($_POST);die;
-        	if(!isset($_POST['empresaseleccionada'])){
+        	//if(!isset($_POST['empresaseleccionada'])){
 			$this->load->library('form_validation');
 			$this->form_validation->set_message('required', lang('custom_required'));
 			$this->form_validation->set_rules('name', 'lang:name', 'required');
@@ -494,12 +502,12 @@ class tasks extends MX_Controller {
 				}
 
 			}	
-		}
+		//}
 		}	
 		$data['page_title'] = lang('edit') . lang('task');
 		$data['body'] = 'tasks/edit';
 		$this->load->view('template/main', $data);	
-	    
+	    /*
 	    }else{
 		     $data['empresas'] = $empresas; 
              $data['page_title'] = lang('add') . lang('task');
@@ -507,7 +515,25 @@ class tasks extends MX_Controller {
 		     $data['idtarea'] = $id; 
 		     $this->load->view('template/main', $data);		
 		}	
+		*/
 	}	
+
+	function cargaempleados()
+			{
+				$admin = $this->session->userdata('admin');
+				$empleados = $this->tasks_model->get_all_employees2($_POST['id'],$admin['id']);
+				echo '
+				<select name="employee_id[]"  class="form-control chzn" multiple="multiple" data-placeholder="'.lang('select').' '.lang('employees').'">
+												<option value="">--Seleccionar Empleados--</option>
+											';
+											foreach($empleados as $new) {
+													$sel = "";
+													if(set_select('employee_id', $new->id)) $sel = "selected='selected'";
+													echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+												}
+												
+				echo'</select>';						
+			}
 	
 
     function view($id){

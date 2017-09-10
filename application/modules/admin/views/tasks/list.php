@@ -141,7 +141,15 @@ function areyousure()
                                               echo $formato[2] . "-" . $formato[1] . "-" . $formato[0];
                                           ?> <?php if($new->due_date<date("Y-m-d") && $new->progress!=100 ){?> <small class='label pull-right bg-red'>Over Due</small> <?php }?></td>
                                     <td><?php echo $new->username ?> </td>
-									                  <td><?php echo $new->empresa ?> </td>
+									                  <td>
+                                    <?php 
+                                        foreach ($empresas as $key) {  
+
+                                           if (strpos((string)$new->id_empresa,'"'.(string)$key->id.'"')==true)
+                                            echo $key->name;
+                                        }
+                                    ?> 
+                                    </td>
                                     <td width="38%">
                                         <div class="btn-group">
 									<?php if((check_user_role(115)==1)){?>
