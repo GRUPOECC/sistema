@@ -37,6 +37,13 @@
 </div>
 
 <?php  } ?>
+
+                   <p align="right" style="margin-right:15px;">
+                     <a class="btn bg-olive" data-toggle="modal" data-target="#myModalSend" style="margin-left:0px;" href=""> <i class="fa fa-plus"></i> <?php echo lang('send');?>  <?php echo lang('comment');?></a>
+                    </p> 
+
+
+
         <!-- left column -->
         <div class="col-md-12">
             <!-- general form elements -->
@@ -363,6 +370,51 @@
         </div>
      </div>
 </section>  
+
+<!-- Modal para la Informacion de los contactos  -->
+  <div class="modal fade" id="myModalSend" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+
+      <div class="modal-content">
+
+        
+        
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"><?php echo lang('sendMessage');?></h4>
+        </div>
+       
+        <div style="height: 350px;" class="modal-body">
+         <?php echo form_open_multipart('admin/tasks/commentsOnly/'.$id.'?'.$my_tasks); ?>
+          						
+						 <div class="form-group">
+                        	<div class="row">
+                                <div class="col-md-12">
+                                    <label for="name" style="clear:both;"><?php echo lang('comment');?></label>
+									<textarea name="message"class="form-control redactor"></textarea>
+                                    <label for="email" style="clear:both;"><?php echo lang('upload');?></label>
+                                    <input type="file" multiple="true" name="archivos[]" id="archivos[]" />
+
+                                </div>
+                            </div>
+                        </div>
+
+        </div>
+        <div class="modal-footer">
+          <input type="submit" class="btn btn-default"  value="<?php echo lang('sendMessage');?>">
+        </div>
+        <?php form_close()?>
+
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
 
 <script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
 <script type="text/javascript">

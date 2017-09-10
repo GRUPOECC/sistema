@@ -85,7 +85,7 @@
                                
                             </div><!-- /.box (chat box) -->
     <!-- form start -->
-			
+			<!--
 
 				<h3 style="color:#FF0000"><?php echo validation_errors(); ?></h3>
 				<?php echo form_open_multipart('admin/tasks/commentsOnly/'.$id.'?'.$my_tasks); ?>
@@ -104,16 +104,19 @@
                                 </div>
                             </div>
                         </div>
+
+                         </div>
 						
-						
+					-->	
 			   			
                      	
-                    </div><!-- /.box-body -->
-    
+                   
+                 <!--
                     <div class="box-footer">
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
              <?php form_close()?>
+             -->
             </div><!-- /.box -->
         </div>
      </div>

@@ -221,7 +221,7 @@ class tasks extends MX_Controller {
 
 
 				$this->session->set_flashdata('message', lang('comment_success'));
-				redirect('admin/tasks/commentsOnly/'.$id);
+				redirect('admin/tasks/view/'.$id);
 				
 				if(isset($_GET['my_tasks'])){
                      echo '
@@ -538,7 +538,7 @@ class tasks extends MX_Controller {
 
     function view($id){
 		$admin = $this->session->userdata('admin');
-
+        $data['id'] =$id;
 		$data['fields'] = $this->custom_field_model->get_custom_fields(7);	
 		$data['roles'] = $this->user_role_model->get_all();
 		$data['task'] = $this->tasks_model->get($id);
