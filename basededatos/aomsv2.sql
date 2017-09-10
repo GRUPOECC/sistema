@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 08-09-2017 a las 01:09:37
+-- Tiempo de generación: 10-09-2017 a las 16:06:08
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -270,7 +270,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (190, 'deletecompany', 37, 0, 'Eliminar Empresa', 0),
 (191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0),
 (192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0),
-(193, 'publications', 4, 1, 'Publicaciones en Tickets', 1);
+(193, 'publications', 4, 1, 'Publicaciones en Tickets', 1),
+(194, 'deleteMytask', 112, 0, 'Eliminar Tarea Propia', 0);
 
 -- --------------------------------------------------------
 
@@ -3099,7 +3100,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=194;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=195;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
