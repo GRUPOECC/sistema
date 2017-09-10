@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-09-2017 a las 21:22:41
+-- Tiempo de generación: 11-09-2017 a las 00:49:21
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -272,7 +272,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0),
 (193, 'publications', 4, 1, 'Publicaciones en Tickets', 1),
 (194, 'deleteMytask', 112, 0, 'Eliminar Tarea Propia', 0),
-(195, 'cargaempleados', 112, 1, 'Carga de Empleados', 1);
+(195, 'cargaempleados', 112, 1, 'Carga de Empleados', 1),
+(196, 'delete', 15, 0, 'Borrar Mensaje', 0);
 
 -- --------------------------------------------------------
 
@@ -2015,7 +2016,13 @@ INSERT INTO `message` (`id`, `title`, `message`, `type`, `from_id`, `to_id`, `is
 (2, '', '<p>prueba de envio mensaje de admin a martha</p>', '', 1, 3, 0, 0, '2017-07-31 19:00:28'),
 (3, '', '<p>{eoif{oiwehoi{foihbf</p>', '', 1, 6, 0, 0, '2017-08-12 16:15:02'),
 (4, '', '<p>asdasd</p>', '', 1, 11, 0, 0, '2017-08-23 22:12:10'),
-(5, '', '<p>asdaaaaaa</p>', '', 1, 2, 0, 0, '2017-08-23 22:27:50');
+(5, '', '<p>asdaaaaaa</p>', '', 1, 2, 0, 0, '2017-08-23 22:27:50'),
+(6, 'Probando', '<p>Hola</p>', '0', 4, 14, 0, 0, '2017-09-10 20:03:46'),
+(7, 'dfhgpdfghidf', '<p>dfgdfgdgf</p>', '0', 4, 14, 0, 0, '2017-09-10 20:05:46'),
+(8, 'tgfgffghf', '<p>ghfghfghfghf</p>', '0', 4, 14, 0, 0, '2017-09-10 20:10:22'),
+(9, 'rtyrtyryry', '<p>rtyrrtyr</p>', 'Mensaje', 4, 14, 0, 0, '2017-09-10 20:11:36'),
+(10, 'ghfghfghf', '<p>dfhfghfg</p>', 'Visita', 4, 14, 0, 0, '2017-09-10 20:14:45'),
+(12, 'Probando salida', '<p>Prueba</p>', 'Mensaje', 14, 4, 0, 1, '2017-09-10 22:42:20');
 
 -- --------------------------------------------------------
 
@@ -2415,57 +2422,58 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (120, 4, 54),
 (121, 4, 53),
 (122, 4, 15),
-(123, 4, 111),
-(124, 4, 146),
-(125, 4, 147),
-(126, 4, 149),
-(127, 4, 148),
-(128, 4, 150),
-(129, 4, 80),
-(130, 4, 75),
-(131, 4, 76),
-(132, 4, 78),
-(133, 4, 77),
-(134, 4, 50),
-(135, 4, 14),
-(136, 4, 79),
-(137, 4, 112),
-(138, 4, 186),
-(139, 4, 113),
-(140, 4, 117),
-(141, 4, 116),
-(142, 4, 114),
-(143, 4, 194),
-(144, 4, 152),
-(145, 4, 188),
-(146, 4, 115),
-(147, 4, 157),
-(148, 4, 158),
-(149, 4, 160),
-(150, 4, 159),
-(151, 4, 16),
-(152, 4, 17),
-(153, 4, 20),
-(154, 4, 18),
-(155, 4, 107),
-(156, 4, 19),
-(157, 4, 42),
-(158, 4, 43),
-(159, 4, 45),
-(160, 4, 44),
-(161, 3, 1),
-(162, 3, 143),
-(163, 3, 144),
-(164, 3, 145),
-(165, 5, 1),
-(166, 5, 21),
-(167, 5, 22),
-(168, 5, 175),
-(169, 5, 24),
-(170, 5, 155),
-(171, 5, 23),
-(172, 5, 173),
-(173, 5, 174);
+(123, 4, 196),
+(124, 4, 111),
+(125, 4, 146),
+(126, 4, 147),
+(127, 4, 149),
+(128, 4, 148),
+(129, 4, 150),
+(130, 4, 80),
+(131, 4, 75),
+(132, 4, 76),
+(133, 4, 78),
+(134, 4, 77),
+(135, 4, 50),
+(136, 4, 14),
+(137, 4, 79),
+(138, 4, 112),
+(139, 4, 186),
+(140, 4, 113),
+(141, 4, 117),
+(142, 4, 116),
+(143, 4, 114),
+(144, 4, 194),
+(145, 4, 152),
+(146, 4, 188),
+(147, 4, 115),
+(148, 4, 157),
+(149, 4, 158),
+(150, 4, 160),
+(151, 4, 159),
+(152, 4, 16),
+(153, 4, 17),
+(154, 4, 20),
+(155, 4, 18),
+(156, 4, 107),
+(157, 4, 19),
+(158, 4, 42),
+(159, 4, 43),
+(160, 4, 45),
+(161, 4, 44),
+(162, 3, 1),
+(163, 3, 143),
+(164, 3, 144),
+(165, 3, 145),
+(166, 5, 1),
+(167, 5, 21),
+(168, 5, 22),
+(169, 5, 175),
+(170, 5, 24),
+(171, 5, 155),
+(172, 5, 23),
+(173, 5, 173),
+(174, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -3135,7 +3143,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=196;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=197;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3295,7 +3303,7 @@ ALTER TABLE `locations`
 -- AUTO_INCREMENT de la tabla `message`
 --
 ALTER TABLE `message`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT de la tabla `months`
 --
@@ -3350,7 +3358,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=174;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
