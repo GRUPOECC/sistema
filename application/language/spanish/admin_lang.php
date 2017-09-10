@@ -305,7 +305,7 @@ $lang['select']      	 	= "Seleccionar";
 $lang['unselect']      	 	= "Deseleccionar";
 $lang['a']      	 		= "a";
 $lang['to']      	 		= "al";
-$lang['from']      	 				= "From";
+$lang['from']      	 				= "De";
 
 $lang['links']      			 	= "enlaces";
 $lang['name']      	 				= "Nombre";
@@ -557,6 +557,13 @@ $lang['companycontact'] = "Es un contacto de la empresa: ";
 $lang['contactof'] = "Contacto de";
 $lang['seecompany'] = "Empresas que puede ver: ";
 $lang['publications'] = "Publicaciones";
+$lang['inbox'] = "Bandeja de Entrada";
+$lang['outbox'] = "Bandeja de Salida";
+$lang['answer'] = "Responder";
+$lang['resend'] = "Reenviar";
+
+
+
 
 
 

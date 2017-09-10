@@ -16,6 +16,8 @@ class message extends MX_Controller {
 	function index(){
 	//$this->auth->check_access('1', true);
 		$data['clients'] = $this->message_model->get_all_clients();
+		$data['entradas'] = $this->message_model->get_inbox();
+		$data['salidas'] = $this->message_model->get_outbox();
 		$data['page_title'] = lang('message');
 		$data['body'] = 'message/list';
 		$this->load->view('template/main', $data);	
@@ -42,6 +44,8 @@ class message extends MX_Controller {
                 	//Almacenando mensaje en base de datos:
                    $save['from_id'] = $admin['id'];
 				   $save['to_id'] = $ids[$i];
+				   $save['title'] = $this->input->post('titulo');
+				   $save['type'] = $this->input->post('tipo');
 				   $save['message'] = $this->input->post('message');
 				   $save['is_view_to'] = 1;				   
 			       $this->message_model->save_message($save);
@@ -125,11 +129,18 @@ class message extends MX_Controller {
 	}	
 	
 	function delete($id=false){
-		
+		/*
 		if($id){
 			$this->act_model->delete($id);
 			$this->session->set_flashdata('message',lang('message_deleted'));
 			redirect('admin/act');
+		}
+		*/
+
+		if($id){
+			$this->message_model->delete($id);
+			$this->session->set_flashdata('message',lang('message_deleted'));
+			 redirect('admin/message/index/');
 		}
 	}	
 		

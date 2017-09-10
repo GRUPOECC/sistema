@@ -549,3 +549,7 @@ $lang['companycontact'] = "Is a contact of the company: ";
 $lang['contactof'] = "Contact of";
 $lang['seecompany'] = "Companies that he can see: ";
 $lang['publications'] = "Publications";
+$lang['inbox'] = "Inbox";
+$lang['outbox'] = "Outbox";
+$lang['answer'] = "Answer";
+$lang['resend'] = "Resend";

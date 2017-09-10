@@ -27,6 +27,23 @@ class message_model extends CI_Model
 	{
 			return $this->db->get('message')->result();
 	}
+
+    function get_inbox(){
+    	    $admin = $this->session->userdata('admin');
+            $this->db->where('to_id',$admin['id']);	
+            $this->db->select('M.*,M.id idmensaje,U1.name from_user,U1.id idfrom');
+            $this->db->join('users U1', 'U1.id = M.from_id', 'LEFT');
+    	    return $this->db->get('message M')->result();
+    } 
+
+    function get_outbox(){
+    	    $admin = $this->session->userdata('admin');
+            $this->db->where('from_id',$admin['id']);	
+            $this->db->select('M.*,M.id idmensaje,U1.name to_user,U1.id idto');
+            $this->db->join('users U1', 'U1.id = M.to_id', 'LEFT');
+    	    return $this->db->get('message M')->result();
+    } 
+
 	function get_all_clients()
 	{
 		$admin = $this->session->userdata('admin');
@@ -107,6 +124,6 @@ class message_model extends CI_Model
 	function delete($id)//delte
 	{
 			   $this->db->where('id',$id);
-		       $this->db->delete('acts');
+		       $this->db->delete('message');
 	}
 }
