@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 10-09-2017 a las 18:13:33
+-- Tiempo de generación: 10-09-2017 a las 21:22:41
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -1830,7 +1830,8 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (11, 14, 19, 4, 4),
 (12, 15, 12, 3, 2),
 (14, 19, 13, 6, 5),
-(15, 14, 20, 3, 2);
+(15, 14, 20, 3, 2),
+(16, 4, 20, 3, 2);
 
 -- --------------------------------------------------------
 
@@ -1888,7 +1889,9 @@ CREATE TABLE `files` (
 
 INSERT INTO `files` (`id`, `name`, `location`, `id_task`, `id_comment`, `id_ticket`, `id_publicacion`) VALUES
 (1, 'ER1.pdf', 'assets/uploads/tickets/10/ER1.pdf', NULL, NULL, 10, 0),
-(2, 'ER1.pdf', 'assets/uploads/tickets/11/8/ER1.pdf', NULL, NULL, NULL, 8);
+(2, 'ER1.pdf', 'assets/uploads/tickets/11/8/ER1.pdf', NULL, NULL, NULL, 8),
+(3, 'ER1.pdf', 'assets/uploads/tareas/16/ER1.pdf', 16, NULL, NULL, NULL),
+(4, 'prueba.txt', 'assets/uploads/comentarios/4/prueba.txt', NULL, 4, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -1993,7 +1996,9 @@ INSERT INTO `locations` (`id`, `name`) VALUES
 
 CREATE TABLE `message` (
   `id` int(9) UNSIGNED NOT NULL,
+  `title` varchar(1000) NOT NULL,
   `message` text NOT NULL,
+  `type` varchar(255) NOT NULL,
   `from_id` int(9) UNSIGNED NOT NULL,
   `to_id` int(9) UNSIGNED NOT NULL,
   `is_view_from` int(9) NOT NULL DEFAULT '0',
@@ -2005,12 +2010,12 @@ CREATE TABLE `message` (
 -- Volcado de datos para la tabla `message`
 --
 
-INSERT INTO `message` (`id`, `message`, `from_id`, `to_id`, `is_view_from`, `is_view_to`, `date_time`) VALUES
-(1, '<p>prueba envio mensaje de administrador a martha</p>', 1, 3, 0, 0, '2017-07-31 18:59:08'),
-(2, '<p>prueba de envio mensaje de admin a martha</p>', 1, 3, 0, 0, '2017-07-31 19:00:28'),
-(3, '<p>{eoif{oiwehoi{foihbf</p>', 1, 6, 0, 0, '2017-08-12 16:15:02'),
-(4, '<p>asdasd</p>', 1, 11, 0, 0, '2017-08-23 22:12:10'),
-(5, '<p>asdaaaaaa</p>', 1, 2, 0, 0, '2017-08-23 22:27:50');
+INSERT INTO `message` (`id`, `title`, `message`, `type`, `from_id`, `to_id`, `is_view_from`, `is_view_to`, `date_time`) VALUES
+(1, '', '<p>prueba envio mensaje de administrador a martha</p>', '', 1, 3, 0, 0, '2017-07-31 18:59:08'),
+(2, '', '<p>prueba de envio mensaje de admin a martha</p>', '', 1, 3, 0, 0, '2017-07-31 19:00:28'),
+(3, '', '<p>{eoif{oiwehoi{foihbf</p>', '', 1, 6, 0, 0, '2017-08-12 16:15:02'),
+(4, '', '<p>asdasd</p>', '', 1, 11, 0, 0, '2017-08-23 22:12:10'),
+(5, '', '<p>asdaaaaaa</p>', '', 1, 2, 0, 0, '2017-08-23 22:27:50');
 
 -- --------------------------------------------------------
 
@@ -2425,41 +2430,42 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (135, 4, 14),
 (136, 4, 79),
 (137, 4, 112),
-(138, 4, 113),
-(139, 4, 117),
-(140, 4, 116),
-(141, 4, 114),
-(142, 4, 194),
-(143, 4, 152),
-(144, 4, 188),
-(145, 4, 115),
-(146, 4, 157),
-(147, 4, 158),
-(148, 4, 160),
-(149, 4, 159),
-(150, 4, 16),
-(151, 4, 17),
-(152, 4, 20),
-(153, 4, 18),
-(154, 4, 107),
-(155, 4, 19),
-(156, 4, 42),
-(157, 4, 43),
-(158, 4, 45),
-(159, 4, 44),
-(160, 3, 1),
-(161, 3, 143),
-(162, 3, 144),
-(163, 3, 145),
-(164, 5, 1),
-(165, 5, 21),
-(166, 5, 22),
-(167, 5, 175),
-(168, 5, 24),
-(169, 5, 155),
-(170, 5, 23),
-(171, 5, 173),
-(172, 5, 174);
+(138, 4, 186),
+(139, 4, 113),
+(140, 4, 117),
+(141, 4, 116),
+(142, 4, 114),
+(143, 4, 194),
+(144, 4, 152),
+(145, 4, 188),
+(146, 4, 115),
+(147, 4, 157),
+(148, 4, 158),
+(149, 4, 160),
+(150, 4, 159),
+(151, 4, 16),
+(152, 4, 17),
+(153, 4, 20),
+(154, 4, 18),
+(155, 4, 107),
+(156, 4, 19),
+(157, 4, 42),
+(158, 4, 43),
+(159, 4, 45),
+(160, 4, 44),
+(161, 3, 1),
+(162, 3, 143),
+(163, 3, 144),
+(164, 3, 145),
+(165, 5, 1),
+(166, 5, 21),
+(167, 5, 22),
+(168, 5, 175),
+(169, 5, 24),
+(170, 5, 155),
+(171, 5, 23),
+(172, 5, 173),
+(173, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2558,7 +2564,9 @@ INSERT INTO `tasks` (`id`, `name`, `description`, `case_id`, `priority`, `due_da
 (11, 'tyrtyrtyrt', '<p>tytyuty</p>', 0, 2, '2017-09-30', '0', 14, 0, '19'),
 (12, 'yyyutyutyty', '<p>yuyutyuty</p>', 0, 2, '2017-09-29', '68', 14, 0, '19'),
 (13, 'yutyutyuty', '<p>tyutyutyut</p>', 0, 1, '2017-09-30', '0', 14, 0, '19'),
-(14, 'utyutyutyu', '<p>yyiyuiyu</p>', 0, 2, '2017-11-30', '', 14, 0, '0');
+(14, 'utyutyutyu', '<p>yyiyuiyu</p>', 0, 2, '2017-11-30', '', 14, 0, '0'),
+(15, 'ffgghfghghfg', '<p>tytyutyu</p>', 0, 2, '2017-09-30', '44', 14, 0, '[\"19\",\"20\"]'),
+(16, 'ryrrtyrt', '<p>tyutyutyu</p>', 0, 2, '2017-09-30', '100', 4, 0, '[\"20\"]');
 
 -- --------------------------------------------------------
 
@@ -2591,7 +2599,9 @@ INSERT INTO `task_assigned` (`user_id`, `task_id`) VALUES
 (14, 11),
 (14, 12),
 (14, 13),
-(14, 14);
+(14, 14),
+(14, 15),
+(14, 16);
 
 -- --------------------------------------------------------
 
@@ -2606,6 +2616,16 @@ CREATE TABLE `task_comments` (
   `comment` text NOT NULL,
   `date_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `task_comments`
+--
+
+INSERT INTO `task_comments` (`id`, `task_id`, `comment_by`, `comment`, `date_time`) VALUES
+(1, 16, 4, '<p>Probando</p>', '2017-09-10 18:39:37'),
+(2, 16, 4, '<p>Probando otra vez</p>', '2017-09-10 18:53:01'),
+(3, 16, 4, '<p>Try again</p>', '2017-09-10 18:55:47'),
+(4, 16, 4, '<p>Prueba de archivos</p>', '2017-09-10 18:59:55');
 
 -- --------------------------------------------------------
 
@@ -3230,7 +3250,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3245,7 +3265,7 @@ ALTER TABLE `fees`
 -- AUTO_INCREMENT de la tabla `files`
 --
 ALTER TABLE `files`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `holidays`
 --
@@ -3330,7 +3350,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=173;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=174;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
@@ -3345,12 +3365,12 @@ ALTER TABLE `status`
 -- AUTO_INCREMENT de la tabla `tasks`
 --
 ALTER TABLE `tasks`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 --
 -- AUTO_INCREMENT de la tabla `task_comments`
 --
 ALTER TABLE `task_comments`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 --
 -- AUTO_INCREMENT de la tabla `tax`
 --
