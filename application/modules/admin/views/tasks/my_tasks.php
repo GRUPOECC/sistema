@@ -49,7 +49,7 @@ function areyousure()
                     <a class="btn btn-default" href="<?php echo site_url('admin/tasks/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
           <?php } ?>  
           <?php if(check_user_role(24)==1){?>
-                      <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/tasks'); ?>">
+                      <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/my_tasks'); ?>">
                 <?php } ?>   
           <?php if(check_user_role(188)==1){?>
                       <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
