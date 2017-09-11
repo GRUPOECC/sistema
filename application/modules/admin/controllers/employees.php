@@ -93,6 +93,7 @@ class employees extends MX_Controller {
 				$save['username'] = $this->input->post('username');
 				$save['password'] = sha1($this->input->post('password'));
                 $save['contact'] = $this->input->post('contact');
+                $save['extension'] = $this->input->post('extension');
 				$save['address'] = $this->input->post('address');
 				$save['user_role'] = $this->input->post('role_id');
 				$save['employee_id'] = $data['e_id'];

@@ -43,7 +43,7 @@ function areyousure()
 								<th><?php echo lang('name')?></th>
 								<th><?php echo lang('user_role')?></th>
                                 <th><?php echo lang('status')?></th>
-								<th width="20%"><?php echo lang('action')?></th>
+								<th width="40%"><?php echo lang('action')?></th>
                             </tr>
                         </thead>
                         
@@ -65,7 +65,7 @@ function areyousure()
 										  <a class="btn btn-primary"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
 										  <?php } ?>	
 										 <?php if(check_user_role(40)==1){?>	 
-                                         <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/employees/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete')?></a>
+                                         <a class="btn btn-danger" style="margin-left:12px;" href="<?php echo site_url('admin/employees/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete')?></a>
 										<?php if(check_user_role(123)==1){?>	 
 										 <a class="btn btn-info"  style="margin-left:12px;" href="<?php echo site_url('admin/employees/bank_details/'.$new->id); ?>"><i class="fa fa-bank"></i> <?php echo lang('bank_details')?></a>
 										  <?php } ?>	

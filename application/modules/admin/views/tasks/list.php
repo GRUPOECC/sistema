@@ -372,7 +372,6 @@ function areyousure()
   }
 
   function mostrarTerminados(){
-
      $('tr[name="terminado"]').css("display", "");
      var allPages = oTable.fnGetNodes();
         $('tr[name="terminado"]', allPages).css("display", "");

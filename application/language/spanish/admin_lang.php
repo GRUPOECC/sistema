@@ -429,7 +429,7 @@ $lang['smtp_username']			= "SMTP Username";
 $lang['smtp_password']			= "SMTP Password";
 $lang['smtp_port']			= "SMTP Port";
 
-$lang['documents']      			= "Documents";
+$lang['documents']      			= "Documentos";
 $lang['manage']		      			= "Manage";
 $lang['remark']		      			= "Remark";
 $lang['document_saved']				= "Document Saved";
@@ -561,6 +561,12 @@ $lang['inbox'] = "Bandeja de Entrada";
 $lang['outbox'] = "Bandeja de Salida";
 $lang['answer'] = "Responder";
 $lang['resend'] = "Reenviar";
+$lang['general_data'] = "Datos Generales";
+$lang['access_data'] = "Datos de Acceso";
+$lang['extension'] = "Extensión";
+
+
+
 
 
 
