@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-09-2017 a las 02:11:25
+-- Tiempo de generación: 12-09-2017 a las 03:51:41
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -274,7 +274,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (194, 'deleteMytask', 112, 0, 'Eliminar Tarea Propia', 0),
 (195, 'cargaempleados', 112, 1, 'Carga de Empleados', 1),
 (196, 'delete', 15, 0, 'Borrar Mensaje', 0),
-(197, 'addcompanyuser', 37, 1, 'addcompanyuser', 1);
+(197, 'addcompanyuser', 37, 1, 'addcompanyuser', 1),
+(198, 'addbankuser', 37, 1, 'addbankuser', 1);
 
 -- --------------------------------------------------------
 
@@ -375,6 +376,14 @@ CREATE TABLE `bank_details` (
   `branch` varchar(255) NOT NULL,
   `account_number` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `bank_details`
+--
+
+INSERT INTO `bank_details` (`id`, `user_id`, `account_holder_name`, `bank_name`, `ifsc`, `pan`, `branch`, `account_number`) VALUES
+(1, 3, 'fgfhfgh', 'dgdfgdfgd', '23', '223', '23', '3434242'),
+(2, 23, 'fh', 'gdfgdfgd', '34dfd', 'dfgfg', '434', '35453453');
 
 -- --------------------------------------------------------
 
@@ -1817,25 +1826,30 @@ CREATE TABLE `empresa_usuario` (
   `id_empresa` int(11) NOT NULL,
   `id_departamento` int(11) NOT NULL,
   `id_cargo` int(11) NOT NULL,
-  `nomina` varchar(255) NOT NULL
+  `nomina` varchar(255) NOT NULL,
+  `fecha_ingreso` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `empresa_usuario`
 --
 
-INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departamento`, `id_cargo`, `nomina`) VALUES
-(5, 15, 17, 6, 2, ''),
-(6, 15, 20, 5, 5, ''),
-(7, 15, 23, 3, 6, ''),
-(8, 15, 17, 1, 5, ''),
-(9, 15, 11, 1, 6, ''),
-(11, 14, 19, 4, 4, ''),
-(12, 15, 12, 3, 2, ''),
-(14, 19, 13, 6, 5, ''),
-(15, 14, 20, 3, 2, ''),
-(16, 4, 20, 3, 2, ''),
-(17, 20, 2, 4, 3, '');
+INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departamento`, `id_cargo`, `nomina`, `fecha_ingreso`) VALUES
+(5, 15, 17, 6, 2, '', ''),
+(6, 15, 20, 5, 5, '', ''),
+(7, 15, 23, 3, 6, '', ''),
+(8, 15, 17, 1, 5, '', ''),
+(9, 15, 11, 1, 6, '', ''),
+(11, 14, 19, 4, 4, '', ''),
+(12, 15, 12, 3, 2, '', ''),
+(14, 19, 13, 6, 5, '', ''),
+(15, 14, 20, 3, 2, '', ''),
+(16, 4, 20, 3, 2, '', ''),
+(17, 20, 2, 4, 3, '', ''),
+(18, 21, 15, 6, 4, '4556', ''),
+(19, 22, 15, 5, 4, '5645', '2017-09-30'),
+(20, 23, 13, 3, 4, '5464', '2017-09-30'),
+(21, 23, 19, 3, 4, '675', '2017-09-30');
 
 -- --------------------------------------------------------
 
@@ -2724,7 +2738,10 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (17, 0, 'rgthgfghfghfghf', '', 'fgdffgdfgf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry387@gmail.com', '04123352179', 0, 'dfbfhfhfgh', 5, 0, '', 1, 5, '0', 0, '2017-12-30', '0', 1),
 (18, 0, 'ffgdfdfgdfgdfg', '', 'erfdfgdfgdf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'kfghsduiofsydfisd@gohfnjiof.com', '04123352179', 0, 'dfgdfgdfgf', 2, 0, '', 1, 5, '\"13\"', 42, '2017-09-23', '5', 1),
 (19, 0, 'Hola', '', 'hdfgidf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'fgodifughdi@joifhjfg.com', '04123352179', 0, 'xfgdfgdrfgdf', 5, 0, '', 1, 6, '[\"11\",\"18\",\"21\"]', 48, '2017-09-30', '0', 1),
-(20, 0, 'fghfghfghfgh', '', 'rtretert', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghfgfgfg@oifjghofg.com', '545645645', 545645645, 'dfdfgdfg', 3, 0, '', 1, 4, '[\"12\"]', 0, '2017-09-22', '456446', 1);
+(20, 0, 'fghfghfghfgh', '', 'rtretert', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghfgfgfg@oifjghofg.com', '545645645', 545645645, 'dfdfgdfg', 3, 0, '', 1, 4, '[\"12\"]', 0, '2017-09-22', '456446', 1),
+(21, 0, 'hdfipugdfgf', '', '6456456', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ffghfghfg@fdoigjdfiog.com', '04123352179', 656, 'ghjghjgh', 4, 0, '', 1, 0, '[\"12\"]', 0, '2017-09-22', '64564545', 1),
+(22, 0, 'eryrtyrty', '', 'rtyrtyrty', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghghfg@gjhoifg.com', '3443534', 345, 'fghdfgdf', 4, 0, '', 1, 0, '[\"11\"]', 0, '2017-09-30', '445645', 1),
+(23, 0, 'dffgdfhfghf', '', 'rterteerg', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-02-28', 'hfghfghfg@nglhfgh.com', '64564545', 564, 'fghfghfg', 4, 0, '', 1, 0, '[\"11\"]', 0, '2017-09-30', '5645645', 1);
 
 -- --------------------------------------------------------
 
@@ -3148,7 +3165,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=198;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=199;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3173,7 +3190,7 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT de la tabla `bank_details`
 --
 ALTER TABLE `bank_details`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `canned_messages`
 --
@@ -3263,7 +3280,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3398,7 +3415,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
