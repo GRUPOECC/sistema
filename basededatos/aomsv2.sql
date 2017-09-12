@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-09-2017 a las 05:02:13
+-- Tiempo de generación: 12-09-2017 a las 02:11:25
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -273,7 +273,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (193, 'publications', 4, 1, 'Publicaciones en Tickets', 1),
 (194, 'deleteMytask', 112, 0, 'Eliminar Tarea Propia', 0),
 (195, 'cargaempleados', 112, 1, 'Carga de Empleados', 1),
-(196, 'delete', 15, 0, 'Borrar Mensaje', 0);
+(196, 'delete', 15, 0, 'Borrar Mensaje', 0),
+(197, 'addcompanyuser', 37, 1, 'addcompanyuser', 1);
 
 -- --------------------------------------------------------
 
@@ -1815,25 +1816,26 @@ CREATE TABLE `empresa_usuario` (
   `id_usuario` int(11) NOT NULL,
   `id_empresa` int(11) NOT NULL,
   `id_departamento` int(11) NOT NULL,
-  `id_cargo` int(11) NOT NULL
+  `id_cargo` int(11) NOT NULL,
+  `nomina` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `empresa_usuario`
 --
 
-INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departamento`, `id_cargo`) VALUES
-(5, 15, 17, 6, 2),
-(6, 15, 20, 5, 5),
-(7, 15, 23, 3, 6),
-(8, 15, 17, 1, 5),
-(9, 15, 11, 1, 6),
-(11, 14, 19, 4, 4),
-(12, 15, 12, 3, 2),
-(14, 19, 13, 6, 5),
-(15, 14, 20, 3, 2),
-(16, 4, 20, 3, 2),
-(17, 20, 2, 4, 3);
+INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departamento`, `id_cargo`, `nomina`) VALUES
+(5, 15, 17, 6, 2, ''),
+(6, 15, 20, 5, 5, ''),
+(7, 15, 23, 3, 6, ''),
+(8, 15, 17, 1, 5, ''),
+(9, 15, 11, 1, 6, ''),
+(11, 14, 19, 4, 4, ''),
+(12, 15, 12, 3, 2, ''),
+(14, 19, 13, 6, 5, ''),
+(15, 14, 20, 3, 2, ''),
+(16, 4, 20, 3, 2, ''),
+(17, 20, 2, 4, 3, '');
 
 -- --------------------------------------------------------
 
@@ -3146,7 +3148,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=197;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=198;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
