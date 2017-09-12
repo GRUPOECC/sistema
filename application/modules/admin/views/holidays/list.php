@@ -47,20 +47,36 @@ function get_holidays($m){
             <small><?php echo lang('list');?></small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard');?></a></li>
-            <li class="active"><?php echo lang('holidays');?></li>
+            <li><a href="<?php echo site_url('admin/dashboard')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard');?></a></li>
+            <li class="active"><?php echo lang('calendar');?></li>
         </ol>
 </section>
 
 <section class="content">
-  	  	 <div class="row" style="margin-bottom:10px;">
+      	<div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="btn-group pull-right">
-				<?php if(check_user_role(144)==1){?>
-                    <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
-                <?php } ?>	
-				</div>
-            </div>    
+
+                    <?php if(check_user_role(144)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
+                    <?php } ?>  
+                    
+                    <?php if(check_user_role(197)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addfiscalevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> Agregar Eventos Fiscales</a>
+                    <?php } ?>	
+
+
+                    <?php if(check_user_role(199)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addcompanyevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> Agregar Eventos de la Empresa</a>
+                    <?php } ?>  
+                
+
+                     <?php if(check_user_role(201)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addnationalevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> Agregar Eventos Nacionales</a>
+                    <?php } ?>  
+
+                </div>
+            </div>  
         </div>	
         
   	  	<div class="row">

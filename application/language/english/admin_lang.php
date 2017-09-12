@@ -538,6 +538,14 @@ $lang['calendar'] = "Calendar";
 $lang['select_company'] = "Select a company: ";
 $lang['current_calen_lang'] = "en";
 $lang['show_all_events'] = "Show all";
+
+//CALENDAR MODULE
+$lang['calendar'] = "Calendar";
+$lang['add_event'] = "Add Event";
+//CALENDAR EVENTS
+$lang['fiscal_event'] = "Fiscal Event";
+$lang['company_event'] = "Company Event";
+$lang['national_event'] = "National Event";
 //CALENDAR BUTTON
 $lang['calen_button_t'] = "today";
 $lang['calen_button_m'] = "month";

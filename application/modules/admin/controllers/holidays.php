@@ -18,7 +18,7 @@ class holidays extends MX_Controller {
 		
 		$data['holidays'] = $this->holiday_model->get_all();
 		$data['months'] = $this->holiday_model->get_months();
-		$data['page_title'] = lang('holidays');
+		$data['page_title'] = lang('calendar');
 		$data['body'] = 'holidays/list';
 		$this->load->view('template/main', $data);	
 
@@ -72,7 +72,36 @@ function sortByOrder($a, $b) {
 			redirect('admin/holidays');
 			
 		}
+	}
+
+	function addfiscalevent(){
+		
+		$data['page_title'] = lang('add') . lang('fiscal_event');
+		$data['body'] = 'holidays/fiscalevent';
+
+		$this->load->view('template/main', $data);
+		// $this->load->view('admin/holidays/fiscalevents');
+
 	}	
 		
+	function addcompanyevent(){
+		
+		$data['page_title'] = lang('add') . lang('fiscal_event');
+		$data['body'] = 'holidays/companyevent';
+
+		$this->load->view('template/main', $data);
+		// $this->load->view('admin/holidays/fiscalevents');
+
+	}
+
+	function addnationalevent(){
+		
+		$data['page_title'] = lang('add') . lang('fiscal_event');
+		$data['body'] = 'holidays/nationalevent';
+
+		$this->load->view('template/main', $data);
+		// $this->load->view('admin/holidays/fiscalevents');
+
+	}
 	
 }

@@ -270,7 +270,13 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (190, 'deletecompany', 37, 0, 'Eliminar Empresa', 0),
 (191, 'addcompany', 37, 0, 'Agregar Empresa a usuario', 0),
 (192, 'editcompany', 37, 0, 'Editar compañia de usuario', 0);
-
+--new actions
+(197, 'add_fiscal_event', 143, 0, 'Add Fiscal Event', 0),
+(198, 'delete_fiscal_event', 143, 0, 'Delete Fiscal Event', 0),
+(199, 'add_company_event', 143, 0, 'Add Company Event', 0),
+(200, 'delete_company_event', 143, 0, 'Delete Company Event', 0),
+(201, 'add_national_event', 143, 0, 'Add National Event', 0),
+(202, 'delete_national_event', 143, 0, 'Delete National Event', 0);
 -- --------------------------------------------------------
 
 --
@@ -393,6 +399,30 @@ INSERT INTO `canned_messages` (`id`, `deletable`, `type`, `name`, `subject`, `co
 (1, 1, 'order', 'Forgot Password Message', 'Password Reset Link at {site_name}!', '<p>Dear {customer_name},</p><p>If you forget your password, on the login page, click the Following link and you can change your account password</p><p>Username - {username}</p><p>{reset_link}</p><p>Thanks,<br>{site_name}</p>');
 
 -- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `canned_messages`
+--
+
+CREATE TABLE `event_type` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `name` varchar(50) DEFAULT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT 1,
+  `empresa` tinyint(1) NOT NULL DEFAULT 0,
+  `periodico` tinyint(1) NOT NULL DEFAULT 0
+
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+--
+-- Volcado de datos para la tabla `canned_messages`
+--
+
+INSERT INTO `event_type` (  `id` ,  `name` ,  `status` ,  `empresa` ,  `periodico`) VALUES 
+(1,'Evento Fiscal', 1, 1, 1),
+(2,'Evento de la Empresa', 1, 1, 1),
+(3,'Evento Nacional', 1, 0, 1);
+
+-- --------------------------------------------------------
+
 
 --
 -- Estructura de tabla para la tabla `cases`
@@ -1839,7 +1869,8 @@ CREATE TABLE `files` (
 CREATE TABLE `holidays` (
   `id` int(9) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `date` date NOT NULL
+  `date` date NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT 1
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
