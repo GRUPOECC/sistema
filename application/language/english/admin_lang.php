@@ -556,3 +556,4 @@ $lang['resend'] = "Resend";
 $lang['general_data'] = "General Data";
 $lang['access_data'] = "Access Data";
 $lang['extension'] = "Extension";
+$lang['nomina_code'] = "Nomina Code";

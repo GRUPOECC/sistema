@@ -16,6 +16,8 @@ class employees extends MX_Controller {
 	
 	
 	function index(){
+		session_start();
+		$_SESSION['empresas'] = null; 
 		$data['employees'] = $this->employees_model->get_all();
 		
 		$data['page_title'] = lang('employees');
@@ -104,13 +106,21 @@ class employees extends MX_Controller {
 			   	$save['status'] = $this->input->post('status');
 			   	$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
 
+			   	$p_key = $this->employees_model->save($save);
+
 			   	//Asignacion de la empresas (Accion suspendida): 
 			   	//-------------------------------------------------------------------
-			    $save_empresa['id_empresa'] = $this->input->post('empresa_select');
-			   	$save_empresa['id_departamento'] = $save['department_id'];
-			   	$save_empresa['id_cargo'] = $save['user_role'];	   	
+			   	session_start();
+			   	foreach ($_SESSION['empresas'] as $key => $value){
+			    $save_empresa['id_empresa'] = $value['empresa'];
+			   	$save_empresa['id_departamento'] = $value['departamento'];
+			   	$save_empresa['id_cargo'] = $value['role'];	
+			   	$save_empresa['nomina'] = $value['nomina'];	
+			   	$save_empresa['fecha_ingreso'] = $value['date'];	
+			   	$this->employees_model->saveempresa($p_key,$save_empresa);
+			   	}   	
 			   	//-------------------------------------------------------------------
-				$p_key = $this->employees_model->save($save,$save_empresa);
+				$_SESSION['empresas'] = null; 
 			
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){
@@ -313,6 +323,14 @@ class employees extends MX_Controller {
 	 }
 	     redirect('admin/employees/empresas/'.$id);		
 	}
+
+	function addcompanyuser(){
+		   	 $data['empresas'] = $this->employees_model->get_empresas_all();  
+		     $data['listaempresas'] = $this->employees_model->get_empresas();	 
+		     $data['roles'] = $this->user_role_model->get_all();
+		     $data['departments'] = $this->department_model->get_all();
+            $this->load->view('employees/addempresas',$data);	
+	} 
 
 	function add_bank_details($id){
 		$data['details'] = $this->employees_model->get_bank_details($id);
