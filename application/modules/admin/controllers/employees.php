@@ -18,6 +18,7 @@ class employees extends MX_Controller {
 	function index(){
 		session_start();
 		$_SESSION['empresas'] = null; 
+		$_SESSION['bancos'] = null;
 		$data['employees'] = $this->employees_model->get_all();
 		
 		$data['page_title'] = lang('employees');
@@ -108,7 +109,7 @@ class employees extends MX_Controller {
 
 			   	$p_key = $this->employees_model->save($save);
 
-			   	//Asignacion de la empresas (Accion suspendida): 
+			   	//Asignacion de la empresas: 
 			   	//-------------------------------------------------------------------
 			   	session_start();
 			   	foreach ($_SESSION['empresas'] as $key => $value){
@@ -120,7 +121,22 @@ class employees extends MX_Controller {
 			   	$this->employees_model->saveempresa($p_key,$save_empresa);
 			   	}   	
 			   	//-------------------------------------------------------------------
+			   	//Asignacion de cuentas Bancarias: 
+			   	//-------------------------------------------------------------------
+			   	foreach ($_SESSION['bancos'] as $key => $value){
+			   	$save_banco['user_id']				 =  $p_key;
+				$save_banco['account_holder_name']   =  $value['account_holder_name'];
+				$save_banco['account_number']		 =  $value['account_number'];
+				$save_banco['bank_name'] 			 =  $value['bank_name'];
+				$save_banco['ifsc'] 		      	 =  $value['ifsc_code'];
+				$save_banco['pan']			         =  $value['pan_number'];
+				$save_banco['branch'] 		         =  $value['branch'];
+				
+			   	$this->employees_model->save_bank_details($save_banco);
+			   	}   	
+			   	//-------------------------------------------------------------------
 				$_SESSION['empresas'] = null; 
+				$_SESSION['bancos'] = null; 
 			
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){
@@ -136,7 +152,7 @@ class employees extends MX_Controller {
 					$this->custom_field_model->save_answer($save_fields);
 				}
 			    $this->session->set_flashdata('message', lang('employee_saved'));
-				redirect('admin/employees');
+				redirect('admin/employees/documents/'.$p_key);
 			}
 			
 		}		
@@ -330,6 +346,10 @@ class employees extends MX_Controller {
 		     $data['roles'] = $this->user_role_model->get_all();
 		     $data['departments'] = $this->department_model->get_all();
             $this->load->view('employees/addempresas',$data);	
+	}
+
+	function addbankuser(){
+             $this->load->view('employees/addbancos',$data);
 	} 
 
 	function add_bank_details($id){

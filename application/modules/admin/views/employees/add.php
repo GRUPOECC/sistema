@@ -42,12 +42,10 @@
                      <ul class="nav nav-tabs">
                         <li id="tab1" class="active"><a onclick="changeTab(1)" href="javascript:void(0) "><?php echo lang('general_data')?></a></li>
                         <li id="tab2" class=""><a onclick="changeTab(2)" href="javascript:void(0)"><?php echo lang('access_data')?></a></li>
-
-                       
                         <li id="tab3" class=""><a onclick="changeTab(3)" href="javascript:void(0)"><?php echo lang('companies')?></a></li>
-                         <!--
-                        <li id="tab4" class=""><a onclick="changeTab(4)" href="javascript:void(0)"><?php echo lang('documents')?></a></li>
-                        <li id="tab5" class=""><a onclick="changeTab(5)" href="javascript:void(0)"><?php echo lang('bank_details')?></a></li>
+                        <li id="tab4" class=""><a onclick="changeTab(4)" href="javascript:void(0)"><?php echo lang('bank_details')?></a></li>
+                        <!--
+                        <li id="tab5" class=""><a onclick="changeTab(5)" href="javascript:void(0)"><?php echo lang('documents')?></a></li>
                         -->
                       </ul>
                 </div><!-- /.box-header -->
@@ -452,6 +450,10 @@
                     
 
                     </div>
+
+                    <div id="datos-bancarios">
+                        <iframe src="<?php echo site_url('admin/employees/addbankuser/'); ?>" style="border:none;" height="500" width="100%"></iframe>
+
                     </div>
 
 
@@ -474,42 +476,49 @@
          document.getElementById("tab1").classList.add('active');
          document.getElementById("tab2").classList.remove('active');
          document.getElementById("tab3").classList.remove('active');
-         //document.getElementById("tab4").classList.remove('active');
+         document.getElementById("tab4").classList.remove('active');
          //document.getElementById("tab5").classList.remove('active');
 
          document.getElementById("datos-acceso").style.display = "none";
          document.getElementById("datos-generales").style.display = "";
          document.getElementById("datos-empresas").style.display = "none";
+         document.getElementById("datos-bancarios").style.display = "none";
 
       }
             if(tab==2){
          document.getElementById("tab1").classList.remove('active');
          document.getElementById("tab2").classList.add('active');
          document.getElementById("tab3").classList.remove('active');
-         //document.getElementById("tab4").classList.remove('active');
+         document.getElementById("tab4").classList.remove('active');
          //document.getElementById("tab5").classList.remove('active');
 
          document.getElementById("datos-acceso").style.display = "";
          document.getElementById("datos-generales").style.display = "none";
          document.getElementById("datos-empresas").style.display = "none";
+         document.getElementById("datos-bancarios").style.display = "none";
       }
             if(tab==3){
          document.getElementById("tab1").classList.remove('active');
          document.getElementById("tab2").classList.remove('active');
          document.getElementById("tab3").classList.add('active');
-         //document.getElementById("tab4").classList.remove('active');
+         document.getElementById("tab4").classList.remove('active');
          //document.getElementById("tab5").classList.remove('active');
 
          document.getElementById("datos-acceso").style.display = "none";
          document.getElementById("datos-generales").style.display = "none";
          document.getElementById("datos-empresas").style.display = "";
+         document.getElementById("datos-bancarios").style.display = "none";
       }
             if(tab==4){
          document.getElementById("tab1").classList.remove('active');
          document.getElementById("tab2").classList.remove('active');
          document.getElementById("tab3").classList.remove('active');
-         //document.getElementById("tab4").classList.add('active');
+         document.getElementById("tab4").classList.add('active');
          //document.getElementById("tab5").classList.remove('active');
+          document.getElementById("datos-acceso").style.display = "none";
+         document.getElementById("datos-generales").style.display = "none";
+         document.getElementById("datos-empresas").style.display = "none";
+         document.getElementById("datos-bancarios").style.display = "";
       }
             if(tab==5){
          document.getElementById("tab1").classList.remove('active');
@@ -527,6 +536,7 @@
  $(document).ready(function(){
       document.getElementById("datos-acceso").style.display = "none";
       document.getElementById("datos-empresas").style.display = "none";
+      document.getElementById("datos-bancarios").style.display = "none";
 
    });
 
