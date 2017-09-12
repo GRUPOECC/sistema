@@ -54,7 +54,7 @@
                 <!-- form start -->
 				
 				<?php echo form_open_multipart('admin/employees/add/'); ?>
-                    <div class="box-body" style="height: 570px;">
+                    <div class="box-body" style="height: 620px;">
 
 
                      <div id="datos-generales">
@@ -393,6 +393,7 @@
 
                     </div>
                     <div id="datos-empresas">
+                    <!--
                     <div class="col-md-4" >
                             <div class="form-group">
                               <div class="row">
@@ -444,6 +445,9 @@
                                 </div>
                             </div>
                         </div>
+                        -->
+
+                        <iframe src="<?php echo site_url('admin/employees/addcompanyuser/'); ?>" style="border:none;" height="500" width="100%"></iframe>
                         
                     
 

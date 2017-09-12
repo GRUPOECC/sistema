@@ -18,13 +18,18 @@ class employees_model extends CI_Model
 		$this->load->database();
 	}
 	
-	function save($save,$save_empresa)
+	function save($save)
 	{
 		$this->db->insert('users',$save);
         $id = $this->db->insert_id();
-        $save_empresa['id_usuario'] = $id;
-        $this->db->insert('empresa_usuario',$save_empresa);
+        
 		return $id; 
+	}
+
+	function saveempresa($id,$save_empresa){
+
+		$save_empresa['id_usuario'] = $id;
+        $this->db->insert('empresa_usuario',$save_empresa);
 	}
 
 	function save_bank_details($save)
@@ -52,6 +57,8 @@ class employees_model extends CI_Model
 			return $this->db->get('empresas')->result();
 	}
 
+
+
     function get_empresas_by_user($id){
     	    $this->db->where('id_usuario',$id);
     	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion,EU.id_departamento iddepto,D.name depto');
@@ -60,6 +67,15 @@ class employees_model extends CI_Model
     	    $this->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');
 			return $this->db->get('empresas E')->result();
 	}
+
+	function get_empresas_all(){
+    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion,EU.id_departamento iddepto,D.name depto');
+    	    $this->db->join('empresa_usuario EU', 'EU.id_empresa = E.id', 'LEFT');
+    	    $this->db->join('user_role UR', 'UR.id = EU.id_cargo', 'LEFT');
+    	    $this->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');
+			return $this->db->get('empresas E')->result();
+	}
+
 
 
 	function get_empresa($id){
