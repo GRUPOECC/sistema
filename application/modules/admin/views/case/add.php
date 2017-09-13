@@ -78,7 +78,7 @@
                                 	<b><?php echo lang('company')?></b>
 								</div>
 								<div class="col-md-4" id="location_result">
-                                    <select name="location_id" id="location_id" class="chzn col-md-12" >
+                                    <select name="location_id[]" id="location_id" class="chzn col-md-12" multiple="multiple" >
 										<option value="">--<?php echo lang('select')?> <?php echo lang('location')?>--</option>
 										<?php foreach($empresas as $new) {
 											$sel = "";
@@ -112,26 +112,8 @@
                                 </div>
                             </div>
                         </div>
-					
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('employees')?></b>
-								</div>
-								<div class="col-md-4" id="dept_result">
-                                    <select name="empleados_id[]" id="empleados_id[]" disabled="disabled" class="chzn col-md-12" multiple="multiple" >
-										<option value="">--<?php echo lang('select')?> <?php echo lang('dept')?>--</option>
-										<?php foreach($depts as $new) {
-											$sel = "";
-											if(set_select('dept_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
-                                </div>
-                            </div>
-                        </div>
+					    <!--
+                        -->
 						
 						
 						
@@ -141,7 +123,8 @@
                                 	<b><?php echo lang('case')?>  <?php echo lang('category')?></b>
 								</div>
 								<div class="col-md-4">
-                                    <select name="case_category_id[]" class="chzn col-md-12" multiple="multiple" >
+                                    <select id="categorias" name="case_category_id" class="chzn col-md-12" >
+                                        <option selected="selected">-- Seleccione una categoria --</option>
 										<?php foreach($case_categories as $new) {
 											$sel = "";
 											if(set_select('case_category_id', $new->id)) $sel = "selected='selected'";
@@ -153,10 +136,20 @@
                                 </div>
                             </div>
                         </div>
-						
-						
-						
-															
+
+                        <div class="form-group">
+                        	<div class="row">
+								<div class="col-md-4" id="category_result">
+								<!-- campos opcionales -->
+                                    
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+													
 						
 						<div class="form-group">
                         	<div class="row">
@@ -681,6 +674,44 @@ $(document).on('change', '#departamento_id', function(){
       //alert(result);return false;
 	  $('#dept_result').html(result);
 	  $(".chzn").chosen();
+	 }
+  });
+});
+
+$(document).on('change', '#categorias', function(){
+ //alert(12);
+ 	categoria_id = $('#categorias').val();
+ 	location_id = $('#location_id').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#category_result').html(ajax_load);
+	  
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/opciones') ?>',
+    type:'POST',
+    data:{l_id:categoria_id,empresa:location_id},
+	
+	success:function(result){
+      //alert(result);return false;
+	  $('#category_result').html(result);
+	  $(".chzn").chosen();
+	     jQuery('.datepicker').datetimepicker({
+			 lang:'en',
+			 i18n:{
+			  de:{
+			   months:[
+			    'Januar','Februar','März','April',
+			    'Mai','Juni','Juli','August',
+			    'September','Oktober','November','Dezember',
+			   ],
+			   dayOfWeek:[
+			    "So.", "Mo", "Di", "Mi", 
+			    "Do", "Fr", "Sa.",
+			   ]
+			  }
+			 },
+			 timepicker:false,
+			 format:'Y-m'
+			});
 	 }
   });
 });

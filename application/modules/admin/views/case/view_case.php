@@ -214,19 +214,67 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('employees')?></b>
-								</div>
-								<div class="col-md-4">
-                                   <?php foreach($empleados as $new) {
-                                              
-                                         if (strpos((string)$case->usuarios_id,'"'.(string)$new->id.'"')==true)
-                                            echo '<p>'.$new->name.'</p>';
-                                        }
-                                         
-                                        ?>
+                         <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4" id="category_result">
+                                <!-- campos opcionales -->
+
+                                <?php 
+
+                                            if ($case->case_category_id=='"1"'){
+                                                echo '
+                                                                <div class="col-md-4">
+                                                                    <b>Fecha: </b>
+                                                                </div>
+                                                                <div class="col-md-8">    
+                                                                  '.$case->fechacaja.'
+                                                                </div>
+                                                '; 
+                                             } 
+
+                                             if ($case->case_category_id=='"2"'){
+                                                echo '
+                                                                <div class="col-md-4">
+                                                                    <b>Proveedor: </b>
+                                                                </div>
+                                                                <div class="col-md-8">    
+                                                                <input type="text" name="proveedor" class="form-control" value="'.$case->proveedor.'">
+                                                                </div>
+                                                                </br>
+                                                                </br>
+                                                                <div class="col-md-4">
+                                                                    <b>Num Factura: </b>
+                                                                </div>
+                                                                <div class="col-md-8">    
+                                                                   '.$case->numfactura.'
+                                                                </div>
+                                                '; 
+                                             } 
+                                             if ($case->case_category_id=='"3"'){
+                                                echo '
+                                                                <div class="col-md-4">
+                                                                    <b>Sistema: </b>
+                                                                </div>
+                                                                <div class="col-md-8">    
+                                                                  '.$case->sistema.'
+                                                                </div>
+                                                '; 
+                                             }
+
+                                             if ($case->case_category_id=='"5"'){
+                                                echo '
+                                                                <div class="col-md-4">
+                                                                    <b>Periodo: </b>
+                                                                </div>
+                                                                <div class="col-md-8">    
+                                                                '.$case->periodo.'
+                                                                </div>
+                                                '; 
+                                             }
+
+                                ?>
+
+
                                 </div>
                             </div>
                         </div>
@@ -241,6 +289,8 @@
                                 </div>
                             </div>
                         </div>
+
+
 						
 						<div class="form-group">
                         	<div class="row">
