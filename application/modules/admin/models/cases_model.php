@@ -551,6 +551,12 @@ class cases_model extends CI_Model
 	{
 			return $this->db->get('case_categories')->result();
 	}
+
+	function get_all_case_categories_id($id)
+	{
+		            $this->db->where('id',$id);
+			return $this->db->get('case_categories')->row()->name;
+	}
 	
 	function get_all_payment_modes()
 	{
@@ -583,5 +589,16 @@ class cases_model extends CI_Model
 	function get_all_dept_categories()
 	{
 			return $this->db->get('dept_categories')->result();
+	}
+
+	function existeElTicket($idcategoria,$idempresa){
+             $this->db->where('case_category_id',$idcategoria);
+             $this->db->where_in('empresa_id',$idempresa);
+             if(empty($this->db->get('cases')->result())){
+				   return false; 
+				} else {
+				   return true; 
+				}
+
 	}
 }

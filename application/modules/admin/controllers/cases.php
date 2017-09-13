@@ -956,6 +956,74 @@ class cases extends MX_Controller {
 										
 		echo'</select>';						
 	}
+
+
+	function opciones(){
+        if(isset($_POST['l_id'])){
+            if (!$this->cases_model->existeElTicket($_POST['l_id'],$_POST['empresa'])){
+
+             if ($_POST['l_id']==1){
+             	echo '
+                                <div class="col-md-4">
+                                	<b>Fecha: </b>
+								</div>
+								<div class="col-md-8">    
+							    <input type="text" name="fechacaja" class="form-control datepicker" value="">
+                                </div>
+             	'; 
+             } 
+
+             if ($_POST['l_id']==2){
+             	echo '
+                                <div class="col-md-4">
+                                	<b>Proveedor: </b>
+								</div>
+								<div class="col-md-8">    
+							    <input type="text" name="proveedor" class="form-control" value="">
+                                </div>
+                                </br>
+                                </br>
+                                <div class="col-md-4">
+                                	<b>Num Factura: </b>
+								</div>
+								<div class="col-md-8">    
+							    <input type="text" name="numfactura" class="form-control" value="">
+                                </div>
+             	'; 
+             } 
+             if ($_POST['l_id']==3){
+             	echo '
+                                <div class="col-md-4">
+                                	<b>Sistema: </b>
+								</div>
+								<div class="col-md-8">    
+							    <input type="text" name="sistema" class="form-control" value="">
+                                </div>
+             	'; 
+             }
+
+             if ($_POST['l_id']==5){
+             	echo '
+                                <div class="col-md-4">
+                                	<b>Periodo: </b>
+								</div>
+								<div class="col-md-8">    
+							    <input type="text" name="periodo" class="form-control" value="">
+                                </div>
+             	'; 
+             }
+
+         }else{
+              echo '
+                  <script> alert("Este ticket ya existe");</script>
+             '; 
+
+         }
+
+
+
+        } 
+	}
 	
 	function get_depts_cats()
 	{
@@ -1440,10 +1508,10 @@ class cases extends MX_Controller {
 			$this->form_validation->set_message('required', lang('custom_required'));
 			$this->form_validation->set_rules('title', 'lang:title', 'required');
 			//$this->form_validation->set_rules('client_id', 'Client', 'required');
-			$this->form_validation->set_rules('empleados_id', 'Empleados', 'required');
+			//$this->form_validation->set_rules('empleados_id', 'Empleados', 'required');
 			$this->form_validation->set_rules('departamento_id', 'Departamentos', 'required');
 			$this->form_validation->set_rules('location_id', 'Empresa', 'required');
-			$this->form_validation->set_rules('employee_id', 'User', '');
+			//$this->form_validation->set_rules('employee_id', 'User', '');
 			$this->form_validation->set_rules('case_no', 'Case No', 'trim|required|is_unique[cases.case_no]');
 			$this->form_validation->set_rules('location_id', 'Location', 'required');
 			$this->form_validation->set_rules('case_stage_id', 'Case Stage', '');
@@ -1461,14 +1529,25 @@ class cases extends MX_Controller {
             {
             	$admin = $this->session->userdata('admin');
             	$save['created_by'] = $admin['id'];
-				$save['title'] = $this->input->post('title');
+            	if(isset($_POST['fechacaja']))
+				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('fechacaja');
+			    else if(isset($_POST['proveedor']))
+				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('proveedor') . ' '.$this->input->post('numfactura');
+			    else if(isset($_POST['sistema']))
+				$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+			    else if(isset($_POST['periodo']))
+				$save['title'] ='Ticket para solicitar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+			    else
+			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));	
+
 				$save['case_no'] = $this->input->post('case_no');
 				//$save['client_id'] = $this->input->post('client_id');
 				$save['client_id'] = $this->input->post('employee_id');
-				$save['location_id'] = $this->input->post('location_id');
-				$save['empresa_id'] = $this->input->post('location_id');
+				//$save['location_id'] = $this->input->post('location_id');
+				$save['empresa_id'] = json_encode($this->input->post('location_id'));
 				$save['departamento_id'] = json_encode($this->input->post('departamento_id'));
-				$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
+				$save['status'] = 1; 
+				//$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
 				//$save['dept_id'] = $this->input->post('dept_id');
 				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
@@ -1480,6 +1559,15 @@ class cases extends MX_Controller {
 				$save['hearing_date'] = $this->input->post('hearing_date');
 				$save['o_lawyer'] = $this->input->post('o_lawyer');
 				$save['fees'] = $this->input->post('fees');
+				if(isset($_POST['fechacaja']))
+				$save['fechacaja'] = $this->input->post('fechacaja');
+				if(isset($_POST['proveedor']))
+				$save['proveedor'] = $this->input->post('proveedor');
+				if(isset($_POST['numfactura']))
+				$save['numfactura'] = $this->input->post('numfactura');
+				if(isset($_POST['sistema']))
+				$save['sistema'] = $this->input->post('sistema');	
+
              
 			 	$p_key = $this->cases_model->save($save);
                   // $url =base_url('assets/uploads/tareas/');
@@ -1577,13 +1665,22 @@ class cases extends MX_Controller {
             {
             	$admin = $this->session->userdata('admin');
             	$save['created_by'] = $admin['id'];
-				$save['title'] = $this->input->post('title');
+				if(isset($_POST['fechacaja']))
+				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('fechacaja');
+			    else if(isset($_POST['proveedor']))
+				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('proveedor') . ' '.$this->input->post('numfactura');
+			    else if(isset($_POST['sistema']))
+				$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+			    else if(isset($_POST['periodo']))
+				$save['title'] ='Ticket para solicitar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+			    else
+			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
 				$save['case_no'] = $this->input->post('case_no');
 				$save['client_id'] = $this->input->post('client_id');
 				$save['location_id'] = $this->input->post('location_id');
-				$save['empresa_id']  = $this->input->post('location_id');
+				$save['empresa_id']  = json_encode($this->input->post('location_id'));
 				$save['departamento_id'] = json_encode($this->input->post('departamento_id'));
-				$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
+				//$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
 				//$save['dept_id'] = $this->input->post('dept_id');
 				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
@@ -1595,6 +1692,14 @@ class cases extends MX_Controller {
 				$save['hearing_date'] = $this->input->post('hearing_date');
 				$save['o_lawyer'] = $this->input->post('o_lawyer');
 				$save['fees'] = $this->input->post('fees');
+				if(isset($_POST['fechacaja']))
+				$save['fechacaja'] = $this->input->post('fechacaja');
+				if(isset($_POST['proveedor']))
+				$save['proveedor'] = $this->input->post('proveedor');
+				if(isset($_POST['numfactura']))
+				$save['numfactura'] = $this->input->post('numfactura');
+				if(isset($_POST['sistema']))
+				$save['sistema'] = $this->input->post('sistema');	
 				
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){	
@@ -1621,6 +1726,9 @@ class cases extends MX_Controller {
 		$this->load->view('template/main', $data);	
 
 	}
+
+
+	
 	
 	function notes($id=false){
 		$data['id']					=	$id;
@@ -1860,7 +1968,7 @@ class cases extends MX_Controller {
 			*/
 			//echo 'Mail Sent to '.$email;exit;
 	}
-	
+
 	
 	function receipt($id){
 		$data['tax']			= $this->tax_model->get_all();
