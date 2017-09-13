@@ -1566,7 +1566,9 @@ class cases extends MX_Controller {
 				if(isset($_POST['numfactura']))
 				$save['numfactura'] = $this->input->post('numfactura');
 				if(isset($_POST['sistema']))
-				$save['sistema'] = $this->input->post('sistema');	
+				$save['sistema'] = $this->input->post('sistema');
+				if(isset($_POST['periodo']))
+				$save['periodo'] = $this->input->post('periodo');		
 
              
 			 	$p_key = $this->cases_model->save($save);
@@ -1699,7 +1701,9 @@ class cases extends MX_Controller {
 				if(isset($_POST['numfactura']))
 				$save['numfactura'] = $this->input->post('numfactura');
 				if(isset($_POST['sistema']))
-				$save['sistema'] = $this->input->post('sistema');	
+				$save['sistema'] = $this->input->post('sistema');
+				if(isset($_POST['periodo']))
+				$save['periodo'] = $this->input->post('periodo');		
 				
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){	
