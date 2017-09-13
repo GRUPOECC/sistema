@@ -62,17 +62,23 @@ function get_holidays($m){
                     <?php } ?>  
                     
                     <?php if(check_user_role(197)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addfiscalevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> Agregar Eventos Fiscales</a>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addfiscalevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> 
+                            <?php echo lang('add') . ' ' . lang('fiscal_event');?>
+                        </a>
                     <?php } ?>	
 
 
                     <?php if(check_user_role(199)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addcompanyevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> Agregar Eventos de la Empresa</a>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addcompanyevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> 
+                            <?php echo lang('add') . ' ' . lang('company_event');?>
+                        </a>
                     <?php } ?>  
                 
 
                      <?php if(check_user_role(201)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addnationalevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> Agregar Eventos Nacionales</a>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/addnationalevent/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> 
+                            <?php echo lang('add') . ' ' . lang('national_event');?>
+                        </a>
                     <?php } ?>  
 
                 </div>

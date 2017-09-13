@@ -5,6 +5,9 @@
 .row{
 	margin-bottom:10px;
 }
+.margin-right{
+    margin-right: 10px;
+}
 </style>
  <!-- Content Header (Page header) -->
 <section class="content-header">
@@ -26,7 +29,7 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header">
-                    <h3 class="box-title"><!-- <?php echo lang('add');?> -->Agregar Evento Fiscal</h3>
+                    <h3 class="box-title"><!-- <?php echo lang('add');?> --><?php echo lang('add') . ' ' . lang('fiscal_event');?></h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
 				<?php echo form_open_multipart('admin/holidays/add/'); ?>
@@ -35,16 +38,43 @@
                         	<div class="row">
                                 <div class="col-md-4">
                                     <label for="name" style="clear:both;"> <?php echo lang('name');?></label>
-									<input type="text" name="name" value="" class="form-control">
+									<input id="name" type="text" name="name" value="" class="form-control">
                                 </div>
                             </div>
                         </div>
 						
 						<div class="form-group">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="description" style="clear:both;"> <?php echo lang('description');?></label>
+                                    <input id="description" type="text" name="date" value="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
                         	<div class="row">
+                                <div class="col-md-2">
+                                    <label for="date" style="clear:both;"> <?php echo lang('date');?></label>
+                                    <input type="text" name="date" value="" class="form-control datetimepicker">
+                                </div>
+                                <div class="col-md-3">
+
+                                    <label for="repeat" class="margin-right">   <?php echo lang('repeat') . ' ' . lang('date');?>   </label>
+									<input class="checkbox" id="repeat" type="checkbox" name="repeat" value="" />
+
+                                    <select disabled name="filter_dept_cat" id="dept_cat_id" class="range-options form-control chzn">
+                                        <option value="" selected disabled hidden>--Select Time Range--</option>
+                                                <option value="1">Semanal</option>
+                                                <option value="2">Mensual</option>
+                                                <option value="1">Anual</option>
+                                    </select>
+
+                                </div>
                                 <div class="col-md-4">
-                                    <label for="name" style="clear:both;"> <?php echo lang('date');?></label>
-									<input type="text" name="date" value="" class="form-control datetimepicker">
+                                        
+                                            
+                                        
                                 </div>
                             </div>
                         </div>
@@ -63,13 +93,23 @@
 <script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
  $(function() {
+
+    // source:http://icheck.fronteed.com/#features  (see callbacks)
+    $('input').on('ifToggled', function(event){
+      // alert(event.type + ' callback');
+      if ($('.range-options').prop("disabled") ) {
+        $('.range-options').prop("disabled", false)
+      } else {
+        $('.range-options').prop("disabled", true)
+      }
+    });
+
+
    $('.datetimepicker').datetimepicker({
 	//mask:'9999-19-39 29:59',
 	format  : 'Y-m-d',
 	timepicker:false
-	
-	}
-	
-	);
+	});
+
   });
 </script>

@@ -542,6 +542,8 @@ $lang['show_all_events'] = "Show all";
 //CALENDAR MODULE
 $lang['calendar'] = "Calendar";
 $lang['add_event'] = "Add Event";
+$lang['repeat'] = "Repeat";
+
 //CALENDAR EVENTS
 $lang['fiscal_event'] = "Fiscal Event";
 $lang['company_event'] = "Company Event";
