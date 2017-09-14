@@ -5,6 +5,7 @@
 
 
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript">
 function areyousure()
 {
@@ -64,28 +65,32 @@ function get_holidays($m){
                 <div class="btn-group pull-right">
 
                     <?php if(check_user_role(144)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_event/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new') . ' ' .lang('calendar') . ' ' . lang('event');?></a>
+                    <?php } ?>  
+
+                    <?php if(check_user_role(144)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_event_type/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new') . ' ' . lang('event') . ' ' . lang('type');?></a>
                     <?php } ?>  
                     
-                    <?php if(check_user_role(300)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_fiscal_event/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> 
+                   <!--  <?php if(check_user_role(300)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_fiscal_event/'); ?>"><i class="fa fa-plus"></i> 
                             <?php echo lang('add') . ' ' . lang('fiscal_event');?>
                         </a>
-                    <?php } ?>	
+                    <?php } ?>	 -->
 
 
-                    <?php if(check_user_role(302)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_company_event/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> 
+                  <!--   <?php if(check_user_role(302)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_company_event/'); ?>"><i class="fa fa-plus"></i> 
                             <?php echo lang('add') . ' ' . lang('company_event');?>
                         </a>
-                    <?php } ?>  
+                    <?php } ?>   -->
                 
 
-                     <?php if(check_user_role(304)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_national_event/'); ?>"><i class="fa fa-plus"></i> <!-- <?php echo lang('add_new');?> --> 
+                     <!-- <?php if(check_user_role(304)==1){?>
+                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_national_event/'); ?>"><i class="fa fa-plus"></i> 
                             <?php echo lang('add') . ' ' . lang('national_event');?>
                         </a>
-                    <?php } ?>  
+                    <?php } ?>   -->
 
                 </div>
             </div>  
@@ -95,11 +100,11 @@ function get_holidays($m){
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"> <?php echo lang('holidays');?> Of <?php echo  date("Y");?></h3>                                    
+                    <h3 class="box-title"> <?php echo lang('events') . ' ' . lang('of') . ' ' . date("Y");?></h3>                                    
                 </div><!-- /.box-header -->
 				
      			<div class="row">
-     				<div class="col-md-3">
+     				<div class="col-md-2">
      					<ul class="nav nav-tabs">
 						 <?php $i=1; foreach($months as $new){ ?>
                             <li class="col-md-12 <?php echo (date("m")==$new->id)?'active':''?>">
@@ -174,7 +179,7 @@ function get_holidays($m){
                     </div> -->  <!-- aca termina la tabla de la derecha (verde)    -->
                      
                         <!-- THE CALENDAR -->
-                    <div id="calendar" class="col-md-7 pull-center" style="margin-bottom: 20px;"></div>
+                    <div id="calendar" class="col-md-9 pull-center" style="margin-bottom: 20px;" ></div>
 
      			</div>
      			<!-- END PAGE CONTENT-->
@@ -308,7 +313,7 @@ $(function() {
                     );
        $("#calendar").fullCalendar('changeView', 'agendaWeek');
 
-
+        // $("#calendar").animate({visibility: visible},"slow");
 
 	$('#example1').dataTable({
 	});

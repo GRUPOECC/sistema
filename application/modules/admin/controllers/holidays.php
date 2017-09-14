@@ -33,7 +33,7 @@ function sortByOrder($a, $b) {
 }
 
 	
-	function add(){
+	function add_event(){
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');
@@ -74,32 +74,43 @@ function sortByOrder($a, $b) {
 		}
 	}
 
-	function add_fiscal_event(){
+
+	function add_event_type(){
 		
-		$data['page_title'] = lang('add') . lang('fiscal_event');
-		$data['body'] = 'holidays/fiscalevent';
+		$data['page_title'] = lang('add') . ' ' . lang('event') . ' ' . lang('type');
+		$data['body'] = 'holidays/add_event_type';
 
 		$this->load->view('template/main', $data);
 		// $this->load->view('admin/holidays/fiscalevents');
 
-	}	
-		
-	function add_company_event(){
-		
-		$data['page_title'] = lang('add') . lang('fiscal_event');
-		$data['body'] = 'holidays/companyevent';
+	}		
 
-		$this->load->view('template/main', $data);
-		// $this->load->view('admin/holidays/fiscalevents');
-	}
-
-	function add_national_event(){
+	// function add_fiscal_event(){
 		
-		$data['page_title'] = lang('add') . lang('fiscal_event');
-		$data['body'] = 'holidays/nationalevent';
+	// 	$data['page_title'] = lang('add') . lang('fiscal_event');
+	// 	$data['body'] = 'holidays/fiscalevent';
 
-		$this->load->view('template/main', $data);
-		// $this->load->view('admin/holidays/fiscalevents');
-	}
+	// 	$this->load->view('template/main', $data);
+	// 	// $this->load->view('admin/holidays/fiscalevents');
+
+	// }	
+		
+	// function add_company_event(){
+		
+	// 	$data['page_title'] = lang('add') . lang('fiscal_event');
+	// 	$data['body'] = 'holidays/companyevent';
+
+	// 	$this->load->view('template/main', $data);
+	// 	// $this->load->view('admin/holidays/fiscalevents');
+	// }
+
+	// function add_national_event(){
+		
+	// 	$data['page_title'] = lang('add') . lang('fiscal_event');
+	// 	$data['body'] = 'holidays/nationalevent';
+
+	// 	$this->load->view('template/main', $data);
+	// 	// $this->load->view('admin/holidays/fiscalevents');
+	// }
 	
 }

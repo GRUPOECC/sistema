@@ -221,7 +221,7 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (141, 'edit', 139, 0, 'Edit', 0),
 (142, 'delete', 139, 0, 'Delete', 0),
 (143, 'holidays', 0, 0, 'Holidays', 0),
-(144, 'add', 143, 0, 'Add', 0),
+(144, 'add_event', 143, 0, 'Add Event', 0),
 (145, 'delete', 143, 0, 'Delete', 0),
 (146, 'notice', 0, 0, 'Notice', 0),
 (147, 'add', 146, 0, 'Add', 0),
@@ -280,12 +280,12 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (200, 'get_depts', 4, 1, 'get_depts', 1),
 (201, 'opciones', 4, 1, 'opciones', 1),
 
-(300, 'add_fiscal_event', 143, 0, 'Add Fiscal Event', 0),
-(301, 'delete_fiscal_event', 143, 0, 'Delete Fiscal Event', 0),
-(302, 'add_company_event', 143, 0, 'Add Company Event', 0),
-(303, 'delete_company_event', 143, 0, 'Delete Company Event', 0),
-(304, 'add_national_event', 143, 0, 'Add National Event', 0),
-(305, 'delete_national_event', 143, 0, 'Delete National Event', 0);
+(300, 'delete_event', 143, 0, 'Delete Event', 0),
+(301, 'add_event_type', 143, 0, 'Add Event Type', 0),
+(302, 'delete_event_type', 143, 0, 'Delete Event Type', 0),
+(303, 'modify_event', 143, 0, 'Modify Event', 0),
+(304, 'modify_event_type', 143, 0, 'Modify Event Type', 0);
+
 -- --------------------------------------------------------
 
 --
