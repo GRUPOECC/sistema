@@ -829,16 +829,6 @@ $(document).ready(function() {
         echo lang('calen_button_t'); 
         ?>');
 
-        // build the language selector's options
-        // $.each($.fullCalendar.langs, function(langCode) {
-        //     $('#lang-selector').append(
-        //         $('<option/>')
-        //             .attr('value', langCode)
-        //             .prop('selected', langCode == currentLangCode)
-        //             .text(langCode)
-        //     );
-        // });
-
         //Date for the calendar events (dummy data)
         var date = new Date();
         var d = date.getDate(),

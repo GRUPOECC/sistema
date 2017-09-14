@@ -1,3 +1,9 @@
+<link href="<?php echo base_url('assets/css/fullcalendar.css')?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('assets/css/fullcalendar.print.css')?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
+
+
+
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript">
 function areyousure()
@@ -14,13 +20,13 @@ function get_holidays($m){
 	$dates=array();
 	foreach($default_days as $new){
 	
-		$dates = array_merge($dates,$CI->db->query(
-		"select row+1  as DayOfMonth from   
-( SELECT @row := @row + 1 as row FROM
-  (select 0 union all select 1 union all select 3 union all select 4 union all select 5 union all select 6) t1,
-  (select 0 union all select 1 union all select 3 union all select 4 union all select 5 union all select 6) t2,
-  (SELECT @row:=-1) t3 limit 31 ) b where
-         DATE_ADD('".date('Y-'.$m.'-01')."', INTERVAL ROW DAY) between '".date('Y-'.$m.'-01')."' and '".date('Y-'.$m.'-t')."' and DAYOFWEEK(DATE_ADD('".date('Y-'.$m.'-01')."', INTERVAL ROW DAY))=".$new->id.";" /* $new->id is for number of days  */)->result_array());
+// 		$dates = array_merge($dates,$CI->db->query(
+// 		"select row+1  as DayOfMonth from   
+// ( SELECT @row := @row + 1 as row FROM
+//   (select 0 union all select 1 union all select 3 union all select 4 union all select 5 union all select 6) t1,
+//   (select 0 union all select 1 union all select 3 union all select 4 union all select 5 union all select 6) t2,
+//   (SELECT @row:=-1) t3 limit 31 ) b where
+//          DATE_ADD('".date('Y-'.$m.'-01')."', INTERVAL ROW DAY) between '".date('Y-'.$m.'-01')."' and '".date('Y-'.$m.'-t')."' and DAYOFWEEK(DATE_ADD('".date('Y-'.$m.'-01')."', INTERVAL ROW DAY))=".$new->id.";" /* $new->id is for number of days  */)->result_array());
 	}
 	$dates = array_merge($dates,$holidays);
 			
@@ -105,7 +111,8 @@ function get_holidays($m){
      					  
      					</ul>
      				</div>
-     				<div class="col-md-9">
+                    <!-- aca empieza la tabla de la derecha (verde) -->
+<!--      				<div class="col-md-9">
      					<div class="tab-content">
      					 <?php $y=1; foreach($months as $new){ ?>   
      					 <div id="<?php echo $y;?>" class="tab-pane <?php echo (date("m")==$new->id)?'active':''?>">
@@ -164,7 +171,11 @@ function get_holidays($m){
      						</div>
  				<?php $y++;} ?>		
      					</div>
-     				</div>
+                    </div> -->  <!-- aca termina la tabla de la derecha (verde)    -->
+                     
+                        <!-- THE CALENDAR -->
+                    <div id="calendar" class="col-md-7 pull-center" style="margin-bottom: 20px;"></div>
+
      			</div>
      			<!-- END PAGE CONTENT-->
 
@@ -228,8 +239,77 @@ function get_holidays($m){
 
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
+
+
+<!-- fullCalendar -->
+<script src="<?php echo base_url('assets/js/moment.min.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/fullcalendar.min.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/lang-all.js')?>" type="text/javascript"></script>
+
+
+
 <script type="text/javascript">
 $(function() {
+
+       var currentLangCode = '<?php echo lang('current_calen_lang'); ?>';
+       // var currentLangCode = 'es';
+       console.log('<?php 
+        echo lang('calen_button_t'); 
+        ?>');
+
+
+      //Date for the calendar events (dummy data)
+        var date = new Date();
+        var d = date.getDate(),
+                m = date.getMonth(),
+                y = date.getFullYear();
+
+
+        //Defining calendar properties once
+        let calendarProperties = {editable: true,
+                    droppable: true // this allows things to be dropped onto the calendar !!!
+
+                };
+
+                                    // CALENDAR OBJECTS
+
+        let calendar_all_events = {
+                     showAgendaButton: true,
+                columnFormat: { month: 'ddd', week: 'ddd d/M', day: 'dddd d/M' },
+                timeFormat: 'H:mm',
+                axisFormat: 'H:mm',
+                    header: {
+                        left: 'prev,next today',
+                        center: 'title',
+                        right: 'month,agendaWeek,agendaDay'
+                    },
+
+                    buttonText: {
+
+                        today: '<?php echo lang('calen_button_t'); ?>',
+                        month: '<?php echo lang('calen_button_m'); ?>',
+                        week: '<?php echo lang('calen_button_w'); ?>',
+                        day: '<?php echo lang('calen_button_d'); ?>'
+                    },
+                    lang: currentLangCode,
+                    allDayText: '<?php echo lang('calen_all_day'); ?>',
+                    // events:[
+                    
+                            
+                    //         ],
+                    calendarProperties
+                };
+
+
+
+
+       $('#calendar').fullCalendar(
+                    calendar_all_events
+                    );
+       $("#calendar").fullCalendar('changeView', 'agendaWeek');
+
+
+
 	$('#example1').dataTable({
 	});
 });
