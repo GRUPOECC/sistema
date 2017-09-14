@@ -30,8 +30,8 @@ class holiday_model extends CI_Model
 	
 	function get_holidays_by_month($m)
 	{
-					$this->db->where('MONTH(date)',date($m));
-					$this->db->select('date as Date,DAY(date) as DayOfMonth,name,id');
+					$this->db->where('MONTH(start_date)',date($m));
+					$this->db->select('start_date as Date,DAY(start_date) as DayOfMonth,name,id');
 			return $this->db->get('holidays')->result_array();
 	}
 	function get_default_holidays()

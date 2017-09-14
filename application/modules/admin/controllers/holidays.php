@@ -46,7 +46,7 @@ function sortByOrder($a, $b) {
 			if ($this->form_validation->run()==true)
             {
 				$save['name'] = $this->input->post('name');
-				$save['date'] = $this->input->post('date');
+				$save['start_date'] = $this->input->post('date');
 				$this->holiday_model->save($save);
                 $this->session->set_flashdata('message', lang('holiday saved'));
 				redirect('admin/holidays');
@@ -74,7 +74,7 @@ function sortByOrder($a, $b) {
 		}
 	}
 
-	function addfiscalevent(){
+	function add_fiscal_event(){
 		
 		$data['page_title'] = lang('add') . lang('fiscal_event');
 		$data['body'] = 'holidays/fiscalevent';
@@ -84,24 +84,22 @@ function sortByOrder($a, $b) {
 
 	}	
 		
-	function addcompanyevent(){
+	function add_company_event(){
 		
 		$data['page_title'] = lang('add') . lang('fiscal_event');
 		$data['body'] = 'holidays/companyevent';
 
 		$this->load->view('template/main', $data);
 		// $this->load->view('admin/holidays/fiscalevents');
-
 	}
 
-	function addnationalevent(){
+	function add_national_event(){
 		
 		$data['page_title'] = lang('add') . lang('fiscal_event');
 		$data['body'] = 'holidays/nationalevent';
 
 		$this->load->view('template/main', $data);
 		// $this->load->view('admin/holidays/fiscalevents');
-
 	}
 	
 }
