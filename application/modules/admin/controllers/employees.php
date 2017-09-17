@@ -101,14 +101,14 @@ class employees extends MX_Controller {
 				$save['user_role'] = $this->input->post('role_id');
 				$save['employee_id'] = $data['e_id'];
 			    $save['department_id'] = $this->input->post('department_id');
-				$save['designation_id'] = $this->input->post('designation_id');
-				$save['joining_date'] = $this->input->post('joining_date');
-				$save['joining_salary'] = $this->input->post('joining_salary');
+				//$save['designation_id'] = $this->input->post('designation_id');
+				//$save['joining_date'] = $this->input->post('joining_date');
+				//$save['joining_salary'] = $this->input->post('joining_salary');
 			   	$save['status'] = $this->input->post('status');
 			   	$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
 
 			   	$p_key = $this->employees_model->save($save);
-
+                //-------------------------------------------------------------------
 			   	//Asignacion de la empresas: 
 			   	//-------------------------------------------------------------------
 			   	session_start();
@@ -118,7 +118,24 @@ class employees extends MX_Controller {
 			   	$save_empresa['id_cargo'] = $value['role'];	
 			   	$save_empresa['nomina'] = $value['nomina'];	
 			   	$save_empresa['fecha_ingreso'] = $value['date'];	
+			   	$save_empresa['principal'] = $value['principal'];
 			   	$this->employees_model->saveempresa($p_key,$save_empresa);
+			   	    //----------------------------------------------------------- 
+                    // Registro el resto de las empresas (si es empresa padre):
+                    //----------------------------------------------------------- 
+			   	    foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
+			   	    	$save_empresa['id_empresa'] = $val->id;
+					   	$save_empresa['id_departamento'] = $value['departamento'];
+					   	$save_empresa['id_cargo'] = $value['role'];	
+					   	$save_empresa['nomina'] = $value['nomina'];	
+					   	$save_empresa['fecha_ingreso'] = $value['date'];	
+					   	$save_empresa['principal'] =0;
+			   	    	$this->employees_model->saveempresa($p_key,$save_empresa);
+			   	     	 	
+			   	    }    
+			   	    //----------------------------------------------------------
+
+
 			   	}   	
 			   	//-------------------------------------------------------------------
 			   	//Asignacion de cuentas Bancarias: 
@@ -340,6 +357,28 @@ class employees extends MX_Controller {
 	     redirect('admin/employees/empresas/'.$id);		
 	}
 
+    function addcompany2($id){
+		if ($id){
+		if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+        	$this->load->library('form_validation');
+			$this->form_validation->set_message('required', lang('custom_required'));
+			$this->form_validation->set_rules('role_id', 'lang:role_id', 'required');
+			$this->form_validation->set_rules('empresa_id', 'lang:empresa_id', 'required');
+			$this->form_validation->set_rules('department_id', 'lang:department_id', 'required');
+			if ($this->form_validation->run())
+              {
+				 $save_empresa['id_cargo']  = $this->input->post('role_id');
+				 $save_empresa['id_departamento']= $this->input->post('department_id');
+		         $save_empresa['id_empresa'] = $this->input->post('empresa_id');
+			     $save_empresa['id_usuario'] = $id;
+			     $this->employees_model->add_empresa($save_empresa);
+	          }
+	     }	
+	 }
+	     redirect('admin/employees/editcompanyuser/'.$id);		
+	}
+
 	function addcompanyuser(){
 		   	 $data['empresas'] = $this->employees_model->get_empresas_all();  
 		     $data['listaempresas'] = $this->employees_model->get_empresas();	 
@@ -348,9 +387,66 @@ class employees extends MX_Controller {
             $this->load->view('employees/addempresas',$data);	
 	}
 
+	function editcompanyuser($id){
+            $data['id'] = $id;  
+            $data['empresas'] = $this->employees_model->get_empresas_by_user($id);
+		    $data['listaempresas'] = $this->employees_model->get_empresas();	
+		    $data['roles'] = $this->user_role_model->get_all();
+		    $data['departments'] = $this->department_model->get_all(); 
+            $this->load->view('employees/editempresas',$data);	
+
+	}
+
 	function addbankuser(){
              $this->load->view('employees/addbancos',$data);
 	} 
+
+	function editbankuser($id){
+        $data['details'] = $this->employees_model->get_bank_details($id);
+		$data['id']	= $id;		
+		$this->load->view('employees/editbancos', $data);	
+
+	}
+
+	function addbankinterno($id){
+        $data['details'] = $this->employees_model->get_bank_details($id);
+		
+		$data['id']	= $id;
+		if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+			 
+			$this->load->library('form_validation');
+			$this->form_validation->set_message('required', lang('custom_required'));
+			
+			$this->form_validation->set_rules('account_holder_name', 'lang:account_holder_name', 'required');
+			$this->form_validation->set_rules('account_number', 'lang:account_number', 'required');
+			
+			$this->form_validation->set_rules('bank_name', 'lang:bank_name', 'required');
+			$this->form_validation->set_rules('ifsc_code', 'lang:ifsc_code', 'required');
+			$this->form_validation->set_rules('pan_number', 'lang:pan_number', 'required');
+			$this->form_validation->set_rules('branch', 'lang:branch', 'required');
+			
+			if ($this->form_validation->run()==true)
+            {
+				$save['user_id'] = $id;
+				$save['account_holder_name'] = $this->input->post('account_holder_name');
+				$save['account_number']		 = $this->input->post('account_number');
+				$save['bank_name'] 			 = $this->input->post('bank_name');
+				$save['ifsc'] 		 	 = $this->input->post('ifsc_code');
+				$save['pan']			 = $this->input->post('pan_number');
+				$save['branch'] 			= $this->input->post('branch');
+			
+				$this->employees_model->save_bank_details($save);
+				
+				$this->session->set_flashdata('message', lang('bank_details_saved'));
+				redirect('admin/employees/editbankuser/'.$id);
+			}
+			
+		}		
+		$this->load->view('employees/addbancosinterno', $data);	
+	}
+
+
 
 	function add_bank_details($id){
 		$data['details'] = $this->employees_model->get_bank_details($id);
@@ -493,7 +589,8 @@ class employees extends MX_Controller {
 		if($id){
 			$this->employees_model->delete_bank_details($id);
 			$this->session->set_flashdata('message',lang('bank_details_deleted'));
-			redirect('admin/employees/bank_details/'.$detail->user_id);
+			//redirect('admin/employees/bank_details/'.$detail->user_id);
+			header("Location:".$_SERVER['HTTP_REFERER']); 
 		}
 	}	
 	

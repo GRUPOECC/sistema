@@ -557,3 +557,5 @@ $lang['general_data'] = "General Data";
 $lang['access_data'] = "Access Data";
 $lang['extension'] = "Extension";
 $lang['nomina_code'] = "Nomina Code";
+$lang['position'] = "Position";
+$lang['main_company'] = "Main Company";

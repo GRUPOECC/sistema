@@ -145,6 +145,9 @@
                             </div>
                         </div>
 
+
+                        <!--
+
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-12">
@@ -174,6 +177,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 
                         </div>
 
@@ -542,7 +546,7 @@
 
    //Select2
   $(".chzn").select2({
-        maximumSelectionLength: 5,
+        maximumSelectionLength: 100000,
     placeholder: "Seleccione"
     })
 

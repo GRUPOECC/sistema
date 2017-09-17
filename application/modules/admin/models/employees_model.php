@@ -57,6 +57,11 @@ class employees_model extends CI_Model
 			return $this->db->get('empresas')->result();
 	}
 
+	function get_empresasHijos($id){
+		           $this->db->where('parent_id',$id);
+			return $this->db->get('empresas')->result();
+	}
+
 
 
     function get_empresas_by_user($id){

@@ -123,7 +123,7 @@
                                 </div>
                             </div>
                         </div>
-						
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-2">
@@ -138,6 +138,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 						
 						<div class="form-group">
                         	<div class="row">
@@ -150,7 +151,7 @@
                             </div>
                         </div>
 						
-						
+						<!--
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-2">
@@ -161,6 +162,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 						
                         <div class="form-group">
                               <div class="row">
@@ -194,6 +196,16 @@
 								</div>	
 								<div class="col-md-4">
 									<?php echo $employee->contact?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-2">
+                                    <label for="contact" style="clear:both;"><?php echo lang('extension')?></label>
+								</div>	
+								<div class="col-md-4">
+									<?php echo $employee->extension?>
                                 </div>
                             </div>
                         </div>

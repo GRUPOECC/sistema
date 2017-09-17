@@ -2,6 +2,7 @@
 <link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
             <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
             <link href="<?php echo base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet" type="text/css" />
+
             <!-- font Awesome -->
             <link href="<?php echo base_url('assets/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css" />
             <!-- Ionicons -->
@@ -49,24 +50,36 @@ function areyousure()
                                 <th><?php echo lang('serial_number')?></th>
 								<th><?php echo lang('company_name')?></th>
 								<th><?php echo lang('Dept')?></th>
-                                <th><?php echo lang('role')?></th>
+                                <th><?php echo lang('position')?></th>
+                                <th><?php echo lang('nomina_code')?></th>
+                                <th><?php echo lang('joining_date')?></th>
                                 <th><?php echo lang('action')?></th>	
                             </tr>
                         </thead>
                         
                         <?php if((isset($empresas))&&(isset($_SESSION['empresas']))):?>
                         <tbody>
-                            <?php $i=0;foreach ($empresas as $new){?>
+                            <?php
 
-                               <?php foreach ($_SESSION['empresas'] as $key => $value){
-                                        ?>
+                             $i=0;  foreach ($_SESSION['empresas'] as $key => $value){
+                               
+                              ?>
                                         
-                                    <?php if(($value['empresa']==$new->idempresa)){?>
                                 <tr class="gc_row">
                                     
                                     <td><?php echo $i?></td>
                                     <td>       
-                                    <?php echo ucwords($new->compania);
+                                    <?php 
+                                         foreach ($empresas as $new){
+                                            
+                                             if($value['empresa']==(string)$new->id){ 
+                                               echo ucwords($new->name);             
+                                               if ($value['principal']==1)
+                                                echo '<IMG SRC="'.base_url('assets/img/star.png').'" WIDTH=20 HEIGHT=20>'; 
+
+                                              }
+                                         }
+
                                           $i++; 
                                     ?>  
                                     </td>
@@ -78,12 +91,22 @@ function areyousure()
                                          }
                                      ?>  
                                     </td>
-									<td>
+									                   <td>
                                      <?php
                                         foreach($roles as $rol){
                                             if($rol->id==$value['role']) 
                                                 echo $rol->name;
                                          }
+                                     ?>  
+                                    </td>
+                                    <td>
+                                     <?php
+                                                echo $value['nomina'];
+                                     ?>  
+                                    </td>
+                                    <td>
+                                     <?php
+                                                echo $value['date'];
                                      ?>  
                                     </td>
 									
@@ -106,9 +129,9 @@ function areyousure()
                                      
 
                                 </tr>
-                                <?php }?>
-                                <?php }?>
-                                <?php  }?>
+                                <?php 
+
+                                }?>
                         </tbody>
                         <?php endif;?>
                     </table>
@@ -136,11 +159,30 @@ function areyousure()
                                 <div class="col-md-6">
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('company_name');?></label>
                                     <select name="empresa_id" class="form-control chzn" id="empresa_id">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
-                                        <?php foreach($listaempresas as $new) {
+                                        <option value="">-- <?php echo lang('select');?> <?php echo lang('company_name');?> ---</option>
+                                        <?php 
+                                         $listaempresas2 = $listaempresas;
+                                         $listaempresas3 = $listaempresas;                                          
+
+                                        foreach($listaempresas as $new) {
                                             $sel = "";
-                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-                                        }
+
+
+                                            if (($new->id == 0)){
+                                            echo '<option class="padre" selected="selected" value="'.$new->id.'" '.$sel.'> - '.$new->name.'</option>';
+                                                foreach($listaempresas2 as $new2) {
+                                                      if ($new2->parent_id == $new->id){
+                                                          echo '<option class="hijo" selected="selected" value="'.$new2->id.'" '.$sel.'> -- '.$new2->name.'</option>';
+                                                          foreach($listaempresas3 as $new3) {
+                                                                if ($new3->parent_id == $new2->id){
+                                                              echo '<option class="nieto" selected="selected" value="'.$new3->id.'" '.$sel.'> --- '.$new3->name.'</option>';
+                                                              }
+                                                          }
+                                                    }
+                                                }
+                                            }
+
+                                          }
                                         
                                         ?>
                                     </select>
@@ -152,9 +194,9 @@ function areyousure()
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-6">
-                                    <label for="email" style="clear:both;"><?php echo lang('user_role');?></label>
+                                    <label for="email" style="clear:both;"><?php echo lang('position');?></label>
                                     <select name="role_id" id="role_id" class="form-control chzn">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('position');?>---</option>
                                         <?php foreach($roles as $new) {
                                             $sel = "";
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
@@ -201,6 +243,26 @@ function areyousure()
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                     <?php
+                                        $existe = false; 
+                                       foreach ($_SESSION['empresas'] as $key => $value){ 
+                                               if (isset($value['principal'])){     
+                                                  if($value['principal']==1)
+                                                    $existe = true;  
+                                               }
+                                       }
+
+                                       if (!$existe){?>
+                                         <label for="name" style="clear:both;"><?php echo lang('main_company')?></label>
+                                         <input id="principal" name="principal" type="checkbox" class="form-control" value="1">
+                                     <?php } ?>
+                                </div>
+                            </div>
+                        </div>
+
                       <div class="box-footer">
                         <button type="submit" class="btn btn-primary"><?php echo lang('save')?></button>
                     </div>
@@ -233,10 +295,15 @@ function areyousure()
         $nuevo['departamento'] = $_POST['department_id'];
         $nuevo['nomina'] =  $_POST['nomina'];
         $nuevo['date'] =  $_POST['date'];
+        if($_POST['principal']=="1") 
+        $nuevo['principal'] = 1; 
+        else 
+        $nuevo['principal'] = 0; 
 
         array_push($empresas,$nuevo);
         $_SESSION['empresas'] = $empresas; 
-        header("Refresh:0");
+        //header("Refresh:0");
+        header("location: {$_SERVER['PHP_SELF']}");
      }
 
      if(isset($_POST['delete'])){
@@ -244,10 +311,8 @@ function areyousure()
        $eliminar = $_SESSION['empresas'];
        $posicion = (int)$_POST['elemento'];   
        
-
-       
-        unset($eliminar[$posicion]);
-        var_dump($eliminar);
+       unset($eliminar[$posicion]);
+       var_dump($eliminar);
 
        $_SESSION['empresas'] = $eliminar; 
        header("Refresh:0");
@@ -327,12 +392,9 @@ function agregarEmpresa(id){
 </script>
         <script src="<?php echo base_url('assets/js/jquery-ui-1.10.3.min.js')?>" type="text/javascript"></script>
          <script src="<?php echo base_url('assets/js/jquery.pickmeup.min.js')?>" type="text/javascript"></script>
-        <!-- Bootstrap -->
-        
-        <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>" type="text/javascript"></script>
-        
+        <!-- Bootstrap --> 
+        <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>" type="text/javascript"></script>    
         <!-- iCheck -->
-        <script src="<?php echo base_url('assets/js/plugins/iCheck/icheck.min.js')?>" type="text/javascript"></script>
-        
+        <script src="<?php echo base_url('assets/js/plugins/iCheck/icheck.min.js')?>" type="text/javascript"></script>    
         <!-- AdminLTE App -->
         <script src="<?php echo base_url('assets/js/AdminLTE/app.js')?>" type="text/javascript"></script>

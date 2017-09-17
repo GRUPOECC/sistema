@@ -374,7 +374,7 @@ $lang['department_deleted']				= "Departamento Eliminado";
 
 
 $lang['user_roles']      	 			= "Funciones de usuario";
-$lang['user_role']      	 			= "Función de usuario";
+$lang['user_role']      	 			= "Rol de usuario";
 $lang['user_role_saved']				= "Función de usuario guardadas";
 $lang['user_role_upated']				= "La función de usuario ha sido Actualizada";
 $lang['user_role_deleted']				= "La función de usuario ha sido Eliminada";
@@ -565,6 +565,9 @@ $lang['general_data'] = "Datos Generales";
 $lang['access_data'] = "Datos de Acceso";
 $lang['extension'] = "Extensión";
 $lang['nomina_code'] = "Codigo Nomina";
+$lang['position'] = "Cargo";
+$lang['main_company'] = "Empresa Principal";
+
 
 
 
