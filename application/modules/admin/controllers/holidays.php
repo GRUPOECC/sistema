@@ -40,13 +40,16 @@ function sortByOrder($a, $b) {
 			//$this->form_validation->set_rules('name', 'lang:name', 'required','please enter your name');
 			$this->form_validation->set_message('required', lang('custom_required'));
 			$this->form_validation->set_rules('name', 'lang:name', 'required');
-			$this->form_validation->set_rules('date', 'lang:date', 'required');
+			$this->form_validation->set_rules('start_date', 'lang:date', 'required');
 			$this->form_validation->set_message('required', '%s can not be blank');
 			 
 			if ($this->form_validation->run()==true)
             {
 				$save['name'] = $this->input->post('name');
-				$save['start_date'] = $this->input->post('date');
+				$save['start_date'] = $this->input->post('start_date');
+				$save['end_date'] = $this->input->post('end_date');
+				$save['description'] = $this->input->post('description'); 
+				$save['type'] = $this->input->post('event_type');
 				$this->holiday_model->save($save);
                 $this->session->set_flashdata('message', lang('holiday saved'));
 				redirect('admin/holidays');
@@ -56,6 +59,7 @@ function sortByOrder($a, $b) {
 		
 		$data['page_title'] = lang('add') . lang('holiday');
 		$data['body'] = 'holidays/add';
+		$data['event_types'] = $this->holiday_model->get_event_types();
 		
 		
 		$this->load->view('template/main', $data);	
@@ -76,6 +80,30 @@ function sortByOrder($a, $b) {
 
 
 	function add_event_type(){
+		if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+			$this->load->library('form_validation');
+			//$this->form_validation->set_rules('name', 'lang:name', 'required','please enter your name');
+			$this->form_validation->set_message('required', lang('custom_required'));
+			$this->form_validation->set_rules('name', 'lang:name', 'required');
+			// $this->form_validation->set_rules('start_date', 'lang:date', 'required');
+			// $this->form_validation->set_message('required', '%s can not be blank');
+			 
+			if ($this->form_validation->run()==true)
+            {
+				$save['name'] = $this->input->post('name');
+				$save['company'] = $this->input->post('company');
+				$save['periodic'] = $this->input->post('periodic');
+				$save['status'] = $this->input->post('status');
+
+				$this->holiday_model->save_event_type($save);
+                $this->session->set_flashdata('message', lang('event_type_added'));
+				redirect('admin/holidays');
+			}
+		}	
+
+
+
 		
 		$data['page_title'] = lang('add') . ' ' . lang('event') . ' ' . lang('type');
 		$data['body'] = 'holidays/add_event_type';

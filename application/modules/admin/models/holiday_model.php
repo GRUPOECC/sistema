@@ -22,6 +22,11 @@ class holiday_model extends CI_Model
 	{
 		$this->db->insert('holidays',$save);
 	}
+
+	function save_event_type($save)
+	{
+		$this->db->insert('event_type',$save);
+	}
 	
 	function get_all()
 	{
@@ -62,5 +67,9 @@ class holiday_model extends CI_Model
 	{
 			   $this->db->where('id',$id);
 		       $this->db->delete('holidays');
+	}
+
+	function get_event_types(){
+		return $this->db->get('event_type')->result();
 	}
 }

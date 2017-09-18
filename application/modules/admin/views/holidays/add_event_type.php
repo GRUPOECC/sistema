@@ -36,7 +36,7 @@
                     <h3 class="box-title">   <?php echo lang('add_new') . ' ' . lang('event') . ' ' . lang('type');?>    </h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <?php echo form_open_multipart('admin/holidays/add/'); ?>
+                <?php echo form_open_multipart('admin/holidays/add_event_type/'); ?>
                     <div class="box-body">
                         <div class="form-group">
                             <div class="row">
@@ -47,40 +47,19 @@
                             </div>
                         </div>
                         
-<!--                         <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <label for="description" style="clear:both;"> <?php echo lang('description');?></label>
-                                    <input id="description" type="text" name="date" value="" class="form-control">
-                                </div>
-                            </div>
-                        </div> -->
 
-<!--                             <div class="row">
-                                <div class="col-md-2">
-                                    <label for="date" style="clear:both;"> <?php echo lang('date');?></label>
-                                    <input type="text" name="date" value="" class="form-control datetimepicker">
-                                </div>
-                            </div> -->
-<!--                             <div class="row">
-                                <div class="col-md-4">
-                                    <label><?php echo lang('event') . ' ' . lang('type');?></label>                   
-                                     <select name="" id="event_type_filter" class="range-options form-control chzn">
-                                        <option value="0" selected>--None (Casual Event)--</option>
-                                                <option value="1">Tipo1</option>
-                                                <option value="2">Tipo2</option>
-                                                <option value="1">etc...</option>
-                                    </select>
-                                </div>
-                            </div> -->
                         <div class="form-group">
                             <div class="form-group">
 
                                     <div class="row">
                                         <div class="col-md-4">
 
-                                            <div class="col-md-6"><label>Evento de empresa?</label></div>
-                                            <div class="col-md-1"><input class="checkbox" id="company" type="checkbox" name="company_checkbox" value="0" /></div>
+                                            <div class="col-md-6">
+                                                <label for="company">Evento de empresa?</label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <input class="checkbox" id="company" type="checkbox" name="company" value="1" />
+                                            </div>
 
 
                                         </div>
@@ -90,19 +69,25 @@
                                     <div class="row">
                                         <div class="col-md-3">
 
-                                            <div class="col-md-8"><label for="repeat" class="margin-right">   <?php echo lang('repeat') . ' ' . lang('date');?>   </label></div>
-                                            <div class="col-md-1"><input class="checkbox" id="repeat" type="checkbox" name="repeat" value="" /></div>
+                                            <div class="col-md-8">
+                                                <label for="repeat" class="margin-right">   
+                                                    <?php echo lang('repeat') . ' ' . lang('date');?>   
+                                                </label>
+                                            </div>
+                                            <div class="col-md-1">
+                                                <input class="checkbox" id="repeat" type="checkbox" name="repeat" value="" />
+                                            </div>
                                         </div>
                                     </div>
                             </div> 
                             <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <select disabled name="" id="periodic" class="range-options form-control chzn">
-                                                <option value="" selected disabled hidden>--Select Range--</option>
-                                                        <option value="1">Semanal</option>
-                                                        <option value="2">Mensual</option>
-                                                        <option value="1">Anual</option>
+                                            <select class="form-control" disabled name="periodic" id="periodic" class="range-options form-control chzn">
+                                                <option value="N" disabled selected>--Select Range--</option>
+                                                        <option value="W"><?php echo lang('weekly');?></option>
+                                                        <option value="M"><?php echo lang('monthly');?></option>
+                                                        <option value="A"><?php echo lang('annually');?></option>
                                             </select>
                                         </div>
                                     </div>
@@ -111,8 +96,14 @@
                                     <div class="row">
                                         <div class="col-md-4">
                                           <!--   <label>Activar evento?</label><br> -->
-                                            <div class="col-md-6"><label>Activar Evento</label><input type="radio" name="status" value="1" checked><br></div>
-                                            <div class="col-md-6"><label>Desactivar Evento</label><input type="radio" name="status" value="0"></div>
+                                            <div class="col-md-6">
+                                                <label><?php echo lang('event') . ' ' . lang('enabled');?></label>
+                                                <input type="radio" name="status" value="1" checked><br>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label><?php echo lang('event') . ' ' . lang('inactive');?></label>
+                                                <input type="radio" name="status" value="0">
+                                            </div>
                                             
                                         </div>
                                     </div>
@@ -136,7 +127,7 @@
 
     //SWITCH FOR 'Select Time Range'
         // source:http://icheck.fronteed.com/#features  (see callbacks)
-        $('input').on('ifToggled', function(event){
+        $('#repeat').on('ifToggled', function(event){
 
           if ($('#periodic').prop("disabled") ) {
             $('#periodic').prop("disabled", false)

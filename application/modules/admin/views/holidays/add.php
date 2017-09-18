@@ -1,3 +1,6 @@
+<?php 
+        $company_event = false;
+ ?>
 <link href="<?php echo base_url('assets/css/fullcalendar.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/css/fullcalendar.print.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
@@ -36,15 +39,23 @@
                     <h3 class="box-title">   <?php echo lang('add_new') . ' ' .lang('calendar') . ' ' . lang('event');?>   </h3>
                 </div><!-- /.box-header -->
                 <!-- form start -->
-                <?php echo form_open_multipart('admin/holidays/add/'); ?>
+                <?php echo form_open_multipart('admin/holidays/add_event/'); ?>
                     <div class="box-body row">
                         <div class="box-body col-md-5">
 
                                             <div class="form-group">
                                                 <div class="row">
                                                         <div class="col-md-4">
-                                                            <label for="date" style="clear:both;"> <?php echo lang('date');?></label>
-                                                            <input type="text" name="date" value="" class="form-control datetimepicker">
+                                                            <label for="start_date" style="clear:both;"> <?php echo lang('start_date');?></label>
+                                                            <input type="text" name="start_date" value="" class="form-control datetimepicker" id="start_date">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <label for="end_date" style="clear:both;"> <?php echo lang('end_date');?></label>
+                                                                <input type="text" name="end_date" value="" class="form-control datetimepicker" id="end_date">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -61,7 +72,7 @@
                                                 <div class="row">
                                                     <div class="col-md-10">
                                                         <label for="description" style="clear:both;"> <?php echo lang('description');?></label>
-                                                        <input id="description" type="text" name="date" value="" class="form-control">
+                                                        <input type="text" name="description" value="" class="form-control" id="description">
                                                     </div>
                                                 </div>
                                             </div>
@@ -69,37 +80,26 @@
                                             <div class="form-group">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                        <label><?php echo lang('event') . ' ' . lang('type');?></label>                   
-                                                         <select name="" id="event_type_filter" class="range-options form-control chzn">
-                                                            <option value="0" selected>--None (Casual Event)--</option>
-                                                                    <option value="1">Tipo1</option>
-                                                                    <option value="2">Tipo2</option>
-                                                                    <option value="1">etc...</option>
+                                                        <label for="event_type"><?php echo lang('event') . ' ' . lang('type');?></label>                   
+                                                         <select name="event_type" id="event_type" class="range-options form-control chzn">
+                                                            <option value="0" >--None (Casual Event)--</option>
+
+                                                            <?php foreach ($event_types as $event): ?>
+                                                                <option value="<?php echo $event->id;?>" >
+                                                                    <?php  echo $event->name; ?>
+                                                                </option>
+                                                            <?php endforeach; ?>
+
                                                         </select>
                                                     </div>
                                                 </div>
-                    <!-- 
-                                                <div class="row">
-                                                    <div class="col-md-3">
-                    
-                                                        <label for="repeat" class="margin-right">   <?php echo lang('repeat') . ' ' . lang('date');?>   </label>
-                                                        <input class="checkbox" id="repeat" type="checkbox" name="repeat" value="" />
-                    
-                                                        <select disabled name="" id="periodic" class="range-options form-control chzn">
-                                                            <option value="" selected disabled hidden>--Select Time Range--</option>
-                                                                    <option value="1">Semanal</option>
-                                                                    <option value="2">Mensual</option>
-                                                                    <option value="1">Anual</option>
-                                                        </select>
-                    
-                                                    </div>
-                                                </div> -->
+
                                             </div>
                                             <div class="form-group">
                                                  <div class="row">
-                                                    <div class="col-md-4">
-                                                        <label>Company?????????</label>
-                                                        <select disabled name="" id="event_type_filter" class="range-options form-control chzn">
+                                                    <div class="col-md-8">
+                                                        <label for="company">Company or Branch Office</label>
+                                                        <select disabled name="" id="company" class="range-options form-control chzn">
                                                                 <option value="0" selected>--None (Casual Event)--</option>
                                                                         <option value="1">Empresa1</option>
                                                                         <option value="2">Empresa2</option>

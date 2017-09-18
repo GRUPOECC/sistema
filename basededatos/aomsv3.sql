@@ -3504,6 +3504,12 @@ ALTER TABLE `users`
 ALTER TABLE `user_role`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
+--
+-- AUTO_INCREMENT de la tabla `event_type`
+--
+ALTER TABLE `event_type`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 ALTER TABLE `holidays` ADD UNIQUE `type_index` (`type`);
 ALTER TABLE `holidays` ADD UNIQUE `comp_fk_index` (`company`);
 

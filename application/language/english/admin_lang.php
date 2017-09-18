@@ -540,11 +540,19 @@ $lang['current_calen_lang'] = "en";
 $lang['show_all_events'] = "Show all";
 
 //CALENDAR MODULE
+$lang['enabled'] = "Enabled";
 $lang['calendar'] = "Calendar";
 $lang['event'] = "Event";
 $lang['add_event'] = "Add Event";
 $lang['repeat'] = "Repeat";
+$lang['start_date'] = "Start Date";
+$lang['end_date'] = "End Date";
+$lang['event_type_added'] = "Event Type Added";
 
+//TIME RANGE FOR REPETITION
+$lang['weekly'] = "Weekly";
+$lang['monthly'] = "Monthly";
+$lang['annually'] = "Annually";
 //CALENDAR EVENTS
 $lang['fiscal_event'] = "Fiscal Event";
 $lang['company_event'] = "Company Event";
