@@ -66,7 +66,7 @@ class employees_model extends CI_Model
 
     function get_empresas_by_user($id){
     	    $this->db->where('id_usuario',$id);
-    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion,EU.id_departamento iddepto,D.name depto');
+    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion, EU.principal ppal,EU.fecha_ingreso fecha,EU.nomina nom,EU.id_departamento iddepto,D.name depto');
     	    $this->db->join('empresa_usuario EU', 'EU.id_empresa = E.id', 'LEFT');
     	    $this->db->join('user_role UR', 'UR.id = EU.id_cargo', 'LEFT');
     	    $this->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');
@@ -74,7 +74,7 @@ class employees_model extends CI_Model
 	}
 
 	function get_empresas_all(){
-    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion,EU.id_departamento iddepto,D.name depto');
+    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion, EU.principal ppal,EU.fecha_ingreso fecha,EU.nomina nom,EU.id_departamento iddepto,D.name depto');
     	    $this->db->join('empresa_usuario EU', 'EU.id_empresa = E.id', 'LEFT');
     	    $this->db->join('user_role UR', 'UR.id = EU.id_cargo', 'LEFT');
     	    $this->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');

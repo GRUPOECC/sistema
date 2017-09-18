@@ -249,8 +249,23 @@ class employees extends MX_Controller {
 			   	//-------------------------------------------------------------------
 			   	$save_empresa['id_empresa'] = $this->input->post('empresa_select');
 			   	$save_empresa['id_departamento'] = $save['department_id'];
-			   	$save_empresa['id_cargo'] = $save['user_role'];	   	
-			   	//-------------------------------------------------------------------
+			   	$save_empresa['id_cargo'] = $save['user_role'];
+			   	$save_empresa['nomina'] = $value['nomina'];	
+			   	$save_empresa['fecha_ingreso'] = $value['date'];	
+			   	$save_empresa['principal'] = $value['principal'];
+			   	//----------------------------------------------------------- 
+                    // Registro el resto de las empresas (si es empresa padre):
+                    //----------------------------------------------------------- 
+			   	    foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
+			   	    	$save_empresa['id_empresa'] = $val->id;
+					   	$save_empresa['id_departamento'] = $value['departamento'];
+					   	$save_empresa['id_cargo'] = $value['role'];	
+					   	$save_empresa['nomina'] = $value['nomina'];	
+					   	$save_empresa['fecha_ingreso'] = $value['date'];	
+					   	$save_empresa['principal'] =0;
+			   	    	$this->employees_model->saveempresa($p_key,$save_empresa);	   	     	 	
+			   	    }    
+			   	    //----------------------------------------------------------	   	
 			   
 			   if ($this->input->post('password') != '' || !$id)
 				{
@@ -350,6 +365,9 @@ class employees extends MX_Controller {
 				 $save_empresa['id_departamento']= $this->input->post('department_id');
 		         $save_empresa['id_empresa'] = $this->input->post('empresa_id');
 			     $save_empresa['id_usuario'] = $id;
+			     $save_empresa['nomina'] = $this->input->post('nomina');	
+			   	 $save_empresa['fecha_ingreso'] = $this->input->post('date');	
+			   	 $save_empresa['principal'] = $this->input->post('principal');
 			     $this->employees_model->add_empresa($save_empresa);
 	          }
 	     }	

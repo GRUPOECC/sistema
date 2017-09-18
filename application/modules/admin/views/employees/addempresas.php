@@ -369,6 +369,7 @@ function editarEmpresa(id, idempresa, iddepartamento, idcargo){
         var element3 = document.getElementById('role_id');
         element3.value = idcargo;
 
+
 }
 
 function agregarEmpresa(id){
@@ -386,6 +387,7 @@ function agregarEmpresa(id){
 
         var element3 = document.getElementById('role_id');
         element3.value = "";
+
 
 }
 

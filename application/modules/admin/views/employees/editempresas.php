@@ -71,7 +71,11 @@ function areyousure()
                             <?php $i=1;foreach ($empresas as $new){?>
                                 <tr class="gc_row">
                                     <td><?php echo $i?></td>
-                                    <td><?php echo ucwords($new->compania)?></td>
+                                    <td><?php echo ucwords($new->compania);
+                                          if ($new->ppal==1)
+                                                echo '<IMG SRC="'.base_url('assets/img/star.png').'" WIDTH=20 HEIGHT=20>'; 
+
+                                    ?></td>
                                     <td><?php echo $new->rol; ?></td>
 									<td><?php echo $new->depto;?>  </td>
 									
