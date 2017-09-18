@@ -36,100 +36,199 @@
             <!-- general form elements -->
             <div class="box box-primary">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('edit')?></h3>
+                   <!-- <h3 class="box-title"><?php echo lang('edit')?></h3>  -->
+                      <ul class="nav nav-tabs">
+                        <li id="tab1" class="active"><a onclick="changeTab(1)" href="javascript:void(0) "><?php echo lang('general_data')?></a></li>
+                        <li id="tab2" class=""><a onclick="changeTab(2)" href="javascript:void(0)"><?php echo lang('access_data')?></a></li>
+                        <li id="tab3" class=""><a onclick="changeTab(3)" href="javascript:void(0)"><?php echo lang('companies')?></a></li>
+                        <li id="tab4" class=""><a onclick="changeTab(4)" href="javascript:void(0)"><?php echo lang('bank_details')?></a></li>
+                        <!--
+                        <li id="tab5" class=""><a onclick="changeTab(5)" href="javascript:void(0)"><?php echo lang('documents')?></a></li>
+                        -->
+                      </ul>
+
+
                 </div><!-- /.box-header -->
                 <!-- form start -->
 				<h3 style="color:#FF0000"><?php echo validation_errors(); ?></h3>
 				<form method="post" enctype="multipart/form-data">
-                    <div class="box-body">
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
+                    <div class="box-body" style="height: 620px;">
+
+                    
+                        <div id="datos-generales">
+                           <div id="panel1" class="col-md-4">
+                                                    <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
                                     <label for="name" style="clear:both;"><?php echo lang('employee_id')?></label>
-									<input type="text" name="employee_id" value="<?php echo $employee->employee_id?>" class="form-control" disabled="disabled">
+                                    <input type="text" name="employee_id" value="<?php echo $employee->employee_id?>" class="form-control" disabled="disabled">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12">
                                     <label for="name" style="clear:both;"><?php echo lang('name')?></label>
-									<input type="text" name="name" value="<?php echo $employee->name?>" class="form-control">
+                                    <input type="text" name="name" value="<?php echo $employee->name?>" class="form-control">
                                 </div>
                             </div>
                         </div>
-						
-						 <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
-                                    <label for="name" style="clear:both;"><?php echo lang('profile')?> <?php echo lang('picture')?></label>
-									<input type="file" name="img" value="" class="form-control">
-                                </div>
-								 <div class="col-md-3">
-								 <?php 
-								 if(!empty($employee->image)){
-								 ?>
-								 <img src="<?php echo base_url('assets/uploads/images/'.$employee->image);?>" height="70" width="70" />
-								 <?php 
-								 	}
-								?>	
-								 </div>
-                            </div>
-                        </div>
-						
-						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
                                     <label for="gender" style="clear:both;"><?php echo lang('gender')?></label>
-									<input type="radio"  name="gender" <?php echo $chk = ($employee->gender=="Male") ? 'checked="checked"': ''; ?>value="Male" /> <?php echo lang('male')?>
-									<input type="radio" name="gender" <?php echo $chk = ($employee->gender=="Female") ? 'checked="checked"': ''; ?> value="Female" /> <?php echo lang('female')?>
+                                    <input type="radio"  name="gender" <?php echo $chk = ($employee->gender=="Male") ? 'checked="checked"': ''; ?>value="Male" /> <?php echo lang('male')?>
+                                    <input type="radio" name="gender" <?php echo $chk = ($employee->gender=="Female") ? 'checked="checked"': ''; ?> value="Female" /> <?php echo lang('female')?>
                                 </div>
                             </div>
                         </div>
                
-			   			 <div class="form-group">
+                         <div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="dob" style="clear:both;"><?php echo lang('date_of_birth')?></label>
-									<input type="text" name="dob" id="datepicker" value="<?php echo $employee->dob?>"class="form-control datepicker">
-									
+                                    <input type="text" name="dob" id="datepicker" value="<?php echo $employee->dob?>"class="form-control datepicker">
+                                    
                                 </div>
                             </div>
                         </div>
 
-						<div class="form-group">
+                         <div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
-                                    <label for="empresa_id" style="clear:both;"><?php echo lang('seecompany');?></label>
-                                    <select name="empresa_id[]" id="empresa_id[]" class="form-control chzn" multiple="multiple">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
-                                        <?php foreach($empresas as $new) {
-                                              
-                                            $sel = "";
-                                         if (strpos((string)$employee->empresa_id,'"'.(string)$new->id.'"')==true)
-                                                     $sel='selected="selected"';
-                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-                                        }
-                                         
-                                        ?>
-                                    </select>
-
+                                <div class="col-md-12">
+                                    <label for="contact" style="clear:both;"><?php echo lang('phone')?></label>
+                                    <input type="text" name="contact" value="<?php echo $employee->contact?>" class="form-control">
                                 </div>
                             </div>
                         </div>
+
+                         <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-12">
+                                    <label for="contact" style="clear:both;"><?php echo lang('extension')?></label>
+                                    <input type="text" name="extension" value="<?php echo $employee->extension?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        
+                         <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-12">
+                                    <label for="contact" style="clear:both;"><?php echo lang('address')?></label>
+                                    <textarea name="address"  class="form-control"><?php echo $employee->address?></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="empresa_id" style="clear:both;"><?php echo lang('company_name');?></label>
-                                    <select name="empresa_select" class="form-control chzn" id="empresa_select">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
-                                        <?php foreach($empresas as $new) {
-                                            $sel = "";
-                                            foreach($empresa as $elemento) {
-                                                if ($elemento->id_empresa==$new->id)
-                                                 $sel='selected="selected"';
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="name" style="clear:both;"><?php echo lang('status')?></label>
+                                    <input type="radio" name="status" value="1" <?php echo ($employee->status==1)?'checked="checked"':'';?>  /> <?php echo lang('active')?>
+                                    <input type="radio" name="status" value="0"  <?php echo ($employee->status==0)?'checked="checked"':'';?>  /> <?php echo lang('inactive')?>
+                                </div>
+                            </div>
+                        </div>
+
+                           </div>
+                           <div id="panel2" class="col-md-4">
+                                 <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="name" style="clear:both;"><?php echo lang('profile')?> <?php echo lang('picture')?></label>
+                                            <input type="file" name="img" value="" class="form-control">
+                                        </div>
+                                         <div class="col-md-3">
+                                         <?php 
+                                         if(!empty($employee->image)){
+                                         ?>
+                                         <img src="<?php echo base_url('assets/uploads/images/'.$employee->image);?>" height="70" width="70" />
+                                         <?php 
                                             }
+                                        ?>  
+                                         </div>
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
+
+                        <div id="datos-acceso">
+                           <div class="col-md-4">
+                                <div class="form-group">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="email" style="clear:both;"><?php echo lang('email')?></label>
+                                            <input type="text" name="email" value="<?php echo $employee->email?>" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="form-group">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="username" style="clear:both;"><?php echo lang('username')?></label>
+                                            <input type="text" name="username" value="<?php echo $employee->username?>" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="password" style="clear:both;"><?php echo lang('password')?></label>
+                                            <input type="password" name="password" value="" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                      <div class="row">
+                                        <div class="col-md-12">
+                                            <label for="password" style="clear:both;"><?php echo lang('confirm')?> <?php echo lang('password')?></label>
+                                            <input type="password" name="confirm" value="" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                         </div>
+
+                         <div class="col-md-4">
+                            <div class="form-group">
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="empresa_id" style="clear:both;"><?php echo lang('seecompany');?></label>
+                                        <select name="empresa_id[]" class="form-control chzn" multiple="multiple" >
+                                            <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
+                                            <?php 
+
+                                               foreach($empresas as $new) {
+                                                $sel ='';
+                                                if(strpos((string)$employee->empresa_id,'"'.(string)$new->id.'"')==true) 
+                                                    $sel = 'selected ="selected"';
+
+                                                echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                               }
+                                            
+                                            ?>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-12">
+                                    <label for="email" style="clear:both;"><?php echo lang('user_role');?></label>
+                                    <select name="role_id" class="form-control chzn">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
+                                        <?php foreach($roles as $new) {
+                                            $sel = "";
+                                            if($new->id==$employee->user_role) $sel='selected="selected"';
+                                           // foreach($empresa as $elemento) {
+                                            //    if ($elemento->id_cargo==$new->id)
+                                            //     $sel='selected="selected"';
+                                           // }
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
                                         }
                                         
@@ -137,159 +236,20 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
-							
-                        <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="email" style="clear:both;"><?php echo lang('user_role');?></label>
-									<select name="role_id" class="form-control chzn">
-										<option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
-										<?php foreach($roles as $new) {
-											$sel = "";
-											if($new->id==$employee->user_role) $sel='selected="selected"';
-                                           // foreach($empresa as $elemento) {
-                                            //    if ($elemento->id_cargo==$new->id)
-                                            //     $sel='selected="selected"';
-                                           // }
+                           </div>
 
 
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
-                                </div>
                             </div>
                         </div>
-						
-							 <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="department_id" style="clear:both;"><?php echo lang('departments');?></label>
-									<select name="department_id" class="form-control chzn" id="department_id">
-										<option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
-										<?php foreach($departments as $new) {
-											$sel = "";
-											if($new->id==$employee->department_id) $sel='selected="selected"';
-											/*foreach($empresa as $elemento) {
-                                                if ($elemento->id_departamento==$new->id)
-                                                 $sel='selected="selected"';
-                                            }*/
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
-                                </div>
-                            </div>
+
+                        <div id="datos-empresas">
+                           <iframe src="<?php echo site_url('admin/employees/editcompanyuser/'.$employee->id); ?>" style="border:none;" height="500" width="100%"></iframe>
                         </div>
-						
-						
-						 <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="designation_id" style="clear:both;"><?php echo lang('designation');?></label>
-									<select name="designation_id" class="form-control chzn" id="degi">
-										<option value="">--<?php echo lang('select');?> <?php echo lang('designation');?>---</option>
-										<?php foreach($designations as $new) {
-											$sel = "";
-											if($new->id==$employee->designation_id) $sel='selected="selected"';
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->designation.'</option>';
-										}
-										
-										?>
-									</select>
-                                </div>
-                            </div>
+
+                        <div id="datos-bancarios">
+                           <iframe src="<?php echo site_url('admin/employees/editbankuser/'.$employee->id); ?>" style="border:none;" height="500" width="100%"></iframe>
                         </div>
-						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
-                                    <label for="name" style="clear:both;"><?php echo lang('joining_date')?></label>
-									<input type="text" name="joining_date" value="<?php echo $employee->joining_date?>" class="form-control datepicker">
-                                </div>
-                            </div>
-                        </div>
-						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
-                                    <label for="name" style="clear:both;"><?php echo lang('joining_salary')?></label>
-									<input type="text" name="joining_salary" value="<?php echo $employee->joining_salary?>" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-					
-						
-						
-                        <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="email" style="clear:both;"><?php echo lang('email')?></label>
-									<input type="text" name="email" value="<?php echo $employee->email?>" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-						
-						<div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="username" style="clear:both;"><?php echo lang('username')?></label>
-									<input type="text" name="username" value="<?php echo $employee->username?>" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-						
-						<div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="password" style="clear:both;"><?php echo lang('password')?></label>
-									<input type="password" name="password" value="" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-						
-						<div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="password" style="clear:both;"><?php echo lang('confirm')?> <?php echo lang('password')?></label>
-									<input type="password" name="confirm" value="" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-						
-						
-						
-						 <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="contact" style="clear:both;"><?php echo lang('phone')?></label>
-									<input type="text" name="contact" value="<?php echo $employee->contact?>" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-						
-						 <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-4">
-                                    <label for="contact" style="clear:both;"><?php echo lang('address')?></label>
-									<textarea name="address"  class="form-control"><?php echo $employee->address?></textarea>
-                                </div>
-                            </div>
-                        </div>
-						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-4">
-                                    <label for="name" style="clear:both;"><?php echo lang('status')?></label>
-									<input type="radio" name="status" value="1" <?php echo ($employee->status==1)?'checked="checked"':'';?>  /> <?php echo lang('active')?>
-									<input type="radio" name="status" value="0"  <?php echo ($employee->status==0)?'checked="checked"':'';?>  /> <?php echo lang('inactive')?>
-                                </div>
-                            </div>
-                        </div>
-						
+	
 						<?php 
 					$CI = get_instance();
 						if($fields){
@@ -454,28 +414,98 @@
 <script src="<?php echo base_url('assets/js/select2.min.js')?>""></script>
 <script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
+   
+   function changeTab(tab){
+            if(tab==1){
+         document.getElementById("tab1").classList.add('active');
+         document.getElementById("tab2").classList.remove('active');
+         document.getElementById("tab3").classList.remove('active');
+         document.getElementById("tab4").classList.remove('active');
+         //document.getElementById("tab5").classList.remove('active');
+
+         document.getElementById("datos-acceso").style.display = "none";
+         document.getElementById("datos-generales").style.display = "";
+         document.getElementById("datos-empresas").style.display = "none";
+         document.getElementById("datos-bancarios").style.display = "none";
+
+      }
+            if(tab==2){
+         document.getElementById("tab1").classList.remove('active');
+         document.getElementById("tab2").classList.add('active');
+         document.getElementById("tab3").classList.remove('active');
+         document.getElementById("tab4").classList.remove('active');
+         //document.getElementById("tab5").classList.remove('active');
+
+         document.getElementById("datos-acceso").style.display = "";
+         document.getElementById("datos-generales").style.display = "none";
+         document.getElementById("datos-empresas").style.display = "none";
+         document.getElementById("datos-bancarios").style.display = "none";
+      }
+            if(tab==3){
+         document.getElementById("tab1").classList.remove('active');
+         document.getElementById("tab2").classList.remove('active');
+         document.getElementById("tab3").classList.add('active');
+         document.getElementById("tab4").classList.remove('active');
+         //document.getElementById("tab5").classList.remove('active');
+
+         document.getElementById("datos-acceso").style.display = "none";
+         document.getElementById("datos-generales").style.display = "none";
+         document.getElementById("datos-empresas").style.display = "";
+         document.getElementById("datos-bancarios").style.display = "none";
+      }
+            if(tab==4){
+         document.getElementById("tab1").classList.remove('active');
+         document.getElementById("tab2").classList.remove('active');
+         document.getElementById("tab3").classList.remove('active');
+         document.getElementById("tab4").classList.add('active');
+         //document.getElementById("tab5").classList.remove('active');
+          document.getElementById("datos-acceso").style.display = "none";
+         document.getElementById("datos-generales").style.display = "none";
+         document.getElementById("datos-empresas").style.display = "none";
+         document.getElementById("datos-bancarios").style.display = "";
+      }
+            if(tab==5){
+         document.getElementById("tab1").classList.remove('active');
+         document.getElementById("tab2").classList.remove('active');
+         document.getElementById("tab3").classList.remove('active');
+         //document.getElementById("tab4").classList.remove('active');
+         //document.getElementById("tab5").classList.add('active');
+      }
+
+
+   }
+    
+
+
+ $(document).ready(function(){
+      document.getElementById("datos-acceso").style.display = "none";
+      document.getElementById("datos-empresas").style.display = "none";
+      document.getElementById("datos-bancarios").style.display = "none";
+
+   });
+
    //Select2
   $(".chzn").select2({
-        maximumSelectionLength: 5,
+        maximumSelectionLength: 100000,
     placeholder: "Seleccione"
     })
-  
+
 $(document).on('change', '#department_id', function(){
  //alert(12);
- 	department_id = $('#department_id').val();
+    department_id = $('#department_id').val();
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
   $('#degi').html(ajax_load);
-	  
+      
   $.ajax({
     url: '<?php echo site_url('admin/employees/get_degi') ?>',
     type:'POST',
     data:{id:department_id},
-	
-	success:function(result){
+    
+    success:function(result){
       //alert(result);return false;
-	  $('#degi').html(result);
-	  
-	 }
+      $('#degi').html(result);
+      
+     }
   });
 });
 
@@ -498,4 +528,8 @@ $(document).on('change', '#department_id', function(){
  timepicker:false,
  format:'Y-m-d'
 });
+
+
+
+
 </script>

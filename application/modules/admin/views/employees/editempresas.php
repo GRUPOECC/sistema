@@ -17,13 +17,24 @@
             
             <!-- jQuery 2.0.2 -->
             <script src="<?php echo base_url('assets/js/jquery.js')?>"></script>
-<script type="text/javascript">
+            <script type="text/javascript">
 function areyousure()
 {
 	return confirm('Are You Sure You Want Delete This Employee');
 }
 </script>
-<?php session_start(); ?>
+<section class="content-header">
+    <!--
+        <h1>
+            <?php echo $page_title; ?>
+            <small><?php echo lang('list')?></small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard')?></a></li>
+            <li class="active"><?php echo lang('employees')?></li>
+        </ol>
+        -->
+</section>
 
 <section class="content">
   	  	 <div class="row" style="margin-bottom:10px;">
@@ -50,88 +61,39 @@ function areyousure()
                                 <th><?php echo lang('serial_number')?></th>
 								<th><?php echo lang('company_name')?></th>
 								<th><?php echo lang('Dept')?></th>
-                                <th><?php echo lang('position')?></th>
-                                <th><?php echo lang('nomina_code')?></th>
-                                <th><?php echo lang('joining_date')?></th>
+                                <th><?php echo lang('role')?></th>
                                 <th><?php echo lang('action')?></th>	
                             </tr>
                         </thead>
                         
-                        <?php if((isset($empresas))&&(isset($_SESSION['empresas']))):?>
+                        <?php if(isset($empresas)):?>
                         <tbody>
-                            <?php
-
-                             $i=0;  foreach ($_SESSION['empresas'] as $key => $value){
-                               
-                              ?>
-                                        
+                            <?php $i=1;foreach ($empresas as $new){?>
                                 <tr class="gc_row">
-                                    
                                     <td><?php echo $i?></td>
-                                    <td>       
-                                    <?php 
-                                         foreach ($empresas as $new){
-                                            
-                                             if($value['empresa']==(string)$new->id){ 
-                                               echo ucwords($new->name);             
-                                               if ($value['principal']==1)
+                                    <td><?php echo ucwords($new->compania);
+                                          if ($new->ppal==1)
                                                 echo '<IMG SRC="'.base_url('assets/img/star.png').'" WIDTH=20 HEIGHT=20>'; 
 
-                                              }
-                                         }
-
-                                          $i++; 
-                                    ?>  
-                                    </td>
-                                    <td>
-                                     <?php
-                                        foreach($departments as $dept){
-                                            if($dept->id==$value['departamento']) 
-                                                echo $dept->name;
-                                         }
-                                     ?>  
-                                    </td>
-									                   <td>
-                                     <?php
-                                        foreach($roles as $rol){
-                                            if($rol->id==$value['role']) 
-                                                echo $rol->name;
-                                         }
-                                     ?>  
-                                    </td>
-                                    <td>
-                                     <?php
-                                                echo $value['nomina'];
-                                     ?>  
-                                    </td>
-                                    <td>
-                                     <?php
-                                                echo $value['date'];
-                                     ?>  
-                                    </td>
+                                    ?></td>
+                                    <td><?php echo $new->rol; ?></td>
+									<td><?php echo $new->depto;?>  </td>
 									
                                     <td width="30%">
-                                        <div class="btn-group">	  
-                                         <form id="formulario2" action="" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+                                        <div class="btn-group">	  	
+										  <?php if(check_user_role(192)==1){?>	
+										  <a class="btn btn-primary" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" style="margin-left:12px;" onclick="editarEmpresa(<?php echo $new->idrelacion ?>,<?php echo $new->id ?>,<?php echo $new->iddepto ?>,<?php echo $new->idrol ?>)" href=""><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
+										  <?php } ?>
+                                         
+                                    
 										 <?php if(check_user_role(190)==1){?>	 
-                                         <input type="hidden" name="elemento" value="<?php echo $key; ?>">
-                                         <button type="submit" name="delete" value="" class="btn btn-danger"><i class="fa fa-trash"></i> <?php echo lang('delete')?></button>
-
-
+                                         <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/employees/deletecompany/'.$new->idrelacion); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete')?></a>
 										 <?php } ?>	
-                                         </form>
 
                                         </div>
                                     </td>
-                                     
-
-
-                                     
-
                                 </tr>
-                                <?php 
-
-                                }?>
+                                <?php $i++;}?>
                         </tbody>
                         <?php endif;?>
                     </table>
@@ -152,37 +114,18 @@ function areyousure()
           <h4 id="titulomodal" class="modal-title"><?php echo lang('add');?></h4>
         </div>
         <div class="modal-body">
-             
-                 <form id="formulario" action="" method="post" accept-charset="utf-8" enctype="multipart/form-data"> 
+           
+                 <form id="formulario" action="../addcompany2/<?php echo $id; ?>" method="post" accept-charset="utf-8" enctype="multipart/form-data"> 
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-6">
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('company_name');?></label>
                                     <select name="empresa_id" class="form-control chzn" id="empresa_id">
-                                        <option value="">-- <?php echo lang('select');?> <?php echo lang('company_name');?> ---</option>
-                                        <?php 
-                                         $listaempresas2 = $listaempresas;
-                                         $listaempresas3 = $listaempresas;                                          
-
-                                        foreach($listaempresas as $new) {
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
+                                        <?php foreach($listaempresas as $new) {
                                             $sel = "";
-
-
-                                            if (($new->id == 0)){
-                                            echo '<option class="padre" selected="selected" value="'.$new->id.'" '.$sel.'> - '.$new->name.'</option>';
-                                                foreach($listaempresas2 as $new2) {
-                                                      if ($new2->parent_id == $new->id){
-                                                          echo '<option class="hijo" selected="selected" value="'.$new2->id.'" '.$sel.'> -- '.$new2->name.'</option>';
-                                                          foreach($listaempresas3 as $new3) {
-                                                                if ($new3->parent_id == $new2->id){
-                                                              echo '<option class="nieto" selected="selected" value="'.$new3->id.'" '.$sel.'> --- '.$new3->name.'</option>';
-                                                              }
-                                                          }
-                                                    }
-                                                }
-                                            }
-
-                                          }
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
                                         
                                         ?>
                                     </select>
@@ -194,9 +137,9 @@ function areyousure()
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-6">
-                                    <label for="email" style="clear:both;"><?php echo lang('position');?></label>
+                                    <label for="email" style="clear:both;"><?php echo lang('user_role');?></label>
                                     <select name="role_id" id="role_id" class="form-control chzn">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('position');?>---</option>
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
                                         <?php foreach($roles as $new) {
                                             $sel = "";
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
@@ -225,44 +168,6 @@ function areyousure()
                             </div>
                         </div>
 
-                        <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-6">
-                                    <label for="email" style="clear:both;"><?php echo lang('nomina_code');?></label>
-                                    <input type="text" name="nomina">
-                                </div>
-                            </div>
-                        </div>
-
-                       <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="name" style="clear:both;"><?php echo lang('joining_date')?></label>
-                                    <input type="text" name="date" value="<?php echo set_value('joining_date')?>" class="form-control datepicker">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-6">
-                                     <?php
-                                        $existe = false; 
-                                       foreach ($_SESSION['empresas'] as $key => $value){ 
-                                               if (isset($value['principal'])){     
-                                                  if($value['principal']==1)
-                                                    $existe = true;  
-                                               }
-                                       }
-
-                                       if (!$existe){?>
-                                         <label for="name" style="clear:both;"><?php echo lang('main_company')?></label>
-                                         <input id="principal" name="principal" type="checkbox" class="form-control" value="1">
-                                     <?php } ?>
-                                </div>
-                            </div>
-                        </div>
-
                       <div class="box-footer">
                         <button type="submit" class="btn btn-primary"><?php echo lang('save')?></button>
                     </div>
@@ -279,78 +184,13 @@ function areyousure()
     </div>
   </div>
 
-  <!--Almacenamiento en memoria de los datos-->
-  <?php 
-     if(isset($_POST['empresa_id'])){
-       
-       $empresas = array();
-       
-       if(isset($_SESSION['empresas'])) {
-          $empresas = $_SESSION['empresas']; 
-       }
-
-        $nuevo = array(); 
-        $nuevo['empresa'] = $_POST['empresa_id'];
-        $nuevo['role'] = $_POST['role_id'];
-        $nuevo['departamento'] = $_POST['department_id'];
-        $nuevo['nomina'] =  $_POST['nomina'];
-        $nuevo['date'] =  $_POST['date'];
-        if($_POST['principal']=="1") 
-        $nuevo['principal'] = 1; 
-        else 
-        $nuevo['principal'] = 0; 
-
-        array_push($empresas,$nuevo);
-        $_SESSION['empresas'] = $empresas; 
-        //header("Refresh:0");
-        header("location: {$_SERVER['PHP_SELF']}");
-     }
-
-     if(isset($_POST['delete'])){
-
-       $eliminar = $_SESSION['empresas'];
-       $posicion = (int)$_POST['elemento'];   
-       
-       unset($eliminar[$posicion]);
-       var_dump($eliminar);
-
-       $_SESSION['empresas'] = $eliminar; 
-       header("Refresh:0");
-
-     }
-
-  ?>
-
- <!--Almacenamiento en memoria de los datos-->
-
 
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatables/dataTables.bootstrap.js')?>" type="text/javascript"></script>
-
 <script type="text/javascript">
 $(function() {
 	$('#example1').dataTable({
 	});
-});
-
- jQuery('.datepicker').datetimepicker({
- lang:'en',
- i18n:{
-  de:{
-   months:[
-    'Januar','Februar','März','April',
-    'Mai','Juni','Juli','August',
-    'September','Oktober','November','Dezember',
-   ],
-   dayOfWeek:[
-    "So.", "Mo", "Di", "Mi", 
-    "Do", "Fr", "Sa.",
-   ]
-  }
- },
- timepicker:false,
- format:'Y-m-d'
 });
 
 function editarEmpresa(id, idempresa, iddepartamento, idcargo){
@@ -369,7 +209,6 @@ function editarEmpresa(id, idempresa, iddepartamento, idcargo){
         var element3 = document.getElementById('role_id');
         element3.value = idcargo;
 
-
 }
 
 function agregarEmpresa(id){
@@ -377,7 +216,7 @@ function agregarEmpresa(id){
          titulo.innerHTML= "Añadir";
 
         var formulario = document.getElementById('formulario');
-        formulario.action = "";
+        formulario.action = "../addcompany2/"+id;
 
         var element = document.getElementById('empresa_id');
         element.value = "";
@@ -387,7 +226,6 @@ function agregarEmpresa(id){
 
         var element3 = document.getElementById('role_id');
         element3.value = "";
-
 
 }
 
