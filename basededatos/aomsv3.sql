@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 13-09-2017 a las 04:50:09
+-- Tiempo de generación: 18-09-2017 a las 00:51:18
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -279,13 +279,16 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (199, 'get_dept_categories', 4, 1, 'get_dept_categories', 1),
 (200, 'get_depts', 4, 1, 'get_depts', 1),
 (201, 'opciones', 4, 1, 'opciones', 1),
+(202, 'editcompanyuser', 37, 1, 'editcompanyuser', 1),
+(203, 'editbankuser', 37, 1, 'editbankuser', 1),
+(204, 'addcompany2', 37, 1, 'addcompany2', 1),
+(205, 'addbankinterno', 37, 1, 'addbankinterno', 1),
 
 (300, 'delete_event', 143, 0, 'Delete Event', 0),
 (301, 'add_event_type', 143, 0, 'Add Event Type', 0),
 (302, 'delete_event_type', 143, 0, 'Delete Event Type', 0),
 (303, 'modify_event', 143, 0, 'Modify Event', 0),
 (304, 'modify_event_type', 143, 0, 'Modify Event Type', 0);
-
 -- --------------------------------------------------------
 
 --
@@ -496,7 +499,9 @@ INSERT INTO `cases` (`id`, `title`, `case_no`, `client_id`, `location_id`, `cour
 (8, 'Probando', '34', 18, 11, 0, 0, '[\"6\"]', 0, '[\"1\"]', 'hfhfghfghf', '2017-09-29', '2017-11-30', 'fghfgh', '0.00', 0, 0, '', '56', 0, '0', '0', 0, '', '', 0, '', ''),
 (9, 'rtyrtytyrtyr', '89', 0, 14, 0, 0, '[\"6\"]', 0, 'false', 'dfgdfgdfgdf', '2017-09-22', '2017-11-23', 'fghfgh', '0.00', 0, 0, '', '39', 0, '0', '0', 0, '', '', 0, '', ''),
 (10, 'Rryryrt', '23', 0, 11, 0, 0, '[\"5\"]', 0, 'false', 'dfgdfgdfgdf', '2017-10-29', '2017-10-27', 'fghfgh', '0.00', 0, 0, '', '36', 0, '0', '0', 0, '', '', 0, '', ''),
-(11, 'ergergege', '346', 0, 20, 0, 0, '[\"5\"]', 0, 'false', 'ergdrgergeer', '2017-09-30', '2017-06-30', '0', '0.00', 0, 0, '', '36', 1, '20', '[\"5\"]', 0, '', '', 0, '', '');
+(11, 'ergergege', '346', 0, 20, 0, 0, '[\"5\"]', 0, 'false', 'ergdrgergeer', '2017-09-30', '2017-06-30', '0', '0.00', 0, 0, '', '36', 1, '20', '[\"5\"]', 0, '', '', 0, '', ''),
+(12, 'CAJA CHICA DEL MES 2017-09..', '567', 0, 2, 0, 0, '\"1\"', 0, 'false', 'fgg', '1999-11-27', '1999-11-27', '0', '0.00', 0, 0, '', '8', 14, '\"2\"', '[\"6\"]', 1, '2017-09..', '', 0, '', ''),
+(13, 'Ticket para solicitar REQUISICIÓN DE INSUMOS', '455', 0, 2, 0, 0, '\"5\"', 0, 'false', 'ghfghf', '0000-00-00', '0000-00-00', '0', '0.00', 0, 0, '', '0', 14, '\"2\"', '[\"4\"]', 1, '', '', 0, 'erroo', 'erter');
 
 -- --------------------------------------------------------
 
@@ -1869,29 +1874,41 @@ CREATE TABLE `empresa_usuario` (
   `id_departamento` int(11) NOT NULL,
   `id_cargo` int(11) NOT NULL,
   `nomina` varchar(255) NOT NULL,
-  `fecha_ingreso` varchar(255) NOT NULL
+  `fecha_ingreso` varchar(255) NOT NULL,
+  `principal` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `empresa_usuario`
 --
 
-INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departamento`, `id_cargo`, `nomina`, `fecha_ingreso`) VALUES
-(5, 15, 17, 6, 2, '', ''),
-(6, 15, 20, 5, 5, '', ''),
-(7, 15, 23, 3, 6, '', ''),
-(8, 15, 17, 1, 5, '', ''),
-(9, 15, 11, 1, 6, '', ''),
-(11, 14, 19, 4, 4, '', ''),
-(12, 15, 12, 3, 2, '', ''),
-(14, 19, 13, 6, 5, '', ''),
-(15, 14, 20, 3, 2, '', ''),
-(16, 4, 20, 3, 2, '', ''),
-(17, 20, 2, 4, 3, '', ''),
-(18, 21, 15, 6, 4, '4556', ''),
-(19, 22, 15, 5, 4, '5645', '2017-09-30'),
-(20, 23, 13, 3, 4, '5464', '2017-09-30'),
-(21, 23, 19, 3, 4, '675', '2017-09-30');
+INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departamento`, `id_cargo`, `nomina`, `fecha_ingreso`, `principal`) VALUES
+(5, 15, 17, 6, 2, '', '', 0),
+(6, 15, 20, 5, 5, '', '', 0),
+(7, 15, 23, 3, 6, '', '', 0),
+(8, 15, 17, 1, 5, '', '', 0),
+(9, 15, 11, 1, 6, '', '', 0),
+(11, 14, 19, 4, 2, '', '', 0),
+(12, 15, 12, 3, 2, '', '', 0),
+(14, 19, 13, 6, 5, '', '', 0),
+(15, 14, 20, 3, 2, '', '', 0),
+(16, 4, 20, 3, 2, '', '', 0),
+(17, 20, 2, 4, 3, '', '', 0),
+(18, 21, 15, 6, 4, '4556', '', 0),
+(19, 22, 15, 5, 4, '5645', '2017-09-30', 0),
+(20, 23, 13, 3, 4, '5464', '2017-09-30', 0),
+(21, 23, 19, 3, 4, '675', '2017-09-30', 0),
+(22, 25, 2, 6, 3, '23', '2017-09-30', 1),
+(23, 25, 11, 6, 3, '23', '2017-09-30', 1),
+(24, 25, 12, 6, 3, '23', '2017-09-30', 1),
+(25, 25, 13, 6, 3, '23', '2017-09-30', 1),
+(26, 25, 14, 6, 3, '23', '2017-09-30', 1),
+(27, 25, 15, 6, 3, '23', '2017-09-30', 1),
+(28, 25, 16, 6, 3, '23', '2017-09-30', 1),
+(29, 25, 17, 6, 3, '23', '2017-09-30', 1),
+(30, 25, 18, 6, 3, '23', '2017-09-30', 1),
+(31, 25, 19, 6, 3, '23', '2017-09-30', 1),
+(32, 25, 20, 6, 3, '23', '2017-09-30', 1);
 
 -- --------------------------------------------------------
 
@@ -1958,6 +1975,8 @@ INSERT INTO `files` (`id`, `name`, `location`, `id_task`, `id_comment`, `id_tick
 --
 -- Estructura de tabla para la tabla `holidays`
 --
+--           N O T E
+-- ACTION WITH ID 144 MODIFIED!
 
 CREATE TABLE `holidays` (
   `id` int(9) UNSIGNED NOT NULL,
@@ -1973,7 +1992,6 @@ CREATE TABLE `holidays` (
 --
 -- Volcado de datos para la tabla `holidays`
 --
-
 -- REMOVE THIS INSERT
 -- INSERT INTO `holidays` (`id`, `name`, `date`) VALUES
 -- (1, 'dasdas', '2017-08-30');
@@ -2758,9 +2776,6 @@ CREATE TABLE `users` (
   `client_case_alert` int(10) NOT NULL DEFAULT '1',
   `department_id` int(10) UNSIGNED NOT NULL,
   `empresa_id` varchar(1000) NOT NULL,
-  `designation_id` int(10) UNSIGNED NOT NULL,
-  `joining_date` date NOT NULL,
-  `joining_salary` varchar(255) NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -2768,29 +2783,30 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `extension`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `empresa_id`, `designation_id`, `joining_date`, `joining_salary`, `status`) VALUES
-(1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', 0, '', 1, 0, '', 1, 0, '0', 0, '0000-00-00', '', 1),
-(2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', 0, '', 2, 0, '', 1, 0, '0', 0, '0000-00-00', '', 1),
-(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', 0, '', 3, 0, '', 1, 1, '0', 0, '1985-07-08', '', 1),
-(4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', 0, '', 4, 0, '', 1, 5, '0', 13, '0000-00-00', '', 1),
-(5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', 0, '', 5, 0, '', 1, 1, '0', 0, '2017-06-25', '', 1),
-(6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', 0, '', 4, 0, '', 1, 1, '0', 7, '0000-00-00', '', 1),
-(7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', 0, '', 1, 0, '', 1, 3, '0', 0, '0000-00-00', '', 1),
-(8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', 0, '', 5, 0, '', 1, 1, '0', 0, '0000-00-00', '', 1),
-(9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', 0, '', 3, 0, '', 1, 1, '0', 0, '0000-00-00', '', 1),
-(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', 0, '', 5, 0, '', 1, 1, '0', 22, '0000-00-00', '', 1),
-(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 0, 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, '0', 0, '2017-08-09', '', 1),
-(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'garryjrbruno@hotmail.com', '04123352179', 0, 'Caricuao', 4, 0, '', 1, 4, '[\"0\"]', 57, '2017-09-29', '0', 1),
-(15, 0, 'Prueba 2', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-09-28', 'sdfhidfid@hotmail.com', '04123352179', 0, 'trrrt', 4, 0, '', 1, 4, '[\"2\",\"12\",\"18\",\"22\"]', 57, '2017-09-30', '0', 1),
-(16, 0, 'Prueba empresas', '', 'fhfgfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-12-23', 'bsdhfsds@hotmail.com', '04123352179', 0, 'caricuao', 4, 0, '', 1, 5, '0', 0, '2017-09-30', '0', 1),
-(17, 0, 'rgthgfghfghfghf', '', 'fgdffgdfgf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry387@gmail.com', '04123352179', 0, 'dfbfhfhfgh', 5, 0, '', 1, 5, '0', 0, '2017-12-30', '0', 1),
-(18, 0, 'ffgdfdfgdfgdfg', '', 'erfdfgdfgdf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'kfghsduiofsydfisd@gohfnjiof.com', '04123352179', 0, 'dfgdfgdfgf', 2, 0, '', 1, 5, '\"13\"', 42, '2017-09-23', '5', 1),
-(19, 0, 'Hola', '', 'hdfgidf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'fgodifughdi@joifhjfg.com', '04123352179', 0, 'xfgdfgdrfgdf', 5, 0, '', 1, 6, '[\"11\",\"18\",\"21\"]', 48, '2017-09-30', '0', 1),
-(20, 0, 'fghfghfghfgh', '', 'rtretert', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghfgfgfg@oifjghofg.com', '545645645', 545645645, 'dfdfgdfg', 3, 0, '', 1, 4, '[\"12\"]', 0, '2017-09-22', '456446', 1),
-(21, 0, 'hdfipugdfgf', '', '6456456', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ffghfghfg@fdoigjdfiog.com', '04123352179', 656, 'ghjghjgh', 4, 0, '', 1, 0, '[\"12\"]', 0, '2017-09-22', '64564545', 1),
-(22, 0, 'eryrtyrty', '', 'rtyrtyrty', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghghfg@gjhoifg.com', '3443534', 345, 'fghdfgdf', 4, 0, '', 1, 0, '[\"11\"]', 0, '2017-09-30', '445645', 1),
-(23, 0, 'dffgdfhfghf', '', 'rterteerg', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-02-28', 'hfghfghfg@nglhfgh.com', '64564545', 564, 'fghfghfg', 4, 0, '', 1, 0, '[\"11\"]', 0, '2017-09-30', '5645645', 1),
-(24, 0, 'fghfghghf', '', 'ry4545r', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'fgfghfghfg@fiuff.com', '6756546454', 4564, 'fhghfghfghfg', 0, 0, '', 1, 0, '[\"13\"]', 0, '2017-09-30', '54645645', 1);
+INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `extension`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `empresa_id`, `status`) VALUES
+(1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', 0, '', 1, 0, '', 1, 0, '0', 1),
+(2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', 0, '', 2, 0, '', 1, 0, '0', 1),
+(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', 0, '', 3, 0, '', 1, 1, '0', 1),
+(4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', 0, '', 4, 0, '', 1, 5, '0', 1),
+(5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', 0, '', 5, 0, '', 1, 1, '0', 1),
+(6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', 0, '', 4, 0, '', 1, 1, '0', 1),
+(7, 0, 'Edith Lopez', '', 'edilopsa25@gmail.com', '7c4a8d09ca3762af61e59520943dc26494f8941b', 'Female', '2017-03-25', 'edilopsa25@gmail.com', '04129065321', 0, '', 1, 0, '', 1, 3, '0', 1),
+(8, 0, 'Eglee Heredia', '', 'eglee.heredia@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '1968-01-16', 'eglee.heredia@benhur.com.ve', '04242705713', 0, '', 5, 0, '', 1, 1, '0', 1),
+(9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', 0, '', 3, 0, '', 1, 1, '0', 1),
+(10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', 0, '', 5, 0, '', 1, 1, '0', 1),
+(11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 0, 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, '0', 1),
+(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'garryjrbruno@hotmail.com', '04123352179', 0, 'Caricuao', 4, 0, '', 1, 4, '[\"0\"]', 1),
+(15, 0, 'Prueba 2', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-09-28', 'sdfhidfid@hotmail.com', '04123352179', 0, 'trrrt', 4, 0, '', 1, 4, '[\"2\",\"12\",\"18\",\"22\"]', 1),
+(16, 0, 'Prueba empresas', '', 'fhfgfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-12-23', 'bsdhfsds@hotmail.com', '04123352179', 0, 'caricuao', 4, 0, '', 1, 5, '0', 1),
+(17, 0, 'rgthgfghfghfghf', '', 'fgdffgdfgf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry387@gmail.com', '04123352179', 0, 'dfbfhfhfgh', 5, 0, '', 1, 5, '0', 1),
+(18, 0, 'ffgdfdfgdfgdfg', '', 'erfdfgdfgdf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'kfghsduiofsydfisd@gohfnjiof.com', '04123352179', 0, 'dfgdfgdfgf', 2, 0, '', 1, 5, '\"13\"', 1),
+(19, 0, 'Hola', '', 'hdfgidf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'fgodifughdi@joifhjfg.com', '04123352179', 0, 'xfgdfgdrfgdf', 5, 0, '', 1, 6, '[\"11\",\"18\",\"21\"]', 1),
+(20, 0, 'fghfghfghfgh', '', 'rtretert', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghfgfgfg@oifjghofg.com', '545645645', 545645645, 'dfdfgdfg', 3, 0, '', 1, 4, '[\"12\"]', 1),
+(21, 0, 'hdfipugdfgf', '', '6456456', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ffghfghfg@fdoigjdfiog.com', '04123352179', 656, 'ghjghjgh', 4, 0, '', 1, 0, '[\"12\"]', 1),
+(22, 0, 'eryrtyrty', '', 'rtyrtyrty', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghghfg@gjhoifg.com', '3443534', 345, 'fghdfgdf', 4, 0, '', 1, 0, '[\"11\"]', 1),
+(23, 0, 'dffgdfhfghf', '', 'rterteerg', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-02-28', 'hfghfghfg@nglhfgh.com', '64564545', 564, 'fghfghfg', 4, 0, '', 1, 0, '[\"11\"]', 1),
+(24, 0, 'fghfghghf', '', 'ry4545r', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'fgfghfghfg@fiuff.com', '6756546454', 4564, 'fhghfghfghfg', 0, 0, '', 1, 0, '[\"13\"]', 1),
+(25, 0, 'fghfghfghfg', '', 'jefiudfsd', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry38rere7@gmail.com', '45343453434', 344, 'gdfgdfgf@fghig.com', 4, 0, '', 1, 0, '[\"0\"]', 1);
 
 -- --------------------------------------------------------
 
@@ -2867,8 +2883,6 @@ CREATE TABLE `v_tareas_asignadas` (
 -- Estructura para la vista `v_calendario`
 --
 DROP TABLE IF EXISTS `v_calendario`;
-
--- CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS  select `t`.`id` AS `id`,`t`.`name` AS `name`,`t`.`due_date` AS `due_date`,'TASK' AS `TASK` from `tasks` `t` union select `td`.`id` AS `id`,`td`.`title` AS `title`,`td`.`date` AS `date`,'TO_DO' AS `TO_DO` from `to_do_list` `td` where (`td`.`date` >= sysdate()) union select `h`.`id` AS `id`,`h`.`name` AS `name`,`h`.`date` AS `date`,'HOLIDAY' AS `HOLIDAY` from `holidays` `h` where (`h`.`date` >= sysdate()) union select `ap`.`id` AS `id`,('CITA ' or (`ap`.`title` <> 0)) AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,'CITA' AS `CITA` from `appointments` `ap` where (`ap`.`date_time` >= sysdate()) ;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=
 `root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS 
@@ -3247,7 +3261,7 @@ ALTER TABLE `event_type`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=202;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3272,7 +3286,7 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT de la tabla `bank_details`
 --
 ALTER TABLE `bank_details`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 --
 -- AUTO_INCREMENT de la tabla `canned_messages`
 --
@@ -3282,7 +3296,7 @@ ALTER TABLE `canned_messages`
 -- AUTO_INCREMENT de la tabla `cases`
 --
 ALTER TABLE `cases`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 --
 -- AUTO_INCREMENT de la tabla `case_categories`
 --
@@ -3362,7 +3376,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3497,7 +3511,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
@@ -3512,6 +3526,7 @@ ALTER TABLE `event_type`
 
 ALTER TABLE `holidays` ADD UNIQUE `type_index` (`type`);
 ALTER TABLE `holidays` ADD UNIQUE `comp_fk_index` (`company`);
+
 
 --
 -- Restricciones para tablas volcadas

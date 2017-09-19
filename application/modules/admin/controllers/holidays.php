@@ -34,6 +34,10 @@ function sortByOrder($a, $b) {
 
 	
 	function add_event(){
+		//para agregar el evento necesito lo siguiente:
+		// 1. Saber cuales son las empresas que el usuario puede ver
+		// 2. Saber cuales son las empresas del usuario (ver tabla empresa_usuario)
+
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');
@@ -60,7 +64,10 @@ function sortByOrder($a, $b) {
 		$data['page_title'] = lang('add') . lang('holiday');
 		$data['body'] = 'holidays/add';
 		$data['event_types'] = $this->holiday_model->get_event_types();
-		
+		$data['empresas_visibles'] = $this->holiday_model->get_visible_companies();
+		$data['mis_empresas'] = $this->holiday_model->get_companies();
+		$data['sucursales'] = $this->holiday_model->get_branch_offices($data['mis_empresas']);
+// $data['sucursales'] = $this->holiday_model->get_companies();
 		
 		$this->load->view('template/main', $data);	
 	}	

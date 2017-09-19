@@ -5,6 +5,9 @@
 <link href="<?php echo base_url('assets/css/fullcalendar.print.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
 
+
+<link rel="stylesheet" href="<?php echo base_url('assets/css/select2.min.css')?>" />
+
 <link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
 <!-- Content Header (Page header) -->
 <style>
@@ -98,13 +101,45 @@
                                             <div class="form-group">
                                                  <div class="row">
                                                     <div class="col-md-8">
-                                                        <label for="company">Company or Branch Office</label>
+                                                        <!-- Lo que necesito poner aca son las empresas que el usuario puede ver: 
+                                                            -> $empresas_visibles
+                                                        y las que el posee: 
+                                                            -> $empresas_usuario -->
+
+
+                                                    <label for="visible_companies_selected">My Companies</label>
+
+                                                    <select name="visible_companies_selected[]" multiple="multiple" id="visible_companies_selected" class="form-control chzn">
+                                                        <?php foreach ($mis_empresas as $empresa) : ?>
+                                                                <option value="<?php echo $empresa->id ?>">
+                                                                    <?php echo $empresa->name; ?>
+                                                                </option>
+                                                        <?php endforeach; ?>
+                                                    </select>
+
+                                                    
+
+                                                <label for="visible_companies_selected">Other Companies I Can See</label>
+
+                                                    <select name="visible_companies_selected[]" multiple="multiple" id="visible_companies_selected" class="form-control chzn">
+                                                        <?php foreach ($empresas_visibles as $empresa) : ?>
+                                                                <option value="<?php echo $empresa->id ?>">
+                                                                    <?php echo $empresa->name; ?>
+                                                                </option>
+                                                        <?php endforeach; ?>
+                                                    </select>
+
+                                                    <!-- <?php 
+                                                        echo var_dump($sucursales);
+                                                     ?> -->
+
+                                                       <!--  <label for="company">Company or Branch Office</label>
                                                         <select disabled name="" id="company" class="range-options form-control chzn">
                                                                 <option value="0" selected>--None (Casual Event)--</option>
                                                                         <option value="1">Empresa1</option>
                                                                         <option value="2">Empresa2</option>
                                                                         <option value="1">etc...</option>
-                                                            </select>
+                                                            </select> -->
                                                     </div>
                                                 </div>
                                             </div>
@@ -131,6 +166,10 @@
 </section>  
 <script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
 
+
+<script src="<?php echo base_url('assets/js/select2.min.js')?>""></script>
+
+
 <!-- fullCalendar -->
 <script src="<?php echo base_url('assets/js/moment.min.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/fullcalendar.min.js')?>" type="text/javascript"></script>
@@ -140,6 +179,15 @@
 <script type="text/javascript">
  $(function() {
 
+    let js_array =<?php echo json_encode($sucursales);?>;
+    
+
+    console.log(js_array);
+   //Select2
+  $(".chzn").select2({
+        maximumSelectionLength: 100000,
+    placeholder: "Seleccione"
+    })
 
 
 
