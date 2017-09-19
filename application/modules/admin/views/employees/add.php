@@ -56,7 +56,11 @@
 
 
                      <div id="datos-generales">
-                  
+                     <div>
+                      (*) Campo Obligatorio 
+                      </br>
+                      </br>
+                     </div>
 
                     <div id="panel1" class="col-md-4">
                         <div class="form-group">
@@ -70,7 +74,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-12">
-                                    <label for="name" style="clear:both;"><?php echo lang('name')?></label>
+                                    <label for="name" style="clear:both;"><?php echo lang('name')?> (*)</label>
 									<input type="text" name="name" value="<?php echo set_value('name')?>" class="form-control">
                                 </div>
                             </div>
@@ -79,7 +83,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-12">
-                                    <label for="gender" style="clear:both;"><?php echo lang('gender')?></label>
+                                    <label for="gender" style="clear:both;"><?php echo lang('gender')?> (*)</label>
 									<input type="radio" name="gender" value="Male" /> <?php echo lang('male')?>
 									<input type="radio" name="gender" value="Female" /> <?php echo lang('female')?>
                                 </div>
@@ -100,7 +104,7 @@
 						 <div class="form-group">
                               <div class="row">
                                 <div class="col-md-12">
-                                    <label for="contact" style="clear:both;"><?php echo lang('phone')?></label>
+                                    <label for="contact" style="clear:both;"><?php echo lang('phone')?> (*)</label>
 									<input type="text" name="contact" value="<?php echo set_value('contact')?>" class="form-control">
                                 </div>
                             </div>
@@ -318,7 +322,7 @@
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-12">
-                                    <label for="email" style="clear:both;"><?php echo lang('email')?></label>
+                                    <label for="email" style="clear:both;"><?php echo lang('email')?> (*)</label>
                                     <input type="text" name="email" value="<?php echo set_value('email')?>" class="form-control">
                                 </div>
                             </div>
@@ -328,7 +332,7 @@
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-12">
-                                    <label for="username" style="clear:both;"><?php echo lang('username')?></label>
+                                    <label for="username" style="clear:both;"><?php echo lang('username')?> (*)</label>
                                     <input type="text" name="username" value="<?php echo set_value('username')?>" class="form-control">
                                 </div>
                             </div>
@@ -359,11 +363,11 @@
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('seecompany');?></label>
-                                    <select name="empresa_id[]" class="form-control chzn" multiple="multiple" >
+                                    <select id="empresa_id" name="empresa_id[]" class="form-control chzn" multiple="multiple" >
                                         <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
                                         <?php foreach($empresas as $new) {
-                                            $sel = "";
-                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                            $sel = '';
+                                            echo '<option class="empresa" value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
                                         }
                                         
                                         ?>

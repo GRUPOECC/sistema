@@ -56,6 +56,11 @@
 
                     
                         <div id="datos-generales">
+                      <div>
+                      (*) Campo Obligatorio 
+                      </br>
+                      </br>
+                     </div>
                            <div id="panel1" class="col-md-4">
                                                     <div class="form-group">
                             <div class="row">
@@ -68,7 +73,7 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <label for="name" style="clear:both;"><?php echo lang('name')?></label>
+                                    <label for="name" style="clear:both;"><?php echo lang('name')?> (*)</label>
                                     <input type="text" name="name" value="<?php echo $employee->name?>" class="form-control">
                                 </div>
                             </div>
@@ -77,7 +82,7 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <label for="gender" style="clear:both;"><?php echo lang('gender')?></label>
+                                    <label for="gender" style="clear:both;"><?php echo lang('gender')?> (*)</label>
                                     <input type="radio"  name="gender" <?php echo $chk = ($employee->gender=="Male") ? 'checked="checked"': ''; ?>value="Male" /> <?php echo lang('male')?>
                                     <input type="radio" name="gender" <?php echo $chk = ($employee->gender=="Female") ? 'checked="checked"': ''; ?> value="Female" /> <?php echo lang('female')?>
                                 </div>
@@ -97,7 +102,7 @@
                          <div class="form-group">
                               <div class="row">
                                 <div class="col-md-12">
-                                    <label for="contact" style="clear:both;"><?php echo lang('phone')?></label>
+                                    <label for="contact" style="clear:both;"><?php echo lang('phone')?> (*)</label>
                                     <input type="text" name="contact" value="<?php echo $employee->contact?>" class="form-control">
                                 </div>
                             </div>
@@ -158,7 +163,7 @@
                                 <div class="form-group">
                                       <div class="row">
                                         <div class="col-md-12">
-                                            <label for="email" style="clear:both;"><?php echo lang('email')?></label>
+                                            <label for="email" style="clear:both;"><?php echo lang('email')?> (*)</label>
                                             <input type="text" name="email" value="<?php echo $employee->email?>" class="form-control">
                                         </div>
                                     </div>
@@ -168,7 +173,7 @@
                                 <div class="form-group">
                                       <div class="row">
                                         <div class="col-md-12">
-                                            <label for="username" style="clear:both;"><?php echo lang('username')?></label>
+                                            <label for="username" style="clear:both;"><?php echo lang('username')?> (*)</label>
                                             <input type="text" name="username" value="<?php echo $employee->username?>" class="form-control">
                                         </div>
                                     </div>
@@ -207,7 +212,7 @@
                                                 if(strpos((string)$employee->empresa_id,'"'.(string)$new->id.'"')==true) 
                                                     $sel = 'selected ="selected"';
 
-                                                echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                                echo '<option data-padre="'.$new->parent_id.'" value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
                                                }
                                             
                                             ?>
@@ -282,7 +287,7 @@
 										foreach($values as $key=>$val) {
 											$sel='';
 											if($val==$result->reply) $sel = "selected='selected'";
-											echo '<option value="'.$val.'" '.$sel.'>'.$val.'</option>';
+											echo '<option  value="'.$val.'" '.$sel.'>'.$val.'</option>';
 										}
 							?>			
 							</select>	

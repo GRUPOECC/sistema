@@ -105,8 +105,12 @@ class employees extends MX_Controller {
 				//$save['joining_date'] = $this->input->post('joining_date');
 				//$save['joining_salary'] = $this->input->post('joining_salary');
 			   	$save['status'] = $this->input->post('status');
-			   	$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
-
+			   	$listado = $this->input->post('empresa_id');
+				foreach ($this->employees_model->get_empresasHijos2($this->input->post('empresa_id')) as $val) {
+					   
+			   	        array_push($listado,(string)$val->id); 	 	
+			   	    }  
+			    $save['empresa_id'] = json_encode($listado);	  
 			   	$p_key = $this->employees_model->save($save);
                 //-------------------------------------------------------------------
 			   	//Asignacion de la empresas: 
@@ -123,7 +127,7 @@ class employees extends MX_Controller {
 			   	    //----------------------------------------------------------- 
                     // Registro el resto de las empresas (si es empresa padre):
                     //----------------------------------------------------------- 
-			   	    foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
+			   	    /*foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
 			   	    	$save_empresa['id_empresa'] = $val->id;
 					   	$save_empresa['id_departamento'] = $value['departamento'];
 					   	$save_empresa['id_cargo'] = $value['role'];	
@@ -132,10 +136,9 @@ class employees extends MX_Controller {
 					   	$save_empresa['principal'] =0;
 			   	    	$this->employees_model->saveempresa($p_key,$save_empresa);
 			   	     	 	
-			   	    }    
+			   	    }  
+			   	    */  
 			   	    //----------------------------------------------------------
-
-
 			   	}   	
 			   	//-------------------------------------------------------------------
 			   	//Asignacion de cuentas Bancarias: 
@@ -239,11 +242,16 @@ class employees extends MX_Controller {
 				$save['address'] = $this->input->post('address');
 				$save['user_role'] = $this->input->post('role_id');
 				$save['department_id'] = $this->input->post('department_id');
-				$save['designation_id'] = $this->input->post('designation_id');
-				$save['joining_date'] = $this->input->post('joining_date');
-				$save['joining_salary'] = $this->input->post('joining_salary');
+				//$save['designation_id'] = $this->input->post('designation_id');
+				//$save['joining_date'] = $this->input->post('joining_date');
+				//$save['joining_salary'] = $this->input->post('joining_salary');
 				$save['status'] = $this->input->post('status');
-				$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
+				$listado = $this->input->post('empresa_id');
+				foreach ($this->employees_model->get_empresasHijos2($this->input->post('empresa_id')) as $val) {
+					   
+			   	        array_push($listado,(string)$val->id); 	 	
+			   	    }  
+			    $save['empresa_id'] = json_encode($listado);	
 
 			    //Asignacion de la empresas: (Suspendido)
 			   	//-------------------------------------------------------------------
@@ -256,7 +264,7 @@ class employees extends MX_Controller {
 			   	//----------------------------------------------------------- 
                     // Registro el resto de las empresas (si es empresa padre):
                     //----------------------------------------------------------- 
-			   	    foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
+			   	    /*foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
 			   	    	$save_empresa['id_empresa'] = $val->id;
 					   	$save_empresa['id_departamento'] = $value['departamento'];
 					   	$save_empresa['id_cargo'] = $value['role'];	
@@ -264,7 +272,8 @@ class employees extends MX_Controller {
 					   	$save_empresa['fecha_ingreso'] = $value['date'];	
 					   	$save_empresa['principal'] =0;
 			   	    	$this->employees_model->saveempresa($p_key,$save_empresa);	   	     	 	
-			   	    }    
+			   	    }   
+			   	    */ 
 			   	    //----------------------------------------------------------	   	
 			   
 			   if ($this->input->post('password') != '' || !$id)
