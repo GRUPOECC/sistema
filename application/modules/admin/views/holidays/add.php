@@ -117,7 +117,28 @@
                                                         <?php endforeach; ?>
                                                     </select>
 
-                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                <div class="form-group">
+                                     <div class="row">
+                                        <div class="col-md-8">
+
+
+                                                        <label for="branches">Branch Offices</label>
+                                                        <select name="" id="branches" class="form-control chzn" multiple="multiple">
+                                                               
+                                                            </select>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                                <div class="form-group">
+                                     <div class="row">
+                                        <div class="col-md-8">
 
                                                 <label for="visible_companies_selected">Other Companies I Can See</label>
 
@@ -129,20 +150,12 @@
                                                         <?php endforeach; ?>
                                                     </select>
 
-                                                    <!-- <?php 
-                                                        echo var_dump($sucursales);
-                                                     ?> -->
+                                        </div>
+                                    </div>
+                                </div>                                                    
 
-                                                       <!--  <label for="company">Company or Branch Office</label>
-                                                        <select disabled name="" id="company" class="range-options form-control chzn">
-                                                                <option value="0" selected>--None (Casual Event)--</option>
-                                                                        <option value="1">Empresa1</option>
-                                                                        <option value="2">Empresa2</option>
-                                                                        <option value="1">etc...</option>
-                                                            </select> -->
-                                                    </div>
-                                                </div>
-                                            </div>
+                         
+
                                             
                                             
                                         </div><!-- /.box-body -->
@@ -177,12 +190,70 @@
 
 
 <script type="text/javascript">
+
+
  $(function() {
 
-    let js_array =<?php echo json_encode($sucursales);?>;
-    
 
-    console.log(js_array);
+    function deepClone(initalObj) {
+        var obj = {};
+        try {
+            obj = JSON.parse(JSON.stringify(initalObj));
+        }
+        catch(err){}
+        return obj;
+    }
+
+    //recibo un objeto con arrays, lo convierto a objeto de objetos para manipulacion con js
+    const sucursales_js =<?php echo json_encode($sucursales, JSON_FORCE_OBJECT);?>;
+
+    $("#visible_companies_selected").change(function(){
+        let sucursales_copy = deepClone(sucursales_js);
+
+        let selected_branches = [] ;
+        //GET SELECTED COMPANIES
+        $( "#visible_companies_selected option:selected" ).each(function() {
+             selected_branches.push($(this).val());
+        });
+
+        console.log('------------------------------------')
+        for (let prop in sucursales_copy){
+            //recorro las propiedades del objeto!
+            // las borro si no son las seleccionadas
+            if (!selected_branches.includes(prop)) {    delete sucursales_copy[prop]    }
+        }
+        console.log(sucursales_copy);
+        console.log('------------------------------------')
+
+        //ADD ALL THE BRANCH OFFICES TO THE SELECT
+        $('#branches').empty();
+
+        for (let prop in sucursales_copy){
+        $.each(sucursales_copy[prop], function(key, value) {
+                 $('#branches')
+                     .append($("<option></option>")
+                     .attr("value",key.id)
+                     .text(value.name));
+            });
+        }
+
+    });
+
+
+
+
+
+
+    for (let sucursal in sucursales_js) {
+        console.log(sucursal);
+    }
+    
+    console.log(sucursales_js);
+
+
+
+
+
    //Select2
   $(".chzn").select2({
         maximumSelectionLength: 100000,
@@ -195,9 +266,6 @@
 
        var currentLangCode = '<?php echo lang('current_calen_lang'); ?>';
        // var currentLangCode = 'es';
-       console.log('<?php 
-        echo lang('calen_button_t'); 
-        ?>');
 
 
       //Date for the calendar events (dummy data)
