@@ -48,6 +48,25 @@
                                 </div>
                             </div>
                         </div>
+
+                         <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('subdepartment');?></label>
+                                    <select name="subdepartment" class="form-control chzn">
+                                    <option value="0">--<?php echo lang('none');?>---</option>
+                                        <?php foreach($departments as $new) {
+                                            $sel = "";
+                                            if ($department->parent_id==$new->id)
+                                                $sel= 'selected="selected"'; 
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                        }
+                                        
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
 						
 						<div class="form-group input_fields_wrap">
 									<div class="row">

@@ -567,6 +567,8 @@ $lang['extension'] = "Extensión";
 $lang['nomina_code'] = "Codigo Nomina";
 $lang['position'] = "Cargo";
 $lang['main_company'] = "Empresa Principal";
+$lang['subdepartment'] = "Es un Subdepartamento de ";
+$lang['none'] = "Ninguno";
 
 
 

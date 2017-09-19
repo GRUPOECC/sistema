@@ -105,8 +105,12 @@ class employees extends MX_Controller {
 				//$save['joining_date'] = $this->input->post('joining_date');
 				//$save['joining_salary'] = $this->input->post('joining_salary');
 			   	$save['status'] = $this->input->post('status');
-			   	$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
-
+			   	$listado = $this->input->post('empresa_id');
+				foreach ($this->employees_model->get_empresasHijos2($this->input->post('empresa_id')) as $val) {
+					   
+			   	        array_push($listado,(string)$val->id); 	 	
+			   	    }  
+			    $save['empresa_id'] = json_encode($listado);	  
 			   	$p_key = $this->employees_model->save($save);
                 //-------------------------------------------------------------------
 			   	//Asignacion de la empresas: 
@@ -123,7 +127,7 @@ class employees extends MX_Controller {
 			   	    //----------------------------------------------------------- 
                     // Registro el resto de las empresas (si es empresa padre):
                     //----------------------------------------------------------- 
-			   	    foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
+			   	    /*foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
 			   	    	$save_empresa['id_empresa'] = $val->id;
 					   	$save_empresa['id_departamento'] = $value['departamento'];
 					   	$save_empresa['id_cargo'] = $value['role'];	
@@ -132,10 +136,9 @@ class employees extends MX_Controller {
 					   	$save_empresa['principal'] =0;
 			   	    	$this->employees_model->saveempresa($p_key,$save_empresa);
 			   	     	 	
-			   	    }    
+			   	    }  
+			   	    */  
 			   	    //----------------------------------------------------------
-
-
 			   	}   	
 			   	//-------------------------------------------------------------------
 			   	//Asignacion de cuentas Bancarias: 
@@ -197,8 +200,8 @@ class employees extends MX_Controller {
             $this->form_validation->set_rules('email', 'lang:email', 'trim|required|valid_email|max_length[128]');
 			$this->form_validation->set_rules('username', 'lang:username', 'trim|required|');
 			$this->form_validation->set_rules('contact', 'lang:phone', 'required');
-			$this->form_validation->set_rules('department_id', 'lang:department', 'required');
-			$this->form_validation->set_rules('designation_id', 'lang:designation', 'required');
+			//$this->form_validation->set_rules('department_id', 'lang:department', 'required');
+			//$this->form_validation->set_rules('designation_id', 'lang:designation', 'required');
 			$this->form_validation->set_rules('joining_date', 'lang:joining_date', '');
 			$this->form_validation->set_rules('joining_salary', 'lang:joining_salary', '');
 			
@@ -239,11 +242,16 @@ class employees extends MX_Controller {
 				$save['address'] = $this->input->post('address');
 				$save['user_role'] = $this->input->post('role_id');
 				$save['department_id'] = $this->input->post('department_id');
-				$save['designation_id'] = $this->input->post('designation_id');
-				$save['joining_date'] = $this->input->post('joining_date');
-				$save['joining_salary'] = $this->input->post('joining_salary');
+				//$save['designation_id'] = $this->input->post('designation_id');
+				//$save['joining_date'] = $this->input->post('joining_date');
+				//$save['joining_salary'] = $this->input->post('joining_salary');
 				$save['status'] = $this->input->post('status');
-				$save['empresa_id'] = json_encode($this->input->post('empresa_id'));
+				$listado = $this->input->post('empresa_id');
+				foreach ($this->employees_model->get_empresasHijos2($this->input->post('empresa_id')) as $val) {
+					   
+			   	        array_push($listado,(string)$val->id); 	 	
+			   	    }  
+			    $save['empresa_id'] = json_encode($listado);	
 
 			    //Asignacion de la empresas: (Suspendido)
 			   	//-------------------------------------------------------------------
@@ -256,7 +264,7 @@ class employees extends MX_Controller {
 			   	//----------------------------------------------------------- 
                     // Registro el resto de las empresas (si es empresa padre):
                     //----------------------------------------------------------- 
-			   	    foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
+			   	    /*foreach ($this->employees_model->get_empresasHijos($value['empresa']) as $val) {
 			   	    	$save_empresa['id_empresa'] = $val->id;
 					   	$save_empresa['id_departamento'] = $value['departamento'];
 					   	$save_empresa['id_cargo'] = $value['role'];	
@@ -264,7 +272,8 @@ class employees extends MX_Controller {
 					   	$save_empresa['fecha_ingreso'] = $value['date'];	
 					   	$save_empresa['principal'] =0;
 			   	    	$this->employees_model->saveempresa($p_key,$save_empresa);	   	     	 	
-			   	    }    
+			   	    }   
+			   	    */ 
 			   	    //----------------------------------------------------------	   	
 			   
 			   if ($this->input->post('password') != '' || !$id)
@@ -302,12 +311,28 @@ class employees extends MX_Controller {
 
 	}	
 
+	function cargos(){
+		//$depts = $this->cas_model->get_all_depts();
+		$result = $this->employees_model->get_cargos($_POST['c_id']);
+		echo '
+		<select name="role_id" id="role_id" class="chzn col-md-12">
+										<option value="">--Seleccionar Cargo--</option>
+									';
+									foreach($result as $new) {
+											$sel = "";
+											//if(set_select('dept_id', $new->id)) $sel = "selected='selected'";
+											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->designation.'</option>';
+										}
+										
+		echo'</select>';	
+	} 
+
 	function empresas($id){
 		if($id){
 			 $data['id'] = $id; 
 		     $data['empresas'] = $this->employees_model->get_empresas_by_user($id);
 		     $data['listaempresas'] = $this->employees_model->get_empresas();	
-		     $data['roles'] = $this->user_role_model->get_all();
+		     $data['cargos'] = $this->employees_model->get_all_cargos();
 		     $data['departments'] = $this->department_model->get_all();
 		     $data['page_title'] =  lang('companies');
 			 $data['body'] = 'employees/empresas';
@@ -329,6 +354,10 @@ class employees extends MX_Controller {
 				 $save_empresa['id_cargo']  = $this->input->post('role_id');
 				 $save_empresa['id_departamento']= $this->input->post('department_id');
 		         $save_empresa['id_empresa'] = $this->input->post('empresa_id');
+		         $save_empresa['id_usuario'] = $id;
+			     $save_empresa['nomina'] = $this->input->post('nomina');	
+			   	 $save_empresa['fecha_ingreso'] = $this->input->post('date');	
+			   	 $save_empresa['principal'] = $this->input->post('principal');
 			     $this->employees_model->update_empresa($id,$save_empresa);
 	          }
 	     }	
@@ -390,6 +419,9 @@ class employees extends MX_Controller {
 				 $save_empresa['id_departamento']= $this->input->post('department_id');
 		         $save_empresa['id_empresa'] = $this->input->post('empresa_id');
 			     $save_empresa['id_usuario'] = $id;
+			     $save_empresa['nomina'] = $this->input->post('nomina');	
+			   	 $save_empresa['fecha_ingreso'] = $this->input->post('date');	
+			   	 $save_empresa['principal'] = $this->input->post('principal');
 			     $this->employees_model->add_empresa($save_empresa);
 	          }
 	     }	
@@ -398,6 +430,7 @@ class employees extends MX_Controller {
 	}
 
 	function addcompanyuser(){
+		     $data['cargos'] = $this->employees_model->get_all_cargos();
 		   	 $data['empresas'] = $this->employees_model->get_empresas_all();  
 		     $data['listaempresas'] = $this->employees_model->get_empresas();	 
 		     $data['roles'] = $this->user_role_model->get_all();
@@ -407,6 +440,7 @@ class employees extends MX_Controller {
 
 	function editcompanyuser($id){
             $data['id'] = $id;  
+            $data['cargos'] = $this->employees_model->get_all_cargos();
             $data['empresas'] = $this->employees_model->get_empresas_by_user($id);
 		    $data['listaempresas'] = $this->employees_model->get_empresas();	
 		    $data['roles'] = $this->user_role_model->get_all();

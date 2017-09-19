@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-09-2017 a las 00:51:18
+-- Tiempo de generación: 19-09-2017 a las 21:59:10
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -282,7 +282,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (202, 'editcompanyuser', 37, 1, 'editcompanyuser', 1),
 (203, 'editbankuser', 37, 1, 'editbankuser', 1),
 (204, 'addcompany2', 37, 1, 'addcompany2', 1),
-(205, 'addbankinterno', 37, 1, 'addbankinterno', 1);
+(205, 'addbankinterno', 37, 1, 'addbankinterno', 1),
+(206, 'cargos', 37, 1, 'cargos', 1);
 
 -- --------------------------------------------------------
 
@@ -1706,22 +1707,24 @@ INSERT INTO `days` (`id`, `name`, `working_day`) VALUES
 CREATE TABLE `departments` (
   `id` int(9) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  `parent_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `departments`
 --
 
-INSERT INTO `departments` (`id`, `name`, `description`) VALUES
-(1, 'Administración', ''),
-(2, 'Recursos Humanos', ''),
-(3, 'Sistemas y Progamación', ''),
-(4, 'Logística', ''),
-(5, 'Comercial', ''),
-(6, 'Producción', ''),
-(7, 'Directiva', ''),
-(8, 'Gerencia Mantenimiento y Servicios Generales', '');
+INSERT INTO `departments` (`id`, `name`, `description`, `parent_id`) VALUES
+(1, 'Administración', '', 0),
+(2, 'Recursos Humanos', '', 0),
+(3, 'Sistemas y Progamación', '', 0),
+(4, 'Logística', '', 0),
+(5, 'Comercial', '', 0),
+(6, 'Producción', '', 0),
+(7, 'Directiva', '', 0),
+(8, 'Gerencia Mantenimiento y Servicios Generales', '', 0),
+(11, 'Prueba', 'hola', 4);
 
 -- --------------------------------------------------------
 
@@ -1803,30 +1806,37 @@ CREATE TABLE `empresas` (
   `id` int(9) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
   `parent_id` int(9) UNSIGNED NOT NULL,
-  `cod_interno` varchar(7) NOT NULL
+  `cod_interno` varchar(7) NOT NULL,
+  `rif` varchar(255) NOT NULL,
+  `razon_social` varchar(1000) NOT NULL,
+  `direccion` varchar(1000) NOT NULL,
+  `telefono` varchar(255) NOT NULL,
+  `extension` varchar(50) NOT NULL,
+  `tipo` varchar(255) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `empresas`
 --
 
-INSERT INTO `empresas` (`id`, `name`, `parent_id`, `cod_interno`) VALUES
-(0, 'GRUPO ECC', 999999999, '000'),
-(1, 'CREACIONES BEN-HUR C.A.', 0, '001'),
-(2, 'GRUPO FERRADINI C.A.', 0, '020'),
-(11, '01-LA URBINA', 2, '020-001'),
-(12, '02-CHACAITO', 2, '020-002'),
-(13, '03-CCCT', 2, '020-003'),
-(14, '04-PLAZA MAYOR', 2, '020-004'),
-(15, '05-SAMBIL', 2, '020-005'),
-(16, '06-MARACAY', 2, '020-006'),
-(17, '07-BARQUISIMETO', 2, '020-007'),
-(18, '08-AVIADORES', 2, '020-008'),
-(19, '09-CERRO VERDE', 2, '020-009'),
-(20, '10-SAMBIL II', 2, '020-010'),
-(21, 'MODAS BH C.A.', 0, '098'),
-(22, 'GRUPO SHAKE C.A.', 0, '021'),
-(23, 'INVERSIONES ACALUROSA C.A.', 0, '099');
+INSERT INTO `empresas` (`id`, `name`, `parent_id`, `cod_interno`, `rif`, `razon_social`, `direccion`, `telefono`, `extension`, `tipo`, `status`) VALUES
+(0, 'GRUPO ECC', 999999999, '000', '', '', '', '', '', '', 1),
+(1, 'CREACIONES BEN-HUR C.A.', 0, '001', '', '', '', '', '', '', 1),
+(2, 'GRUPO FERRADINI C.A.', 0, '020', '', '', '', '', '', '', 1),
+(11, '01-LA URBINA', 2, '020-001', '', '', '', '', '', '', 1),
+(12, '02-CHACAITO', 2, '020-002', '', '', '', '', '', '', 1),
+(13, '03-CCCT', 2, '020-003', '', '', '', '', '', '', 1),
+(14, '04-PLAZA MAYOR', 2, '020-004', '', '', '', '', '', '', 1),
+(15, '05-SAMBIL', 2, '020-005', '', '', '', '', '', '', 1),
+(16, '06-MARACAY', 2, '020-006', '', '', '', '', '', '', 1),
+(17, '07-BARQUISIMETO', 2, '020-007', '', '', '', '', '', '', 1),
+(18, '08-AVIADORES', 2, '020-008', '', '', '', '', '', '', 1),
+(19, '09-CERRO VERDE', 2, '020-009', '', '', '', '', '', '', 1),
+(20, '10-SAMBIL II', 2, '020-010', '', '', '', '', '', '', 1),
+(21, 'MODAS BH C.A.', 0, '098', '', '', '', '', '', '', 1),
+(22, 'GRUPO SHAKE C.A.', 0, '021', '', '', '', '', '', '', 1),
+(23, 'INVERSIONES ACALUROSA C.A.', 0, '099', '', '', '', '', '', '', 1);
 
 -- --------------------------------------------------------
 
@@ -1855,10 +1865,10 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (7, 15, 23, 3, 6, '', '', 0),
 (8, 15, 17, 1, 5, '', '', 0),
 (9, 15, 11, 1, 6, '', '', 0),
-(11, 14, 19, 4, 2, '', '', 0),
+(11, 14, 0, 0, 4, '', '', 0),
 (12, 15, 12, 3, 2, '', '', 0),
 (14, 19, 13, 6, 5, '', '', 0),
-(15, 14, 20, 3, 2, '', '', 0),
+(15, 14, 0, 0, 4, '', '', 0),
 (16, 4, 20, 3, 2, '', '', 0),
 (17, 20, 2, 4, 3, '', '', 0),
 (18, 21, 15, 6, 4, '4556', '', 0),
@@ -1875,7 +1885,11 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (29, 25, 17, 6, 3, '23', '2017-09-30', 1),
 (30, 25, 18, 6, 3, '23', '2017-09-30', 1),
 (31, 25, 19, 6, 3, '23', '2017-09-30', 1),
-(32, 25, 20, 6, 3, '23', '2017-09-30', 1);
+(32, 25, 20, 6, 3, '23', '2017-09-30', 1),
+(36, 14, 0, 0, 4, '', '', 0),
+(39, 9, 13, 5, 4, '675', '2017-09-28', 1),
+(42, 3, 0, 0, 3, '', '', 0),
+(43, 3, 0, 0, 3, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -2272,7 +2286,10 @@ INSERT INTO `rel_department_designation` (`id`, `department_id`, `designation`) 
 (56, 4, 'Almacenista'),
 (57, 4, 'Chofer'),
 (58, 4, 'Jefe de Compras'),
-(59, 4, 'Analista de Compras');
+(59, 4, 'Analista de Compras'),
+(60, 9, 'Prueba'),
+(61, 10, ''),
+(62, 11, '');
 
 -- --------------------------------------------------------
 
@@ -2746,7 +2763,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `extension`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `empresa_id`, `status`) VALUES
 (1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', 0, '', 1, 0, '', 1, 0, '0', 1),
 (2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', 0, '', 2, 0, '', 1, 0, '0', 1),
-(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', 0, '', 3, 0, '', 1, 1, '0', 1),
+(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-09-11', 'martha.morante@benhur.com.ve', '02122426211', 0, '', 3, 0, '', 1, 0, '[\"11\"]', 1),
 (4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', 0, '', 4, 0, '', 1, 5, '0', 1),
 (5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', 0, '', 5, 0, '', 1, 1, '0', 1),
 (6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', 0, '', 4, 0, '', 1, 1, '0', 1),
@@ -2755,7 +2772,7 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', 0, '', 3, 0, '', 1, 1, '0', 1),
 (10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', 0, '', 5, 0, '', 1, 1, '0', 1),
 (11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 0, 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, '0', 1),
-(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'garryjrbruno@hotmail.com', '04123352179', 0, 'Caricuao', 4, 0, '', 1, 4, '[\"0\"]', 1),
+(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-02-28', 'garryjrbruno@hotmail.com', '04123352179', 0, 'Caricuao', 4, 0, '', 1, 0, '[\"2\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\"]', 1),
 (15, 0, 'Prueba 2', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-09-28', 'sdfhidfid@hotmail.com', '04123352179', 0, 'trrrt', 4, 0, '', 1, 4, '[\"2\",\"12\",\"18\",\"22\"]', 1),
 (16, 0, 'Prueba empresas', '', 'fhfgfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-12-23', 'bsdhfsds@hotmail.com', '04123352179', 0, 'caricuao', 4, 0, '', 1, 5, '0', 1),
 (17, 0, 'rgthgfghfghfghf', '', 'fgdffgdfgf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry387@gmail.com', '04123352179', 0, 'dfbfhfhfgh', 5, 0, '', 1, 5, '0', 1),
@@ -2766,7 +2783,8 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (22, 0, 'eryrtyrty', '', 'rtyrtyrty', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghghfg@gjhoifg.com', '3443534', 345, 'fghdfgdf', 4, 0, '', 1, 0, '[\"11\"]', 1),
 (23, 0, 'dffgdfhfghf', '', 'rterteerg', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-02-28', 'hfghfghfg@nglhfgh.com', '64564545', 564, 'fghfghfg', 4, 0, '', 1, 0, '[\"11\"]', 1),
 (24, 0, 'fghfghghf', '', 'ry4545r', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'fgfghfghfg@fiuff.com', '6756546454', 4564, 'fhghfghfghfg', 0, 0, '', 1, 0, '[\"13\"]', 1),
-(25, 0, 'fghfghfghfg', '', 'jefiudfsd', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry38rere7@gmail.com', '45343453434', 344, 'gdfgdfgf@fghig.com', 4, 0, '', 1, 0, '[\"0\"]', 1);
+(25, 0, 'fghfghfghfg', '', 'jefiudfsd', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry38rere7@gmail.com', '45343453434', 344, 'gdfgdfgf@fghig.com', 4, 0, '', 1, 0, '[\"0\"]', 1),
+(26, 0, 'Prueba', '', 'terfterte', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-29', 'dfgdfgdf@fhfghfg.com', '04123352179', 34, 'dfgdfg', 4, 0, '', 1, 0, '[\"2\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\"]', 1);
 
 -- --------------------------------------------------------
 
@@ -3190,7 +3208,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3215,7 +3233,7 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT de la tabla `bank_details`
 --
 ALTER TABLE `bank_details`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `canned_messages`
 --
@@ -3280,7 +3298,7 @@ ALTER TABLE `days`
 -- AUTO_INCREMENT de la tabla `departments`
 --
 ALTER TABLE `departments`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `depts`
 --
@@ -3305,7 +3323,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3390,7 +3408,7 @@ ALTER TABLE `rel_contact_category`
 -- AUTO_INCREMENT de la tabla `rel_department_designation`
 --
 ALTER TABLE `rel_department_designation`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 --
 -- AUTO_INCREMENT de la tabla `rel_document_files`
 --
@@ -3440,7 +3458,7 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
