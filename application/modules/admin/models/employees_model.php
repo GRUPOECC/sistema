@@ -66,18 +66,20 @@ class employees_model extends CI_Model
 
     function get_empresas_by_user($id){
     	    $this->db->where('id_usuario',$id);
-    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion, EU.principal ppal,EU.fecha_ingreso fecha,EU.nomina nom,EU.id_departamento iddepto,D.name depto');
+    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion, EU.principal ppal,EU.fecha_ingreso fecha,EU.nomina nom,EU.id_departamento iddepto,D.name depto,RD.designation cargo, RD.id idcargo');
     	    $this->db->join('empresa_usuario EU', 'EU.id_empresa = E.id', 'LEFT');
     	    $this->db->join('user_role UR', 'UR.id = EU.id_cargo', 'LEFT');
-    	    $this->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');
+    	    $this->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');  
+    	    $this->db->join('rel_department_designation RD', 'EU.id_cargo = RD.id', 'LEFT');
 			return $this->db->get('empresas E')->result();
 	}
 
 	function get_empresas_all(){
-    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion, EU.principal ppal,EU.fecha_ingreso fecha,EU.nomina nom,EU.id_departamento iddepto,D.name depto');
+    	    $this->db->select('E.*,E.name compania,E.id idempresa,UR.name rol,UR.id idrol,EU.id idrelacion, EU.principal ppal,EU.fecha_ingreso fecha,EU.nomina nom,EU.id_departamento iddepto,D.name depto,RD.designation cargo, RD.id idcargo');
     	    $this->db->join('empresa_usuario EU', 'EU.id_empresa = E.id', 'LEFT');
     	    $this->db->join('user_role UR', 'UR.id = EU.id_cargo', 'LEFT');
     	    $this->db->join('departments D', 'D.id = EU.id_departamento', 'LEFT');
+    	    $this->db->join('rel_department_designation RD', 'EU.id_cargo = RD.id', 'LEFT');
 			return $this->db->get('empresas E')->result();
 	}
 
@@ -120,14 +122,14 @@ class employees_model extends CI_Model
     function delete_empresa($idusuario,$id){
     	$this->db->where("id",$id);
     	$idempresa = $this->db->get('empresa_usuario')->row('id_empresa');
-        if (!$this->haTrabajado($idusuario,$idempresa)){    
+      //  if (!$this->haTrabajado($idusuario,$idempresa)){    
            $this->db->where('id',$id);
 		  $this->db->delete('empresa_usuario');
 		  return true; 
-	     }else {
-           $this->session->set_flashdata('message',"Esta compañia tiene actividades involucradas! "); 
-           return false; 
-	    }
+	  //   }else {
+      //     $this->session->set_flashdata('message',"Esta compañia tiene actividades involucradas! "); 
+      //     return false; 
+	  //  }
     }
 
     function update_empresa($id,$save){
@@ -185,4 +187,16 @@ class employees_model extends CI_Model
 			   $this->db->where('id',$id);
 		       $this->db->delete('bank_details');
 	}
+
+	function get_cargos($id){
+
+		       $this->db->where('department_id',$id);	
+		return $this->db->get('rel_department_designation')->result();
+	} 
+
+	function get_all_cargos(){
+
+		       //$this->db->where('department_id',$id);	
+		return $this->db->get('rel_department_designation')->result();
+	} 
 }

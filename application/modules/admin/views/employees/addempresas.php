@@ -76,6 +76,7 @@ function areyousure()
                                                echo ucwords($new->name);             
                                                if ($value['principal']==1)
                                                 echo '<IMG SRC="'.base_url('assets/img/star.png').'" WIDTH=20 HEIGHT=20>'; 
+                                               break;
 
                                               }
                                          }
@@ -93,9 +94,9 @@ function areyousure()
                                     </td>
 									                   <td>
                                      <?php
-                                        foreach($roles as $rol){
+                                        foreach($cargos as $rol){
                                             if($rol->id==$value['role']) 
-                                                echo $rol->name;
+                                                echo $rol->designation;
                                          }
                                      ?>  
                                     </td>
@@ -190,23 +191,7 @@ function areyousure()
                             </div>
                         </div>
                         
-                        
-                        <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-6">
-                                    <label for="email" style="clear:both;"><?php echo lang('position');?></label>
-                                    <select name="role_id" id="role_id" class="form-control chzn">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('position');?>---</option>
-                                        <?php foreach($roles as $new) {
-                                            $sel = "";
-                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-                                        }
-                                        
-                                        ?>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                      
                         
                          <div class="form-group">
                               <div class="row">
@@ -221,6 +206,25 @@ function areyousure()
                                         
                                         ?>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" style="clear:both;"><?php echo lang('position');?></label>
+                                    <div id="dept_result">
+                                    <select name="role_id" id="role_id" class="form-control chzn" disabled="disabled">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
+                                        <?php foreach($cargos as $new) {
+                                            $sel = "";
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->designation.'</option>';
+                                        }
+                                        
+                                        ?>
+                                    </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -352,6 +356,26 @@ $(function() {
  timepicker:false,
  format:'Y-m-d'
 });
+
+  $(document).on('change', '#department_id', function(){
+ 
+  c_c_id = $('#department_id').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#dept_result').html(ajax_load);
+    
+  $.ajax({
+    url: '<?php echo site_url('admin/employees/cargos') ?>',
+    type:'POST',
+    data:{c_id:c_c_id},
+  
+  success:function(result){
+      //alert(result);return false;
+    $('#dept_result').html(result);
+    $(".chzn").chosen();
+   }
+  });
+});
+
 
 function editarEmpresa(id, idempresa, iddepartamento, idcargo){
         var titulo = document.getElementById('titulomodal');

@@ -42,7 +42,9 @@ function areyousure()
                                 <th><?php echo lang('serial_number')?></th>
 								<th><?php echo lang('company_name')?></th>
 								<th><?php echo lang('Dept')?></th>
-                                <th><?php echo lang('role')?></th>
+                                <th><?php echo lang('position')?></th>
+                                <th><?php echo lang('nomina_code')?></th>
+                                <th><?php echo lang('joining_date')?></th>
                                 <th><?php echo lang('action')?></th>	
                             </tr>
                         </thead>
@@ -57,13 +59,19 @@ function areyousure()
                                                 echo '<IMG SRC="'.base_url('assets/img/star.png').'" WIDTH=20 HEIGHT=20>'; 
                                           ?>
                                     </td>
-                                    <td><?php echo $new->rol; ?></td>
-									<td><?php echo $new->depto;?> </td>
+                                     <td><?php echo $new->depto;?> </td>
+                                    <td><?php echo $new->cargo; ?></td>     
+                                    <td>
+                                     <?php  echo $new->nom; ?>  
+                                    </td>
+                                    <td>
+                                     <?php echo $new->fecha; ?>  
+                                    </td>
 									
                                     <td width="30%">
                                         <div class="btn-group">	  	
 										  <?php if(check_user_role(192)==1){?>	
-										  <a class="btn btn-primary" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" style="margin-left:12px;" onclick="editarEmpresa(<?php echo $new->idrelacion ?>,<?php echo $new->id ?>,<?php echo $new->iddepto ?>,<?php echo $new->idrol ?>,<?php echo $new->fecha ?>,<?php echo $new->nom ?>)" href=""><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
+										  <a class="btn btn-primary" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" style="margin-left:12px;" onclick="editarEmpresa(<?php echo $new->idrelacion ?>,<?php echo $new->id ?>,<?php echo $new->iddepto ?>,<?php echo $new->idcargo ?>,<?php echo $new->fecha ?>,<?php echo $new->nom ?>)" href=""><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>
 										  <?php } ?>
                                          
                                     
@@ -115,23 +123,6 @@ function areyousure()
                         </div>
                         
                         
-                        <div class="form-group">
-                              <div class="row">
-                                <div class="col-md-6">
-                                    <label for="email" style="clear:both;"><?php echo lang('user_role');?></label>
-                                    <select name="role_id" id="role_id" class="form-control chzn">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
-                                        <?php foreach($roles as $new) {
-                                            $sel = "";
-                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-                                        }
-                                        
-                                        ?>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        
                          <div class="form-group">
                               <div class="row">
                                 <div class="col-md-6">
@@ -145,6 +136,25 @@ function areyousure()
                                         
                                         ?>
                                     </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" style="clear:both;"><?php echo lang('position');?></label>
+                                    <div id="dept_result">
+                                    <select name="role_id" id="role_id" class="form-control chzn" disabled="disabled">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('user_role');?>---</option>
+                                        <?php foreach($cargos as $new) {
+                                            $sel = "";
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->designation.'</option>';
+                                        }
+                                        
+                                        ?>
+                                    </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -230,6 +240,26 @@ $(function() {
  },
  timepicker:false,
  format:'Y-m-d'
+});
+
+
+ $(document).on('change', '#department_id', function(){
+ 
+  c_c_id = $('#department_id').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#dept_result').html(ajax_load);
+    
+  $.ajax({
+    url: '<?php echo site_url('admin/employees/cargos') ?>',
+    type:'POST',
+    data:{c_id:c_c_id},
+  
+  success:function(result){
+      //alert(result);return false;
+    $('#dept_result').html(result);
+    $(".chzn").chosen();
+   }
+  });
 });
 
 function editarEmpresa(id, idempresa, iddepartamento, idcargo,fecha,nomina){

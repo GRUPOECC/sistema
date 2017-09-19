@@ -20,7 +20,7 @@ class departments extends MX_Controller {
 	}	
 	
 	function add(){
-		
+		$data['departments'] = $this->department_model->get_all();
 	
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
@@ -34,6 +34,7 @@ class departments extends MX_Controller {
             {
 				$save['name'] = $this->input->post('name');
 				$save['description'] = $this->input->post('description');
+				$save['parent_id'] = $this->input->post('subdepartment');
                 
 				$d_id =	$this->department_model->save($save);
 				
@@ -60,7 +61,7 @@ class departments extends MX_Controller {
 	
 	
 	function edit($id=false){
-		
+		$data['departments'] = $this->department_model->get_all();
 		$data['department'] = $this->department_model->get($id);
 		$data['designations'] = $this->department_model->get_designations($id);
 		$data['id'] =$id;
@@ -74,6 +75,7 @@ class departments extends MX_Controller {
             {
 				$save['name'] = $this->input->post('name');
 				$save['description'] = $this->input->post('description');
+				$save['parent_id'] = $this->input->post('subdepartment');
 				
 				$this->department_model->update($save,$id);
 				$this->department_model->delete_designations($id);
