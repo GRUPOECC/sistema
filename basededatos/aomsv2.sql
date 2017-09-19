@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-09-2017 a las 00:51:18
+-- Tiempo de generación: 19-09-2017 a las 05:49:00
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -282,7 +282,8 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (202, 'editcompanyuser', 37, 1, 'editcompanyuser', 1),
 (203, 'editbankuser', 37, 1, 'editbankuser', 1),
 (204, 'addcompany2', 37, 1, 'addcompany2', 1),
-(205, 'addbankinterno', 37, 1, 'addbankinterno', 1);
+(205, 'addbankinterno', 37, 1, 'addbankinterno', 1),
+(206, 'cargos', 37, 1, 'cargos', 1);
 
 -- --------------------------------------------------------
 
@@ -1706,22 +1707,24 @@ INSERT INTO `days` (`id`, `name`, `working_day`) VALUES
 CREATE TABLE `departments` (
   `id` int(9) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  `parent_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `departments`
 --
 
-INSERT INTO `departments` (`id`, `name`, `description`) VALUES
-(1, 'Administración', ''),
-(2, 'Recursos Humanos', ''),
-(3, 'Sistemas y Progamación', ''),
-(4, 'Logística', ''),
-(5, 'Comercial', ''),
-(6, 'Producción', ''),
-(7, 'Directiva', ''),
-(8, 'Gerencia Mantenimiento y Servicios Generales', '');
+INSERT INTO `departments` (`id`, `name`, `description`, `parent_id`) VALUES
+(1, 'Administración', '', 0),
+(2, 'Recursos Humanos', '', 0),
+(3, 'Sistemas y Progamación', '', 0),
+(4, 'Logística', '', 0),
+(5, 'Comercial', '', 0),
+(6, 'Producción', '', 0),
+(7, 'Directiva', '', 0),
+(8, 'Gerencia Mantenimiento y Servicios Generales', '', 0),
+(11, 'Prueba', 'hola', 4);
 
 -- --------------------------------------------------------
 
@@ -1875,7 +1878,11 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (29, 25, 17, 6, 3, '23', '2017-09-30', 1),
 (30, 25, 18, 6, 3, '23', '2017-09-30', 1),
 (31, 25, 19, 6, 3, '23', '2017-09-30', 1),
-(32, 25, 20, 6, 3, '23', '2017-09-30', 1);
+(32, 25, 20, 6, 3, '23', '2017-09-30', 1),
+(36, 14, 18, 3, 5, '', '', 0),
+(39, 9, 13, 5, 4, '675', '2017-09-28', 1),
+(42, 3, 13, 3, 29, '44', '2017-09-29', 0),
+(43, 3, 15, 3, 28, '45', '2017-09-28', 0);
 
 -- --------------------------------------------------------
 
@@ -2272,7 +2279,10 @@ INSERT INTO `rel_department_designation` (`id`, `department_id`, `designation`) 
 (56, 4, 'Almacenista'),
 (57, 4, 'Chofer'),
 (58, 4, 'Jefe de Compras'),
-(59, 4, 'Analista de Compras');
+(59, 4, 'Analista de Compras'),
+(60, 9, 'Prueba'),
+(61, 10, ''),
+(62, 11, '');
 
 -- --------------------------------------------------------
 
@@ -3190,7 +3200,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=207;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3215,7 +3225,7 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT de la tabla `bank_details`
 --
 ALTER TABLE `bank_details`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `canned_messages`
 --
@@ -3280,7 +3290,7 @@ ALTER TABLE `days`
 -- AUTO_INCREMENT de la tabla `departments`
 --
 ALTER TABLE `departments`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `depts`
 --
@@ -3305,7 +3315,7 @@ ALTER TABLE `empresas`
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3390,7 +3400,7 @@ ALTER TABLE `rel_contact_category`
 -- AUTO_INCREMENT de la tabla `rel_department_designation`
 --
 ALTER TABLE `rel_department_designation`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 --
 -- AUTO_INCREMENT de la tabla `rel_document_files`
 --
