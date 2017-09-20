@@ -368,6 +368,9 @@ $lang['department_saved']				= "Department Saved";
 $lang['department_upated']				= "Department Updated";
 $lang['department_deleted']				= "Department Deleted";
 
+$lang['company_saved']				= "Company saved";
+$lang['company_upated']				= "Update of the company";
+$lang['company_deleted']				= "Company Deleted";
 
 $lang['user_roles']      	 			= "User Roles";
 $lang['user_role']      	 			= "User Role";
@@ -580,3 +583,7 @@ $lang['position'] = "Position";
 $lang['main_company'] = "Main Company";
 $lang['subdepartment'] = "Is a subdepartment of ";
 $lang['none'] = "None";
+$lang['code'] = "Internal Code";
+$lang['rif'] = "RIF";
+$lang['reason'] = "Social Reason";
+$lang['subcompany'] = "Is a subcompany of ";
