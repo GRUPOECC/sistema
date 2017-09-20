@@ -527,8 +527,13 @@ $fourth = $this->uri->segment(4);
                             </a>
                             <ul class="treeview-menu">
                         		   
-                             
-								
+                         
+                                <li class="<?php echo($this->uri->segment(2)=='companies')?'active':'';?>">
+                                    <a href="<?php echo site_url('admin/companies');?>">
+                                    <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('companies')?></span>
+                                    </a>
+                                </li>
+                    				
                                 <li class="<?php echo($this->uri->segment(2)=='departments')?'active':'';?>">
                                     <a href="<?php echo site_url('admin/departments');?>">
                                     <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('departments')?></span>
@@ -790,16 +795,23 @@ $fourth = $this->uri->segment(4);
 				<?php } ?>
 				
 		<?php foreach($actions as $action){ 
-			 if($action->action=='user_role' || $action->action=='departments' || $action->action=='clients' || $action->action=='employees' ||  
+			 if($action->action=='companies' || $action->action=='user_role' || $action->action=='departments' || $action->action=='clients' || $action->action=='employees' ||  
 			 		$action->action=='permissions'  || $action->action=='attendance'  || $action->action=='holidays'  || $action->action=='leave_types'  || $action->action=='notification') { ?>
 	
 				
-				 <li class="treeview <?php echo($this->uri->segment(2)=='user_role'|| $this->uri->segment(2)=='departments'|| $this->uri->segment(2)=='clients'|| $this->uri->segment(2)=='employees' || $this->uri->segment(2)=='permissions')?'active':'';?>">
+				 <li class="treeview  <?php  echo($this->uri->segment(2)=='companies' || $this->uri->segment(2)=='user_role'|| $this->uri->segment(2)=='departments'|| $this->uri->segment(2)=='clients'|| $this->uri->segment(2)=='employees' || $this->uri->segment(2)=='permissions')?'active':''; ?> ">
                             <a href="#">
                                 <i class="fa fa-users"></i> <span><?php echo lang('user_management');?></span>
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
+                            <?php foreach($actions as $action){if($action->action=='companies'){?>    
+                                <li class="<?php echo($this->uri->segment(2)=='companies')?'active':'';?>">
+                                    <a href="<?php echo site_url('admin/companies');?>">
+                                    <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('companies')?></span>
+                                    </a>
+                                </li>
+                            <?php break;}}?> 
                         	<?php foreach($actions as $action){if($action->action=='clients'){?>
                     
 								    <li class="<?php echo($this->uri->segment(2)=='clients')?'active':'';?>">

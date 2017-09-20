@@ -372,6 +372,10 @@ $lang['department_saved']				= "Departamento Guardado";
 $lang['department_upated']				= "Actualización del Departamento";
 $lang['department_deleted']				= "Departamento Eliminado";
 
+$lang['company_saved']				= "Empresa Guardada";
+$lang['company_upated']				= "Actualización de la Empresa";
+$lang['company_deleted']				= "Empresa Eliminada";
+
 
 $lang['user_roles']      	 			= "Funciones de usuario";
 $lang['user_role']      	 			= "Rol de usuario";
@@ -539,7 +543,7 @@ $lang['upload'] = "Adjuntar archivos";
 $lang['showremoved'] = "Mostrar Eliminados";
 $lang['dontshowremoved'] = "Ocultar Eliminados";
 $lang['taskinformation'] = "Informacion de la Tarea";
-$lang['companies'] = "Empresas donde Trabaja";
+$lang['companies'] = "Empresas";
 $lang['companies_deleted'] = "Empresa eliminada";
 $lang['company'] = "Empresa";
 $lang['calendar'] = "Calendario";
@@ -569,6 +573,10 @@ $lang['position'] = "Cargo";
 $lang['main_company'] = "Empresa Principal";
 $lang['subdepartment'] = "Es un Subdepartamento de ";
 $lang['none'] = "Ninguno";
+$lang['code'] = "Codigo Interno";
+$lang['rif'] = "RIF";
+$lang['reason'] = "Razon Social";
+$lang['subcompany'] = "Es una subempresa de ";
 
 
 
