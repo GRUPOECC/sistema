@@ -47,9 +47,9 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
+$db['default']['hostname'] = 'Intranet.grupoecc.com.ve:3306';
+$db['default']['username'] = 'desarrollo';
+$db['default']['password'] = 'Arepasdesa17.';
 $db['default']['database'] = 'aoms';
 $db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
