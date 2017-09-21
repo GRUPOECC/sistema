@@ -108,8 +108,9 @@ function get_holidays($m){
      					<ul class="nav nav-tabs">
 						 <?php $i=1; foreach($months as $new){ ?>
                             <li class="col-md-12 <?php echo (date("m")==$new->id)?'active':''?>">
-                                    <a data-toggle="tab" href="#<?php echo $i;?>" aria-expanded="false">
-                                    <i class="fa fa-calendar"></i> <?php echo $new->name?> </a>
+                                    <a data-toggle="tab" id="<?php echo $i;?>" aria-expanded="false">
+                                      <i class="fa fa-calendar"></i> <?php echo $new->name?> 
+                                    </a>
                                     <span class="after"></span>
                              </li>
 						<?php $i++; } ?>	 
@@ -256,6 +257,11 @@ function get_holidays($m){
 <script type="text/javascript">
 $(function() {
 
+
+
+
+
+
        var currentLangCode = '<?php echo lang('current_calen_lang'); ?>';
        // var currentLangCode = 'es';
        console.log('<?php 
@@ -265,9 +271,11 @@ $(function() {
 
       //Date for the calendar events (dummy data)
         var date = new Date();
-        var d = date.getDate(),
-                m = date.getMonth(),
-                y = date.getFullYear();
+        // var d = date.getDate(),
+        //         m = date.getMonth(),
+        //         y = date.getFullYear();
+
+        // console.log(date,d,m,y);
 
 
         //Defining calendar properties once
@@ -311,12 +319,20 @@ $(function() {
        $('#calendar').fullCalendar(
                     calendar_all_events
                     );
-       $("#calendar").fullCalendar('changeView', 'agendaWeek');
+       // $("#calendar").fullCalendar('changeView', 'agendaWeek');
 
-        // $("#calendar").animate({visibility: visible},"slow");
+      $('li a').click(function(){
+        console.log($(this).attr('id'));
+            // $('#calendar').fullCalendar( 'destroy' );
+            // m = $(this).attr('id');
+            //     $('#calendar').fullCalendar(    calendar_all_events   );
+            date.setMonth($(this).attr('id') - 1);
+            $('#calendar').fullCalendar( 'gotoDate', date );
+      });
 
-	$('#example1').dataTable({
-	});
+
+  $('#example1').dataTable({
+  });
 });
 
 </script>

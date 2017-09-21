@@ -140,11 +140,11 @@
                                      <div class="row">
                                         <div class="col-md-8">
 
-                                                <label for="visible_companies_selected">Other Companies I Can See</label>
+                                                <label for="other_visible_companies">Other Companies I Can See</label>
 
-                                                    <select name="visible_companies_selected[]" multiple="multiple" id="visible_companies_selected" class="form-control chzn">
+                                                    <select name="other_visible_companies[]" multiple="multiple" id="other_visible_companies" class="form-control chzn">
                                                         <?php foreach ($empresas_visibles as $empresa) : ?>
-                                                                <option value="<?php echo $empresa->id ?>">
+                                                                <option value="<?php echo $empresa->id; ?>">
                                                                     <?php echo $empresa->name; ?>
                                                                 </option>
                                                         <?php endforeach; ?>
@@ -230,14 +230,48 @@
 
         for (let prop in sucursales_copy){
         $.each(sucursales_copy[prop], function(key, value) {
+            console.log(key,value);
                  $('#branches')
                      .append($("<option></option>")
-                     .attr("value",key.id)
+                     .attr("value",key)
                      .text(value.name));
             });
         }
 
+    //SI UN BRANCH OFFICE ESTA EN COMPANIES I CAN SEE, LO ELIMINO DE ESTE ULTIMO
+    // console.log('#visible_companies_selected option:selected  : ');
+    //     $('#visible_companies_selected option:selected').each(function(){
+    //         console.log($(this).val());
+    //     });
+
+
+     console.log('#branches option  : ');
+         $( "#branches option" ).each(function() {
+
+            console.log($(this).val());
+
+        });
+
+
+    console.log('#other_visible_companies option');
+
+        $("#branches option").each(function(){
+            if ( $("#other_visible_companies option[value='" + $(this).val() + "']").length == 0 ){
+
+                console.log("option <<" + $(this).val() + ">> es comun para branches y other_visible_companies");
+                 $("#other_visible_companies option[value='" + $(this).val() + "']").remove();
+
+                }
+
+        });
+
+
+
+
     });
+
+
+
 
 
 
