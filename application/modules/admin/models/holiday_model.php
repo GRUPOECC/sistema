@@ -20,6 +20,7 @@ class holiday_model extends CI_Model
 	
 	function save($save)
 	{
+		$save['type'] = ($save['type'] == '0') ? NULL : $save['type'];
 		$this->db->insert('holidays',$save);
 	}
 

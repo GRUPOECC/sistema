@@ -6,13 +6,27 @@
 
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
 
+<style type="text/css">
+  .custom,
+.custom div,
+.custom span {
+    border-color: #3c8dbc;
+   background-color: #3c8dbc;
+    
+    color: white;           /* text color */
+}
+
+</style>
+
 <script type="text/javascript">
 function areyousure()
 {
 	return confirm('<?php echo lang('are_you_sure');?>');
 }
 </script>
-<?php
+
+<!-- <?php var_dump($holidays); ?> -->
+<!-- <?php
  $CI = &get_instance(); 
 function get_holidays($m){
  $CI = &get_instance();
@@ -33,7 +47,7 @@ function get_holidays($m){
 			
 	 $dates[] = usort($dates, 'sortByOrder');
 	return $dates;
-	//echo '<pre>'; print_r($dates);die;
+
 }
 
 
@@ -46,7 +60,7 @@ function get_holidays($m){
 		}
 	}
 //echo '<pre>-->';print_r(get_holidays());die;
-?>
+?> -->
 
 <section class="content-header">
         <h1>
@@ -257,6 +271,22 @@ function get_holidays($m){
 <script type="text/javascript">
 $(function() {
 
+<?php 
+            function print_event($event){
+                if (strlen($event->name) > 34) { //Names of the task will be limited to 34 characters
+                    $event->name = substr($event->name, 0, 34).'...';
+                }
+                echo "{
+                title: '".$event->name."',
+                start: '".date('M d Y 12:00:00', strtotime($event->start_date))."',
+                end: '".date('M d Y 12:00:00', strtotime($event->end_date))."',
+                backgroundColor: '#3c8dbc',
+                className : 'custom',
+                url:  '".site_url('admin/holidays/')."'
+                },
+                      ";
+            }
+ ?>
 
 
 
@@ -306,10 +336,13 @@ $(function() {
                     },
                     lang: currentLangCode,
                     allDayText: '<?php echo lang('calen_all_day'); ?>',
-                    // events:[
+                    events:[
                     
-                            
-                    //         ],
+                    <?php 
+                          foreach ($holidays as $event)
+                              print_event($event);
+                    ?>        
+                            ],
                     calendarProperties
                 };
 

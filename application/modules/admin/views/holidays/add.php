@@ -1,5 +1,10 @@
 <?php 
         $company_event = false;
+
+        // var_dump($event_types);
+        // var_dump(json_encode($event_types));
+        // echo json_encode($event_types,JSON_FORCE_OBJECT);
+
  ?>
 <link href="<?php echo base_url('assets/css/fullcalendar.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/css/fullcalendar.print.css')?>" rel="stylesheet" type="text/css" />
@@ -10,6 +15,7 @@
 
 <link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
 <!-- Content Header (Page header) -->
+
 <style>
 .row{
     margin-bottom:10px;
@@ -17,6 +23,17 @@
 .margin-right{
     margin-right: 10px;
 }
+
+  .custom,
+.custom div,
+.custom span {
+    border-color: #3c8dbc;
+   background-color: #3c8dbc;
+    
+    color: white;           /* text color */
+}
+
+
 </style>
  <!-- Content Header (Page header) -->
 <section class="content-header">
@@ -154,16 +171,24 @@
                                     </div>
                                 </div>                                                    
 
-                         
-
-                                            
-                                            
+                           
                                         </div><!-- /.box-body -->
 
                     <div class="box-body col-md-5">
                         <!-- CALENDAR PREVIEW -->
-                        <label>Preview</label>
-                        <div id="calendar" style="margin: 5px;"></div>
+                        <div class="form-group">
+                             <div class="row">
+                                <div class="btn btn-default" id="preview">Preview</div>
+                                
+                            </div>
+                        </div> 
+
+                                <div class="form-group">
+                                     <div class="row">
+                                                        <!-- THE CALENDAR -->
+                                            <div id="calendar" style="margin: 5px;"></div>
+                                    </div>
+                                </div>                         
                     </div>
 
                                     </div>
@@ -190,9 +215,13 @@
 
 
 <script type="text/javascript">
-
-
  $(function() {
+
+    var variable = <?php echo json_encode($event_types);?>;
+
+
+    // console.log('variable json: ')
+    // console.log(variable)
 
 
     function deepClone(initalObj) {
@@ -200,11 +229,13 @@
         try {
             obj = JSON.parse(JSON.stringify(initalObj));
         }
-        catch(err){}
+        catch(err){
+            console.log('unable to clone object: ' + initialObj);
+        }
         return obj;
     }
 
-    //recibo un objeto con arrays, lo convierto a objeto de objetos para manipulacion con js
+    //OBJECT WHICH CONTAINS ARRAYS RECIEVED, FORCE OBJECT NOTATION
     const sucursales_js =<?php echo json_encode($sucursales, JSON_FORCE_OBJECT);?>;
 
     $("#visible_companies_selected").change(function(){
@@ -216,76 +247,60 @@
              selected_branches.push($(this).val());
         });
 
-        console.log('------------------------------------')
+        // console.log('------------------------------------')
         for (let prop in sucursales_copy){
             //recorro las propiedades del objeto!
             // las borro si no son las seleccionadas
             if (!selected_branches.includes(prop)) {    delete sucursales_copy[prop]    }
         }
-        console.log(sucursales_copy);
-        console.log('------------------------------------')
+        // console.log(sucursales_copy);
+        // console.log('------------------------------------')
 
         //ADD ALL THE BRANCH OFFICES TO THE SELECT
         $('#branches').empty();
 
         for (let prop in sucursales_copy){
         $.each(sucursales_copy[prop], function(key, value) {
-            console.log(key,value);
+            // console.log(key,value,value.id);
                  $('#branches')
                      .append($("<option></option>")
-                     .attr("value",key)
+                     .attr("value",value.id)
                      .text(value.name));
             });
         }
 
     //SI UN BRANCH OFFICE ESTA EN COMPANIES I CAN SEE, LO ELIMINO DE ESTE ULTIMO
+    
     // console.log('#visible_companies_selected option:selected  : ');
     //     $('#visible_companies_selected option:selected').each(function(){
     //         console.log($(this).val());
     //     });
-
-
-     console.log('#branches option  : ');
+    // console.log('#branches option  : ');
          $( "#branches option" ).each(function() {
-
-            console.log($(this).val());
-
-        });
-
-
-    console.log('#other_visible_companies option');
-
-        $("#branches option").each(function(){
-            if ( $("#other_visible_companies option[value='" + $(this).val() + "']").length == 0 ){
-
-                console.log("option <<" + $(this).val() + ">> es comun para branches y other_visible_companies");
-                 $("#other_visible_companies option[value='" + $(this).val() + "']").remove();
-
-                }
+    // console.log($(this).val());
+            if($('#other_visible_companies option[value="'+ $(this).val() + '"]').length > 0){
+                // console.log('Hay un match!!!! en ' + $(this).val());
+                // console.log($('#other_visible_companies option[value="'+ $(this).val() + '"]'));
+                $('#other_visible_companies option[value="'+ $(this).val() + '"]').remove();
+            }
 
         });
 
+    // console.log('#other_visible_companies option  : ');
+         // $( "#other_visible_companies option" ).each(function() {
+    // console.log($(this).val());
+        // });
 
 
 
     });
 
 
-
-
-
-
-
-
-
-    for (let sucursal in sucursales_js) {
-        console.log(sucursal);
-    }
+    // for (let sucursal in sucursales_js) {
+    //     console.log(sucursal);
+    // }
     
-    console.log(sucursales_js);
-
-
-
+    // console.log(sucursales_js);
 
 
    //Select2
@@ -351,6 +366,39 @@
                     calendar_all_events
                     );
 
+       $('#preview').click(function(){
+
+                let calendarEvent =   {
+                            backgroundColor: '#3c8dbc',
+                            className : 'custom',
+                            };                
+                console.log($('#start_date').val(),$('#end_date').val());
+
+                 if ($('#start_date').val().length) {
+                    calendarEvent.start = $('#start_date').val();
+
+                 }
+                 if ($('#end_date').val().length) {
+                    calendarEvent.end = $('#end_date').val();
+                 }
+                 if ($('#name').val().length) {
+                    console.log('campo name tiene algo');
+                    calendarEvent.title = $('#name').val();
+
+                 }
+                 if (calendarEvent.hasOwnProperty('start')) {
+                    console.log(calendarEvent);
+                    // $('#calendar').fullCalendar('addEvent', calendarEvent )
+                    $('#calendar').fullCalendar( 'destroy' );
+                    calendar_all_events.events = [calendarEvent]; //REMEBER THIS NEEDS TO BE AN ARRAY OF OBJECTS (EVENTS)
+                    $('#calendar').fullCalendar(
+                    calendar_all_events
+                    );
+                    console.log(calendar_all_events)
+                 }
+                       
+           }
+        );
 
 
     // ---------------------------------------------
@@ -358,16 +406,6 @@
 
 
 
-    //SWITCH FOR 'Select Time Range'
-        // source:http://icheck.fronteed.com/#features  (see callbacks)
-        $('input').on('ifToggled', function(event){
-
-          if ($('#periodic').prop("disabled") ) {
-            $('#periodic').prop("disabled", false)
-          } else {
-            $('#periodic').prop("disabled", true)
-          }
-        });
 
 
    $('.datetimepicker').datetimepicker({
