@@ -55,7 +55,7 @@
                                 	<b><?php echo lang('case')?> <?php echo lang('title')?></b>
 								</div>
 								<div class="col-md-4">
-                                    
+                                    <input id="llave" name ="llave"  type="hidden" name="opcion" value="<?php echo $case->id;?>">
 									<input type="text" name="title" value="<?php echo $case->title;?>" class="form-control">
                                 </div>
                             </div>
@@ -193,7 +193,11 @@
 								<div class="col-md-4">
                                     <select id="categorias" name="case_category_id" class="chzn col-md-12" >
 										<?php foreach($case_categories as $new) {
-											$sel = (in_array($new->id,json_decode($case->case_category_id)))?'selected': '';
+											$sel = ''; 
+
+                                            if ($new->id == $case->case_category_id)
+                                              $sel = 'selected';
+
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
@@ -208,60 +212,7 @@
                                 <div class="col-md-4" id="category_result">
                                 <!-- campos opcionales -->
 
-                                <?php 
 
-                                            if ($case->case_category_id=='"1"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Fecha: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="fechacaja" class="form-control datepicker" value="'.$case->fechacaja.'.">
-                                                                </div>
-                                                '; 
-                                             } 
-
-                                             if ($case->case_category_id=='"2"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Proveedor: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="proveedor" class="form-control" value="'.$case->proveedor.'">
-                                                                </div>
-                                                                </br>
-                                                                </br>
-                                                                <div class="col-md-4">
-                                                                    <b>Num Factura: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="numfactura" class="form-control" value="'.$case->numfactura.'">
-                                                                </div>
-                                                '; 
-                                             } 
-                                             if ($case->case_category_id=='"3"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Sistema: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="sistema" class="form-control" value="'.$case->sistema.'">
-                                                                </div>
-                                                '; 
-                                             }
-
-                                             if ($case->case_category_id=='"5"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Periodo: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="periodo" class="form-control" value="'.$case->periodo.'">
-                                                                </div>
-                                                '; 
-                                             }
-
-                                ?>
                                     
 
 
@@ -668,6 +619,45 @@ $(document).on('change', '#categorias', function(){
 });
 
 
+function cargaInicial(){
+ //alert(12);
+    categoria_id = $('#categorias').val();
+    location_id = $('#location_id').val();
+    llave = $('#llave').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#category_result').html(ajax_load);
+      
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/opciones2') ?>',
+    type:'POST',
+    data:{l_id:categoria_id,empresa:location_id,ll:llave},
+    
+    success:function(result){
+      //alert(result);return false;
+      $('#category_result').html(result);
+      $(".chzn").chosen();
+         jQuery('.datepicker').datetimepicker({
+             lang:'en',
+             i18n:{
+              de:{
+               months:[
+                'Januar','Februar','März','April',
+                'Mai','Juni','Juli','August',
+                'September','Oktober','November','Dezember',
+               ],
+               dayOfWeek:[
+                "So.", "Mo", "Di", "Mi", 
+                "Do", "Fr", "Sa.",
+               ]
+              }
+             },
+             timepicker:false,
+             format:'Y-m'
+            });
+     }
+  });
+}
+
 $(document).on('change', '#court_category_id', function(){
  //alert(12);
  	location_id = $('#location_id').val();
@@ -725,6 +715,6 @@ $(function() {
 });
   });
 
-
+cargaInicial();
 
 </script>

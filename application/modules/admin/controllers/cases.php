@@ -1076,6 +1076,125 @@ class cases extends MX_Controller {
 
         } 
 	}
+
+	function opciones2(){
+        if(isset($_POST['l_id'])){
+            if (!$this->cases_model->existeElTicket($_POST['l_id'],$_POST['empresa'])){
+                       $fields_clients = $this->custom_field_model->get_custom_fields((int)("10".$_POST['l_id']));	
+
+
+
+                      // Cargando Campos dinamicos: 
+            	      //--------------------------------------------------------------------------------------------------
+						if($fields_clients){
+							foreach($fields_clients as $doc){
+							$output = '';
+							if($doc->field_type==1) //testbox
+							{
+						
+								echo '
+								<div class="form-group">
+		                              <div class="row">
+		                                <div class="col-md-4">
+		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
+									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+										</div>
+		                            </div>
+		                        </div>';
+
+					     	}	
+							if($doc->field_type==2) //dropdown list
+							{
+								$values = explode(",", $doc->values);
+					
+		                        echo '
+							    <div class="form-group">
+		                              <div class="row">
+		                                <div class="col-md-4">
+		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
+									<select name="reply['. $doc->id .']" class="form-control">';
+										
+												foreach($values as $key=>$val) {
+													echo '<option value="'.$val.'">'.$val.'</option>';
+												}
+									
+									echo '			
+									</select>	
+										</div>
+		                            </div>
+		                        </div>
+		                        ';
+							}	
+						  if($doc->field_type==3) //radio buttons
+							{
+								$values = explode(",", $doc->values);
+				
+		                         echo '
+							    <div class="form-group">
+		                              <div class="row">
+		                                <div class="col-md-4">
+		                                    <label for="contact" style="clear:both;">'. $doc->name .'?></label>';
+												foreach($values as $key=>$val) {
+												echo ' 
+												<input type="radio" name="reply['. $doc->id .']" value="'. $val .'" />'. $val .' &nbsp; &nbsp; &nbsp; &nbsp;
+													';
+		 										}
+												echo '
+										</div>
+		                            </div>
+		                        </div>
+								 ';
+						  }
+						if($doc->field_type==4) //checkbox
+							{
+								$values = explode(",", $doc->values);
+								echo '
+						<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>';					
+										foreach($values as $key=>$val) { 
+										echo '
+										<input type="checkbox" name="reply[ '. $doc->id .']" value="'. $val .'" class="form-control" />	&nbsp; &nbsp; &nbsp; &nbsp;
+										';
+ 							 			}
+							echo '		
+								</div>
+                            </div>
+                        </div>
+                        ';
+
+					  }	if($doc->field_type==5) //Textarea
+						  {		
+                             echo '
+						  	<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>
+										<textarea class="form-control" name="reply['. $doc->id .' ]" ></textarea		
+								></div>
+                            </div>
+                        </div>
+                        ';
+							
+								}	
+							}
+						}
+					//--------------------------------------------------------------------------------------------------------
+
+
+
+         }else{
+              echo '
+                  <script> alert("Este ticket ya existe");</script>
+             '; 
+
+         }
+
+
+
+        } 
+	}
 	
 	function get_depts_cats()
 	{
@@ -1603,7 +1722,7 @@ class cases extends MX_Controller {
 				//$save['dept_id'] = $this->input->post('dept_id');
 				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
-				$save['case_category_id'] = json_encode($this->input->post('case_category_id'));
+				$save['case_category_id'] = $this->input->post('case_category_id');
 				$save['act_id'] = json_encode($this->input->post('act_id'));
 				$save['progress'] = $this->input->post('progress');
 				$save['description'] = $this->input->post('description');
@@ -1621,9 +1740,24 @@ class cases extends MX_Controller {
 				$save['sistema'] = $this->input->post('sistema');
 				if(isset($_POST['periodo']))
 				$save['periodo'] = $this->input->post('periodo');		
-
-             
 			 	$p_key = $this->cases_model->save($save);
+                $reply = $this->input->post('reply');
+				if(!empty($reply)){
+					//$save_fields = array();
+					foreach($this->input->post('reply') as $key => $val) {
+
+						$save_fields = array(
+							//'custom_field_id'=> $key,
+							'reply'=> $val,
+							'table_id'=> $p_key,
+							'form'=> ((int)("10".$this->input->post('case_category_id')))
+						);	
+						$this->custom_field_model->save_answer($save_fields);
+					}	
+				}
+
+
+
                   // $url =base_url('assets/uploads/tareas/');
 				$target_path ='assets/uploads/tickets/'.$p_key;
                 $carpeta = 'assets/uploads/tickets/'.(string)$p_key;
@@ -1656,21 +1790,8 @@ class cases extends MX_Controller {
 		                   
 		        }
 
-				$reply = $this->input->post('reply');
-					if(!empty($reply)){
-					foreach($this->input->post('reply') as $key => $val) {
-						$save_fields[] = array(
-							'custom_field_id'=> $key,
-							'reply'=> $val,
-							'table_id'=> $p_key,
-							'form'=> 2,
-						);	
-					
-					}	
-					$this->custom_field_model->save_answer($save_fields);
-				}
-                $this->session->set_flashdata('message', lang('case_created'));
-				redirect('admin/cases');
+                //$this->session->set_flashdata('message', lang('case_created'));
+				//redirect('admin/cases');
 				
 			}
 		}		
@@ -1738,7 +1859,7 @@ class cases extends MX_Controller {
 				//$save['dept_id'] = $this->input->post('dept_id');
 				//$save['dept_category_id'] = $this->input->post('dept_category_id');
 				$save['case_stage_id'] = $this->input->post('case_stage_id');
-				$save['case_category_id'] = json_encode($this->input->post('case_category_id'));
+				$save['case_category_id'] = $this->input->post('case_category_id');
 				$save['act_id'] = json_encode($this->input->post('act_id'));
 				$save['description'] = $this->input->post('description');
 				$save['start_date'] = $this->input->post('start_date');
@@ -1757,21 +1878,23 @@ class cases extends MX_Controller {
 				if(isset($_POST['periodo']))
 				$save['periodo'] = $this->input->post('periodo');		
 				
+				
+				$this->cases_model->update($save,$id);
 				$reply = $this->input->post('reply');
-				if(!empty($reply)){	
+				if(!empty($reply)){
+					//$save_fields = array();
 					foreach($this->input->post('reply') as $key => $val) {
-						$save_fields[] = array(
-							'custom_field_id'=> $key,
+
+						$save_fields = array(
+							//'custom_field_id'=> $key,
 							'reply'=> $val,
 							'table_id'=> $id,
-							'form'=> 2,
+							'form'=> ((int)("10".$this->input->post('case_category_id')))
 						);	
-					
+						$this->custom_field_model->delete_answer($id,(int)("10".$this->input->post('case_category_id')));
+						$this->custom_field_model->save_answer($save_fields);
 					}	
-					$this->custom_field_model->delete_answer($id,$form=2);
-					$this->custom_field_model->save_answer($save_fields);
 				}
-				$this->cases_model->update($save,$id);
               	$this->session->set_flashdata('message',  lang('case_created'));
 				redirect('admin/cases');
 			}
