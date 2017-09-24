@@ -31,9 +31,19 @@ class case_category extends MX_Controller {
 				$save['name'] = $this->input->post('name');
 				$save['parent_id'] = $this->input->post('parent_id');
                 
-				$this->case_category_model->save($save);
-                $this->session->set_flashdata('message', lang('case_category_created'));
-				redirect('admin/case_category');
+				$p_key = $this->case_category_model->save($save);
+	
+
+		                $save_field['name'] 		 = $this->input->post('namefield');
+						$save_field['field_type']  = $this->input->post('type');
+						$save_field['form']		 = "10". strval($p_key);
+						$save_field['values']		 = $this->input->post('values');
+						$this->custom_field_model->save($save_field);
+						
+			    
+
+                //$this->session->set_flashdata('message', lang('case_category_created'));
+				//redirect('admin/case_category');
 				
 			}
 			

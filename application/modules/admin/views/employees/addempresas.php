@@ -170,18 +170,18 @@ function areyousure()
 
 
                                             if (($new->id == 0)){
-                                            echo '<option class="padre" selected="selected" value="'.$new->id.'" '.$sel.'> - '.$new->name.'</option>';
-                                                foreach($listaempresas2 as $new2) {
-                                                      if ($new2->parent_id == $new->id){
-                                                          echo '<option class="hijo" selected="selected" value="'.$new2->id.'" '.$sel.'> -- '.$new2->name.'</option>';
-                                                          foreach($listaempresas3 as $new3) {
-                                                                if ($new3->parent_id == $new2->id){
-                                                              echo '<option class="nieto" selected="selected" value="'.$new3->id.'" '.$sel.'> --- '.$new3->name.'</option>';
+                                                echo '<option class="padre" selected="selected" value="'.$new->id.'" '.$sel.'> - '.$new->name.'</option>';
+                                                    foreach($listaempresas2 as $new2) {
+                                                          if ($new2->parent_id == $new->id){
+                                                              echo '<option class="hijo" selected="selected" value="'.$new2->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp '.$new2->name.'</option>';
+                                                              foreach($listaempresas3 as $new3) {
+                                                                    if ($new3->parent_id == $new2->id){
+                                                                  echo '<option class="nieto" selected="selected" value="'.$new3->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp '.$new3->name.'</option>';
+                                                                  }
                                                               }
-                                                          }
+                                                        }
                                                     }
                                                 }
-                                            }
 
                                           }
                                         

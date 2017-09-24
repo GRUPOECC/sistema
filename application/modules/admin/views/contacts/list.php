@@ -1,6 +1,6 @@
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css')?>" rel="stylesheet">
-<script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
+<!--<script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>-->
 <link href="<?php echo base_url('assets/css/chosen.css')?>" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
@@ -394,8 +394,8 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/dataTables.bootstrap.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
+<!--<script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script> -->
+<!--<script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>-->
 
 <?php 
    //(filtrado de un total de _MAX_ registros)

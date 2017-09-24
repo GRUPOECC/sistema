@@ -139,6 +139,7 @@ $lang['court_category']		= "Corte Categoría";
 $lang['case_category']		= "Ticket Catégorie";
 $lang['payment_date']		= "Fecha de Pago";
 $lang['custom_fields']		= "Custom Fields";
+$lang['field_add']	     	= "Agregar Campos Adicionales";
 $lang['field_name']			= "Nombre del campo";
 $lang['field_type']			= "Tipo de campo";
 $lang['select_form']		= "Selección de forma";
@@ -577,6 +578,7 @@ $lang['code'] = "Codigo Interno";
 $lang['rif'] = "RIF";
 $lang['reason'] = "Razon Social";
 $lang['subcompany'] = "Es una subempresa de ";
+$lang['add_field'] = "Agregar campos adicionales";
 
 
 

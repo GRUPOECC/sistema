@@ -961,57 +961,109 @@ class cases extends MX_Controller {
 	function opciones(){
         if(isset($_POST['l_id'])){
             if (!$this->cases_model->existeElTicket($_POST['l_id'],$_POST['empresa'])){
+                       $fields_clients = $this->custom_field_model->get_custom_fields((int)("10".$_POST['l_id']));	
 
-             if ($_POST['l_id']==1){
-             	echo '
-                                <div class="col-md-4">
-                                	<b>Fecha: </b>
-								</div>
-								<div class="col-md-8">    
-							    <input type="text" name="fechacaja" class="form-control datepicker" value="">
-                                </div>
-             	'; 
-             } 
 
-             if ($_POST['l_id']==2){
-             	echo '
-                                <div class="col-md-4">
-                                	<b>Proveedor: </b>
-								</div>
-								<div class="col-md-8">    
-							    <input type="text" name="proveedor" class="form-control" value="">
-                                </div>
-                                </br>
-                                </br>
-                                <div class="col-md-4">
-                                	<b>Num Factura: </b>
-								</div>
-								<div class="col-md-8">    
-							    <input type="text" name="numfactura" class="form-control" value="">
-                                </div>
-             	'; 
-             } 
-             if ($_POST['l_id']==3){
-             	echo '
-                                <div class="col-md-4">
-                                	<b>Sistema: </b>
-								</div>
-								<div class="col-md-8">    
-							    <input type="text" name="sistema" class="form-control" value="">
-                                </div>
-             	'; 
-             }
 
-             if ($_POST['l_id']==5){
-             	echo '
+                      // Cargando Campos dinamicos: 
+            	      //--------------------------------------------------------------------------------------------------
+						if($fields_clients){
+							foreach($fields_clients as $doc){
+							$output = '';
+							if($doc->field_type==1) //testbox
+							{
+						
+								echo '
+								<div class="form-group">
+		                              <div class="row">
+		                                <div class="col-md-4">
+		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
+									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
+										</div>
+		                            </div>
+		                        </div>';
+
+					     	}	
+							if($doc->field_type==2) //dropdown list
+							{
+								$values = explode(",", $doc->values);
+					
+		                        echo '
+							    <div class="form-group">
+		                              <div class="row">
+		                                <div class="col-md-4">
+		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
+									<select name="reply['. $doc->id .']" class="form-control">';
+										
+												foreach($values as $key=>$val) {
+													echo '<option value="'.$val.'">'.$val.'</option>';
+												}
+									
+									echo '			
+									</select>	
+										</div>
+		                            </div>
+		                        </div>
+		                        ';
+							}	
+						  if($doc->field_type==3) //radio buttons
+							{
+								$values = explode(",", $doc->values);
+				
+		                         echo '
+							    <div class="form-group">
+		                              <div class="row">
+		                                <div class="col-md-4">
+		                                    <label for="contact" style="clear:both;">'. $doc->name .'?></label>';
+												foreach($values as $key=>$val) {
+												echo ' 
+												<input type="radio" name="reply['. $doc->id .']" value="'. $val .'" />'. $val .' &nbsp; &nbsp; &nbsp; &nbsp;
+													';
+		 										}
+												echo '
+										</div>
+		                            </div>
+		                        </div>
+								 ';
+						  }
+						if($doc->field_type==4) //checkbox
+							{
+								$values = explode(",", $doc->values);
+								echo '
+						<div class="form-group">
+                              <div class="row">
                                 <div class="col-md-4">
-                                	<b>Periodo: </b>
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>';					
+										foreach($values as $key=>$val) { 
+										echo '
+										<input type="checkbox" name="reply[ '. $doc->id .']" value="'. $val .'" class="form-control" />	&nbsp; &nbsp; &nbsp; &nbsp;
+										';
+ 							 			}
+							echo '		
 								</div>
-								<div class="col-md-8">    
-							    <input type="text" name="periodo" class="form-control" value="">
-                                </div>
-             	'; 
-             }
+                            </div>
+                        </div>
+                        ';
+
+					  }	if($doc->field_type==5) //Textarea
+						  {		
+                             echo '
+						  	<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>
+										<textarea class="form-control" name="reply['. $doc->id .' ]" ></textarea		
+								></div>
+                            </div>
+                        </div>
+                        ';
+							
+								}	
+							}
+						}
+					//--------------------------------------------------------------------------------------------------------
+
+
 
          }else{
               echo '
