@@ -106,166 +106,31 @@
                     </div>
 	
 		<?php }else{?>		
+
+	<section>
+        <section>
+
     <div class="row">
-	                     <div class="col-lg-2 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-aqua">
-                                <div class="inner">
-                                    <h3>
-                                        <?php echo count($clients)?>
-                                    </h3>
-                                    <p>
-                                     <?php echo lang('clients');?>
-                                    </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <a href="<?php echo site_url('admin/clients')?>" class="small-box-footer">
-                                    <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                         <div class="col-lg-2 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-blue">
-                                <div class="inner">
-                                    <h3>
-                                        <?php echo count($employees)?>
-                                    </h3>
-                                    <p>
-                                     <?php echo lang('employees');?>
-                                    </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-users"></i>
-                                </div>
-                                <a href="<?php echo site_url('admin/employees')?>" class="small-box-footer">
-                                    <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                    </div>
-	
-     <div class="row">
-                        <div class="col-lg-2 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-red">
-                                <div class="inner">
-                                    <h3>
-                                       <?php echo count($case_all)?>
-                                    </h3>
-                                    <p>
-                                       <?php echo lang('cases');?>
-                                    </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-list"></i>
-                                </div>
-                                <a href="<?php echo site_url('admin/cases')?>" class="small-box-footer">
-                                    <?php echo lang('more_info');?>  <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                         <div class="col-lg-2 col-xs-6">
+                        <div class="col-lg-2 col-xs-4">
                             <!-- small box -->
                             <div class="small-box bg-green">
                                 <div class="inner">
                                     <h3>
-                                       <?php echo count($case_open)?>
+                                       <?php echo count($my_cases)?>
                                     </h3>
                                     <p>
-                                       <?php echo lang('cases_open');?>
+                                       <?php echo lang('my_cases');?>
                                     </p>
                                 </div>
                                 <div class="icon">
                                     <i class="fa fa-list"></i>
                                 </div>
-                                <a href="<?php echo site_url('admin/cases')?>" class="small-box-footer">
+                                <a href="<?php echo site_url('admin/my_cases')?>" class="small-box-footer">
                                     <?php echo lang('more_info');?>  <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
-                        <div class="col-lg-2 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-yellow">
-                                <div class="inner">
-                                    <h3>
-                                       <?php echo count($starred)?>
-                                    </h3>
-                                    <p>
-                                       <?php echo lang('starred_cases');?>
-                                    </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-star"></i>
-                                </div>
-                                <a href="<?php echo site_url('admin/cases/starred_cases')?>" class="small-box-footer">
-                                   <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                        <div class="col-lg-2 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-purple-gradient">
-                                <div class="inner">
-                                    <h3>
-                                        <?php echo count($archived)?>
-                                    </h3>
-                                    <p>
-                                        <?php echo lang('archived_cases'); ?>
-                                    </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-archive"></i>
-                                </div>
-                                <a href="<?php echo site_url('admin/cases/archived_cases')?>" class="small-box-footer">
-                                   <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                        <div class="col-lg-2 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-light-blue-gradient">
-                                <div class="inner">
-                                    <h3>
-                                       <?php echo count($case_study)?>
-                                    </h3>
-                                    <p>
-                                       <?php echo lang('case_study');?>
-                                    </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-book"></i>
-                                </div>
-                                <a href="<?php echo site_url('admin/case_study')?>" class="small-box-footer">
-                                   <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                    </div>	
-	 <div class="row">
-	                    
-                        <div class="col-lg-2 col-xs-6">
-                            <!-- small box -->
-                            <div class="small-box bg-red">
-                                <div class="inner">
-                                    <h3>
-                                       <?php echo count($tasks)?>
-                                    </h3>
-                                    <p>
-                                       <?php echo lang('tasks');?>
-                                    </p>
-                                </div>
-                                <div class="icon">
-                                    <i class="fa fa-tasks"></i>
-                                </div>
-                                <a href="<?php echo site_url('admin/tasks')?>" class="small-box-footer">
-                                    <?php echo lang('more_info');?>  <i class="fa fa-arrow-circle-right"></i>
-                                </a>
-                            </div>
-                        </div><!-- ./col -->
-                        <div class="col-lg-2 col-xs-6">
+                        <div class="col-lg-2 col-xs-4">
                             <!-- small box -->
                             <div class="small-box bg-aqua">
                                 <div class="inner">
@@ -277,17 +142,35 @@
                                     </p>
                                 </div>
                                 <div class="icon">
-                                    <i class="fa fa-inbox"></i>
+                                    <i class="fa fa-list"></i>
                                 </div>
                                 <a href="<?php echo site_url('admin/tasks/my_tasks')?>" class="small-box-footer">
                                    <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
-                    </div>
-    <div class="row">
                         
-                        <div class="col-lg-2 col-xs-6">
+                        <div class="col-lg-2 col-xs-4">
+                            <!-- small box -->
+                            <div class="small-box bg-yellow">
+                                <div class="inner">
+                                    <h3>
+                                       <?php echo count($messages)?>
+                                    </h3>
+                                    <p>
+                                       <?php echo lang('messages');?>
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-inbox"></i>
+                                </div>
+                                <a href="<?php echo site_url('admin/message')?>" class="small-box-footer">
+                                    <?php echo lang('more_info');?>  <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                                                                    
+                        <div class="col-lg-2 col-xs-4">
                             <!-- small box -->
                             <div class="small-box bg-red">
                                 <div class="inner">
@@ -306,242 +189,123 @@
                                 </a>
                             </div>
                         </div><!-- ./col -->
-                        <div class="col-lg-2 col-xs-6">
+                        <div class="col-lg-2 col-xs-4">
                             <!-- small box -->
-                            <div class="small-box bg-aqua">
+                            <div class="small-box bg-orange">
                                 <div class="inner">
                                     <h3>
-                                        <?php echo count($calls)?>
+                                       <?php echo count($documents)?>
                                     </h3>
                                     <p>
-                                        <?php echo lang('calls'); ?>
+                                       <?php echo lang('documents');?>
                                     </p>
                                 </div>
                                 <div class="icon">
-                                    <i class="fa fa-inbox"></i>
+                                    <i class="fa fa-book"></i>
                                 </div>
-                                <a href="<?php echo site_url('admin/calls')?>" class="small-box-footer">
+                                <a href="<?php echo site_url('admin/documents')?>" class="small-box-footer">
                                    <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
                                 </a>
                             </div>
                         </div><!-- ./col -->
-                    </div>
-	
-	<div class="row">	
-	<?php if(check_user_role(105)==1){?>		
-	<section class="col-lg-6 connectedSortable ui-sortable">	
-		<div class="box box-primary ">
+                        <div class="col-lg-2 col-xs-4">
+                            <!-- small box -->
+                            <div class="small-box bg-light-blue-gradient">
+                                <div class="inner">
+                                    <h3>
+                                       <?php echo count($documents)?>
+                                    </h3>
+                                    <p>
+                                       <?php echo lang('documents');?>
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa fa-book"></i>
+                                </div>
+                                <a href="<?php echo site_url('admin/documents')?>" class="small-box-footer">
+                                   <?php echo lang('more_info');?> <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+     </div> 
+
+        </section>  
+	</section>                   
+    <section>
+        <section>
+                <div class="row">   
+                    <div class="col-md-6">
+                        <div class="box box-primary">
+                            <div class="box-body ">
+                                    <!-- THE CALENDAR -->
+                                    <h4><?php echo lang('calendar'); ?></h4>
+                                    <div id="caption-cases" class="caption-element external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;">
+                                    <?php echo lang('cases'); ?>
+                                    </div>
+                                    <div id="caption-appointments" class="caption-element external-event ui-draggable ui-draggable-handle bg-light-blue" style="position: relative;">
+                                    <?php echo lang('appointments'); ?>
+                                    </div>
+                                    <div id="caption-tasks" class="caption-element external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;">
+                                    <?php echo lang('Tasks'); ?>
+                                    </div>
+                                    <div id="caption-all" class="caption-element external-event bg-purple-gradient ui-draggable ui-draggable-handle" style="position: relative;">
+                                    <?php echo lang('show_all_events'); ?>
+                                    </div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /. box -->
+                    </div><!-- /.col -->
+                </div>
+                <div class="row">      
+                    <div class="col-md-6">
+                        <div class="box box-primary">
+                            <div class="box-body no-padding">
+                                    <!-- THE CALENDAR -->
+                                    <div id="calendar"></div>
+                            </div><!-- /.box-body -->
+                        </div><!-- /. box -->
+                    </div><!-- /.col -->
+                </div><!-- /.row -->
+
+        <div class="box box-primary">
+            
                                 <div class="box-header ui-sortable-handle" style="cursor: move;">
                                     <i class="ion ion-clipboard"></i>
-                                    <h3 class="box-title"><?php echo lang('todays_cases');?></h3>
-                                    <div class="box-tools pull-right">
-                                        
-                                    </div>
-                                </div><!-- /.box-header -->
-                                <div class="box-body">
-                                    <ul class="todo-list ui-sortable">
-									<?php if(isset($cases)):?>
-										 <?php $i=1;foreach ($cases as $new){?>
-                                        <li>
-                                            <!-- drag handle -->
-                                            <span class="handle ui-sortable-handle">
-                                                <i class="fa fa-ellipsis-v"></i>
-                                                <i class="fa fa-ellipsis-v"></i>
-                                            </span>
-                                            <!-- todo text -->
-                                            <span class="text"><a href="<?php echo site_url('admin/cases/dates/'.$new->case_id); ?>"><?php echo $new->case_no  ." - ". $new->title; ?> </a></span>
-                                            <!-- Emphasis label -->
-                                           
-                                            <!-- General tools such as edit or delete-->
-                                            <div class="tools">
-                                                <i class="fa fa-eye"></i>
-                                                
-                                            </div>
-                                        </li>
-										<?php $i++;}?>
-									<?php endif;?>	
-                                    </ul>
-                                </div><!-- /.box-body -->
-                                <div class="box-footer clearfix no-border">
-                                    <button class="btn btn-default pull-right"><a href="<?php echo site_url('admin/cases/view_all'); ?>"><i class="fa fa-plus"></i> <?php echo lang('view_all'); ?></a></button>
-                                </div>
-                            </div>		
-	</section>
-	<?php 
-	}
-	if(check_user_role(107)==1){?>		
-	<section class="col-lg-6 connectedSortable ui-sortable">	
-		<div class="box box-primary ">
-                                <div class="box-header ui-sortable-handle" style="cursor: move;">
-                                    <i class="fa fa-tasks"></i>
-                                    <h3 class="box-title"><?php echo lang('todays_to_do'); ?></h3>
-                                    <div class="box-tools pull-right">
-                                        
-                                    </div>
-                                </div><!-- /.box-header -->
-                                <div class="box-body">
-                                    <ul class="todo-list ui-sortable">
-									<?php if(isset($to_do)):?>
-										 <?php $i=1;foreach ($to_do as $new){?>
-                                        <li>
-                                            <!-- drag handle -->
-                                            <span class="handle ui-sortable-handle">
-                                                <i class="fa fa-ellipsis-v"></i>
-                                                <i class="fa fa-ellipsis-v"></i>
-                                            </span>
-                                            <!-- todo text -->
-                                            <span class="text"><a href="<?php echo site_url('admin/to_do_list'); ?>"><?php echo  $new->title; ?> </a></span>
-                                            <!-- Emphasis label -->
-                                           
-                                            <!-- General tools such as edit or delete-->
-                                            <div class="tools">
-                                                <i class="fa fa-eye"></i>
-                                                
-                                            </div>
-                                        </li>
-										<?php $i++;}?>
-									<?php endif;?>	
-                                    </ul>
-                                </div><!-- /.box-body -->
-                                <div class="box-footer clearfix no-border">
-                                    <button class="btn btn-default pull-right"><a href="<?php echo site_url('admin/to_do_list/view_all'); ?>"><i class="fa fa-plus"></i> <?php echo lang('view_all'); ?></a></button>
-                                </div>
-     
-	                        </div>				
-</div>
-<?php }?>
-<section class="col-lg-6 connectedSortable ui-sortable">	
-					<div class="box box-primary">
-                                <div class="box-header ui-sortable-handle" style="cursor: move;">
-                                    <i class="ion ion-clipboard"></i>
-                                    <h3 class="box-title"><?php echo lang('notice_board')?></h3>
-                                   
+                                    <h4 class="box-title"><?php echo lang('notice_board')?></h4>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
                                     <ul class="todo-list ui-sortable">
                                       <?php if(isset($notice)):?>
-										 <?php $i=1;foreach ($notice as $new){?>  
+                                         <?php $i=1;foreach ($notice as $new){?>  
                                         <li>
                                             <span class="label label-info"><i class="fa fa-clock-o"></i> <?php echo date_time_convert($new->date_time); ?></span>
-											<span class="text"><?php echo $new->title; ?></span>
+                                            <span class="text"><?php echo $new->title; ?></span>
                                             
                                             <div class="tools">
                                                <a href="<?php echo site_url('admin/notice/view/'.$new->id)?>"> <i class="fa fa-eye"></i></a>
                                             </div>
                                         </li>
-										<?php $i++;}?>
-									<?php endif;?>	
+                                        <?php $i++;}?>
+                                    <?php endif;?>  
                                     </ul>
                                 </div><!-- /.box-body -->
                                 <div class="box-footer clearfix no-border">
                                     <button class="btn btn-default pull-right"><i class="fa fa-plus"></i> <a href="<?php echo site_url('admin/notice/')?>"><?php echo lang('view_all')?></a></button>
-                                </div>
+                                </div><!-- /.box-footer -->
                             </div>
-</section>
-<?php if($access==1){ ?>
-<section class="col-lg-6 connectedSortable ui-sortable">	
-					<div class="box box-primary">
-                                <div class="box-header ui-sortable-handle" style="cursor: move;">
-                                    <i class="fa fa-user"></i>
-                                    <h3 class="box-title"><?php echo lang('today_employees_on_leave')?></h3>
-                            								</div><!-- /.box-header -->
-                                <div class="box-body">
-									
-									         <ul class="todo-list ui-sortable">
-									 <?php $i=1;foreach ($todays_leaves as $new){?>  
-                                        <li>
-                                           <span class="text"><?php echo $new->user; ?></span>
-										   <span class="text label label-success"><?php echo $new->leave_type; ?></span>
-                                            
-                                            <div class="tools">
-                                               <a href="#"> </a>
-                                            </div>
-                                        </li>
-										<?php $i++;}?>
-									</ul>
+                    <?php } ?>
+    </section><!-- /.content -->                       
+                        
+    </div>
 
-		                        </div>
-								
-                      </div>
-</section>
+	<div class="row">	
+	<?php {?>		
+
+	<?php } {?>		
+
+    <?php }?>
+    
 
 
-<?php }else{
-		if($access !=2){
- ?>
-<section class="col-lg-6 connectedSortable ui-sortable">	
-					<div class="box box-primary">
-                                <div class="box-header ui-sortable-handle" style="cursor: move;">
-                                    <i class="fa fa-user"></i>
-                                    <h3 class="box-title"><?php echo lang('attendance')?></h3>
-                                   <div class="box-tools pull-right">
-								  <?php //if(check_user_role(137)==1){?>	 
-                                   	<a href="#apply_leave" class="btn bg-purple btn-flat margin" data-toggle="modal"  > <i class="fa fa-arrow-circle-up"></i> <?php echo lang('apply_leave')?></a><?php //} ?>
-								   </div>
-                                </div><!-- /.box-header -->
-                                <div class="box-body">
-			<?php if(empty($check_today)){?>	
-						<?php if(!empty($att_status)){?>		
-								<?php if($att_status->current_status==NULL OR $att_status->current_status==0){?>
-                                <a href="#mark_in" class="btn bg-olive btn-flat margin" data-toggle="modal"  > <i class="fa fa-sign-in"></i> <?php echo lang('mark_in')?></a>
-								<?php }else{?>
-									<a href="#mark_out" class="btn bg-orange btn-flat margin" data-toggle="modal"  > <i class="fa fa-sign-out"></i> <?php echo lang('mark_out')?></a>									<?php } ?>
-						<?php }else{ ?>
-									<a href="#mark_in" class="btn bg-olive btn-flat margin" data-toggle="modal"  > <i class="fa fa-sign-in"></i> <?php echo lang('mark_in')?></a>	
-						<?php }?>	
-			<?php }else{?>
-							<button class="btn bg-maroon btn-flat margin">Today is <?php echo $check_today->leave_type?></button>
-				
-			<?php }?>					
-                                </div><!-- /.box-body -->
-								 <div class="box-footer clearfix no-border">
-								 <?php //if(check_user_role(135)==1){?>	
-                                    <a href="<?php echo site_url('admin/attendance/my_attendance');?>" style="padding-right:7px" class="btn btn-default"><i class="fa fa-user"></i> <?php echo lang('my_attendance')?></a>
-								<?php //} ?>	
-									<?php //if(check_user_role(136)==1){?>	
-									<a href="<?php echo site_url('admin/attendance/my_leaves');?>"  class="btn btn-default pull-right"><i class="fa fa-plus"></i> <?php echo lang('my_leaves')?></a>	
-									<?php //} ?>	
-                                </div>
-								
-                      </div>
-</section>
-<?php		 } 
-	}
-?>
-
-	<section class="content">
-				<div class="row">	
-					
-					
-					<div class="col-md-9">
-                            <div class="box box-primary">
-						<!-- <div class="col-md-12" style="padding:20px">	
-							<select id='lang-selector' class="pull-right"></select>
-						</div>	 -->
-
-                                <div class="box-body no-padding">
-                                    <!-- THE CALENDAR -->
-                                    <div id="calendar"></div>
-                                </div><!-- /.box-body -->
-                            </div><!-- /. box -->
-                        </div><!-- /.col -->
-						<div class="col-md-3">
-                            <div class="box box-primary">
-                                <div class="box-body ">
-                                    <!-- THE CALENDAR -->
-									<h2><?php echo lang('events'); ?></h2>
-                                    <div id="caption-cases" class="caption-element external-event bg-red ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('cases'); ?></div>
-                                    <div id="caption-appointments" class="caption-element external-event ui-draggable ui-draggable-handle bg-light-blue" style="border-color: rgb(0, 115, 183); color: rgb(255, 255, 255); position: relative;"><?php echo lang('appointments'); ?></div>
-                                    <div id="caption-tasks" class="caption-element external-event bg-yellow ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('Tasks'); ?></div>
-                                    <div id="caption-all" class="caption-element external-event bg-purple-gradient ui-draggable ui-draggable-handle" style="position: relative;"><?php echo lang('show_all_events'); ?></div>
-
-                                </div><!-- /.box-body -->
-                            </div><!-- /. box -->
-                        </div><!-- /.col -->
-                    </div><!-- /.row -->
-
-					<?php } ?>
-     </section><!-- /.content -->	
 
 
 <!-- Modal -->

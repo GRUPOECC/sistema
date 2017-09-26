@@ -1,3 +1,9 @@
 
 application/logs/log-2017-08-24.php
 application/logs/log-*.php
+*.JPG
+*.xls
+*.pdf
+*.exe
+*.xlsx
+application/config/database.php
