@@ -138,7 +138,7 @@ function areyousure()
 									<a class="btn btn-info"  href="<?php echo site_url('admin/cases/fees/'.$new->id); ?>"><i class="fa fa-inr"></i> <?php echo lang('fees')?></a>	
                          <?php } ?>
 						  <?php if(check_user_role(84)==1){?>	
-						              <a class="btn btn-success"  href="<?php echo site_url('admin/cases/dates/'.$new->id); ?>"><i class="fa fa-calendar"></i> <?php echo lang('hearing_date')?></a>							
+						              <a class="btn btn-info"  href="<?php echo site_url('admin/cases/dates/'.$new->id); ?>"><i class="fa fa-calendar"></i> <?php echo lang('hearing_date')?></a>							
                            <?php } ?>              
 									<?php if(check_user_role(6)==1){?>		  
 										  <a class="btn btn-primary"  href="<?php echo site_url('admin/cases/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>								<?php } ?>
