@@ -99,7 +99,7 @@ function areyousure()
                                 	<b><?php echo lang('download_english_language_file')?></b>
 								</div>
 								<div class="col-md-2">
-									<a href="<?php echo site_url('admin/languages/download') ?>" download class="btn btn-default" ><?php echo lang('download')?></a>
+									<a href="<?php echo site_url('admin/languages/download') ?>" download class="btn btn-success" ><?php echo lang('download')?></a>
 						        </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ function areyousure()
                         	<div class="row">				
 								<div class="col-sm-4"></div>
 								<div class="col-md-4">
-		                        <button  type="submit" class="btn btn-primary"><?php echo lang('save')?></button>
+		                        <button  type="submit" class="btn btn-success"><?php echo lang('save')?></button>
             					</div>
 							</div>
 					</div>		
@@ -133,12 +133,12 @@ function areyousure()
 									
                                     <td>
                                         <div class="btn-group">
-                                          <a class="btn btn-primary"  href="<?php echo site_url('admin/languages/download_lang/'.$new->name); ?>"><i class="fa fa-download"></i> <?php echo lang('download');?></a> 
+                                          <a class="btn btn-success"  href="<?php echo site_url('admin/languages/download_lang/'.$new->name); ?>"><i class="fa fa-download"></i> <?php echo lang('download');?></a> 
 										  <?php if(check_user_role(82)==1){?>
 										   <a class="btn btn-primary" style="margin-left:10px;" href="<?php echo site_url('admin/languages/index/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
 										   <?php } ?>	
 										   <?php if(check_user_role(83)==1){?>
-                                         <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/languages/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
+                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/languages/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
 										 <?php } ?>	
                                         </div>
                                     </td>

@@ -39,11 +39,14 @@ function areyousure()
                         <thead>
                             <tr>
                                 <th><?php echo lang('serial_number');?></th>
-								<th><?php echo lang('name');?></th>
-								<th><?php echo lang('code');?></th>
+							 <th><?php echo lang('code');?></th>
+                            	<th><?php echo lang('name');?></th>
+							
                                 <th><?php echo lang('rif');?></th>
+                                <th><?php echo lang('reason');?></th>
+                                <th><?php echo lang('type');?></th>
                                 <th><?php echo lang('phone');?></th>
-								<th width="30%"><?php echo lang('action');?></th>
+                                <th><?php echo lang('action');?></th>
                             </tr>
                         </thead>
                         
@@ -52,21 +55,23 @@ function areyousure()
                             <?php $i=1;foreach ($companies as $new){?>
                                 <tr class="gc_row">
                                     <td><?php echo $i?></td>
-									
+					               <td><?php echo $new->cod_interno?></td>				
                                     <td><?php echo $new->name?></td>
-									<td><?php echo $new->cod_interno?></td>
+					
                                     <td><?php echo $new->rif?></td>
+                                    <td><?php echo $new->razon_social?></td>
+                                    <td><?php echo $new->tipo?></td>
                                     <td><?php echo $new->telefono?></td>
                                     <td>
                                         <div class="btn-group">
                                          <?php if(check_user_role(211)==1){?>    
-                                          <a class="btn btn-primary"  href="<?php echo site_url('admin/companies/view/'.$new->id); ?>"><i class="fa fa-view"></i> <?php echo lang('view');?></a>
+                                          <a class="btn btn-default"  href="<?php echo site_url('admin/companies/view/'.$new->id); ?>"><i class="fa fa-eye"></i><?php echo lang('view');?></a>
                                           <?php } ?>
                                          <?php if(check_user_role(209)==1){?>	 
-										  <a class="btn btn-primary"  href="<?php echo site_url('admin/companies/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
+										  <a class="btn btn-primary" style="margin-left:10px;"  href="<?php echo site_url('admin/companies/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
 										  <?php } ?>	
 										 <?php if(check_user_role(210)==1){?>	 
-                                         <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/companies/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
+                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/companies/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
 										 <?php } ?>	
                                         </div>
                                     </td>

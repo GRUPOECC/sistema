@@ -171,13 +171,10 @@ class employees_model extends CI_Model
 			return $this->db->get('users U')->row();
 	}
 	
-	function update($save,$save_empresa,$id)
+	function update($save,$id)
 	{
 			   $this->db->where('id',$id);
 		       $this->db->update('users',$save);
-		       $save_empresa['id_usuario'] = $id;
-		       $this->db->where('id_usuario',$id);
-               $this->db->update('empresa_usuario',$save_empresa);
 	}
 	
 	

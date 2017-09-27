@@ -20,7 +20,7 @@ class custom_field_model extends CI_Model
 	
 	public function save_answer($save)
 	{
-		$this->db->insert_batch('rel_form_custom_fields', $save); 
+		$this->db->insert('rel_form_custom_fields', $save); 
 	}
 	
 	function delete_answer($id,$form){
@@ -33,8 +33,12 @@ class custom_field_model extends CI_Model
 			$this->db->where('form',$form_no);
 			//$this->db->select('F.*,U.name client,PM.name mode,C.case_no,U.email,U.contact,U.address');
 			return $this->db->get('custom_fields')->result();
-	
-	
+	}
+
+	function get_custom_field($id,$form){
+			$this->db->where('table_id',$id);
+			$this->db->where('form',$form);
+			return $this->db->get('rel_form_custom_fields')->row()->reply;
 	}
 	
 	function delete($id){
@@ -63,6 +67,11 @@ class custom_field_model extends CI_Model
 	
 	function save($save){
 		$this->db->insert('custom_fields', $save);
+	}
+
+	function update($id,$save){
+		$this->db->where('id',$id);
+		$this->db->update('custom_fields', $save);
 	}
 	
 	

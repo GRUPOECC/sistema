@@ -34,12 +34,12 @@ function areyousure()
                     <h3 class="box-title" style="width: 100%">
                     <p id="tipoBandeja">Bandeja de Entrada</p>
                     <p align="right">
-                    <a class="btn bg-yellow" style="margin-left:10px;" onclick="bandejaEntrada()" href="javascript:void(0)"> <i class="fa fa-caret-square-o-down"></i> <?php echo lang('inbox');?></a>
-                    <a class="btn bg-red" style="margin-left:10px;" onclick="bandejaSalida()" href="javascript:void(0)"> <i class="fa fa-caret-square-o-down"></i> <?php echo lang('outbox');?></a>
+                    <a class="btn btn-success" style="margin-left:10px; color:white;" onclick="bandejaEntrada()" href="javascript:void(0)"> <i class="fa fa-caret-square-o-down"></i> <?php echo lang('inbox');?></a>
+                    <a class="btn btn-danger" style="margin-left:10px; color:white;" onclick="bandejaSalida()" href="javascript:void(0)"> <i class="fa fa-caret-square-o-down"></i> <?php echo lang('outbox');?></a>
 
 
                     <?php if(check_user_role(111)==1){?>
-                     <a class="btn bg-olive" data-toggle="modal" data-target="#myModalSend" style="margin-left:10px;" href=""> <i class="fa fa-plus"></i> <?php echo lang('sendMessage');?></a>
+                     <a class="btn btn-primary" data-toggle="modal" data-target="#myModalSend" style="margin-left:10px; color:white;" href=""> <i class="fa fa-plus"></i> <?php echo lang('sendMessage');?></a>
                      <?php } ?>
                     </p>    
                     </h3>

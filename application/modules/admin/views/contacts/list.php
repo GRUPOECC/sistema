@@ -1,6 +1,6 @@
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/css/bootstrap-toggle.min.css')?>" rel="stylesheet">
-<script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>
+<!--<script src="<?php echo base_url('assets/js/plugins/bootstrap-toggle-master/js/bootstrap-toggle.min.js')?>"></script>-->
 <link href="<?php echo base_url('assets/css/chosen.css')?>" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript">
@@ -59,14 +59,14 @@ function areyousure()
                      <a class="btn btn-default" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/add/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
 					 <?php } ?>	
                      <?php if(check_user_role(173)==1){?>
-					 <a class="btn btn-primary" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/export/'); ?>"><i class="fa fa-download"></i> <?php echo lang('export');?></a>
+					 <a class="btn btn-warning" style="margin-left:10px;" href="<?php echo site_url('admin/contacts/export/'); ?>"><i class="fa fa-download"></i> <?php echo lang('export');?></a>
 					 <?php } ?> 
                      <?php if(check_user_role(174)==1){?>
-                     <a class="btn bg-olive" style="margin-left:10px;" href="#myModal" data-toggle="modal" >
+                     <a class="btn btn-warning" style="margin-left:10px;" href="#myModal" data-toggle="modal" >
                      <i class="fa fa-caret-square-o-down"></i> <?php echo lang('import');?></a>      
                      <?php } ?>  
     		         <?php if(check_user_role(175)==1){?>
-                     <a class="btn bg-yellow" style="margin-left:10px;" href="<?php echo site_url('admin/contact_category/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_contact_category');?></a>
+                     <a class="btn btn-info" style="margin-left:10px;" href="<?php echo site_url('admin/contact_category/'); ?>"> <i class="fa fa-plus"></i> <?php echo lang('add_contact_category');?></a>
                      <?php } ?> 
                 <?php if(check_user_role(24)==1){?>
                       <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/contacts'); ?>">
@@ -76,7 +76,7 @@ function areyousure()
                      <i class="fa fa-plus"></i> <?php echo lang('setCategoryGroup');?></a> 
                 <?php } ?>  
                 <?php if(check_user_role(184)==1){?>
-                      <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
+                      <a class="btn btn-primary" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
                      <i class="fa fa-caret-square-o-down"></i><i id="boton_select"> <?php echo lang('select');?></i></a> 
                      <?php } ?>  
                 </div>
@@ -148,7 +148,7 @@ function areyousure()
                                     <td  class="col-md-3">
                                         <div class="btn-group">
                                           <?php if(check_user_role(155)==1){?>  
-										  <a id="elem" class="btn btn-default" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="mostrarContacto(<?php echo $new->id ?>)" href=""><i  ></i> <?php echo lang('view');?></a>
+										  <a id="elem" class="btn btn-default" data-toggle="modal"  data-id="<?php $new->id ?>" data-target="#myModalData" onclick="mostrarContacto(<?php echo $new->id ?>)" href=""><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
 										   <?php } ?>
                                         </div>
                                     </td>
@@ -394,8 +394,8 @@ function areyousure()
 <script src="<?php echo base_url('assets/js/listas-vistas.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/jquery.dataTables.js')?>" type="text/javascript"></script>
 <script src="<?php echo base_url('assets/js/plugins/datatablesNuevo/dataTables.bootstrap.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
-<script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
+<!--<script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script> -->
+<!--<script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>-->
 
 <?php 
    //(filtrado de un total de _MAX_ registros)

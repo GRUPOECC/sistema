@@ -111,10 +111,30 @@ function areyousure()
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('company_name');?></label>
                                     <select name="empresa_id" class="form-control chzn" id="empresa_id">
                                         <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
-                                        <?php foreach($listaempresas as $new) {
+                                        <?php 
+                                         $listaempresas2 = $listaempresas;
+                                         $listaempresas3 = $listaempresas;   
+
+                                        foreach($listaempresas as $new) {
                                             $sel = "";
-                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-                                        }
+                                            //echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+
+                                            if (($new->id == 0)){
+                                                echo '<option class="padre" selected="selected" value="'.$new->id.'" '.$sel.'> - '.$new->name.'</option>';
+                                                    foreach($listaempresas2 as $new2) {
+                                                          if ($new2->parent_id == $new->id){
+                                                              echo '<option class="hijo" selected="selected" value="'.$new2->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp '.$new2->name.'</option>';
+                                                              foreach($listaempresas3 as $new3) {
+                                                                    if ($new3->parent_id == $new2->id){
+                                                                  echo '<option class="nieto" selected="selected" value="'.$new3->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp '.$new3->name.'</option>';
+                                                                  }
+                                                              }
+                                                        }
+                                                    }
+                                                }
+
+                                          }
+                                        
                                         
                                         ?>
                                     </select>

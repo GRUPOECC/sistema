@@ -42,6 +42,16 @@
 				
 				   <div class="box-body">
                         <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('code');?></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <?php echo $company->cod_interno?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-2">
                                     <label for="name" style="clear:both;"><?php echo lang('name');?> </label>
@@ -53,17 +63,9 @@
                         </div>
 						
 
-						 <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-2">
-                                    <label for="name" style="clear:both;"><?php echo lang('code');?></label>
-								</div>
-								<div class="col-md-4">
-									<?php echo $company->cod_interno?>
-                                </div>
-                            </div>
-                        </div>
-                       <div class="form-group">
+
+
+                        <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-2">
                                     <label for="name" style="clear:both;"><?php echo lang('phone');?></label>
@@ -93,7 +95,16 @@
                                 </div>
                             </div>
                         </div>
-						
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label for="name" style="clear:both;"><?php echo lang('rif');?></label>
+                                </div>
+                                <div class="col-md-4">
+                                    <?php echo $company->rif?>
+                                </div>
+                            </div>
+                        </div>
 						 <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-2">

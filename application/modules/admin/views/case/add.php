@@ -52,7 +52,7 @@
 								</div>
 								<div class="col-md-4">
                                     
-									<input type="text" name="title" class="form-control" value="<?php echo set_value('title'); ?>">
+							    <input type="text" name="title" class="form-control" value="<?php echo set_value('title'); ?>">
                                 </div>
                             </div>
                         </div>

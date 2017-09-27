@@ -604,6 +604,11 @@ $fourth = $this->uri->segment(4);
                                 <i class="fa fa-book"></i> <span><?php echo lang('case_study');?></span>
                             </a>
                         </li> 
+                        <li class="<?php echo($this->uri->segment(2)=='case_category')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/case_category/');?>">
+                                <i class="fa fa-book"></i> <span><?php echo lang('case_category');?></span>
+                            </a>
+                        </li>  
                                     
                                                                
                                     
