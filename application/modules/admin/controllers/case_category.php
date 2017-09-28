@@ -39,6 +39,13 @@ class case_category extends MX_Controller {
 							$save_field['field_type']  = $this->input->post('type');
 							$save_field['form']		 = "10". strval($p_key);
 							$save_field['values']		 = $this->input->post('values');
+							$save_field['mayusculas']		 = $this->input->post('mayusculas');
+                            if($this->input->post('maximo')!="") 
+							$save_field['max']		 = $this->input->post('maximo');
+						    else 
+						    $save_field['max'] = 255; 
+						    
+
 							$this->custom_field_model->save($save_field);
 
 						}
@@ -82,6 +89,14 @@ class case_category extends MX_Controller {
 							$save_field['field_type']  = $this->input->post('type');
 							$save_field['form']		 = "10". strval($id);
 							$save_field['values']		 = $this->input->post('values');
+                            $save_field['mayusculas']		 = $this->input->post('mayusculas');
+                            if($this->input->post('maximo')!="") 
+							$save_field['max']		 = $this->input->post('maximo');
+						    else 
+						    $save_field['max'] = 255; 
+
+
+
 							$this->custom_field_model->update($id,$save_field);
 
 						}

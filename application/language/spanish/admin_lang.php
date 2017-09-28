@@ -579,6 +579,9 @@ $lang['rif'] = "RIF";
 $lang['reason'] = "Razon Social";
 $lang['subcompany'] = "Es una subempresa de ";
 $lang['add_field'] = "Agregar campos adicionales";
+$lang['max'] = "Maximo de caracteres";
+$lang['upper'] = "Mayusculas";
+$lang['sort'] = "Ordenar Alfabeticamente";
 
 
 

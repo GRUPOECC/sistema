@@ -710,7 +710,7 @@ $(document).on('change', '#categorias', function(){
 			  }
 			 },
 			 timepicker:false,
-			 format:'Y-m'
+			 format:'d-m-Y'
 			});
 	 }
   });

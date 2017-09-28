@@ -973,15 +973,29 @@ class cases extends MX_Controller {
 							if($doc->field_type==1) //testbox
 							{
 						
-								echo '
-								<div class="form-group">
-		                              <div class="row">
-		                                <div class="col-md-4">
-		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
-										</div>
-		                            </div>
-		                        </div>';
+									if ($doc->mayusculas != 1){
+										echo '
+										<div class="form-group">
+				                              <div class="row">
+				                                <div class="col-md-4">
+				                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
+											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
+											</div>
+				                            </div>
+				                        </div>';
+			                        }else {
+	                                   echo '
+											<div class="form-group">
+					                              <div class="row">
+					                                <div class="col-md-4">
+					                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
+												<input type="text" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
+												</div>
+					                            </div>
+					                        </div>';
+
+			                        }
+
 
 					     	}	
 							if($doc->field_type==2) //dropdown list
@@ -1058,7 +1072,66 @@ class cases extends MX_Controller {
                         </div>
                         ';
 							
-								}	
+						}
+
+						if($doc->field_type==9) //Fecha
+						  {		
+                             echo '
+						  	<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>
+										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" />
+							    </div>
+                            </div>
+                        </div>
+                        ';
+							
+						}
+
+						if($doc->field_type==10) //Hora
+						  {		
+                             echo '
+						  	<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>
+										<select name="reply['. $doc->id .']" class="form-control">';		
+												echo '	
+												  <option value="12:00 am">12:00 am</option>
+												  <option value="1:00 am">1:00 am</option>
+												  <option value="2:00 am">2:00 am</option>
+												  <option value="3:00 am">3:00 am</option>
+												  <option value="4:00 am">4:00 am</option>
+												  <option value="5:00 am">5:00 am</option>
+												  <option value="6:00 am">6:00 am</option>
+												  <option value="7:00 am">7:00 am</option>
+												  <option value="8:00 am">8:00 am</option>
+												  <option value="9:00 am">9:00 am</option>
+												  <option value="10:00 am">10:00 am</option>
+												  <option value="11:00 am">11:00 am</option>	
+												  <option value="12:00 pm">12:00 pm</option>
+												  <option value="1:00 pm">1:00 pm</option>
+												  <option value="2:00 pm">2:00 pm</option>
+												  <option value="3:00 pm">3:00 pm</option>
+												  <option value="4:00 pm">4:00 pm</option>
+												  <option value="5:00 pm">5:00 pm</option>
+												  <option value="6:00 pm">6:00 pm</option>
+												  <option value="7:00 pm">7:00 pm</option>
+												  <option value="8:00 pm">8:00 pm</option>
+												  <option value="9:00 pm">9:00 pm</option>
+												  <option value="10:00 pm">10:00 pm</option>
+												  <option value="11:00 pm">11:00 pm</option>	
+								     	</select>	
+							    </div>
+                            </div>
+                        </div>
+                        ';
+							
+						}
+
+
+
 							}
 						}
 					//--------------------------------------------------------------------------------------------------------

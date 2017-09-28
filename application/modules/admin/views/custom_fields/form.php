@@ -86,11 +86,36 @@ function areyousure()
 										<option value="6">URL</option>
 										<option value="7">Email</option>
 										<option value="8">Phone</option>
+										<option value="9">Fecha</option>
+                                        <option value="10">Hora</option>
 									</select>    
 								</div>
-								<div class="col-md-4">
-								
-								</div>
+								<div id="limitaciones">
+                                <div class="col-md-12">
+                                </br>
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('max')?></b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                        <input type="number" name="maximo" value="" class="form-control">
+                                    </div>
+
+                                </br>
+                                </br>
+
+                                </div>
+
+                                <div class="col-md-12">
+
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('upper')?></b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                        <input type="checkbox" name="mayusculas" value="1">
+                                    </div>
+                                
+                                </div>
+                                </div>
                             </div>
                         </div>
 						
@@ -114,12 +139,26 @@ function areyousure()
                                 	<b><?php echo lang('enter_field_values')?></b>
 								</div>
 								<div class="col-md-4">
-                                	  <textarea name="values" class="form-control"></textarea>
+                                	  <textarea id="elementos" name="values" class="form-control"></textarea>
 								</div>
 								<div class="col-md-4">
 										<?php echo lang('custom_field_instruction')?>
 								</div>
 							 </div>
+							 <div class="row">
+                             <div class="col-md-12">
+
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('sort')?></b>
+                                    </div>
+                                     <div class="col-md-4">         
+                                        <input id="alfabetico" type="Checkbox" name="alfabetico" value="1">
+                                    </div>
+                                
+                             </div>
+                                </br>
+                                </br>
+                             </div>
                         </div>
 								
                       
@@ -169,6 +208,13 @@ function areyousure()
 							if($new->field_type==8){
 								$type=lang('phone');
 							}
+							if($new->field_type==9){
+								$type=lang('date');
+							}
+							if($new->field_type==10){
+								$type=lang('hour');
+							}
+
 							
 							if($new->form==1){
 								$form_new=lang('clients');
@@ -248,6 +294,19 @@ $(document).on('change', '#field', function(){
 	}else{
 		$('#value-div').hide();
 	}
+
+	if (field ==1)
+    $('#limitaciones').show();
+    else 
+      $('#limitaciones').hide();  
  
 });
+
+$(document).on('change', '#alfabetico', function(){
+        var valores = document.getElementById('elementos');
+        var array = (valores.value).split(',');
+        valores.value = array.sort();  
+});
+
+$('#limitaciones').hide();
 </script>
