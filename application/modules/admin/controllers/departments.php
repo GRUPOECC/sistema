@@ -34,6 +34,7 @@ class departments extends MX_Controller {
             {
 				$save['name'] = $this->input->post('name');
 				$save['description'] = $this->input->post('description');
+				$save['alias'] = $this->input->post('alias');
 				$save['parent_id'] = $this->input->post('subdepartment');
                 
 				$d_id =	$this->department_model->save($save);
@@ -75,6 +76,7 @@ class departments extends MX_Controller {
             {
 				$save['name'] = $this->input->post('name');
 				$save['description'] = $this->input->post('description');
+				$save['alias'] = $this->input->post('alias');
 				$save['parent_id'] = $this->input->post('subdepartment');
 				
 				$this->department_model->update($save,$id);

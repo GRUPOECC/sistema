@@ -582,6 +582,7 @@ $lang['add_field'] = "Agregar campos adicionales";
 $lang['max'] = "Maximo de caracteres";
 $lang['upper'] = "Mayusculas";
 $lang['sort'] = "Ordenar Alfabeticamente";
+$lang['alias'] = "Alias";
 
 
 

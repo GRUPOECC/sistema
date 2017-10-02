@@ -573,3 +573,4 @@ $lang['add_field'] = "Add Fields";
 $lang['max'] = "Characters max(values)";
 $lang['upper'] = "Upper Case";
 $lang['sort'] = "Sort";
+$lang['alias'] = "Alias";

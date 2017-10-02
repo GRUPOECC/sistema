@@ -928,7 +928,7 @@ class cases extends MX_Controller {
 		$result = $this->cases_model->get_all_depts();
 
 		echo '
-		<select name="departamento_id[]" id="departamento_id" class="chzn col-md-12" multiple="multiple" >
+		<select name="departamento_id" id="departamento_id" class="chzn col-md-12" >
 										<option value="">--Seleccione un Departamento--</option>
 									';
 									foreach($result as $new) {
@@ -1152,7 +1152,7 @@ class cases extends MX_Controller {
 
 	function opciones2(){
         if(isset($_POST['l_id'])){
-            if (!$this->cases_model->existeElTicket($_POST['l_id'],$_POST['empresa'])){
+            if (!$this->cases_model->existeElTicket2((int)$_POST['ll'],$_POST['l_id'],$_POST['empresa'])){
                        $fields_clients = $this->custom_field_model->get_custom_fields((int)("10".$_POST['l_id']));	
 
 
@@ -1164,6 +1164,18 @@ class cases extends MX_Controller {
 							$output = '';
 							if($doc->field_type==1) //testbox
 							{
+
+								if ($doc->mayusculas != 1){
+										echo '
+										<div class="form-group">
+				                              <div class="row">
+				                                <div class="col-md-4">
+				                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
+											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+											</div>
+				                            </div>
+				                        </div>';
+			                        }else {
 						
 								echo '
 								<div class="form-group">
@@ -1174,6 +1186,7 @@ class cases extends MX_Controller {
 										</div>
 		                            </div>
 		                        </div>';
+		                       }
 
 					     	}	
 							if($doc->field_type==2) //dropdown list
@@ -1250,7 +1263,64 @@ class cases extends MX_Controller {
                         </div>
                         ';
 							
-								}	
+								}
+                       if($doc->field_type==9) //Fecha
+						  {		
+                             echo '
+						  	<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>
+										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+							    </div>
+                            </div>
+                        </div>
+                        ';
+							
+						}
+
+						if($doc->field_type==10) //Hora
+						  {		
+                             echo '
+						  	<div class="form-group">
+                              <div class="row">
+                                <div class="col-md-4">
+                                    <label for="contact" style="clear:both;">'. $doc->name .'</label>
+										<select name="reply['. $doc->id .']" class="form-control">';		
+												echo '	
+												  <option value="12:00 am">12:00 am</option>
+												  <option value="1:00 am">1:00 am</option>
+												  <option value="2:00 am">2:00 am</option>
+												  <option value="3:00 am">3:00 am</option>
+												  <option value="4:00 am">4:00 am</option>
+												  <option value="5:00 am">5:00 am</option>
+												  <option value="6:00 am">6:00 am</option>
+												  <option value="7:00 am">7:00 am</option>
+												  <option value="8:00 am">8:00 am</option>
+												  <option value="9:00 am">9:00 am</option>
+												  <option value="10:00 am">10:00 am</option>
+												  <option value="11:00 am">11:00 am</option>	
+												  <option value="12:00 pm">12:00 pm</option>
+												  <option value="1:00 pm">1:00 pm</option>
+												  <option value="2:00 pm">2:00 pm</option>
+												  <option value="3:00 pm">3:00 pm</option>
+												  <option value="4:00 pm">4:00 pm</option>
+												  <option value="5:00 pm">5:00 pm</option>
+												  <option value="6:00 pm">6:00 pm</option>
+												  <option value="7:00 pm">7:00 pm</option>
+												  <option value="8:00 pm">8:00 pm</option>
+												  <option value="9:00 pm">9:00 pm</option>
+												  <option value="10:00 pm">10:00 pm</option>
+												  <option value="11:00 pm">11:00 pm</option>	
+								     	</select>	
+							    </div>
+                            </div>
+                        </div>
+                        ';
+							
+						}
+
+
 							}
 						}
 					//--------------------------------------------------------------------------------------------------------
@@ -1739,7 +1809,9 @@ class cases extends MX_Controller {
 		$data['fields']			 = $this->custom_field_model->get_custom_fields(2);
 		$data['clients']		 = $this->cases_model->get_all_clients();
 		$data['employees']		 = $this->cases_model->get_all_employees();
-		$data['empresas'] 		    = $this->location_model->get_empresas();
+		$admin2 = $this->session->userdata('admin');
+		$id = $admin2['id'];
+		$data['empresas'] 		    = $this->employees_model->get_empresas_by_user($id);
 		$data['stages'] 		 = $this->case_stage_model->get_all();
 		$data['acts'] 			 = $this->cases_model->get_all_acts();
 		$data['depts']			 = $this->cases_model->get_all_depts();
@@ -1750,20 +1822,21 @@ class cases extends MX_Controller {
         {	
 			$this->load->library('form_validation');
 			$this->form_validation->set_message('required', lang('custom_required'));
-			$this->form_validation->set_rules('title', 'lang:title', 'required');
+			//$this->form_validation->set_rules('title', 'lang:title', 'required');
 			//$this->form_validation->set_rules('client_id', 'Client', 'required');
 			//$this->form_validation->set_rules('empleados_id', 'Empleados', 'required');
 			$this->form_validation->set_rules('departamento_id', 'Departamentos', 'required');
 			$this->form_validation->set_rules('location_id', 'Empresa', 'required');
 			//$this->form_validation->set_rules('employee_id', 'User', '');
-			$this->form_validation->set_rules('case_no', 'Case No', 'trim|required|is_unique[cases.case_no]');
+			//$this->form_validation->set_rules('case_no', 'Case No', 'trim|required|is_unique[cases.case_no]');
 			$this->form_validation->set_rules('location_id', 'Location', 'required');
+			$this->form_validation->set_rules('prioridad', 'prioridad', 'required');
 			$this->form_validation->set_rules('case_stage_id', 'Case Stage', '');
 			$this->form_validation->set_rules('dept_id', 'Dept', '');
 			$this->form_validation->set_rules('dept_category_id', 'dept_category Category', '');
 			$this->form_validation->set_rules('case_category_id', 'Case Category', 'required');
 			$this->form_validation->set_rules('act_id', 'Act', '');
-			$this->form_validation->set_rules('start_date', 'Filing Date', 'required');
+			//$this->form_validation->set_rules('start_date', 'Filing Date', 'required');
 			$this->form_validation->set_rules('description', 'Description', '');
 			$this->form_validation->set_rules('fees', 'Fees', '');
 			$this->form_validation->set_rules('o_lawyer', 'Opposite Lawyer', '');
@@ -1784,12 +1857,12 @@ class cases extends MX_Controller {
 			    else
 			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));	
 
-				$save['case_no'] = $this->input->post('case_no');
+				$save['case_no'] = $this->department_model->get_alias($this->input->post('departamento_id')) .'-000'. (string)(((int)$this->cases_model->getLastId())+1);
 				//$save['client_id'] = $this->input->post('client_id');
 				$save['client_id'] = $this->input->post('employee_id');
 				//$save['location_id'] = $this->input->post('location_id');
-				$save['empresa_id'] = json_encode($this->input->post('location_id'));
-				$save['departamento_id'] = json_encode($this->input->post('departamento_id'));
+				//$save['empresa_id'] = json_encode($this->input->post('location_id'));
+				$save['departamento_id'] = $this->input->post('departamento_id');
 				$save['status'] = 1; 
 				//$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
 				//$save['dept_id'] = $this->input->post('dept_id');
@@ -1798,73 +1871,68 @@ class cases extends MX_Controller {
 				$save['case_category_id'] = $this->input->post('case_category_id');
 				$save['act_id'] = json_encode($this->input->post('act_id'));
 				$save['progress'] = $this->input->post('progress');
+				$save['prioridad'] = $this->input->post('prioridad');
 				$save['description'] = $this->input->post('description');
-				$save['start_date'] = $this->input->post('start_date');
-				$save['hearing_date'] = $this->input->post('hearing_date');
-				$save['o_lawyer'] = $this->input->post('o_lawyer');
-				$save['fees'] = $this->input->post('fees');
-				if(isset($_POST['fechacaja']))
-				$save['fechacaja'] = $this->input->post('fechacaja');
-				if(isset($_POST['proveedor']))
-				$save['proveedor'] = $this->input->post('proveedor');
-				if(isset($_POST['numfactura']))
-				$save['numfactura'] = $this->input->post('numfactura');
-				if(isset($_POST['sistema']))
-				$save['sistema'] = $this->input->post('sistema');
-				if(isset($_POST['periodo']))
-				$save['periodo'] = $this->input->post('periodo');		
-			 	$p_key = $this->cases_model->save($save);
-                $reply = $this->input->post('reply');
-				if(!empty($reply)){
-					//$save_fields = array();
-					foreach($this->input->post('reply') as $key => $val) {
-
-						$save_fields = array(
-							//'custom_field_id'=> $key,
-							'reply'=> $val,
-							'table_id'=> $p_key,
-							'form'=> ((int)("10".$this->input->post('case_category_id')))
-						);	
-						$this->custom_field_model->save_answer($save_fields);
-					}	
-				}
+				$save['start_date'] = date('Y-m-d');
+				$save['due_date'] = $this->input->post('due_date');
+			 	
+                 foreach($this->input->post('location_id') as $val) {
 
 
+                    $p_key = $this->cases_model->save($val,$save);
+                    $reply = $this->input->post('reply');
+						if(!empty($reply)){
+							//$save_fields = array();
+							foreach($this->input->post('reply') as $key => $val) {
 
-                  // $url =base_url('assets/uploads/tareas/');
-				$target_path ='assets/uploads/tickets/'.$p_key;
-                $carpeta = 'assets/uploads/tickets/'.(string)$p_key;
-                if (!file_exists($carpeta)) {
-                    mkdir($carpeta, 0777, true);
-                }
+								$save_fields = array(
+									//'custom_field_id'=> $key,
+									'reply'=> $val,
+									'table_id'=> $p_key,
+									'form'=> ((int)("10".$this->input->post('case_category_id')))
+								);	
+								$this->custom_field_model->save_answer($save_fields);
+							}	
+						}
+                          
 
-                
-               	//Guardando registros de archivos adjuntos  - Garry Bruno
-                $filesCount = count($_FILES['archivos']['name']);
-                $data = array();
-		        if($this->input->post('title') && !empty($_FILES['archivos']['name'])){	             
-		            $filesCount = count($_FILES['archivos']['name']);
-		            for($i = 0; $i < $filesCount; $i++){
-		                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
-		                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
-		                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
-		                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
-		                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
-                       
-		               $uploadPath = 'assets/uploads/tickets/'.(string)$p_key.'/'. basename( $_FILES['userFile']['name']);
-		               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
-                                        $savefile['name'] = $_FILES['userFile']['name'];
-                                        $savefile['location'] = $uploadPath; 
-                                        $savefile['id_ticket'] = $p_key; 
-                                        $this->cases_model->savefile($savefile);       
+						  // $url =base_url('assets/uploads/tareas/');
+						$target_path ='assets/uploads/tickets/'.$p_key;
+		                $carpeta = 'assets/uploads/tickets/'.(string)$p_key;
+		                if (!file_exists($carpeta)) {
+		                    mkdir($carpeta, 0777, true);
+		                }
 
-                              }                   
-		            }
-		                   
-		        }
+		                
+		               	//Guardando registros de archivos adjuntos  - Garry Bruno
+		                $filesCount = count($_FILES['archivos']['name']);
+		                $data = array();
+				        if($this->input->post('departamento_id') && !empty($_FILES['archivos']['name'])){	             
+				            $filesCount = count($_FILES['archivos']['name']);
+				            for($i = 0; $i < $filesCount; $i++){
+				                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+				                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+				                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+				                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+				                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+		                       
+				               $uploadPath = 'assets/uploads/tickets/'.(string)$p_key.'/'. basename( $_FILES['userFile']['name']);
+				               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
+		                                        $savefile['name'] = $_FILES['userFile']['name'];
+		                                        $savefile['location'] = $uploadPath; 
+		                                        $savefile['id_ticket'] = $p_key; 
+		                                        $this->cases_model->savefile($savefile);       
 
-                //$this->session->set_flashdata('message', lang('case_created'));
-				//redirect('admin/cases');
+		                              }                   
+				            }
+				                   
+				        }
+                 	
+
+                 }
+
+                $this->session->set_flashdata('message', lang('case_created'));
+				redirect('admin/cases');
 				
 			}
 		}		
@@ -1887,27 +1955,30 @@ class cases extends MX_Controller {
 		$data['acts']			 	= $this->cases_model->get_all_acts();
 		$data['depts']			 	= $this->cases_model->get_all_depts();
 		$data['locations']		 	= $this->cases_model->get_all_locations();
-		$data['empresas'] 		    = $this->location_model->get_empresas();
+        $admin2 = $this->session->userdata('admin');
+		$id2 = $admin2['id'];
+		$data['empresas'] 		    = $this->employees_model->get_empresas_by_user($id2);
 		$data['empleados'] 		    = $this->employees_model->get_all();
 		$data['departamentos']		= $this->department_model->get_all();
 		$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
 		$data['dept_categories']	= $this->cases_model->get_all_dept_categories();
 		$data['id']					=	$id;
 		$data['case'] 				= $this->cases_model->get_case_by_id($id);
-		$data['fields'] 			= $this->custom_field_model->get_custom_fields(2);	
+		$data['fields'] 			= $this->custom_field_model->get_custom_fields(2);
+		$data['files'] = $this->cases_model->get_files($id);	
 		$admin2 = $this->session->userdata('admin');
 	    $data['iduser'] = $admin2['id'];
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');
 			$this->form_validation->set_rules('client_id', 'lang:client', '');
-			$this->form_validation->set_rules('case_no', 'lang:case_number', 'trim|required');
+			//$this->form_validation->set_rules('case_no', 'lang:case_number', 'trim|required');
 			$this->form_validation->set_rules('location_id', 'lang:location', 'required');
 			$this->form_validation->set_rules('dept_id', 'lang:dept', '');
 			$this->form_validation->set_rules('dept_category_id', 'lang:dept_category', '');
 			$this->form_validation->set_rules('case_category_id', 'lang:case_category', 'required');
 			$this->form_validation->set_rules('act_id', 'lang:act', '');
-			$this->form_validation->set_rules('start_date', 'lang:filing_date', 'required');
+			//$this->form_validation->set_rules('start_date', 'lang:filing_date', 'required');
 			 $this->form_validation->set_message('required', lang('custom_required'));
 			if ($this->form_validation->run()==true)
             {
@@ -1923,11 +1994,11 @@ class cases extends MX_Controller {
 				$save['title'] ='Ticket para solicitar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
 			    else
 			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
-				$save['case_no'] = $this->input->post('case_no');
+				$save['case_no'] = $data['case']->case_no;
 				$save['client_id'] = $this->input->post('client_id');
-				$save['location_id'] = $this->input->post('location_id');
-				$save['empresa_id']  = json_encode($this->input->post('location_id'));
-				$save['departamento_id'] = json_encode($this->input->post('departamento_id'));
+				//$save['location_id'] = $this->input->post('location_id');
+				//$save['empresa_id']  = json_encode($this->input->post('location_id'));
+				$save['departamento_id'] = $this->input->post('departamento_id');
 				//$save['usuarios_id'] = json_encode($this->input->post('empleados_id'));
 				//$save['dept_id'] = $this->input->post('dept_id');
 				//$save['dept_category_id'] = $this->input->post('dept_category_id');
@@ -1935,39 +2006,73 @@ class cases extends MX_Controller {
 				$save['case_category_id'] = $this->input->post('case_category_id');
 				$save['act_id'] = json_encode($this->input->post('act_id'));
 				$save['description'] = $this->input->post('description');
-				$save['start_date'] = $this->input->post('start_date');
+				$save['prioridad'] = $this->input->post('prioridad');
+				$save['start_date'] = date('Y-m-d');
 				$save['progress'] = $this->input->post('progress');
-				$save['hearing_date'] = $this->input->post('hearing_date');
-				$save['o_lawyer'] = $this->input->post('o_lawyer');
-				$save['fees'] = $this->input->post('fees');
-				if(isset($_POST['fechacaja']))
-				$save['fechacaja'] = $this->input->post('fechacaja');
-				if(isset($_POST['proveedor']))
-				$save['proveedor'] = $this->input->post('proveedor');
-				if(isset($_POST['numfactura']))
-				$save['numfactura'] = $this->input->post('numfactura');
-				if(isset($_POST['sistema']))
-				$save['sistema'] = $this->input->post('sistema');
-				if(isset($_POST['periodo']))
-				$save['periodo'] = $this->input->post('periodo');		
-				
-				
-				$this->cases_model->update($save,$id);
-				$reply = $this->input->post('reply');
-				if(!empty($reply)){
-					//$save_fields = array();
-					foreach($this->input->post('reply') as $key => $val) {
+				$save['due_date'] = $this->input->post('due_date');
 
-						$save_fields = array(
-							//'custom_field_id'=> $key,
-							'reply'=> $val,
-							'table_id'=> $id,
-							'form'=> ((int)("10".$this->input->post('case_category_id')))
-						);	
-						$this->custom_field_model->delete_answer($id,(int)("10".$this->input->post('case_category_id')));
-						$this->custom_field_model->save_answer($save_fields);
-					}	
-				}
+				//$save['o_lawyer'] = $this->input->post('o_lawyer');
+				//$save['fees'] = $this->input->post('fees');
+	
+				
+                foreach($this->input->post('location_id') as $val) {
+
+
+                    $this->cases_model->update($val,$save,$id);
+                    $reply = $this->input->post('reply');
+						if(!empty($reply)){
+							//$save_fields = array();
+							foreach($this->input->post('reply') as $key => $val) {
+
+								$save_fields = array(
+									//'custom_field_id'=> $key,
+									'reply'=> $val,
+									'table_id'=> $id,
+									'form'=> ((int)("10".$this->input->post('case_category_id')))
+								);
+							$this->custom_field_model->delete_answer($id,(int)("10".$this->input->post('case_category_id')));	
+						    $this->custom_field_model->save_answer($save_fields);
+							}	
+						}
+                          
+
+						  // $url =base_url('assets/uploads/tareas/');
+						$target_path ='assets/uploads/tickets/'.$id;
+		                $carpeta = 'assets/uploads/tickets/'.(string)$id;
+		                if (!file_exists($carpeta)) {
+		                    mkdir($carpeta, 0777, true);
+		                }
+
+		                
+		               	//Guardando registros de archivos adjuntos  - Garry Bruno
+		                $filesCount = count($_FILES['archivos']['name']);
+		                $data = array();
+				        if($this->input->post('departamento_id') && !empty($_FILES['archivos']['name'])){	             
+				            $filesCount = count($_FILES['archivos']['name']);
+				            for($i = 0; $i < $filesCount; $i++){
+				                $_FILES['userFile']['name'] = $_FILES['archivos']['name'][$i];
+				                $_FILES['userFile']['type'] = $_FILES['archivos']['type'][$i];
+				                $_FILES['userFile']['tmp_name'] = $_FILES['archivos']['tmp_name'][$i];
+				                $_FILES['userFile']['error'] = $_FILES['archivos']['error'][$i];
+				                $_FILES['userFile']['size'] = $_FILES['archivos']['size'][$i];
+		                       
+				               $uploadPath = 'assets/uploads/tickets/'.(string)$id.'/'. basename( $_FILES['userFile']['name']);
+				               if(move_uploaded_file($_FILES['userFile']['tmp_name'], $uploadPath)) {                                        
+		                                        $savefile['name'] = $_FILES['userFile']['name'];
+		                                        $savefile['location'] = $uploadPath; 
+		                                        $savefile['id_ticket'] = $id; 
+		                                        $this->cases_model->savefile($savefile);       
+
+		                              }                   
+				            }
+				                   
+				        }
+                 	
+
+                 }
+
+
+
               	$this->session->set_flashdata('message',  lang('case_created'));
 				redirect('admin/cases');
 			}
@@ -2304,6 +2409,17 @@ class cases extends MX_Controller {
 			redirect('admin/cases');
 		}
 	}	
+
+	function deleteFile($id=false){
+		session_start();
+		$seleccionado = explode("-",$id); 
+        $idarchivo = $seleccionado[1];
+		$datos = explode("%",$_SESSION["Archivos"]);
+        $direccion = $datos[(int)$idarchivo]; 
+        unlink ($direccion); 
+        $this->cases_model->deleteFile($seleccionado[2]);
+        redirect('admin/cases/edit/'.$id);
+	} 
 
 		
 	function set_starred()

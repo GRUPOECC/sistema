@@ -40,6 +40,13 @@ class cases_model extends CI_Model
 
 	} 
 
+    function deleteFile($id){
+
+         $this->db->where('id',$id);
+		 $this->db->delete('files');
+
+	}
+
 	function save_publication($save)
 	{
 		$this->db->insert('case_publications',$save);
@@ -150,8 +157,9 @@ class cases_model extends CI_Model
 		return $this->db->get('extended_case')->row();
 	}
 	
-	function save($save)
+	function save($id,$save)
 	{
+		$save['empresa_id'] = $id; 
 		$this->db->insert('cases',$save);
 		return $this->db->insert_id(); 
 	}
@@ -395,8 +403,9 @@ class cases_model extends CI_Model
 	
 	
 	
-	function update($save,$id)
-	{
+	function update($idempresa,$save,$id)
+	{          
+		       $save['empresa_id'] = $idempresa; 
 			   $this->db->where('id',$id);
 		       $this->db->update('cases',$save);
 	}
@@ -600,5 +609,25 @@ class cases_model extends CI_Model
 				   return true; 
 				}
 
+	}
+
+	function existeElTicket2($id,$idcategoria,$idempresa){
+             $this->db->where('id !=',$id);
+             $this->db->where('case_category_id',$idcategoria);
+             $this->db->where_in('empresa_id',$idempresa);
+             if(empty($this->db->get('cases')->result())){
+				   return false; 
+				} else {
+				   return true; 
+				}
+
+	}
+
+	function getLastId(){
+        $last = $this->db->order_by('id',"desc")
+		->limit(1)
+		->get('cases')
+		->row();
+		return $last->id; 
 	}
 }
