@@ -45,47 +45,29 @@
                 <!-- form start -->
 				<?php echo form_open_multipart('admin/cases/add/'); ?>
 				    <div class="box-body">
-                        <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('case')?> <?php echo lang('title')?></b>
-								</div>
-								<div class="col-md-4">
-                                    
-							    <input type="text" name="title" class="form-control" value="<?php echo set_value('title'); ?>">
-                                </div>
-                            </div>
-                        </div>
-					   
-					   
-					    <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('case')?> <?php echo lang('number')?></b>
-								</div>
-								<div class="col-md-4">
-                                    
-									<input type="text" name="case_no" class="form-control" value="<?php echo set_value('case_no')?>">
-                                </div>
-                            </div>
-                        </div>
-						
-					
-									
+			
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
                                 	<b><?php echo lang('company')?></b>
 								</div>
 								<div class="col-md-4" id="location_result">
-                                    <select name="location_id[]" id="location_id" class="chzn col-md-12" multiple="multiple" >
+                                    <select name="location_id[]" id="location_id" class="chzn col-md-12"  multiple="multiple">
 										<option value="">--<?php echo lang('select')?> <?php echo lang('location')?>--</option>
-										<?php foreach($empresas as $new) {
-											$sel = "";
-											if(set_select('location_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
+										<?php 
+
+										   if (sizeof($empresas)==1){
+										   	   $sel = 'selected="selected"';  
+                                              echo '<option value="'.$empresas[0]->id.'" '.$sel.'>'.$empresas[0]->name.'</option>';
+
+										   }else{
+		                                            foreach($empresas as $new) {
+													$sel = "";
+													if(set_select('location_id', $new->idempresa)) $sel = "selected='selected'";
+													echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+												    }
+										   } 
+
 										?>
 									</select>
                                 </div>
@@ -99,7 +81,7 @@
                                 	<b><?php echo lang('department')?></b>
 								</div>
 								<div class="col-md-4" id="dept_category_result">
-                                    <select name="departamento_id[]" id="departamento_id[]" class="chzn col-md-12" multiple="multiple"  disabled="disabled">
+                                    <select name="departamento_id" id="departamento_id" class="chzn col-md-12">
 										<option value="">--<?php echo lang('select')?> <?php echo lang('department')?>--</option>
 										<?php foreach($dept_categories as $new) {
 											$sel = "";
@@ -157,7 +139,18 @@
                                 	<b><?php echo lang('description')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <textarea name="description" class="form-control"><?php echo set_value('description'); ?></textarea>
+                                   <textarea name="description" class="form-control redactor"><?php echo set_value('description'); ?></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                              <div class="row">
+                              <div class="col-md-3">
+                                    <label for="email" style="clear:both;"><?php echo lang('priority')?></label>
+						          </div>
+                                <div class="col-md-4">
+									<input type="text" name="prioridad" id="prioridad" value="" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -179,25 +172,15 @@
                                     </div>
                      </div>
 						
+
 						
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('filling_date')?></b>
+                                	<b><?php echo lang('due_date')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <input type="text" name="start_date" class="form-control datepicker" value="<?php echo set_value('start_date'); ?>"/>
-                                </div>
-                            </div>
-                        </div>
-						
-						<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('hearing_date')?></b>
-								</div>
-								<div class="col-md-4">
-                                   <input type="text" name="hearing_date" value="<?php echo set_value('hearing_date'); ?>"class="form-control datepicker"/>
+                                   <input type="text" name="due_date" value="<?php echo set_value('due_date'); ?>" class= "form-control datepicker"/>
                                 </div>
                             </div>
                         </div>
@@ -599,6 +582,7 @@
 <script src="<?php echo base_url('assets/js/plugins/ionslider/ion.rangeSlider.min.js')?>" type="text/javascript"></script>
 <!-- Bootstrap slider -->
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-slider/bootstrap-slider.js')?>" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/redactor.min.js')?>"></script>
 
 <script type="text/javascript">
 $(function() {
@@ -639,6 +623,7 @@ $(function() {
 
 <script>
 $('.slider').slider();
+/*
 $(document).on('change', '#location_id', function(){
  //alert(12);
  	vch = $(this).val();
@@ -656,6 +641,8 @@ $(document).on('change', '#location_id', function(){
 	 }
   });
 });
+
+*/
 
 
 $(document).on('change', '#departamento_id', function(){
@@ -710,7 +697,7 @@ $(document).on('change', '#categorias', function(){
 			  }
 			 },
 			 timepicker:false,
-			 format:'Y-m'
+			 format:'d-m-Y'
 			});
 	 }
   });
@@ -761,3 +748,23 @@ $( "#my_form" ).submit(function( event ) {
 
 
 </script>
+
+ <script>
+  $(document).ready(function(){
+    $('.redactor').redactor({
+			  // formatting: ['p', 'blockquote', 'h2','img'],
+            minHeight: 200,
+            imageUpload: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/upload_image');?>',
+            fileUpload: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/upload_file');?>',
+            imageGetJson: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/get_images');?>',
+            imageUploadErrorCallback: function(json)
+            {
+                alert(json.error);
+            },
+            fileUploadErrorCallback: function(json)
+            {
+                alert(json.error);
+            }
+      });
+});
+  </script>

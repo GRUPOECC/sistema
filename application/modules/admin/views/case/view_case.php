@@ -187,7 +187,7 @@
 								<div class="col-md-4">
                                     	<?php foreach($empresas as $new) {
 										
-											if($new->id==$case->location_id) echo $new->name;
+											if($new->id==$case->empresa_id) echo $new->name;
 										}
 										
 										?>
@@ -205,7 +205,7 @@
 								<div class="col-md-4">
                                    <?php foreach($departamentos as $new) {
                                               
-                                         if (strpos((string)$case->departamento_id,'"'.(string)$new->id.'"')==true)
+                                         if ($case->departamento_id==$new->id)
                                             echo '<p>'.$new->name.'</p>';
                                         }
                                          
@@ -239,7 +239,7 @@
                                                 </div>
                                                 <div class="col-md-4">  
                                             <?php  $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();?>        
-                                            <?php echo @$result->reply; ?>
+                                            <?php echo $result->reply; ?>
                                                 </div>
                                             </div>
                                         </div>
@@ -334,7 +334,7 @@
                                                 </div>
                                                 <div class="col-md-4">  
                                                     <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
-                                                        <?php echo @$result->reply;?>
+                                                        <?php echo $result->reply;?>
                                                 </div>
                                             </div>
                                         </div>
@@ -347,7 +347,7 @@
                                                 </div>  
                                                 <div class="col-md-4">
                                                     <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
-                                                        <a href="<?php echo @$result->reply;?>" target="_blank"> <?php echo @$result->reply;?></a>
+                                                        <a href="<?php echo @$result->reply;?>" target="_blank"> <?php echo $result->reply;?></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -360,7 +360,7 @@
                                                 </div>  
                                                 <div class="col-md-4">
                                                     <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
-                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo @$result->reply;?></a>
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
                                                 </div>
                                             </div>
                                         </div>              
@@ -373,21 +373,73 @@
                                                 </div>  
                                                 <div class="col-md-4">
                                                     <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
-                                                        <?php echo @$result->reply;?>
+                                                        <?php echo $result->reply;?>
                                                 </div>
                                             </div>
                                         </div>  
-                                        
+
+                                        <?php } if($doc->field_type==8) //EMAIL
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>              
+                                    
+                                    <?php } if($doc->field_type==9) //EMAIL
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>              
+                                    
+                                    <?php } if($doc->field_type==10) //EMAIL
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>              
+                                    
+                                    <?php }
+
                                                 
                                         
-                                        
-                                    <?php 
-                                                }   
+
+
+
                                             }
                                         }
                                     ?>  
 
 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <b><?php echo lang('priority')?></b>
+                                </div>
+                                <div class="col-md-4">
+                                   <?php echo $case->prioridad;?>
                                 </div>
                             </div>
                         </div>
@@ -408,10 +460,10 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('filling_date')?></b>
+                                	<b><?php echo lang('date')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <?php echo date_convert($case->start_date);?>
+                                   <?php echo $case->start_date;?>
                                 </div>
                             </div>
                         </div>
@@ -419,10 +471,10 @@
 					<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('hearing_date')?></b>
+                                	<b><?php echo lang('due_date')?></b>
 								</div>
 								<div class="col-md-4">
-                                  <?php echo date_convert($case->hearing_date);?>
+                                  <?php echo $case->due_date;?>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +489,7 @@
                                 </div>
                             </div>
                         </div>
-						-->
+						
 						
 						<div class="form-group">
                         	<div class="row">
@@ -449,6 +501,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        -->
 
                          <div class="form-group">
                               <div class="row">

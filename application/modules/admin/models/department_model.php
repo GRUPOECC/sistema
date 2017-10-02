@@ -40,6 +40,12 @@ class department_model extends CI_Model
 			   $this->db->where('id',$id);
 		return $this->db->get('departments')->row();
 	}
+
+	function get_alias($id)
+	{
+			   $this->db->where('id',$id);
+		return $this->db->get('departments')->row()->alias;
+	}
 	
 	function update($save,$id)
 	{

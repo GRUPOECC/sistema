@@ -49,6 +49,15 @@
                             </div>
                         </div>
 
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('alias');?></label>
+                                    <input type="text" name="alias" value="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+
                          <div class="form-group">
                             <div class="row">
                                 <div class="col-md-4">

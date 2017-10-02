@@ -589,3 +589,7 @@ $lang['rif'] = "RIF";
 $lang['reason'] = "Social Reason";
 $lang['subcompany'] = "Is a subcompany of ";
 $lang['add_field'] = "Add Fields";
+$lang['max'] = "Characters max(values)";
+$lang['upper'] = "Upper Case";
+$lang['sort'] = "Sort";
+$lang['alias'] = "Alias";
