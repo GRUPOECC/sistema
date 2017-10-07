@@ -36,11 +36,12 @@ class visitors extends MX_Controller {
 		$data['contact_fields'] = $this->custom_field_model->get_custom_fields(4);	
 		$data['fields'] = $this->custom_field_model->get_custom_fields(5);	
 		$data['contacts'] = $this->visitors_model->get_contacts();
+		$data['visitors_badges'] = $this ->visitors_model->get_badges();
 		$data['users'] = $this->visitors_model->get_user_visitable();
 		if ($this->input->post('ok'))
         {	
 			$this->load->library('form_validation');
-			$this->form_validation->set_rules('badge', 'lang:badge', 'required');
+			$this->form_validation->set_rules('badge_id', 'lang:badge', 'required');
 			$this->form_validation->set_rules('contact_id', 'lang:Visitor', 'required');
 			$this->form_validation->set_rules('user_id', 'lang:who_visit', 'required');
 			$this->form_validation->set_rules('date_time_in', 'lang:date', 'required');
@@ -48,13 +49,14 @@ class visitors extends MX_Controller {
 			 
 			if ($this->form_validation->run()==true)
             {
-				$save['badge'] = $this->input->post('badge');
+				$save['badge'] = $this->input->post('badge_id');
 				$save['contact_id'] = $this->input->post('contact_id');
 				$save['user_id'] = $this->input->post('user_id');
 				$save['date_time_in'] = $this->input->post('date_time_in');
 				$save['notes'] = $this->input->post('notes');
-                
+                $save['motive'] = $this->input->post('motive');
 				$p_key = $this->visitors_model->save($save);
+				$this->visitors_model->update_badge_in($save);
 				$reply = $this->input->post('reply');
 				if(!empty($reply)){
 					foreach($this->input->post('reply') as $key => $val) {
@@ -153,6 +155,15 @@ class visitors extends MX_Controller {
 			redirect('admin/visitors');
 		}
 	}	
-		
+
+	function close ($id=false){
+		if($id){
+			$this->visitors_model->set_time_out($id);
+			$badge=$this->visitors_model->get_visitor_badge($id);
+			$this->visitors_model->update_badge_out($badge[0]->badge);
+			redirect('admin/visitors');
+		}
+
+	}
 	
 }

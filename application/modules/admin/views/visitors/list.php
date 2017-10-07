@@ -74,7 +74,7 @@ function returnbadge()
 
                                 <tr class="gc_row">
                                     <td><?php echo $i?></td>
-                                    <td><?php echo $new->badge?></td>
+                                    <td><?php echo $new->badge_name?></td>
 									<td><?php echo $new->name?></td>
 									<td><?php echo $name_e->name_e?></td>
                                     <td><?php echo date_time_convert($new->date_time_in)?></td>
@@ -83,19 +83,10 @@ function returnbadge()
                                     <td><?php echo date('d/m/Y H:i',strtotime($new->date_time_out))?></td>
 									<td><?php echo $new->notes?></td>
 									<td width="28%">
-                                        <div class="btn-group">
-									<?php if(check_user_role(215)==1){?>	
-                                          <a class="btn btn-default"  href="<?php echo site_url('admin/visitors/view_visitor/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
-										   <?php } ?>	
-										<?php if(check_user_role(216)==1){?>
-										  <a class="btn btn-primary"  style="margin-left:10px;" href="<?php echo site_url('admin/visitors/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
-										   <?php } ?>	
-										 <?php if(check_user_role(217)==1){?> 
-                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/visitors/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
-										 <?php } ?>	 
+                                        <div class="btn-group"> 
                                          <?php if(check_user_role(218)==1){?> 
-                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/visitors/view/'.$new->id); ?>"><i class="fa fa-trash"></i> <?php echo lang('close');?></a>
-                                         <?php } ?>  
+                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/visitors/close/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('close');?></a>
+                                         <?php } ?> 
                                         </div>
                                     </td>
                                 </tr>

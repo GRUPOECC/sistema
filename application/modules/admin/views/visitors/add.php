@@ -1,5 +1,5 @@
 <link href="<?php echo base_url('assets/css/chosen.css')?>" rel="stylesheet" type="text/css" />
-<link href="<?php echo base_url('assets/css/jquery.datetimepicker.css')?>" rel="stylesheet" type="text/css" />
+
 <!-- Content Header (Page header) -->
 <style>
 .row{
@@ -91,7 +91,7 @@
                         	<div class="row">
                                 <div class="col-md-4">
                                     <label for="name" style="clear:both;"><?php echo lang('date_in');?></label>
-									<input type="text" name="date_time_in" value="<?php echo set_value('date_time_in'); ?>" class="form-control datetimepicker">
+									<input type="text" name="date_time_in" <?php echo 'value="'.date("Y-m-d H:i:s").'"'; ?> class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -107,8 +107,12 @@
                 <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-4">
-                                    <label for="name" style="clear:both;"> <?php echo lang('badge');?></label>
-									<input type="text" name="badge" value="<?php echo set_value('badge'); ?>" class="form-control">
+                                     <label for="name" style="clear:both;"> <?php echo lang('badge');?></label>									<select name="badge_id" class="form-control chzn">
+											<?php foreach($visitors_badges as $badge) {
+												echo '<option value="'.$badge->id.'">'.$badge->name.'</option>';
+												}
+											?>
+										</select>
                                 </div>
                             </div>
                         </div>
@@ -408,7 +412,6 @@
 
 <script src="<?php echo base_url('assets/js/chosen.jquery.min.js')?>" type="text/javascript"></script>
 
-<script src="<?php echo base_url('assets/js/jquery.datetimepicker.js')?>" type="text/javascript"></script>
 
 
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
@@ -425,13 +428,5 @@ $(function() {
 	$(".txtarea").wysihtml5();
 });
 
- $(function() {
-   $('.datetimepicker').datetimepicker({
-	//mask:'9999-19-39 29:59',
-	format  : 'Y-m-d H:i'
-	
-	}
-	
-	);
-  });
+ 
 </script>

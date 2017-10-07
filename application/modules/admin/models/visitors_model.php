@@ -50,9 +50,11 @@ class visitors_model extends CI_Model
 	
 	function get_all()
 	{
-					$this->db->select('A.*,C.name name');
-					 $this->db->join('contacts C', 'C.id = A.contact_id', 'LEFT');
-			return $this->db->get('visitors A')->result();
+					$this->db->select('A.*,C.name name, V.name badge_name');
+					$this->db->where('A.is_closed',0);
+				    $this->db->join('contacts C', 'C.id = A.contact_id', 'LEFT');
+					$this->db->join('visitor_badges V', 'V.id = A.badge');
+					return $this->db->get('visitors A')->result();
 	}
 
 	function get_all_e($id)
@@ -85,6 +87,7 @@ class visitors_model extends CI_Model
 	function get_user_visitable()
 	{
 		$this->db->where('visitable',1);
+		$this->db->order_by('name','ASC');
 		return $this->db->get('users')->result();
 	}
 
@@ -95,9 +98,46 @@ class visitors_model extends CI_Model
 	}
 	
 	
-	function delete($id)//delte client
+	function delete($id)//delete client
 	{
 			   $this->db->where('id',$id);
 		       $this->db->delete('visitors');
 	}
+
+	function get_badges()
+	{
+		$this->db->where('status',1);
+		$this->db->where('is_in_use',0);
+		$this->db->order_by('name','ASC');
+		return $this->db->get('visitor_badges')->result();
+	}
+	
+	function update_badge_in($save){
+		$this->db->where('id',$save['badge']);
+		$this->db->set('is_in_use',1);
+		$this->db->update('visitor_badges');
+	}
+
+	function update_badge_out($id){
+		$this->db->where('id',$id);
+		$this->db->set('is_in_use',0);
+		$this->db->update('visitor_badges');
+	}
+
+
+	function get_visitor_badge($id)
+	{
+		$this->db->where('id',$id);
+		return $this->db->get('visitors')->result();
+	}
+
+	function set_time_out($id)
+	{
+		$this->db->where('id',$id);
+		$this->db->set('date_time_out',date("Y-m-d H:i:s"));
+		$this->db->set('is_closed',1);
+		$this->db->update('visitors');
+	}
+
+	
 }
