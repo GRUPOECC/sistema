@@ -574,3 +574,16 @@ $lang['max'] = "Characters max(values)";
 $lang['upper'] = "Upper Case";
 $lang['sort'] = "Sort";
 $lang['alias'] = "Alias";
+
+
+// MODULO VISITORS
+$lang['visitor'] = "visitor";
+$lang['visitors'] = "visitors";
+$lang['Visitor'] = "Visitor";
+$lang['Visitors'] = "Visitors";
+$lang['who_visit'] = "Person To Meet";
+$lang['date_in'] = "Date & Time IN";
+$lang['date_out'] = "Date & Time OUT";
+$lang['badge'] = "Pass #";
+$lang['select_visitor'] = "Select Visitor or Add";
+$lang['select_who_visit'] = "Select who visit";

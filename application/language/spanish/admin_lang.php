@@ -587,8 +587,17 @@ $lang['alias'] = "Alias";
 
 
 
-
-
+// MODULO VISITORS
+$lang['visitor'] = "visitante";
+$lang['visitors'] = "visitantes";
+$lang['Visitor'] = "Visitante";
+$lang['Visitors'] = "Visitantes";
+$lang['who_visit'] = "A que persona visita";
+$lang['date_in'] = "Fecha y Hora de entrada";
+$lang['date_out'] = "Fecha y Hora de salida";
+$lang['badge'] = "Número de Pase";
+$lang['select_visitor'] = "Seleccione Visitante ó Agreguelo";
+$lang['select_who_visit'] = "Seleccione a quien visita";
 
 
 
