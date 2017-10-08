@@ -63,13 +63,13 @@ function areyousure()
                                     <td class="col-md-3">
                                         <div class="btn-group">
 									<?php if(check_user_role(122)==1){?>		
-                                          <a class="btn btn-primary" style="margin-left:0px;"   href="<?php echo site_url('admin/documents/manage/'.$new->id); ?>"><i class="fa fa-chain"></i> <?php echo lang('manage');?></a>
+                                          <a class="btn btn-default"  href="<?php echo site_url('admin/documents/manage/'.$new->id); ?>"><i class="fa fa-chain"></i> <?php echo lang('manage');?></a>
 										<?php } ?>		  
 									<?php if(check_user_role(120)==1){?>		  
-										  <a class="btn btn-primary" style="margin-left:2px;"   href="<?php echo site_url('admin/documents/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
+										  <a class="btn btn-primary" style="margin-left:5px;"   href="<?php echo site_url('admin/documents/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
 									<?php } ?>			  
 								<?php if(check_user_role(120)==1){?>			
-										 <a class="btn btn-danger" style="margin-left:2px;" href="<?php echo site_url('admin/documents/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
+										 <a class="btn btn-danger" style="margin-left:5px;" href="<?php echo site_url('admin/documents/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
 								<?php } ?>				 
 										 </div>
                                     </td>

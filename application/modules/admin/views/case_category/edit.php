@@ -70,6 +70,116 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('add_field');?>  </label>
+                                     <input type="Checkbox" id="adicion" name="adicion" value="1">
+                                </div>
+                            </div>
+                        </div>
+
+                         <div id="adicional">
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="name" style="clear:both;"><?php echo lang('field_add');?> </label>
+                                    <hr>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <b><?php echo lang('field_type')?></b>
+                                </div>
+                                <div class="col-md-4">
+                                    <select name="type" class="form-control" id="field">
+                                        <option value="1">Text Box</option>
+                                        <option value="2">Dropdown List</option>
+                                        <option value="3">Radio Button</option>
+                                        <option value="4">Checkbox</option>
+                                        <option value="5">Textarea</option>
+                                        <option value="6">URL</option>
+                                        <option value="7">Email</option>
+                                        <option value="8">Phone</option>
+                                        <option value="9">Fecha</option>
+                                        <option value="10">Hora</option>
+
+                                    </select>    
+                                </div>
+                                <div id="limitaciones">
+                                <div class="col-md-12">
+
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('max')?></b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                        <input type="number" name="maximo" value="" class="form-control">
+                                    </div>
+
+                                </div>
+                                <br>
+                                <div class="col-md-12">
+
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('upper')?></b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                        <input type="checkbox" name="mayusculas" value="1">
+                                    </div>
+                                
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <b><?php echo lang('field_name')?></b>
+                                </div>
+                                <div class="col-md-4">         
+                                    <input type="text" name="namefield" value="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group" id="value-div">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <b><?php echo lang('enter_field_values')?></b>
+                                </div>
+                                <div class="col-md-4">
+                                      <textarea id="elementos" name="values" class="form-control"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                        <?php echo lang('custom_field_instruction')?>
+                                </div>
+                             </div>
+                             <div class="row">
+                             <div class="col-md-12">
+
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('sort')?></b>
+                                    </div>
+                                     <div class="col-md-4">         
+                                        <input id="alfabetico" type="Checkbox" name="alfabetico" value="1">
+                                    </div>
+                                
+                             </div>
+                                </br>
+                                </br>
+                             </div>
+                        </div>
+
+                        </div>
 						
 						
                     </div><!-- /.box-body -->
@@ -105,4 +215,48 @@ $(function() {
     format  : 'Y-m-d'
 });
   });
+</script>
+
+<script type="text/javascript">
+$(document).on('ready', function(){
+        $('#value-div').hide();
+});
+
+$(document).on('change', '#field', function(){
+    var field = $('#field').val();
+   // alert(field);
+    if(field==3 || field==2 || field==4){
+        $('#value-div').show();
+    }else{
+        $('#value-div').hide();
+    }
+
+
+    if (field ==1)
+    $('#limitaciones').show();
+    else 
+      $('#limitaciones').hide();  
+ 
+});
+var suiche =false; 
+$(document).on('change', '#adicion', function(){
+      
+      if (suiche==true){ 
+        $('#adicional').hide();
+        suiche = false;
+       }else{
+        $('#adicional').show();
+        suiche = true;
+        }        
+ 
+});
+
+$(document).on('change', '#alfabetico', function(){
+        var valores = document.getElementById('elementos');
+        var array = (valores.value).split(',');
+        valores.value = array.sort();  
+});
+
+$('#adicional').hide();
+$('#limitaciones').show();
 </script>

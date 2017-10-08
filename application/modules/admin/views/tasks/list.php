@@ -54,7 +54,7 @@ function areyousure()
                       <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/tasks'); ?>">
                 <?php } ?>   
           <?php if(check_user_role(188)==1){?>
-                      <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
+                      <a class="btn btn-primary" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
                      <i class="fa fa-caret-square-o-down"></i><i id="boton_select"> <?php echo lang('select');?></i></a> 
                      <?php } ?> 
 					

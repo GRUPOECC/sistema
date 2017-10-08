@@ -135,6 +135,7 @@ $lang['court_category']		= "Court Category";
 $lang['case_category']		= "Case Catégorie";
 $lang['payment_date']		= "Payment Date";
 $lang['custom_fields']		= "Custom Fields";
+$lang['field_add']	     	= "Add Aditional Field";
 $lang['field_name']			= "Field Name";
 $lang['field_type']			= "Field Type";
 $lang['select_form']		= "Select Form";
@@ -587,3 +588,21 @@ $lang['code'] = "Internal Code";
 $lang['rif'] = "RIF";
 $lang['reason'] = "Social Reason";
 $lang['subcompany'] = "Is a subcompany of ";
+$lang['add_field'] = "Add Fields";
+$lang['max'] = "Characters max(values)";
+$lang['upper'] = "Upper Case";
+$lang['sort'] = "Sort";
+$lang['alias'] = "Alias";
+
+
+// MODULO VISITORS
+$lang['visitor'] = "visitor";
+$lang['visitors'] = "visitors";
+$lang['Visitor'] = "Visitor";
+$lang['Visitors'] = "Visitors";
+$lang['who_visit'] = "Person To Meet";
+$lang['date_in'] = "Date & Time IN";
+$lang['date_out'] = "Date & Time OUT";
+$lang['badge'] = "Pass #";
+$lang['select_visitor'] = "Select Visitor or Add";
+$lang['select_who_visit'] = "Select who visit";

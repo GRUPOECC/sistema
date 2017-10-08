@@ -83,7 +83,7 @@
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">
-                        <button  type="submit" class="btn btn-primary"><?php echo lang('save');?></button>
+                        <button  type="submit" class="btn btn-success"><?php echo lang('save');?></button>
                     </div>
              </form>
             </div><!-- /.box -->
@@ -193,7 +193,7 @@
                     </div><!-- /.box-body -->
     		<?php if(check_user_role(80)==1){?>
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-success">Submit</button>
                     </div>
 			<?php }?>		
              </form>

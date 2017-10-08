@@ -7,6 +7,7 @@ class case_category extends MX_Controller {
 		parent::__construct();
 		//$this->auth->check_access('1', true);
 		$this->load->model("case_category_model");
+		$this->load->model("custom_field_model");
 		
 	}
 	
@@ -31,7 +32,25 @@ class case_category extends MX_Controller {
 				$save['name'] = $this->input->post('name');
 				$save['parent_id'] = $this->input->post('parent_id');
                 
-				$this->case_category_model->save($save);
+				$p_key = $this->case_category_model->save($save);
+	
+                      if (isset($_POST['namefield'])){ 
+			                $save_field['name'] 		 = $this->input->post('namefield');
+							$save_field['field_type']  = $this->input->post('type');
+							$save_field['form']		 = "10". strval($p_key);
+							$save_field['values']		 = $this->input->post('values');
+							$save_field['mayusculas']		 = $this->input->post('mayusculas');
+                            if($this->input->post('maximo')!="") 
+							$save_field['max']		 = $this->input->post('maximo');
+						    else 
+						    $save_field['max'] = 255; 
+						    
+
+							$this->custom_field_model->save($save_field);
+
+						}
+			    
+
                 $this->session->set_flashdata('message', lang('case_category_created'));
 				redirect('admin/case_category');
 				
@@ -63,6 +82,27 @@ class case_category extends MX_Controller {
 				$save['parent_id'] = $this->input->post('parent_id');
                 
 				$this->case_category_model->update($save,$id);
+
+
+                     if (isset($_POST['namefield'])){ 
+			                $save_field['name'] 		 = $this->input->post('namefield');
+							$save_field['field_type']  = $this->input->post('type');
+							$save_field['form']		 = "10". strval($id);
+							$save_field['values']		 = $this->input->post('values');
+                            $save_field['mayusculas']		 = $this->input->post('mayusculas');
+                            if($this->input->post('maximo')!="") 
+							$save_field['max']		 = $this->input->post('maximo');
+						    else 
+						    $save_field['max'] = 255; 
+
+
+
+							$this->custom_field_model->update($id,$save_field);
+
+						}
+
+
+
                 $this->session->set_flashdata('message', lang('case_category_updated'));
 				redirect('admin/case_category');
 			}

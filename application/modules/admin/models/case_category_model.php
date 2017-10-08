@@ -22,6 +22,8 @@ class case_category_model extends CI_Model
 	function save($save)
 	{
 		$this->db->insert('case_categories',$save);
+		$id = $this->db->insert_id();  
+		return $id;
 	}
 	
 	function get_all()

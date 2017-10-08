@@ -61,10 +61,10 @@ function areyousure()
 									      <a class="btn btn-default"  href="<?php echo site_url('admin/to_do_list/view_to_do/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
 										 <?php } ?>	 
 								  <?php if(check_user_role(18)==1){?>			  
-										  <a class="btn btn-primary" style="margin-left:12px;"  href="<?php echo site_url('admin/to_do_list/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
+										  <a class="btn btn-primary" style="margin-left:10px;"  href="<?php echo site_url('admin/to_do_list/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
 									<?php } ?>		  
 										   <?php if(check_user_role(20)==1){?>	 
-                                         <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/to_do_list/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
+                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/to_do_list/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
 										 <?php } ?>	
                                         </div>
                                     </td>

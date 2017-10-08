@@ -48,46 +48,29 @@
 				<?php echo form_open_multipart('admin/cases/edit/'.$id); ?>
                     <div class="box-body">
                         <div class="box-body">
-                        
-						 <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('case')?> <?php echo lang('title')?></b>
-								</div>
-								<div class="col-md-4">
-                                    
-									<input type="text" name="title" value="<?php echo $case->title;?>" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-						
-						
-						      <div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('case')?> <?php echo lang('number')?></b>
-								</div>
-								<div class="col-md-4">
-                                    
-									<input type="text" name="case_no" value="<?php echo $case->case_no?>" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-						
+  
 						<div class="form-group">
                               <div class="row">
                                 <div class="col-md-3">   
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('company');?></label>
                                 </div>    
-                                <div class="col-md-4">   
-                                    <select name="location_id" id="location_id" class="form-control chzn">
+                                <div class="col-md-4"> 
+                                     <input id="llave" name ="llave"  type="hidden" name="opcion" value="<?php echo $case->id;?>">  
+                                    <select name="location_id[]" id="location_id" class="form-control chzn" multiple="multiple">
                                         <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
                                         <?php foreach($empresas as $new) {
-                                              
+                                              if (sizeof($empresas)==1){
+                                               $sel = 'selected="selected"';  
+                                              echo '<option value="'.$empresas[0]->id.'" '.$sel.'>'.$empresas[0]->name.'</option>';
+
+                                           }else{
+
+
                                             $sel = "";
-                                         if (strpos((string)$case->empresa_id,(string)$new->id)==true)
+                                            if ($case->empresa_id==$new->id)
                                                      $sel='selected="selected"';
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                            }
                                         }
                                         ?>
                                     </select>
@@ -102,13 +85,14 @@
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('department');?></label>
                                 </div>    
                                 <div class="col-md-4" id="dept_category_result">   
-                                    <select name="departamento_id[]" id="departamento_id[]" class="form-control chzn" multiple="multiple">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('departament');?>---</option>
+                                    <select name="departamento_id" id="departamento_id" class="form-control chzn">
+                                        <option value="0">--<?php echo lang('select');?> <?php echo lang('departament');?>---</option>
                                         <?php foreach($departamentos as $new) {
                                               
                                             $sel = "";
-                                         if (strpos((string)$case->departamento_id,(string)$new->id)==true)
+                                         if ($case->departamento_id==$new->id)
                                                      $sel='selected="selected"';
+
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
                                         }
                                         ?>
@@ -193,7 +177,11 @@
 								<div class="col-md-4">
                                     <select id="categorias" name="case_category_id" class="chzn col-md-12" >
 										<?php foreach($case_categories as $new) {
-											$sel = (in_array($new->id,json_decode($case->case_category_id)))?'selected': '';
+											$sel = ''; 
+
+                                            if ($new->id == $case->case_category_id)
+                                              $sel = 'selected';
+
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
@@ -208,60 +196,7 @@
                                 <div class="col-md-4" id="category_result">
                                 <!-- campos opcionales -->
 
-                                <?php 
 
-                                            if ($case->case_category_id=='"1"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Fecha: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="fechacaja" class="form-control datepicker" value="'.$case->fechacaja.'.">
-                                                                </div>
-                                                '; 
-                                             } 
-
-                                             if ($case->case_category_id=='"2"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Proveedor: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="proveedor" class="form-control" value="'.$case->proveedor.'">
-                                                                </div>
-                                                                </br>
-                                                                </br>
-                                                                <div class="col-md-4">
-                                                                    <b>Num Factura: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="numfactura" class="form-control" value="'.$case->numfactura.'">
-                                                                </div>
-                                                '; 
-                                             } 
-                                             if ($case->case_category_id=='"3"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Sistema: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="sistema" class="form-control" value="'.$case->sistema.'">
-                                                                </div>
-                                                '; 
-                                             }
-
-                                             if ($case->case_category_id=='"5"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Periodo: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="periodo" class="form-control" value="'.$case->periodo.'">
-                                                                </div>
-                                                '; 
-                                             }
-
-                                ?>
                                     
 
 
@@ -321,7 +256,18 @@
                                 	<b><?php echo lang('description')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <textarea name="description" class="form-control"><?php echo $case->description;?></textarea>
+                                   <textarea name="description" class="form-control redactor"><?php echo $case->description;?></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                              <div class="row">
+                              <div class="col-md-3">
+                                    <label for="email" style="clear:both;"><?php echo lang('priority')?></label>
+                                  </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="prioridad" id="prioridad" value="<?php echo $case->prioridad;?>" class="form-control">
                                 </div>
                             </div>
                         </div>
@@ -352,28 +298,50 @@
                                     </div>
                      </div>
 						
+	
 						
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('filling_date')?></b>
+                                	<b><?php echo lang('due_date')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <input type="text" name="start_date" value="<?php echo $case->start_date;?>" class="form-control datepicker"/>
+                                   <input type="text" name="due_date" value="<?php echo $case->due_date;?>" class="form-control datepicker"/>
                                 </div>
                             </div>
                         </div>
-						
-									<div class="form-group">
-                        	<div class="row">
-                                <div class="col-md-3">
-                                	<b><?php echo lang('hearing_date')?></b>
-								</div>
-								<div class="col-md-4">
-                                   <input type="text" name="hearing_date" value="<?php echo $case->hearing_date;?>" class="form-control datepicker"/>
+
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-2">
+                                    <label for="email" style="clear:both;"><?php echo lang('files');?></label>
+                                </div>
+                                <div class="col-md-7">
+
+                                                    <?php 
+                                                        session_start();
+                                                        $icono = "assets/img/icono-adjunto.png";
+                                                        $_SESSION["Archivos"] = "";
+                                                        $i=0;
+                                                        foreach($files as $doc){
+                                                          echo '<p><IMG SRC="'.base_url($icono).'" WIDTH=40 HEIGHT=40 ALT=""><a href="'.base_url($doc->location).'">'.$doc->name.'</a> - <a href="'.site_url('admin/cases/deleteFile/'.$case->id).'-'.$i.'-'.$doc->id.'">'.lang('delete').'</a></p>';
+                                                          $_SESSION["Archivos"] = $_SESSION["Archivos"].$doc->location."%";
+                                                          $i=$i+1;
+                                                        }
+                                                    ?>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--Adjuntar Archivos -->
+                        <div class="form-group">
+                              <div class="row">
+                                <div class="col-md-6">
+                                    <label for="email" style="clear:both;"><?php echo lang('upload');?></label>
+                                    <input type="file" multiple="true" name="archivos[]" id="archivos[]" />
                                 </div>
                             </div>
                         </div>
+
 						<!--
 						<div class="form-group">
                         	<div class="row">
@@ -385,7 +353,7 @@
                                 </div>
                             </div>
                         </div>
-						-->
+						
 
 
 						
@@ -399,6 +367,7 @@
                                 </div>
                             </div>
                         </div>
+                        -->
 						
 						<?php 
 					$CI = get_instance();
@@ -581,6 +550,7 @@
 <script src="<?php echo base_url()?>/assets/js/plugins/ionslider/ion.rangeSlider.min.js" type="text/javascript"></script>
 <!-- Bootstrap slider -->
 <script src="<?php echo base_url()?>/assets/js/plugins/bootstrap-slider/bootstrap-slider.js" type="text/javascript"></script>
+<script src="<?php echo base_url('assets/js/redactor.min.js')?>"></script>
 
 <script type="text/javascript">
 $(function() {
@@ -668,6 +638,45 @@ $(document).on('change', '#categorias', function(){
 });
 
 
+function cargaInicial(){
+ //alert(12);
+    categoria_id = $('#categorias').val();
+    location_id = $('#location_id').val();
+    llave = $('#llave').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#category_result').html(ajax_load);
+      
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/opciones2') ?>',
+    type:'POST',
+    data:{l_id:categoria_id,empresa:location_id,ll:llave},
+    
+    success:function(result){
+      //alert(result);return false;
+      $('#category_result').html(result);
+      $(".chzn").chosen();
+         jQuery('.datepicker').datetimepicker({
+             lang:'en',
+             i18n:{
+              de:{
+               months:[
+                'Januar','Februar','März','April',
+                'Mai','Juni','Juli','August',
+                'September','Oktober','November','Dezember',
+               ],
+               dayOfWeek:[
+                "So.", "Mo", "Di", "Mi", 
+                "Do", "Fr", "Sa.",
+               ]
+              }
+             },
+             timepicker:false,
+             format:'Y-m-d'
+            });
+     }
+  });
+}
+
 $(document).on('change', '#court_category_id', function(){
  //alert(12);
  	location_id = $('#location_id').val();
@@ -725,6 +734,25 @@ $(function() {
 });
   });
 
-
+cargaInicial();
 
 </script>
+ <script>
+  $(document).ready(function(){
+    $('.redactor').redactor({
+              // formatting: ['p', 'blockquote', 'h2','img'],
+            minHeight: 200,
+            imageUpload: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/upload_image');?>',
+            fileUpload: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/upload_file');?>',
+            imageGetJson: '<?php echo base_url(config_item('admin_folder').'/wysiwyg/get_images');?>',
+            imageUploadErrorCallback: function(json)
+            {
+                alert(json.error);
+            },
+            fileUploadErrorCallback: function(json)
+            {
+                alert(json.error);
+            }
+      });
+});
+  </script>

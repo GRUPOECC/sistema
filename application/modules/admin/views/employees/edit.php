@@ -206,7 +206,7 @@
                                         <select name="empresa_id[]" class="form-control chzn" multiple="multiple" >
                                             <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
                                             <?php 
-
+                                               /*
                                                foreach($empresas as $new) {
                                                 $sel ='';
                                                 if(strpos((string)$employee->empresa_id,'"'.(string)$new->id.'"')==true) 
@@ -214,6 +214,35 @@
 
                                                 echo '<option data-padre="'.$new->parent_id.'" value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
                                                }
+                                                  */
+                                               $listaempresas2 = $empresas;
+                                               $listaempresas3 = $empresas; 
+                                               
+                                                foreach($empresas as $new) {
+                                                     $sel='';
+                                                  if(strpos((string)$employee->empresa_id,'"'.(string)$new->id.'"')==true) 
+                                                           $sel = 'selected ="selected"';
+                                               if (($new->id == 0)){
+                                                echo '<option class="padre"  value="'.$new->id.'" '.$sel.'> - '.$new->name.'</option>';
+                                                    foreach($listaempresas2 as $new2) {
+                                                            $sel='';
+                                                        if(strpos((string)$employee->empresa_id,'"'.(string)$new2->id.'"')==true)
+                                                           $sel = 'selected ="selected"';
+                                                          if ($new2->parent_id == $new->id){
+                                                              echo '<option class="hijo"  value="'.$new2->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp '.$new2->name.'</option>';
+                                                              foreach($listaempresas3 as $new3) {
+                                                                  $sel='';
+                                                       if(strpos((string)$employee->empresa_id,'"'.(string)$new3->id.'"')==true) 
+                                                                   $sel = 'selected ="selected"';
+                                                                    if ($new3->parent_id == $new2->id){
+                                                                  echo '<option class="nieto"  value="'.$new3->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp '.$new3->name.'</option>';
+                                                                  }
+                                                              }
+                                                        }
+                                                    }
+                                                }
+
+                                                }  
                                             
                                             ?>
                                         </select>

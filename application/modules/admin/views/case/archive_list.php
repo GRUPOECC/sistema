@@ -135,16 +135,16 @@ function areyousure()
 									
                                     <td class="col-md-5">
 									  <?php if(check_user_role(12)==1){?>	
-										  <a class="btn btn-primary"  href="<?php echo site_url('admin/cases/view_archived_case/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
+										  <a class="btn btn-default"  href="<?php echo site_url('admin/cases/view_archived_case/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
 										<?php } ?>	  	
 										  <?php if(check_user_role(13)==1){?>	
-										 <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/cases/restore/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-check"></i> <?php echo lang('restore');?></a>
+										 <a class="btn btn-success" style="margin-left:10px;" href="<?php echo site_url('admin/cases/restore/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-check"></i> <?php echo lang('restore');?></a>
 										 
-										 <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/cases/delete_archive_case/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-check"></i> <?php echo lang('delete');?></a>
+										 <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/cases/delete_archive_case/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
 										 <?php } ?>	
 										 
 										 <?php if(check_user_role(156)==1){?>		
-                                        <a class="btn bg-purple"  href="<?php echo site_url('admin/cases/notes/'.$new->id); ?>"><i class="fa fa-pencil"></i> <?php echo lang('notes')?></a>					<?php } ?>	
+                                        <a class="btn bg-purple" style="margin-left:10px;" href="<?php echo site_url('admin/cases/notes/'.$new->id); ?>"><i class="fa fa-pencil"></i> <?php echo lang('notes')?></a>					<?php } ?>	
                                     </td>
                                 </tr>
                                 <?php $i++;}?>

@@ -298,6 +298,7 @@ class tasks extends MX_Controller {
 				$save['description'] = $this->input->post('description');
 				$save['created_by'] = $this->session->userdata('admin')['id'];
 				$save['id_empresa'] = json_encode($this->input->post('empresa_id'));
+				$save['creacion'] = date("d-m-Y");
 			    
 				$task_id = $this->tasks_model->save($save);
                  // $url =base_url('assets/uploads/tareas/');
@@ -434,6 +435,9 @@ class tasks extends MX_Controller {
 				$save['case_id'] = $this->input->post('case_id');
 				$save['progress'] = $this->input->post('progress');
 				$save['description'] = $this->input->post('description');
+
+			 if ($this->input->post('progress')=="100")
+				$save['vencimiento'] = date("d-m-Y");
 			    
 				$this->tasks_model->update($save,$id);
 				//echo '<pre>'; print_r($save);die;

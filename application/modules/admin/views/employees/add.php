@@ -365,9 +365,30 @@
                                     <label for="empresa_id" style="clear:both;"><?php echo lang('seecompany');?></label>
                                     <select id="empresa_id" name="empresa_id[]" class="form-control chzn" multiple="multiple" >
                                         <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
-                                        <?php foreach($empresas as $new) {
+                                        <?php 
+                                          $listaempresas2 = $empresas;
+                                          $listaempresas3 = $empresas;   
+
+                                        foreach($empresas as $new) {
                                             $sel = '';
-                                            echo '<option class="empresa" value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                            
+                                      
+                                        if (($new->id == 0)){
+                                                echo '<option class="padre"  value="'.$new->id.'" '.$sel.'> - '.$new->name.'</option>';
+                                                    foreach($listaempresas2 as $new2) {
+                                                          if ($new2->parent_id == $new->id){
+                                                              echo '<option class="hijo"  value="'.$new2->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp '.$new2->name.'</option>';
+                                                              foreach($listaempresas3 as $new3) {
+                                                                    if ($new3->parent_id == $new2->id){
+                                                                  echo '<option class="nieto"  value="'.$new3->id.'" '.$sel.'> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp '.$new3->name.'</option>';
+                                                                  }
+                                                              }
+                                                        }
+                                                    }
+                                                }
+
+
+
                                         }
                                         
                                         ?>

@@ -255,12 +255,12 @@ class employees extends MX_Controller {
 
 			    //Asignacion de la empresas: (Suspendido)
 			   	//-------------------------------------------------------------------
-			   	$save_empresa['id_empresa'] = $this->input->post('empresa_select');
-			   	$save_empresa['id_departamento'] = $save['department_id'];
-			   	$save_empresa['id_cargo'] = $save['user_role'];
-			   	$save_empresa['nomina'] = $value['nomina'];	
-			   	$save_empresa['fecha_ingreso'] = $value['date'];	
-			   	$save_empresa['principal'] = $value['principal'];
+			   	//$save_empresa['id_empresa'] = $this->input->post('empresa_select');
+			   	//$save_empresa['id_departamento'] = $save['department_id'];
+			   	//$save_empresa['id_cargo'] = $save['user_role'];
+			   	//$save_empresa['nomina'] = $value['nomina'];	
+			   	//$save_empresa['fecha_ingreso'] = $value['date'];	
+			   	//$save_empresa['principal'] = $value['principal'];
 			   	//----------------------------------------------------------- 
                     // Registro el resto de las empresas (si es empresa padre):
                     //----------------------------------------------------------- 
@@ -298,7 +298,7 @@ class employees extends MX_Controller {
 				}
 				
 				
-				$this->employees_model->update($save,$save_empresa,$id);
+				$this->employees_model->update($save,$id);
                 $this->session->set_flashdata('message', lang('employee_updated'));
 				redirect('admin/employees');
 			}

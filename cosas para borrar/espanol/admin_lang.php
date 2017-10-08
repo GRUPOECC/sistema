@@ -500,3 +500,9 @@ $lang['amount_received']			= "Amount Received";
 $lang['balance_due']			= "Balance Due";
 $lang['signed_by']			= "Signed By";
 $lang['result']			= "Result";
+
+// MODULO VISITORS
+$lang['visitor'] = "visitante";
+$lang['visitors'] = "visitantes";
+$lang['Visitor'] = "Visitante";
+$lang['Visitors'] = "Visitantes";

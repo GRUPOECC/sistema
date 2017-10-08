@@ -345,7 +345,7 @@
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">
-                        <button  type="submit" class="btn btn-primary"><?php echo lang('save')?></button>
+                        <button  type="submit" class="btn btn-success"><?php echo lang('save')?></button>
                     </div>
              </form>
             </div><!-- /.box -->

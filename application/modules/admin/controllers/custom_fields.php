@@ -29,6 +29,11 @@ class custom_fields extends MX_Controller {
 				$save['field_type']  = $this->input->post('type');
 				$save['form']		 = $this->input->post('form');
 				$save['values']		 = $this->input->post('values');
+				$save['mayusculas']		 = $this->input->post('mayusculas');
+                if($this->input->post('maximo')!="") 
+				$save['max']		 = $this->input->post('maximo');
+				else 
+				$save['max'] = 255; 
                 
 				$this->custom_field_model->save($save);
                 $this->session->set_flashdata('message', lang('field_created'));

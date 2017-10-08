@@ -128,7 +128,7 @@
 								</div>
 								<div class="col-md-4">
                                     	<?php foreach($case_categories as $new) {
-											if(in_array($new->id,json_decode($case->case_category_id))) echo $new->name.',';
+											if($new->id == (int)$case->case_category_id) echo $new->name;
 										}
 										
 										?>
@@ -187,7 +187,7 @@
 								<div class="col-md-4">
                                     	<?php foreach($empresas as $new) {
 										
-											if($new->id==$case->location_id) echo $new->name;
+											if($new->id==$case->empresa_id) echo $new->name;
 										}
 										
 										?>
@@ -205,7 +205,7 @@
 								<div class="col-md-4">
                                    <?php foreach($departamentos as $new) {
                                               
-                                         if (strpos((string)$case->departamento_id,'"'.(string)$new->id.'"')==true)
+                                         if ($case->departamento_id==$new->id)
                                             echo '<p>'.$new->name.'</p>';
                                         }
                                          
@@ -221,60 +221,225 @@
 
                                 <?php 
 
-                                            if ($case->case_category_id=='"1"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Fecha: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                  '.$case->fechacaja.'
-                                                                </div>
-                                                '; 
-                                             } 
+                                    $this->load->model("custom_field_model");
+                                    $fieldscase = $this->custom_field_model->get_custom_fields((int)("10".$case->case_category_id));
+             
+                                    $CI = get_instance();
+                                        if($fieldscase){
+                                            foreach($fieldscase as $doc){
+                                            $output = '';
+                                            if($doc->field_type==1) //testbox
+                                            {
+                                        ?>
+                                        <div class="form-group">
+                                              <div class="row">
+                                              
+                                                <div class="col-md-3">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>
+                                                <div class="col-md-4">  
+                                            <?php  $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();?>        
+                                            <?php echo $result->reply; ?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     <?php  }   
+                                            if($doc->field_type==2) //dropdown list
+                                            {
+                                                $values = explode(",", $doc->values);
+                                    ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                    </div>
+                                                <div class="col-md-4">
+                                                <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();
+                                                
+                                                    if(!empty($values) || !empty($result)){
+                                                            foreach($values as $key=>$val) {
+                                                                if($val==@$result->reply) echo @$val;
+                                                            }
+                                                        }   
+                                                        
+                                            ?>          
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php   }   
+                                                if($doc->field_type==3) //radio buttons
+                                            {
+                                                $values = explode(",", $doc->values);
+                                    ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>
+                                                <div class="col-md-4">
+                                            <?php   
+                                                        foreach($values as $key=>$val) { ?>
+                                            <?php $x="";
+                                            $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();
+                                            if(!empty($result->reply)){
+                                                if($result->reply==$val){
+                                                    $x= $val;
+                                                }else{
+                                                    $x='';
+                                                }
+                                            }
+                                            ?>          
+                                        
+                                            <?php echo $x;?>
+                                            <?php           }
+                                            ?>          
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <?php }
+                                        if($doc->field_type==4) //checkbox
+                                            {
+                                                $values = explode(",", $doc->values);
+                                    ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                    </div>
+                                                <div class="col-md-4">
+                                            
+                                            <?php   
+                                                        foreach($values as $key=>$val) { ?>
+                                            <?php 
+                                            $x="";
+                                            $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();
+                                            if(!empty($result->reply)){
+                                                if($result->reply==$val){
+                                                    $x= $val;
+                                                }else{
+                                                    $x='';
+                                                }
+                                            }
+                                            ?>  
+                                                        
+                                                <?php echo $x;?>
+                                            <?php           }
+                                            ?>          
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php } if($doc->field_type==5) //Textarea
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-3">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>
+                                                <div class="col-md-4">  
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <?php echo $result->reply;?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    <?php } if($doc->field_type==6) //URl
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="<?php echo @$result->reply;?>" target="_blank"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    <?php } if($doc->field_type==7) //EMAIL
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>              
+                                    
+                                    <?php } if($doc->field_type==8) //Phone
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <?php echo $result->reply;?>
+                                                </div>
+                                            </div>
+                                        </div>  
 
-                                             if ($case->case_category_id=='"2"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Proveedor: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                <input type="text" name="proveedor" class="form-control" value="'.$case->proveedor.'">
-                                                                </div>
-                                                                </br>
-                                                                </br>
-                                                                <div class="col-md-4">
-                                                                    <b>Num Factura: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                   '.$case->numfactura.'
-                                                                </div>
-                                                '; 
-                                             } 
-                                             if ($case->case_category_id=='"3"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Sistema: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                  '.$case->sistema.'
-                                                                </div>
-                                                '; 
-                                             }
+                                        <?php } if($doc->field_type==8) //EMAIL
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>              
+                                    
+                                    <?php } if($doc->field_type==9) //EMAIL
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>              
+                                    
+                                    <?php } if($doc->field_type==10) //EMAIL
+                                          {     ?>  <div class="form-group">
+                                              <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                </div>
+                                            </div>
+                                        </div>              
+                                    
+                                    <?php }
 
-                                             if ($case->case_category_id=='"5"'){
-                                                echo '
-                                                                <div class="col-md-4">
-                                                                    <b>Periodo: </b>
-                                                                </div>
-                                                                <div class="col-md-8">    
-                                                                '.$case->periodo.'
-                                                                </div>
-                                                '; 
-                                             }
-
-                                ?>
+                                                
+                                        
 
 
+
+                                            }
+                                        }
+                                    ?>  
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <b><?php echo lang('priority')?></b>
+                                </div>
+                                <div class="col-md-4">
+                                   <?php echo $case->prioridad;?>
                                 </div>
                             </div>
                         </div>
@@ -295,10 +460,10 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('filling_date')?></b>
+                                	<b><?php echo lang('date')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <?php echo date_convert($case->start_date);?>
+                                   <?php echo $case->start_date;?>
                                 </div>
                             </div>
                         </div>
@@ -306,10 +471,10 @@
 					<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('hearing_date')?></b>
+                                	<b><?php echo lang('due_date')?></b>
 								</div>
 								<div class="col-md-4">
-                                  <?php echo date_convert($case->hearing_date);?>
+                                  <?php echo $case->due_date;?>
                                 </div>
                             </div>
                         </div>
@@ -324,7 +489,7 @@
                                 </div>
                             </div>
                         </div>
-						-->
+						
 						
 						<div class="form-group">
                         	<div class="row">
@@ -336,6 +501,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        -->
 
                          <div class="form-group">
                               <div class="row">

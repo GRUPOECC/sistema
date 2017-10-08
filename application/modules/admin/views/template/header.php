@@ -623,7 +623,13 @@ $fourth = $this->uri->segment(4);
                             <a href="<?php echo site_url('admin/case_study/');?>">
                                 <i class="fa fa-book"></i> <span><?php echo lang('case_study');?></span>
                             </a>
-                        </li> 
+                        </li>
+
+                        <li class="<?php echo($this->uri->segment(2)=='case_category')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/case_category/');?>">
+                                <i class="fa fa-archive"></i> <span><?php echo lang('case_category');?></span>
+                            </a>
+                        </li>  
                                     
                                                                
                                     
@@ -691,6 +697,11 @@ $fourth = $this->uri->segment(4);
 						<li class="<?php echo($this->uri->segment(2)=='contacts')?'active':'';?>">
                             <a href="<?php echo site_url('admin/contacts');?>">
                                 <i class="fa fa-newspaper-o"></i> <span><?php echo lang('contacts')?></span>
+                            </a>
+                        </li>
+                        <li class="<?php echo($this->uri->segment(2)=='visitors')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/visitors');?>">
+                                <i class="fa fa-newspaper-o"></i> <span><?php echo lang('Visitors')?></span>
                             </a>
                         </li>
 						<li class="<?php echo($this->uri->segment(2)=='custom_fields')?'active':'';?>">
@@ -922,6 +933,13 @@ $fourth = $this->uri->segment(4);
                             </a>
                         </li> 
                         <?php break;}}?> 
+                        <?php foreach($actions as $action){if($action->action=='case_category'){?>  
+                        <li class="<?php echo($this->uri->segment(2)=='case_category')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/case_category/');?>">
+                                <i class="fa fa-archive"></i> <span><?php echo lang('case_category');?></span>
+                            </a>
+                        </li> 
+                        <?php break;}}?> 
                        
                             </ul>
                         </li>
@@ -1011,6 +1029,13 @@ $fourth = $this->uri->segment(4);
                             </a>
                         </li>
 				<?php break;}}?>		
+                <?php foreach($actions as $action){if($action->action=='visitors'){?>       
+                        <li class="<?php echo($this->uri->segment(2)=='visitors')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/visitors');?>">
+                                <i class="fa fa-newspaper-o"></i> <span><?php echo lang('Visitors')?></span>
+                            </a>
+                        </li>
+                <?php break;}}?>        
 				<?php foreach($actions as $action){if($action->action=='custom_fields'){?>
 						<li class="<?php echo($this->uri->segment(2)=='custom_fields')?'active':'';?>">
                             <a href="<?php echo site_url('admin/custom_fields');?>">
@@ -1051,13 +1076,7 @@ $fourth = $this->uri->segment(4);
                             </a>
                         </li>
 					<?php break;}}?>
-					<?php foreach($actions as $action){if($action->action=='case_category'){?>
-						<li class="<?php echo($this->uri->segment(2)=='case_category')?'active':'';?>">
-                            <a href="<?php echo site_url('admin/case_category');?>">
-                                <i class="fa  fa-angle-double-right"></i> <span><?php echo lang('case')?> <?php echo lang('category')?></span>
-                            </a>
-                        </li>
-					<?php break;}}?>	
+					
 						
 					<?php foreach($actions as $action){if($action->action=='dept_category'){?>	
 						<li class="<?php echo($this->uri->segment(2)=='dept_category')?'active':'';?>">

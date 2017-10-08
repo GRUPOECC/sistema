@@ -139,6 +139,7 @@ $lang['court_category']		= "Corte Categoría";
 $lang['case_category']		= "Ticket Catégorie";
 $lang['payment_date']		= "Fecha de Pago";
 $lang['custom_fields']		= "Custom Fields";
+$lang['field_add']	     	= "Agregar Campos Adicionales";
 $lang['field_name']			= "Nombre del campo";
 $lang['field_type']			= "Tipo de campo";
 $lang['select_form']		= "Selección de forma";
@@ -577,12 +578,26 @@ $lang['code'] = "Codigo Interno";
 $lang['rif'] = "RIF";
 $lang['reason'] = "Razon Social";
 $lang['subcompany'] = "Es una subempresa de ";
+$lang['add_field'] = "Agregar campos adicionales";
+$lang['max'] = "Maximo de caracteres";
+$lang['upper'] = "Mayusculas";
+$lang['sort'] = "Ordenar Alfabeticamente";
+$lang['alias'] = "Alias";
 
 
 
 
-
-
+// MODULO VISITORS
+$lang['visitor'] = "visitante";
+$lang['visitors'] = "visitantes";
+$lang['Visitor'] = "Visitante";
+$lang['Visitors'] = "Visitantes";
+$lang['who_visit'] = "A que persona visita";
+$lang['date_in'] = "Fecha y Hora de entrada";
+$lang['date_out'] = "Fecha y Hora de salida";
+$lang['badge'] = "Número de Pase";
+$lang['select_visitor'] = "Seleccione Visitante ó Agreguelo";
+$lang['select_who_visit'] = "Seleccione a quien visita";
 
 
 

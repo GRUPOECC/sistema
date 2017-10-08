@@ -33,7 +33,7 @@ function areyousure()
                       <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/tasks'); ?>">
                 <?php } ?>   
           <?php if(check_user_role(188)==1){?>
-                      <a class="btn bg-olive" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
+                      <a class="btn btn-primary" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
                      <i class="fa fa-caret-square-o-down"></i><i id="boton_select"> <?php echo lang('select');?></i></a> 
                      <?php } ?> 
 
@@ -162,7 +162,7 @@ function areyousure()
 									<a class="btn btn-info"  href="<?php echo site_url('admin/cases/fees/'.$new->id); ?>"><i class="fa fa-inr"></i> <?php echo lang('fees')?></a>	
                          <?php } ?>
 						  <?php if(check_user_role(84)==1){?>	
-						              <a class="btn btn-success"  href="<?php echo site_url('admin/cases/dates/'.$new->id); ?>"><i class="fa fa-calendar"></i> <?php echo lang('hearing_date')?></a>							
+						              <a class="btn btn-info"  href="<?php echo site_url('admin/cases/dates/'.$new->id); ?>"><i class="fa fa-calendar"></i> <?php echo lang('hearing_date')?></a>							
                            <?php } ?>              
 									<?php if(check_user_role(6)==1){?>		  
 										  <a class="btn btn-primary"  href="<?php echo site_url('admin/cases/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>								<?php } ?>

@@ -4,7 +4,20 @@ function areyousure()
 {
 	return confirm('<?php echo lang('are_you_sure');?>');
 }
+
+function returnbadge()
+{
+    return confirm('<?php echo lang('badge_returned');?>');
+}
 </script>
+
+<?php 
+
+        $this->load->model("visitors_model");
+
+?>
+
+
 <section class="content-header">
         <h1>
             <?php echo $page_title; ?>
@@ -12,7 +25,7 @@ function areyousure()
         </h1>
         <ol class="breadcrumb">
             <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard');?></a></li>
-            <li class="active"><?php echo lang('appointments');?></li>
+            <li class="active"><?php echo lang('visitors');?></li>
         </ol>
 </section>
 
@@ -20,55 +33,60 @@ function areyousure()
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="btn-group pull-right">
-				<?php if(check_user_role(26)==1){?>
-                    <a class="btn btn-default" href="<?php echo site_url('admin/appointments/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
+				<?php if(check_user_role(214)==1){?>
+                    <a class="btn btn-default" href="<?php echo site_url('admin/visitors/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new');?></a>
                  <?php } ?>	
 				</div>
             </div>    
         </div>	
         
-  	  	<div class="row">
+  	  	
           <div class="col-xs-12">
             <div class="box">
-                <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('add');?></h3>                                    
-                </div><!-- /.box-header -->
+                
 				
                 <div class="box-body table-responsive" style="margin-top:40px;">
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
                                 <th><?php echo lang('serial_number');?></th>
-								<th><?php echo lang('title');?></th>
-								<th><?php echo lang('contact');?></th>
-								<th><?php echo lang('motive');?></th>
-								<th><?php echo lang('date');?></th>
+								<th><?php echo lang('badge');?></th>
+								<th><?php echo lang('Visitor');?></th>
+								<th><?php echo lang('who_visit');?></th>
+								<th><?php echo lang('date_in');?></th>
+                                <th><?php echo lang('date_out');?></th>
 								<th><?php echo lang('notes');?></th>
-								<th width="20%"><?php echo lang('action');?></th>
+								<th><?php echo lang('action');?></th>
                             </tr>
                         </thead>
                         
-                        <?php if(isset($appointments)):?>
+                        <?php if(isset($visitors)):?>
                         <tbody>
-                            <?php $i=1;foreach ($appointments as $new){?>
+                            <?php $i=1;foreach ($visitors as $new){?>
+
+                            <?php $name_e = $this->visitors_model->get_all_e($new->user_id);
+
+                             ?>
+
+
+                           
+
+
                                 <tr class="gc_row">
                                     <td><?php echo $i?></td>
-                                    <td><?php echo $new->title?></td>
+                                    <td><?php echo $new->badge_name?></td>
 									<td><?php echo $new->name?></td>
-									<td><?php echo $new->motive?></td>
-									<td><?php echo date_time_convert($new->date_time)?></td>
+									<td><?php echo $name_e->name_e?></td>
+                                    <td><?php echo date_time_convert($new->date_time_in)?></td>
+
+
+                                    <td><?php echo date('d/m/Y H:i',strtotime($new->date_time_out))?></td>
 									<td><?php echo $new->notes?></td>
 									<td width="28%">
-                                        <div class="btn-group">
-									<?php if(check_user_role(29)==1){?>	
-                                          <a class="btn btn-default"  href="<?php echo site_url('admin/appointments/view_appointment/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view');?></a>
-										   <?php } ?>	
-										<?php if(check_user_role(27)==1){?>
-										  <a class="btn btn-primary"  style="margin-left:10px;" href="<?php echo site_url('admin/appointments/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
-										   <?php } ?>	
-										 <?php if(check_user_role(28)==1){?> 
-                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/appointments/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
-										 <?php } ?>	 
+                                        <div class="btn-group"> 
+                                         <?php if(check_user_role(218)==1){?> 
+                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/visitors/close/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('close');?></a>
+                                         <?php } ?> 
                                         </div>
                                     </td>
                                 </tr>

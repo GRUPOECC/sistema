@@ -57,7 +57,7 @@ function areyousure()
 										$designations = $this->department_model->get_designations($new->id);
 										$j=1;
 										foreach($designations as $d){
-											echo '<li type="1">'.$d->designation.'</li>';
+											echo '<li type="1" style="margin-left:10px;">'.$d->designation.'</li>';
 										$j++;
 										}
 										?>
@@ -71,7 +71,7 @@ function areyousure()
 										  <a class="btn btn-primary"  href="<?php echo site_url('admin/departments/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit');?></a>
 										  <?php } ?>	
 										 <?php if(check_user_role(49)==1){?>	 
-                                         <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/departments/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
+                                         <a class="btn btn-danger" style="margin-left:10px;" href="<?php echo site_url('admin/departments/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> <?php echo lang('delete');?></a>
 										 <?php } ?>	
                                         </div>
                                     </td>
