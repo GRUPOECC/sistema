@@ -48,6 +48,7 @@ $lang['files']      	 = "Files";
 $lang['my_cases']      	 = "My Cases";
 $lang['cases']      	 = "Cases";
 $lang['case']      	 = "Case";
+$lang['field_name'] = "Field name: "; 
 $lang['loc']      	 = "Location";
 $lang['more_info']      	 = "More Info";
 $lang['case_alert_days']      	 = "Case Alert Days";
@@ -171,6 +172,7 @@ $lang['case_stage_deleted']								= "Case Stage Deleted";
 $lang['contact_created']								= "New Contact Created";
 $lang['contact_updated']								= "Contact Updated";
 $lang['contact_deleted']								= "Contact Deleted";
+$lang['field_aditional'] 								= "Aditionals Fields";
 
 $lang['court_created']								= "Court Created";
 $lang['court_updated']								= "Court Updated";

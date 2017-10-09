@@ -34,14 +34,17 @@
         <!-- left column -->
         <div class="col-md-12">
             <!-- general form elements -->
-            <div class="box box-primary">
+            <div class="box box-primary" style="height: 600px;">
                 <div class="box-header">
                     <h3 class="box-title"><?php echo lang('edit');?></h3>
                 </div><!-- /.box-header -->
-                <!-- form start -->
+                <!-- form start <?php echo form_open_multipart('admin/case_category/edit/'.$id); ?>-->
 				
-				<?php echo form_open_multipart('admin/case_category/edit/'.$id); ?>
+				
+                <form method="post" id="formulario" action="<?php site_url('admin/case_category/edit/'.$id) ?>">
                     <div class="box-body">
+                      
+
                         <div class="form-group">
                         	<div class="row">
                                 <div class="col-md-4">
@@ -58,8 +61,8 @@
                                 <div class="col-md-4">
                                     <label for="email" style="clear:both;"><?php echo lang('parent');?> <?php echo lang('category');?></label>
 									<select name="parent_id" class="form-control chzn">
-										<option value="">--<?php echo lang('select');?> <?php echo lang('parent');?> <?php echo lang('category');?>---</option>
-										<?php foreach($categories as $new) {
+										<option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
+										<?php foreach($departments as $new) {
 											$sel = "";
 											if($new->id==$category->parent_id) $sel = "selected='selected'";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
@@ -70,7 +73,35 @@
                                 </div>
                             </div>
                         </div>
+           
+          
 
+                         <div id="adicionales">
+                    
+                          <strong><?php echo lang('field_aditional');?></strong>
+                          <br>
+                          <br>
+                          <?php 
+                           $i=1;  
+                          foreach ($fields as $new) {
+                            echo "<strong> ".$i.") ".lang('field_name').": </strong>". $new->name . ' - <a href="'.site_url('admin/case_category/deleteField/'.$new->id).'">'.lang('delete').'</a> <br>';
+                            $i = $i + 1; 
+                          }
+                          ?>
+                      
+                        </div>
+
+                        
+
+						
+                    </div><!-- /.box-body -->
+    
+                    <div class="box-footer">
+                        <button type="submit" class="btn btn-primary"><?php echo lang('update');?></button>
+                    </div>
+              </form>
+               
+                        <div style="margin-top: -250px; position: absolute; margin-left: 500px;  z-index: 1;" class="col-md-9">
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-4">
@@ -80,114 +111,17 @@
                             </div>
                         </div>
 
-                         <div id="adicional">
-
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="name" style="clear:both;"><?php echo lang('field_add');?> </label>
-                                    <hr>
-                                </div>
-                            </div>
+                        <div id="adicional">
+                               <div class="row">
+                               <?php echo form_open_multipart('admin/case_category/addField/'.$id); ?>                 
+                               <div id="opciones"  class="col-md-8">
+                                  
+                               </div>
+                               <?php form_close()?>
+                               </div>
                         </div>
-                        
-                        
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <b><?php echo lang('field_type')?></b>
-                                </div>
-                                <div class="col-md-4">
-                                    <select name="type" class="form-control" id="field">
-                                        <option value="1">Text Box</option>
-                                        <option value="2">Dropdown List</option>
-                                        <option value="3">Radio Button</option>
-                                        <option value="4">Checkbox</option>
-                                        <option value="5">Textarea</option>
-                                        <option value="6">URL</option>
-                                        <option value="7">Email</option>
-                                        <option value="8">Phone</option>
-                                        <option value="9">Fecha</option>
-                                        <option value="10">Hora</option>
-
-                                    </select>    
-                                </div>
-                                <div id="limitaciones">
-                                <div class="col-md-12">
-
-                                    <div class="col-md-3">
-                                        <b><?php echo lang('max')?></b>
-                                    </div>
-                                    <div class="col-md-4">         
-                                        <input type="number" name="maximo" value="" class="form-control">
-                                    </div>
-
-                                </div>
-                                <br>
-                                <div class="col-md-12">
-
-                                    <div class="col-md-3">
-                                        <b><?php echo lang('upper')?></b>
-                                    </div>
-                                    <div class="col-md-4">         
-                                        <input type="checkbox" name="mayusculas" value="1">
-                                    </div>
-                                
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <b><?php echo lang('field_name')?></b>
-                                </div>
-                                <div class="col-md-4">         
-                                    <input type="text" name="namefield" value="" class="form-control">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-                        <div class="form-group" id="value-div">
-                            <div class="row">
-                                <div class="col-md-3">
-                                    <b><?php echo lang('enter_field_values')?></b>
-                                </div>
-                                <div class="col-md-4">
-                                      <textarea id="elementos" name="values" class="form-control"></textarea>
-                                </div>
-                                <div class="col-md-4">
-                                        <?php echo lang('custom_field_instruction')?>
-                                </div>
-                             </div>
-                             <div class="row">
-                             <div class="col-md-12">
-
-                                    <div class="col-md-3">
-                                        <b><?php echo lang('sort')?></b>
-                                    </div>
-                                     <div class="col-md-4">         
-                                        <input id="alfabetico" type="Checkbox" name="alfabetico" value="1">
-                                    </div>
-                                
-                             </div>
-                                </br>
-                                </br>
-                             </div>
                         </div>
 
-                        </div>
-						
-						
-                    </div><!-- /.box-body -->
-    
-                    <div class="box-footer">
-                        <button type="submit" class="btn btn-primary"><?php echo lang('update');?></button>
-                    </div>
-             <?php form_close()?>
             </div><!-- /.box -->
         </div>
      </div>
@@ -203,6 +137,62 @@ $(function() {
 	$('.chzn').chosen();
 	
 });
+/*
+function campos(){
+  $.ajax({
+        url: '<?php echo site_url('admin/case_category/aditionalField') ?>',
+        type:'POST',
+        data:{'id:vch'}
+        success:function(result){
+          //alert(result);return false;
+        $('#opciones').html(result);
+        $(".chzn").chosen();
+        $(function() {
+            //bootstrap WYSIHTML5 - text editor
+            $(".txtarea").wysihtml5();
+        });
+
+         $(function() {
+            $( "#datepicker" ).pickmeup({
+            format  : 'Y-m-d'
+        });
+          });
+       
+        $(document).on('ready', function(){
+                $('#value-div').hide();
+        });
+
+        $(document).on('change', '#field', function(){
+            var field = $('#field').val();
+           // alert(field);
+            if(field==3 || field==2 || field==4){
+                $('#value-div').show();
+            }else{
+                $('#value-div').hide();
+            }
+
+
+            if (field ==1)
+            $('#limitaciones').show();
+            else 
+              $('#limitaciones').hide();  
+         
+        });
+
+        $(document).on('change', '#alfabetico', function(){
+                var valores = document.getElementById('elementos');
+                var array = (valores.value).split(',');
+                valores.value = array.sort();  
+        });
+
+
+        
+
+       }
+      });
+}
+
+*/
 
 
 $(function() {
@@ -246,6 +236,66 @@ $(document).on('change', '#adicion', function(){
         suiche = false;
        }else{
         $('#adicional').show();
+       
+
+                             $.ajax({
+                                    url: '<?php echo site_url('admin/case_category/aditionalField/'.$id); ?>',
+                                    type:'POST',
+                                    success:function(result){
+
+                                              //alert(result);return false;
+                                            $('#opciones').html(result);
+                                            $(".chzn").chosen();
+                                            $('#value-div').hide();
+
+                                            $(function() {
+                                                //bootstrap WYSIHTML5 - text editor
+                                                $(".txtarea").wysihtml5();
+                                            });
+
+                                             $(function() {
+                                                $( "#datepicker" ).pickmeup({
+                                                format  : 'Y-m-d'
+                                            });
+                                              });
+                                           
+                                            $(document).on('ready', function(){
+                                                    $('#value-div').hide();
+                                            });
+
+                                            $(document).on('change', '#field', function(){
+                                                var field = $('#field').val();
+                                               // alert(field);
+                                                if(field==3 || field==2 || field==4){
+                                                    $('#value-div').show();
+                                                }else{
+                                                    $('#value-div').hide();
+                                                }
+
+
+                                                if (field ==1)
+                                                $('#limitaciones').show();
+                                                else 
+                                                  $('#limitaciones').hide();  
+                                             
+                                            });
+
+                                            $(document).on('change', '#alfabetico', function(){
+                                                    var valores = document.getElementById('elementos');
+                                                    var array = (valores.value).split(',');
+                                                    valores.value = array.sort();  
+                                            });
+
+                                            function chgAction(id)
+                                                {
+                                                      document.getElementById("formulario").action ="admin/case_category/addField/"+id; 
+                                                      document.getElementById("formulario").submit();
+                                                
+                                                } 
+
+                                   }
+                                  });
+
         suiche = true;
         }        
  

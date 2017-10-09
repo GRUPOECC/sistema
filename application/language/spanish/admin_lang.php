@@ -46,6 +46,8 @@ $lang['file']      	 = "Archivo";
 $lang['files']      	 = "Archivos";
 $lang['my_cases']      	 = "Mis Tickets";
 $lang['cases']      	 = "Tickets";
+$lang['field_aditional'] = "Campos Adicionales"; 
+$lang['field_name'] = "Nombre del campo: "; 
 $lang['loc']      	 = "Locacion";
 $lang['case']      	 = "Ticket";
 $lang['cases_open']      	 = "Tickets Abiertos";
@@ -222,6 +224,7 @@ $lang['field_deleted']								= "Eliminado campo";
 $lang['to_do_created']								= "Para ello creó";
 $lang['to_do_updated']								= "Para hacer Actualizado";
 $lang['to_do_deleted']								= "Para hacer eliminado";
+
 
 //Excel FIle Columns A,B,C,D Use As Name,Phone,Email,Address
 $lang['contacts_import_instruction']		= "Excel FIle Columns A,B,C,D Use As Name,Phone,Email,Address";

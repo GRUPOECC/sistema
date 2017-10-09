@@ -40,7 +40,7 @@ function areyousure()
                             <tr>
                                 <th><?php echo lang('serial_number');?></th>
 								<th><?php echo lang('name');?></th>
-                                <th><?php echo lang('parent');?> <?php echo lang('category');?></th>
+                                <th><?php echo lang('department');?></th>
 								<th width="20%"><?php echo lang('action');?></th>
                             </tr>
                         </thead>

@@ -2085,8 +2085,7 @@ class cases extends MX_Controller {
 	}
 
 
-	
-	
+
 	function notes($id=false){
 		$data['id']					=	$id;
 		$data['case'] 				= $this->cases_model->get_case_by_id($id);
