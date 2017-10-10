@@ -54,7 +54,7 @@ class case_category extends MX_Controller {
 			    
 
                 $this->session->set_flashdata('message', lang('case_category_created'));
-				redirect('admin/case_category');
+				redirect('admin/case_category/addaditional/'.$p_key);
 				
 			}
 			
@@ -64,7 +64,54 @@ class case_category extends MX_Controller {
 		$data['page_title'] = lang('add') . lang('case') . lang('category');
 		$data['body'] = 'case_category/add';
 		$this->load->view('template/main', $data);	
+	}
+
+	function addaditional($id=false){
+		$data['id'] =$id;
+		$data['category'] = $this->case_category_model->get_category_by_id($id);
+		$data['fields'] = $this->custom_field_model->get_allByForm((int)("10".((string)$id)));
+		$data['departments'] = $this->department_model->get_all();
+		$data['categories'] = $this->case_category_model->get_all();
+		if ($this->input->server('REQUEST_METHOD') === 'POST')
+        {	
+			$this->load->library('form_validation');
+			$this->form_validation->set_rules('name', 'lang:name', 'required');
+			$this->form_validation->set_message('required', lang('custom_required')); 
+			 
+			if ($this->form_validation->run()==true)
+            {
+				$save['name'] = $this->input->post('name');
+				$save['parent_id'] = $this->input->post('parent_id');
+                
+				$this->case_category_model->update($save,$id);
+
+                     /*
+                     if (isset($_POST['namefield'])){ 
+			                $save_field['name'] 		 = $this->input->post('namefield');
+							$save_field['field_type']  = $this->input->post('type');
+							$save_field['form']		 = "10". strval($id);
+							$save_field['values']		 = $this->input->post('values');
+                            $save_field['mayusculas']		 = $this->input->post('mayusculas');
+                            if($this->input->post('maximo')!="") 
+							$save_field['max']		 = $this->input->post('maximo');
+						    else 
+						    $save_field['max'] = 255; 
+							$this->custom_field_model->update($id,$save_field);
+						}
+
+                   */
+
+                $this->session->set_flashdata('message', lang('case_category_updated'));
+				redirect('admin/case_category');
+			}
+		}		
+	
+		$data['page_title'] = lang('add') . lang('case') . lang('category');
+		$data['body'] = 'case_category/addfield';
+		$this->load->view('template/main', $data);	
+
 	}	
+
 	
 	
 	function edit($id=false){
@@ -86,7 +133,7 @@ class case_category extends MX_Controller {
                 
 				$this->case_category_model->update($save,$id);
 
-
+                      /*
                      if (isset($_POST['namefield'])){ 
 			                $save_field['name'] 		 = $this->input->post('namefield');
 							$save_field['field_type']  = $this->input->post('type');
@@ -97,13 +144,10 @@ class case_category extends MX_Controller {
 							$save_field['max']		 = $this->input->post('maximo');
 						    else 
 						    $save_field['max'] = 255; 
-
-
-
 							$this->custom_field_model->update($id,$save_field);
 
 						}
-
+                        */
 
 
                 $this->session->set_flashdata('message', lang('case_category_updated'));

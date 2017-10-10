@@ -190,7 +190,7 @@
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary"><?php echo lang('save');?></button>
+                        <button type="submit" class="btn btn-primary"><?php echo lang('add');?></button>
                     </div>
              <?php form_close()?>
             </div><!-- /.box -->
