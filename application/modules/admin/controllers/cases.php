@@ -1809,9 +1809,10 @@ class cases extends MX_Controller {
 		$data['fields']			 = $this->custom_field_model->get_custom_fields(2);
 		$data['clients']		 = $this->cases_model->get_all_clients();
 		$data['employees']		 = $this->cases_model->get_all_employees();
-		$admin2 = $this->session->userdata('admin');
+        $admin2 = $this->session->userdata('admin');
 		$id = $admin2['id'];
-		$data['empresas'] 		    = $this->employees_model->get_empresas_by_user($id);
+		$data['empleado']		 = $this->employees_model->get($id);
+		$data['empresas'] 		    = $this->employees_model->get_empresas_all($id);
 		$data['stages'] 		 = $this->case_stage_model->get_all();
 		$data['acts'] 			 = $this->cases_model->get_all_acts();
 		$data['depts']			 = $this->cases_model->get_all_depts();
@@ -1873,7 +1874,7 @@ class cases extends MX_Controller {
 				$save['progress'] = $this->input->post('progress');
 				$save['prioridad'] = $this->input->post('prioridad');
 				$save['description'] = $this->input->post('description');
-				$save['start_date'] = date('Y-m-d');
+				$save['start_date'] = date('d-m-Y H:i:s');
 				$save['due_date'] = $this->input->post('due_date');
 			 	
                  foreach($this->input->post('location_id') as $val) {
@@ -1947,6 +1948,7 @@ class cases extends MX_Controller {
 	}	
 	
 	
+
 	function edit($id=false){
 	
 		$data['clients']		 	= $this->cases_model->get_all_clients();
@@ -1957,7 +1959,8 @@ class cases extends MX_Controller {
 		$data['locations']		 	= $this->cases_model->get_all_locations();
         $admin2 = $this->session->userdata('admin');
 		$id2 = $admin2['id'];
-		$data['empresas'] 		    = $this->employees_model->get_empresas_by_user($id2);
+		$data['empleado']		 = $this->employees_model->get($id2);
+		$data['empresas'] 		    = $this->employees_model->get_empresas_all();
 		$data['empleados'] 		    = $this->employees_model->get_all();
 		$data['departamentos']		= $this->department_model->get_all();
 		$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
@@ -2007,7 +2010,7 @@ class cases extends MX_Controller {
 				$save['act_id'] = json_encode($this->input->post('act_id'));
 				$save['description'] = $this->input->post('description');
 				$save['prioridad'] = $this->input->post('prioridad');
-				$save['start_date'] = date('Y-m-d');
+				$save['start_date'] = date('Y-m-d H:i:s');
 				$save['progress'] = $this->input->post('progress');
 				$save['due_date'] = $this->input->post('due_date');
 

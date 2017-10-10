@@ -56,17 +56,30 @@
 										<option value="">--<?php echo lang('select')?> <?php echo lang('location')?>--</option>
 										<?php 
 
-										   if (sizeof($empresas)==1){
-										   	   $sel = 'selected="selected"';  
-                                              echo '<option value="'.$empresas[0]->id.'" '.$sel.'>'.$empresas[0]->name.'</option>';
+                                              $unico  = "0"; 
+										     if (sizeof(json_decode($empleado->empresa_id,true))==1){
+					                             $unicaempresa = json_decode($empleado->empresa_id,true);
+					                             $unico = $unicaempresa[0];
+											 }
 
-										   }else{
-		                                            foreach($empresas as $new) {
+		                                      foreach($empresas as $new) {
 													$sel = "";
-													if(set_select('location_id', $new->idempresa)) $sel = "selected='selected'";
-													echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-												    }
-										   } 
+												if (strpos($empleado->empresa_id,'"'.$new->id.'"') == true) {
+
+													if (sizeof(json_decode($empleado->empresa_id,true))==1){
+													   	   
+													   	   if ($unico==(string)$new->id){
+													   	   	$sel = 'selected="selected"'; 
+			                                                echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+			                                                }
+			                                             
+													   }else{
+                                                            if(set_select('location_id', $new->id)) $sel = "selected='selected'";
+                                                       echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+
+													   }
+												}									
+											 }
 
 										?>
 									</select>
@@ -150,7 +163,12 @@
                                     <label for="email" style="clear:both;"><?php echo lang('priority')?></label>
 						          </div>
                                 <div class="col-md-4">
-									<input type="text" name="prioridad" id="prioridad" value="" class="form-control">
+									<select id="prioridad" name="prioridad" class="form-control chzn">
+									  <option value="">--<?php echo lang('select');?> <?php echo lang('priority');?>---</option>
+									  <option value="1">Low</option>
+									  <option value="2">Medium</option>
+									  <option value="2">High</option>
+									</select>
                                 </div>
                             </div>
                         </div>

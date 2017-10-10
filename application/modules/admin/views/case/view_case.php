@@ -439,7 +439,14 @@
                                     <b><?php echo lang('priority')?></b>
                                 </div>
                                 <div class="col-md-4">
-                                   <?php echo $case->prioridad;?>
+                                   <?php 
+                                     if ($case->prioridad==1)
+                                       echo "Baja";  
+                                     if ($case->prioridad==2)
+                                       echo "Media";  
+                                     if ($case->prioridad==3)
+                                       echo "Alta";  
+                                   ?>
                                 </div>
                             </div>
                         </div>

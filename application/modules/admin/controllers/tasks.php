@@ -298,7 +298,7 @@ class tasks extends MX_Controller {
 				$save['description'] = $this->input->post('description');
 				$save['created_by'] = $this->session->userdata('admin')['id'];
 				$save['id_empresa'] = json_encode($this->input->post('empresa_id'));
-				$save['creacion'] = date("d-m-Y");
+				$save['creacion'] = date("d-m-Y H:i:s");
 			    
 				$task_id = $this->tasks_model->save($save);
                  // $url =base_url('assets/uploads/tareas/');

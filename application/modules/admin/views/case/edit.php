@@ -58,7 +58,11 @@
                                      <input id="llave" name ="llave"  type="hidden" name="opcion" value="<?php echo $case->id;?>">  
                                     <select name="location_id[]" id="location_id" class="form-control chzn" multiple="multiple">
                                         <option value="">--<?php echo lang('select');?> <?php echo lang('company_name');?>---</option>
-                                        <?php foreach($empresas as $new) {
+                                        <?php 
+
+                                       /*
+
+                                        foreach($empresas as $new) {
                                               if (sizeof($empresas)==1){
                                                $sel = 'selected="selected"';  
                                               echo '<option value="'.$empresas[0]->id.'" '.$sel.'>'.$empresas[0]->name.'</option>';
@@ -72,6 +76,42 @@
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
                                             }
                                         }
+
+
+                                       */
+
+
+
+                                            $unico  = "0"; 
+                                             if (sizeof(json_decode($empleado->empresa_id,true))==1){
+                                                 $unicaempresa = json_decode($empleado->empresa_id,true);
+                                                 $unico = $unicaempresa[0];
+                                             }
+
+                                              foreach($empresas as $new) {
+                                                    $sel = "";
+                                                if (strpos($empleado->empresa_id,'"'.$new->id.'"') == true) {
+
+                                                    if (sizeof(json_decode($empleado->empresa_id,true))==1){
+                                                           
+                                                           if ($unico==(string)$new->id){
+                                                            $sel = 'selected="selected"'; 
+                                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                                            }
+                                                         
+                                                       }else{
+                                                          $sel = "";
+                                                            if ($case->empresa_id==$new->id)
+                                                                     $sel='selected="selected"';
+                                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                                            }
+
+                                                       }
+                                                }                                   
+                                             //}
+
+
+
                                         ?>
                                     </select>
 
@@ -267,7 +307,12 @@
                                     <label for="email" style="clear:both;"><?php echo lang('priority')?></label>
                                   </div>
                                 <div class="col-md-4">
-                                    <input type="text" name="prioridad" id="prioridad" value="<?php echo $case->prioridad;?>" class="form-control">
+                                    <select name="prioridad" class="form-control chzn">
+                                        <option value="">--<?php echo lang('select');?> <?php echo lang('priority');?>---</option>
+                                        <option value="1" <?php echo ($case->prioridad=="1")?'selected="selected"':'';?> >Low</option>
+                                        <option value="2" <?php echo ($case->prioridad=="2")?'selected="selected"':'';?>>Medium</option>
+                                        <option value="3" <?php echo ($case->prioridad=="3")?'selected="selected"':'';?>>High</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
