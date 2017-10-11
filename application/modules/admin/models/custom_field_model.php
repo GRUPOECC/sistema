@@ -48,9 +48,17 @@ class custom_field_model extends CI_Model
 			$this->db->where('custom_field_id',$id);
 			$this->db->delete('rel_form_custom_fields');
 	}
+
+
 	
 	function get_all()
 	{
+			return $this->db->get('custom_fields')->result();
+	}
+
+	function get_allByForm($id)
+	{
+		     $this->db->where('form',$id);
 			return $this->db->get('custom_fields')->result();
 	}
 	

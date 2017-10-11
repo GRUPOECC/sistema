@@ -56,10 +56,10 @@
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-4">
-                                    <label for="email" style="clear:both;"><?php echo lang('parent');?> <?php echo lang('category');?></label>
+                                    <label for="email" style="clear:both;"><?php echo lang('department');?></label>
 									<select name="parent_id" class="form-control chzn">
-										<option value="">--<?php echo lang('select');?> <?php echo lang('parent');?> <?php echo lang('category');?>---</option>
-										<?php foreach($categories as $new) {
+										<option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
+										<?php foreach($departments as $new) {
 											$sel = "";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
@@ -190,7 +190,7 @@
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary"><?php echo lang('save');?></button>
+                        <button type="submit" class="btn btn-primary"><?php echo lang('add');?></button>
                     </div>
              <?php form_close()?>
             </div><!-- /.box -->

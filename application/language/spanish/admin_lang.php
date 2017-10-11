@@ -46,6 +46,8 @@ $lang['file']      	 = "Archivo";
 $lang['files']      	 = "Archivos";
 $lang['my_cases']      	 = "Mis Tickets";
 $lang['cases']      	 = "Tickets";
+$lang['field_aditional'] = "Campos Adicionales"; 
+$lang['field_name'] = "Nombre del campo: "; 
 $lang['loc']      	 = "Locacion";
 $lang['case']      	 = "Ticket";
 $lang['cases_open']      	 = "Tickets Abiertos";
@@ -222,6 +224,7 @@ $lang['field_deleted']								= "Eliminado campo";
 $lang['to_do_created']								= "Para ello creó";
 $lang['to_do_updated']								= "Para hacer Actualizado";
 $lang['to_do_deleted']								= "Para hacer eliminado";
+
 
 //Excel FIle Columns A,B,C,D Use As Name,Phone,Email,Address
 $lang['contacts_import_instruction']		= "Excel FIle Columns A,B,C,D Use As Name,Phone,Email,Address";
@@ -587,8 +590,17 @@ $lang['alias'] = "Alias";
 
 
 
-
-
+// MODULO VISITORS
+$lang['visitor'] = "visitante";
+$lang['visitors'] = "visitantes";
+$lang['Visitor'] = "Visitante";
+$lang['Visitors'] = "Visitantes";
+$lang['who_visit'] = "A que persona visita";
+$lang['date_in'] = "Fecha y Hora de entrada";
+$lang['date_out'] = "Fecha y Hora de salida";
+$lang['badge'] = "Número de Pase";
+$lang['select_visitor'] = "Seleccione Visitante ó Agreguelo";
+$lang['select_who_visit'] = "Seleccione a quien visita";
 
 
 

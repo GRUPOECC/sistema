@@ -48,6 +48,7 @@ $lang['files']      	 = "Files";
 $lang['my_cases']      	 = "My Cases";
 $lang['cases']      	 = "Cases";
 $lang['case']      	 = "Case";
+$lang['field_name'] = "Field name: "; 
 $lang['loc']      	 = "Location";
 $lang['more_info']      	 = "More Info";
 $lang['case_alert_days']      	 = "Case Alert Days";
@@ -171,6 +172,7 @@ $lang['case_stage_deleted']								= "Case Stage Deleted";
 $lang['contact_created']								= "New Contact Created";
 $lang['contact_updated']								= "Contact Updated";
 $lang['contact_deleted']								= "Contact Deleted";
+$lang['field_aditional'] 								= "Aditionals Fields";
 
 $lang['court_created']								= "Court Created";
 $lang['court_updated']								= "Court Updated";
@@ -593,3 +595,16 @@ $lang['max'] = "Characters max(values)";
 $lang['upper'] = "Upper Case";
 $lang['sort'] = "Sort";
 $lang['alias'] = "Alias";
+
+
+// MODULO VISITORS
+$lang['visitor'] = "visitor";
+$lang['visitors'] = "visitors";
+$lang['Visitor'] = "Visitor";
+$lang['Visitors'] = "Visitors";
+$lang['who_visit'] = "Person To Meet";
+$lang['date_in'] = "Date & Time IN";
+$lang['date_out'] = "Date & Time OUT";
+$lang['badge'] = "Pass #";
+$lang['select_visitor'] = "Select Visitor or Add";
+$lang['select_who_visit'] = "Select who visit";

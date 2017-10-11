@@ -64,7 +64,7 @@
 										<option value="">--<?php echo lang('select');?> <?php echo lang('priority');?>---</option>
 										<option value="1">Low</option>
 										<option value="2">Medium</option>
-										<option value="2">High</option>
+										<option value="3">High</option>
 									</select>
                                 </div>
                             </div>

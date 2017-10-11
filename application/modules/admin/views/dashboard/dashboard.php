@@ -264,10 +264,10 @@
                             </div><!-- /.box-body -->
                         </div><!-- /. box -->
                     </div><!-- /.col -->
-                </div><!-- /.row -->
-
-        <div class="box box-primary">
-            
+                    <div class="col-md-6">
+                        <div class="box box-primary">
+                            <div class="box-body no-padding">
+                                
                                 <div class="box-header ui-sortable-handle" style="cursor: move;">
                                     <i class="ion ion-clipboard"></i>
                                     <h4 class="box-title"><?php echo lang('notice_board')?></h4>
@@ -287,11 +287,16 @@
                                         <?php $i++;}?>
                                     <?php endif;?>  
                                     </ul>
-                                </div><!-- /.box-body -->
+                                </div>
                                 <div class="box-footer clearfix no-border">
                                     <button class="btn btn-default pull-right"><i class="fa fa-plus"></i> <a href="<?php echo site_url('admin/notice/')?>"><?php echo lang('view_all')?></a></button>
                                 </div><!-- /.box-footer -->
+                                
                             </div>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+
                     <?php } ?>
     </section><!-- /.content -->                       
                         

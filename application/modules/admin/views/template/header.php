@@ -699,6 +699,11 @@ $fourth = $this->uri->segment(4);
                                 <i class="fa fa-newspaper-o"></i> <span><?php echo lang('contacts')?></span>
                             </a>
                         </li>
+                        <li class="<?php echo($this->uri->segment(2)=='visitors')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/visitors');?>">
+                                <i class="fa fa-newspaper-o"></i> <span><?php echo lang('Visitors')?></span>
+                            </a>
+                        </li>
 						<li class="<?php echo($this->uri->segment(2)=='custom_fields')?'active':'';?>">
                             <a href="<?php echo site_url('admin/custom_fields');?>">
                                 <i class="fa fa-columns"></i> <span><?php echo lang('custom_fields')?></span>
@@ -1024,6 +1029,13 @@ $fourth = $this->uri->segment(4);
                             </a>
                         </li>
 				<?php break;}}?>		
+                <?php foreach($actions as $action){if($action->action=='visitors'){?>       
+                        <li class="<?php echo($this->uri->segment(2)=='visitors')?'active':'';?>">
+                            <a href="<?php echo site_url('admin/visitors');?>">
+                                <i class="fa fa-newspaper-o"></i> <span><?php echo lang('Visitors')?></span>
+                            </a>
+                        </li>
+                <?php break;}}?>        
 				<?php foreach($actions as $action){if($action->action=='custom_fields'){?>
 						<li class="<?php echo($this->uri->segment(2)=='custom_fields')?'active':'';?>">
                             <a href="<?php echo site_url('admin/custom_fields');?>">

@@ -38,7 +38,7 @@ class Fomailer extends MX_Controller {
     							'protocol'	=> 'smtp',
 						);						
 				// Send email 
-				$config['useragent'] = 'Advocate Office Management System';
+				$config['useragent'] = 'Office Management System';
 				$config['mailtype'] = "html";
 				$config['newline'] = "\r\n";
 				$config['charset'] = 'utf-8';

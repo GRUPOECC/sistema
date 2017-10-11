@@ -2,26 +2,26 @@
 <!-- Content Header (Page header) -->
 <style>
 .row{
-	margin-bottom:10px;
+  margin-bottom:10px;
 }
 </style>
  <!-- Content Header (Page header) -->
 <section class="content-header">
     <h1>
         <?php echo lang('case');?> <?php echo lang('category');?>
-        <small><?php echo lang('edit');?></small>
+        <small><?php echo lang('add');?></small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo site_url('admin')?>"><i class="fa fa-dashboard"></i> <?php echo lang('dashboard');?></a></li>
         <li><a href="<?php echo site_url('admin/case_category')?>"><?php echo lang('case');?> <?php echo lang('category');?></a></li>
-        <li class="active"><?php echo lang('edit');?></li>
+        <li class="active"><?php echo lang('add');?></li>
     </ol>
 </section>
 
 <section class="content">
     <div class="row">
-	<?php 
-	if(validation_errors()){
+  <?php 
+  if(validation_errors()){
 ?>
 <div class="alert alert-danger alert-dismissable">
                                         <i class="fa fa-ban"></i>
@@ -33,16 +33,16 @@
 
 
                
-	   
+     
         <!-- left column -->
         <div class="col-md-12">
             <!-- general form elements -->
             <div class="box box-primary" style="height: 600px;">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('edit');?></h3>
+                    <h3 class="box-title"><?php echo lang('add');?></h3>
                 </div><!-- /.box-header -->
                 <!-- form start <?php echo form_open_multipart('admin/case_category/edit/'.$id); ?>-->
-				        
+                
 
 
                  <div style="margin-top: 0px; margin-left: 500px; z-index: 2; position: absolute;" class="col-md-9">
@@ -67,7 +67,7 @@
                  </div>
 
 
-	
+  
                     
                     <form id="formulario" method="post" action="<?php echo site_url('admin/case_category/edit/'.$id); ?>">
 
@@ -75,30 +75,30 @@
                       
                      
                         <div class="form-group">
-                        	<div class="row">
+                          <div class="row">
                                 <div class="col-md-4">
                                     <label for="name" style="clear:both;"><?php echo lang('category_name');?> </label>
-									<input type="text" name="name" value="<?php echo $category->name?>" class="form-control">
+                  <input type="text" name="name" value="<?php echo $category->name?>" class="form-control">
                                 </div>
                             </div>
                         </div>
-						
-						
-			   			
+            
+            
+              
                         <div class="form-group">
                               <div class="row">
                                 <div class="col-md-4">
                                     <label for="email" style="clear:both;"><?php echo lang('parent');?> <?php echo lang('department');?></label>
-									<select name="parent_id" class="form-control chzn">
-										<option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
-										<?php foreach($departments as $new) {
-											$sel = "";
-											if($new->id==$category->parent_id) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
+                  <select name="parent_id" class="form-control chzn">
+                    <option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
+                    <?php foreach($departments as $new) {
+                      $sel = "";
+                      if($new->id==$category->parent_id) $sel = "selected='selected'";
+                      echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                    }
+                    
+                    ?>
+                  </select>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
 
                         
 
-						
+            
                     </div><!-- /.box-body -->
                     <br>
                     <br>
@@ -152,9 +152,9 @@
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
 <script type="text/javascript">
 $(function() {
-	
-	$('.chzn').chosen();
-	
+  
+  $('.chzn').chosen();
+  
 });
 /*
 function campos(){
@@ -215,8 +215,8 @@ function campos(){
 
 
 $(function() {
-	//bootstrap WYSIHTML5 - text editor
-	$(".txtarea").wysihtml5();
+  //bootstrap WYSIHTML5 - text editor
+  $(".txtarea").wysihtml5();
 });
 
  $(function() {
