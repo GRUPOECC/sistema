@@ -7,6 +7,7 @@ class case_category extends MX_Controller {
 		parent::__construct();
 		//$this->auth->check_access('1', true);
 		$this->load->model("case_category_model");
+		$this->load->model("cases_model");
 		$this->load->model("department_model");
 		$this->load->model("custom_field_model");
 		
@@ -22,7 +23,7 @@ class case_category extends MX_Controller {
 	
 	function add(){
 		$data['categories'] = $this->case_category_model->get_all();
-		$data['departments'] = $this->department_model->get_all();
+		$data['departments'] = $this->cases_model->get_all_dept_categories();
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
 			$this->load->library('form_validation');
@@ -41,6 +42,7 @@ class case_category extends MX_Controller {
 							$save_field['field_type']  = $this->input->post('type');
 							$save_field['form']		 = "10". strval($p_key);
 							$save_field['values']		 = $this->input->post('values');
+							$save_field['date_format']		 = $this->input->post('formato');
 							$save_field['mayusculas']		 = $this->input->post('mayusculas');
                             if($this->input->post('maximo')!="") 
 							$save_field['max']		 = $this->input->post('maximo');
@@ -118,7 +120,7 @@ class case_category extends MX_Controller {
 		$data['id'] =$id;
 		$data['category'] = $this->case_category_model->get_category_by_id($id);
 		$data['fields'] = $this->custom_field_model->get_allByForm((int)("10".((string)$id)));
-		$data['departments'] = $this->department_model->get_all();
+		$data['departments'] = $this->cases_model->get_all_dept_categories();
 		$data['categories'] = $this->case_category_model->get_all();
 		if ($this->input->server('REQUEST_METHOD') === 'POST')
         {	
@@ -217,6 +219,25 @@ class case_category extends MX_Controller {
                                 
                                 </div>
                                 </div>
+
+                                <div id="formato">
+                                <div class="col-md-12">
+                                    <br>
+                                    <div class="col-md-3">
+                                        <b>'.lang('format').'</b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                    <select class="form-control" name="formato">
+                                        <option value="d-m-Y">DD-MM-AAAA</option>
+                                        <option value="Y">AAAA</option>
+                                        <option value="Y-m">AAAA-MM</option>
+                                        <option value="Y-m-d">AAAA-MM-DD</option>
+                                        <option value="m-Y">MM-AAAA</option>
+                                    </select> 
+                                    </div>
+                                
+                                </div>
+                                </div>
                             </div>
                         </div>
                         
@@ -280,6 +301,7 @@ class case_category extends MX_Controller {
 							$save_field['field_type']  = $this->input->post('type');
 							$save_field['form']		 = "10". strval($id);
 							$save_field['values']		 = $this->input->post('values');
+							$save_field['date_format']		 = $this->input->post('formato');
 							$save_field['mayusculas']		 = $this->input->post('mayusculas');
                             if($this->input->post('maximo')!="") 
 							$save_field['max']		 = $this->input->post('maximo');

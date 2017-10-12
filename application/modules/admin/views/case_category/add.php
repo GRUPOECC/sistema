@@ -138,6 +138,27 @@
                                 
                                 </div>
                                 </div>
+
+                                <div id="formato">
+                                <div class="col-md-12">
+                                    <br>
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('format')?></b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                    <select class="form-control" name="formato">
+                                        <option value="d-m-Y">DD-MM-AAAA</option>
+                                        <option value="Y">AAAA</option>
+                                        <option value="Y-m">AAAA-MM</option>
+                                        <option value="Y-m-d">AAAA-MM-DD</option>
+                                        <option value="m-Y">MM-AAAA</option>
+                                    </select> 
+                                    </div>
+                                
+                                </div>
+                                </div>
+
+
                             </div>
                         </div>
                         
@@ -240,6 +261,11 @@ $(document).on('change', '#field', function(){
     $('#limitaciones').show();
     else 
       $('#limitaciones').hide();  
+
+    if (field ==9)
+    $('#formato').show();
+    else 
+      $('#formato').hide();  
  
 });
 var suiche =false; 
@@ -262,6 +288,7 @@ $(document).on('change', '#alfabetico', function(){
 });
 
 $('#adicional').hide();
+$('#formato').hide();  
 $('#limitaciones').show();
 </script>
 

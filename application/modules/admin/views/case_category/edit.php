@@ -244,7 +244,12 @@ $(document).on('change', '#field', function(){
     if (field ==1)
     $('#limitaciones').show();
     else 
-      $('#limitaciones').hide();  
+      $('#limitaciones').hide();
+
+    if (field ==9)
+    $('#formato').show();
+    else 
+      $('#formato').hide();    
  
 });
 var suiche =false; 
@@ -266,6 +271,7 @@ $(document).on('change', '#adicion', function(){
                                             $('#opciones').html(result);
                                             $(".chzn").chosen();
                                             $('#value-div').hide();
+                                            $('#formato').hide();
 
                                             $(function() {
                                                 //bootstrap WYSIHTML5 - text editor
@@ -296,6 +302,11 @@ $(document).on('change', '#adicion', function(){
                                                 $('#limitaciones').show();
                                                 else 
                                                   $('#limitaciones').hide();  
+
+                                                    if (field ==9)
+                                                      $('#formato').show();
+                                                      else 
+                                                        $('#formato').hide();  
                                              
                                             });
 
@@ -327,5 +338,6 @@ $(document).on('change', '#alfabetico', function(){
 });
 
 $('#adicional').hide();
+$('#formato').hide();
 $('#limitaciones').show();
 </script>

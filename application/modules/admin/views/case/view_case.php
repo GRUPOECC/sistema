@@ -226,6 +226,7 @@
              
                                     $CI = get_instance();
                                         if($fieldscase){
+                                          
                                             foreach($fieldscase as $doc){
                                             $output = '';
                                             if($doc->field_type==1) //testbox
@@ -238,7 +239,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>
                                                 <div class="col-md-4">  
-                                            <?php  $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();?>        
+                                            <?php  $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?>        
                                             <?php echo $result->reply; ?>
                                                 </div>
                                             </div>
@@ -253,7 +254,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                     </div>
                                                 <div class="col-md-4">
-                                                <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();
+                                                <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();
                                                 
                                                     if(!empty($values) || !empty($result)){
                                                             foreach($values as $key=>$val) {
@@ -278,7 +279,7 @@
                                             <?php   
                                                         foreach($values as $key=>$val) { ?>
                                             <?php $x="";
-                                            $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();
+                                            $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();
                                             if(!empty($result->reply)){
                                                 if($result->reply==$val){
                                                     $x= $val;
@@ -310,7 +311,7 @@
                                                         foreach($values as $key=>$val) { ?>
                                             <?php 
                                             $x="";
-                                            $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' ")->row();
+                                            $result = $CI->db->query("select * from rel_form_custom_fields where table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();
                                             if(!empty($result->reply)){
                                                 if($result->reply==$val){
                                                     $x= $val;
@@ -333,7 +334,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>
                                                 <div class="col-md-4">  
-                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?> 
                                                         <?php echo $result->reply;?>
                                                 </div>
                                             </div>
@@ -346,7 +347,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>  
                                                 <div class="col-md-4">
-                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?> 
                                                         <a href="<?php echo @$result->reply;?>" target="_blank"> <?php echo $result->reply;?></a>
                                                 </div>
                                             </div>
@@ -359,7 +360,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>  
                                                 <div class="col-md-4">
-                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?> 
                                                         <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
                                                 </div>
                                             </div>
@@ -372,7 +373,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>  
                                                 <div class="col-md-4">
-                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?> 
                                                         <?php echo $result->reply;?>
                                                 </div>
                                             </div>
@@ -385,7 +386,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>  
                                                 <div class="col-md-4">
-                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?> 
                                                         <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
                                                 </div>
                                             </div>
@@ -398,7 +399,7 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>  
                                                 <div class="col-md-4">
-                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?> 
                                                         <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
                                                 </div>
                                             </div>
@@ -411,8 +412,8 @@
                                                     <label for="contact" style="clear:both;"><?php echo $doc->name; ?></label>
                                                 </div>  
                                                 <div class="col-md-4">
-                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."'")->row();?> 
-                                                        <a href="mailto:<?php echo @$result->reply;?>" target="_top"> <?php echo $result->reply;?></a>
+                                                    <?php  $result = $CI->db->query("select * from rel_form_custom_fields where  table_id = '".$case->id."' AND form = '".$doc->form."' AND custom_field_id=".$doc->id)->row();?> 
+                                                        <?php echo $result->reply;?>
                                                 </div>
                                             </div>
                                         </div>              
@@ -422,7 +423,7 @@
                                                 
                                         
 
-
+                                       
 
                                             }
                                         }

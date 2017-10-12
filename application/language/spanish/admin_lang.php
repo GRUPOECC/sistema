@@ -502,6 +502,8 @@ $lang['case_study_deleted']			= "Ticket de Estudio eliminado";
 $lang['attachments_saved']				= "adjuntos guardados";
 $lang['attachments_deleted']				= "adjuntos eliminados";
 
+$lang['format']				= "Formato";
+
 
 $lang['details']			= "Detalles";
 $lang['hr_settings']			= "Configuración de recursos humanos";

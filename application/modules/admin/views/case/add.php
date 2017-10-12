@@ -118,8 +118,9 @@
                                 	<b><?php echo lang('case')?>  <?php echo lang('category')?></b>
 								</div>
 								<div class="col-md-4">
+								    <div id="casecategory_result">
                                     <select id="categorias" name="case_category_id" class="chzn col-md-12" >
-                                        <option selected="selected">-- Seleccione una categoria --</option>
+                                        <option selected="selected">--Seleccione una categoria --</option>
 										<?php foreach($case_categories as $new) {
 											$sel = "";
 											if(set_select('case_category_id', $new->id)) $sel = "selected='selected'";
@@ -128,12 +129,16 @@
 										
 										?>
 									</select>
+									</div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
                         	<div class="row">
+                        	    <div class="col-md-3">
+                                	
+								</div>
 								<div class="col-md-4" id="category_result">
 								<!-- campos opcionales -->
                                     
@@ -664,20 +669,18 @@ $(document).on('change', '#location_id', function(){
 
 
 $(document).on('change', '#departamento_id', function(){
- //alert(12);
- 	location_id = $('#location_id').val();
 	c_c_id 		= $('#departamento_id').val();
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
-  $('#dept_result').html(ajax_load);
+  $('#casecategory_result').html(ajax_load);
 	  
   $.ajax({
     url: '<?php echo site_url('admin/cases/get_depts') ?>',
     type:'POST',
-    data:{l_id:location_id,c_id:c_c_id},
+    data:{l_id:c_c_id},
 	
 	success:function(result){
       //alert(result);return false;
-	  $('#dept_result').html(result);
+	  $('#casecategory_result').html(result);
 	  $(".chzn").chosen();
 	 }
   });
@@ -699,24 +702,7 @@ $(document).on('change', '#categorias', function(){
       //alert(result);return false;
 	  $('#category_result').html(result);
 	  $(".chzn").chosen();
-	     jQuery('.datepicker').datetimepicker({
-			 lang:'en',
-			 i18n:{
-			  de:{
-			   months:[
-			    'Januar','Februar','März','April',
-			    'Mai','Juni','Juli','August',
-			    'September','Oktober','November','Dezember',
-			   ],
-			   dayOfWeek:[
-			    "So.", "Mo", "Di", "Mi", 
-			    "Do", "Fr", "Sa.",
-			   ]
-			  }
-			 },
-			 timepicker:false,
-			 format:'d-m-Y'
-			});
+	     
 	 }
   });
 });

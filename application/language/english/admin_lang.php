@@ -491,7 +491,7 @@ $lang['case_study_upated']				= "Case Study Updated";
 $lang['case_study_deleted']			= "Case Study Deleted";
 $lang['attachments_saved']				= "Attachments Saved";
 $lang['attachments_deleted']				= "Attachments Deleted";
-
+$lang['format']				= "Format";
 
 $lang['details']			= "Details";
 $lang['hr_settings']			= "HR Settings";
