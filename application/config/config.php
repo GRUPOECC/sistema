@@ -263,7 +263,7 @@ $config['encryption_key'] = '3c6b3f1c433d292811dcee43b6d9a5f3';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'AOMS';
+$config['sess_cookie_name']		= 'OMS';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= FALSE;
 $config['sess_encrypt_cookie']	= FALSE;

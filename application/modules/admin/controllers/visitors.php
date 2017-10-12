@@ -78,7 +78,7 @@ class visitors extends MX_Controller {
 		}		
 		
 		
-		$data['page_title'] = lang('add') . lang('visitor');
+		$data['page_title'] = lang('add') . lang('Visitor');
 		$data['body'] = 'visitors/add';
 		
 		$this->load->view('template/main', $data);	
