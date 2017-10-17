@@ -215,6 +215,7 @@
                                 	<b><?php echo lang('case')?> <?php echo lang('category')?></b>
 								</div>
 								<div class="col-md-4">
+                <div id="casecategory_result">
                                     <select id="categorias" name="case_category_id" class="chzn col-md-12" >
 										<?php foreach($case_categories as $new) {
 											$sel = ''; 
@@ -227,12 +228,16 @@
 										
 										?>
 									</select>
+                  </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="row">
+                                <div class="col-md-3">
+                                 
+                                </div>  
                                 <div class="col-md-4" id="category_result">
                                 <!-- campos opcionales -->
 
@@ -329,7 +334,7 @@
 											   data-slider-min="0" data-slider-max="50" data-slider-step="1" data-slider-value="<?php echo $case->progress?>"/										 
 	 										  data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
 
-                                            <?php }else if(strpos((string)$case->usuarios_id,(string)$iduser)==true) {?>
+                                            <?php }else {?>
 
                                               <input type="text" value=""  name="progress" class="slider form-control"      
                                                data-slider-min="50" data-slider-max="100" data-slider-step="1" data-slider-value="<?php echo $case->progress?>"/
@@ -743,6 +748,23 @@ $(document).on('change', '#court_category_id', function(){
 });
 
 
+$(document).on('change', '#departamento_id', function(){
+  c_c_id    = $('#departamento_id').val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#casecategory_result').html(ajax_load);
+    
+  $.ajax({
+    url: '<?php echo site_url('admin/cases/get_depts') ?>',
+    type:'POST',
+    data:{l_id:c_c_id},
+  
+  success:function(result){
+      //alert(result);return false;
+    $('#casecategory_result').html(result);
+    $(".chzn").chosen();
+   }
+  });
+});
 
 
 

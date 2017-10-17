@@ -14,6 +14,7 @@ class cases extends MX_Controller {
 		$this->load->model("department_model");
 		$this->load->model("location_model");
 		$this->load->model("case_stage_model");
+		$this->load->model("case_category_model");
 		$this->load->model("custom_field_model");
 		
 	}
@@ -942,16 +943,15 @@ class cases extends MX_Controller {
 	
 	function get_depts()
 	{
-		$depts = $this->cases_model->get_all_depts();
-		$result = $this->cases_model-> get_employees($_POST['l_id'],$_POST['c_id']);
+		$result = $this->case_category_model->get_all_bydepartment($_POST['l_id']);
 		echo '
-		<select name="empleados_id[]" id="empleados_id[]" class="chzn col-md-12" multiple="multiple" >
-										<option value="">--Seleccionar empleados--</option>
+		<select id="categorias" name="case_category_id" class="chzn col-md-12" >
+										<option value="">--Seleccionar Categoria--</option>
 									';
 									foreach($result as $new) {
 											$sel = "";
 											if(set_select('dept_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->idusuario.'" '.$sel.'>'.$new->name.'</option>';
+											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 										}
 										
 		echo'</select>';						
@@ -960,7 +960,9 @@ class cases extends MX_Controller {
 
 	function opciones(){
         if(isset($_POST['l_id'])){
-            if (!$this->cases_model->existeElTicket($_POST['l_id'],$_POST['empresa'])){
+
+        	 //$_POST['empresa']
+            if (!$this->cases_model->existeElTicket($_POST['l_id'],0)){
                        $fields_clients = $this->custom_field_model->get_custom_fields((int)("10".$_POST['l_id']));	
 
 
@@ -1085,6 +1087,28 @@ class cases extends MX_Controller {
 							    </div>
                             </div>
                         </div>
+                         <script>
+                           jQuery(".datepicker").datetimepicker({
+							 lang:"en",
+							 i18n:{
+							  de:{
+							   months:[
+							    "Januar","Februar","März","April",
+							    "Mai","Juni","Juli","August",
+							    "September","Oktober","November","Dezember",
+							   ],
+							   dayOfWeek:[
+							    "So.", "Mo", "Di", "Mi", 
+							    "Do", "Fr", "Sa.",
+							   ]
+							  }
+							 },
+							 timepicker:false,
+							 format:"'.$doc->date_format.'"
+							});
+                         </script>
+
+
                         ';
 							
 						}
@@ -1138,9 +1162,9 @@ class cases extends MX_Controller {
 
 
 
-         }else{
+         } else{
               echo '
-                  <script> alert("Este ticket ya existe");</script>
+                 <script> alert("Este ticket ya existe");</script>
              '; 
 
          }
@@ -1152,7 +1176,7 @@ class cases extends MX_Controller {
 
 	function opciones2(){
         if(isset($_POST['l_id'])){
-            if (!$this->cases_model->existeElTicket2((int)$_POST['ll'],$_POST['l_id'],$_POST['empresa'])){
+            if (!$this->cases_model->existeElTicket2((int)$_POST['ll'],$_POST['l_id'],0)){
                        $fields_clients = $this->custom_field_model->get_custom_fields((int)("10".$_POST['l_id']));	
 
 
@@ -1275,6 +1299,28 @@ class cases extends MX_Controller {
 							    </div>
                             </div>
                         </div>
+
+                        <script>
+                           jQuery(".datepicker").datetimepicker({
+							 lang:"en",
+							 i18n:{
+							  de:{
+							   months:[
+							    "Januar","Februar","März","April",
+							    "Mai","Juni","Juli","August",
+							    "September","Oktober","November","Dezember",
+							   ],
+							   dayOfWeek:[
+							    "So.", "Mo", "Di", "Mi", 
+							    "Do", "Fr", "Sa.",
+							   ]
+							  }
+							 },
+							 timepicker:false,
+							 format:"'.$doc->date_format.'"
+							});
+                         </script>
+
                         ';
 							
 						}
@@ -1328,9 +1374,9 @@ class cases extends MX_Controller {
 
 
          }else{
-              echo '
-                  <script> alert("Este ticket ya existe");</script>
-             '; 
+             echo '
+                 <script> alert("Este ticket ya existe");</script>
+            '; 
 
          }
 
@@ -1847,16 +1893,9 @@ class cases extends MX_Controller {
             {
             	$admin = $this->session->userdata('admin');
             	$save['created_by'] = $admin['id'];
-            	if(isset($_POST['fechacaja']))
-				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('fechacaja');
-			    else if(isset($_POST['proveedor']))
-				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('proveedor') . ' '.$this->input->post('numfactura');
-			    else if(isset($_POST['sistema']))
-				$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
-			    else if(isset($_POST['periodo']))
-				$save['title'] ='Ticket para solicitar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
-			    else
-			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));	
+            	
+			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+
 
 				$save['case_no'] = $this->department_model->get_alias($this->input->post('departamento_id')) .'-000'. (string)(((int)$this->cases_model->getLastId())+1);
 				//$save['client_id'] = $this->input->post('client_id');
@@ -1876,26 +1915,29 @@ class cases extends MX_Controller {
 				$save['description'] = $this->input->post('description');
 				$save['start_date'] = date('d-m-Y H:i:s');
 				$save['due_date'] = $this->input->post('due_date');
-			 	
+			 	$titulogenerado = $save['title']; 
                  foreach($this->input->post('location_id') as $val) {
 
 
                     $p_key = $this->cases_model->save($val,$save);
                     $reply = $this->input->post('reply');
 						if(!empty($reply)){
-							//$save_fields = array();
-							foreach($this->input->post('reply') as $key => $val) {
-
+							$save_fields = array();
+							foreach($this->input->post('reply') as $key => $val2) {
+                              $titulogenerado = $titulogenerado. " - ". $val2; 
 								$save_fields = array(
-									//'custom_field_id'=> $key,
-									'reply'=> $val,
+									'custom_field_id'=> $key,
+									'reply'=> $val2,
 									'table_id'=> $p_key,
 									'form'=> ((int)("10".$this->input->post('case_category_id')))
 								);	
 								$this->custom_field_model->save_answer($save_fields);
 							}	
 						}
-                          
+                          //Generado titulo dinamico: 
+						   $savetitle = array();
+						   $savetitle['title'] = $titulogenerado; 
+						   $this->cases_model->update($val,$savetitle,$p_key);
 
 						  // $url =base_url('assets/uploads/tareas/');
 						$target_path ='assets/uploads/tickets/'.$p_key;
@@ -1987,15 +2029,6 @@ class cases extends MX_Controller {
             {
             	$admin = $this->session->userdata('admin');
             	$save['created_by'] = $admin['id'];
-				if(isset($_POST['fechacaja']))
-				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('fechacaja');
-			    else if(isset($_POST['proveedor']))
-				$save['title'] = $this->cases_model->get_all_case_categories_id($this->input->post('case_category_id')) .' '. $this->input->post('proveedor') . ' '.$this->input->post('numfactura');
-			    else if(isset($_POST['sistema']))
-				$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
-			    else if(isset($_POST['periodo']))
-				$save['title'] ='Ticket para solicitar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
-			    else
 			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
 				$save['case_no'] = $data['case']->case_no;
 				$save['client_id'] = $this->input->post('client_id');
@@ -2013,7 +2046,7 @@ class cases extends MX_Controller {
 				$save['start_date'] = date('Y-m-d H:i:s');
 				$save['progress'] = $this->input->post('progress');
 				$save['due_date'] = $this->input->post('due_date');
-
+                $titulogenerado = $save['title']; 
 				//$save['o_lawyer'] = $this->input->post('o_lawyer');
 				//$save['fees'] = $this->input->post('fees');
 	
@@ -2024,20 +2057,25 @@ class cases extends MX_Controller {
                     $this->cases_model->update($val,$save,$id);
                     $reply = $this->input->post('reply');
 						if(!empty($reply)){
-							//$save_fields = array();
-							foreach($this->input->post('reply') as $key => $val) {
-
+							$save_fields = array();
+							$this->custom_field_model->delete_answer($id,(int)("10".$this->input->post('case_category_id')));
+							foreach($this->input->post('reply') as $key => $val2) {
+                                $titulogenerado = $titulogenerado. " - ". $val2; 
 								$save_fields = array(
-									//'custom_field_id'=> $key,
-									'reply'=> $val,
+									'custom_field_id'=> $key,
+									'reply'=> $val2,
 									'table_id'=> $id,
 									'form'=> ((int)("10".$this->input->post('case_category_id')))
 								);
-							$this->custom_field_model->delete_answer($id,(int)("10".$this->input->post('case_category_id')));	
+								
 						    $this->custom_field_model->save_answer($save_fields);
 							}	
 						}
-                          
+                           //Generado titulo dinamico: 
+						   $savetitle = array();
+						   $savetitle['title'] = $titulogenerado; 
+						   $this->cases_model->update($val,$savetitle,$id);
+                            
 
 						  // $url =base_url('assets/uploads/tareas/');
 						$target_path ='assets/uploads/tickets/'.$id;

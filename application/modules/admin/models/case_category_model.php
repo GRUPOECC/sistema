@@ -33,6 +33,13 @@ class case_category_model extends CI_Model
 		$this->db->join('case_categories C2', 'C2.id = C1.parent_id', 'LEFT');
 		return $this->db->get('case_categories C1')->result();
 	}
+
+	function get_all_bydepartment($id)
+	{
+		 $this->db->order_by('name','ASC');
+		 $this->db->where('parent_id',$id);
+		 return $this->db->get('case_categories')->result();
+	}
 	
 	function get_category_by_id($id)
 	{
