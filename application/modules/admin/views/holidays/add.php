@@ -372,17 +372,18 @@
                             backgroundColor: '#3c8dbc',
                             className : 'custom',
                             };                
-                console.log($('#start_date').val(),$('#end_date').val());
+                // console.log($('#start_date').val(),$('#end_date').val());
 
                  if ($('#start_date').val().length) {
                     calendarEvent.start = $('#start_date').val();
 
                  }
                  if ($('#end_date').val().length) {
-                    calendarEvent.end = $('#end_date').val();
+                    // calendarEvent.end = $('#end_date').val();
+                    calendarEvent.end = moment($('#end_date').val(), 'YYYY-MM-DD').add('days',1);
                  }
                  if ($('#name').val().length) {
-                    console.log('campo name tiene algo');
+                    // console.log('campo name tiene algo');
                     calendarEvent.title = $('#name').val();
 
                  }
@@ -394,7 +395,7 @@
                     $('#calendar').fullCalendar(
                     calendar_all_events
                     );
-                    console.log(calendar_all_events)
+                    // console.log(calendar_all_events)
                  }
                        
            }

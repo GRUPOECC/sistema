@@ -17,6 +17,7 @@ class holidays extends MX_Controller {
 		//echo '<pre>'; print_r($days);die;
 		
 		$data['holidays'] = $this->holiday_model->get_all();
+		$data['v_calendario'] = $this->holiday_model->get_v_calendario();
 		$data['months'] = $this->holiday_model->get_months();
 		$data['page_title'] = lang('calendar');
 		$data['body'] = 'holidays/list';

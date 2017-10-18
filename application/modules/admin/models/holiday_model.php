@@ -138,4 +138,9 @@ class holiday_model extends CI_Model
 					$this->db->where('parent_id',$company);
 					return $this->db->get('empresas')->result();}
 	}
+
+	//GETS ALL THE EVENTS OF THE 'v_calendar' VIEW
+	function get_v_calendario(){
+		return $this->db->get('v_calendario')->result();
+	}
 }

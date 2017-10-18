@@ -7,13 +7,29 @@
 <link href="<?php echo base_url('assets/css/datatables/dataTables.bootstrap.css')?>" rel="stylesheet" type="text/css" />
 
 <style type="text/css">
-  .custom,
+.custom,
 .custom div,
 .custom span {
     border-color: #3c8dbc;
    background-color: #3c8dbc;
     
     color: white;           /* text color */
+}
+
+.custom1,
+.custom1 div,
+.custom1 span {
+   border-color: rgb(245, 105, 84);
+   background-color: rgb(245, 105, 84);
+   color: white;           /* text color */
+}
+
+.custom2,
+.custom2 div,
+.custom2 span {
+   border-color:  #f39c12;
+   background-color:  #f39c12;
+   color: white;           /* text color */
 }
 
 </style>
@@ -286,6 +302,25 @@ $(function() {
                 },
                       ";
             }
+
+            function print_view($event){
+                if (strlen($event->name) > 34) { //Names of the task will be limited to 34 characters
+                    $event->name = substr($event->name, 0, 34).'...';
+                }
+                $estilo;
+                if ($event->TASK == 'CITA') $estilo = 'custom1';
+                if ($event->TASK == 'TASK') $estilo = 'custom2';
+
+                echo "{
+                title: '".$event->name."',
+                start: '".date('M d Y 12:00:00', strtotime($event->due_date))."',
+                end: '".date('M d Y 12:00:00', strtotime($event->due_date))."',
+                backgroundColor: '#3c8dbc',
+                className : '". $estilo ."',
+                url:  '".site_url('admin/holidays/')."'
+                },
+                      ";
+            }
  ?>
 
 
@@ -341,6 +376,8 @@ $(function() {
                     <?php 
                           foreach ($holidays as $event)
                               print_event($event);
+                          foreach ($v_calendario as $v_event)
+                              print_view($v_event);
                     ?>        
                             ],
                     calendarProperties
