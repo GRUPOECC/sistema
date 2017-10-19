@@ -133,7 +133,7 @@ $lang['user_account']		= "User Account";
 $lang['user_profile']		= "User Profile";
 $lang['case_number']		= "Case No";
 $lang['court_category']		= "Court Category";
-$lang['case_category']		= "Case Catégorie";
+$lang['case_category']		= "Case Category";
 $lang['payment_date']		= "Payment Date";
 $lang['custom_fields']		= "Custom Fields";
 $lang['field_add']	     	= "Add Aditional Field";
@@ -492,6 +492,8 @@ $lang['case_study_deleted']			= "Case Study Deleted";
 $lang['attachments_saved']				= "Attachments Saved";
 $lang['attachments_deleted']				= "Attachments Deleted";
 $lang['format']				= "Format";
+$lang['formattitle'] 		= "Title Format (optional)";
+
 
 $lang['details']			= "Details";
 $lang['hr_settings']			= "HR Settings";

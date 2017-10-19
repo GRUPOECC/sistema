@@ -34,7 +34,7 @@ class case_category extends MX_Controller {
             {
 				$save['name'] = $this->input->post('name');
 				$save['parent_id'] = $this->input->post('parent_id');
-                
+				$save['title_format']		 = $this->input->post('titulo');             
 				$p_key = $this->case_category_model->save($save);
 	
                       if (isset($_POST['namefield'])){ 
@@ -84,6 +84,7 @@ class case_category extends MX_Controller {
             {
 				$save['name'] = $this->input->post('name');
 				$save['parent_id'] = $this->input->post('parent_id');
+				$save['title_format']	= $this->input->post('titulo');
                 
 				$this->case_category_model->update($save,$id);
 
@@ -132,6 +133,7 @@ class case_category extends MX_Controller {
             {
 				$save['name'] = $this->input->post('name');
 				$save['parent_id'] = $this->input->post('parent_id');
+				$save['title_format'] = $this->input->post('titulo');
                 
 				$this->case_category_model->update($save,$id);
 

@@ -138,7 +138,7 @@ $lang['user_account']		= "cuentas de usuario";
 $lang['user_profile']		= "perfil de usuario";
 $lang['case_number']		= "Ticket n";
 $lang['court_category']		= "Corte Categoría";
-$lang['case_category']		= "Ticket Catégorie";
+$lang['case_category']		= "Ticket Categoría";
 $lang['payment_date']		= "Fecha de Pago";
 $lang['custom_fields']		= "Custom Fields";
 $lang['field_add']	     	= "Agregar Campos Adicionales";
@@ -503,6 +503,7 @@ $lang['attachments_saved']				= "adjuntos guardados";
 $lang['attachments_deleted']				= "adjuntos eliminados";
 
 $lang['format']				= "Formato";
+$lang['formattitle'] 		= "Formato del titulo (opcional)";
 
 
 $lang['details']			= "Detalles";

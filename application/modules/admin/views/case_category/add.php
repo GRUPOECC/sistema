@@ -73,6 +73,31 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-4">
+                                    <label for="name" style="clear:both;"><?php echo lang('formattitle');?> </label>
+                                    <input type="text" name="titulo" value="" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="name" style="clear:both;"><a href="#" onclick="mostrarclaves()">Ver Palabras clave</a></label>
+                                    <div id="listaclaves">
+                                    <ul>
+                                        <li type="square">[empresa.name] - Indica nombre de la empresa</li>
+                                        <li type="square">[empresa.code] - Indica código de la empresa</li>
+                                        <li type="square">[campo.#] - Indica valor de campo dinámico #</li>
+                                        <li type="square">[fecha.now] - Indica la fecha de creación del ticket</li>
+                                        <li type="square">[fecha.end] - Indica la fecha de finalización del ticket</li>
+                                    </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
                                     <label for="name" style="clear:both;"><?php echo lang('add_field');?>  </label>
                                      <input type="Checkbox" id="adicion" name="adicion" value="1">
                                 </div>
@@ -223,6 +248,24 @@
 
 
 <script src="<?php echo base_url('assets/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')?>" type="text/javascript"></script>
+<script>
+ var suiche=0;
+ document.getElementById('listaclaves').style.display = 'none';
+    function mostrarclaves(){
+          
+          if(suiche==0) {
+              document.getElementById('listaclaves').style.display = 'block';
+              suiche=1; 
+          }else{
+              document.getElementById('listaclaves').style.display = 'none';
+              suiche=0; 
+          }
+
+    }
+
+
+</script>
+
 <script type="text/javascript">
 $(function() {
 	
