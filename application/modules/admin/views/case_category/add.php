@@ -89,7 +89,9 @@
                                         <li type="square">[campo.#] - Indica valor de campo dinámico #</li>
                                         <li type="square">[fecha.now] - Indica la fecha de creación del ticket</li>
                                         <li type="square">[fecha.end] - Indica la fecha de finalización del ticket</li>
+                                        <li type="square">[category.name] - Indica nombre de la categoria</li>
                                     </ul>
+                                    <strong>Ejemplo:</strong> Ticket de la empresa <strong>empresa.name</strong> en la fecha <strong>fecha.now</strong> para el periodo <strong>campo.1</strong>
                                     </div>
                                 </div>
                             </div>

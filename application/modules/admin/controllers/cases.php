@@ -1936,6 +1936,7 @@ class cases extends MX_Controller {
 				                  $contenedor = str_replace("campo.".(string)$numero,$val2,$contenedor);
 				                  $contenedor = str_replace("fecha.now",date('d-m-Y'),$contenedor);
 				                  $contenedor = str_replace("fecha.end",$this->input->post('due_date'),$contenedor);
+				                  $contenedor = str_replace("category.name",$categoria->name,$contenedor);
 				                  $titulogenerado = $contenedor;
 								 }else{
                                      $titulogenerado = $titulogenerado. " - ". $val2;
@@ -2090,6 +2091,7 @@ class cases extends MX_Controller {
 				                  $contenedor = str_replace("campo.".(string)$numero,$val2,$contenedor);
 				                  $contenedor = str_replace("fecha.now",date('d-m-Y'),$contenedor);
 				                  $contenedor = str_replace("fecha.end",$this->input->post('due_date'),$contenedor);
+				                  $contenedor = str_replace("category.name",$categoria->name,$contenedor);
 				                  $titulogenerado = $contenedor;
 								 }else{
                                      $titulogenerado = $titulogenerado. " - ". $val2;
