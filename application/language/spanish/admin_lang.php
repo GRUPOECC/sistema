@@ -608,6 +608,33 @@ $lang['select_who_visit'] = "Seleccione a quien visita";
 
 
 
+// MODULO PUBLICIDAD
+//PARRILLAS
+$lang['pilar'] = "pilar";
+$lang['pilares'] = "pilares";
+$lang['medio'] = "medio";
+$lang['medios'] = "medios";
+$lang['campana'] = "campaña";
+$lang['agente'] = "agente";
+$lang['copy'] = "copy";
+$lang['etiquetas'] = "etiquetas";
+$lang['fecha_pub'] = "fecha publicacion";
+$lang['cliente'] = "cliente";
+$lang['clientes'] = "clientes";
 
+
+
+
+$lang['Pilar'] = "Pilar";
+$lang['Pilares'] = "Pilares";
+$lang['Medio'] = "Medio";
+$lang['Medios'] = "Medios";
+$lang['Campana'] = "Campaña";
+$lang['Agente'] = "Agente";
+$lang['Copy'] = "Copy";
+$lang['Etiquetas'] = "Etiquetas";
+$lang['Fecha_pub'] = "Fecha publicacion";
+$lang['Cliente'] = "Cliente";
+$lang['Clientes'] = "Clientes";
 
 
