@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 18-09-2017 a las 00:51:18
+-- Tiempo de generación: 20-09-2017 a las 03:00:17
 -- Versión del servidor: 10.1.25-MariaDB
 -- Versión de PHP: 5.6.31
 
@@ -220,7 +220,7 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (140, 'add', 139, 0, 'Add', 0),
 (141, 'edit', 139, 0, 'Edit', 0),
 (142, 'delete', 139, 0, 'Delete', 0),
-(143, 'holidays', 0, 0, 'Holidays', 0),
+(143, 'calendar', 0, 0, 'Calendar', 0),
 (144, 'add_event', 143, 0, 'Add Event', 0),
 (145, 'delete', 143, 0, 'Delete', 0),
 (146, 'notice', 0, 0, 'Notice', 0),
@@ -283,12 +283,18 @@ INSERT INTO `actions` (`id`, `name`, `parent_id`, `always_allowed`, `alias`, `is
 (203, 'editbankuser', 37, 1, 'editbankuser', 1),
 (204, 'addcompany2', 37, 1, 'addcompany2', 1),
 (205, 'addbankinterno', 37, 1, 'addbankinterno', 1),
+(206, 'cargos', 37, 1, 'cargos', 1),
+(207, 'companies', 0, 1, 'Companies', 0),
+(208, 'add', 207, 0, 'Agregar Empresa', 0),
+(209, 'edit', 207, 0, 'Editar Empresa', 0),
+(210, 'delete', 207, 0, 'Eliminar Empresa', 0),
+(211, 'view', 207, 0, 'Ver Empresas', 0),
 
-(300, 'delete_event', 143, 0, 'Delete Event', 0),
-(301, 'add_event_type', 143, 0, 'Add Event Type', 0),
-(302, 'delete_event_type', 143, 0, 'Delete Event Type', 0),
-(303, 'modify_event', 143, 0, 'Modify Event', 0),
-(304, 'modify_event_type', 143, 0, 'Modify Event Type', 0);
+    (300, 'delete_event', 143, 0, 'Delete Event', 0),
+    (301, 'add_event_type', 143, 0, 'Add Event Type', 0),
+    (302, 'delete_event_type', 143, 0, 'Delete Event Type', 0),
+    (303, 'view_event', 143, 0, 'View Event', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -309,6 +315,34 @@ INSERT INTO `acts` (`id`, `title`, `description`) VALUES
 (1, 'LEY ADMINISTRACION', '');
 
 -- --------------------------------------------------------
+
+    -- Estructura de tabla para la tabla `event_type`
+    --
+    -- PERMITTED VALUES FOR COLUMN 'periodic' ARE:
+    -- N : NON PERIODIC (DEFAULT)
+    -- W: WEEKLY
+    -- M: MONTHLY
+    -- A: ANUAL
+
+    CREATE TABLE `event_type` (
+      `id` int(10) UNSIGNED NOT NULL,
+      `name` varchar(50) DEFAULT NULL,
+      `status` tinyint(1) NOT NULL DEFAULT 1,
+      `company` tinyint(1) NOT NULL DEFAULT 0,
+      `periodic` char(1) NOT NULL DEFAULT 'N',
+      `repeat`  int(10) NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+    --
+    -- Volcado de datos para la tabla `event_type`
+    --
+
+
+    INSERT INTO `event_type` (  `id` ,  `name` ,  `status` ,  `company` ,  `repeat`, `periodic`)
+        VALUES 
+    (1,'Evento Fiscal', 1, 1, NULL ,'M'),
+    (2,'Evento de la Empresa', 1, 1, 5, 'A'),
+    (3,'Evento Nacional', 1, 0, NULL, 'A');
+
 
 --
 -- Estructura de tabla para la tabla `appointments`
@@ -420,34 +454,6 @@ INSERT INTO `canned_messages` (`id`, `deletable`, `type`, `name`, `subject`, `co
 (1, 1, 'order', 'Forgot Password Message', 'Password Reset Link at {site_name}!', '<p>Dear {customer_name},</p><p>If you forget your password, on the login page, click the Following link and you can change your account password</p><p>Username - {username}</p><p>{reset_link}</p><p>Thanks,<br>{site_name}</p>');
 
 -- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `event_type`
---
--- PERMITTED VALUES FOR COLUMN 'periodic' ARE:
--- N : NON PERIODIC (DEFAULT)
--- W: WEEKLY
--- M: MONTHLY
--- A: ANUAL
-
-CREATE TABLE `event_type` (
-  `id` int(10) UNSIGNED NOT NULL,
-  `name` varchar(50) DEFAULT NULL,
-  `status` tinyint(1) NOT NULL DEFAULT 1,
-  `company` tinyint(1) NOT NULL DEFAULT 0,
-  `periodic` char(1) NOT NULL DEFAULT 'N'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
---
--- Volcado de datos para la tabla `event_type`
---
-
-INSERT INTO `event_type` (  `id` ,  `name` ,  `status` ,  `company` ,  `periodic`) VALUES 
-(1,'Evento Fiscal', 1, 1, 'M'),
-(2,'Evento de la Empresa', 1, 1, 'A'),
-(3,'Evento Nacional', 1, 0, 'A');
-
--- --------------------------------------------------------
-
 
 --
 -- Estructura de tabla para la tabla `cases`
@@ -1739,22 +1745,24 @@ INSERT INTO `days` (`id`, `name`, `working_day`) VALUES
 CREATE TABLE `departments` (
   `id` int(9) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
-  `description` text NOT NULL
+  `description` text NOT NULL,
+  `parent_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `departments`
 --
 
-INSERT INTO `departments` (`id`, `name`, `description`) VALUES
-(1, 'Administración', ''),
-(2, 'Recursos Humanos', ''),
-(3, 'Sistemas y Progamación', ''),
-(4, 'Logística', ''),
-(5, 'Comercial', ''),
-(6, 'Producción', ''),
-(7, 'Directiva', ''),
-(8, 'Gerencia Mantenimiento y Servicios Generales', '');
+INSERT INTO `departments` (`id`, `name`, `description`, `parent_id`) VALUES
+(1, 'Administración', '', 0),
+(2, 'Recursos Humanos', '', 0),
+(3, 'Sistemas y Progamación', '', 0),
+(4, 'Logística', '', 0),
+(5, 'Comercial', '', 0),
+(6, 'Producción', '', 0),
+(7, 'Directiva', '', 0),
+(8, 'Gerencia Mantenimiento y Servicios Generales', '', 0),
+(11, 'Prueba', 'hola', 4);
 
 -- --------------------------------------------------------
 
@@ -1836,30 +1844,57 @@ CREATE TABLE `empresas` (
   `id` int(9) UNSIGNED NOT NULL,
   `name` varchar(255) NOT NULL,
   `parent_id` int(9) UNSIGNED NOT NULL,
-  `cod_interno` varchar(7) NOT NULL
+  `cod_interno` varchar(7) NOT NULL,
+  `rif` varchar(255) NOT NULL,
+  `razon_social` varchar(1000) NOT NULL,
+  `direccion` varchar(1000) NOT NULL,
+  `telefono` varchar(255) NOT NULL,
+  `extension` varchar(50) NOT NULL,
+  `tipo` varchar(255) NOT NULL,
+  `status` int(11) NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `empresas`
 --
 
-INSERT INTO `empresas` (`id`, `name`, `parent_id`, `cod_interno`) VALUES
-(0, 'GRUPO ECC', 999999999, '000'),
-(1, 'CREACIONES BEN-HUR C.A.', 0, '001'),
-(2, 'GRUPO FERRADINI C.A.', 0, '020'),
-(11, '01-LA URBINA', 2, '020-001'),
-(12, '02-CHACAITO', 2, '020-002'),
-(13, '03-CCCT', 2, '020-003'),
-(14, '04-PLAZA MAYOR', 2, '020-004'),
-(15, '05-SAMBIL', 2, '020-005'),
-(16, '06-MARACAY', 2, '020-006'),
-(17, '07-BARQUISIMETO', 2, '020-007'),
-(18, '08-AVIADORES', 2, '020-008'),
-(19, '09-CERRO VERDE', 2, '020-009'),
-(20, '10-SAMBIL II', 2, '020-010'),
-(21, 'MODAS BH C.A.', 0, '098'),
-(22, 'GRUPO SHAKE C.A.', 0, '021'),
-(23, 'INVERSIONES ACALUROSA C.A.', 0, '099');
+INSERT INTO `empresas` (`id`, `name`, `parent_id`, `cod_interno`, `rif`, `razon_social`, `direccion`, `telefono`, `extension`, `tipo`, `status`) VALUES
+(0, 'Grupo ECC', 99999, 'Prueba', 'Prueba', 'Prueba', ' Prueba', 'Prueba', 'Prueba', '1', 1),
+(1, 'CREACIONES BEN-HUR C.A.', 0, '001', '', '', '', '', '', '', 1),
+(2, 'GRUPO FERRADINI C.A.', 0, '020', '', '', '', '', '', '', 1),
+(11, '01-LA URBINA', 2, '020-001', '', '', '', '', '', '', 1),
+(12, '02-CHACAITO', 2, '020-002', '', '', '', '', '', '', 1),
+(13, '03-CCCT', 2, '020-003', '', '', '', '', '', '', 1),
+(14, '04-PLAZA MAYOR', 2, '020-004', '', '', '', '', '', '', 1),
+(15, '05-SAMBIL', 2, '020-005', '', '', '', '', '', '', 1),
+(16, '06-MARACAY', 2, '020-006', '', '', '', '', '', '', 1),
+(17, '07-BARQUISIMETO', 2, '020-007', '', '', '', '', '', '', 1),
+(18, '08-AVIADORES', 2, '020-008', '', '', '', '', '', '', 1),
+(19, '09-CERRO VERDE', 2, '020-009', '', '', '', '', '', '', 1),
+(20, '10-SAMBIL II', 2, '020-010', '', '', '', '', '', '', 1),
+(21, 'MODAS BH C.A.', 0, '098', '', '', '', '', '', '', 1),
+(22, 'GRUPO SHAKE C.A.', 0, '021', '', '', '', '', '', '', 1),
+(23, 'INVERSIONES ACALUROSA C.A.', 0, '099', '', '', '', '', '', '', 1),
+(25, 'Prueba2', 0, 'Prueba', 'Prueba', 'Prueba', '    Prueba', 'Prueba', 'Prueba', '1', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `empresa_tipo`
+--
+
+CREATE TABLE `empresa_tipo` (
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `empresa_tipo`
+--
+
+INSERT INTO `empresa_tipo` (`id`, `name`) VALUES
+(1, 'Comercial'),
+(2, 'Inmobiliaria');
 
 -- --------------------------------------------------------
 
@@ -1888,10 +1923,10 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (7, 15, 23, 3, 6, '', '', 0),
 (8, 15, 17, 1, 5, '', '', 0),
 (9, 15, 11, 1, 6, '', '', 0),
-(11, 14, 19, 4, 2, '', '', 0),
+(11, 14, 0, 0, 4, '', '', 0),
 (12, 15, 12, 3, 2, '', '', 0),
 (14, 19, 13, 6, 5, '', '', 0),
-(15, 14, 20, 3, 2, '', '', 0),
+(15, 14, 0, 0, 4, '', '', 0),
 (16, 4, 20, 3, 2, '', '', 0),
 (17, 20, 2, 4, 3, '', '', 0),
 (18, 21, 15, 6, 4, '4556', '', 0),
@@ -1908,7 +1943,11 @@ INSERT INTO `empresa_usuario` (`id`, `id_usuario`, `id_empresa`, `id_departament
 (29, 25, 17, 6, 3, '23', '2017-09-30', 1),
 (30, 25, 18, 6, 3, '23', '2017-09-30', 1),
 (31, 25, 19, 6, 3, '23', '2017-09-30', 1),
-(32, 25, 20, 6, 3, '23', '2017-09-30', 1);
+(32, 25, 20, 6, 3, '23', '2017-09-30', 1),
+(36, 14, 0, 0, 4, '', '', 0),
+(39, 9, 13, 5, 4, '675', '2017-09-28', 1),
+(42, 3, 0, 0, 3, '', '', 0),
+(43, 3, 0, 0, 3, '', '', 0);
 
 -- --------------------------------------------------------
 
@@ -1972,27 +2011,26 @@ INSERT INTO `files` (`id`, `name`, `location`, `id_task`, `id_comment`, `id_tick
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `holidays`
---
---           N O T E
--- ACTION WITH ID 144 MODIFIED!
+    --
+    -- Estructura de tabla para la tabla `holidays`
+    --
+    --           N O T E
+    -- ACTION WITH ID 144 MODIFIED!
 
-CREATE TABLE `holidays` (
-  `id` int(9) UNSIGNED NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `description` varchar(1000) NULL,
-  `start_date` date NOT NULL,
-  `end_date` date NULL,
-  `type` int(10) UNSIGNED NULL,
-  `status` tinyint(1) NOT NULL DEFAULT 1,
-  `company` int(9) UNSIGNED NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
+    CREATE TABLE `holidays` (
+      `id` int(9) UNSIGNED NOT NULL,
+      `name` varchar(255) NOT NULL,
+      `description` varchar(1000) NULL,
+      `start_date` date NOT NULL,
+      `end_date` date NULL,
+      `type` int(10) UNSIGNED NULL,
+      `status` tinyint(1) NOT NULL DEFAULT 1,
+      `company` int(9) UNSIGNED NULL
+    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 --
 -- Volcado de datos para la tabla `holidays`
 --
--- REMOVE THIS INSERT
+
 -- INSERT INTO `holidays` (`id`, `name`, `date`) VALUES
 -- (1, 'dasdas', '2017-08-30');
 
@@ -2312,7 +2350,10 @@ INSERT INTO `rel_department_designation` (`id`, `department_id`, `designation`) 
 (56, 4, 'Almacenista'),
 (57, 4, 'Chofer'),
 (58, 4, 'Jefe de Compras'),
-(59, 4, 'Analista de Compras');
+(59, 4, 'Analista de Compras'),
+(60, 9, 'Prueba'),
+(61, 10, ''),
+(62, 11, '');
 
 -- --------------------------------------------------------
 
@@ -2441,122 +2482,127 @@ INSERT INTO `rel_role_action` (`id`, `role_id`, `action_id`) VALUES
 (56, 4, 35),
 (57, 4, 34),
 (58, 4, 36),
-(59, 4, 21),
-(60, 4, 22),
-(61, 4, 175),
-(62, 4, 24),
-(63, 4, 155),
-(64, 4, 23),
-(65, 4, 173),
-(66, 4, 174),
-(67, 4, 67),
-(68, 4, 68),
-(69, 4, 70),
-(70, 4, 69),
-(71, 4, 30),
-(72, 4, 31),
-(73, 4, 46),
-(74, 4, 47),
-(75, 4, 49),
-(76, 4, 48),
-(77, 4, 176),
-(78, 4, 178),
-(79, 4, 180),
-(80, 4, 179),
-(81, 4, 177),
-(82, 4, 181),
-(83, 4, 183),
-(84, 4, 182),
-(85, 4, 118),
-(86, 4, 119),
-(87, 4, 121),
-(88, 4, 120),
-(89, 4, 122),
-(90, 4, 153),
-(91, 4, 37),
-(92, 4, 38),
-(93, 4, 124),
-(94, 4, 191),
-(95, 4, 123),
-(96, 4, 40),
-(97, 4, 125),
-(98, 4, 127),
-(99, 4, 126),
-(100, 4, 39),
-(101, 4, 192),
-(102, 4, 190),
-(103, 4, 189),
-(104, 4, 41),
-(105, 4, 143),
-(106, 4, 144),
-(107, 4, 145),
-(108, 4, 108),
-(109, 4, 109),
-(110, 4, 110),
-(111, 4, 81),
-(112, 4, 83),
-(113, 4, 82),
-(114, 4, 139),
-(115, 4, 140),
-(116, 4, 142),
-(117, 4, 141),
-(118, 4, 51),
-(119, 4, 52),
-(120, 4, 54),
-(121, 4, 53),
-(122, 4, 15),
-(123, 4, 196),
-(124, 4, 111),
-(125, 4, 146),
-(126, 4, 147),
-(127, 4, 149),
-(128, 4, 148),
-(129, 4, 150),
-(130, 4, 80),
-(131, 4, 75),
-(132, 4, 76),
-(133, 4, 78),
-(134, 4, 77),
-(135, 4, 50),
-(136, 4, 14),
-(137, 4, 79),
-(138, 4, 112),
-(139, 4, 186),
-(140, 4, 113),
-(141, 4, 117),
-(142, 4, 116),
-(143, 4, 114),
-(144, 4, 194),
-(145, 4, 152),
-(146, 4, 188),
-(147, 4, 115),
-(148, 4, 157),
-(149, 4, 158),
-(150, 4, 160),
-(151, 4, 159),
-(152, 4, 16),
-(153, 4, 17),
-(154, 4, 20),
-(155, 4, 18),
-(156, 4, 107),
-(157, 4, 19),
-(158, 4, 42),
-(159, 4, 43),
-(160, 4, 45),
-(161, 4, 44),
-(162, 3, 1),
-(163, 3, 143),
-(164, 3, 144),
-(165, 3, 145),
-(166, 5, 1),
-(167, 5, 21),
-(168, 5, 22),
-(169, 5, 175),
-(170, 5, 24),
-(171, 5, 155),
-(172, 5, 23),
-(173, 5, 173),
-(174, 5, 174);
+(59, 4, 207),
+(60, 4, 208),
+(61, 4, 209),
+(62, 4, 210),
+(63, 4, 211),
+(64, 4, 21),
+(65, 4, 22),
+(66, 4, 175),
+(67, 4, 24),
+(68, 4, 155),
+(69, 4, 23),
+(70, 4, 173),
+(71, 4, 174),
+(72, 4, 67),
+(73, 4, 68),
+(74, 4, 70),
+(75, 4, 69),
+(76, 4, 30),
+(77, 4, 31),
+(78, 4, 46),
+(79, 4, 47),
+(80, 4, 49),
+(81, 4, 48),
+(82, 4, 176),
+(83, 4, 178),
+(84, 4, 180),
+(85, 4, 179),
+(86, 4, 177),
+(87, 4, 181),
+(88, 4, 183),
+(89, 4, 182),
+(90, 4, 118),
+(91, 4, 119),
+(92, 4, 121),
+(93, 4, 120),
+(94, 4, 122),
+(95, 4, 153),
+(96, 4, 37),
+(97, 4, 38),
+(98, 4, 124),
+(99, 4, 191),
+(100, 4, 123),
+(101, 4, 40),
+(102, 4, 125),
+(103, 4, 127),
+(104, 4, 126),
+(105, 4, 39),
+(106, 4, 192),
+(107, 4, 190),
+(108, 4, 189),
+(109, 4, 41),
+(110, 4, 143),
+(111, 4, 144),
+(112, 4, 145),
+(113, 4, 108),
+(114, 4, 109),
+(115, 4, 110),
+(116, 4, 81),
+(117, 4, 83),
+(118, 4, 82),
+(119, 4, 139),
+(120, 4, 140),
+(121, 4, 142),
+(122, 4, 141),
+(123, 4, 51),
+(124, 4, 52),
+(125, 4, 54),
+(126, 4, 53),
+(127, 4, 15),
+(128, 4, 196),
+(129, 4, 111),
+(130, 4, 146),
+(131, 4, 147),
+(132, 4, 149),
+(133, 4, 148),
+(134, 4, 150),
+(135, 4, 80),
+(136, 4, 75),
+(137, 4, 76),
+(138, 4, 78),
+(139, 4, 77),
+(140, 4, 50),
+(141, 4, 14),
+(142, 4, 79),
+(143, 4, 112),
+(144, 4, 186),
+(145, 4, 113),
+(146, 4, 117),
+(147, 4, 116),
+(148, 4, 114),
+(149, 4, 194),
+(150, 4, 152),
+(151, 4, 188),
+(152, 4, 115),
+(153, 4, 157),
+(154, 4, 158),
+(155, 4, 160),
+(156, 4, 159),
+(157, 4, 16),
+(158, 4, 17),
+(159, 4, 20),
+(160, 4, 18),
+(161, 4, 107),
+(162, 4, 19),
+(163, 4, 42),
+(164, 4, 43),
+(165, 4, 45),
+(166, 4, 44),
+(167, 3, 1),
+(168, 3, 143),
+(169, 3, 144),
+(170, 3, 145),
+(171, 5, 1),
+(172, 5, 21),
+(173, 5, 22),
+(174, 5, 175),
+(175, 5, 24),
+(176, 5, 155),
+(177, 5, 23),
+(178, 5, 173),
+(179, 5, 174);
 
 -- --------------------------------------------------------
 
@@ -2786,7 +2832,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password`, `gender`, `dob`, `email`, `contact`, `extension`, `address`, `user_role`, `user_type`, `token`, `client_case_alert`, `department_id`, `empresa_id`, `status`) VALUES
 (1, 0, 'Administrador', '', 'admin', '07b9ef4762aaa5fc88a20c3e27a67c0d6045a018', '', '0000-00-00', 'scammarano@gmail.com', '', 0, '', 1, 0, '', 1, 0, '0', 1),
 (2, 0, 'Il Merletto', '', 'ilmerletto@dmail.com', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-30', 'ilmerletto@dmail.com', '02517131111', 0, '', 2, 0, '', 1, 0, '0', 1),
-(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-08-11', 'martha.morante@benhur.com.ve', '02122426211', 0, '', 3, 0, '', 1, 1, '0', 1),
+(3, 0, 'Martha Morante', '', 'martha.morante@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-09-11', 'martha.morante@benhur.com.ve', '02122426211', 0, '', 3, 0, '', 1, 0, '[\"11\"]', 1),
 (4, 0, 'Marianella Borges', '', 'marianella.borges@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-02', 'marianella.borges@ferradini.com.ve', '02517131111', 0, '', 4, 0, '', 1, 5, '0', 1),
 (5, 0, 'Marisol Valderrama', '', 'marisol.valderrama@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Female', '2017-07-03', 'marisol.valderrama@benhur.com.ve', '04143332222', 0, '', 5, 0, '', 1, 1, '0', 1),
 (6, 0, 'Salvatore Cammarano', '', 'salvatore.cammarano@ferradini.com.ve', '9199059a80dcdcb06097784f63c22d70383104ad', 'Male', '1978-12-06', 'salvatore.cammarano@ferradini.com.ve', '04143238051', 0, '', 4, 0, '', 1, 1, '0', 1),
@@ -2795,7 +2841,7 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (9, 0, 'Rony Gomez', '', 'rony.gomez@ferradini.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-07-14', 'rony.gomez@ferradini.com.ve', '04143332222', 0, '', 3, 0, '', 1, 1, '0', 1),
 (10, 0, 'Cesar Aponte', '', 'cesar.aponte@benhur.com.ve', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '1977-07-30', 'cesar.aponte@benhur.com.ve', '04128233794', 0, '', 5, 0, '', 1, 1, '0', 1),
 (11, 0, 'Carlos Valero', '', 'kilordpepo', '7157d8989295534fc48a9fce47c7891166ec64bb', 'Male', '1995-03-09', 'kilordpepo@gmail.com', '04149151275', 0, 'Terrazas Del Avila\r\nApt 11-C', 3, 0, '', 1, 2, '0', 1),
-(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-10-30', 'garryjrbruno@hotmail.com', '04123352179', 0, 'Caricuao', 4, 0, '', 1, 4, '[\"0\"]', 1),
+(14, 0, 'Garry Bruno', '', 'gjbm', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-02-28', 'garryjrbruno@hotmail.com', '04123352179', 0, 'Caricuao', 4, 0, '', 1, 0, '[\"2\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\"]', 1),
 (15, 0, 'Prueba 2', '', 'fghfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-09-28', 'sdfhidfid@hotmail.com', '04123352179', 0, 'trrrt', 4, 0, '', 1, 4, '[\"2\",\"12\",\"18\",\"22\"]', 1),
 (16, 0, 'Prueba empresas', '', 'fhfgfghf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-12-23', 'bsdhfsds@hotmail.com', '04123352179', 0, 'caricuao', 4, 0, '', 1, 5, '0', 1),
 (17, 0, 'rgthgfghfghfghf', '', 'fgdffgdfgf', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry387@gmail.com', '04123352179', 0, 'dfbfhfhfgh', 5, 0, '', 1, 5, '0', 1),
@@ -2806,7 +2852,8 @@ INSERT INTO `users` (`id`, `employee_id`, `name`, `image`, `username`, `password
 (22, 0, 'eryrtyrty', '', 'rtyrtyrty', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'ghghfg@gjhoifg.com', '3443534', 345, 'fghdfgdf', 4, 0, '', 1, 0, '[\"11\"]', 1),
 (23, 0, 'dffgdfhfghf', '', 'rterteerg', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2018-02-28', 'hfghfghfg@nglhfgh.com', '64564545', 564, 'fghfghfg', 4, 0, '', 1, 0, '[\"11\"]', 1),
 (24, 0, 'fghfghghf', '', 'ry4545r', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'fgfghfghfg@fiuff.com', '6756546454', 4564, 'fhghfghfghfg', 0, 0, '', 1, 0, '[\"13\"]', 1),
-(25, 0, 'fghfghfghfg', '', 'jefiudfsd', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry38rere7@gmail.com', '45343453434', 344, 'gdfgdfgf@fghig.com', 4, 0, '', 1, 0, '[\"0\"]', 1);
+(25, 0, 'fghfghfghfg', '', 'jefiudfsd', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-30', 'garry38rere7@gmail.com', '45343453434', 344, 'gdfgdfgf@fghig.com', 4, 0, '', 1, 0, '[\"0\"]', 1),
+(26, 0, 'Prueba', '', 'terfterte', '7c222fb2927d828af22f592134e8932480637c0d', 'Male', '2017-09-29', 'dfgdfgdf@fhfghfg.com', '04123352179', 34, 'dfgdfg', 4, 0, '', 1, 0, '[\"2\",\"11\",\"12\",\"13\",\"14\",\"15\",\"16\",\"17\",\"18\",\"19\",\"20\"]', 1);
 
 -- --------------------------------------------------------
 
@@ -2883,6 +2930,16 @@ CREATE TABLE `v_tareas_asignadas` (
 -- Estructura para la vista `v_calendario`
 --
 DROP TABLE IF EXISTS `v_calendario`;
+-- --------------------------------------------------------
+-- ESTRUCTURA NUEVA DE LA VISTA
+-- Estructura para la vista `v_calendario` cambios en el select de appointments
+--
+-- --------------------------------------------------------
+-- ESTRUCTURA NUEVA DE LA VISTA
+-- Estructura para la vista `v_calendario` cambios en el select,  appointments y holidays ya no se incluyen
+--
+
+DROP VIEW IF EXISTS `v_calendario`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=
 `root`@`localhost` SQL SECURITY DEFINER VIEW `v_calendario`  AS 
@@ -2892,24 +2949,13 @@ CREATE ALGORITHM=UNDEFINED DEFINER=
  `t`.`due_date` AS `due_date`,
  'TASK' AS `TASK` 
 
- from `tasks` `t` union 
-  select `td`.`id` AS `id`,
-    `td`.`title` AS `title`,
-    `td`.`date` AS `date`,
-    'TO_DO' AS `TO_DO` 
-    from `to_do_list` `td` where (`td`.`date` >= sysdate()) union
-
-       select `h`.`id` AS `id`,
-       `h`.`name` AS `name`,
-       `h`.`start_date` AS `date`,
-       'HOLIDAY' AS `HOLIDAY` 
-       from `holidays` `h` where (`h`.`start_date` >= sysdate()) union 
+ from `tasks` `t` union
+        
        select `ap`.`id` AS `id`,
-       ('CITA ' or (`ap`.`title` <> 0)) AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,
+       `ap`.`title` AS `'CITA '||ap.title`,cast(`ap`.`date_time` as date) AS `DATE(ap.date_time)`,
        'CITA' AS `CITA` 
        from `appointments` `ap` 
        where (`ap`.`date_time` >= sysdate()) ;
-
 -- --------------------------------------------------------
 
 --
@@ -2931,6 +2977,20 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `event_type`
+--
+ALTER TABLE `event_type`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `holidays`
+--
+ALTER TABLE `holidays`
+  ADD PRIMARY KEY (`id`);
+--
+
 
 --
 -- Indices de la tabla `actions`
@@ -3071,6 +3131,12 @@ ALTER TABLE `empresas`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `empresa_tipo`
+--
+ALTER TABLE `empresa_tipo`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
@@ -3092,12 +3158,6 @@ ALTER TABLE `fees`
 -- Indices de la tabla `files`
 --
 ALTER TABLE `files`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indices de la tabla `holidays`
---
-ALTER TABLE `holidays`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -3247,21 +3307,20 @@ ALTER TABLE `user_role`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `event_type`
---
-ALTER TABLE `event_type`
-  ADD PRIMARY KEY (`id`);
-
-
---
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `event_type`
+--
+ALTER TABLE `event_type`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `actions`
 --
 ALTER TABLE `actions`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=206;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=212;
 --
 -- AUTO_INCREMENT de la tabla `acts`
 --
@@ -3286,7 +3345,7 @@ ALTER TABLE `attendance`
 -- AUTO_INCREMENT de la tabla `bank_details`
 --
 ALTER TABLE `bank_details`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `canned_messages`
 --
@@ -3351,7 +3410,7 @@ ALTER TABLE `days`
 -- AUTO_INCREMENT de la tabla `departments`
 --
 ALTER TABLE `departments`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT de la tabla `depts`
 --
@@ -3371,12 +3430,17 @@ ALTER TABLE `documents`
 -- AUTO_INCREMENT de la tabla `empresas`
 --
 ALTER TABLE `empresas`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+--
+-- AUTO_INCREMENT de la tabla `empresa_tipo`
+--
+ALTER TABLE `empresa_tipo`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `empresa_usuario`
 --
 ALTER TABLE `empresa_usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 --
 -- AUTO_INCREMENT de la tabla `extended_case`
 --
@@ -3461,7 +3525,7 @@ ALTER TABLE `rel_contact_category`
 -- AUTO_INCREMENT de la tabla `rel_department_designation`
 --
 ALTER TABLE `rel_department_designation`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 --
 -- AUTO_INCREMENT de la tabla `rel_document_files`
 --
@@ -3476,7 +3540,7 @@ ALTER TABLE `rel_form_custom_fields`
 -- AUTO_INCREMENT de la tabla `rel_role_action`
 --
 ALTER TABLE `rel_role_action`
-  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=175;
+  MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=180;
 --
 -- AUTO_INCREMENT de la tabla `settings`
 --
@@ -3511,26 +3575,22 @@ ALTER TABLE `to_do_list`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 --
 -- AUTO_INCREMENT de la tabla `user_role`
 --
 ALTER TABLE `user_role`
   MODIFY `id` int(9) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
-
---
--- AUTO_INCREMENT de la tabla `event_type`
---
-ALTER TABLE `event_type`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
-ALTER TABLE `holidays` ADD UNIQUE `type_index` (`type`);
-ALTER TABLE `holidays` ADD UNIQUE `comp_fk_index` (`company`);
-
-
 --
 -- Restricciones para tablas volcadas
 --
+
+-- ALTER TABLE `holidays` ADD UNIQUE `type_index` (`type`);
+ALTER TABLE `holidays` ADD UNIQUE `comp_fk_index` (`company`);
+
+ALTER TABLE `holidays`
+ADD CONSTRAINT `event_type_fk` FOREIGN KEY (`type`) REFERENCES `event_type` (`id`),
+ADD CONSTRAINT `company_fk` FOREIGN KEY (`company`) REFERENCES `empresas` (`id`);
 
 --
 -- Filtros para la tabla `rel_contact_category`
@@ -3538,11 +3598,6 @@ ALTER TABLE `holidays` ADD UNIQUE `comp_fk_index` (`company`);
 ALTER TABLE `rel_contact_category`
   ADD CONSTRAINT `rel_contact_category_ibfk_1` FOREIGN KEY (`id_contact`) REFERENCES `contacts` (`id`),
   ADD CONSTRAINT `rel_contact_category_ibfk_2` FOREIGN KEY (`id_category`) REFERENCES `contact_categories` (`id`);
-
-  ALTER TABLE `holidays`
-  ADD CONSTRAINT `event_type_fk` FOREIGN KEY (`type`) REFERENCES `event_type` (`id`),
-  ADD CONSTRAINT `company_fk` FOREIGN KEY (`company`) REFERENCES `empresas` (`id`);
-
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

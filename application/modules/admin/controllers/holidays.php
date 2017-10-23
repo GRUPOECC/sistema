@@ -16,11 +16,12 @@ class holidays extends MX_Controller {
 	//$days = $this->db->query()->result();
 		//echo '<pre>'; print_r($days);die;
 		
-		$data['holidays'] = $this->holiday_model->get_all();
+		$data['eventos_calendario'] = $this->holiday_model->get_all_replicated();
 		$data['v_calendario'] = $this->holiday_model->get_v_calendario();
 		$data['months'] = $this->holiday_model->get_months();
 		$data['page_title'] = lang('calendar');
 		$data['body'] = 'holidays/list';
+		// $data['event_types'] = $this->holiday_model->get_type_data();
 		$this->load->view('template/main', $data);	
 
 	}	
@@ -121,32 +122,5 @@ function sortByOrder($a, $b) {
 
 	}		
 
-	// function add_fiscal_event(){
-		
-	// 	$data['page_title'] = lang('add') . lang('fiscal_event');
-	// 	$data['body'] = 'holidays/fiscalevent';
-
-	// 	$this->load->view('template/main', $data);
-	// 	// $this->load->view('admin/holidays/fiscalevents');
-
-	// }	
-		
-	// function add_company_event(){
-		
-	// 	$data['page_title'] = lang('add') . lang('fiscal_event');
-	// 	$data['body'] = 'holidays/companyevent';
-
-	// 	$this->load->view('template/main', $data);
-	// 	// $this->load->view('admin/holidays/fiscalevents');
-	// }
-
-	// function add_national_event(){
-		
-	// 	$data['page_title'] = lang('add') . lang('fiscal_event');
-	// 	$data['body'] = 'holidays/nationalevent';
-
-	// 	$this->load->view('template/main', $data);
-	// 	// $this->load->view('admin/holidays/fiscalevents');
-	// }
 	
 }

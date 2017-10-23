@@ -29,9 +29,32 @@ class holiday_model extends CI_Model
 		$this->db->insert('event_type',$save);
 	}
 	
+	//GET ALL THE EVENTS
+	//modified to get the correspondig type of event, instead of the id in the type column.
 	function get_all()
 	{
-			return $this->db->get('holidays')->result();
+		// Query:
+		 // SELECT 
+		 // h.`name` as `name`, h.`description`, h.`start_date`, h.`end_date` , 
+		 // e.`periodic` as `type_periodic`, e.`repeat` as `event_repeat` , h.`type` , h.`status`, h.`company` 
+		 // from `holidays` h, `event_type` e 
+		 // WHERE
+		 // e.`id` = h.`type`;
+
+		$this->db->select(
+			'h.name as name, 
+			 h.description, 
+			 h.start_date, 
+			 h.end_date , 
+			 e.periodic as type_periodic, 
+			 e.repeat as event_repeat , 
+			 h.type , 
+			 h.status, 
+			 h.company');
+		$this->db->join('event_type e','e.id = h.type');
+
+			//return an array so that the cloning can be made by pushing an element into the array
+			return $this->db->get('holidays h')->result_array();
 	}
 	
 	function get_holidays_by_month($m)
@@ -143,4 +166,131 @@ class holiday_model extends CI_Model
 	function get_v_calendario(){
 		return $this->db->get('v_calendario')->result();
 	}
+
+
+
+
+
+	//receives: the array that wants to be replicated 
+	//returns: the replicated events (all but the received event)
+		// -- Additional info
+		// -- Events with repeat frequency of NULL will be replicated within the next 30 years (replicated 30 times)
+		// -- PERMITTED VALUES FOR COLUMN 'periodic' in table 'event_type'ARE:
+		// -- N : NON PERIODIC (DEFAULT)
+		// -- W: WEEKLY
+		// -- M: MONTHLY
+		// -- A: ANUAL
+		// $event attributes: name
+		// 				      description
+		// 				      start_date
+		// 				      end_date
+		// 				      type_periodic
+		// 				      type
+		// 				      status
+		// 				      company
+		//					  event_repeat
+
+	function replicate($event){
+			$nullRepeat = 1;//number of replications when the repeat frequency is NULL
+			$replications = array();//all the replications of the event
+			//every event MUST have its start_date
+			//but does it have an end_date?
+			$end_date_flag = false;//assume it does not
+			if (!isset($event['end_date'])) {
+				//Yes! it does
+				$end_date_flag = true; //change the flag value
+				//then the end_date must also be considered when replicating
+			}
+
+			//we avoid null values here
+			$repeat;
+			if (!isset($event['event_repeat'])) {
+				$event['event_repeat']=$nullRepeat;
+				$repeat = $nullRepeat;
+			}else{
+				$repeat = intval($event['event_repeat']);
+			}
+
+			//save the event type
+			$type = $event['type_periodic'];
+
+			// verify the event type
+			switch ($type) {
+				case 'N'://do not replicate
+					//therefore do nothing...
+					break;
+				case 'W'://replicate each week
+					for ($i=0; $i < $repeat; $i++) { 
+						//change the start_date
+	// ver: https://stackoverflow.com/questions/38738910/php-subtract-1-month-from-date-formated-with-date-m-y
+						// if($end_date_flag)
+						// {
+						// 	//change the end_date
+
+						// }
+						//push to the $replications array
+						array_push($replications, $event);
+					}
+					break;
+				case 'M'://replicate each month
+					for ($i=0; $i < $repeat; $i++) { 
+						//change the start_date
+
+						//push to the $replications array
+						array_push($replications, $event);
+					}
+					break;	
+				case 'A'://replicate each year
+					for ($i=0; $i < $repeat; $i++) { 
+						//change the start_date
+
+						//push to the $replications array
+						array_push($replications, $event);
+					}
+					break;												
+				default:
+					
+					break;
+			}	
+
+			unset($end_date_flag);
+			unset($_REPEAT);
+			unset($type);
+
+
+			// //return the replicated events
+			return $replications;
+		// $event['name'] = $event['name'] . "huehue";
+		// return $new_event;
+	}
+//https://stackoverflow.com/questions/1532618/is-there-a-function-to-make-a-copy-of-a-php-array-to-another
+
+
+
+
+
+	//GET ALL THE EVENTS REPLICATED OVER TIME
+	function get_all_replicated(){
+		//first we get all the events
+		$all_events = $this->get_all();
+
+		// 			$inject = [
+		// 		"name" => "Pepito Perez"
+		// 	];
+
+		// array_push($all_events, $inject);
+		$replicated = array();
+
+		//we iterate over the array
+		foreach ($all_events as $event) {
+			//here we replicate the event N times depending on the event type
+			//and then we merge the replicated events with the current ones.
+			$replicated = array_merge($replicated,$this->replicate($event));
+		}
+
+		//return the array as an ArrayObject
+		return json_decode(json_encode($replicated,JSON_FORCE_OBJECT));
+
+	}
+
 }

@@ -102,25 +102,6 @@ function get_holidays($m){
                         <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_event_type/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add_new') . ' ' . lang('event') . ' ' . lang('type');?></a>
                     <?php } ?>  
                     
-                   <!--  <?php if(check_user_role(300)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_fiscal_event/'); ?>"><i class="fa fa-plus"></i> 
-                            <?php echo lang('add') . ' ' . lang('fiscal_event');?>
-                        </a>
-                    <?php } ?>	 -->
-
-
-                  <!--   <?php if(check_user_role(302)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_company_event/'); ?>"><i class="fa fa-plus"></i> 
-                            <?php echo lang('add') . ' ' . lang('company_event');?>
-                        </a>
-                    <?php } ?>   -->
-                
-
-                     <!-- <?php if(check_user_role(304)==1){?>
-                        <a class="btn btn-default" href="<?php echo site_url('admin/holidays/add_national_event/'); ?>"><i class="fa fa-plus"></i> 
-                            <?php echo lang('add') . ' ' . lang('national_event');?>
-                        </a>
-                    <?php } ?>   -->
 
                 </div>
             </div>  
@@ -147,67 +128,7 @@ function get_holidays($m){
      					  
      					</ul>
      				</div>
-                    <!-- aca empieza la tabla de la derecha (verde) -->
-<!--      				<div class="col-md-9">
-     					<div class="tab-content">
-     					 <?php $y=1; foreach($months as $new){ ?>   
-     					 <div id="<?php echo $y;?>" class="tab-pane <?php echo (date("m")==$new->id)?'active':''?>">
-     						<div class="box box-success box-solid">
-                            						<div class="box-header with-border">
-                            							<h3 class="box-title"> <i class="fa fa-calendar"></i> <?php echo $new->name?></h3>
-														
-
-                            						</div>
-										<?php 	
-												$months_holidays = get_holidays($new->id);
-                            			
-											//echo '<pre>';print_r($months_holidays);
-											//echo '/<pre>'
-										?>			<div class="box-body">
-                            							<div class="table-scrollable">
-                            								<table class="table table-hover">
-                            								<thead>
-																<tr>
-																	<th> # </th>
-																	<th> Date </th>
-																	<th> Occasion </th>
-																	<th> Day </th>
-																	<th> Action </th>
-																</tr>
-                            								</thead>
-                            								<tbody>
-                            								
-                                                               <?php if(isset($months_holidays)):?>  
-															     <?php $i=1;foreach ($months_holidays as $sub_new){
-																 if($sub_new['DayOfMonth']<=31 AND !empty($sub_new['DayOfMonth'])){
-																 ?>
-                                                                <tr>
-                                                                    <td> <?php echo $i;?> </td>
-                                                                    <td> <?php echo  date_convert(date("Y-".$new->id."-".$sub_new['DayOfMonth'].""));?></td>
-                                                                    <td> <?php echo (isset($sub_new['name']))?$sub_new['name']:'-' ?> </td>
-                                                                    <td> <?php 
-																			$date = date("Y-".$new->id."-".$sub_new['DayOfMonth']."");
-																			echo  date('D', strtotime($date));?> 
-																	</td>
-                                                                    <td>
-															<?php if(check_user_role(145)==1){?>		
-																	<?php if(isset($sub_new['id'])){?>
-                                                                        <a class="btn btn-danger" style="margin-left:20px;" href="<?php echo site_url('admin/holidays/delete/'.$new->id); ?>" onclick="return areyousure()"><i class="fa fa-trash"></i> </a>
-																	<?php } ?>	
-															<?php } ?>		
-                                                                    </td>
-                                                                 </tr>
-                                                                  <?php $i++; }} ?>                          								
-                            								</tbody>
-															<?php endif;?>
-                            								</table>
-                            							</div>
-                            						</div>
-                            	</div>
-     						</div>
- 				<?php $y++;} ?>		
-     					</div>
-                    </div> -->  <!-- aca termina la tabla de la derecha (verde)    -->
+                   
                      
                         <!-- THE CALENDAR -->
                     <div id="calendar" class="col-md-9 pull-center" style="margin-bottom: 20px;" ></div>
@@ -215,56 +136,18 @@ function get_holidays($m){
      			</div>
      			<!-- END PAGE CONTENT-->
 
+<?php 
+  var_dump(
+    $eventos_calendario
+);
+  echo "<hr>";
+  $eventos = $eventos_calendario;
+  foreach ($eventos as $evento) {
+    var_dump($evento->type_periodic);
+  }
+ ?>
      			
-     			<div id="static" class="modal fade" tabindex="-1" data-backdrop="static" data-keyboard="false">
-                								<div class="modal-dialog">
-                									<div class="modal-content">
-                										<div class="modal-header">
-                											<button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
-                											<h4 class="modal-title"><strong>Holidays</strong></h4>
-                										</div>
-                										<div class="modal-body">
-                											<div class="portlet-body form">
 
-                                                            						<!-- BEGIN FORM-->
-                                <form method="POST" action="http://froiden.cloudapp.net/hrm_demo/admin/holidays" accept-charset="UTF-8" class="form-horizontal "><input name="_token" type="hidden" value="Hc0WfGdaSPQn4GnW7gpyKWfrPJQYh9AbuAMDo2Oo">
-
-
-                                    <div class="form-body">
-
-                                        <div class="form-group">
-                                             <div class="col-md-6">
-                                                <input class="form-control form-control-inline input-medium date-picker" name="date[0]" type="text" value="" placeholder="Date">
-
-                                             </div>
-                                            <div class="col-md-6">
-                                                    <input class="form-control form-control-inline" type="text" name="occasion[0]" placeholder="Occasion">
-                                            </div>
-                                        </div>
-                                         <div id="insertBefore"></div>
-                                        <button type="button" id="plusButton" class="btn btn-sm green form-control-inline">
-                                                        Add More <i class="fa fa-plus"></i>
-                                        </button>
-
-                                 </div>
-
-                                <div class="form-actions">
-                                    <div class="row">
-                                        <div class="col-md-offset-3 col-md-9">
-                                            <button type="submit" data-loading-text="Submitting..." class="demo-loading-btn btn green"><i class="fa fa-check"></i> Submit</button>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                    </form>
-                                 <!-- END FORM-->
-                             </div>
-                                    </div>
-                                    <!-- END EXAMPLE TABLE PORTLET-->
-            </div>
-
-        </div>
-    </div>
                 </div>
 					
                 </div><!-- /.box-body -->
@@ -292,8 +175,9 @@ $(function() {
                 if (strlen($event->name) > 34) { //Names of the task will be limited to 34 characters
                     $event->name = substr($event->name, 0, 34).'...';
                 }
+
                 echo "{
-                title: '".$event->name."',
+                title: '".$event->name."---"."',
                 start: '".date('M d Y 12:00:00', strtotime($event->start_date))."',
                 end: '".date('M d Y 12:00:00', strtotime($event->end_date))."',
                 backgroundColor: '#3c8dbc',
@@ -374,8 +258,10 @@ $(function() {
                     events:[
                     
                     <?php 
-                          foreach ($holidays as $event)
+                          //eventos de la tabla
+                          foreach ($eventos_calendario as $event)
                               print_event($event);
+                          // eventos de la vista
                           foreach ($v_calendario as $v_event)
                               print_view($v_event);
                     ?>        
