@@ -330,19 +330,22 @@ INSERT INTO `acts` (`id`, `title`, `description`) VALUES
       `status` tinyint(1) NOT NULL DEFAULT 1,
       `company` tinyint(1) NOT NULL DEFAULT 0,
       `periodic` char(1) NOT NULL DEFAULT 'N',
-      `repeat`  int(10) NULL
+      `repeat`  int(10) NULL,
+		  `weekends` tinyint(1) NOT NULL DEFAULT 1
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
     --
     -- Volcado de datos para la tabla `event_type`
     --
 
 
-    INSERT INTO `event_type` (  `id` ,  `name` ,  `status` ,  `company` ,  `repeat`, `periodic`)
+		INSERT INTO `event_type` (  `id` ,  `name` ,  `status` ,  `company` ,  `repeat`, `periodic`)
         VALUES 
-    (1,'Evento Fiscal', 1, 1, NULL ,'M'),
-    (2,'Evento de la Empresa', 1, 1, 5, 'A'),
-    (3,'Evento Nacional', 1, 0, NULL, 'A');
+		(0,'Evento Casual', 1, 0, 0 ,'N'),
+		(1,'Evento Fiscal', 1, 1, 0 ,'M'),
+		(2,'Evento de la Empresa', 1, 1, 5, 'A'),
+		(3,'Evento Nacional', 1, 0, 0, 'A');
 
+  -- 'Evento Casual' ends up with an id of 4 when the AUTOINCREMENT is applied!
 
 --
 -- Estructura de tabla para la tabla `appointments`
@@ -3314,7 +3317,7 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT de la tabla `event_type`
 --
 ALTER TABLE `event_type`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `actions`

@@ -41,8 +41,10 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-4">
-                                    <label for="name" style="clear:both;"> <?php echo lang('name');?></label>
-                                    <input id="name" type="text" name="name" value="" class="form-control">
+                                    <div class="col-md-12">
+                                        <label for="name" style="clear:both;"> <?php echo lang('name');?></label>
+                                        <input id="name" type="text" name="name" value="" class="form-control">
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -82,16 +84,40 @@
                             </div> 
                             <div class="form-group">
                                     <div class="row">
-                                        <div class="col-md-2">
-                                            <select class="form-control" disabled name="periodic" id="periodic" class="range-options form-control chzn">
-                                                <option value="N" disabled selected>--Select Range--</option>
-                                                        <option value="W"><?php echo lang('weekly');?></option>
-                                                        <option value="M"><?php echo lang('monthly');?></option>
-                                                        <option value="A"><?php echo lang('annually');?></option>
-                                            </select>
+                                        <div class="col-md-4">
+                                            <div class="col-md-6">
+                                                <select class="form-control" disabled name="periodic" id="periodic" class="range-options form-control chzn">
+                                                    <option value="N">--Select Range--</option>
+                                                            <option value="W"><?php echo lang('weekly');?></option>
+                                                            <option value="M"><?php echo lang('monthly');?></option>
+                                                            <option value="A"><?php echo lang('annually');?></option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                             </div> 
+
+
+                            <div class="form-group">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="col-md-6">
+                                            <select class="form-control" disabled name="repeat_event" id="repeat_event" class="range-options form-control chzn">
+                                                    <option value="" selected>--Repeat--</option>
+                                                        <?php 
+                                                        for($i=1; $i < 21; $i++){
+                                                            echo '<option value="'.$i.'">'.$i.'</option>';
+                                                        }
+                                                        
+                                                        ?>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div> 
+
+
+
                             <div class="form-group">
                                     <div class="row">
                                         <div class="col-md-4">
@@ -107,14 +133,26 @@
                                             
                                         </div>
                                     </div>
-                             </div>   
+                             </div> 
+                             <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="col-md-6">
+                                            <label for="weekends">Fines de Semana</label>
+                                        </div>
+                                        <div class="col-md-1">
+                                                <input class="checkbox" id="weekends" type="checkbox" name="weekends" value="1" />
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>  
                         </div>
                         
                         
                     </div><!-- /.box-body -->
     
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary"><?php echo lang('save');?></button>
+                        <button type="submit" class="btn btn-primary" id="save"><?php echo lang('save');?></button>
                     </div>
              <?php form_close()?>
             </div><!-- /.box -->
@@ -125,15 +163,19 @@
 <script type="text/javascript">
  $(function() {
 
+
     //SWITCH FOR 'Select Time Range'
         // source:http://icheck.fronteed.com/#features  (see callbacks)
         $('#repeat').on('ifToggled', function(event){
 
           if ($('#periodic').prop("disabled") ) {
             $('#periodic').prop("disabled", false)
+            $('#repeat_event').prop("disabled", false)
           } else {
             $('#periodic').prop("disabled", true)
+            $('#repeat_event').prop("disabled", true)
           }
+
         });
 
 

@@ -34,12 +34,12 @@ class holiday_model extends CI_Model
 	function get_all()
 	{
 		// Query:
-		 // SELECT 
-		 // h.`name` as `name`, h.`description`, h.`start_date`, h.`end_date` , 
-		 // e.`periodic` as `type_periodic`, e.`repeat` as `event_repeat` , h.`type` , h.`status`, h.`company` 
-		 // from `holidays` h, `event_type` e 
-		 // WHERE
-		 // e.`id` = h.`type`;
+		// SELECT 
+		// h.`name` as `name`, h.`description`, h.`start_date`, h.`end_date` , 
+		// e.`periodic` as `type_periodic`, e.`repeat` as `event_repeat` , h.`type` , h.`status`, h.`company` , e.`weekends`
+		// from `holidays` h, `event_type` e 
+		// WHERE
+		// e.`id` = h.`type`;
 
 		$this->db->select(
 			'h.name as name, 
@@ -50,7 +50,8 @@ class holiday_model extends CI_Model
 			 e.repeat as event_repeat , 
 			 h.type , 
 			 h.status, 
-			 h.company');
+			 h.company,
+			 e.weekends');
 		$this->db->join('event_type e','e.id = h.type');
 
 			//return an array so that the cloning can be made by pushing an element into the array
@@ -196,7 +197,7 @@ class holiday_model extends CI_Model
 			//every event MUST have its start_date
 			//but does it have an end_date?
 			$end_date_flag = false;//assume it does not
-			if (!isset($event['end_date'])) {
+			if (isset($event['end_date'])) {
 				//Yes! it does
 				$end_date_flag = true; //change the flag value
 				//then the end_date must also be considered when replicating
@@ -211,42 +212,211 @@ class holiday_model extends CI_Model
 				$repeat = intval($event['event_repeat']);
 			}
 
+
 			//save the event type
-			$type = $event['type_periodic'];
+			$type_periodic = $event['type_periodic'];
 
 			// verify the event type
-			switch ($type) {
+			switch ($type_periodic) {
 				case 'N'://do not replicate
-					//therefore do nothing...
+
+				//if the day is Sunday (0) move it to friday or if Saturday (6), move it to monday
+				if($event['weekends'] == 0){
+					$dwS = date("w",strtotime($event['start_date']));//day of the week of start_date
+					$dwE = date("w",strtotime($event['end_date']));//day of the week of end_date
+					if($dwS == 0){
+						$event['start_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['start_date'])));
+					}else if($dwS == 6)
+						{
+							$event['start_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['start_date'])));						
+						}
+					if($dwE == 0){
+						$event['end_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['end_date'])));
+					}else if($dwE == 6)
+						{
+							$event['end_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['end_date'])));						
+						}
+				}
+
+				//just add it to the received array
+				array_push($replications, $event);
 					break;
 				case 'W'://replicate each week
-					for ($i=0; $i < $repeat; $i++) { 
-						//change the start_date
-	// ver: https://stackoverflow.com/questions/38738910/php-subtract-1-month-from-date-formated-with-date-m-y
-						// if($end_date_flag)
-						// {
-						// 	//change the end_date
 
+				//if the day is Sunday (0) move it to friday or if Saturday (6), move it to monday
+				if($event['weekends'] == 0){
+					$dwS = date("w",strtotime($event['start_date']));//day of the week of start_date
+					$dwE = date("w",strtotime($event['end_date']));//day of the week of end_date
+					if($dwS == 0){
+						$event['start_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['start_date'])));
+					}else if($dwS == 6)
+						{
+							$event['start_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['start_date'])));						
+						}
+					if($dwE == 0){
+						$event['end_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['end_date'])));
+					}else if($dwE == 6)
+						{
+							$event['end_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['end_date'])));						
+						}
+				}
+
+				array_push($replications, $event); //push the original date to the resulting array
+
+					for ($i=0; $i < ($repeat - 1); $i++) { //we leave the main date untouched, that why: $repeat - 1
+						//change the start_date
+						$event['start_date'] = date('Y-m-d',strtotime("+1 weeks",strtotime($event['start_date'])));
+
+						//if the day is Sunday (0) move it to friday or if Saturday (6), move it to monday
+						// if($event['weekends'] == 0){
+						// 	$dwS = date("w",strtotime($event['start_date']));//day of the week of start_date
+						// 	if($dwS == 0){
+						// 		$event['start_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['start_date'])));
+						// 	}else if($dwS == 6)
+						// 		{
+						// 			$event['start_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['start_date'])));						
+						// 		}
 						// }
+
+						if($end_date_flag)
+						{
+							//change the end_date
+							$event['end_date'] = date('Y-m-d',strtotime("+1 weeks",strtotime($event['end_date'])));
+							//if the day is Sunday (0) or Saturday (6), move it to monday
+							// if($event['weekends'] == 0){
+							// 	$dwS = date("w",strtotime($event['end_date']));//day of the week of end_date
+							// 	if($dwS == 0){
+							// 		$event['end_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['end_date'])));
+							// 	}else if($dwS == 6)
+							// 		{
+							// 			$event['end_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['end_date'])));						
+							// 		}
+							// }
+						}
 						//push to the $replications array
 						array_push($replications, $event);
 					}
+					
 					break;
 				case 'M'://replicate each month
-					for ($i=0; $i < $repeat; $i++) { 
-						//change the start_date
 
-						//push to the $replications array
-						array_push($replications, $event);
+
+				//if the day is Sunday (0) move it to friday or if Saturday (6), move it to monday
+				if($event['weekends'] == 0){
+					$dwS = date("w",strtotime($event['start_date']));//day of the week of start_date
+					$dwE = date("w",strtotime($event['end_date']));//day of the week of end_date
+					if($dwS == 0){
+						$event['start_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['start_date'])));
+					}else if($dwS == 6)
+						{
+							$event['start_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['start_date'])));						
+						}
+					if($dwE == 0){
+						$event['end_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['end_date'])));
+					}else if($dwE == 6)
+						{
+							$event['end_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['end_date'])));						
+						}
+				}
+
+
+				array_push($replications, $event); //push the original date to the resulting array
+
+				for ($i=0; $i < ($repeat - 1); $i++) { //we leave the main date untouched, that why: $repeat - 1
+					//change the start_date
+					$event['start_date'] = date('Y-m-d',strtotime("+1 months",strtotime($event['start_date'])));
+					
+
+						//if the day is Sunday (0) move it to friday or if Saturday (6), move it to monday
+						if($event['weekends'] == 0){
+							$dwS = date("w",strtotime($event['start_date']));//day of the week of start_date
+							if($dwS == 0){
+								$event['start_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['start_date'])));
+							}else if($dwS == 6)
+								{
+									$event['start_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['start_date'])));						
+								}
+						}
+
+
+
+					if($end_date_flag)
+					{
+						//change the end_date
+						$event['end_date'] = date('Y-m-d',strtotime("+1 months",strtotime($event['end_date'])));
+						if($event['weekends'] == 0){
+							$dwS = date("w",strtotime($event['end_date']));//day of the week of end_date
+							if($dwS == 0){
+								$event['end_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['end_date'])));
+							}else if($dwS == 6)
+								{
+									$event['end_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['end_date'])));						
+								}
+						}
 					}
+					//push to the $replications array
+					array_push($replications, $event);
+				}
 					break;	
 				case 'A'://replicate each year
-					for ($i=0; $i < $repeat; $i++) { 
-						//change the start_date
 
-						//push to the $replications array
-						array_push($replications, $event);
+
+				//if the day is Sunday (0) move it to friday or if Saturday (6), move it to monday
+				if($event['weekends'] == 0){
+					$dwS = date("w",strtotime($event['start_date']));//day of the week of start_date
+					$dwE = date("w",strtotime($event['end_date']));//day of the week of end_date
+					if($dwS == 0){
+						$event['start_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['start_date'])));
+					}else if($dwS == 6)
+						{
+							$event['start_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['start_date'])));						
+						}
+					if($dwE == 0){
+						$event['end_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['end_date'])));
+					}else if($dwE == 6)
+						{
+							$event['end_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['end_date'])));						
+						}
+				}
+
+
+				array_push($replications, $event); //push the original date to the resulting array
+				for ($i=0; $i < ($repeat - 1); $i++) { //we leave the main date untouched, that why: $repeat - 1
+					//change the start_date
+					$event['start_date'] = date('Y-m-d',strtotime("+1 years",strtotime($event['start_date'])));
+
+
+						//if the day is Sunday (0) move it to friday or if Saturday (6), move it to monday
+						if($event['weekends'] == 0){
+							$dwS = date("w",strtotime($event['start_date']));//day of the week of start_date
+							if($dwS == 0){
+								$event['start_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['start_date'])));
+							}else if($dwS == 6)
+								{
+									$event['start_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['start_date'])));						
+								}
+						}
+					
+
+
+
+					if($end_date_flag)
+					{
+						//change the end_date
+						$event['end_date'] = date('Y-m-d',strtotime("+1 years",strtotime($event['end_date'])));
+						if($event['weekends'] == 0){
+							$dwS = date("w",strtotime($event['end_date']));//day of the week of end_date
+							if($dwS == 0){
+								$event['end_date'] = date('Y-m-d',strtotime("+1 days",strtotime($event['end_date'])));
+							}else if($dwS == 6)
+								{
+									$event['end_date'] = date('Y-m-d',strtotime("-1 days",strtotime($event['end_date'])));						
+								}
+						}
 					}
+					//push to the $replications array
+					array_push($replications, $event);
+				}
 					break;												
 				default:
 					
@@ -263,7 +433,11 @@ class holiday_model extends CI_Model
 		// $event['name'] = $event['name'] . "huehue";
 		// return $new_event;
 	}
-//https://stackoverflow.com/questions/1532618/is-there-a-function-to-make-a-copy-of-a-php-array-to-another
+// https://stackoverflow.com/questions/1532618/is-there-a-function-to-make-a-copy-of-a-php-array-to-another
+// Changing dates:
+//  https://stackoverflow.com/questions/38738910/php-subtract-1-month-from-date-formated-with-date-m-y
+//  https://stackoverflow.com/questions/9875076/adding-three-months-to-a-date-in-php
+//  https://stackoverflow.com/questions/712761/how-to-find-day-of-week-in-php-in-a-specific-timezone
 
 
 

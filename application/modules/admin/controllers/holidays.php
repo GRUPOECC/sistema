@@ -54,9 +54,13 @@ function sortByOrder($a, $b) {
 				$save['name'] = $this->input->post('name');
 				$save['start_date'] = $this->input->post('start_date');
 				$save['end_date'] = $this->input->post('end_date');
+				if($save['end_date'] == ''){
+					$save['end_date'] = NULL;
+				}
 				$save['description'] = $this->input->post('description'); 
 				$save['type'] = $this->input->post('event_type');
 				$this->holiday_model->save($save);
+
                 $this->session->set_flashdata('message', lang('holiday saved'));
 				redirect('admin/holidays');
 			}
@@ -102,8 +106,13 @@ function sortByOrder($a, $b) {
             {
 				$save['name'] = $this->input->post('name');
 				$save['company'] = $this->input->post('company');
-				$save['periodic'] = $this->input->post('periodic');
+				$save['periodic'] = $this->input->post('periodic');;
+				// if($save['periodic'] == 0){
+				// 	$save['periodic'] = 'N';
+				// }
 				$save['status'] = $this->input->post('status');
+				$save['weekends'] = $this->input->post('weekends');
+				$save['repeat'] = $this->input->post('repeat_event');
 
 				$this->holiday_model->save_event_type($save);
                 $this->session->set_flashdata('message', lang('event_type_added'));

@@ -143,7 +143,7 @@ function get_holidays($m){
   echo "<hr>";
   $eventos = $eventos_calendario;
   foreach ($eventos as $evento) {
-    var_dump($evento->type_periodic);
+    var_dump($evento->name);
   }
  ?>
      			

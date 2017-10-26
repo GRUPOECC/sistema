@@ -102,7 +102,8 @@
                                                     <div class="col-md-8">
                                                         <label for="event_type"><?php echo lang('event') . ' ' . lang('type');?></label>                   
                                                          <select name="event_type" id="event_type" class="range-options form-control chzn">
-                                                            <option value="0" >--None (Casual Event)--</option>
+                                                         <!-- The casual event is added by default as a type -->
+                                                            <option value="4" >--None (Casual Event)--</option>
 
                                                             <?php foreach ($event_types as $event): ?>
                                                                 <option value="<?php echo $event->id;?>" >
@@ -195,7 +196,7 @@
 
     
                     <div class="box-footer">
-                        <button type="submit" class="btn btn-primary"><?php echo lang('save');?></button>
+                        <button type="submit" class="btn btn-primary" id="save"><?php echo lang('save');?></button>
                     </div>
              <?php form_close()?>
             </div><!-- /.box -->
@@ -358,8 +359,23 @@
                     //         ],
                     calendarProperties
                 };
+        
+        //verify empty Start Date
+        // $('#end_date').focusout(function(){
+        //     // if($(this).val() == ""){
+        //         console.log($(this).val());
+        //         // $(this).val() = $('#start_date').val();
+        //     // }
+        // });
 
+        // $('#save').click(function(){
+            
+        //     if($('#end_date').val() == ""){
+        //         console.log('empty');
+        //         alert('hola');
 
+        //     }
+        // });
 
 
        $('#calendar').fullCalendar(
