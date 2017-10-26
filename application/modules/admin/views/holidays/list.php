@@ -136,7 +136,7 @@ function get_holidays($m){
      			</div>
      			<!-- END PAGE CONTENT-->
 
-<?php 
+<!-- <?php 
   var_dump(
     $eventos_calendario
 );
@@ -145,7 +145,7 @@ function get_holidays($m){
   foreach ($eventos as $evento) {
     var_dump($evento->name);
   }
- ?>
+ ?> -->
      			
 
                 </div>
