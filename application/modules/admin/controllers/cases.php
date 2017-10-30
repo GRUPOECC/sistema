@@ -1896,7 +1896,7 @@ class cases extends MX_Controller {
             	$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
 				$titulogenerado = $save['title'];
 			   
-				$save['case_no'] = $this->department_model->get_alias($this->input->post('departamento_id')) .'-000'. (string)(((int)$this->cases_model->getLastId())+1);
+				
 				//$save['client_id'] = $this->input->post('client_id');
 				$save['client_id'] = $this->input->post('employee_id');
 				//$save['location_id'] = $this->input->post('location_id');
@@ -1916,8 +1916,8 @@ class cases extends MX_Controller {
 				$save['due_date'] = $this->input->post('due_date');
 
                  foreach($this->input->post('location_id') as $val) {
-
-
+                    $titulogenerado = $save['title'];
+                    $save['case_no'] = $this->department_model->get_alias($this->input->post('departamento_id')) .'-000'. (string)(((int)$this->cases_model->getLastId())+1);
                     $p_key = $this->cases_model->save($val,$save);
                     $reply = $this->input->post('reply');
 						if(!empty($reply)){

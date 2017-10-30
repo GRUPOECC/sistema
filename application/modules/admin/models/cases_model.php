@@ -167,8 +167,9 @@ class cases_model extends CI_Model
 	function get_all()
 	{
 			$this->db->where('C.is_archived',0);
-			$this->db->select('C.*,U.name client');
+			$this->db->select('C.*,U.name client,E.name empresa');
 			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
+			$this->db->join('empresas E', 'E.id = C.empresa_id', 'LEFT');
 			return $this->db->get('cases C')->result();
 	}
 	
