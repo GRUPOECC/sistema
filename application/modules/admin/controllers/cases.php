@@ -1858,7 +1858,7 @@ class cases extends MX_Controller {
         $admin2 = $this->session->userdata('admin');
 		$id = $admin2['id'];
 		$data['empleado']		 = $this->employees_model->get($id);
-		$data['empresas'] 		    = $this->employees_model->get_empresas_all($id);
+		$data['empresas'] 		    = $this->employees_model->get_empresas_todas($id);
 		$data['stages'] 		 = $this->case_stage_model->get_all();
 		$data['acts'] 			 = $this->cases_model->get_all_acts();
 		$data['depts']			 = $this->cases_model->get_all_depts();

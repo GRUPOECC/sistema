@@ -88,6 +88,12 @@ class employees_model extends CI_Model
 			return $this->db->get('empresas E')->result();
 	}
 
+	function get_empresas_todas(){
+    	    $this->db->select('E.*,E.name compania,E.id idempresa');
+    	    $this->db->where("status",1);
+			return $this->db->get('empresas E')->result();
+	}
+
 
 
 	function get_empresa($id){
