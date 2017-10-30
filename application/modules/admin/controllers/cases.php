@@ -2048,7 +2048,7 @@ class cases extends MX_Controller {
             {
             	$admin = $this->session->userdata('admin');
             	$save['created_by'] = $admin['id'];
-			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+			    //$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
 				$save['case_no'] = $data['case']->case_no;
 				$save['client_id'] = $this->input->post('client_id');
 				//$save['location_id'] = $this->input->post('location_id');
@@ -2065,7 +2065,7 @@ class cases extends MX_Controller {
 				$save['start_date'] = date('Y-m-d H:i:s');
 				$save['progress'] = $this->input->post('progress');
 				$save['due_date'] = $this->input->post('due_date');
-                $titulogenerado = $save['title']; 
+                //$titulogenerado = $save['title']; 
 				//$save['o_lawyer'] = $this->input->post('o_lawyer');
 				//$save['fees'] = $this->input->post('fees');
 	
@@ -2082,9 +2082,10 @@ class cases extends MX_Controller {
                                 //------Area para la creacion del Titulo------------------------
 								//-------------------------------------------------------------------------
 								//Obteniendo categoria:
+								/*
 								$categoria = $this->case_category_model->get_category_by_id($this->input->post('case_category_id'));
 								$compania = $this->employees_model->get_infoempresa($val);
-							
+							    
 								if($categoria->title_format!=""){
 				                  $contenedor = str_replace("empresa.name",$compania->name,$categoria->title_format);
 				                  $contenedor = str_replace("empresa.code",$compania->cod_interno,$contenedor);
@@ -2096,6 +2097,7 @@ class cases extends MX_Controller {
 								 }else{
                                      $titulogenerado = $titulogenerado. " - ". $val2;
 								 }
+								*/
 							 	//------------------------------------------------------------------------- 
 								$save_fields = array(
 									'custom_field_id'=> $key,
@@ -2108,9 +2110,9 @@ class cases extends MX_Controller {
 							}	
 						}
                            //Generado titulo dinamico: 
-						   $savetitle = array();
-						   $savetitle['title'] = $titulogenerado; 
-						   $this->cases_model->update($val,$savetitle,$id);
+						   //$savetitle = array();
+						   //$savetitle['title'] = $titulogenerado; 
+						   //$this->cases_model->update($val,$savetitle,$id);
                             
 
 						  // $url =base_url('assets/uploads/tareas/');
