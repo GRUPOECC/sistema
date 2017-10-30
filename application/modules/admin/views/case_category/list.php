@@ -39,8 +39,8 @@ function areyousure()
                         <thead>
                             <tr>
                                 <th><?php echo lang('serial_number');?></th>
-								<th><?php echo lang('name');?></th>
                                 <th><?php echo lang('department');?></th>
+                                <th><?php echo lang('name');?></th>
 								<th width="20%"><?php echo lang('action');?></th>
                             </tr>
                         </thead>
@@ -50,8 +50,8 @@ function areyousure()
                             <?php $i=1;foreach ($categories as $new){?>
                                 <tr class="gc_row">
                                     <td><?php echo $i?></td>
+                                    <td><?php echo $new->parent?></td>
                                     <td><?php echo $new->name?></td>
-                                    <td><?php echo @$new->parent?></td>
 									
                                     <td>
                                         <div class="btn-group">

@@ -2021,7 +2021,7 @@ class cases extends MX_Controller {
         $admin2 = $this->session->userdata('admin');
 		$id2 = $admin2['id'];
 		$data['empleado']		 = $this->employees_model->get($id2);
-		$data['empresas'] 		    = $this->employees_model->get_empresas_all();
+		$data['empresas'] 		    = $this->employees_model->get_empresas_todas($id);
 		$data['empleados'] 		    = $this->employees_model->get_all();
 		$data['departamentos']		= $this->department_model->get_all();
 		$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
