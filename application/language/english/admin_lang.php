@@ -133,7 +133,7 @@ $lang['user_account']		= "User Account";
 $lang['user_profile']		= "User Profile";
 $lang['case_number']		= "Case No";
 $lang['court_category']		= "Court Category";
-$lang['case_category']		= "Case Catégorie";
+$lang['case_category']		= "Case Category";
 $lang['payment_date']		= "Payment Date";
 $lang['custom_fields']		= "Custom Fields";
 $lang['field_add']	     	= "Add Aditional Field";
@@ -492,6 +492,8 @@ $lang['case_study_deleted']			= "Case Study Deleted";
 $lang['attachments_saved']				= "Attachments Saved";
 $lang['attachments_deleted']				= "Attachments Deleted";
 $lang['format']				= "Format";
+$lang['formattitle'] 		= "Title Format (optional)";
+
 
 $lang['details']			= "Details";
 $lang['hr_settings']			= "HR Settings";
@@ -608,3 +610,50 @@ $lang['date_out'] = "Date & Time OUT";
 $lang['badge'] = "Pass #";
 $lang['select_visitor'] = "Select Visitor or Add";
 $lang['select_who_visit'] = "Select who visit";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MODULO PUBLICIDAD
+//PARRILLAS
+$lang['pilar'] = "pilar";
+$lang['pilares'] = "pilares";
+$lang['medio'] = "medio";
+$lang['medios'] = "medios";
+$lang['campana'] = "campaña";
+$lang['agente'] = "agente";
+$lang['copy'] = "copy";
+$lang['etiquetas'] = "etiquetas";
+$lang['fecha_pub'] = "fecha publicacion";
+$lang['cliente'] = "cliente";
+$lang['clientes'] = "clientes";
+
+
+
+
+$lang['Pilar'] = "Pilar";
+$lang['Pilares'] = "Pilares";
+$lang['Medio'] = "Medio";
+$lang['Medios'] = "Medios";
+$lang['Campana'] = "Campaña";
+$lang['Agente'] = "Agente";
+$lang['Copy'] = "Copy";
+$lang['Etiquetas'] = "Etiquetas";
+$lang['Fecha_pub'] = "Fecha publicacion";
+$lang['Cliente'] = "Cliente";
+$lang['Clientes'] = "Clientes";

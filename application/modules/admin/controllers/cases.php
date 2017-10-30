@@ -979,7 +979,7 @@ class cases extends MX_Controller {
 										echo '
 										<div class="form-group">
 				                              <div class="row">
-				                                <div class="col-md-4">
+				                                <div class="col-md-12">
 				                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
 											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
 											</div>
@@ -989,7 +989,7 @@ class cases extends MX_Controller {
 	                                   echo '
 											<div class="form-group">
 					                              <div class="row">
-					                                <div class="col-md-4">
+					                                <div class="col-md-12">
 					                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
 												<input type="text" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
 												</div>
@@ -1007,7 +1007,7 @@ class cases extends MX_Controller {
 		                        echo '
 							    <div class="form-group">
 		                              <div class="row">
-		                                <div class="col-md-4">
+		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
 									<select name="reply['. $doc->id .']" class="form-control">';
 										
@@ -1029,7 +1029,7 @@ class cases extends MX_Controller {
 		                         echo '
 							    <div class="form-group">
 		                              <div class="row">
-		                                <div class="col-md-4">
+		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'. $doc->name .'?></label>';
 												foreach($values as $key=>$val) {
 												echo ' 
@@ -1048,7 +1048,7 @@ class cases extends MX_Controller {
 								echo '
 						<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>';					
 										foreach($values as $key=>$val) { 
 										echo '
@@ -1066,7 +1066,7 @@ class cases extends MX_Controller {
                              echo '
 						  	<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
 										<textarea class="form-control" name="reply['. $doc->id .' ]" ></textarea		
 								></div>
@@ -1081,7 +1081,7 @@ class cases extends MX_Controller {
                              echo '
 						  	<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
 										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" />
 							    </div>
@@ -1118,7 +1118,7 @@ class cases extends MX_Controller {
                              echo '
 						  	<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
 										<select name="reply['. $doc->id .']" class="form-control">';		
 												echo '	
@@ -1193,7 +1193,7 @@ class cases extends MX_Controller {
 										echo '
 										<div class="form-group">
 				                              <div class="row">
-				                                <div class="col-md-4">
+				                                <div class="col-md-12">
 				                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
 											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
 											</div>
@@ -1204,7 +1204,7 @@ class cases extends MX_Controller {
 								echo '
 								<div class="form-group">
 		                              <div class="row">
-		                                <div class="col-md-4">
+		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
 									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
 										</div>
@@ -1220,7 +1220,7 @@ class cases extends MX_Controller {
 		                        echo '
 							    <div class="form-group">
 		                              <div class="row">
-		                                <div class="col-md-4">
+		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
 									<select name="reply['. $doc->id .']" class="form-control">';
 										
@@ -1242,7 +1242,7 @@ class cases extends MX_Controller {
 		                         echo '
 							    <div class="form-group">
 		                              <div class="row">
-		                                <div class="col-md-4">
+		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'. $doc->name .'?></label>';
 												foreach($values as $key=>$val) {
 												echo ' 
@@ -1261,7 +1261,7 @@ class cases extends MX_Controller {
 								echo '
 						<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>';					
 										foreach($values as $key=>$val) { 
 										echo '
@@ -1279,7 +1279,7 @@ class cases extends MX_Controller {
                              echo '
 						  	<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
 										<textarea class="form-control" name="reply['. $doc->id .' ]" ></textarea		
 								></div>
@@ -1293,7 +1293,7 @@ class cases extends MX_Controller {
                              echo '
 						  	<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
 										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
 							    </div>
@@ -1330,7 +1330,7 @@ class cases extends MX_Controller {
                              echo '
 						  	<div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
 										<select name="reply['. $doc->id .']" class="form-control">';		
 												echo '	
@@ -1858,7 +1858,7 @@ class cases extends MX_Controller {
         $admin2 = $this->session->userdata('admin');
 		$id = $admin2['id'];
 		$data['empleado']		 = $this->employees_model->get($id);
-		$data['empresas'] 		    = $this->employees_model->get_empresas_all($id);
+		$data['empresas'] 		    = $this->employees_model->get_empresas_todas($id);
 		$data['stages'] 		 = $this->case_stage_model->get_all();
 		$data['acts'] 			 = $this->cases_model->get_all_acts();
 		$data['depts']			 = $this->cases_model->get_all_depts();
@@ -1893,10 +1893,9 @@ class cases extends MX_Controller {
             {
             	$admin = $this->session->userdata('admin');
             	$save['created_by'] = $admin['id'];
-            	
-			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
-
-
+            	$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+				$titulogenerado = $save['title'];
+			   
 				$save['case_no'] = $this->department_model->get_alias($this->input->post('departamento_id')) .'-000'. (string)(((int)$this->cases_model->getLastId())+1);
 				//$save['client_id'] = $this->input->post('client_id');
 				$save['client_id'] = $this->input->post('employee_id');
@@ -1915,7 +1914,7 @@ class cases extends MX_Controller {
 				$save['description'] = $this->input->post('description');
 				$save['start_date'] = date('d-m-Y H:i:s');
 				$save['due_date'] = $this->input->post('due_date');
-			 	$titulogenerado = $save['title']; 
+
                  foreach($this->input->post('location_id') as $val) {
 
 
@@ -1923,8 +1922,26 @@ class cases extends MX_Controller {
                     $reply = $this->input->post('reply');
 						if(!empty($reply)){
 							$save_fields = array();
+							$numero=1; 
 							foreach($this->input->post('reply') as $key => $val2) {
-                              $titulogenerado = $titulogenerado. " - ". $val2; 
+                              	//------Area para la creacion del Titulo------------------------
+								//-------------------------------------------------------------------------
+								//Obteniendo categoria:
+								$categoria = $this->case_category_model->get_category_by_id($this->input->post('case_category_id'));
+								$compania = $this->employees_model->get_infoempresa($val);
+							
+								if($categoria->title_format!=""){
+				                  $contenedor = str_replace("empresa.name",$compania->name,$categoria->title_format);
+				                  $contenedor = str_replace("empresa.code",$compania->cod_interno,$contenedor);
+				                  $contenedor = str_replace("campo.".(string)$numero,$val2,$contenedor);
+				                  $contenedor = str_replace("fecha.now",date('d-m-Y'),$contenedor);
+				                  $contenedor = str_replace("fecha.end",$this->input->post('due_date'),$contenedor);
+				                  $contenedor = str_replace("category.name",$categoria->name,$contenedor);
+				                  $titulogenerado = $contenedor;
+								 }else{
+                                     $titulogenerado = $titulogenerado. " - ". $val2;
+								 }
+							 	//------------------------------------------------------------------------- 
 								$save_fields = array(
 									'custom_field_id'=> $key,
 									'reply'=> $val2,
@@ -1932,8 +1949,10 @@ class cases extends MX_Controller {
 									'form'=> ((int)("10".$this->input->post('case_category_id')))
 								);	
 								$this->custom_field_model->save_answer($save_fields);
+								$numero = $numero + 1;
 							}	
 						}
+
                           //Generado titulo dinamico: 
 						   $savetitle = array();
 						   $savetitle['title'] = $titulogenerado; 
@@ -2002,7 +2021,7 @@ class cases extends MX_Controller {
         $admin2 = $this->session->userdata('admin');
 		$id2 = $admin2['id'];
 		$data['empleado']		 = $this->employees_model->get($id2);
-		$data['empresas'] 		    = $this->employees_model->get_empresas_all();
+		$data['empresas'] 		    = $this->employees_model->get_empresas_todas($id);
 		$data['empleados'] 		    = $this->employees_model->get_all();
 		$data['departamentos']		= $this->department_model->get_all();
 		$data['case_categories'] 	= $this->cases_model->get_all_case_categories();
@@ -2029,7 +2048,7 @@ class cases extends MX_Controller {
             {
             	$admin = $this->session->userdata('admin');
             	$save['created_by'] = $admin['id'];
-			    $save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
+			    //$save['title'] ='Ticket para notificar '.$this->cases_model->get_all_case_categories_id($this->input->post('case_category_id'));
 				$save['case_no'] = $data['case']->case_no;
 				$save['client_id'] = $this->input->post('client_id');
 				//$save['location_id'] = $this->input->post('location_id');
@@ -2046,7 +2065,7 @@ class cases extends MX_Controller {
 				$save['start_date'] = date('Y-m-d H:i:s');
 				$save['progress'] = $this->input->post('progress');
 				$save['due_date'] = $this->input->post('due_date');
-                $titulogenerado = $save['title']; 
+                //$titulogenerado = $save['title']; 
 				//$save['o_lawyer'] = $this->input->post('o_lawyer');
 				//$save['fees'] = $this->input->post('fees');
 	
@@ -2060,7 +2079,26 @@ class cases extends MX_Controller {
 							$save_fields = array();
 							$this->custom_field_model->delete_answer($id,(int)("10".$this->input->post('case_category_id')));
 							foreach($this->input->post('reply') as $key => $val2) {
-                                $titulogenerado = $titulogenerado. " - ". $val2; 
+                                //------Area para la creacion del Titulo------------------------
+								//-------------------------------------------------------------------------
+								//Obteniendo categoria:
+								/*
+								$categoria = $this->case_category_model->get_category_by_id($this->input->post('case_category_id'));
+								$compania = $this->employees_model->get_infoempresa($val);
+							    
+								if($categoria->title_format!=""){
+				                  $contenedor = str_replace("empresa.name",$compania->name,$categoria->title_format);
+				                  $contenedor = str_replace("empresa.code",$compania->cod_interno,$contenedor);
+				                  $contenedor = str_replace("campo.".(string)$numero,$val2,$contenedor);
+				                  $contenedor = str_replace("fecha.now",date('d-m-Y'),$contenedor);
+				                  $contenedor = str_replace("fecha.end",$this->input->post('due_date'),$contenedor);
+				                  $contenedor = str_replace("category.name",$categoria->name,$contenedor);
+				                  $titulogenerado = $contenedor;
+								 }else{
+                                     $titulogenerado = $titulogenerado. " - ". $val2;
+								 }
+								*/
+							 	//------------------------------------------------------------------------- 
 								$save_fields = array(
 									'custom_field_id'=> $key,
 									'reply'=> $val2,
@@ -2072,9 +2110,9 @@ class cases extends MX_Controller {
 							}	
 						}
                            //Generado titulo dinamico: 
-						   $savetitle = array();
-						   $savetitle['title'] = $titulogenerado; 
-						   $this->cases_model->update($val,$savetitle,$id);
+						   //$savetitle = array();
+						   //$savetitle['title'] = $titulogenerado; 
+						   //$this->cases_model->update($val,$savetitle,$id);
                             
 
 						  // $url =base_url('assets/uploads/tareas/');

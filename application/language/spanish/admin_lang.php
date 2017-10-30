@@ -138,7 +138,7 @@ $lang['user_account']		= "cuentas de usuario";
 $lang['user_profile']		= "perfil de usuario";
 $lang['case_number']		= "Ticket n";
 $lang['court_category']		= "Corte Categoría";
-$lang['case_category']		= "Ticket Catégorie";
+$lang['case_category']		= "Ticket Categoría";
 $lang['payment_date']		= "Fecha de Pago";
 $lang['custom_fields']		= "Custom Fields";
 $lang['field_add']	     	= "Agregar Campos Adicionales";
@@ -503,6 +503,7 @@ $lang['attachments_saved']				= "adjuntos guardados";
 $lang['attachments_deleted']				= "adjuntos eliminados";
 
 $lang['format']				= "Formato";
+$lang['formattitle'] 		= "Formato del titulo (opcional)";
 
 
 $lang['details']			= "Detalles";
@@ -607,6 +608,33 @@ $lang['select_who_visit'] = "Seleccione a quien visita";
 
 
 
+// MODULO PUBLICIDAD
+//PARRILLAS
+$lang['pilar'] = "pilar";
+$lang['pilares'] = "pilares";
+$lang['medio'] = "medio";
+$lang['medios'] = "medios";
+$lang['campana'] = "campaña";
+$lang['agente'] = "agente";
+$lang['copy'] = "copy";
+$lang['etiquetas'] = "etiquetas";
+$lang['fecha_pub'] = "fecha publicacion";
+$lang['cliente'] = "cliente";
+$lang['clientes'] = "clientes";
 
+
+
+
+$lang['Pilar'] = "Pilar";
+$lang['Pilares'] = "Pilares";
+$lang['Medio'] = "Medio";
+$lang['Medios'] = "Medios";
+$lang['Campana'] = "Campaña";
+$lang['Agente'] = "Agente";
+$lang['Copy'] = "Copy";
+$lang['Etiquetas'] = "Etiquetas";
+$lang['Fecha_pub'] = "Fecha publicacion";
+$lang['Cliente'] = "Cliente";
+$lang['Clientes'] = "Clientes";
 
 

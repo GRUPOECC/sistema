@@ -37,38 +37,14 @@
         <!-- left column -->
         <div class="col-md-12">
             <!-- general form elements -->
-            <div class="box box-primary" style="height: 600px;">
+            <div class="box box-primary" style="height: 900px;">
                 <div class="box-header">
                     <h3 class="box-title"><?php echo lang('edit');?></h3>
                 </div><!-- /.box-header -->
                 <!-- form start <?php echo form_open_multipart('admin/case_category/edit/'.$id); ?>-->
 				        
 
-
-                 <div style="margin-top: 0px; margin-left: 500px; z-index: 2; position: absolute;" class="col-md-9">
-                            <div class="form-group">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <label for="name" style="clear:both;"><?php echo lang('add_field');?>  </label>
-                                         <input type="Checkbox" id="adicion" name="adicion" value="1">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div id="adicional">
-                                   <div class="row">
-                                    <form id="formulario" method="post" action="<?php echo site_url('admin/case_category/addField/'.$id); ?>">               
-                                   <div id="opciones"  class="col-md-8">
-                                      
-                                   </div>
-                                   </form>
-                                   </div>
-                            </div>
-                 </div>
-
-
-	
-                    
+                  <div class="col-md-6">  
                     <form id="formulario" method="post" action="<?php echo site_url('admin/case_category/edit/'.$id); ?>">
 
                     <div class="box-body">
@@ -76,7 +52,7 @@
                      
                         <div class="form-group">
                         	<div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="name" style="clear:both;"><?php echo lang('category_name');?> </label>
 									<input type="text" name="name" value="<?php echo $category->name?>" class="form-control">
                                 </div>
@@ -87,7 +63,7 @@
 			   			
                         <div class="form-group">
                               <div class="row">
-                                <div class="col-md-4">
+                                <div class="col-md-12">
                                     <label for="email" style="clear:both;"><?php echo lang('parent');?> <?php echo lang('department');?></label>
 									<select name="parent_id" class="form-control chzn">
 										<option value="">--<?php echo lang('select');?> <?php echo lang('department');?>---</option>
@@ -99,6 +75,32 @@
 										
 										?>
 									</select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="name" style="clear:both;"><?php echo lang('formattitle');?> </label>
+                                    <input type="text" name="titulo" value="<?php echo $category->title_format?>" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="name" style="clear:both;"><a href="#" onclick="mostrarclaves()">Ver Palabras clave</a></label>
+                                    <div id="listaclaves">
+                                    <ul>
+                                        <li type="square">[empresa.name] - Indica nombre de la empresa</li>
+                                        <li type="square">[empresa.code] - Indica código de la empresa</li>
+                                        <li type="square">[campo.#] - Indica valor de campo dinámico #</li>
+                                        <li type="square">[fecha.now] - Indica la fecha de creación del ticket</li>
+                                        <li type="square">[fecha.end] - Indica la fecha de finalización del ticket</li>
+                                        <li type="square">[category.name] - Indica nombre de la categoria</li>
+                                    </ul>
+                                    <strong>Ejemplo:</strong> Ticket de la empresa <strong>empresa.name</strong> en la fecha <strong>fecha.now</strong> para el periodo <strong>campo.1</strong>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -137,7 +139,28 @@
                     </div>
               </form>
                
-               
+               </div>
+                   <div class="col-md-6">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="name" style="clear:both;"><?php echo lang('add_field');?>  </label>
+                                         <input type="Checkbox" id="adicion" name="adicion" value="1">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="adicional">
+                                   <div class="row">
+                                    <form id="formulario" method="post" action="<?php echo site_url('admin/case_category/addField/'.$id); ?>">               
+                                   <div id="opciones"  class="col-md-12">
+                                      
+                                   </div>
+                                   </form>
+                                   </div>
+                            </div>
+                 </div>
+
                        
 
             </div><!-- /.box -->
@@ -340,4 +363,21 @@ $(document).on('change', '#alfabetico', function(){
 $('#adicional').hide();
 $('#formato').hide();
 $('#limitaciones').show();
+</script>
+<script>
+ var suiche=0;
+ document.getElementById('listaclaves').style.display = 'none';
+    function mostrarclaves(){
+          
+          if(suiche==0) {
+              document.getElementById('listaclaves').style.display = 'block';
+              suiche=1; 
+          }else{
+              document.getElementById('listaclaves').style.display = 'none';
+              suiche=0; 
+          }
+
+    }
+
+
 </script>

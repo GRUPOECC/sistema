@@ -30,7 +30,7 @@ class case_category_model extends CI_Model
 	{
 		$this->db->order_by('C1.name','ASC');
 		$this->db->select('C1.*,C2.name parent');
-		$this->db->join('case_categories C2', 'C2.id = C1.parent_id', 'LEFT');
+		$this->db->join('departments C2', 'C2.id = C1.parent_id', 'LEFT');
 		return $this->db->get('case_categories C1')->result();
 	}
 
