@@ -124,7 +124,7 @@ function areyousure()
 								<th width="8%"><?php echo lang('star')?></th>
 								<th><?php echo lang('case')?> <?php echo lang('title')?></th>
 								<th><?php echo lang('case')?> <?php echo lang('number')?></th>
-								<th><?php echo lang('client')?></th>
+								<th><?php echo lang('company')?></th>
 								<th width="20%"><?php echo lang('action')?></th>
                             </tr>
                         </thead>
@@ -152,7 +152,7 @@ function areyousure()
 									</td>
                                     <td><?php echo $new->title?></td>
 								    <td><?php echo $new->case_no?></td>
-									<td><?php echo $new->client?></td>
+									<td><?php echo $new->empresa?></td>
 									
                                     <td width="53%">
 								<?php if(check_user_role(7)==1){?>		
