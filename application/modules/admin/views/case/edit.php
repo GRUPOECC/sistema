@@ -215,7 +215,7 @@
                                 	<b><?php echo lang('case')?> <?php echo lang('category')?>*</b>
 								</div>
 								<div class="col-md-4">
-                <div id="casecategory_result">
+                                  <div id="casecategory_result">
                                     <select id="categorias" name="case_category_id" class="chzn col-md-12" >
 										<?php foreach($case_categories as $new) {
 											$sel = ''; 
@@ -228,7 +228,7 @@
 										
 										?>
 									</select>
-                  </div>
+                                  </div>
                                 </div>
                             </div>
                         </div>

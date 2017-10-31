@@ -1195,7 +1195,7 @@ class cases extends MX_Controller {
 				                              <div class="row">
 				                                <div class="col-md-12">
 				                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
 											</div>
 				                            </div>
 				                        </div>';
@@ -1206,7 +1206,7 @@ class cases extends MX_Controller {
 		                              <div class="row">
 		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
 										</div>
 		                            </div>
 		                        </div>';
@@ -1295,7 +1295,7 @@ class cases extends MX_Controller {
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
-										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field((int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
 							    </div>
                             </div>
                         </div>

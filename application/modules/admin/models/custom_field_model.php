@@ -35,9 +35,10 @@ class custom_field_model extends CI_Model
 			return $this->db->get('custom_fields')->result();
 	}
 
-	function get_custom_field($id,$form){
+	function get_custom_field($custom,$id,$form){
 			$this->db->where('table_id',$id);
 			$this->db->where('form',$form);
+			$this->db->where('custom_field_id',$custom);
 			return $this->db->get('rel_form_custom_fields')->row()->reply;
 	}
 	
