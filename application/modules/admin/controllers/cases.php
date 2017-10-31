@@ -1927,22 +1927,26 @@ class cases extends MX_Controller {
 						if(!empty($reply)){
 							$save_fields = array();
 							$numero=1; 
-							foreach($this->input->post('reply') as $key => $val2) {
-                              	//------Area para la creacion del Titulo------------------------
-								//-------------------------------------------------------------------------
-								//Obteniendo categoria:
-								$categoria = $this->case_category_model->get_category_by_id($this->input->post('case_category_id'));
-								$compania = $this->employees_model->get_infoempresa($val);
+							//Obteniendo categoria:
+							$categoria = $this->case_category_model->get_category_by_id($this->input->post('case_category_id'));
+							$compania = $this->employees_model->get_infoempresa($val);
 							
+							foreach($this->input->post('reply') as $key => $val2) {
+                              	//---------------------Area para la creacion del Titulo--------------------
+								//-------------------------------------------------------------------------						
 								if($categoria->title_format!=""){
-				                  $contenedor = str_replace("empresa.name",$compania->name,$categoria->title_format);
+								  $campo = "campo.".(string)$numero; 
+								  if($numero==1)
+								  $titulogenerado = $categoria->title_format;
+				                  $contenedor = str_replace("empresa.name",$compania->name,$titulogenerado);
 				                  $contenedor = str_replace("empresa.code",$compania->cod_interno,$contenedor);
-				                  $contenedor = str_replace("campo.".$numero,$val2,$contenedor);
+				                  $contenedor = str_replace($campo,$val2,$contenedor);
 				                  $contenedor = str_replace("fecha.now",date('d-m-Y'),$contenedor);
 				                  $contenedor = str_replace("fecha.end",$this->input->post('due_date'),$contenedor);
 				                  $contenedor = str_replace("category.name",$categoria->name,$contenedor);
 				                  $titulogenerado = $contenedor;
 								 }else{
+
                                      $titulogenerado = $titulogenerado. " - ". $val2;
 								 }
 							 	//------------------------------------------------------------------------- 
