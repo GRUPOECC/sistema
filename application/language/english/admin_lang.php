@@ -146,6 +146,7 @@ $lang['values']		= "Values";
 $lang['mail_to_client']		= "Mail To Client";
 $lang['generate_pdf']		= "Generate Pdf";
 $lang['print']				= "Print";
+
 $lang['previous']			= "← Previous";
 
 $lang['custom_required'] = "%s can not be blank.";

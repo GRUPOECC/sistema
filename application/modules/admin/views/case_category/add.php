@@ -199,6 +199,16 @@
                                     <input type="text" name="namefield" value="" class="form-control">
                                 </div>
                             </div>
+                            <div class="row">
+
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('custom_required')?></b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                        <input type="checkbox" name="obligatorio" value="required">
+                                    </div>
+                                
+                             </div>
                         </div>
                         
                         

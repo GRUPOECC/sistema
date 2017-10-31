@@ -558,12 +558,14 @@ class cases_model extends CI_Model
 	
 	function get_all_case_categories()
 	{
+		   $this->db->where('status',1);
 			return $this->db->get('case_categories')->result();
 	}
 
 	function get_all_case_categories_id($id)
 	{
 		            $this->db->where('id',$id);
+		            $this->db->where('status',1);
 			return $this->db->get('case_categories')->row()->name;
 	}
 	
@@ -575,6 +577,7 @@ class cases_model extends CI_Model
 	function get_case_catogries_by_ids($ids)
 	{				
 					$this->db->where_in('id',$ids);
+					$this->db->where('status',1);
 			return $this->db->get('case_categories')->result();
 	}
 	

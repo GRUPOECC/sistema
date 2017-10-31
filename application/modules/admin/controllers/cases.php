@@ -981,7 +981,7 @@ class cases extends MX_Controller {
 				                              <div class="row">
 				                                <div class="col-md-12">
 				                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
+											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" '.$doc->obligatorio.'/>
 											</div>
 				                            </div>
 				                        </div>';
@@ -991,7 +991,7 @@ class cases extends MX_Controller {
 					                              <div class="row">
 					                                <div class="col-md-12">
 					                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-												<input type="text" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" />
+												<input type="text" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" '.$doc->obligatorio.'/>
 												</div>
 					                            </div>
 					                        </div>';
@@ -1033,7 +1033,7 @@ class cases extends MX_Controller {
 		                                    <label for="contact" style="clear:both;">'. $doc->name .'?></label>';
 												foreach($values as $key=>$val) {
 												echo ' 
-												<input type="radio" name="reply['. $doc->id .']" value="'. $val .'" />'. $val .' &nbsp; &nbsp; &nbsp; &nbsp;
+												<input type="radio" name="reply['. $doc->id .']" value="'. $val .'" '.$doc->obligatorio.'/>'. $val .' &nbsp; &nbsp; &nbsp; &nbsp;
 													';
 		 										}
 												echo '
@@ -1052,7 +1052,7 @@ class cases extends MX_Controller {
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>';					
 										foreach($values as $key=>$val) { 
 										echo '
-										<input type="checkbox" name="reply[ '. $doc->id .']" value="'. $val .'" class="form-control" />	&nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="checkbox" name="reply[ '. $doc->id .']" value="'. $val .'" class="form-control" '.$doc->obligatorio.'/>	&nbsp; &nbsp; &nbsp; &nbsp;
 										';
  							 			}
 							echo '		
@@ -1068,7 +1068,7 @@ class cases extends MX_Controller {
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
-										<textarea class="form-control" name="reply['. $doc->id .' ]" ></textarea		
+										<textarea class="form-control" name="reply['. $doc->id .' ]" '.$doc->obligatorio.'></textarea		
 								></div>
                             </div>
                         </div>
@@ -1083,7 +1083,7 @@ class cases extends MX_Controller {
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
-										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" />
+										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" '.$doc->obligatorio.'/>
 							    </div>
                             </div>
                         </div>
@@ -1120,7 +1120,7 @@ class cases extends MX_Controller {
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
-										<select name="reply['. $doc->id .']" class="form-control">';		
+										<select name="reply['. $doc->id .']" class="form-control" '.$doc->obligatorio.'>';		
 												echo '	
 												  <option value="12:00 am">12:00 am</option>
 												  <option value="1:00 am">1:00 am</option>
@@ -1195,7 +1195,7 @@ class cases extends MX_Controller {
 				                              <div class="row">
 				                                <div class="col-md-12">
 				                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+											<input type="text" maxlength="'.$doc->max.'" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" '.$doc->obligatorio.'/>
 											</div>
 				                            </div>
 				                        </div>';
@@ -1206,7 +1206,7 @@ class cases extends MX_Controller {
 		                              <div class="row">
 		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+									<input type="text" class="form-control" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" '.$doc->obligatorio.'/>
 										</div>
 		                            </div>
 		                        </div>';
@@ -1222,7 +1222,7 @@ class cases extends MX_Controller {
 		                              <div class="row">
 		                                <div class="col-md-12">
 		                                    <label for="contact" style="clear:both;">'.$doc->name.'</label>
-									<select name="reply['. $doc->id .']" class="form-control">';
+									<select name="reply['. $doc->id .']" class="form-control" '.$doc->obligatorio.'>';
 										
 												foreach($values as $key=>$val) {
 													echo '<option value="'.$val.'">'.$val.'</option>';
@@ -1246,7 +1246,7 @@ class cases extends MX_Controller {
 		                                    <label for="contact" style="clear:both;">'. $doc->name .'?></label>';
 												foreach($values as $key=>$val) {
 												echo ' 
-												<input type="radio" name="reply['. $doc->id .']" value="'. $val .'" />'. $val .' &nbsp; &nbsp; &nbsp; &nbsp;
+												<input type="radio" name="reply['. $doc->id .']" value="'. $val .'" '.$doc->obligatorio.'/>'. $val .' &nbsp; &nbsp; &nbsp; &nbsp;
 													';
 		 										}
 												echo '
@@ -1265,7 +1265,7 @@ class cases extends MX_Controller {
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>';					
 										foreach($values as $key=>$val) { 
 										echo '
-										<input type="checkbox" name="reply[ '. $doc->id .']" value="'. $val .'" class="form-control" />	&nbsp; &nbsp; &nbsp; &nbsp;
+										<input type="checkbox" name="reply[ '. $doc->id .']" value="'. $val .'" class="form-control" '.$doc->obligatorio.'/>	&nbsp; &nbsp; &nbsp; &nbsp;
 										';
  							 			}
 							echo '		
@@ -1281,7 +1281,7 @@ class cases extends MX_Controller {
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
-										<textarea class="form-control" name="reply['. $doc->id .' ]" ></textarea		
+										<textarea class="form-control" name="reply['. $doc->id .' ]" '.$doc->obligatorio.'></textarea		
 								></div>
                             </div>
                         </div>
@@ -1295,7 +1295,7 @@ class cases extends MX_Controller {
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
-										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" />
+										<input type="text" class="form-control datepicker" name="reply['.$doc->id.']" id="req_doc" value="'.$this->custom_field_model->get_custom_field($doc->id,(int)$_POST['ll'],(int)("10".$_POST['l_id'])).'" '.$doc->obligatorio.'/>
 							    </div>
                             </div>
                         </div>
@@ -1332,7 +1332,7 @@ class cases extends MX_Controller {
                               <div class="row">
                                 <div class="col-md-12">
                                     <label for="contact" style="clear:both;">'. $doc->name .'</label>
-										<select name="reply['. $doc->id .']" class="form-control">';		
+										<select name="reply['. $doc->id .']" class="form-control" '.$doc->obligatorio.'>';		
 												echo '	
 												  <option value="12:00 am">12:00 am</option>
 												  <option value="1:00 am">1:00 am</option>
@@ -1858,7 +1858,7 @@ class cases extends MX_Controller {
         $admin2 = $this->session->userdata('admin');
 		$id = $admin2['id'];
 		$data['empleado']		 = $this->employees_model->get($id);
-		$data['empresas'] 		    = $this->employees_model->get_empresas_todas($id);
+		$data['empresas'] 		 = $this->employees_model->get_empresas_todas($id);
 		$data['stages'] 		 = $this->case_stage_model->get_all();
 		$data['acts'] 			 = $this->cases_model->get_all_acts();
 		$data['depts']			 = $this->cases_model->get_all_depts();

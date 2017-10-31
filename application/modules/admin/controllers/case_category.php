@@ -45,6 +45,7 @@ class case_category extends MX_Controller {
 							$save_field['values']		 = $this->input->post('values');
 							$save_field['date_format']		 = $this->input->post('formato');
 							$save_field['mayusculas']		 = $this->input->post('mayusculas');
+							$save_field['obligatorio']		 = $this->input->post('obligatorio');
                             if($this->input->post('maximo')!="") 
 							$save_field['max']		 = $this->input->post('maximo');
 						    else 
@@ -255,6 +256,16 @@ class case_category extends MX_Controller {
                                     <input type="text" name="namefield" value="" class="form-control">
                                 </div>
                             </div>
+                            <div class="row">
+
+                                    <div class="col-md-3">
+                                        <b>'.lang('custom_required').'</b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                        <input type="checkbox" name="obligatorio" value="required">
+                                    </div>
+                                
+                             </div>
                         </div>
                         
                         
@@ -307,6 +318,7 @@ class case_category extends MX_Controller {
 							$save_field['values']		 = $this->input->post('values');
 							$save_field['date_format']		 = $this->input->post('formato');
 							$save_field['mayusculas']		 = $this->input->post('mayusculas');
+							$save_field['obligatorio']		 = $this->input->post('obligatorio');
                             if($this->input->post('maximo')!="") 
 							$save_field['max']		 = $this->input->post('maximo');
 						    else 

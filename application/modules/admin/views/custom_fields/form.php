@@ -130,7 +130,18 @@ function areyousure()
 									<input type="text" name="name" value="" class="form-control">
                                 </div>
                             </div>
+                            <div class="row">
+
+                                    <div class="col-md-3">
+                                        <b><?php echo lang('custom_required')?></b>
+                                    </div>
+                                    <div class="col-md-4">         
+                                        <input type="checkbox" name="obligatorio" value="required">
+                                    </div>
+                                
+                             </div>
                         </div>
+
 						
 						
 						<div class="form-group" id="value-div">
@@ -176,6 +187,7 @@ function areyousure()
 								<th><?php echo lang('field_name');?></th>
 								<th><?php echo lang('field_type');?></th>
 								<th><?php echo lang('form');?></th>
+								<th><?php echo lang('case_category');?></th>
 								<th><?php echo lang('values');?></th>
 								<th width="20%"><?php echo lang('action');?></th>
                             </tr>
@@ -246,6 +258,12 @@ function areyousure()
                                     <td><?php echo $new->name?></td>
 									<td><?php echo $type?></td>
 									<td><?php echo $form_new?></td>
+									<td><?php 
+                                         $this->load->model("case_category_model");
+                                         $categoria = $this->case_category_model->get_category_by_id($new->form-100);
+                                         echo $categoria->name; 
+									?>
+									</td>
 									<td><?php echo $new->values?></td>
 									 
                                     <td>

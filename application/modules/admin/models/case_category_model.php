@@ -38,6 +38,7 @@ class case_category_model extends CI_Model
 	{
 		 $this->db->order_by('name','ASC');
 		 $this->db->where('parent_id',$id);
+		 $this->db->where('status',1);
 		 return $this->db->get('case_categories')->result();
 	}
 	
