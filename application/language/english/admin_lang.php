@@ -550,6 +550,25 @@ $lang['calendar'] = "Calendar";
 $lang['select_company'] = "Select a company: ";
 $lang['current_calen_lang'] = "en";
 $lang['show_all_events'] = "Show all";
+
+//CALENDAR MODULE
+$lang['enabled'] = "Enabled";
+$lang['calendar'] = "Calendar";
+$lang['event'] = "Event";
+$lang['add_event'] = "Add Event";
+$lang['repeat'] = "Repeat";
+$lang['start_date'] = "Start Date";
+$lang['end_date'] = "End Date";
+$lang['event_type_added'] = "Event Type Added";
+
+//TIME RANGE FOR REPETITION
+$lang['weekly'] = "Weekly";
+$lang['monthly'] = "Monthly";
+$lang['annually'] = "Annually";
+//CALENDAR EVENTS
+$lang['fiscal_event'] = "Fiscal Event";
+$lang['company_event'] = "Company Event";
+$lang['national_event'] = "National Event";
 //CALENDAR BUTTON
 $lang['calen_button_t'] = "today";
 $lang['calen_button_m'] = "month";
