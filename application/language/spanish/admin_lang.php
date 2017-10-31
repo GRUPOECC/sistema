@@ -501,6 +501,11 @@ $lang['case_study_upated']				= "Estudio de ticket Actualización";
 $lang['case_study_deleted']			= "Ticket de Estudio eliminado";
 $lang['attachments_saved']				= "adjuntos guardados";
 $lang['attachments_deleted']				= "adjuntos eliminados";
+$lang['low'] = "Baja";
+$lang['medium'] = "Media";
+$lang['high'] = "Alta";
+
+
 
 $lang['format']				= "Formato";
 $lang['formattitle'] 		= "Formato del titulo (opcional)";

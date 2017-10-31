@@ -1878,16 +1878,20 @@ class cases extends MX_Controller {
 			//$this->form_validation->set_rules('case_no', 'Case No', 'trim|required|is_unique[cases.case_no]');
 			$this->form_validation->set_rules('location_id', 'Location', 'required');
 			$this->form_validation->set_rules('prioridad', 'prioridad', 'required');
+            foreach($this->input->post('reply') as $key => $val2) {
+            $this->form_validation->set_rules('reply', 'Campos Adicionales', 'required');
+            }
+			
 			$this->form_validation->set_rules('case_stage_id', 'Case Stage', '');
 			$this->form_validation->set_rules('dept_id', 'Dept', '');
 			$this->form_validation->set_rules('dept_category_id', 'dept_category Category', '');
 			$this->form_validation->set_rules('case_category_id', 'Case Category', 'required');
 			$this->form_validation->set_rules('act_id', 'Act', '');
 			//$this->form_validation->set_rules('start_date', 'Filing Date', 'required');
-			$this->form_validation->set_rules('description', 'Description', '');
+			$this->form_validation->set_rules('description', 'Description', 'required');
 			$this->form_validation->set_rules('fees', 'Fees', '');
 			$this->form_validation->set_rules('o_lawyer', 'Opposite Lawyer', '');
-			$this->form_validation->set_rules('hearing_date', 'Description', '');
+			$this->form_validation->set_rules('due_date', 'Fecha de Vencimiento', 'required');
 			 
 			if ($this->form_validation->run()==true)
             {
@@ -1933,7 +1937,7 @@ class cases extends MX_Controller {
 								if($categoria->title_format!=""){
 				                  $contenedor = str_replace("empresa.name",$compania->name,$categoria->title_format);
 				                  $contenedor = str_replace("empresa.code",$compania->cod_interno,$contenedor);
-				                  $contenedor = str_replace("campo.".(string)$numero,$val2,$contenedor);
+				                  $contenedor = str_replace("campo.".$numero,$val2,$contenedor);
 				                  $contenedor = str_replace("fecha.now",date('d-m-Y'),$contenedor);
 				                  $contenedor = str_replace("fecha.end",$this->input->post('due_date'),$contenedor);
 				                  $contenedor = str_replace("category.name",$categoria->name,$contenedor);

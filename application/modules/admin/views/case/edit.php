@@ -52,7 +52,7 @@
 						<div class="form-group">
                               <div class="row">
                                 <div class="col-md-3">   
-                                    <label for="empresa_id" style="clear:both;"><?php echo lang('company');?></label>
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('company');?>*</label>
                                 </div>    
                                 <div class="col-md-4"> 
                                      <input id="llave" name ="llave"  type="hidden" name="opcion" value="<?php echo $case->id;?>">  
@@ -122,7 +122,7 @@
 						<div class="form-group">
                               <div class="row">
                                 <div class="col-md-3">   
-                                    <label for="empresa_id" style="clear:both;"><?php echo lang('department');?></label>
+                                    <label for="empresa_id" style="clear:both;"><?php echo lang('department');?>*</label>
                                 </div>    
                                 <div class="col-md-4" id="dept_category_result">   
                                     <select name="departamento_id" id="departamento_id" class="form-control chzn">
@@ -212,7 +212,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('case')?> <?php echo lang('category')?></b>
+                                	<b><?php echo lang('case')?> <?php echo lang('category')?>*</b>
 								</div>
 								<div class="col-md-4">
                 <div id="casecategory_result">
@@ -298,7 +298,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('description')?></b>
+                                	<b><?php echo lang('description')?>*</b>
 								</div>
 								<div class="col-md-4">
                                    <textarea name="description" class="form-control redactor"><?php echo $case->description;?></textarea>
@@ -309,14 +309,13 @@
                         <div class="form-group">
                               <div class="row">
                               <div class="col-md-3">
-                                    <label for="email" style="clear:both;"><?php echo lang('priority')?></label>
+                                    <label for="email" style="clear:both;"><?php echo lang('priority')?>*</label>
                                   </div>
                                 <div class="col-md-4">
                                     <select name="prioridad" class="form-control chzn">
-                                        <option value="">--<?php echo lang('select');?> <?php echo lang('priority');?>---</option>
-                                        <option value="1" <?php echo ($case->prioridad=="1")?'selected="selected"':'';?> >Low</option>
-                                        <option value="2" <?php echo ($case->prioridad=="2")?'selected="selected"':'';?>>Medium</option>
-                                        <option value="3" <?php echo ($case->prioridad=="3")?'selected="selected"':'';?>>High</option>
+                                        <option value="1" <?php echo ($case->prioridad=="1")?'selected="selected"':'';?> ><?php echo lang('low')?></option>
+                                        <option value="2" <?php echo ($case->prioridad=="2")?'selected="selected"':'';?>><?php echo lang('medium')?></option>
+                                        <option value="3" <?php echo ($case->prioridad=="3")?'selected="selected"':'';?>><?php echo lang('high')?></option>
                                     </select>
                                 </div>
                             </div>
@@ -325,7 +324,7 @@
                      <div class="form-group">
                               <div class="row">
                                 <div class="col-md-3">
-                                    <label for="progress" style="clear:both;"><?php echo lang('progress');?></label>
+                                    <label for="progress" style="clear:both;"><?php echo lang('progress');?>*</label>
 						        </div>    
 						            <div class="col-md-4">
                                              <?php if($case->created_by==$iduser){?>
@@ -353,7 +352,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('due_date')?></b>
+                                	<b><?php echo lang('due_date')?>*</b>
 								</div>
 								<div class="col-md-4">
                                    <input type="text" name="due_date" value="<?php echo $case->due_date;?>" class="form-control datepicker"/>

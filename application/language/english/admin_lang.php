@@ -206,6 +206,10 @@ $lang['fees_updated']								= "Fees Updated";
 $lang['client_created']								= "New Client Created";
 $lang['client_updated']								= "Client Updated";
 $lang['client_deleted']								= "Client Deleted";
+$lang['low'] = "Low";
+$lang['medium'] = "Medium";
+$lang['high'] = "High";
+
 
 $lang['payment_mode_created']								= "Payment Mode Created";
 $lang['payment_mode_updated']								= "Payment Mode Updated";

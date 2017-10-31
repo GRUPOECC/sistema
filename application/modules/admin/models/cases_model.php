@@ -194,10 +194,9 @@ class cases_model extends CI_Model
 	
 	function get_cases_by_dept_id($id)
 	{
-			$this->db->where('C.dept_id',$id);
+			$this->db->where('C.departamento_id',$id);
 			$this->db->where('C.is_archived',0);
-			$this->db->select('C.*,U.name client');
-			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
+			$this->db->select('C.*');
 			return $this->db->get('cases C')->result();
 	}
 	

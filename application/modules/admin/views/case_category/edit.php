@@ -81,6 +81,19 @@
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-md-12">
+                                    <label for="name" style="clear:both;"><?php echo lang('status');?> </label>
+                                    <?php 
+                                       if ($category->status==1)
+                                      echo '<input type="checkbox" name="status" value="1" checked>Activo';
+                                         else 
+                                          echo '<input type="checkbox" name="status" value="1" >Activo';
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-12">
                                     <label for="name" style="clear:both;"><?php echo lang('formattitle');?> </label>
                                     <input type="text" name="titulo" value="<?php echo $category->title_format?>" class="form-control">
                                 </div>

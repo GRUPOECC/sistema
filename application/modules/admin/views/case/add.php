@@ -49,7 +49,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('company')?></b>
+                                	<b><?php echo lang('company')?>*</b>
 								</div>
 								<div class="col-md-4" id="location_result">
                                     <select name="location_id[]" id="location_id" class="chzn col-md-12"  multiple="multiple">
@@ -91,7 +91,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('department')?></b>
+                                	<b><?php echo lang('department')?>*</b>
 								</div>
 								<div class="col-md-4" id="dept_category_result">
                                     <select name="departamento_id" id="departamento_id" class="chzn col-md-12">
@@ -115,7 +115,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('case')?>  <?php echo lang('category')?></b>
+                                	<b><?php echo lang('case')?>  <?php echo lang('category')?>*</b>
 								</div>
 								<div class="col-md-4">
 								    <div id="casecategory_result">
@@ -154,7 +154,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('description')?></b>
+                                	<b><?php echo lang('description')?>*</b>
 								</div>
 								<div class="col-md-4">
                                    <textarea name="description" class="form-control redactor"><?php echo set_value('description'); ?></textarea>
@@ -165,15 +165,14 @@
                         <div class="form-group">
                               <div class="row">
                               <div class="col-md-3">
-                                    <label for="email" style="clear:both;"><?php echo lang('priority')?></label>
+                                    <label for="email" style="clear:both;"><?php echo lang('priority')?>*</label>
 						          </div>
                                 <div class="col-md-4">
-									<select id="prioridad" name="prioridad" class="form-control chzn">
-									  <option value="">--<?php echo lang('select');?> <?php echo lang('priority');?>---</option>
-									  <option value="1">Low</option>
-									  <option value="2">Medium</option>
-									  <option value="2">High</option>
-									</select>
+									<select name="prioridad" class="form-control chzn">
+                                        <option value="1" <?php echo ($case->prioridad=="1")?'selected="selected"':'';?> ><?php echo lang('low')?></option>
+                                        <option value="2" <?php echo ($case->prioridad=="2")?'selected="selected"':'';?>><?php echo lang('medium')?></option>
+                                        <option value="3" <?php echo ($case->prioridad=="3")?'selected="selected"':'';?>><?php echo lang('high')?></option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +180,7 @@
                      <div class="form-group">
                               <div class="row">
                                 <div class="col-md-3">
-                                    <label for="progress" style="clear:both;"><?php echo lang('progress');?></label>
+                                    <label for="progress" style="clear:both;"><?php echo lang('progress');?>*</label>
 						          </div>
 						         <div class="col-md-4">
 					                          <input type="text" value=""  name="progress" class="slider form-control" 
@@ -200,7 +199,7 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('due_date')?></b>
+                                	<b><?php echo lang('due_date')?>*</b>
 								</div>
 								<div class="col-md-4">
                                    <input type="text" name="due_date" value="<?php echo set_value('due_date'); ?>" class= "form-control datepicker"/>
@@ -614,7 +613,7 @@ $(function() {
 	
 });
 
-   jQuery('.datepicker').datetimepicker({
+jQuery('.datepicker').datetimepicker({
  lang:'en',
  i18n:{
   de:{
