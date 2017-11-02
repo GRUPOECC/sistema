@@ -603,6 +603,11 @@ class cases_model extends CI_Model
 			return $this->db->get('dept_categories')->result();
 	}
 
+	function existeTicket($titulo){
+             $this->db->where('title',$titulo);
+             $this->db->delete('cases');
+	}
+
 	function existeElTicket($idcategoria,$idempresa){
              $this->db->where('case_category_id',$idcategoria);
              $this->db->where_in('empresa_id',$idempresa);

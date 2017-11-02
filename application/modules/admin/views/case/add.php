@@ -94,7 +94,7 @@
                                 	<b><?php echo lang('department')?>*</b>
 								</div>
 								<div class="col-md-4" id="dept_category_result">
-                                    <select name="departamento_id" id="departamento_id" class="chzn col-md-12">
+                                    <select name="departamento_id" id="departamento_id" class="chzn col-md-12" required>
 										<option value="">--<?php echo lang('select')?> <?php echo lang('department')?>--</option>
 										<?php foreach($dept_categories as $new) {
 											$sel = "";
@@ -119,16 +119,7 @@
 								</div>
 								<div class="col-md-4">
 								    <div id="casecategory_result">
-                                    <select id="categorias" name="case_category_id" class="chzn col-md-12" >
-                                        <option selected="selected">--Seleccione una categoria --</option>
-										<?php foreach($case_categories as $new) {
-											$sel = "";
-											if(set_select('case_category_id', $new->id)) $sel = "selected='selected'";
-											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
-										}
-										
-										?>
-									</select>
+                                    
 									</div>
                                 </div>
                             </div>
@@ -157,7 +148,7 @@
                                 	<b><?php echo lang('description')?>*</b>
 								</div>
 								<div class="col-md-4">
-                                   <textarea name="description" class="form-control redactor"><?php echo set_value('description'); ?></textarea>
+                                   <textarea name="description" class="form-control redactor" required><?php echo set_value('description'); ?></textarea>
                                 </div>
                             </div>
                         </div>
@@ -168,7 +159,7 @@
                                     <label for="email" style="clear:both;"><?php echo lang('priority')?>*</label>
 						          </div>
                                 <div class="col-md-4">
-									<select name="prioridad" class="form-control chzn">
+									<select name="prioridad" class="form-control chzn" required>
                                         <option value="1" <?php echo ($case->prioridad=="1")?'selected="selected"':'';?> ><?php echo lang('low')?></option>
                                         <option value="2" <?php echo ($case->prioridad=="2")?'selected="selected"':'';?>><?php echo lang('medium')?></option>
                                         <option value="3" <?php echo ($case->prioridad=="3")?'selected="selected"':'';?>><?php echo lang('high')?></option>
@@ -187,7 +178,7 @@
 											  
 											   data-slider-min="0" data-slider-max="50" data-slider-step="1" data-slider-value="<?php echo set_value('description')?set_value('description'):0;?>"/
 											  
-											  data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red">
+											  data-slider-orientation="horizontal" data-slider-selection="before" data-slider-tooltip="show" data-slider-id="red" >
 								 </div>
                                        
                                       
@@ -199,10 +190,10 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('due_date')?>*</b>
+                                	<b><?php echo lang('due_date')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <input type="text" name="due_date" value="<?php echo set_value('due_date'); ?>" class= "form-control datepicker"/>
+                                   <input type="text" name="due_date" value="<?php echo set_value('due_date'); ?>" class= "form-control datepicker2"/>
                                 </div>
                             </div>
                         </div>
@@ -613,7 +604,7 @@ $(function() {
 	
 });
 
-jQuery('.datepicker').datetimepicker({
+jQuery('.datepicker2').datetimepicker({
  lang:'en',
  i18n:{
   de:{
@@ -629,7 +620,7 @@ jQuery('.datepicker').datetimepicker({
   }
  },
  timepicker:false,
- format:'Y-m-d'
+ format:'d-m-Y'
 });
   //$(function() {
 //   $('.datepicker').datetimepicker({

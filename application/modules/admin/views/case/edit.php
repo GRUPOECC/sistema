@@ -352,10 +352,10 @@
 						<div class="form-group">
                         	<div class="row">
                                 <div class="col-md-3">
-                                	<b><?php echo lang('due_date')?>*</b>
+                                	<b><?php echo lang('due_date')?></b>
 								</div>
 								<div class="col-md-4">
-                                   <input type="text" name="due_date" value="<?php echo $case->due_date;?>" class="form-control datepicker"/>
+                                   <input type="text" name="due_date" value="<?php echo $case->due_date;?>" class="form-control datepicker2"/>
                                 </div>
                             </div>
                         </div>
@@ -720,7 +720,7 @@ function cargaInicial(){
               }
              },
              timepicker:false,
-             format:'Y-m-d'
+             format:'d-m-Y'
             });
      }
   });
@@ -770,7 +770,7 @@ $(document).on('change', '#departamento_id', function(){
 
 
 
-  jQuery('.datepicker').datetimepicker({
+  jQuery('.datepicker2').datetimepicker({
  lang:'en',
  i18n:{
   de:{
@@ -786,7 +786,7 @@ $(document).on('change', '#departamento_id', function(){
   }
  },
  timepicker:false,
- format:'Y-m-d'
+ format:'d-m-Y'
 });
 
 $(function() {

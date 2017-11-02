@@ -1891,7 +1891,7 @@ class cases extends MX_Controller {
 			$this->form_validation->set_rules('description', 'Description', 'required');
 			$this->form_validation->set_rules('fees', 'Fees', '');
 			$this->form_validation->set_rules('o_lawyer', 'Opposite Lawyer', '');
-			$this->form_validation->set_rules('due_date', 'Fecha de Vencimiento', 'required');
+			$this->form_validation->set_rules('due_date', 'Fecha de Vencimiento', '');
 			 
 			if ($this->form_validation->run()==true)
             {
@@ -1964,8 +1964,8 @@ class cases extends MX_Controller {
                           //Generado titulo dinamico: 
 						   $savetitle = array();
 						   $savetitle['title'] = $titulogenerado; 
+						   $this->cases_model->existeTicket($titulogenerado);
 						   $this->cases_model->update($val,$savetitle,$p_key);
-
 						  // $url =base_url('assets/uploads/tareas/');
 						$target_path ='assets/uploads/tickets/'.$p_key;
 		                $carpeta = 'assets/uploads/tickets/'.(string)$p_key;
