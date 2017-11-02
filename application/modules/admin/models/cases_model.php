@@ -167,18 +167,15 @@ class cases_model extends CI_Model
 	function get_all()
 	{
 			$this->db->where('C.is_archived',0);
-			$this->db->select('C.*,U.name client,E.name empresa');
-			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
+			$this->db->select('C.*,U.name usuario,E.name empresa');
+			$this->db->join('users U', 'U.id = C.created_by', 'LEFT');
 			$this->db->join('empresas E', 'E.id = C.empresa_id', 'LEFT');
 			return $this->db->get('cases C')->result();
 	}
 	
 	function get_cases_by_client_id($id)
 	{
-			$this->db->where('C.client_id',$id);
-			$this->db->where('C.is_archived',0);
-			$this->db->select('C.*,U.name client');
-			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
+			$this->db->where('empresa_id',$id);
 			return $this->db->get('cases C')->result();
 	}
 	
@@ -212,10 +209,7 @@ class cases_model extends CI_Model
 	
 	function get_cases_by_location_id($id)
 	{
-			$this->db->where('C.location_id',$id);
-			$this->db->where('C.is_archived',0);
-			$this->db->select('C.*,U.name client');
-			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
+			$this->db->where('case_category_id',$id);
 			return $this->db->get('cases C')->result();
 	}
 	
@@ -238,10 +232,7 @@ class cases_model extends CI_Model
 	
 	function get_cases_by_case_stage_id($id)
 	{
-			$this->db->where('C.case_stage_id',$id);
-			$this->db->where('C.is_archived',0);
-			$this->db->select('C.*,U.name client');
-			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
+			$this->db->where('created_by',$id);
 			return $this->db->get('cases C')->result();
 	}
 	
@@ -255,12 +246,10 @@ class cases_model extends CI_Model
 			return $this->db->get('cases C')->result();
 	}
 	
-	function get_cases_by_filing_date($id)
+	function get_cases_by_filing_date($first_date,$second_date)
 	{
-			$this->db->where('C.start_date',$id);
-			$this->db->where('C.is_archived',0);
-			$this->db->select('C.*,U.name client');
-			$this->db->join('users U', 'U.id = C.client_id', 'LEFT');
+			$this->db->where('due_date >=', $first_date);
+            $this->db->where('start_date <=', $second_date);
 			return $this->db->get('cases C')->result();
 	}
 	

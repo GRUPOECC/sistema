@@ -26,7 +26,10 @@ class cases extends MX_Controller {
 		$data['depts'] = $this->cases_model->get_all_depts();
 		$data['depts_cats'] = $this->cases_model->get_all_depts_cats();
 		$data['clients'] = $this->cases_model->get_all_clients();
+		$data['empresas'] 		    = $this->location_model->get_empresas();
+		$data['employees']		 	= $this->employees_model->get_all();
 		$data['locations'] = $this->location_model->get_all();
+		$data['case_categories'] = $this->cases_model->get_all_case_categories();
 		$data['stages'] = $this->case_stage_model->get_all();
 		$data['page_title'] = lang('case');
 		$data['body'] = 'case/list';
@@ -651,7 +654,7 @@ class cases extends MX_Controller {
 
 
 	function get_case_by_case_filing_date(){
-		$cases = $this->cases_model->get_cases_by_filing_date($_POST['id']);
+		$cases = $this->cases_model->get_cases_by_filing_date($_POST['id'],$_POST['fn']);
 		echo '
 		<table id="example1" class="table table-bordered table-striped table-mailbox">
                          <thead>
@@ -1433,12 +1436,15 @@ class cases extends MX_Controller {
 		<table id="example1" class="table table-bordered table-striped table-mailbox">
                         <thead>
                             <tr>
+                                <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
                                 <th width="5%">'.lang('serial_number').'</th>
 								<th width="8%">'.lang('star').'</th>
 								<th>'.lang('case').' '.lang('title').'</th>
 								<th>'.lang('case').' '.lang('number').'</th>
-								<th>'.lang('clients').'</th>
-								<th>'.lang('case').' '.lang('stage').'</th>
+								<th>'.lang('company').'</th>
+                				<th>'.lang('created_by').'</th>
+                				<th>'.lang('joining_date').'</th>
+                				<th>'.lang('due_date').'</th>
 								<th width="20%">'.lang('action').'</th>
                             </tr>
                         </thead>
@@ -1465,10 +1471,12 @@ class cases extends MX_Controller {
 								}
 							echo '
 									</td>
-                                    <td>'.$new->title.'</td>
-								    <td>'.$new->case_no.'</td>
-									<td>'.$new->client.'</td>
-									<td>'.$new->stage.'</td>
+                                      <td>'.$new->title.'</td>
+								      <td>'.$new->case_no.'</td>
+									  <td>'.$new->empresa.'</td>
+					                  <td>'.$new->usuario.'</td>
+					                  <td>'.$new->start_date.'</td>
+					                  <td>'.$new->due_date.'</td>
 									
                                     <td width="20%">
 									 	 <a class="btn btn-primary"  href="'.site_url('admin/cases/view_archived_case/'.$new->id).'"><i class="fa fa-eye"></i> '.lang('view').'</a>
@@ -1489,12 +1497,15 @@ class cases extends MX_Controller {
 		<table id="example1" class="table table-bordered table-striped table-mailbox">
                          <thead>
                             <tr>
+                                <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
                                 <th width="5%">'.lang('serial_number').'</th>
 								<th width="8%">'.lang('star').'</th>
 								<th>'.lang('case').' '.lang('title').'</th>
 								<th>'.lang('case').' '.lang('number').'</th>
-								<th>'.lang('clients').'</th>
-								<th>'.lang('case').' '.lang('stage').'</th>
+								<th>'.lang('company').'</th>
+                				<th>'.lang('created_by').'</th>
+                				<th>'.lang('joining_date').'</th>
+                				<th>'.lang('due_date').'</th>
 								<th width="20%">'.lang('action').'</th>
                             </tr>
                         </thead>
@@ -1521,10 +1532,13 @@ class cases extends MX_Controller {
 								}
 							echo '
 									</td>
-                                    <td>'.$new->title.'</td>
-								    <td>'.$new->case_no.'</td>
-									<td>'.$new->client.'</td>
-									<td>'.$new->stage.'</td>
+                                      <td>'.$new->title.'</td>
+								      <td>'.$new->case_no.'</td>
+									  <td>'.$new->empresa.'</td>
+					                  <td>'.$new->usuario.'</td>
+					                  <td>'.$new->start_date.'</td>
+					                  <td>'.$new->due_date.'</td>
+
 									
                                      <td width="20%">
 									 	 <a class="btn btn-primary"  href="'.site_url('admin/cases/view_archived_case/'.$new->id).'"><i class="fa fa-eye"></i> '.lang('view').'</a>
@@ -1545,12 +1559,15 @@ class cases extends MX_Controller {
 		<table id="example1" class="table table-bordered table-striped table-mailbox">
                          <thead>
                             <tr>
+                                <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
                                 <th width="5%">'.lang('serial_number').'</th>
 								<th width="8%">'.lang('star').'</th>
 								<th>'.lang('case').' '.lang('title').'</th>
 								<th>'.lang('case').' '.lang('number').'</th>
-								<th>'.lang('clients').'</th>
-								<th>'.lang('case').' '.lang('stage').'</th>
+								<th>'.lang('company').'</th>
+                				<th>'.lang('created_by').'</th>
+                				<th>'.lang('joining_date').'</th>
+                				<th>'.lang('due_date').'</th>
 								<th width="20%">'.lang('action').'</th>
                             </tr>
                         </thead>
@@ -1577,10 +1594,12 @@ class cases extends MX_Controller {
 								}
 				echo '
 									</td>
-                                    <td>'.$new->title.'</td>
-								    <td>'.$new->case_no.'</td>
-									<td>'.$new->client.'</td>
-									<td>'.$new->stage.'</td>
+                                      <td>'.$new->title.'</td>
+								      <td>'.$new->case_no.'</td>
+									  <td>'.$new->empresa.'</td>
+					                  <td>'.$new->usuario.'</td>
+					                  <td>'.$new->start_date.'</td>
+					                  <td>'.$new->due_date.'</td>
 									
                                     <td width="20%">
 									 	 <a class="btn btn-primary"  href="'.site_url('admin/cases/view_archived_case/'.$new->id).'"><i class="fa fa-eye"></i> '.lang('view').'</a>
@@ -1601,12 +1620,15 @@ class cases extends MX_Controller {
 		<table id="example1" class="table table-bordered table-striped table-mailbox">
                          <thead>
                             <tr>
+                                <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
                                 <th width="5%">'.lang('serial_number').'</th>
 								<th width="8%">'.lang('star').'</th>
 								<th>'.lang('case').' '.lang('title').'</th>
 								<th>'.lang('case').' '.lang('number').'</th>
-								<th>'.lang('clients').'</th>
-								<th>'.lang('case').' '.lang('stage').'</th>
+								<th>'.lang('company').'</th>
+                				<th>'.lang('created_by').'</th>
+                				<th>'.lang('joining_date').'</th>
+                				<th>'.lang('due_date').'</th>
 								<th width="20%">'.lang('action').'</th>
                             </tr>
                         </thead>
@@ -1634,9 +1656,11 @@ class cases extends MX_Controller {
 				echo '
 									</td>
                                     <td>'.$new->title.'</td>
-								    <td>'.$new->case_no.'</td>
-									<td>'.$new->client.'</td>
-									<td>'.$new->stage.'</td>
+								      <td>'.$new->case_no.'</td>
+									  <td>'.$new->empresa.'</td>
+					                  <td>'.$new->usuario.'</td>
+					                  <td>'.$new->start_date.'</td>
+					                  <td>'.$new->due_date.'</td>
 									
                                      <td width="20%">
 									 	 <a class="btn btn-primary"  href="'.site_url('admin/cases/view_archived_case/'.$new->id).'"><i class="fa fa-eye"></i> '.lang('view').'</a>
@@ -1657,12 +1681,15 @@ class cases extends MX_Controller {
 		<table id="example1" class="table table-bordered table-striped table-mailbox">
                         <thead>
                             <tr>
+                                <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
                                 <th width="5%">'.lang('serial_number').'</th>
 								<th width="8%">'.lang('star').'</th>
 								<th>'.lang('case').' '.lang('title').'</th>
 								<th>'.lang('case').' '.lang('number').'</th>
-								<th>'.lang('clients').'</th>
-								<th>'.lang('case').' '.lang('stage').'</th>
+								<th>'.lang('company').'</th>
+                				<th>'.lang('created_by').'</th>
+                				<th>'.lang('joining_date').'</th>
+                				<th>'.lang('due_date').'</th>
 								<th width="20%">'.lang('action').'</th>
                             </tr>
                         </thead>
@@ -1689,9 +1716,11 @@ class cases extends MX_Controller {
 				echo '
 									</td>
                                     <td>'.$new->title.'</td>
-								    <td>'.$new->case_no.'</td>
-									<td>'.$new->client.'</td>
-									<td>'.$new->stage.'</td>
+								      <td>'.$new->case_no.'</td>
+									  <td>'.$new->empresa.'</td>
+					                  <td>'.$new->usuario.'</td>
+					                  <td>'.$new->start_date.'</td>
+					                  <td>'.$new->due_date.'</td>
 									
                                      <td width="20%">
 									 	 <a class="btn btn-primary"  href="'.site_url('admin/cases/view_archived_case/'.$new->id).'"><i class="fa fa-eye"></i> '.lang('view').'</a>
@@ -1712,12 +1741,15 @@ class cases extends MX_Controller {
 		<table id="example1" class="table table-bordered table-striped table-mailbox">
                         <thead>
                             <tr>
+                                <th><input style="display: none;" type="checkbox" id="check_group[]" name="check_group[]" onclick="seleccionarTodos()" value=""></th>   
                                 <th width="5%">'.lang('serial_number').'</th>
 								<th width="8%">'.lang('star').'</th>
 								<th>'.lang('case').' '.lang('title').'</th>
 								<th>'.lang('case').' '.lang('number').'</th>
-								<th>'.lang('clients').'</th>
-								<th>'.lang('case').' '.lang('stage').'</th>
+								<th>'.lang('company').'</th>
+                				<th>'.lang('created_by').'</th>
+                				<th>'.lang('joining_date').'</th>
+                				<th>'.lang('due_date').'</th>
 								<th width="20%">'.lang('action').'</th>
                             </tr>
                         </thead>
@@ -1744,11 +1776,12 @@ class cases extends MX_Controller {
 								}
 				echo '
 									</td>
-                                    <td>'.$new->title.'</td>
-								    <td>'.$new->case_no.'</td>
-									<td>'.$new->client.'</td>
-									<td>'.$new->stage.'</td>
-									
+                                      <td>'.$new->title.'</td>
+								      <td>'.$new->case_no.'</td>
+									  <td>'.$new->empresa.'</td>
+					                  <td>'.$new->usuario.'</td>
+					                  <td>'.$new->start_date.'</td>
+					                  <td>'.$new->due_date.'</td>
                                      <td width="20%">
 									 	 <a class="btn btn-primary"  href="'.site_url('admin/cases/view_archived_case/'.$new->id).'"><i class="fa fa-eye"></i> '.lang('view').'</a>
 										 <a class="btn btn-danger" style="margin-left:20px;" href="'.site_url('admin/cases/restore/'.$new->id).'" onclick="return areyousure()"><i class="fa fa-check"></i> '.lang('restore').'</a>
@@ -2173,6 +2206,10 @@ class cases extends MX_Controller {
 
 
 
+
+
+
+
 	function notes($id=false){
 		$data['id']					=	$id;
 		$data['case'] 				= $this->cases_model->get_case_by_id($id);
@@ -2447,6 +2484,28 @@ class cases extends MX_Controller {
 		$this->load->view('template/main', $data);
 	}
 	
+     function delete($id=false){
+      if (is_int($id)) { 
+
+		if($id){
+			$this->cases_model->delete($id);
+			$this->session->set_flashdata('message',lang('case_deleted'));
+			redirect('admin/cases');
+		}
+
+	  }else{
+          $ids = explode("-",$id);
+          $i=0; 
+          while($i<count($ids)){
+            $this->cases_model->delete($ids[$i]);
+          	$i++;
+          } 
+           redirect('admin/cases');     	 
+	  }
+	}	
+
+	/*
+
 	function delete($id=false){
 		
 		if($id){
@@ -2455,6 +2514,7 @@ class cases extends MX_Controller {
 			$this->session->set_flashdata('message',  lang('case_deleted'));
 		}
 	}
+	*/
 	
 	function delete_archive_case($id=false){
 		

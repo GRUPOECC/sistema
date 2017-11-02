@@ -21,8 +21,27 @@ function areyousure()
         </ol>
 </section>
 
+  <!-- Proceso de eliminacion de varios Contactos -->
+  <?php
+
+     if (isset($_POST["task_check"])){
+      
+        $conjunto = "";
+        $delete = $_POST["task_check"]; 
+        $cantidad = count($delete); 
+       
+         for ($i=0; $i<$cantidad; $i++) {  
+          $del_id = $delete[$i]; 
+          $conjunto = $conjunto . $del_id . "-";
+         } 
+         if (isset($_POST["submit"])) 
+           header('Location: '.site_url('admin/cases/delete/').'/'.$conjunto);    
+      }
+
+?>
 
 <section class="content">
+    <form action="<?php echo site_url('admin/cases'); ?>" method="POST">
   	  	 <div class="row" style="margin-bottom:10px;">
             <div class="col-xs-12">
                 <div class="btn-group pull-right">
@@ -30,7 +49,7 @@ function areyousure()
                     <a class="btn btn-default" href="<?php echo site_url('admin/cases/add/'); ?>"><i class="fa fa-plus"></i> <?php echo lang('add')?> <?php echo lang('new')?></a>
              	<?php } ?>
         <?php if(check_user_role(24)==1){?>
-                      <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/tasks'); ?>">
+                      <input id="boton_eliminarvarios" class="btn bg-red" style="margin-left:10px; display:none;" type='submit' name='submit' value='<?php echo lang('deleteGroup');?>' onclick=this.form.action="<?php echo site_url('admin/cases'); ?>">
                 <?php } ?>   
           <?php if(check_user_role(188)==1){?>
                       <a class="btn btn-primary" onclick="Agrupar()" style="margin-left:10px;" href="javascript:void()">
@@ -52,8 +71,8 @@ function areyousure()
           					
 					 <div class="col-xs-2">
 						<select name="filter_dept_cat" id="dept_cat_id" class="form-control chzn">
-							<option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('dept_category')?>--</option>
-									<?php foreach($depts_cats as $new) {
+							<option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('company')?>--</option>
+									<?php foreach($empresas as $new) {
 											$sel = "";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 											}
@@ -74,8 +93,8 @@ function areyousure()
           </div>
 					 <div class="col-xs-2">
 						<select name="filter_location" id="location_id" class="form-control chzn">
-							<option>--<?php echo lang('filter')?> <?php echo lang('by');?> <?php echo lang('location');?>--</option>
-							<?php foreach($locations as $new) {
+							<option>--<?php echo lang('filter')?> <?php echo lang('by');?> <?php echo lang('case_category');?>--</option>
+							<?php foreach($case_categories as $new) {
 											$sel = "";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 								  }
@@ -86,8 +105,8 @@ function areyousure()
 					
 					<div class="col-xs-2">
 						<select name="filter_location" id="case_stage_id" class="form-control chzn">
-							<option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('case') ." ". lang('stages');?>--</option>
-							<?php foreach($stages as $new) {
+							<option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('user') ?>--</option>
+							<?php foreach($employees as $new) {
 											$sel = "";
 											echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
 								  }
@@ -97,11 +116,11 @@ function areyousure()
 					</div>
 					
 					<div class="col-xs-2">
-						<input type="text" name="date1" id="date1" class="form-control datepicker" placeholder="<?php echo lang('filling_date')?>" />
+						<input type="text" name="date1" id="date1" class="form-control datepicker" placeholder="<?php echo lang('date_in')?>" />
 					</div>
 					
 					<div class="col-xs-2">
-						<input type="text" name="date2" id="date2" class="form-control datepicker" placeholder="<?php echo lang('hearing_date')?>" />
+						<input type="text" name="date2" id="date2" class="form-control datepicker" placeholder="<?php echo lang('date_out')?>" />
 					</div>
 					
                 </div>
@@ -125,6 +144,9 @@ function areyousure()
 								<th><?php echo lang('case')?> <?php echo lang('title')?></th>
 								<th><?php echo lang('case')?> <?php echo lang('number')?></th>
 								<th><?php echo lang('company')?></th>
+                <th><?php echo lang('created_by')?></th>
+                <th><?php echo lang('joining_date')?></th>
+                <th><?php echo lang('due_date')?></th>
 								<th width="20%"><?php echo lang('action')?></th>
                             </tr>
                         </thead>
@@ -150,20 +172,17 @@ function areyousure()
 									}
 									?>
 									</td>
-                                    <td><?php echo $new->title?></td>
-								    <td><?php echo $new->case_no?></td>
+                  <td><?php echo $new->title?></td>
+								  <td><?php echo $new->case_no?></td>
 									<td><?php echo $new->empresa?></td>
+                  <td><?php echo $new->usuario?></td>
+                  <td><?php echo $new->start_date?></td>
+                  <td><?php echo $new->due_date?></td>
 									
-                                    <td width="53%">
+                                    <td width="38%">
 								<?php if(check_user_role(7)==1){?>		
 									<a class="btn btn-default"  href="<?php echo site_url('admin/cases/view_case/'.$new->id); ?>"><i class="fa fa-eye"></i> <?php echo lang('view')?></a>
-								<?php } ?>		
-							<?php if(check_user_role(8)==1){?>			
-									<a class="btn btn-info"  href="<?php echo site_url('admin/cases/fees/'.$new->id); ?>"><i class="fa fa-inr"></i> <?php echo lang('fees')?></a>	
-                         <?php } ?>
-						  <?php if(check_user_role(84)==1){?>	
-						              <a class="btn btn-info"  href="<?php echo site_url('admin/cases/dates/'.$new->id); ?>"><i class="fa fa-calendar"></i> <?php echo lang('hearing_date')?></a>							
-                           <?php } ?>              
+								<?php } ?>		          
 									<?php if(check_user_role(6)==1){?>		  
 										  <a class="btn btn-primary"  href="<?php echo site_url('admin/cases/edit/'.$new->id); ?>"><i class="fa fa-edit"></i> <?php echo lang('edit')?></a>								<?php } ?>
 									<?php if(check_user_role(9)==1){?>		
@@ -182,6 +201,7 @@ function areyousure()
             </div><!-- /.box -->
         </div>
     </div>
+    </form>
 </section>
 
 <script src="<?php echo base_url('assets/js/plugins/datatables/jquery.dataTables.js')?>" type="text/javascript"></script>
@@ -409,7 +429,7 @@ $(document).on('change', '#dept_cat_id', function(){
   $('#result').html(ajax_load);
     
   $.ajax({
-    url: '<?php echo site_url('admin/cases/get_case_by_dept_cat') ?>',
+    url: '<?php echo site_url('admin/cases/get_case_by_client') ?>',
     type:'POST',
     data:{id:vch},
     success:function(result){
@@ -463,14 +483,15 @@ $(document).on('change', '#case_stage_id', function(){
 
 $(document).on('change', '#date1', function(){
  //alert(12);
- 	vch = $(this).val();
+ 	vch = document.getElementById("date1").value;
+  vch2 = document.getElementById("date2").value;
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
   $('#result').html(ajax_load);
 	//alert(vch);	  
   $.ajax({
     url: '<?php echo site_url('admin/cases/get_case_by_case_filing_date') ?>',
     type:'POST',
-    data:{id:vch},
+    data:{id:vch,fn:vch2},
     success:function(result){
       //alert(result);return false;
 	  $('#result').html(result);
@@ -482,20 +503,21 @@ $(document).on('change', '#date1', function(){
 
 $(document).on('change', '#date2', function(){
  //alert(12);
- 	vch = $(this).val();
+  vch = document.getElementById("date1").value;
+  vch2 = document.getElementById("date2").value;
   var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
   $('#result').html(ajax_load);
-	//alert(vch);	  
+  //alert(vch);   
   $.ajax({
-    url: '<?php echo site_url('admin/cases/get_case_by_case_hearing_date') ?>',
+    url: '<?php echo site_url('admin/cases/get_case_by_case_filing_date') ?>',
     type:'POST',
-    data:{id:vch},
+    data:{id:vch,fn:vch2},
     success:function(result){
       //alert(result);return false;
-	  $('#result').html(result);
-	  $(".chzn").chosen();
-	  $('#example1').dataTable({});
-	 }
+    $('#result').html(result);
+    $(".chzn").chosen();
+    $('#example1').dataTable({});
+   }
   });
 });
 			
