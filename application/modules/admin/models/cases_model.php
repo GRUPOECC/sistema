@@ -589,7 +589,7 @@ class cases_model extends CI_Model
 	
 	function get_all_dept_categories()
 	{
-			return $this->db->get('dept_categories')->result();
+			return $this->db->get('departments')->result();
 	}
 
 	function existeTicket($titulo){
