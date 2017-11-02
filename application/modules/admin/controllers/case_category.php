@@ -16,6 +16,7 @@ class case_category extends MX_Controller {
 	
 	function index(){
 		$data['categories'] = $this->case_category_model->get_all();
+		$data['departments'] = $this->cases_model->get_all_dept_categories();
 		$data['page_title'] = lang('case') ." ". lang('categories');
 		$data['body'] = 'case_category/list';
 		$this->load->view('template/main', $data);	

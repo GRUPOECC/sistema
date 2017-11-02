@@ -26,12 +26,31 @@ function areyousure()
 				</div>
             </div>    
         </div>	
+
+                 <div class="row" style="margin-bottom:10px;">
+            <div class="col-xs-12">
+                <div class="">                       
+                     <div class="col-xs-2">
+                        <select name="filter_dept_cat" id="dept_cat_id" class="form-control chzn">
+                            <option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('department')?>--</option>
+                                    <?php foreach($departments as $new) {
+                                            $sel = "";
+                                            echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
+                                            }
+                                        
+                                    ?>
+                        </select>
+                    </div>   
+                </div>
+            </div>    
+        </div>  
         
   	  	<div class="row">
           <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title"><?php echo lang('case');?> <?php echo lang('category');?></h3>                                    
+                    <h3 class="box-title"><?php echo lang('case');?> <?php echo lang('category');?></h3>
+
                 </div><!-- /.box-header -->
 				
                 <div class="box-body table-responsive" style="margin-top:40px;">
@@ -83,4 +102,13 @@ $(function() {
 	});
 });
 
+
+$(document).on('change', '#dept_cat_id', function(){
+ //alert(12);
+  vch = $(this).val();
+   jQuery.type("search").val(vch);
+
+});
 </script>
+
+
