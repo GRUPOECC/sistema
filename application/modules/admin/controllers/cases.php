@@ -328,6 +328,50 @@ class cases extends MX_Controller {
 		
 	}
 
+		function get_casecategory_by_dept(){
+		$cases = $this->cases_model->get_casescategory_by_dept_id($_POST['id']);
+	
+		echo '
+		<table id="example1" class="table table-bordered table-striped table-mailbox">
+                         <thead>
+                            <tr>
+                                <th>'.lang('serial_number').'</th>
+								<th>'.lang('department').'</th>
+								<th>'.lang('name').'</th>
+								<th width="20%">'.lang('action').'</th>
+                            </tr>
+                        </thead>
+                   ';
+				   		if(isset($cases)):
+                     echo '   
+						<tbody>
+                            ';
+							 $i=1;foreach ($cases as $new){
+							 
+							 echo '
+                                <tr class="gc_row">
+                                    <td>'.$i.'</td>
+								'; 
+									
+								echo'	
+								    <td>'.$new->parent.'</td>
+									<td>'.$new->name.'</td>
+									
+                                    <td width="47%">						
+                                        <a class="btn btn-primary"  href="'.site_url('admin/case_category/edit/'.$new->id) .'"><i class="fa fa-edit"></i> '.lang('edit').'</a>
+										<a class="btn btn-danger"  href="'.site_url('admin/case_category/delete/'.$new->id).'"><i class="fa fa-trash"></i> '.lang('delete').'</a>
+                                    </td>
+                                </tr>
+							';	
+                              $i++;}
+					echo '		  
+                        </tbody>';
+                        endif;
+                    
+				echo '</table>';
+
+	}
+
 	function get_case_by_dept_starred(){
 		$cases = $this->cases_model->get_cases_by_dept_id_starred($_POST['id']);
 	

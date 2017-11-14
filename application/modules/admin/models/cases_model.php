@@ -196,6 +196,14 @@ class cases_model extends CI_Model
 			$this->db->select('C.*');
 			return $this->db->get('cases C')->result();
 	}
+
+	function get_casescategory_by_dept_id($id)
+	{
+            $this->db->where('C1.parent_id',$id);
+			$this->db->select('C1.*,C2.name parent');
+			$this->db->join('departments C2', 'C2.id = C1.parent_id', 'LEFT');
+			return $this->db->get('case_categories C1')->result();
+	}
 	
 	function get_cases_by_dept_id_starred($id)
 	{

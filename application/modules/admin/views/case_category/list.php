@@ -32,7 +32,7 @@ function areyousure()
                 <div class="">                       
                      <div class="col-xs-2">
                         <select name="filter_dept_cat" id="dept_cat_id" class="form-control chzn">
-                            <option>--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('department')?>--</option>
+                            <option value="0">--<?php echo lang('filter')?> <?php echo lang('by')?> <?php echo lang('department')?>--</option>
                                     <?php foreach($departments as $new) {
                                             $sel = "";
                                             echo '<option value="'.$new->id.'" '.$sel.'>'.$new->name.'</option>';
@@ -54,6 +54,7 @@ function areyousure()
                 </div><!-- /.box-header -->
 				
                 <div class="box-body table-responsive" style="margin-top:40px;">
+                    <div id="result">
                     <table id="example1" class="table table-bordered table-striped">
                         <thead>
                             <tr>
@@ -87,6 +88,7 @@ function areyousure()
                         </tbody>
                         <?php endif;?>
                     </table>
+                    </div>
 					
                 </div><!-- /.box-body -->
             </div><!-- /.box -->
@@ -105,8 +107,28 @@ $(function() {
 
 $(document).on('change', '#dept_cat_id', function(){
  //alert(12);
-  vch = $(this).val();
-   jQuery.type("search").val(vch);
+    vch = $(this).val();
+  var ajax_load = '<img style="margin-left:100px;" src="<?php echo base_url('assets/img/ajax-loader.gif')?>"/>';
+  $('#result').html(ajax_load);
+   
+
+   if (vch!="0"){    
+          $.ajax({
+            url: '<?php echo site_url('admin/cases/get_casecategory_by_dept') ?>',
+            type:'POST',
+            data:{id:vch},
+            success:function(result){
+              //alert(result);return false;
+              $('#result').html(result);
+              $(".chzn").chosen();
+              $('#example1').dataTable({});
+             }
+          });
+  }else 
+   {
+     location.reload();
+   }
+
 
 });
 </script>
