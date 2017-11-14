@@ -602,7 +602,7 @@ class cases_model extends CI_Model
 
 	function existeTicket($titulo){
              $this->db->where('title',$titulo);
-             $this->db->delete('cases');
+             return $this->db->count_all_results('cases');
 	}
 
 	function existeElTicket($idcategoria,$idempresa){

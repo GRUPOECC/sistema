@@ -2041,8 +2041,12 @@ class cases extends MX_Controller {
                           //Generado titulo dinamico: 
 						   $savetitle = array();
 						   $savetitle['title'] = $titulogenerado; 
-						   $this->cases_model->existeTicket($titulogenerado);
+						   if($this->cases_model->existeTicket($titulogenerado)==0){
 						   $this->cases_model->update($val,$savetitle,$p_key);
+						   }else{
+                                $savetitle['title'] = $titulogenerado . " - V".(string)($this->cases_model->existeTicket($titulogenerado)+1); 
+                              $this->cases_model->update($val,$savetitle,$p_key);
+						    }
 						  // $url =base_url('assets/uploads/tareas/');
 						$target_path ='assets/uploads/tickets/'.$p_key;
 		                $carpeta = 'assets/uploads/tickets/'.(string)$p_key;
