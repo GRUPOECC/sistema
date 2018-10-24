@@ -71,7 +71,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'spanish';
 
 
 /*
@@ -87,7 +87,7 @@ $config['language']	= 'english';
 |          /fr/path/to/controller
 |
 */
-$config['supported_languages'] = array('en'=>'english');
+$config['supported_languages'] = array('es'=>'spanish');
 
 
 /*
